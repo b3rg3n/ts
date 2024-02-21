@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy", line 177: text expects a non-empty block.
+    text "{size=+30}{font=[cit_font]}TRUE STORY{/font}{/size}" ypos 42 xpos 75:
+                                                                               ^
+
+Ren'Py Version: Ren'Py 8.2.0.24012702
+Tue Feb 20 19:21:38 2024

@@ -115,9 +115,9 @@ screen bergenchik_intro_ebat1:
     text "{size=+10}{font=[cit_font]}алокголя, и прочие сцены сексуального характера.{/font}{/size}" yalign 0.525 xalign 0.5
 
 screen bergenchik_intro_ebat2:
-    text "{size=+10}{font=[cit_font]}Все подозрения на пропаганду вероисповедния, идеологии, сектанства -{/font}{/size}" yalign 0.45 xalign 0.5
-    text "{size=+10}{font=[cit_font]}являются лишь вашими домыслами. Авторы не занимаются пропагандой{/font}{/size}" yalign 0.5 xalign 0.5
-    text "{size=+10}{font=[cit_font]}всего того, что вы решили <<додумать>>.{/font}{/size}" yalign 0.55 xalign 0.5
+    text "{size=+10}{font=[cit_font]}Все подозрения на пропаганду идеологии, сектанства -{/font}{/size}" yalign 0.45 xalign 0.5
+    text "{size=+10}{font=[cit_font]}являются лишь вашими домыслами. Авторы не занимаются{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+10}{font=[cit_font]}пропагандой всего того, что вы решили <<додумать>>.{/font}{/size}" yalign 0.55 xalign 0.5
 
 screen bergenchik_intro_ebat3:
     text "{size=+10}{font=[cit_font]}Яркие вспышки света и мелькающие изображения могут навредить{/font}{/size}" yalign 0.475 xalign 0.5

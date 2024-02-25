@@ -392,7 +392,7 @@ label ts_scenario_2:
     "У меня есть реальные шансы собрать этот клуб, чтобы мы тоже могли готовиться к фестивалю."
 
     stop music
-    play sound wakeup
+    play sound nfy
 
     window hide
     show zatemnenie

@@ -30,6 +30,10 @@ screen pizda_text3:
 screen pizda_text4:
     text "{size=+15}{font=[ts_nvl_font2]}Не знаю, как можно быть настолько невезучей,\nчтобы упасть о два одинаковых стола с одинаковой высотой,\nно получилось как получилось.{/font}{/size}" yalign 0.5 xalign 0.5
 
+screen pizda_text41:
+    text "{size=+15}{font=[ts_nvl_font2]}А потом...{/font}{/size}" yalign 0.5 xalign 0.5
+
+
 screen pizda_text5:
     text "{size=+15}{font=[adv_font]}Мне жаль это признавать, но сделала это всё именно ты...{/font}{/size}" yalign 0.5 xalign 0.5
 
@@ -65,6 +69,26 @@ screen pizda_text15:
 
 screen pizda_text16:
     text "{size=+15}{font=[adv_font]}Ну как же нет, если да?{/font}{/size}" yalign 0.5 xalign 0.5
+
+
+screen scenario_2_double_text_suka:
+    text "{size=+15}{font=[adv_font]}Посмотрим, как она «обрадуется» следующим заданиям от Юри.{/font}{/size}" yalign 0.475 xalign 0.5
+    text "{size=+15}{font=[adv_font]}Это ведь {b}далеко{/b} не самая сложная книга в мире.{/font}{/size}" yalign 0.525 xalign 0.5
+
+screen scenario_2_onest_text_suka:
+    text "{size=+15}{font=[ts_nvl_font2]}Впрочем, а {i}я{/i} когда-нибудь была психически здоровой?{/font}{/size}" yalign 0.5 xalign 0.5
+
+screen scenario_2_onest_text_suka1:
+    text "{size=+15}{font=[ts_nvl_font2]}Отстань уже, не видишь, девочка только плакать перестала, а ты опять нагнетаешь.{/font}{/size}" yalign 0.5 xalign 0.5
+
+screen scenario_3_onest_text_suka:
+    text "{size=+15}{font=[ts_nvl_font2]}Впрочем, я же и так её не особо одобряю...{/font}{/size}" yalign 0.5 xalign 0.5
+
+screen scenario_4_onest_text_suka:
+    text "{size=+15}{font=[adv_font]}Всё очень просто: ты мало того, что лентяйка, каких поискать надо, так ещё и лицемерка.{/font}{/size}" yalign 0.5 xalign 0.5
+
+screen scenario_4_onest_text_suka1:
+    text "{size=+15}{font=[adv_font]}Ты хотела сказать, {i}навсегда{/i}.{/font}{/size}" yalign 0.5 xalign 0.5
 
 
 screen chp_text_1:

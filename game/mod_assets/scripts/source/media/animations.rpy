@@ -2,6 +2,143 @@
 #by @b3rg3n
 #Since 2024
 init:
+###АНИМАЦИИ ЗАСТАВКИ
+    image ts_intro_move_1:
+        contains:
+            "ts_corridor"
+            zoom 1.1 xalign 0.0 yalign 0.6 alpha 0.0
+            parallel:
+                ease 0.2 alpha 1.0
+            parallel:
+                linear 15.0 xalign 1.0 yalign 0.4
+        contains:
+            parallel:
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+            parallel:
+                parallel:
+                    choice:
+                        xzoom 1.0
+                    choice:
+                        xzoom -1.0
+                parallel:
+                    choice:
+                        yzoom 1.0
+                    choice:
+                        yzoom -1.0
+            alpha 0.5
+            pause 0.02
+            repeat
+
+    image ts_intro_move_2:
+        contains:
+            "ts_street"
+            zoom 1.1 xalign 0.0 yalign 0.6 alpha 0.0
+            parallel:
+                ease 0.2 alpha 1.0
+            parallel:
+                linear 15.0 xalign 1.0 yalign 0.4
+        contains:
+            parallel:
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+            parallel:
+                parallel:
+                    choice:
+                        xzoom 1.0
+                    choice:
+                        xzoom -1.0
+                parallel:
+                    choice:
+                        yzoom 1.0
+                    choice:
+                        yzoom -1.0
+            alpha 0.5
+            pause 0.02
+            repeat
+
+    image ts_intro_move_3:
+        contains:
+            "ts_class"
+            zoom 1.1 xalign 0.0 yalign 0.6 alpha 0.0
+            parallel:
+                ease 0.2 alpha 1.0
+            parallel:
+                linear 15.0 xalign 1.0 yalign 0.4
+        contains:
+            parallel:
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+            parallel:
+                parallel:
+                    choice:
+                        xzoom 1.0
+                    choice:
+                        xzoom -1.0
+                parallel:
+                    choice:
+                        yzoom 1.0
+                    choice:
+                        yzoom -1.0
+            alpha 0.5
+            pause 0.02
+            repeat
+
+    image ts_intro_move_4:
+        contains:
+            "ts_house"
+            zoom 1.1 xalign 0.0 yalign 0.6 alpha 0.0
+            parallel:
+                ease 0.2 alpha 1.0
+            parallel:
+                linear 15.0 xalign 1.0 yalign 0.4
+        contains:
+            parallel:
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+            parallel:
+                parallel:
+                    choice:
+                        xzoom 1.0
+                    choice:
+                        xzoom -1.0
+                parallel:
+                    choice:
+                        yzoom 1.0
+                    choice:
+                        yzoom -1.0
+            alpha 0.5
+            pause 0.02
+            repeat
+
 ###ЭФФЕКТ RTX ЛУЧЕЙ (БЛЯ БУДУ)
     image god_light:
         contains:

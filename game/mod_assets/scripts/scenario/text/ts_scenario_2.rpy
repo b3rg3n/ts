@@ -10,7 +10,7 @@ label ts_scenario_2:
     $ Chapter("Поиски. Юри")
     stop sound fadeout 7
     $ Chapter("Поиски. Юри")
-    play music ts_japan
+    play music ts_sirius
     scene ts_bedroom
     with ed_night_dis
 
@@ -392,7 +392,7 @@ label ts_scenario_2:
     "У меня есть реальные шансы собрать этот клуб, чтобы мы тоже могли готовиться к фестивалю."
 
     stop music
-    play sound nfy #WAKEUP_7DL ЕБАТЬ
+    play sound wakeup
 
     window hide
     show zatemnenie
@@ -408,7 +408,7 @@ label ts_scenario_2:
 
     m "Итак, дамы, собрание окончено! Завтра жду вас обеих в это же время."
 
-    play music ts_rm
+    play music ts_rem
 
     y 3n "О-обеих?"
     m "Ну... да? А что, что-то не так?"
@@ -439,15 +439,12 @@ label ts_scenario_2:
 
     stop music fadeout 3
 
-    $ text21 = "Посмотрим, как она «обрадуется» следующим заданиям от Юри." #ШРИФТ АДВЕНТУРЕ (Я САМ ПЫТАЛСЯ, ПОЛУЧИЛАСЬ ХУЙНЯ)
-    $ text22 = "Это ведь {b}далеко{/b} не самая сложная книга в мире." #И ВОТ ЭТО ТОЖЕ АДВЕНТУРЕ
-
     window hide
     show zatemnenie
-    show screen text_2
+    show screen scenario_2_double_text_suka
     pause
     hide zatemnenie
-    hide screen text_2
+    hide screen scenario_2_double_text_suka
 
     play sound pageflip
     scene ts_club
@@ -455,7 +452,7 @@ label ts_scenario_2:
     show sayori 1 at t22
     with wipeleft_scene
 
-    play music ts_dream
+    play music ts_dreams
 
     m "Тогда решено: каждый из нас идёт домой, прочтёт Маленького Принца, а затем, на собрании клуба, мы обсудим, что же хотел сказать автор!"
     s 2x "Отлично!"
@@ -654,7 +651,14 @@ label ts_scenario_2:
     "Это был не тихий и элегантный цветок лаванды."
     "Это был... совершенно другой человек."
     "Психически нездоровый человек."
-    "Впрочем, а {i}я{/i} когда-нибудь была психически здоровой?" #ВОТ ЭТО ЦЕНТЕРЕД ЕБАТЬ СО ШРИФТОМ ВИВАЛЬДИ СУКА
+
+    window hide
+    show zatemnenie
+    show screen scenario_2_onest_text_suka
+    pause
+    hide zatemnenie
+    hide screen scenario_2_onest_text_suka
+
     "Вся в порезах, вся в крови..."
 
     show yuri 1zf at t11
@@ -710,7 +714,9 @@ label ts_scenario_2:
     y 1x "П-после этого случая... мой внутренний голос начал твердить мне, что так мне и нужно."
     y "Что я на самом деле какая-то... дефектная..."
     y "Ч-что у меня так никогда и не будет никаких друзей..."
-    #stop music fadeout 4
+
+    stop music fadeout 4
+
     m "Уже есть."
 
     show yuri 3y at t11
@@ -718,7 +724,9 @@ label ts_scenario_2:
     y "Ч-что?"
     m "Я говорю, друзья у тебя уже есть."
     y 1zh "Теперь я не понимаю..."
-#PLAY MUSIC I DON'T BLAME YOU (ПО-МОЕМУ, У НАС ЕЁ ЕЩЁ НЕ БЫЛО)
+
+    play music ts_idby
+
     show yuri 1z at t11
     "Воодушевлённая тем, что я уместно прервала её монолог, я начинаю говорить."
 
@@ -759,7 +767,13 @@ label ts_scenario_2:
     hide zatemnenie
     hide screen chp_text_12
 
-    "Отстань уже, не видишь, девочка только плакать перестала, а ты опять нагнетаешь." #ЭТО ТОЖЕ ЦЕНТЕРЕД И ШРИФТОМ ВИВАЛЬДИ, ТИПО ВНУТРЕННИЙ ДИАЛОГ С ШИЗОЙ
+    window hide
+    show zatemnenie
+    show screen scenario_2_onest_text_suka1
+    pause
+    hide zatemnenie
+    hide screen scenario_2_onest_text_suka1
+
     "Так вот..."
 
     m "И в качестве основного правила я взяла то, что в моём клубе не будет слова «неправильно»."

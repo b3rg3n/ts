@@ -7,6 +7,7 @@ init:
     define mc = DynamicCharacter('user', what_prefix='"', what_suffix='"')
     define s = DynamicCharacter('s_name', image='sayori', what_prefix='"', what_suffix='"')
     define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suffix='"')
+    define em = DynamicCharacter('em_name', image='monika', what_prefix='"', what_suffix='"')
     define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"')
     define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"')
     define ny = Character('Нацуки и Юри', what_prefix='"', what_suffix='"')

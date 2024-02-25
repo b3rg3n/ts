@@ -17,4 +17,5 @@ init:
     default m_name = "Моника"
     default y_name = "Юри"
     default n_name = "Нацуки"
+    default em_name = glitchtext(12)
     default player = "[user]"

@@ -53,14 +53,12 @@ label ts_scenario_4:
     "готовила темы для следующих дискуссий, была своеобразным медиатором спора, занималась продвижением клуба, и так далее."
     "Так почему я не делаю ничего из этого сейчас, особенно когда я сама же говорила, что литература - это моё призвание?"
 
-    $ text1 = "Всё очень просто: ты мало того, что лентяйка, каких поискать надо, так ещё и лицемерка."
-
     window hide
     show zatemnenie
-    show screen text_1 #ШРИФТ АДВЕНТУРЕ И ПО ЦЕНТРУ, КАК В ПЕРВЫХ ТРЁХ ГЛАВАХ БЛЯТЬ БЫЛО
+    show screen scenario_4_onest_text_suka
     pause
     hide zatemnenie
-    hide screen text_1
+    hide screen scenario_4_onest_text_suka
 
     "Отгоняя прочь все негативные мысли, я наконец-то встаю с кровати и начинаю свою утреннюю рутину."
 
@@ -175,14 +173,12 @@ label ts_scenario_4:
     "И с учётом того, что он работает полный рабочий день, возможность хотя бы взглянуть на неё и понять, в чём именно проблема, у него будет не раньше субботы."
     "А если там что-то серьёзное, то это растянется на несколько недель..."
 
-    $ text1 = "Ты хотела сказать, {i}навсегда{/i}." #ШРИФТ АДВЕНТУРЕ СУКА БЛЯТЬ
-
     window hide
     show zatemnenie
-    show screen text_1
+    show screen scenario_4_onest_text_suka1
     pause
     hide zatemnenie
-    hide screen text_1
+    hide screen scenario_4_onest_text_suka1
 
     "И поэтому теперь он уходит намного раньше меня."
     "Что же, мне не привыкать к одиночеству..."
@@ -267,19 +263,18 @@ label ts_scenario_4:
 
             "Покашеварить":
                 hide zatemnenie with dspr
-                    #я тут полистал скрипты 7дл - там на самом деле всё это время были разные лейблы, поэтому на фронтенде и были возвраты при неудачных выборах. Каждый выбор - это отдельный лейбл
-                    #поэтому нам проще тупо добавить пару строк про то, что мол "да, позор с жареной картошкой получился, но я всё равно решаю чёта приготовить" и на этом всё
+                $ unluck4_cooking = True
+
                 "Тарелка с рисовой кашей так и осталась нетронутой."
                 if unluck3 == True:
                     "Несмотря на недавний позор с картошкой, я всё равно решаюсь что-нибудь приготовить."
                     "Что-нибудь попроще, повкуснее, и при этом не особо затратное по времени."
-                    "Гречка для этого вполне сгодится."
+
                 else:
                     "Я решаю приготовить себе кое-что более вкусное."
                     "Вкусное, но не особо затратное по времени."
-                    "Гречка для этого вполне подойдёт."
 
-                $ unluck4_cooking = True
+                "Гречка для этого вполне подойдёт."
 
                 play sound2 pageflip
                 scene ts_kitchen
@@ -1263,12 +1258,13 @@ label ts_scenario_4:
     show screen pizda_text4
     with dissolve
     pause
-    hide screen pizda_text4 with dissolve
-    #centered "А потом... {w=1}{nw}"
-
+    hide screen pizda_text4
+    show screen pizda_text41
+    with dissolve
+    pause 0.5
+    hide screen pizda_text41
 
 #САЙОРИ ЕБЁТ МОЗГИ
-#ТОЛЬКО ВСЁ ЭТО С ФЛЕШБЕЧНЫМ ФИЛЬТРОМ ЕБАТЬ
 
     window hide
     play music td
@@ -1422,14 +1418,14 @@ label ts_scenario_4:
     window hide
 
     play sound ["<silence 0.9>", "<to 0.75>mod_assets/source/audio/sfx/funeral/mscare.ogg"]
+    #play sound ["<silence 0.9>", "<to 0.75>mod_assets/source/audio/sfx/funeral/nejdan.ogg"]
     show monika_scare:
         alpha 0
         1.0
         0.1
-        linear 0.15 alpha 1.0
+        linear 0.15 alpha 1.0 pos (-0.8, -0.4) zoom 2.60
         0.30
-        linear 0.10 alpha 0
-        #И БЛЯТЬ КРУПНЫМ ПЛАНОМ ЕБУЧИЙ СКРЭМЕР, НЕ ПОМНЮ, КАК ЭТОТ ПАРАМЕТР ЕБУЧИЙ НАЗЫВАЕТСЯ, НО КОРОЧЕ ДА
+        linear 0.10 alpha 0 pos (0.0, 0.0) zoom 1.0
     pause 1.75
     hide monika_scare
     scene black
@@ -1482,61 +1478,90 @@ label ts_scenario_4:
     hide zatemnenie_light
 
     "{font=[ts_nvl_font2]}Ч... ч... что?"
-    #M "А ТЫ ВООБЩЕ КТО ТАКАЯ ЕБАТЬ?"
-    #SHOW MONIKA 3B AT T11
-    #EM "Я - [EM_NAME], ТВОЁ... ПОДСОЗНАНИЕ, ТВОЯ ИНТУИЦИЯ, НАЗЫВАЙ ЭТО КАК ХОЧЕШЬ. ЭТО Я БЫЛА, ДА И ОСТАЮСЬ, ТЕМ «ГОЛОСОМ ДУРНЫХ МЫСЛЕЙ»"
-    #SHOW MONIKA 1I AT T11
-    #EM "НО, В ОБЩЕМ, ДА, ВСЕХ ИХ УБИЛА ИМЕННО ТЫ"
 
-    #SHOW MONIKA 2N AT T11
+    if persistent.cens_mode == True:
+        m "А ты вообще кто такая, ебать?" with vpunch
+    else:
+        m "А ты вообще кто такая?" with vpunch
+
+    show monika 3b at t11
+
+    em "Я - [em_name], твоё...{w} Подсознание,{w=0.2} твоя интуиция...{w} Называй это как хочешь.{w} Это я была,{w=0.2} да и остаюсь,{w=0.2} тем - {w}«голосом дурных мыслей»."
+
+    show monika 1i at t11
+
+    em "Но,{w=0.2} да - {w}каждую из них убила именно ты." with vpunch
+
+    show monika 2n at t11
+
     window hide
     show zatemnenie_light
     show screen pizda_text6
     pause
     hide screen pizda_text6
-    #SHOW MONIKA 2I AT T11
+
+    show monika 2i at t11
+
     show screen pizda_text7
     pause
     hide screen pizda_text7
-    #SHOW MONIKA 2I AT T11
+
+    show monika 2i at t11
+
     show screen pizda_text8
     pause
     hide screen pizda_text8
-    #SHOW MONIKA 1G AT T11
+
+    show monika 1g at t11
+
     show screen pizda_text9
     pause
     hide screen pizda_text9
-    #SHOW MONIKA 1I AT T11
+
+    show monika 1i at t11
+
     show screen pizda_text10
     pause
     hide screen pizda_text10
-    #SHOW MONIKA 1G AT T11
+
+    show monika 1g at t11
+
     show screen pizda_text11
     pause
     hide screen pizda_text11
-    #SHOW MONIKA 3R AT T11
+
+    show monika 3r at t11
+
     show screen pizda_text12
     pause
     hide screen pizda_text12
-    #А ВОТ ТУТ УЖЕ ЦЕНТЕРЕД, ШРИФТОМ ИНКФРИ, МОЛ ЭТО САМА НАЦУКИ ГОВОРИТ
+
     show screen pizda_text13
     pause
     hide screen pizda_text13
-    #SHOW MONIKA 2P AT T11
+
+    show monika 2p at t11
+
     show screen pizda_text14
     pause
     hide screen pizda_text14
-    #SHOW MONIKA 4N AT T11
+
+    show monika 4n at t11
+
     show screen pizda_text15
     pause
     hide screen pizda_text15
     hide zatemnenie_light
-#SHOW MONIKA 4M AT T11
+
+    show monika 4m at t11
+
     "Нет..."
 
     window hide
     show zatemnenie_light
-    #SHOW MONIKA 5B AT T11
+
+    show monika 5b at t11
+
     show screen pizda_text16
     pause
     hide screen pizda_text16
@@ -1547,7 +1572,13 @@ label ts_scenario_4:
     "Зачем мне вообще их убивать? Или доводить до самоубийства?!"
     "Все же было так хорошо..."
     "И будет хорошо..."
-    #SHOW MONIKA AT THIDE
-    #HIDE MONIKA
+
+    window hide
+    show monika at thide
+    hide monika
+    pause 1
+    stop music fadeout 4
+    scene black with dissolve4
+    pause 4
 
     return

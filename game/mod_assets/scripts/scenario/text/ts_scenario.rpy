@@ -7,7 +7,7 @@ label ts_scenario_0:
     scene black
     with ed_night_dis
     pause 1
-    play music ts_mutter fadein 4 #Лучше песню Remembrances или Memories, шоб логичнее было, типо воспоминания из детства. Да и Муттер просто какой-то сильно громкий в припевах
+    play music ts_mutter fadein 4
     scene ts_house
     show zatemnenie
     show dust1
@@ -18,7 +18,7 @@ label ts_scenario_0:
     $ Chapter("Предыстория")
     pause 0.5
     hide zatemnenie
-    nvlbazar "{font=[ts_nvl_font2]}Конечно же, всё начиналось совсем по-другому…" #Шрифт бы на пару размерчиков больше. оно конечно и так всё видно (мне по крайней мере), но лучше всё же да
+    nvlbazar "{font=[ts_nvl_font2]}Конечно же, всё начиналось совсем по-другому…"
     nvlbazar "{font=[ts_nvl_font2]}Всё начиналось, как у остальных людей: родилась, пошла в школу, выучилась… Правда, не до конца, но всё же."
     nvlbazar "{font=[ts_nvl_font2]}С самого детства взрослые называли меня «одарённой девочкой»."
     nvlbazar "{font=[ts_nvl_font2]}Что во мне такого «одарённого»? В ранние годы я не понимала. Но, как говорится, «кто я такая, чтобы спорить со взрослыми?»."
@@ -425,35 +425,33 @@ label ts_scenario_0:
     $ renpy.pause(1.1, hard=True)
     stop sound
     scene black
-    play music ts_intro_ebat
+    play music ts_soft fadein 4
     pause 2
-    scene ts_intro_1
+    scene ts_intro_move_1
     show zatemnenie
-    show layer master at heartbeat
+    #show layer master at heartbeat
     with ed_night_dis
     $ Chapter("TEAM АНАРХИСТЫ")
     $ Chapter("ПРЕДСТАВЛЯЮТ")
-    scene ts_intro_2
+    scene ts_intro_move_2
     show zatemnenie
-    show layer master at heartbeat
+    #show layer master at heartbeat
     with ed_night_dis
     $ Chapter("МОДИФИКАЦИЮ")
     $ Chapter("ДЛЯ DDLC")
-    scene ts_intro_3
-    show ts_rain
-    show ts_intro_31
+    scene ts_intro_move_3
     show zatemnenie
-    show layer master at heartbeat
+    #show layer master at heartbeat
     with ed_night_dis
     $ Chapter("TRUE STORY")
-    scene ts_intro_4
+    scene ts_intro_move_4
     show zatemnenie
-    show layer master at heartbeat
+    #show layer master at heartbeat
     with ed_night_dis
     $ Chapter("ПРИЯТНОГО ЧТЕНИЯ")
     stop music
     play sound br_glitch
-    show ts_intro_4 as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    show ts_house as bg1 at br_glitches(_fps=160, glitch_strength=1)
     $ renpy.pause(1.1, hard=True)
     stop sound
 

@@ -161,9 +161,9 @@ label ts_scenario_3:
     "Но, как говорится, меньше знаешь - крепче спишь. А, соответственно, больше знаешь - спишь меньше."
     "В первую ночь мне даже снились кошмары про Юри."
 
-    scene ts_club #ПЕРЕХОД ЧУТЬ БЫСТРЕЕ, ДО ТРЁХ СЕКУНД, НУ МАКСИМУМ ЧЕТЫРЕ
+    scene ts_club
     show yuri 3y1 at i11
-    with ed_night_dis
+    with dissolve3
 
     play music audio.t10y
     show layer master at heartbeat
@@ -241,12 +241,12 @@ label ts_scenario_3:
 
     "А затем, что бы я ни ответила, Юри убивает себя ножом. Дважды в живот, и ещё один раз - в грудь."
 
-    window hide #ВОЗВРАТ В РЕАЛЬНОСТЬ БЫТИЯ ДОЛЖЕН БЫТЬ ГОРАЗДО РЕЗЧЕ, НУ ТЫ КОГДА ИРЛ ПРОСЫПАЕШЬСЯ ОТ КОШМАРА, ТЕБЕ ЖЕ НЕ НУЖНО СНАЧАЛА ПРОМОРГАТЬСЯ И ВСЁ ТАКОЕ, ЭТО РЕФЛЕКТОРНО ЕБАТЬ ПРОИСХОДИТ
+    window hide
     play sound ssikanul
-    scene black with vpunch
-    pause 1
     scene ts_darkbed
-    show unblink
+    show overlay aw_memory_back_1
+    with vpunch
+    pause 1
 
     "А затем я просыпаюсь."
     "Что это вообще было?"
@@ -254,9 +254,11 @@ label ts_scenario_3:
     "Она как будто не видела не то, что меня или остальных, она даже себя саму с трудом различить смогла бы, с такими-то глазами берсерка!"
     "Ничего не понимаю..."
 
-    play music audio.t2 #ВОТ КАК ЗДЕСЬ ЕБАТЬ
+    play sound fb
+    play music audio.t2
     scene ts_kitchen
     show hiroto 1h at t11
+    with flash
 
     ts_ft "Моника?"
     ts_ft 1q "Земля вызывает Монику, как слышно?"
@@ -1050,8 +1052,9 @@ label ts_scenario_3:
     "Литература - это моё призвание, моя страсть. И я ни за какие коврижки не променяю литературу и этот клуб на что-либо ещё."
     "..."
 
-    play sound ssikanul #WAKEUP_7DL
+    play sound wakeup
     stop music
+    pause 1
     scene ts_club
     show sayori 2q at t33
     with vpunch
@@ -1329,7 +1332,14 @@ label ts_scenario_3:
     "Неважно, сколько тебе лет, ты вправе читать что-угодно, что тебе в голову взбрендит..."
     "..."
     "Нет, это неправильно... Звучит так, как будто я и сама не особо одобряю мангу."
-    "Впрочем, я же и так её не особо одобряю..." #ВОТ В ЭТОЙ СТРОКЕ БУДЕТ ЦЕНТЕРЕД СО ШРИФТОМ ВИВАЛЬДИ
+
+    window hide
+    show zatemnenie
+    show screen scenario_3_onest_text_suka
+    pause
+    hide zatemnenie
+    hide screen scenario_3_onest_text_suka
+
     "Мне по душе классические книги, где есть много слов и мало картинок, а не наоборот."
 
     stop music fadeout 3
@@ -1345,8 +1355,10 @@ label ts_scenario_3:
     play sound2 door_open
     scene ts_vhod_nolight
     pause 0.5
-    with flash
-    #ЗДЕСЬ БУДЕТ ЭС ЭФ ИКС ВКЛЮЧЕНИЯ СВЕТА
+    with dspr
+    
+    play sound svet_on
+
     scene ts_vhod_night
     with flash
 

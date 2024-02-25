@@ -4,14 +4,14 @@ label ts_scenario_1:
     scene black
     pause 2
     play sound chp1
-    $ Chapter("АКТ ПЕРВЫЙ") #Может, не такую дёрганую и нервную хуйню лучше юзнуть?
+    $ Chapter("АКТ ПЕРВЫЙ")
     $ Chapter("АКТ ПЕРВЫЙ")
     $ Chapter("глава первая")
     $ Chapter("глава первая")
     $ Chapter("Поиски. Сайори")
     stop sound fadeout 7
     $ Chapter("Поиски. Сайори")
-    play music ts_rm
+    play music ts_rem
     scene ts_club
     with ed_night_dis
 
@@ -559,7 +559,7 @@ label ts_scenario_1:
     "Или же девочка в неизлечимой депрессии с «серыми тучками»?"
     "Что же, надеюсь, что эти «серые тучки» наконец рассеются, и наконец принесут нам обеим радугу…"
 
-    play music ts_rm
+    play music ts_rem
 
     window hide
     scene ts_club
@@ -678,7 +678,7 @@ label ts_scenario_1:
     "Впрочем, на ещё один задушевный разговор у нас уже просто не хватает времени."
     "Потому что уже начинает темнеть."
 
-    play music ts_gluhar
+    play music ts_dreams
 
     play sound pageflip
     scene ts_street_late

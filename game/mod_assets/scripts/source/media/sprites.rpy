@@ -568,6 +568,9 @@ image natsuki 1w = im.Composite((960, 960), (0, 0), "mod_assets/source/images/sp
 image natsuki 1x = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/x.webp")
 image natsuki 1y = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/y.webp")
 image natsuki 1z = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/z.webp")
+image natsuki 1za = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/za.png")
+image natsuki 1zb = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/zb.png")
+image natsuki 1zc = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/zc.png")
 
 image natsuki 21 = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1t.webp")
 image natsuki 2a = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/a.webp")
@@ -596,6 +599,9 @@ image natsuki 2w = im.Composite((960, 960), (0, 0), "mod_assets/source/images/sp
 image natsuki 2x = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/x.webp")
 image natsuki 2y = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/y.webp")
 image natsuki 2z = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/z.webp")
+image natsuki 2za = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/za.png")
+image natsuki 2zb = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/zb.png")
+image natsuki 2zc = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/zc.png")
 
 image natsuki 31 = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1t.webp")
 image natsuki 3a = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/a.webp")
@@ -624,6 +630,9 @@ image natsuki 3w = im.Composite((960, 960), (0, 0), "mod_assets/source/images/sp
 image natsuki 3x = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/x.webp")
 image natsuki 3y = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/y.webp")
 image natsuki 3z = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/z.webp")
+image natsuki 3za = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/za.png")
+image natsuki 3zb = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/zb.png")
+image natsuki 3zc = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/zc.png")
 
 image natsuki 41 = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1t.webp")
 image natsuki 4a = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/a.webp")
@@ -652,6 +661,9 @@ image natsuki 4w = im.Composite((960, 960), (0, 0), "mod_assets/source/images/sp
 image natsuki 4x = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/x.webp")
 image natsuki 4y = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/y.webp")
 image natsuki 4z = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/z.webp")
+image natsuki 4za = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/za.png")
+image natsuki 4zb = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/zb.png")
+image natsuki 4zc = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/2l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/zc.png")
 
 image natsuki 12 = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2t.webp")
 image natsuki 12a = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/natsuki/1l.webp", (0, 0), "mod_assets/source/images/spr/natsuki/1r.webp", (0, 0), "mod_assets/source/images/spr/natsuki/2ta.webp")
@@ -702,6 +714,9 @@ image natsuki 5w = im.Composite((960, 960), (18, 22), "mod_assets/source/images/
 image natsuki 5x = im.Composite((960, 960), (18, 22), "mod_assets/source/images/spr/natsuki/x.webp", (0, 0), "mod_assets/source/images/spr/natsuki/3.webp")
 image natsuki 5y = im.Composite((960, 960), (18, 22), "mod_assets/source/images/spr/natsuki/y.webp", (0, 0), "mod_assets/source/images/spr/natsuki/3.webp")
 image natsuki 5z = im.Composite((960, 960), (18, 22), "mod_assets/source/images/spr/natsuki/z.webp", (0, 0), "mod_assets/source/images/spr/natsuki/3.webp")
+image natsuki 5za = im.Composite((960, 960), (18, 22), "mod_assets/source/images/spr/natsuki/za.webp", (0, 0), "mod_assets/source/images/spr/natsuki/3.webp")
+image natsuki 5zb = im.Composite((960, 960), (18, 22), "mod_assets/source/images/spr/natsuki/zb.webp", (0, 0), "mod_assets/source/images/spr/natsuki/3.webp")
+image natsuki 5zc = im.Composite((960, 960), (18, 22), "mod_assets/source/images/spr/natsuki/zc.webp", (0, 0), "mod_assets/source/images/spr/natsuki/3.webp")
 
 
 
@@ -1621,7 +1636,7 @@ image kaori 23z = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr
 image kaori 23za = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/hime/3.png", (0, 0), "mod_assets/source/images/spr/hime/za.png")
 image kaori 23zb = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/hime/3.png", (0, 0), "mod_assets/source/images/spr/hime/zb.png")
 
-####################################ЕБУЧАЯ МАМА МОНИКИ, КОТОРАЯ ПОЯВЛЯЕТСЯ ПОЛТОРА РАЗА ЗА ВЕСЬ СЮЖЕТ НАХУЙ
+####################################ЕБУЧАЯ МАМА МОНИКИ, КОТОРАЯ ПОЯВЛЯЕТСЯ ПОЛТОРА РАЗА ЗА ВЕСЬ СЮЖЕТ НАХУЙ, И КОТОРУЮ ЗВАТЬ БУДУТ МИНАМИ
 image momika 1 = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/bug/1l.png", (0, 0), "mod_assets/source/images/spr/bug/1r.png", (0, 0), "mod_assets/source/images/spr/bug/a.png")
 image momika 2 = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/bug/1l.png", (0, 0), "mod_assets/source/images/spr/bug/2r.png", (0, 0), "mod_assets/source/images/spr/bug/a.png")
 image momika 3 = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/bug/2l.png", (0, 0), "mod_assets/source/images/spr/bug/1r.png", (0, 0), "mod_assets/source/images/spr/bug/a.png")

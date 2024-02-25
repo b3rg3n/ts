@@ -174,7 +174,6 @@ init -501 screen main_menu:
 
     modal True tag menu
 
-    #text "{size=+25}{font=[cit_font]}TRUE STORY{/font}{/size}" ypos 285 xpos 75
     textbutton ("{size=+15}Сойти с ума{/size}") ypos 342 xpos 75:
         action Start()
         activate_sound start_sound_suka

@@ -1,3 +1,5 @@
+#ВОТ ЭТО ВОТ ВСЁ ЕБАТЬ НЕ ВСЕЙ СТРОКОЙ СРАЗУ, А РЕАЛИСТИЧНЕЕ ЧУТЬ-ЧУТЬ, НУ ТАМ CPS 40 ИЛИ 50, НУ БЛЯ НЕ ВСЯ СТРОКА СРАЗУ
+
 screen alko_text1:
     text "{size=+15}{font=[sc_font]}Это...{/font}{/size}" yalign 0.5 xalign 0.5
 
@@ -8,7 +10,7 @@ screen alko_text3:
     text "{size=+15}{font=[ts_nvl_font2]}...такое?..{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen alko_text4:
-    text "{size=+15}{font=[shl_font]}Как это что? Вино, что же ещё.{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+25}{font=[shl_font]}Как это что? Вино, что же ещё.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen alko_text5:
     text "{size=+15}{font=[ts_nvl_font2]}Что-то мне это напоминает... Правда, слова не совсем правильно подобрать могу...{/font}{/size}" yalign 0.5 xalign 0.5
@@ -26,7 +28,7 @@ screen pizda_text3:
     text "{size=+15}{font=[ts_nvl_font2]}И ладно бы просто упала... Я ещё зацепилась за край стола. Дважды.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen pizda_text4:
-    text "{size=+15}{font=[ts_nvl_font2]}Не знаю, как можно быть настолько невезучей, чтобы упасть дважды о два разных стола с одинаковой высотой, но получилось как получилось.{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[ts_nvl_font2]}Не знаю, как можно быть настолько невезучей,\nчтобы упасть о два одинаковых стола с одинаковой высотой,\nно получилось как получилось.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen pizda_text5:
     text "{size=+15}{font=[adv_font]}Мне жаль это признавать, но сделала это всё именно ты...{/font}{/size}" yalign 0.5 xalign 0.5
@@ -44,7 +46,7 @@ screen pizda_text9:
     text "{size=+15}{font=[adv_font]}А ты, вместо того, чтобы отговаривать её от этого или убеждать сходить к психиатру, только подначивала её.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen pizda_text10:
-    text "{size=+15}{font=[adv_font]}И это продолжалось до того момента, как у неё совсем поехала крыша, что ей показалось, что резания вен мало.{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[adv_font]}И это продолжалось до того момента, пока у неё совсем не поехала крыша, и ей не показалось, что простого резания вен мало.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen pizda_text11:
     text "{size=+15}{font=[adv_font]}И она пошла на крайние меры путём нанесения себе смертельных ножевых ранений. Спасти её не удалось.{/font}{/size}" yalign 0.5 xalign 0.5
@@ -59,7 +61,7 @@ screen pizda_text14:
     text "{size=+15}{font=[adv_font]}И свернула себе шею. Тоже насмерть.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen pizda_text15:
-    text "{size=+15}{font=[adv_font]}Конечно, твоей прямой вины в этом нет... Но есть вина косвенная. Ведь именно ты подначивала всех её подруг насмехаться над ней.{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[adv_font]}Конечно, в этом твоей прямой вины нет... Но есть вина косвенная. Ведь именно ты подначивала всех её подруг насмехаться над ней.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen pizda_text16:
     text "{size=+15}{font=[adv_font]}Ну как же нет, если да?{/font}{/size}" yalign 0.5 xalign 0.5
@@ -84,10 +86,10 @@ screen chp_text_6:
     text "{size=+15}{font=[ts_nvl_font2]}Какой же охуенный клуб мы открыли...{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_7:
-    text "{size=+15}{font=[ts_nvl_font2]}Какой же ох*енный клуб мы открыли...{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[ts_nvl_font2]}Какой же классный клуб мы открыли...{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_8:
-    text "{size=+15}{font=[ts_nvl_font2]}Ну-у-у... или чуть больше...{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[adv_font]}Ну-у-у... или чуть больше...{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_9:
     text "{size=+15}{font=[adv_font]}Очнись, у тебя девочка слезами захлёбывается, а ты просто стоишь и ничерта не делаешь!{/font}{/size}" yalign 0.5 xalign 0.5
@@ -135,10 +137,10 @@ screen chp_text_23:
     text "{size=+15}{font=[ts_nvl_font2]}Но там, где есть белая полоса, обязательно будет и чёрная...{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_24:
-    text "{size=+15}{font=[ts_nvl_font2]}Если бы я только знала, что этого самого фестиваля так никогда и не будет...{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[adv_font]}Если бы ты только знала, что этого самого фестиваля так никогда и не будет...{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_25:
     text "{size=+15}{font=[ts_nvl_font2]}Ну и проблемы: у каждой из девочек есть общие со мной проблемы.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_26:
-    text "{size=+15}{font=[ts_nvl_font2]}Пусть эта искренность и не была столь уж и искренней...{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[ts_nvl_font2]}Пусть, как оказалось, эта искренность не была столь уж и искренней...{/font}{/size}" yalign 0.5 xalign 0.5

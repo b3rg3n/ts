@@ -8,6 +8,7 @@ label ts_start:
     $ unluck4_reading = False
     $ unluck4_cooking = False
 
+    $ unluck_ball = 0 # ОБЩИЕ БАЛЛЫ АНЛАКА БЛЯ
 
     if persistent.scenario_proshel_blya == True:
         call screen scenario_start_change_chapter with dissolve2
@@ -69,6 +70,7 @@ label ts_chapter_three_changes: # ВЫБОРЫ ПЕРЕД ТРЕТЬЕЙ ГЛА�
 
     menu:
         "Посмотреть в других классах":
+            $ unluck_ball += 1
             $ unluck = True
         "Идти вперёд":
             pass
@@ -100,6 +102,7 @@ label ts_chapter_four_changes: # ВЫБОРЫ ПЕРЕД ЧЕТВЁРТОЙ ГЛ
     menu:
         "Посмотреть в других классах":
             $ unluck = True
+            $ unluck_ball += 1
         "Идти вперёд":
             pass
 
@@ -111,6 +114,7 @@ label ts_chapter_four_changes: # ВЫБОРЫ ПЕРЕД ЧЕТВЁРТОЙ ГЛ
     menu:
         "Искать дальше":
             $ unluck2 = True
+            $ unluck_ball += 1
         "Успокоиться и вернуться":
             pass
 
@@ -122,6 +126,7 @@ label ts_chapter_four_changes: # ВЫБОРЫ ПЕРЕД ЧЕТВЁРТОЙ ГЛ
     menu:
         "Пожарить":
             $ unluck3 = True
+            $ unluck_ball += 1
         "Сварить":
             pass
 
@@ -152,6 +157,7 @@ label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
     menu:
         "Посмотреть в других классах":
             $ unluck = True
+            $ unluck_ball += 1
         "Идти вперёд":
             pass
 
@@ -163,6 +169,7 @@ label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
     menu:
         "Искать дальше":
             $ unluck2 = True
+            $ unluck_ball += 1
         "Успокоиться и вернуться":
             pass
 
@@ -174,6 +181,7 @@ label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
     menu:
         "Пожарить":
             $ unluck3 = True
+            $ unluck_ball += 1
         "Сварить":
             pass
 
@@ -187,6 +195,7 @@ label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
             pass
         "Ещё немного посидеть":
             $ unluck4 = True
+            $ unluck_ball += 1
             menu:
                 "Посмотреть телевизор":
                     $ unluck4_telek = True
@@ -200,7 +209,7 @@ label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
     scene black
     with flash
     pause 2
-    
+
     show screen scenario_start_change_chapter_one1 with dissolve2
     pause 1
     hide screen scenario_start_change_chapter_one1 with dissolve2

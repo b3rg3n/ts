@@ -206,6 +206,7 @@ label ts_scenario_4:
             hide zatemnenie with dspr
         "Ещё немного посидеть":
             $ unluck4 = True
+            $ unluck_ball += 1
             hide zatemnenie with dspr
 
     if unluck4 == True:

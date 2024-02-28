@@ -543,6 +543,7 @@ label ts_scenario_2:
     menu:
         "Посмотреть в других классах":
             $ unluck = True
+            $ unluck_ball += 1
             hide zatemnenie with dspr
         "Идти вперёд":
             hide zatemnenie with dspr

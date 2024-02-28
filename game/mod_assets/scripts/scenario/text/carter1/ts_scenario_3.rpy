@@ -778,6 +778,7 @@ label ts_scenario_3:
     menu:
         "Искать дальше":
             $ unluck2 = True
+            $ unluck_ball += 1
             hide zatemnenie with dspr
         "Успокоиться и вернуться":
             hide zatemnenie with dspr
@@ -1402,6 +1403,7 @@ label ts_scenario_3:
     menu:
         "Пожарить":
             $ unluck3 = True
+            $ unluck_ball += 1
             hide zatemnenie with dspr
         "Сварить":
             hide zatemnenie with dspr

@@ -34,20 +34,28 @@ screen sr_set_end_shit_blya: #ПОЯСНЕНИЕ ХУЙНИ ТЕКСТ
 
 label start: # ТУТ НАЧИНАЕТСЯ ПИЗДЕЦ
     play sound aw_knife_slash_1
-#ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
-    python:
+    python: #ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
         from time import localtime, strftime
         t = strftime("%H:%M:%S", localtime())
         hour, min, sec = t.split(":")
         hour = int(hour)
-#НОЧЬ
-    if hour in [20,21,22,23,24,0,1,2,3,4,5,6]:
-        scene ts_menu_vid_night
-        show zatemnenie_light
-#ДЕНЬ
-    elif True:
-        scene ts_menu_vid
-        show zatemnenie_light
+    if persistent.carter2menu == True: #МЕНЮШКА КАРТЕРА 2
+        if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+            scene ts_menu_art_carter2_night
+            show ts_rain
+            show zatemnenie_light
+        elif True: #ДЕНЬ
+            scene black
+            show ts_menu_move_anim
+            show ts_rain
+            show zatemnenie_light
+    else: #МЕНЮШКА КАРТЕРА 1
+        if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+            scene ts_menu_vid_night
+            show zatemnenie_light
+        elif True: #ДЕНЬ
+            scene ts_menu_vid
+            show zatemnenie_light
     show altbloodanim
     pause 0.6
     play sound aw_knife_slash_2

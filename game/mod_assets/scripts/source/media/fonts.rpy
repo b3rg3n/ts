@@ -10,3 +10,5 @@ init:
     define shl_font = "mod_assets/source/fonts/SHLAPAKSCRIPT.otf"
     define ink_font = "mod_assets/source/fonts/INKFREE.ttf"
     define sc_font = "mod_assets/source/fonts/SCOTCH.ttf"
+    define ts_main_font_hueta = "mod_assets/source/fonts/2.ttf"
+    

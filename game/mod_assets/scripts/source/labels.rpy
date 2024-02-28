@@ -6,9 +6,13 @@ init:
     default persistent.bazarbig = False
     default persistent.cens_mode = True
 
+###МЕНЮШКИ
+    default persistent.carter2menu = False
+
 ###ПЕРЕМЕННЫЕ СКИПИНГА
     default persistent.zastavka_skip = False
     default persistent.skip_splash = False
+    default persistent.scenario_proshel_blya = True
 
 ###ИМЕНА
     default teacher_name = "Учитель"

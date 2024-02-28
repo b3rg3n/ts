@@ -6,26 +6,34 @@ label main_menu:
     stop sound fadeout 3
     stop music fadeout 3
     window hide
-#ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
-    python:
+    python: #ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
         from time import localtime, strftime
         t = strftime("%H:%M:%S", localtime())
         hour, min, sec = t.split(":")
         hour = int(hour)
-#НОЧЬ
-    if hour in [20,21,22,23,24,0,1,2,3,4,5,6]:
-#MUZZON
-        play music ts_menu_night_ost fadein 5
-        scene ts_menu_vid_night
-        show zatemnenie_light
-#ДЕНЬ
-    elif True:
-        play music ts_wmm fadein 5
-        scene ts_menu_vid
-        show zatemnenie_light
-#ВЫЗЫВАЕМ МЕНЮ
+    if persistent.carter2menu == True: #МЕНЮШКА КАРТЕРА 2
+        if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+            play music ts_angel fadein 5
+            scene ts_menu_art_carter2_night
+            show ts_rain
+            show zatemnenie_light
+        elif True: #ДЕНЬ
+            play music ts_ora fadein 5
+            scene black
+            show ts_menu_move_anim
+            show ts_rain
+            show zatemnenie_light
+    else: #МЕНЮШКА КАРТЕРА 1
+        if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+            play music ts_menu_night_ost fadein 5
+            scene ts_menu_vid_night
+            show zatemnenie_light
+        elif True: #ДЕНЬ
+            play music ts_wmm fadein 5
+            scene ts_menu_vid
+            show zatemnenie_light
     with Fade(1.5, 1, 2)
-    call screen main_menu
+    call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
 
 label splashscreen:
 #УСТАНОВКА ГРОМКОСТИ И ПРОВЕРКА НА СПЛЕШ

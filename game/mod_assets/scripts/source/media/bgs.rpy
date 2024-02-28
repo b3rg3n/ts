@@ -34,6 +34,7 @@
     image ts_street_late = "mod_assets/source/images/bg/street_late.webp"
     image ts_vhod_night = "mod_assets/source/images/bg/entrance_night.webp"
     image ts_vhod_nolight = "mod_assets/source/images/bg/entrance_nolight.webp"
+    image ts_city_day = "mod_assets/source/images/bg/city_day.webp"
 
 ###ЗАБЛЮРЕНО НАХОЙ
     image ts_club_blur = im.Blur("mod_assets/source/images/bg/club.webp", 3.0)

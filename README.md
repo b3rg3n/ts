@@ -7,7 +7,5 @@
 Для компиляции использовать последнюю версию движка RenPy.
 
 # All Rights Reserved:
-
-# Team Salvato (c) - Original Game
-
-# Team Anarchy (c) - Mod Source
+1. Team Salvato (c) - Original Game
+2. Team Anarchy (c) - Mod Source

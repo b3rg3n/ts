@@ -1,0 +1,19 @@
+# Useless files
+game/cache/
+game/saves/
+game/tl/
+game/mod_assets/scripts/.vscode/
+game/cache/shaders.txt
+log.txt
+traceback.txt
+errors.txt
+error.txt
+android.json
+android.keystore
+bundle.keystore
+project.json
+*.rpyc
+*.rpyb
+*.rpym
+*.rpymc
+*.save

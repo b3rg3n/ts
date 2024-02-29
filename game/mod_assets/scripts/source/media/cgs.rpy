@@ -1,3 +1,7 @@
+# TRUE STORY CG's
+# by @b3rg3n
+# Since 2024
+
 init:
 ###ЦГ
     image ts_anarchy = Image("mod_assets/source/images/intro/anarchy.webp")
@@ -11,18 +15,3 @@ init:
 
     image mon_piano = "mod_assets/source/images/cg/mon_piano.webp"
     image mon_piano_start = "mod_assets/source/images/cg/mon_piano_start.webp"
-
-    image vse_pizda_monike:
-        "mod_assets/source/images/cg/brg_kolhoz_blya/s1.png" with poplil_pacan1
-        pause 5
-        "mod_assets/source/images/cg/brg_kolhoz_blya/1a.webp" with poplil_pacan1
-        pause 5
-        "mod_assets/source/images/cg/brg_kolhoz_blya/n_cg2_bg.webp" with poplil_pacan1
-        pause 5
-        "mod_assets/source/images/cg/brg_kolhoz_blya/monika_scare.webp" with poplil_pacan1
-        pause 5
-        "mod_assets/source/images/cg/brg_kolhoz_blya/s2.png" with poplil_pacan1
-        pause 5
-        "mod_assets/source/images/cg/brg_kolhoz_blya/3b.webp" with poplil_pacan1
-        pause 5
-        repeat

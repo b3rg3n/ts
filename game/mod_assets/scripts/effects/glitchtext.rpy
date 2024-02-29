@@ -1,3 +1,7 @@
+# DDLC GLITCHTEXT EFFECT
+# by @dansalvato
+# since 2024
+
 init python:
     import random
 

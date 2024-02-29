@@ -1,5 +1,7 @@
+# ТУТ ЛЕЖИТ ФИЧА СКИПА ТЕКСТА ДО НУЖНОЙ ГЛАВЫ БЛЯ
+
 label ts_start:
-###ТУТ ПОКОЯЦЦА ПЕРЕМЕННЫЕ БЛЕАДЬ
+###ТУТ ПОКОЯТСЯ ПЕРЕМЕННЫЕ БЛЯТЬ
     $ unluck = False
     $ unluck2 = False
     $ unluck3 = False
@@ -10,13 +12,13 @@ label ts_start:
 
     $ unluck_ball = 0 # ОБЩИЕ БАЛЛЫ АНЛАКА БЛЯ
 
-    if persistent.scenario_proshel_blya == True:
+    if persistent.scenario_proshel_blya == True: # ПРОВЕРКА НА ПРОЙДЕННУЮ ИГРУ
         call screen scenario_start_change_chapter with dissolve2
         return
     else:
         jump ts_scenario_0
 
-screen scenario_start_change_chapter:
+screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
 
     modal True tag ts_chng_two
     text "{size=+20}{font=[ts_main_font_hueta]}{color=#FF0000}Начнём сначала? Или выберешь главу?{/color}{/font}{/size}" yalign 0.1 xalign 0.5
@@ -217,8 +219,8 @@ label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
 
     jump ts_scenario_5
 
-screen scenario_start_change_chapter_one:
+screen scenario_start_change_chapter_one: # ВАРНИНГ ХУЙНИ
     text "{size=+15}{font=[ts_main_font_hueta]}Сделай нужные выборы.{/font}{/size}" yalign 0.5 xalign 0.5
 
-screen scenario_start_change_chapter_one1:
+screen scenario_start_change_chapter_one1: # ВАРНИНГ ХУЙНИ 2
     text "{size=+15}{font=[ts_main_font_hueta]}Направляемся в нужное место.{/font}{/size}" yalign 0.5 xalign 0.5

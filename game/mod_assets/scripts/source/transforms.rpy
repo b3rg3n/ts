@@ -1,6 +1,8 @@
-#TRUE STORY TRANSFORMS
-#by @b3rg3n
-#Since 2024
+# TRUE STORY TRANSFORMS
+# ПОЧТИ ВСЕ ИЗ ОРИГА ДОКИЧЕЙ
+# by @b3rg3n & @dansalvato
+# Since 2024
+
 init:
 
     transform camera_zoom:

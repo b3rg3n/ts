@@ -1,3 +1,8 @@
+# TRUE STORY CG's
+# ПОЧТИ ВСЁ - ИЗ ОРИГА ДОКИЧЕЙ
+# by @b3rg3n & @dansalvato
+# Since 2024
+
 image exception_bg = "#dadada"
 image fake_exception = Text("Произошла ошибка.", size=40, style="_default")
 image fake_exception2 = Text("File \"game/script-ch5.rpy\", line 307\nSee traceback.txt for details.", size=20, style="_default")

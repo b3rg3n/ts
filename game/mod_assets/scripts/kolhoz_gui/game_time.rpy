@@ -1,3 +1,9 @@
+# ЭТА ДРОЧЬ ИСПОЛЬЗУЕТСЯ ДЛЯ ПРОСЧЁТА ВРЕМЕНИ
+# СКОЛЬКО УЖЕ СХОДИШЬ С УМА
+# УДАЛЯЕТСЯ ВМЕСТЕ С ПОСТОЯННЫМИ ДАННЫМИ
+# by @b3rg3n
+# since 2024
+
 init python:
     import datetime
     persistent.game_last_time = datetime.datetime.now()

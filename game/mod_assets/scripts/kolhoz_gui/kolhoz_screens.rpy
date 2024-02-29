@@ -1,6 +1,8 @@
-#TRUE STORY SCREENS
-#by @b3rg3n
-#Since 2024
+# TRUE STORY SCREENS
+# ТУТ ЛЕЖИТ ВЕСЬ МОЙ КРАФТОВЫЙ GUI KOLHOZ STYLE БЛЯ
+# by @b3rg3n
+# Since 2024
+
 init -1 python:
     renpy.music.register_channel("menu_zvuk", "sfx", False)
 

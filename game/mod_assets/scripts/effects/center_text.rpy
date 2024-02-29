@@ -1,3 +1,7 @@
+# TRUE STORY HUETA TEXT METHOD
+# By @b3rg3n
+# since 2024
+
 # ШОП ПО ЦЕНТРУ ЕБАШИЛО БЛЯ
 init:
     default text1 = ""

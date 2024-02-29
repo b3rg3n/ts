@@ -1,3 +1,7 @@
+# DDLC ORIGINAL MUSIC DEFINES
+# by @dansalvato
+# Since 2024
+
 define audio.t1 = "<loop 22.073>mod_assets/source/audio/ost/orig/1.ogg"
 define audio.t2 = "<loop 4.499>mod_assets/source/audio/ost/orig/2.ogg"
 define audio.t2g = "mod_assets/source/audio/ost/orig/2g.ogg"

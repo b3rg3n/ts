@@ -1,5 +1,6 @@
 # TRUE STORY SPRITES
 # ALL RIGHTS RESERVED
+# ЕСЛИ БЛЯ ВОПРОСЫ ЕСТЬ - ПИШИ БЕРГЕНЧИКУ - ОН УКАЖЕТ АВТОРСТВО
 # TEAM ANARCHY (c)
 # SINCE 2024
 

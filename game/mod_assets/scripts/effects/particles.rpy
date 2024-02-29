@@ -1,6 +1,8 @@
-#TRUE STORY PARTICLES
-#by @b3rg3n & @retroboy & @dansalvato
-#Since 2024
+# TRUE STORY PARTICLES
+# ТУТ И ИЗ ОРИГА, И ИЗ МОДОВ НА БЛ, И МОИ - КРАФТОВЫЕ ЧАСТИЦЫ
+# by @b3rg3n & @retroboy & @dansalvato
+# Since 2024
+
 init python:
     import math
 

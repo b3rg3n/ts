@@ -1,6 +1,8 @@
-#TRUE STORY CONSOLE EFFECT
-#by @b3rg3n & @dansalvato
-#Since 2024
+# TRUE STORY CONSOLE EFFECT
+# ГОПНУЛ ИЗ ОРИГА DDLC
+# by @dansalvato
+# since 2024
+
 init python:
     def pause(time=None):
         if not time:
@@ -10,15 +12,10 @@ init python:
         if time <= 0: return
         renpy.pause(time, hard = True)
 
-
-
-
-
 image console_bg:
     "#333"
     topleft
     alpha 0.75 size (480,180)
-
 
 style console_text:
     font "mod_assets/source/fonts/1.ttf"
@@ -26,23 +23,14 @@ style console_text:
     size 18
     outlines []
 
-
 style console_text_console is console_text:
     slow_cps 30
 
-
 default consolehistory = []
 
-
 image console_text = ParameterizedText(style="console_text_console", anchor=(0,0), xpos=30, ypos=10)
-
-
 image console_history = ParameterizedText(style="console_text", anchor=(0,0), xpos=30, ypos=50)
-
-
-
 image console_caret = Text(">", style="console_text", anchor=(0,0), xpos=5, ypos=10)
-
 
 label updateconsole(text="", history=""):
     show console_bg zorder 100
@@ -56,12 +44,10 @@ label updateconsole(text="", history=""):
     $ pause(0.5)
     return
 
-
 label updateconsole_clearall(text="", history=""):
     $ pause(len(text) / 30.0 + 0.5)
     $ pause(0.5)
     return
-
 
 label updateconsole_old(text="", history=""):
     $ starttime = datetime.datetime.now()
@@ -89,11 +75,8 @@ label updateconsole_old(text="", history=""):
     return
 
     label drawconsole(drawtext=""):
-
         show console_text "[drawtext]_" as ctext zorder 100
-
         return
-
 
 label updateconsolehistory(text=""):
     if text:

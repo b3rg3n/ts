@@ -1,4 +1,8 @@
-﻿init:
+﻿# TRUE STORY BG's
+# by @b3rg3n
+# Since 2024
+
+init:
 ###БГ
     image ts_bathroom = "mod_assets/source/images/bg/bathroom.webp"
     image ts_bedroom = "mod_assets/source/images/bg/bedroom.webp"

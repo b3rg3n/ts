@@ -1,3 +1,7 @@
+# TRUE STORY FONT's
+# by @b3rg3n
+# Since 2024
+
 init:
 ###ШРИФТ ХУЙНИ
     define cit_font = "mod_assets/source/fonts/captureit.ttf"

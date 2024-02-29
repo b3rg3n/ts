@@ -1,6 +1,10 @@
-#SR MOUSE PARALLAX EFFECT
-#by @b3rg3n & @vaal
-#Since 2023
+# TRUE STORY MOUSE PARALLAX EFFECT
+# ТАК ЖЕ СПИЗЖЕННО ИЗ "ПОГРЕБЁННОГО"
+# КОГДА-НИБУДЬ Я ЭТО ЗАЮЗАЮ
+# ПОТОМ...
+# by @b3rg3n & @vaal
+# Since 2024
+
 init python:
     import store
     from random import randint

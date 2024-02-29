@@ -1,3 +1,7 @@
+# TRUE STORY DISSOLVE's
+# by @b3rg3n
+# Since 2024
+
 init:
 ###АНИМАЦИИ И ТРАНЗИТЫ
     define wipeleft = ImageDissolve("mod_assets/source/images/anim/transit/wipeleft.webp", 0.5, ramplen=64)

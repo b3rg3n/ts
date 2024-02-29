@@ -1,6 +1,6 @@
-#TRUE STORY BUILD CONFIG
-#by @b3rg3n
-#Since 2024
+# TRUE STORY BUILD CONFIG
+# by @b3rg3n
+# since 2024
 init python:
 
     build.classify('**~', None)

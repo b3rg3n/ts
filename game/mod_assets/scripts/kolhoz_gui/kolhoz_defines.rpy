@@ -1,6 +1,9 @@
-#TRUE STORY SCREENS DEFINES
-#by @b3rg3n
-#Since 2024
+# TRUE STORY SCREENS DEFINES
+# ТУТ НАХУЙ ЧЁРТ НОГУ СЛОМИТ
+# НЕ ЛАЗИЙ СЮДА НАХУЙ
+# by @b3rg3n
+# Since 2024
+
 init -2:
     $ ctc_pos = 0.995
     $ ctc_pos_nvl = 0.93

@@ -1,3 +1,5 @@
+# ТУТ ПРОИСХОДИТ СТАРТ ИГРЫ БЛЯ
+
 screen sr_start_shit_blya: #ПОЯСНЕНИЕ ХУЙНИ ТЕКСТ
     text "{size=+15}{font=[cit_font]}Проведём небольшую{/font}{/size}" yalign 0.475 xalign 0.5
     text "{size=+15}{font=[cit_font]}настройку мода.{/font}{/size}" yalign 0.525 xalign 0.5

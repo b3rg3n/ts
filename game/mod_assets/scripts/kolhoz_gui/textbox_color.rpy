@@ -1,6 +1,9 @@
-#SR TEXTBOX COLOR & ROUTE NAME
-#by @b3rg3n & @gesundheit
-#Since 2023
+# TRUE STORY TEXTBOX COLOR
+# ГОПНУЛ ИЗ MND
+# СПАСИБО, ВАСЯ, ЕБАТЬ
+# by @b3rg3n & @gesundhelt
+# Since 2024
+
 init python:
 
     showstatus = False
@@ -15,13 +18,29 @@ init python:
         if not showstatus or pps <= 0:
             status_name = ""
             status_color = status_color_custom or "#ffffff"
-        elif pps == 1: #Белый
-            status_name = "Skitetsky Remaster"
+        elif pps == 1: # БЕЛЫЙ
+            status_name = " "
             status_color = "#ffffff"
             status_color_custom = "#ffffff"
-        elif pps == 11: #Белый
-            status_name = "JOZEF Remaster"
-            status_color = "#ffffff"
+        elif pps == 2: # КРАСНЫЙ
+            status_name = " "
+            status_color = "#ff0000"
+            status_color_custom = "#ffffff"
+        elif pps == 3: # ЖЁЛТЫЙ
+            status_name = " "
+            status_color = "#fbff00"
+            status_color_custom = "#ffffff"
+        elif pps == 4: # ОРАНЖЕВЫЙ
+            status_name = " "
+            status_color = "#ff8800"
+            status_color_custom = "#ffffff"
+        elif pps == 5: # ФИОЛЕТОВЫЙ
+            status_name = " "
+            status_color = "#ff00c8"
+            status_color_custom = "#ffffff"
+        elif pps == 6: # СИНИЙ
+            status_name = " "
+            status_color = "#2600ff"
             status_color_custom = "#ffffff"
 
     while mnd_status in config.window_overlay_functions:

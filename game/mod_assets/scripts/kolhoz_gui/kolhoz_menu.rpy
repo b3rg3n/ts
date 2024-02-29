@@ -2,6 +2,7 @@
 #by @b3rg3n
 #Since 2024
 #ВЕСЬ ПИЗДЕЦ, ЧТО ПРОИСХОДИТ НА ЭКРАНЕ - ЗДЕСЯ)
+
 label main_menu:
     stop sound fadeout 3
     stop music fadeout 3

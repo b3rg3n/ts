@@ -1,6 +1,7 @@
-#TRUE STORY ANOTHER
-#by @b3rg3n
-#Since 2024
+# TRUE STORY ANOTHER
+# by @b3rg3n
+# Since 2024
+
 init -1000 python:
 
     import os.path

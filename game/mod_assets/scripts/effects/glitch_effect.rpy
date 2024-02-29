@@ -1,6 +1,10 @@
-#TRUE STORY GLITCH EFFECT
-#by @b3rg3n & @vaal
-#Since 2024
+# TRUE STORY GLITCH EFFECT
+# ГОПНУЛ ИЗ "ПОГРЕБЁННОГО"
+# ЛЁШ, СОРРИ БРО, ЧТО ГОПНУЛ
+# НЕ МЫ ТАКИЕ - ЖИЗНЬ ТАКАЯ
+# by @b3rg3n & @vaal
+# since 2024
+
 init -666 python in _glitch_setting:
 
     import random

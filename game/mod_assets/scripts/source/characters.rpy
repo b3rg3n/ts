@@ -1,6 +1,7 @@
-#TS CHARACTERS
-#by @b3rg3n
-#Since 2024
+# TRUE STORY CHARACTERS
+# by @b3rg3n
+# Since 2024
+
 init:
     define teacher = DynamicCharacter('teacher_name', image='yuri', what_prefix='"', what_suffix='"')
     define ts_ft = DynamicCharacter('ts_ft_name', image='hiroto', what_prefix='"', what_suffix='"')

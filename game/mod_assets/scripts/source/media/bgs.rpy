@@ -39,3 +39,7 @@
 ###ЗАБЛЮРЕНО НАХОЙ
     image ts_club_blur = im.Blur("mod_assets/source/images/bg/club.webp", 3.0)
     image ts_club_blur9 = im.Blur("mod_assets/source/images/bg/club.webp", 9.0)
+
+###ЛОГО ХУЙНИ
+    image ts_logo = "mod_assets/source/images/gui/ts_logo.webp"
+    image ts_logo_menu = "mod_assets/source/images/gui/ts_logo_menu.webp"

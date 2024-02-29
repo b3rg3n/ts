@@ -174,6 +174,8 @@ init -501 screen main_menu:
 
     modal True tag menu
 
+    text "{image=ts_logo_menu}" ypos 150 xpos 75
+
     textbutton ("{size=+15}Сойти с ума{/size}") ypos 342 xpos 75:
         action Start()
         activate_sound start_sound_suka
@@ -217,6 +219,9 @@ init -501 screen game_menu_selector:
 
     modal True tag menu
     add "mod_assets/source/images/gui/ebanoemenu/ingame_menu.webp"
+
+    text "{image=ts_logo_menu}" ypos 150 xpos 75
+
     textbutton ("{size=+15}На Главную{/size}") ypos 342 xpos 75:
         action MainMenu()
         activate_sound start_sound_suka

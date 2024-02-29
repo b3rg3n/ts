@@ -1419,7 +1419,7 @@ label ts_scenario_4:
     window hide
 
     play sound ["<silence 0.9>", "<to 0.75>mod_assets/source/audio/sfx/funeral/mscare.ogg"]
-    #play sound ["<silence 0.9>", "<to 0.75>mod_assets/source/audio/sfx/funeral/nejdan.ogg"]
+
     show monika_scare:
         alpha 0
         1.0

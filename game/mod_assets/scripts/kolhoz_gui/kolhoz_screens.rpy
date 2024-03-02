@@ -4,6 +4,9 @@
 # Since 2024
 
 init -1 python:
+    import time
+    initial_time = time.time()
+
     renpy.music.register_channel("menu_zvuk", "sfx", False)
 
     main_font = "mod_assets/source/fonts/captureit.ttf"

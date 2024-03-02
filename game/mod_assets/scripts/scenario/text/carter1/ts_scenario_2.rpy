@@ -1,4 +1,8 @@
 label ts_scenario_2:
+
+    python: # ОБНОВЛЯЕМ RPC
+        rpc.update(state="Акт I | Глава II",details="Поиски. Юри",large_image="logogovna",start=time.time())
+
     $ save_name = "Поиски. Юри"
 
     pause 2

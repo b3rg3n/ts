@@ -1,4 +1,9 @@
 label ts_scenario_4:
+
+    python: # ОБНОВЛЯЕМ RPC
+        rpc.update(state="Акт I | Глава IV",details="Всё же хорошо?",large_image="logogovna",start=time.time())
+
+
     $ save_name = "Всё же хорошо?"
 
     play sound chp1

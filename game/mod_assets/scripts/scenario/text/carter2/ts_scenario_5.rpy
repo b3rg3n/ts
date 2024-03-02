@@ -3,7 +3,7 @@ label ts_scenario_5:
 
     $ persistent.carter2menu = True
 
-    play sound chp1
+    play sound chp
     $ Chapter("АКТ ВТОРОЙ")
     $ Chapter("АКТ ВТОРОЙ")
     $ Chapter("Глава пятая")

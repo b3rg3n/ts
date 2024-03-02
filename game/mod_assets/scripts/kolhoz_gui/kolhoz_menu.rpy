@@ -4,6 +4,9 @@
 #ВЕСЬ ПИЗДЕЦ, ЧТО ПРОИСХОДИТ НА ЭКРАНЕ - ЗДЕСЯ)
 
 label main_menu:
+    python: # ОБНОВЛЯЕМ RPC
+        rpc.update(state="Наслаждается",details="Просмотр главного меню",large_image="logogovna",start=time.time())
+
     stop sound fadeout 3
     stop music fadeout 3
     window hide
@@ -38,7 +41,8 @@ label main_menu:
 
 label splashscreen:
 #УСТАНОВКА ГРОМКОСТИ И ПРОВЕРКА НА СПЛЕШ
-    python:
+    python: # ОБНОВЛЯЕМ RPC
+        rpc.update(state="Запускается...",details="Просмотр заставки",large_image="logogovna",start=time.time())
 
         if not persistent.set_volumes:
             

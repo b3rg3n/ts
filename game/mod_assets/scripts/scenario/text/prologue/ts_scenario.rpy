@@ -3,6 +3,8 @@ label ts_scenario_0:
     python: # ОБНОВЛЯЕМ RPC
         rpc.update(state="Акт I | Пролог",details="Предыстория",large_image="logogovna",start=time.time())
 
+    $ persistent.rpclabel = "0"
+
     $ save_name = "Предыстория"
     window hide
     pause 1.1

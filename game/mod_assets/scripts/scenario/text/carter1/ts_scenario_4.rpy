@@ -3,6 +3,7 @@ label ts_scenario_4:
     python: # ОБНОВЛЯЕМ RPC
         rpc.update(state="Акт I | Глава IV",details="Всё же хорошо?",large_image="logogovna",start=time.time())
 
+    $ persistent.rpclabel = "4"
 
     $ save_name = "Всё же хорошо?"
 
@@ -1586,4 +1587,24 @@ label ts_scenario_4:
     scene black with dissolve4
     pause 4
 
-    jump ts_scenario_5
+    play music ts_soft fadein 4
+
+    scene ts_sakura
+    show zatemnenie_light
+    show lepestki_krutyatsa
+    with ed_night_dis
+
+    python: # ОБНОВЛЯЕМ RPC
+        rpc.update(state="Финал",details="Титры",large_image="logogovna",start=time.time())
+
+    $ persistent.rpclabel = "999"
+
+    show credits ts_credits:
+        xalign 0.5
+        ypos 1.05
+        linear 180.0 ypos -4.0
+    $ renpy.pause (200, hard=True)
+
+    return
+
+    #jump ts_scenario_5

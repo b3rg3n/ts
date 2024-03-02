@@ -3,19 +3,22 @@
 # Since 2024
 
 init:
-###КРУТИЛКИ
+### КРУТИЛКИ
     default persistent.bazarbig = False
     default persistent.cens_mode = True
 
-###МЕНЮШКИ
+### RPC
+    default persistent.rpclabel = "228"
+
+### МЕНЮШКИ
     default persistent.carter2menu = False
 
-###ПЕРЕМЕННЫЕ СКИПИНГА
+### ПЕРЕМЕННЫЕ СКИПИНГА
     default persistent.zastavka_skip = False
     default persistent.skip_splash = False
     default persistent.scenario_proshel_blya = True
 
-###ИМЕНА
+### ИМЕНА
     default teacher_name = "Учитель"
     default ts_ft_name = "Папа"
     default s_name = "Сайори"

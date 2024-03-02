@@ -4,6 +4,7 @@
 #ВЕСЬ ПИЗДЕЦ, ЧТО ПРОИСХОДИТ НА ЭКРАНЕ - ЗДЕСЯ)
 
 label main_menu:
+
     python: # ОБНОВЛЯЕМ RPC
         rpc.update(state="Наслаждается",details="Просмотр главного меню",large_image="logogovna",start=time.time())
 
@@ -40,10 +41,11 @@ label main_menu:
     call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
 
 label splashscreen:
-#УСТАНОВКА ГРОМКОСТИ И ПРОВЕРКА НА СПЛЕШ
+
     python: # ОБНОВЛЯЕМ RPC
         rpc.update(state="Запускается...",details="Просмотр заставки",large_image="logogovna",start=time.time())
 
+    python: # УСТАНОВКА ГРОМКОСТИ И ПРОВЕРКА НА СПЛЕШ
         if not persistent.set_volumes:
             
             persistent.set_volumes = True

@@ -1,7 +1,8 @@
 label ts_scenario_3:
 
-    python: # ОБНОВЛЯЕМ RPC
-        rpc.update(state="Акт I | Глава III",details="Поиски. Нацуки",large_image="logogovna",start=time.time())
+    if renpy.windows:
+        python: # ОБНОВЛЯЕМ RPC
+            rpc.update(state="Акт I | Глава III",details="Поиски. Нацуки",large_image="logogovna",start=time.time())
 
     $ persistent.rpclabel = "3"
 

@@ -3,8 +3,8 @@
 # since 2024
 
 init python:
-    from pypresence import Presence
-    import time
+    from pypresence import Presence # ИМПОРТИРУЕМ НУЖНЫЕ ПАКЕТЫ ПИТОНА (ЛЕЖАТ В python-packages)
+    import time # ИМПОРТИРУЕМ ВРЕМЯ ДЛЯ СЧЁТЧИКА
 
     rpc = Presence("1162284314239701062") # ID ХУЕТЫ
     rpc.connect() # ПОДКЛЮЧЕНИЕ К ДС

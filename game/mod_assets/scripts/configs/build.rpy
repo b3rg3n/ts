@@ -28,6 +28,9 @@ init python:
     build.classify("game/**.rpyc", "truestory")
     build.classify("game/**.rpy", "truestory")
 
+    build.classify("game/**.pyc", "truestory")
+    build.classify("game/**.py", "truestory")
+
     build.classify("game/**.wav", "truestory")
     build.classify("game/**.mp3", "truestory")
     build.classify("game/**.ogg", "truestory")

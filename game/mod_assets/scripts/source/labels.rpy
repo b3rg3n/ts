@@ -16,7 +16,7 @@ init:
 ### ПЕРЕМЕННЫЕ СКИПИНГА
     default persistent.zastavka_skip = False
     default persistent.skip_splash = False
-    default persistent.scenario_proshel_blya = True
+    default persistent.scenario_proshel_blya = False
 
 ### ИМЕНА
     default teacher_name = "Учитель"

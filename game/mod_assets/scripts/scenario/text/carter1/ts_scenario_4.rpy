@@ -1,8 +1,10 @@
 label ts_scenario_4:
 
-    if renpy.windows:
-        python: # ОБНОВЛЯЕМ RPC
-            rpc.update(state="Акт I | Глава IV",details="Всё же хорошо?",large_image="logogovna",start=time.time())
+    python: # ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state="Акт I | Глава IV",details="Всё же хорошо?",large_image="aonecfour",start=time.time())
+        except AssertionError:
+            pass
 
     $ persistent.rpclabel = "4"
 

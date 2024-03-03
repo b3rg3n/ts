@@ -27,9 +27,11 @@ label true_story_credits_label_blya:
     show lepestki_krutyatsa
     with ed_night_dis
 
-    if renpy.windows:
-        python: # ОБНОВЛЯЕМ RPC
-            rpc.update(state="Финал",details="Титры",large_image="logogovna",start=time.time())
+    python: # ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state="Финал",details="Титры",large_image="credits",start=time.time())
+        except AssertionError:
+            pass
 
     $ persistent.rpclabel = "999"
 

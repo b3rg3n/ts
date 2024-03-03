@@ -3,20 +3,23 @@
 # since 2024
 
 init python:
-    from pypresence import Presence # ИМПОРТИРУЕМ НУЖНЫЕ ПАКЕТЫ ПИТОНА (ЛЕЖАТ В python-packages)
+    from pypresence import DiscordNotFound # ИМПОРТИРУЕМ НУЖНУЮ ОШИБКУ ПИТОНА (ЛЕЖАТ В python-packages)
+    from pypresence import Presence # ИМПОРТИРУЕМ НУЖНУЮ ФУНКЦИЮ ПИТОНА (ЛЕЖАТ В python-packages)
     import time # ИМПОРТИРУЕМ ВРЕМЯ ДЛЯ СЧЁТЧИКА
-    import os
-    import subprocess
-    import io
 
-    if renpy.windows:
-        rpc = Presence("1162284314239701062") # ID ХУЕТЫ
+    rpc = Presence("1162284314239701062") # ID ХУЕТЫ
+    try:
         rpc.connect() # ПОДКЛЮЧЕНИЕ К ДС
+    except DiscordNotFound:
+        pass
 
 # КАК ЮЗАТЬ ЭТУ ПОЕБЕНЬ:
 #
-#    python:
-#        rpc.update(state="Акт I | Глава I",details="Поиски. Сайори",large_image="logogovna",start=time.time())
+#    python: # ОБНОВЛЯЕМ RPC
+#        try:
+#            rpc.update(state="Акт I | Глава I",details="Поиски. Сайори",large_image="logogovna",start=time.time())
+#        except AssertionError:
+#            pass
 #
 # ЭТО ВСЁ ВСТАВИТЬ В НУЖНЫЙ ЛЕЙБЛ
 # state - ВТОРАЯ СТРОКА
@@ -24,23 +27,40 @@ init python:
 # large_image - КАРТИНКА АКТИВНОСТИ В ДС
 
 label after_load: # ВОСКРЕШЕНИЕ RPC ПРИ ЗАГРУЗКЕ
-    if renpy.windows:
-        if persistent.rpclabel == "0":
-                python: # ОБНОВЛЯЕМ RPC
-                    rpc.update(state="Акт I | Пролог",details="Предыстория",large_image="logogovna",start=time.time())
-        elif persistent.rpclabel == "1":
-                python: # ОБНОВЛЯЕМ RPC
-                    rpc.update(state="Акт I | Глава I",details="Поиски. Сайори",large_image="logogovna",start=time.time())
-        elif persistent.rpclabel == "2":
-                python: # ОБНОВЛЯЕМ RPC
-                    rpc.update(state="Акт I | Глава II",details="Поиски. Юри",large_image="logogovna",start=time.time())
-        elif persistent.rpclabel == "3":
-                python: # ОБНОВЛЯЕМ RPC
-                    rpc.update(state="Акт I | Глава III",details="Поиски. Нацуки",large_image="logogovna",start=time.time())
-        elif persistent.rpclabel == "4":
-                python: # ОБНОВЛЯЕМ RPC
-                    rpc.update(state="Акт I | Глава IV",details="Всё же хорошо?",large_image="logogovna",start=time.time())
+    if persistent.rpclabel == "0":
+            python: # ОБНОВЛЯЕМ RPC
+                try:
+                    rpc.update(state="Акт I | Пролог",details="Предыстория",large_image="prologue",start=time.time())
+                except AssertionError:
+                    pass
+    elif persistent.rpclabel == "1":
+            python: # ОБНОВЛЯЕМ RPC
+                try:
+                    rpc.update(state="Акт I | Глава I",details="Поиски. Сайори",large_image="aonecone",start=time.time())
+                except AssertionError:
+                    pass
+    elif persistent.rpclabel == "2":
+            python: # ОБНОВЛЯЕМ RPC
+                try:
+                    rpc.update(state="Акт I | Глава II",details="Поиски. Юри",large_image="aonectwo",start=time.time())
+                except AssertionError:
+                    pass
+    elif persistent.rpclabel == "3":
+            python: # ОБНОВЛЯЕМ RPC
+                try:
+                    rpc.update(state="Акт I | Глава III",details="Поиски. Нацуки",large_image="aonecthree",start=time.time())
+                except AssertionError:
+                    pass
+    elif persistent.rpclabel == "4":
+            python: # ОБНОВЛЯЕМ RPC
+                try:
+                    rpc.update(state="Акт I | Глава IV",details="Всё же хорошо?",large_image="aonecfour",start=time.time())
+                except AssertionError:
+                    pass
 
-        elif persistent.rpclabel == "999":
-                python: # ОБНОВЛЯЕМ RPC
-                    rpc.update(state="Акт I | Глава IV",details="Всё же хорошо?",large_image="logogovna",start=time.time())
+    elif persistent.rpclabel == "999":
+            python: # ОБНОВЛЯЕМ RPC
+                try:
+                    rpc.update(state="Финал",details="Титры",large_image="credits",start=time.time())
+                except AssertionError:
+                    pass

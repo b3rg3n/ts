@@ -5,9 +5,11 @@
 
 label main_menu:
 
-    if renpy.windows:
-        python: # ОБНОВЛЯЕМ RPC
-            rpc.update(state="Наслаждается",details="Просмотр главного меню",large_image="logogovna",start=time.time())
+    python: # ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state="В игре",details="Главное меню",large_image="logogovna",start=time.time())
+        except AssertionError:
+            pass
 
     stop sound fadeout 3
     stop music fadeout 3
@@ -43,9 +45,11 @@ label main_menu:
 
 label splashscreen:
 
-    if renpy.windows:
-        python: # ОБНОВЛЯЕМ RPC
-            rpc.update(state="Запускается...",details="Просмотр заставки",large_image="logogovna",start=time.time())
+    python: # ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state="В игре",details="Просмотр заставки",large_image="logogovna",start=time.time())
+        except AssertionError:
+            pass
 
     python: # УСТАНОВКА ГРОМКОСТИ И ПРОВЕРКА НА СПЛЕШ
         if not persistent.set_volumes:

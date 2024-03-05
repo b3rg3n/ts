@@ -173,6 +173,7 @@ init -1 python:
     style.log_button_text_edit = Style(style.log_button_text)
     style.log_button_text_edit.size = 33
 
+
 init -1 python:
     _main_menu_screen = "main_menu"
 init -501 screen main_menu:
@@ -508,14 +509,14 @@ init -501 screen preferences:
                             add get_image("images/gui/ebanoemenu/leaf.webp") ypos 0.12
                         else:
                             null width 22
-                        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", "source/audio/sfx/gui/button_menu.ogg")
+                        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
 
                     hbox xalign 0.5:
                         if not persistent.music_widget_ts == False:
                             add get_image("images/gui/ebanoemenu/leaf.webp") ypos 0.12
                         else:
                             null width 22
-                        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", "source/audio/sfx/gui/button_menu.ogg")
+                        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
 
 
                 text translation_new["Cens_mode_set"] style "settings_header" xalign 0.5
@@ -929,65 +930,6 @@ init -1 style frame:
     padding gui.frame_borders.padding
     background Frame("mod_assets/source/images/gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
 
-
-init -1002 python:
-    translation=translation_ru
-    translation_new=translation
-
-    def merge_two_dicts(x, y):
-        z = x.copy()
-        z.update(y)
-        return z
-    translation_temp={}
-    for i,k in translation.iteritems():
-        translation_temp[i]={}
-        translation_temp[i][_preferences.language]=k
-    translation=merge_two_dicts(translation,translation_temp)
-
-    def get_translation(string):
-        renpy.log("%s" % string )
-        return translation[string][_preferences.language]
-
-init -1003 python:
-    translation_ru = {
-        "Quit_confirm" : "Уверен? Обратного пути не будет.",
-        "Yes" : "Конечно",
-        "No" : "Не особо",
-        "Noo" : "Передумал",
-        "settings" : "НАСТРОЙКИ",
-        "LOAD" : "ВСПОМНИТЬ",
-        "SAVE" : "ЗАПОМНИТЬ",
-        "BACK" : "ВЕРНУТЬСЯ",
-        "Back" : "Вернуться?",
-        "Save_game" : "Запомнить?",
-        "Delete" : "Забыть?",
-        "Auto" : "Авто",
-        "Empty_slot" : "Пусто",
-        "Load_game" : "Вспомнить?",
-        "Window_mode" : "Режим экрана",
-        "Fullscreen" : "Во весь экран",
-        "Window" : "В окне",
-        "Skip" : "Пропускать",
-        "Skip_all" : "Вообще всё",
-        "Skip_seen" : "Что уже видел",
-        "Volume" : "Громкость",
-        "Music_lower" : "Музыка",
-        "Sound" : "Звуки",
-        "Ambience" : "Фон",
-        "Text_speed" : "Скорость текста",
-        "Font" : "Размер текстбокса",
-        "Normal_font" : "Обычный",
-        "Big_font" : "Большой",
-        "Music_widget_set" : "Названия треков",
-        "Music_widget_on" : "Включить",
-        "Music_widget_off" : "Отключить",
-        "Cens_mode_set" : "Антицензор",
-        "Cens_mode_off" : "Отключить",
-        "Cens_mode_on" : "Включить",
-
-}
-
-
 init -501 screen quick_menu():
 
     zorder 100
@@ -1238,40 +1180,6 @@ init -1 style return_button:
 init -1 python:
     style.settings_link_edit = Style(style.settings_link)
     style.settings_link_edit.size = 30
-
-init -501 screen mods():
-    modal True tag menu
-
-    $ bar_null = Frame(get_image("images/gui/ebanoemenu/bar_null.webp"),36,36)
-    $ bar_full = Frame(get_image("images/gui/ebanoemenu/bar_full.webp"),36,36)
-
-    window background get_image("images/anim/zatemnenie.webp") xmaximum 1920 ymaximum 1080:
-        hbox xalign 0.5 yalign 0.08:
-            add get_image("images/gui/ebanoemenu/star.webp") yalign 0.65
-            text " "+translation_new["Mods"]+" " style "settings_link" yalign 0.5 color "#ffffff"
-            add get_image("images/gui/ebanoemenu/star.webp") yalign 0.65
-        textbutton translation_new["Back"]:
-            style "log_button"
-            text_style "settings_link"
-            xalign 0.015 yalign 0.92
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-            action [Hide("mods"), Show("main_menu")]
-
-
-        vbox:
-            xalign -0.3
-            yalign 0.2
-            for lbl, name in sorted(mods.items()):
-                textbutton name:
-                    style "log_button"
-                    text_style "settings_link_edit"
-                    xpos 500 ypos 50
-                    activate_sound start_sound_suka
-                    hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-                    action Start(lbl)
-
-
 
 init -502 screen help():
 

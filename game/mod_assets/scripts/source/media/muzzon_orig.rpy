@@ -43,3 +43,5 @@ define audio.okevryuri = "<loop 4.444>mod_assets/source/audio/ost/orig/5_yuri.og
 define audio.okevrnat = "<loop 4.444>mod_assets/source/audio/ost/orig/5_natsuki.ogg"
 define audio.okevrnat1 = "<loop 4.444>mod_assets/source/audio/ost/orig/5_ghost.ogg"
 define audio.okevrmon = "<loop 4.444>mod_assets/source/audio/ost/orig/5_monika.ogg"
+
+define audio.page_turn = "mod_assets/source/audio/sfx/item/pageflip.ogg"

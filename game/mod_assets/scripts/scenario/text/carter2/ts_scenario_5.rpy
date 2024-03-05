@@ -13,8 +13,22 @@ label ts_scenario_5:
     stop sound fadeout 7
     $ Chapter("Всё же хорошо?")
 
+    "Жопка"
+
     scene ts_bedroom
     show unblink
     pause 1
+
+    call showpoem (poem_y1, img="yuri 3t") from _call_showpoem
+
+    "Работает?"
+
+    $ persistent.first_poem = False
+
+    "Хуета"
+
+    call showpoem (poem_test) from _call_showpoem_1
+
+    "eojgfe"
 
     return

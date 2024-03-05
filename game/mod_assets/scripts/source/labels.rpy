@@ -18,6 +18,7 @@ init:
 ### ПЕРЕМЕННЫЕ СКИПИНГА
     default persistent.zastavka_skip = False
     default persistent.skip_splash = False
+    default persistent.first_poem = False
     default persistent.scenario_proshel_blya = True
 
 ### ИМЕНА

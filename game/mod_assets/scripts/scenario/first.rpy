@@ -62,7 +62,6 @@ label start: # ТУТ НАЧИНАЕТСЯ ПИЗДЕЦ
             show dust2
             show dust3
             show dust4
-            show overlay aw_memory_back_1
             show zatemnenie_light
     else: #МЕНЮШКА КАРТЕРА 1
         if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ

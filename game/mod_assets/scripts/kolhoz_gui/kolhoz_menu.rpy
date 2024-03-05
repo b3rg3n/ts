@@ -14,36 +14,6 @@ label main_menu:
     stop sound fadeout 3
     stop music fadeout 3
     window hide
-
-    #play music ts_killyourself fadein 5
-    #scene black
-    #show ts_menu_move_anim
-    #show ts_rain
-    #show zatemnenie_light
-
-    #play music ts_tt2ogsr1 fadein 5
-    #scene ts_menu_art3_night
-    #show dust1
-    #show dust2
-    #show dust3
-    #show dust4
-    #show overlay aw_memory_back_1
-    #show zatemnenie_light
-
-    play music ts_tt2ogsr fadein 5
-    scene black
-    show ts_menu_move_anim_three
-    show zatemnenie_light
-
-    #play music ts_angel fadein 5
-    #scene ts_menu_art_carter2_night
-    #show ts_rain
-    #show zatemnenie_light
-
-    with Fade(1.5, 1, 2)
-    call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
-
-label hueta298294:
     python: #ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
         from time import localtime, strftime
         t = strftime("%H:%M:%S", localtime())
@@ -74,7 +44,6 @@ label hueta298294:
             show dust2
             show dust3
             show dust4
-            show overlay aw_memory_back_1
             show zatemnenie_light
     else: #МЕНЮШКА КАРТЕРА 1
         if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ

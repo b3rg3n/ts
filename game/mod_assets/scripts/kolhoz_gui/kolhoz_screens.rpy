@@ -501,6 +501,23 @@ init -501 screen preferences:
                             null width 22
                         textbutton translation_new["Big_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
 
+                text translation_new["Music_widget_set"] style "settings_header" xalign 0.5
+                grid 2 1 xfill True:
+                    hbox xalign 0.5:
+                        if persistent.music_widget_ts == True:
+                            add get_image("images/gui/ebanoemenu/leaf.webp") ypos 0.12
+                        else:
+                            null width 22
+                        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", "source/audio/sfx/gui/button_menu.ogg")
+
+                    hbox xalign 0.5:
+                        if not persistent.music_widget_ts == False:
+                            add get_image("images/gui/ebanoemenu/leaf.webp") ypos 0.12
+                        else:
+                            null width 22
+                        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", "source/audio/sfx/gui/button_menu.ogg")
+
+
                 text translation_new["Cens_mode_set"] style "settings_header" xalign 0.5
                 grid 2 1 xfill True:
                     hbox xalign 0.5:

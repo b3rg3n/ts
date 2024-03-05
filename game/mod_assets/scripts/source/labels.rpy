@@ -6,6 +6,7 @@ init:
 ### КРУТИЛКИ
     default persistent.bazarbig = False
     default persistent.cens_mode = True
+    default persistent.music_widget_ts = False
 
 ### RPC
     default persistent.rpclabel = "228"

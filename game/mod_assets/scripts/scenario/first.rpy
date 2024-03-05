@@ -1,36 +1,49 @@
 # ТУТ ПРОИСХОДИТ СТАРТ ИГРЫ БЛЯ
 
-screen sr_start_shit_blya: #ПОЯСНЕНИЕ ХУЙНИ ТЕКСТ
+screen ts_start_shit_blya: #ПОЯСНЕНИЕ ХУЙНИ ТЕКСТ
     text "{size=+15}{font=[cit_font]}Проведём небольшую{/font}{/size}" yalign 0.475 xalign 0.5
     text "{size=+15}{font=[cit_font]}настройку мода.{/font}{/size}" yalign 0.525 xalign 0.5
 
-screen sr_cens_changer: # АНТИЦЕНЗОР
+screen ts_cens_changer: # АНТИЦЕНЗОР
     modal True tag aw_r2
     text "{size=+15}{font=[cit_font]}Включить антицензор?{/font}{/size}" yalign 0.475 xalign 0.5
     text "{size=+15}{font=[cit_font]}Можно изменить в любой момент игры.{/font}{/size}" yalign 0.525 xalign 0.5
     textbutton ("{size=+15}Отключить{/size}") yalign 0.685 xalign 0.35:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        action (SetField(persistent, "cens_mode", False), Jump("sr_intro_settings1"))
+        action (SetField(persistent, "cens_mode", False), Jump("ts_intro_settings1"))
     textbutton ("{size=+15}Включить{/size}") yalign 0.685 xalign 0.65:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        action (SetField(persistent, "cens_mode", True), Jump("sr_intro_settings1"))
+        action (SetField(persistent, "cens_mode", True), Jump("ts_intro_settings1"))
 
-screen sr_font_changer: # РАЗМЕР ШРИФТА
+screen ts_widget_changer: # ВИДЖЕТ ТРЕКОВ БЛЯ
+    modal True tag aw_r2
+    text "{size=+15}{font=[cit_font]}Включить вывод названий играющих треков?{/font}{/size}" yalign 0.475 xalign 0.5
+    text "{size=+15}{font=[cit_font]}Можно изменить в любой момент игры.{/font}{/size}" yalign 0.525 xalign 0.5
+    textbutton ("{size=+15}Отключить{/size}") yalign 0.685 xalign 0.35:
+        activate_sound start_sound_suka
+        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        action (SetField(persistent, "music_widget_ts", False), Jump("ts_intro_settings1"))
+    textbutton ("{size=+15}Включить{/size}") yalign 0.685 xalign 0.65:
+        activate_sound start_sound_suka
+        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        action (SetField(persistent, "music_widget_ts", True), Jump("ts_intro_settings2"))
+
+screen ts_font_changer: # РАЗМЕР ШРИФТА
     modal True tag aw_r4
     text "{size=+15}{font=[cit_font]}Увеличить размер шрифта?{/font}{/size}" yalign 0.475 xalign 0.5
     text "{size=+15}{font=[cit_font]}Или - оставить как есть?{/font}{/size}" yalign 0.525 xalign 0.5
     textbutton ("{size=+15}Оставить{/size}") yalign 0.685 xalign 0.35:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        action (SetField(persistent, "bazarbig", False), Jump("sr_intro_settings3"))
+        action (SetField(persistent, "bazarbig", False), Jump("ts_intro_settings3"))
     textbutton ("{size=+15}Сделать больше{/size}") yalign 0.685 xalign 0.65:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        action (SetField(persistent, "bazarbig", True), Jump("sr_intro_settings3"))
+        action (SetField(persistent, "bazarbig", True), Jump("ts_intro_settings3"))
 
-screen sr_set_end_shit_blya: #ПОЯСНЕНИЕ ХУЙНИ ТЕКСТ
+screen ts_set_end_shit_blya: #ПОЯСНЕНИЕ ХУЙНИ ТЕКСТ
     text "{size=+15}{font=[cit_font]}Настройка завершена.{/font}{/size}" yalign 0.475 xalign 0.5
     text "{size=+15}{font=[cit_font]}Переходим к истории.{/font}{/size}" yalign 0.525 xalign 0.5
 
@@ -82,25 +95,31 @@ label start: # ТУТ НАЧИНАЕТСЯ ПИЗДЕЦ
     if persistent.zastavka_skip is True:
         jump ts_start
     else:
-        show screen sr_start_shit_blya with awrain
+        show screen ts_start_shit_blya with awrain
         $ renpy.pause(3, hard=True)
-        hide screen sr_start_shit_blya
-        show screen sr_cens_changer
+        hide screen ts_start_shit_blya
+        show screen ts_cens_changer
         with awrain
         $ renpy.pause(hard=True)
 
-label sr_intro_settings1:
-    hide screen sr_cens_changer
-    show screen sr_font_changer
+label ts_intro_settings1:
+    hide screen ts_cens_changer
+    show screen ts_widget_changer
     with awrain
     $ renpy.pause(hard=True)
 
-label sr_intro_settings3:
-    hide screen sr_font_changer
-    show screen sr_set_end_shit_blya
+label ts_intro_settings2:
+    hide screen ts_widget_changer
+    show screen ts_font_changer
+    with awrain
+    $ renpy.pause(hard=True)
+
+label ts_intro_settings3:
+    hide screen ts_font_changer
+    show screen ts_set_end_shit_blya
     with awrain
     $ renpy.pause(3, hard=True)
-    hide screen sr_set_end_shit_blya with dissolve
+    hide screen ts_set_end_shit_blya with dissolve
     pause 1
     $ persistent.zastavka_skip = True
     jump ts_start

@@ -1,5 +1,5 @@
 # TRUE STORY POEMS
-# written by @Maddie, The Mad
+# written by @Maddie, The Mad & @Dan Salvato
 # ported from ddlc by @b3rg3n
 # original style by @Dan Salvato
 

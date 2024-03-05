@@ -12,6 +12,7 @@ init:
 
 ### МЕНЮШКИ
     default persistent.carter2menu = False
+    default persistent.carter3menu = False
 
 ### ПЕРЕМЕННЫЕ СКИПИНГА
     default persistent.zastavka_skip = False

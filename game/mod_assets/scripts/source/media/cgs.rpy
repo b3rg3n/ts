@@ -13,5 +13,7 @@ init:
 
     image ts_menu_art_carter2_night = "mod_assets/source/images/intro/menu/menu_art_night.webp"
 
+    image ts_menu_art3_night = "mod_assets/source/images/intro/menu/ts_menu_art3_night.webp"
+
     image mon_piano = "mod_assets/source/images/cg/mon_piano.webp"
     image mon_piano_start = "mod_assets/source/images/cg/mon_piano_start.webp"

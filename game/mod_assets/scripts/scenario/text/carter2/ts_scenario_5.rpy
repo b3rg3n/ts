@@ -2,6 +2,7 @@ label ts_scenario_5:
     $ save_name = "Всё же хорошо?"
 
     $ persistent.carter2menu = True
+    $ persistent.carter3menu = False
 
     play sound chp
     $ Chapter("АКТ ВТОРОЙ")

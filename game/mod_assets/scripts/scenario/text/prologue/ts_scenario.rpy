@@ -8,6 +8,9 @@ label ts_scenario_0:
 
     $ persistent.rpclabel = "0"
 
+    $ persistent.carter2menu = False
+    $ persistent.carter3menu = False
+
     $ save_name = "Предыстория"
     window hide
     pause 1.1

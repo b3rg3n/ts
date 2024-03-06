@@ -20,7 +20,7 @@ init:
     default persistent.zastavka_skip = False
     default persistent.skip_splash = False
     default persistent.first_poem = False
-    default persistent.scenario_proshel_blya = False
+    default persistent.scenario_proshel_blya = True
 
 ### ИМЕНА
     default teacher_name = "Учитель"

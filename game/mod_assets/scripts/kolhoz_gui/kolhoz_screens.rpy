@@ -475,15 +475,15 @@ init -501 screen preferences:
                 text translation_new["Volume"] style "settings_header" xalign 0.5
 
                 grid 2 1 xfill True:
-                    textbutton translation_new["Music_lower"] style "log_button" text_style "settings_text" action Play("sound", "mod_assets/source/audio/sfx/skitetksy_voice/ebanko.ogg") xpos 0.1 ypos -0.2
+                    textbutton translation_new["Music_lower"] style "log_button" text_style "settings_text" action Play("music2", "mod_assets/source/audio/sfx/funeral/zubek.ogg") xpos 0.1 ypos -0.2
                     bar value Preference("music volume") left_bar bar_full right_bar bar_null thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" hover_thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
 
                 grid 2 1 xfill True:
-                    textbutton translation_new["Sound"] style "log_button" text_style "settings_text" action Play("sound", "mod_assets/source/audio/sfx/skitetksy_voice/ebanko.ogg") xpos 0.1 ypos -0.2
+                    textbutton translation_new["Sound"] style "log_button" text_style "settings_text" action Play("sound", "mod_assets/source/audio/sfx/funeral/zubek.ogg") xpos 0.1 ypos -0.2
                     bar value Preference("sound volume") left_bar bar_full right_bar bar_null thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" hover_thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
 
                 grid 2 1 xfill True:
-                    textbutton translation_new["Ambience"] style "log_button" text_style "settings_text" action Play("sound", "mod_assets/source/audio/sfx/skitetksy_voice/ebanko.ogg") xpos 0.1 ypos -0.2
+                    textbutton translation_new["Ambience"] style "log_button" text_style "settings_text" action Play("ambience2", "mod_assets/source/audio/sfx/funeral/zubek.ogg") xpos 0.1 ypos -0.2
                     bar value Preference("voice volume") left_bar bar_full right_bar bar_null thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" hover_thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
 
                 text translation_new["Text_speed"] style "settings_header" xalign 0.5

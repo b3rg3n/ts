@@ -14,6 +14,16 @@ label main_menu:
     stop sound fadeout 3
     stop music fadeout 3
     window hide
+
+    play music ts_tt2ogsr fadein 5
+    scene black
+    show ts_menu_move_anim_three
+    show zatemnenie_light
+
+    with Fade(1.5, 1, 2)
+    call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
+
+label dreest_manezh:
     python: #ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
         from time import localtime, strftime
         t = strftime("%H:%M:%S", localtime())

@@ -57,5 +57,5 @@ python early:
             elif m == None:
                 ui.text("%s" % "Нет музыки", style="button_text_music_ts")
             else:
-                ui.text("%s" % "Не прописано название", style="button_text_music_ts")
+                ui.text("%s" % "Оригинальный DDLC OST", style="button_text_music_ts")
     config.overlay_functions.append(widget_music_ts)

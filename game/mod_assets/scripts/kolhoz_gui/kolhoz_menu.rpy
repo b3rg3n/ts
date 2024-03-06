@@ -15,57 +15,149 @@ label main_menu:
     stop music fadeout 3
     window hide
 
-    play music ts_tt2ogsr fadein 5
-    scene black
-    show ts_menu_move_anim_three
-    show zatemnenie_light
-
-    with Fade(1.5, 1, 2)
-    call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
-
-label dreest_manezh:
     python: #ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
         from time import localtime, strftime
         t = strftime("%H:%M:%S", localtime())
         hour, min, sec = t.split(":")
         hour = int(hour)
-    if persistent.carter3menu == True: #МЕНЮШКА КАРТЕРА 3
+
+    if persistent.firstmenushka == True:
+        $ persistent.firstmenushka = False
+
+        $ consolehistory = []
+
         if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-            play music ts_killyourself fadein 5
-            scene black
-            show ts_menu_move_anim
-            show ts_rain
-            show zatemnenie_light
-        elif True: #ДЕНЬ
-            play music ts_tt2ogsr fadein 5
-            scene black
-            show ts_menu_move_anim_three
-            show zatemnenie_light
-    elif persistent.carter2menu == True: #МЕНЮШКА КАРТЕРА 2
-        if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-            play music ts_angel fadein 5
-            scene ts_menu_art_carter2_night
-            show ts_rain
-            show zatemnenie_light
-        elif True: #ДЕНЬ
-            play music ts_tt2ogsr1 fadein 5
-            scene ts_menu_art3_night
-            show dust1
-            show dust2
-            show dust3
-            show dust4
-            show zatemnenie_light
-    else: #МЕНЮШКА КАРТЕРА 1
-        if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-            play music ts_menu_night_ost fadein 5
+
+            call updateconsole ("os.open(\"source/music/ts_menu_night_ost.ogg\")", "Запущен трек Jurrivh - Suicide Note.") from _call_updateconsole_0
+            play music ts_menu_night_ost fadein 2
+            pause 1.0
+            call updateconsole ("os.open(\"source/videosos/ts_menu_vid_night.webm\")", "Видео ts_menu_vid_night.webm успешно открыто.") from _call_updateconsole_1
+            pause 1.0
+            hide console_bg
+            hide console_caret
+            hide ctext
+            hide chistory
+
             scene ts_menu_vid_night
             show zatemnenie_light
+
         elif True: #ДЕНЬ
-            play music ts_wmm fadein 5
+
+            call updateconsole ("os.open(\"source/music/ts_wmm.ogg\")", "Запущен трек Pixies - Where is My Mind (piano cover).") from _call_updateconsole_3
+            play music ts_wmm fadein 2
+            pause 1.0
+            call updateconsole ("os.open(\"source/videosos/ts_menu_vid.webm\")", "Видео ts_menu_vid.webm успешно открыто.") from _call_updateconsole_4
+            pause 1.0
+            hide console_bg
+            hide console_caret
+            hide ctext
+            hide chistory
+
             scene ts_menu_vid
             show zatemnenie_light
-    with Fade(1.5, 1, 2)
-    call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
+
+        with Fade(1.5, 1, 2)
+
+        if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+            play sound br_glitch
+            show ts_menu_vid_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            pause 0.6
+            stop sound
+            hide ts_menu_vid_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+        elif True: #ДЕНЬ
+            play sound br_glitch
+            show ts_menu_vid as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            pause 0.6
+            stop sound
+            hide ts_menu_vid as bg1 at br_glitches(_fps=160, glitch_strength=1)
+
+        call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
+
+    else:
+
+        if persistent.carter3menu == True: #МЕНЮШКА КАРТЕРА 3
+            if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+                play music ts_killyourself fadein 5
+                scene black
+                show ts_menu_move_anim
+                show ts_rain
+                show zatemnenie_light
+            elif True: #ДЕНЬ
+                play music ts_tt2ogsr fadein 5
+                scene black
+                show ts_menu_move_anim_three
+                show zatemnenie_light
+
+        elif persistent.carter2menu == True: #МЕНЮШКА КАРТЕРА 2
+            if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+                play music ts_angel fadein 5
+                scene ts_menu_art_carter2_night
+                show ts_rain
+                show zatemnenie_light
+            elif True: #ДЕНЬ
+                play music ts_tt2ogsr1 fadein 5
+                scene ts_menu_art3_night
+                show dust1
+                show dust2
+                show dust3
+                show dust4
+                show zatemnenie_light
+
+        else: #МЕНЮШКА КАРТЕРА 1
+            if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+                play music ts_menu_night_ost fadein 5
+                scene ts_menu_vid_night
+                show zatemnenie_light
+            elif True: #ДЕНЬ
+                play music ts_wmm fadein 5
+                scene ts_menu_vid
+                show zatemnenie_light
+
+        with Fade(1.5, 1, 2)
+
+        if persistent.carter3menu == True: #МЕНЮШКА КАРТЕРА 3
+            if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+                play sound br_glitch
+                show ts_menu_move_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
+                pause 0.6
+                stop sound
+                hide ts_menu_move_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            elif True: #ДЕНЬ
+                play sound br_glitch
+                show ts_menu_move_anim_three as bg1 at br_glitches(_fps=160, glitch_strength=1)
+                pause 0.6
+                stop sound
+                hide ts_menu_move_anim_three as bg1 at br_glitches(_fps=160, glitch_strength=1)
+
+        elif persistent.carter2menu == True: #МЕНЮШКА КАРТЕРА 2
+            if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+                play sound br_glitch
+                show ts_menu_art_carter2_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+                pause 0.6
+                stop sound
+                hide ts_menu_art_carter2_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            elif True: #ДЕНЬ
+                play sound br_glitch
+                show ts_menu_art3_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+                pause 0.6
+                stop sound
+                hide ts_menu_art3_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+
+        else: #МЕНЮШКА КАРТЕРА 1
+            if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+                play sound br_glitch
+                show ts_menu_vid_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+                pause 0.6
+                stop sound
+                hide ts_menu_vid_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            elif True: #ДЕНЬ
+                play sound br_glitch
+                show ts_menu_vid as bg1 at br_glitches(_fps=160, glitch_strength=1)
+                pause 0.6
+                stop sound
+                hide ts_menu_vid as bg1 at br_glitches(_fps=160, glitch_strength=1)
+
+        call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
 
 label splashscreen:
 
@@ -93,9 +185,6 @@ label spashcreen1:
     play music mosh1 fadein 2
     $ renpy.pause(1.5, hard=True)
     scene ts_menu_vid_sunset
-#    scene ts_intro_3
-#    show ts_rain
-#    show ts_intro_31
     show zatemnenie
     with dissolve4
     $ renpy.pause(1, hard=True)
@@ -156,7 +245,7 @@ screen bergenchik_intro_ebat0:
     text "{size=+10}{font=[cit_font]}для слишком впечатлительных особ.{/font}{/size}" yalign 0.525 xalign 0.5
 
 screen bergenchik_intro_ebat1:
-    text "{size=+10}{font=[cit_font]}Мод содержит в себе сцены насилия, употребления наркотиков, табака,{/font}{/size}" yalign 0.475 xalign 0.5
+    text "{size=+10}{font=[cit_font]}Мод содержит в себе сцены насилия, употребления{/font}{/size}" yalign 0.475 xalign 0.5
     text "{size=+10}{font=[cit_font]}алокголя, и прочие сцены сексуального характера.{/font}{/size}" yalign 0.525 xalign 0.5
 
 screen bergenchik_intro_ebat2:

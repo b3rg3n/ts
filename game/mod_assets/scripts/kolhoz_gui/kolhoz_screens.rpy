@@ -275,30 +275,56 @@ init -501 screen game_menu_selector:
 
     text "{image=ts_logo_menu}" ypos 150 xpos 75
 
-    textbutton ("{size=+15}На Главную{/size}") ypos 342 xpos 75:
-        action MainMenu()
-        activate_sound start_sound_suka
-        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    textbutton ("{size=+15}Запомнить{/size}") ypos 392 xpos 75:
-        action ShowMenu('save')
-        activate_sound start_sound_suka
-        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    textbutton ("{size=+15}Вспомнить{/size}") ypos 442 xpos 75:
-        action ShowMenu('load')
-        activate_sound start_sound_suka
-        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    textbutton ("{size=+15}Настройки{/size}") ypos 492 xpos 75:
-        action ShowMenu('preferences')
-        activate_sound start_sound_suka
-        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    textbutton ("{size=+15}Сбежать{/size}") ypos 542 xpos 75:
-        action ShowMenu('quit')
-        activate_sound start_sound_suka
-        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    imagebutton ypos 0 xpos 0:
-        auto "mod_assets/source/images/gui/ebanoemenu/nope_%s.webp"
-        action Return()
-    text "{font=[cit_font]}{size=+15}Сходишь с ума уже {image=gametime}{size=+15}{/font}" ypos 650 xpos 76
+    if _preferences.language == "english":
+        textbutton ("{size=+15}main menu{/size}") ypos 342 xpos 75:
+            action MainMenu()
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Save {/size}") ypos 392 xpos 75:
+            action ShowMenu('save')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Load {/size}") ypos 442 xpos 75:
+            action ShowMenu('load')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Settings{/size}") ypos 492 xpos 75:
+            action ShowMenu('preferences')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Leave{/size}") ypos 542 xpos 75:
+            action ShowMenu('quit')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        imagebutton ypos 0 xpos 0:
+            auto "mod_assets/source/images/gui/ebanoemenu/nope_%s.webp"
+            action Return()
+        text "{font=[cit_font]}{size=+15}You've already played the mod {image=gametime}{size=+15}{/font}" ypos 650 xpos 76
+    else:
+        textbutton ("{size=+15}На Главную{/size}") ypos 342 xpos 75:
+            action MainMenu()
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Запомнить{/size}") ypos 392 xpos 75:
+            action ShowMenu('save')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Вспомнить{/size}") ypos 442 xpos 75:
+            action ShowMenu('load')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Настройки{/size}") ypos 492 xpos 75:
+            action ShowMenu('preferences')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Сбежать{/size}") ypos 542 xpos 75:
+            action ShowMenu('quit')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        imagebutton ypos 0 xpos 0:
+            auto "mod_assets/source/images/gui/ebanoemenu/nope_%s.webp"
+            action Return()
+        text "{font=[cit_font]}{size=+15}Сходишь с ума уже {image=gametime}{size=+15}{/font}" ypos 650 xpos 76
 
 init -101 python:
 

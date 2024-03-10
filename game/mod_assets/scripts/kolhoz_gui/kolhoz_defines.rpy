@@ -22,15 +22,15 @@ init -4 python:
 
     def translate():
         if _preferences.language == "english":
-            layout.ARE_YOU_SURE = "Are you sure?"
-            layout.DELETE_SAVE = "Are you sure you want to delete this save?"
-            layout.OVERWRITE_SAVE = "Are you sure you want to overwrite your save?"
-            layout.LOADING = "Loading will lose unsaved progress.\nAre you sure you want to do this?"
-            layout.QUIT = "Are you sure you want to quit?"
-            layout.MAIN_MENU = "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
-            layout.SLOW_SKIP = "Are you sure you want to begin skipping?"
-            layout.FAST_SKIP_UNSEEN = "Are you sure you want to skip to the next choice?"
-            layout.FAST_SKIP_SEEN = "Are you sure you want to skip to unseen dialogue or the next choice?"
+            layout.ARE_YOU_SURE = "Are you sure? "
+            layout.DELETE_SAVE = "Are you sure you want to delete this save? "
+            layout.OVERWRITE_SAVE = "Are you sure you want to overwrite your save? "
+            layout.LOADING = "Loading will lose unsaved progress.\nAre you sure you want to do this? "
+            layout.QUIT = "Are you sure you want to quit? "
+            layout.MAIN_MENU = "Are you sure you want to return to the main menu?\nThis will lose unsaved progress. "
+            layout.SLOW_SKIP = "Are you sure you want to begin skipping? "
+            layout.FAST_SKIP_UNSEEN = "Are you sure you want to skip to the next choice? "
+            layout.FAST_SKIP_SEEN = "Are you sure you want to skip to unseen dialogue or the next choice? "
         else:
             layout.ARE_YOU_SURE = _("Уверен?")
             layout.DELETE_SAVE = _("Точно хочешь забыть?")

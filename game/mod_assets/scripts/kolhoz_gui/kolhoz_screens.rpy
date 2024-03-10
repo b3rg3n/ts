@@ -533,7 +533,7 @@ init -501 screen preferences:
                 text translation_new["Text_speed"] style "settings_header" xalign 0.5
                 bar value Preference("text speed") left_bar bar_full right_bar bar_null thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" hover_thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" xalign 0.5 xmaximum 0.8 ymaximum 3
 
-                textbutton translation_new["Language"] style "log_button" text_style "settings_text" text_size 50 xalign 0.5 action ShowMenu("language_menu")
+                textbutton translation_new["Language"] style "log_button" text_style "settings_text" text_size 28 xalign 0.5 action ShowMenu("language_menu")
 
                 text translation_new["Font"] style "settings_header" xalign 0.5
                 grid 2 1 xfill True:

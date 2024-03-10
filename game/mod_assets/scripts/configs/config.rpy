@@ -28,8 +28,8 @@ default preferences.text_cps = 50
 default preferences.afm_time = 15
 define config.save_directory = "truestory"
 define config.window_icon = "mod_assets/source/images/gui/window_icon.png"
-
 define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'front' ]
+
 define config.image_cache_size = 64
 define config.predict_statements = 50
 define config.menu_clear_layers = ["front"]

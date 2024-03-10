@@ -161,7 +161,6 @@ label main_menu:
 
 label splashscreen:
 
-
     if not persistent.lan_chosen:
 
         scene black

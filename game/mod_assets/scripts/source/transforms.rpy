@@ -366,6 +366,15 @@ transform lang_en_hover:
     linear 1.5 zoom 1.5
     pause 1.5
 
+transform ts_move_up(y):
+    yoffset 300 subpixel True
+    ease 0.3 yoffset 50
+    ease 0.3 yoffset y
+
+transform ts_move_down(y):
+    yoffset y subpixel True
+    ease 0.5 yoffset 800
+
 transform t41:
     tcommon(200)
 transform t42:
@@ -697,3 +706,500 @@ init python:
 transform malpha(a=1.00):
     i11
     alpha a
+
+
+#
+
+transform ts_leftin(e=1.0, x=640, y=1.03, z=0.80):
+    xcenter -300 yoffset 0 yanchor 1.0 ypos y zoom z*1.00 alpha 1.00 subpixel True
+    easein e xcenter x
+
+transform ts_rightin(e=1.0, x=640, y=1.03, z=0.80):
+    xcenter 1400 yoffset 0 yanchor 1.0 ypos y zoom z*1.00 alpha 1.00 subpixel True
+    easein e xcenter x
+
+transform ts_leftout(e=1.0, x=640, y=1.03, z=0.80):
+    xcenter x yoffset 0 yanchor 1.0 ypos y zoom z*1.00 alpha 1.00 subpixel True
+    easein e xcenter -300
+
+transform ts_rightout(e=1.0, x=640, y=1.03, z=0.80):
+    xcenter x yoffset 0 yanchor 1.0 ypos y zoom z*1.00 alpha 1.00 subpixel True
+    easein e xcenter 1400
+
+transform ts_tcommon(e=1.0, x=640):
+    yanchor 1.0 subpixel True
+    on show:
+        ypos 1.03
+        zoom 0.80*0.95 alpha 0.00
+        xcenter x yoffset -20
+        easein e yoffset 0 zoom 0.80*1.00 alpha 1.00
+    on replace:
+
+        alpha 1.00
+        parallel:
+            easein e xcenter x zoom 0.80*1.00
+        parallel:
+            easein 0.5 yoffset 0 ypos 1.03
+
+transform ts_sprite_alpha(a=0.5):
+    xcenter 640 yoffset 0 zoom 0.80 alpha a subpixel True
+
+transform ts_move_up(y):
+    yoffset 300 subpixel True
+    ease 0.3 yoffset 50
+    ease 0.3 yoffset y
+
+transform ts_move_down(y):
+    yoffset y subpixel True
+    ease 0.5 yoffset 800
+
+
+
+
+transform ln41:
+    ts_leftin(1.0, 200)
+transform ln42:
+    ts_leftin(1.0, 493)
+transform ln43:
+    ts_leftin(1.0, 786)
+transform ln44:
+    ts_leftin(1.0, 1080)
+transform ln31:
+    ts_leftin(1.0, 240)
+transform ln32:
+    ts_leftin(1.0, 640)
+transform ln33:
+    ts_leftin(1.0, 1040)
+transform ln21:
+    ts_leftin(1.0, 400)
+transform ln22:
+    ts_leftin(1.0, 880)
+transform ln11:
+    ts_leftin(1.0, 640)
+
+transform lf41:
+    ts_leftin(0.5, 200)
+transform lf42:
+    ts_leftin(0.5, 493)
+transform lf43:
+    ts_leftin(0.5, 786)
+transform lf44:
+    ts_leftin(0.5, 1080)
+transform lf31:
+    ts_leftin(0.5, 240)
+transform lf32:
+    ts_leftin(0.5, 640)
+transform lf33:
+    ts_leftin(0.5, 1040)
+transform lf21:
+    ts_leftin(0.5, 400)
+transform lf22:
+    ts_leftin(0.5, 880)
+transform lf11:
+    ts_leftin(0.5, 640)
+
+transform ls41:
+    ts_leftin(1.5, 200)
+transform ls42:
+    ts_leftin(1.5, 493)
+transform ls43:
+    ts_leftin(1.5, 786)
+transform ls44:
+    ts_leftin(1.5, 1080)
+transform ls31:
+    ts_leftin(1.5, 240)
+transform ls32:
+    ts_leftin(1.5, 640)
+transform ls33:
+    ts_leftin(1.5, 1040)
+transform ls21:
+    ts_leftin(1.5, 400)
+transform ls22:
+    ts_leftin(1.5, 880)
+transform ls11:
+    ts_leftin(1.5, 640)
+
+transform lss41:
+    ts_leftin(2.0, 200)
+transform lss42:
+    ts_leftin(2.0, 493)
+transform lss43:
+    ts_leftin(2.0, 786)
+transform lss44:
+    ts_leftin(2.0, 1080)
+transform lss31:
+    ts_leftin(2.0, 240)
+transform lss32:
+    ts_leftin(2.0, 640)
+transform lss33:
+    ts_leftin(2.0, 1040)
+transform lss21:
+    ts_leftin(2.0, 400)
+transform lss22:
+    ts_leftin(2.0, 880)
+transform lss11:
+    ts_leftin(2.0, 640)
+
+transform rn41:
+    ts_rightin(1.0, 200)
+transform rn42:
+    ts_rightin(1.0, 493)
+transform rn43:
+    ts_rightin(1.0, 786)
+transform rn44:
+    ts_rightin(1.0, 1080)
+transform rn31:
+    ts_rightin(1.0, 240)
+transform rn32:
+    ts_rightin(1.0, 640)
+transform rn33:
+    ts_rightin(1.0, 1040)
+transform rn21:
+    ts_rightin(1.0, 400)
+transform rn22:
+    ts_rightin(1.0, 880)
+transform rn11:
+    ts_rightin(1.0, 640)
+
+transform rf41:
+    ts_rightin(0.5, 200)
+transform rf42:
+    ts_rightin(0.5, 493)
+transform rf43:
+    ts_rightin(0.5, 786)
+transform rf44:
+    ts_rightin(0.5, 1080)
+transform rf31:
+    ts_rightin(0.5, 240)
+transform rf32:
+    ts_rightin(0.5, 640)
+transform rf33:
+    ts_rightin(0.5, 1040)
+transform rf21:
+    ts_rightin(0.5, 400)
+transform rf22:
+    ts_rightin(0.5, 880)
+transform rf11:
+    ts_rightin(0.5, 640)
+
+transform rs41:
+    ts_rightin(1.5, 200)
+transform rs42:
+    ts_rightin(1.5, 493)
+transform rs43:
+    ts_rightin(1.5, 786)
+transform rs44:
+    ts_rightin(1.5, 1080)
+transform rs31:
+    ts_rightin(1.5, 240)
+transform rs32:
+    ts_rightin(1.5, 640)
+transform rs33:
+    ts_rightin(1.5, 1040)
+transform rs21:
+    ts_rightin(1.5, 400)
+transform rs22:
+    ts_rightin(1.5, 880)
+transform rs11:
+    ts_rightin(1.5, 640)
+transform rs51:
+    ts_rightin(1.5, 216)
+transform rs52:
+    ts_rightin(1.5, 432)
+transform rs53:
+    ts_rightin(1.5, 648)
+transform rs54:
+    ts_rightin(1.5, 864)
+transform rs55:
+    ts_rightin(1.5, 1080)
+
+transform rss41:
+    ts_rightin(2.0, 200)
+transform rss42:
+    ts_rightin(2.0, 493)
+transform rss43:
+    ts_rightin(2.0, 786)
+transform rss44:
+    ts_rightin(2.0, 1080)
+transform rss31:
+    ts_rightin(2.0, 240)
+transform rss32:
+    ts_rightin(2.0, 640)
+transform rss33:
+    ts_rightin(2.0, 1040)
+transform rss21:
+    ts_rightin(2.0, 400)
+transform rss22:
+    ts_rightin(2.0, 880)
+transform rss11:
+    ts_rightin(2.0, 640)
+
+transform tn41:
+    ts_tcommon(1.0, 200)
+transform tn42:
+    ts_tcommon(1.0, 493)
+transform tn43:
+    ts_tcommon(1.0, 786)
+transform tn44:
+    ts_tcommon(1.0, 1080)
+transform tn31:
+    ts_tcommon(1.0, 240)
+transform tn32:
+    ts_tcommon(1.0, 640)
+transform tn33:
+    ts_tcommon(1.0, 1040)
+transform tn21:
+    ts_tcommon(1.0, 400)
+transform tn22:
+    ts_tcommon(1.0, 880)
+transform tn11:
+    ts_tcommon(1.0, 640)
+
+transform tn41:
+    ts_tcommon(1.0, 200)
+transform tn42:
+    ts_tcommon(1.0, 493)
+transform tn43:
+    ts_tcommon(1.0, 786)
+transform tn44:
+    ts_tcommon(1.0, 1080)
+transform tn31:
+    ts_tcommon(1.0, 240)
+transform tn32:
+    ts_tcommon(1.0, 640)
+transform tn33:
+    ts_tcommon(1.0, 1040)
+transform tn21:
+    ts_tcommon(1.0, 400)
+transform tn22:
+    ts_tcommon(1.0, 880)
+transform tn11:
+    ts_tcommon(1.0, 640)
+
+transform tf41:
+    ts_tcommon(0.5, 200)
+transform tf42:
+    ts_tcommon(0.5, 493)
+transform tf43:
+    ts_tcommon(0.5, 786)
+transform tf44:
+    ts_tcommon(0.5, 1080)
+transform tf31:
+    ts_tcommon(0.5, 240)
+transform tf32:
+    ts_tcommon(0.5, 640)
+transform tf33:
+    ts_tcommon(0.5, 1040)
+transform tf21:
+    ts_tcommon(0.5, 400)
+transform tf22:
+    ts_tcommon(0.5, 880)
+transform tf11:
+    ts_tcommon(0.5, 640)
+
+transform ts41:
+    ts_tcommon(1.5, 200)
+transform ts42:
+    ts_tcommon(1.5, 493)
+transform ts43:
+    ts_tcommon(1.5, 786)
+transform ts44:
+    ts_tcommon(1.5, 1080)
+transform ts31:
+    ts_tcommon(1.5, 240)
+transform ts32:
+    ts_tcommon(1.5, 640)
+transform ts33:
+    ts_tcommon(1.5, 1040)
+transform ts21:
+    ts_tcommon(1.5, 400)
+transform ts22:
+    ts_tcommon(1.5, 880)
+transform ts11:
+    ts_tcommon(1.5, 640)
+
+transform tss41:
+    ts_tcommon(2.0, 200)
+transform tss42:
+    ts_tcommon(2.0, 493)
+transform tss43:
+    ts_tcommon(2.0, 786)
+transform tss44:
+    ts_tcommon(2.0, 1080)
+transform tss31:
+    ts_tcommon(2.0, 240)
+transform tss32:
+    ts_tcommon(2.0, 640)
+transform tss33:
+    ts_tcommon(2.0, 1040)
+transform tss21:
+    ts_tcommon(2.0, 400)
+transform tss22:
+    ts_tcommon(2.0, 880)
+transform tss11:
+    ts_tcommon(2.0, 640)
+
+transform ts_hidescreens:
+    xpos 0.0 ypos 0.0 alpha 1.0 subpixel True
+    ease 1.0 xpos 0.0 ypos 0.2 alpha 0.0
+
+transform ts_showscreens:
+    ypos 0.2 alpha 0.0 subpixel True
+    ease 1.0 ypos 0.0 alpha 1.0
+
+transform ts_super_effect:
+    xalign 0.5 yalign 0.5 zoom 1.1 subpixel True
+    parallel:
+        ease 2.0 xpos 0.505
+        ease 2.0 xpos 0.4915
+        ease 2.0 xpos 0.5115
+        ease 2.0 xpos 0.495
+        repeat
+    parallel:
+        ease 1.9 ypos 0.52
+        ease 1.9 ypos 0.489
+        ease 1.9 ypos 0.52
+        ease 1.9 ypos 0.489
+        repeat
+    parallel:
+        ease 2.25 rotate -0.5
+        ease 2.25 rotate -0.57
+        ease 2.25 rotate -0.2
+        ease 2.25 rotate 0.17
+        ease 2.25 rotate 0.5
+        ease 2.25 rotate 0.2
+        ease 2.25 rotate 0.57
+        repeat
+    parallel:
+        pause 1.15
+        ease 0.25 zoom 1.5
+        ease 0.5 zoom 1.1
+        repeat
+    parallel:
+        pause 1.15
+        ease 0.25 rotate 8.9
+        ease 0.25 rotate 1.0
+        ease 0.25 rotate 0.0
+        repeat
+
+transform ts_bg_zoom_e(z=1.0, zz=1.0, t=0.25, x=0.5, xx=0.5, y=0.5, yy=0.5, a=1.0, aa=1.0):
+    zoom z xalign x yalign y alpha a subpixel True
+    ease t zoom zz xalign xx yalign yy alpha aa
+
+transform ts_null_transform:
+    pause 0.1
+
+transform ts_shake(t1=ts_null_transform, t2=ts_null_transform, t3=ts_null_transform, t4=ts_null_transform, t5=ts_null_transform, t6=ts_null_transform):
+    parallel:
+        t1
+    parallel:
+        t2
+    parallel:
+        t3
+    parallel:
+        t4
+    parallel:
+        t5
+    parallel:
+        t6
+
+transform ts_xypos(xp=0.5, yp=1.0, time=0.0):
+    ease time xpos xp ypos yp subpixel True
+
+transform ts_super_shake:
+    block:
+        parallel:
+            parallel:
+                choice:
+                    xanchor 0.2
+                choice:
+                    xanchor 0.3
+                choice:
+                    xanchor 0.4
+                choice:
+                    xanchor 0.5
+                choice:
+                    xanchor 0.6
+                choice:
+                    xanchor 0.7
+                choice:
+                    xanchor 0.8
+            parallel:
+                choice:
+                    yanchor 0.2
+                choice:
+                    yanchor 0.3
+                choice:
+                    yanchor 0.4
+                choice:
+                    yanchor 0.5
+                choice:
+                    yanchor 0.6
+                choice:
+                    yanchor 0.7
+                choice:
+                    yanchor 0.8
+        parallel:
+            choice:
+                rotate -2
+            choice:
+                rotate -0.5
+            choice:
+                rotate 0
+            choice:
+                rotate 0.5
+            choice:
+                rotate 2
+        pause 0.04
+        repeat 10
+    block:
+        parallel:
+            parallel:
+                choice:
+                    xanchor 0.499
+                choice:
+                    xanchor 0.5
+                choice:
+                    xanchor 0.501
+            parallel:
+                choice:
+                    yanchor 0.499
+                choice:
+                    yanchor 0.5
+                choice:
+                    yanchor 0.501
+        parallel:
+            choice:
+                rotate -0.2
+            choice:
+                rotate -0.1
+            choice:
+                rotate 0
+            choice:
+                rotate 0.1
+            choice:
+                rotate 0.2
+        pause 0.04
+        repeat
+
+transform ts_black_glitch:
+    alpha 0.5
+    parallel:
+        0.36
+        alpha 0.5
+        repeat
+    parallel:
+        0.49
+        alpha 0.475
+        repeat
+
+transform ts_coridor_glitch:
+    xoffset 0
+    parallel:
+        0.36
+        xoffset 1
+        repeat
+    parallel:
+        0.49
+        xoffset 0
+        repeat

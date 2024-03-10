@@ -204,7 +204,6 @@ label ts_scenario_1:
     m "…"
 
     show sayori 1 at t11
-    show zatemnenie_light with dissolve
 
     "Остальная часть собрания клуба прошла гораздо быстрее."
     "Мы с Сайори набросали идей, как бы нам набрать участников, чтобы добрать до минимально разрешённого состава клуба."
@@ -218,7 +217,6 @@ label ts_scenario_1:
     "и многое другое."
     "По итогам встречи мы не добились ничего, кроме того, что у нас обеих вскипел мозг от такого мозгового штурма."
 
-    hide zatemnenie_light with dissolve
     show sayori 1p at t11
 
     s "Фу-у-ух."
@@ -242,7 +240,6 @@ label ts_scenario_1:
 
     play sound pageflip
     scene ts_club
-    show zatemnenie_light
     with wipeleft_scene
 
     stop music fadeout 6
@@ -556,7 +553,6 @@ label ts_scenario_1:
 
     play sound pageflip
     scene ts_corridor
-    show zatemnenie_light
     with wipeleft_scene
 
     "Сайори вприпрыжку идёт по коридору по направлению к выходу."
@@ -935,7 +931,7 @@ label ts_scenario_1:
     "Сейчас же, наверное, лучше стоит спуститься в гостиную и посмотреть телевизор вместе с папой."
 
     play sound pageflip
-    scene ts_living_room_late
+    scene ts_living_room_late_telek
     with wipeleft_scene
 
     ts_ft "Моника, это ты?"
@@ -946,7 +942,7 @@ label ts_scenario_1:
     m "Вот и здорово!"
 
     play sound pageflip
-    scene ts_living_room_night
+    scene ts_living_room_night_telek
     with wipeleft_scene
 
     "За просмотром банальных пятничных шоу время пролетело гораздо быстрее, чем ожидалось."

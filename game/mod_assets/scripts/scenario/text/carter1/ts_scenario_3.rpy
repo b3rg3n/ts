@@ -20,7 +20,7 @@ label ts_scenario_3:
     stop sound fadeout 7
     $ Chapter("Поиски. Нацуки")
     play sound ts_alarm
-    play music ts_sirius fadein 2
+    play music ts_gramatik fadein 2
     scene ts_bedroom
     show unblink
     "Часы показывают ровно семь утра."
@@ -97,7 +97,7 @@ label ts_scenario_3:
     nvlbazar "{font=[ts_nvl_font2]}Его зовут Ида Хирото, и он, как вы уже догадались, мой папа."
     $ ts_ft_name = "Хирото"
     nvlbazar "{font=[ts_nvl_font2]}Вы меня, конечно, спросите:"
-    nvlbazar "{font=[ts_nvl_font1]}Но как? вы же совсем друг на друга не похожи!"
+    nvlbazar "{font=[sc_font]}Но как? вы же совсем друг на друга не похожи!"
     nvlbazar "{font=[ts_nvl_font2]}Понимаете, генетика - это такая штука, в которой для создания человека нужны два других человека, не меньше. И не больше."
 
     show hiroto at thide

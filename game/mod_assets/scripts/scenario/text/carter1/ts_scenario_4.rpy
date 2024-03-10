@@ -1441,7 +1441,7 @@ label ts_scenario_4:
     scene black
     pause 2
 
-    play music audio.m1
+    play music ts_hl2
     scene vse_pizda_monike:
         anchor (0.5, 0.5)
         pos (0.5, 0.5)

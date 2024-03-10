@@ -4,11 +4,11 @@ label ts_scenario_5:
     $ persistent.carter2menu = True
     $ persistent.carter3menu = False
 
-    play sound chp
+    play sound chp2
     $ Chapter("АКТ ВТОРОЙ")
     $ Chapter("АКТ ВТОРОЙ")
-    $ Chapter("Глава пятая")
-    $ Chapter("Глава пятая")
+    $ Chapter("Глава первая")
+    $ Chapter("Глава первая")
     $ Chapter("Всё же хорошо?")
     stop sound fadeout 7
     $ Chapter("Всё же хорошо?")

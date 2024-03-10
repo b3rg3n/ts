@@ -20,7 +20,7 @@ init:
 
 label true_story_credits_label_blya:
 
-    play music ts_soft fadein 4
+    play music ts_wales fadein 4
 
     scene ts_sakura
     show zatemnenie_light

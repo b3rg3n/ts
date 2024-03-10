@@ -28,8 +28,8 @@ label main_menu:
 
         if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
 
-            call updateconsole ("os.open(\"source/music/ts_menu_night_ost.ogg\")", "Запущен трек Jurrivh - Suicide Note.") from _call_updateconsole_0
-            play music ts_menu_night_ost fadein 2
+            call updateconsole ("os.open(\"source/music/ts_flowers.ogg\")", "Запущен трек Wildays - Цветы.") from _call_updateconsole_0
+            play music ts_flowers fadein 2
             pause 1.0
             call updateconsole ("os.open(\"source/videosos/ts_menu_vid_night.webm\")", "Видео ts_menu_vid_night.webm успешно открыто.") from _call_updateconsole_1
             pause 1.0
@@ -43,8 +43,8 @@ label main_menu:
 
         elif True: #ДЕНЬ
 
-            call updateconsole ("os.open(\"source/music/ts_wmm.ogg\")", "Запущен трек Pixies - Where is My Mind (piano cover).") from _call_updateconsole_3
-            play music ts_wmm fadein 2
+            call updateconsole ("os.open(\"source/music/ts_vip8.ogg\")", "Запущен трек Xarakter - VIP Eight.") from _call_updateconsole_3
+            play music ts_vip8 fadein 2
             pause 1.0
             call updateconsole ("os.open(\"source/videosos/ts_menu_vid.webm\")", "Видео ts_menu_vid.webm успешно открыто.") from _call_updateconsole_4
             pause 1.0
@@ -90,7 +90,7 @@ label main_menu:
 
         elif persistent.carter2menu == True: #МЕНЮШКА КАРТЕРА 2
             if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-                play music ts_angel fadein 5
+                play music ts_ytd fadein 5
                 scene ts_menu_art_carter2_night
                 show ts_rain
                 show zatemnenie_light
@@ -105,11 +105,11 @@ label main_menu:
 
         else: #МЕНЮШКА КАРТЕРА 1
             if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-                play music ts_menu_night_ost fadein 5
+                play music ts_flowers fadein 5
                 scene ts_menu_vid_night
                 show zatemnenie_light
             elif True: #ДЕНЬ
-                play music ts_wmm fadein 5
+                play music ts_vip8 fadein 5
                 scene ts_menu_vid
                 show zatemnenie_light
 
@@ -182,7 +182,7 @@ label splashscreen:
 
 label spashcreen1:
     $ renpy.pause(1, hard=True)
-    play music mosh1 fadein 2
+    play music ts_mosh fadein 2
     $ renpy.pause(1.5, hard=True)
     scene ts_menu_vid_sunset
     show zatemnenie
@@ -224,9 +224,6 @@ label splashscreen2:
     $ renpy.pause(1, hard=True)
     $ persistent.skip_splash = True
     return
-
-screen ts_logo_shit:
-    text "{size=+100}{font=[ts_font]}True Story{/font}{/size}" yalign 0.5 xalign 0.5 xpos 640 ypos 60 at chapter_anim
 
 screen skitsoglasenblya:
 

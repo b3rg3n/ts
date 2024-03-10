@@ -19,7 +19,7 @@ label ts_scenario_2:
     $ Chapter("Поиски. Юри")
     stop sound fadeout 7
     $ Chapter("Поиски. Юри")
-    play music ts_sirius
+    play music ts_gramatik
     scene ts_bedroom
     with ed_night_dis
 

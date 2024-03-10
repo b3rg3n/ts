@@ -896,6 +896,3 @@ init:
             linear 19.0 xoffset -100 yoffset 100
             repeat
 
-    image ts_menu_vid = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/jm.webm")
-    image ts_menu_vid_night = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/mr.webm")
-    image ts_menu_vid_sunset = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/mn.webm")

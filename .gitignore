@@ -12,6 +12,7 @@ android.json
 android.keystore
 bundle.keystore
 project.json
+*.pyc
 *.rpyc
 *.rpyb
 *.rpym

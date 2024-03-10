@@ -58,7 +58,7 @@ label ts_scenario_0:
     with wipeleft_scene
 
     play ambience pechatka
-
+    hide zatemnenie
     nvlbazar "{font=[prologue_font]}Дальше, уже в школе, пока остальные до сих пор учили буквы - я уже невообразимо быстро читала."
     nvlbazar "{font=[prologue_font]}А пока остальные до сих пор складывали два плюс два - я без калькулятора уже могла перемножать двузначные числа."
     nvlbazar "{font=[prologue_font]}И это мне быстро наскучило: пока остальные на самом деле чему-то учились, я просто витала в облаках."

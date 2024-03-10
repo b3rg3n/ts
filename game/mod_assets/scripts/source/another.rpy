@@ -49,9 +49,20 @@ init -1001 python:
         for chnl in ("sound", "sound2", "sound3", "sound_loop", "sound_loop2", "sound_loop3", "ambience"):
             renpy.sound.stop(channel=chnl)
 
+    def reload_names():
+        global store
+        for x in store.names_list:
+            char_define(x)
+
 init:
 #ГОПАЕМ ЮЗЕРНАЙМ
     if renpy.android:
         $ user = "Игрок"
     else:
         $ user = os.environ.get('username')
+
+    image ru_ground = "mod_assets/source/images/gui/lang/russian_ground.png"
+    image ru_hover = "mod_assets/source/images/gui/lang/russian_hover.png"
+
+    image en_ground = "mod_assets/source/images/gui/lang/english_ground.png"
+    image en_hover = "mod_assets/source/images/gui/lang/english_hover.png"

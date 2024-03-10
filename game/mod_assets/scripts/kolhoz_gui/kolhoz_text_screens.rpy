@@ -2,6 +2,24 @@
 # by @b3rg3n
 # Since 2024
 
+init -1001 python:
+    if _preferences.language == "english":
+        translation=translation_en
+    else:
+        translation=translation_ru
+
+    translation_new=translation
+
+
+init python:
+    def translation_init():
+        if _preferences.language == "english":
+            translation=translation_en
+        else:
+            translation=translation_ru
+        
+        translation_new=translation
+
 init -1002 python:
     translation=translation_ru
     translation_new=translation
@@ -56,5 +74,49 @@ init -1003 python:
         "Cens_mode_set" : "Антицензор",
         "Cens_mode_off" : "Отключить",
         "Cens_mode_on" : "Включить",
+        "Language" : "Язык",
+        "Russian" : "Русский",
+        "English" : "Английский",
+
+}
+
+    translation_en = {
+        "Quit_confirm" : "You sure?",
+        "Yes" : "Yes ",
+        "No" : "Nope",
+        "Noo" : "Cancel",
+        "settings" : "SETTINGS ",
+        "LOAD" : "LOAD ",
+        "SAVE" : "SAVE ",
+        "BACK" : "BACK ",
+        "Back" : "Back? ",
+        "Save_game" : "Save?",
+        "Delete" : "Delete?",
+        "Auto" : "Auto ",
+        "Empty_slot" : "Empty",
+        "Load_game" : "Load?",
+        "Window_mode" : "Window mode",
+        "Fullscreen" : "Fullscreen ",
+        "Window" : "Windowed",
+        "Skip" : "Skip",
+        "Skip_all" : "All",
+        "Skip_seen" : "Seen",
+        "Volume" : "Volume ",
+        "Music_lower" : "Music",
+        "Sound" : "Sounds",
+        "Ambience" : "Ambience ",
+        "Text_speed" : "Text Speed",
+        "Font" : "Textbox Size",
+        "Normal_font" : "Normal",
+        "Big_font" : "Biggest",
+        "Music_widget_set" : "Music Widget",
+        "Music_widget_on" : "On  ",
+        "Music_widget_off" : "Off ",
+        "Cens_mode_set" : "Without cens",
+        "Cens_mode_off" : "Off  ",
+        "Cens_mode_on" : "On ",
+        "Language" : "Language",
+        "Russian" : "Russian",
+        "English" : "English",
 
 }

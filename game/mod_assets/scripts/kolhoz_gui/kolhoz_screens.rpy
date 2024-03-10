@@ -185,22 +185,40 @@ init -501 screen main_menu:
 
     text "{image=ts_logo_menu}" ypos 150 xpos 75
 
-    textbutton ("{size=+15}Сойти с ума{/size}") ypos 342 xpos 75:
-        action Start()
-        activate_sound start_sound_suka
-        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    textbutton ("{size=+15}Вспомнить{/size}") ypos 392 xpos 75:
-        action ShowMenu('load')
-        activate_sound start_sound_suka
-        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    textbutton ("{size=+15}Настройки{/size}") ypos 442 xpos 75:
-        action ShowMenu('preferences')
-        activate_sound start_sound_suka
-        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    textbutton ("{size=+15}Сбежать{/size}") ypos 492 xpos 75:
-        action ShowMenu('quit')
-        activate_sound start_sound_suka
-        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+    if _preferences.language == "english":
+        textbutton ("{size=+15}New Game {/size}") ypos 342 xpos 75:
+            action Start()
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Load {/size}") ypos 392 xpos 75:
+            action ShowMenu('load')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Settings{/size}") ypos 442 xpos 75:
+            action ShowMenu('preferences')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Leave{/size}") ypos 492 xpos 75:
+            action ShowMenu('quit')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+    else:
+        textbutton ("{size=+15}Сойти с ума{/size}") ypos 342 xpos 75:
+            action Start()
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Вспомнить{/size}") ypos 392 xpos 75:
+            action ShowMenu('load')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Настройки{/size}") ypos 442 xpos 75:
+            action ShowMenu('preferences')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton ("{size=+15}Сбежать{/size}") ypos 492 xpos 75:
+            action ShowMenu('quit')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
     text "{size=+10}{font=[cit_font]} RenPy ver. [renpy.version_only] | Mod ver. [config.version]{/font}{/size}" yalign 0.983 xalign 0.990
 
 init -1 python:
@@ -221,6 +239,32 @@ init -501 screen quit:
 label _compat_confirm_quit:
     $ renpy.call_screen('quit')
 
+
+screen language_menu:
+
+    modal True
+
+    button style "blank_button" xpos 0 ypos 0 xfill True yfill True action Hide('language_menu')
+
+    #frame background Frame(get_image("images/anim/zatemnenie.webp"),50,50) xfill True yalign 0.5 left_padding 75 right_padding 75 bottom_padding 50 top_padding 50  xmaximum 1280 ymaximum 720:
+    window background get_image("images/anim/zatemnenie.webp") xmaximum 1280 ymaximum 720:
+
+        has vbox xalign 0.5
+
+        grid 1 14 xfill True:
+            hbox xalign 0.5:
+                if _preferences.language == None:
+                    add get_image("images/gui/ebanoemenu/leaf.webp") ypos 0.45
+                else:
+                    null width 22
+                textbutton translation_new["Russian"] style "log_button" text_style "settings_link" action (Language(None), Function(stop_music), Function(renpy.utter_restart)) ypos 280
+
+            hbox xalign 0.5:
+                if _preferences.language == "english":
+                    add get_image("images/gui/ebanoemenu/leaf.webp") ypos 0.65
+                else:
+                    null width 22
+                textbutton translation_new["English"] style "log_button" text_style "settings_link" action (Language("english"), Function(stop_music), Function(renpy.utter_restart)) ypos 320
 
 init -1 python:
     _game_menu_screen = "game_menu_selector"
@@ -418,7 +462,7 @@ init -501 screen preferences:
                 draggable True
                 scrollbars None
 
-                has grid 1 16 xfill True spacing 15
+                has grid 1 17 xfill True spacing 15
                 if renpy.android or renpy.ios:
                     text translation_new["Skip"] style "settings_header" xalign 0.5
                     grid 2 1 xfill True:
@@ -488,6 +532,8 @@ init -501 screen preferences:
 
                 text translation_new["Text_speed"] style "settings_header" xalign 0.5
                 bar value Preference("text speed") left_bar bar_full right_bar bar_null thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" hover_thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" xalign 0.5 xmaximum 0.8 ymaximum 3
+
+                textbutton translation_new["Language"] style "log_button" text_style "settings_text" text_size 50 xalign 0.5 action ShowMenu("language_menu")
 
                 text translation_new["Font"] style "settings_header" xalign 0.5
                 grid 2 1 xfill True:

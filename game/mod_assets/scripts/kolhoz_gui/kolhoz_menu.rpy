@@ -161,6 +161,34 @@ label main_menu:
 
 label splashscreen:
 
+
+    if not persistent.lan_chosen:
+
+        scene black
+
+        python:
+            ui.imagebutton("mod_assets/source/images/gui/lang/russian_ground.png", "mod_assets/source/images/gui/lang/russian_hover.png", clicked = ui.returns("None"), align = (0.5, 0.45))
+
+            ui.imagebutton("mod_assets/source/images/gui/lang/english_ground.png", "mod_assets/source/images/gui/lang/english_hover.png", clicked = ui.returns("english"), align = (0.5, 0.65))
+
+            result = ui.interact()
+
+            if result == "None":
+                _preferences.language = None
+                translation_new=translation_ru
+                renpy.show("ru_hover", [lang_ru_hover])
+                renpy.show("en_ground", [lang_en_ground])
+
+            elif result == "english":
+                _preferences.language = "english"
+                translation_new=translation_en
+                translate_names("english")
+                reload_names()
+                renpy.show("ru_ground", [lang_ru_ground])
+                renpy.show("en_hover", [lang_en_hover])
+
+            persistent.lan_chosen = True
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="В игре",details="Просмотр заставки",large_image="logogovna",start=time.time())

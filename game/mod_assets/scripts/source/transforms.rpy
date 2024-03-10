@@ -342,6 +342,29 @@ transform lhide:
     on hide:
         easeout .25 xcenter -300
 
+transform lang_ru_ground:
+    align (0.5, 0.15)
+    ease 0.5 align (0.2, 0.15)
+    linear 1.0 align (1.6, 0.15)
+
+transform lang_ru_hover:
+    align (0.5, 0.15)
+    pause 1.5
+    ease 1.0 align (0.5, 0.15)
+    linear 1.5 zoom 1.5
+    pause 1.5
+
+transform lang_en_ground:
+    align (0.5, 0.25)
+    ease 0.5 align (0.2, 0.25)
+    linear 1.0 align (1.6, 0.25)
+
+transform lang_en_hover:
+    align (0.5, 0.25)
+    pause 1.5
+    ease 1.0 align (0.5, 0.25)
+    linear 1.5 zoom 1.5
+    pause 1.5
 
 transform t41:
     tcommon(200)

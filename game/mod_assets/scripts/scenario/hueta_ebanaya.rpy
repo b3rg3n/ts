@@ -17,8 +17,33 @@ label ts_start:
             "Выбор главы":
                 call screen scenario_start_change_chapter with dissolve2
                 return
-            "Тесты хуеты":
+            "Тестовый label":
                 jump testing_label_blya
+            "Очистить переменные":
+                $ persistent.zastavka_skip = False
+                $ persistent.firstmenushka = True
+                $ persistent.skip_splash = False
+                $ persistent.first_poem = False
+                $ persistent.scenario_proshel_blya = False
+                return
+            "Выбрать нужную менюшку":
+                menu:
+                    "Из первого акта":
+                        $ persistent.carter2menu = False
+                        $ persistent.carter3menu = False
+                        return
+                    "Из второго акта":
+                        $ persistent.carter2menu = True
+                        $ persistent.carter3menu = False
+                        return
+                    "Из третьего акта":
+                        $ persistent.carter2menu = False
+                        $ persistent.carter3menu = True
+                        return
+                    "Вернуться":
+                        jump ts_start
+            "Обратно в меню":
+                return
 
     if persistent.scenario_proshel_blya == True: # ПРОВЕРКА НА ПРОЙДЕННУЮ ИГРУ
         call screen scenario_start_change_chapter with dissolve2

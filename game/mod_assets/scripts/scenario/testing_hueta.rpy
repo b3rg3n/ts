@@ -1,7 +1,28 @@
 # ХУЕТА ДЛЯ ТЕСТОВ
 label testing_label_blya:
 
+    python: # ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state=glitchtext(12),details="Снова что-то мутит",large_image="logogovna",start=time.time())
+        except AssertionError:
+            pass
+
     #call showpoem (poem_y1, img="yuri 3t") from _call_showpoem
+
+    window hide
+    scene ts_class
+    pause 1
+    scene ts_class at ts_blur_zadnika
+    show zatemnenie_light
+    with Dissolve(1.0)
+    pause 1
+
+    show chess1 at ts_chess_move_up
+    pause 1
+
+    $ TS.Screens(ts_showscreens)
+
+    m "Пришло моё время..."
 
     show ts_club at ts_coridor_glitch
     show monika 1a at t11

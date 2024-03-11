@@ -29,7 +29,7 @@ label ts_scenario_0:
     with ed_night_dis
     $ Chapter("Предыстория")
     pause 0.5
-    hide zatemnenie
+    hide zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
 
@@ -180,56 +180,56 @@ label ts_scenario_0:
     show kaori 22a at ln11
     nvlbazar "{font=[prologue_font]}Её звали Каори. И она была чуть ли не полной противоположностью меня."
     nvlbazar "{font=[prologue_font]}Я была спокойной девочкой."
-    show kaori 23c at t11
+    show kaori 23c at h11
     nvlbazar "{font=[prologue_font]}Каори была неугомонной."
-    show kaori 22a at t11
+    show kaori 22a at s11
     nvlbazar "{font=[prologue_font]}Я была закрытой девочкой, для которой нужно сделать что-то стоящее, чтобы со мной подружиться."
     nvlbazar "{font=[prologue_font]}И это не обязательно были какие-то материальные вещи, но вот просто подружиться со мной было нелегко."
-    show kaori 23s at t11
+    show kaori 23s at h11
     nvlbazar "{font=[prologue_font]}Каори же считала, что каждый, кто провёл с ней больше пяти минут, теперь её друг."
     nvl clear
     
-    show kaori 22a at t11
+    show kaori 22a at s11
     nvlbazar "{font=[prologue_font]}Я была (да и остаюсь) круглой отличницей."
-    show kaori 21v at t11
+    show kaori 21v at d11
     nvlbazar "{font=[prologue_font]}Каори была троечницей, с трудом сдавая почти все предметы."
-    show kaori 23c at t11
+    show kaori 23c at h11
     nvlbazar "{font=[prologue_font]}Каори была очень открытым человеком."
-    show kaori 22b at t11
+    show kaori 22b at s11
     nvlbazar "{font=[prologue_font]}Я же, наоборот, старалась закрыться ото всех."
-    show kaori 22zb at t11
+    show kaori 22zb at h11
     nvlbazar "{font=[prologue_font]}Но, как это и бывает во всех этих историях, неважно, основаны ли они на реальных событиях, или же они вымышленные, противоположности притягиваются."
-    show kaori 22c at t11
+    show kaori 22c at h11
     nvlbazar "{font=[prologue_font]}Мы всё делали вместе, и во всём помогали друг другу."
     nvlbazar "{font=[prologue_font]}Мы ели вместе, мы играли вместе, мы постоянно приходили друг к другу…"
-    show kaori 22r at t11
+    show kaori 22r at h11
     nvlbazar "{font=[prologue_font]}Прогуливали школу мы тоже вместе. Хотя и было это всего один или два раза."
     nvlbazar "{font=[prologue_font]}Честное слово."
     nvlbazar "{font=[prologue_font]}Мы разве что не спали вместе."
 
     nvl clear
 
-    show kaori 22a at t11
+    show kaori 22a at s11
     nvlbazar "{font=[prologue_font]}Мои родители хорошо относились к Каори, и, в свою очередь, мама Каори хорошо относилась ко мне."
     nvlbazar "{font=[prologue_font]}Вы меня, конечно, спросите, «что, только мама? Папа к тебе не хорошо относился?»"
-    show kaori 21u at t11
+    show kaori 21u at d11
     nvlbazar "{font=[prologue_font]}Но… Дело в том, что… У Каори нет отца, и воспитывала её одна только мать."
     nvlbazar "{font=[prologue_font]}И мало ей хлопот на свою голову в виде Каори, сама она ко всему прочему была ещё и глухонемой."
     nvl clear
 
 
-    show kaori 22w at t11
+    show kaori 22w at s11
     nvlbazar "{font=[prologue_font]}Нет, полностью глухонемой она не была, какие-то звуки она издавала."
     nvlbazar "{font=[prologue_font]}Как, знаете… как человек, который упал в ледяную воду."
     nvlbazar "{font=[prologue_font]}Я точно не знаю, как это осложнение называется, да и знать я не хочу, но суть примерно такая."
-    show kaori 23f at t11
+    show kaori 23f at d11
     nvlbazar "{font=[prologue_font]}В любом случае, Каори успешно общалась с мамой на языке жестов, ну а я, как человек, который его не знает, просто писал ей, а она писала мне."
     nvlbazar "{font=[prologue_font]}В общем, один настоящий друг детства у меня был."
     nvlbazar "{font=[adv_font]}«Ура-а-а, достижение, у тебя был хоть кто-то, кто о тебе заботился.»"
     nvl clear
 
 
-    show kaori 21o at t11
+    show kaori 21o at h11
     nvlbazar "{font=[prologue_font]}Почему «был»? Потому что после нескольких лет чистой и искренней дружбы Каори перевели в другую школу. А я снова осталась одна."
     nvlbazar "{font=[prologue_font]}«Постаралась» бабушка Каори."
     nvlbazar "{font=[prologue_font]}Как бы ни была против я, как бы ни думали и мои родители, что это совершенно нелогично, против семьи не попрёшь."

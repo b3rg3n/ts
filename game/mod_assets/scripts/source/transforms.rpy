@@ -3,6 +3,21 @@
 # by @b3rg3n & @dansalvato & @superrage
 # Since 2024
 
+# небольшое пояснение по анимациям спрайтов на будущее:
+# xx - 11, 22, 33, 44 и прочее
+# fxx - фокус на персонаже (т.е. из обычного положения он чуть больше становится и остаётся в этом положении)
+# sxx - приседает (не юзать два и более раз подряд - он тпхается на исходную и приседает ещё раз (колхоз кароче пиздец) - если нужно дважды сделать анимацию, но шоп она была "грустная" использую между s - d)
+# dxx - приседает и возвращается на исходную
+# hxx - подпрыгивает и возвращается на исходную
+# txx - просто спавнится на позиции с диссолвом
+# ixx - тот же самый t, только без диссолва (т.е. мгновенный)
+# используем так - show sayori 1a at s11 условно
+# про цифры:
+# 11 - только одна позиция по центру
+# 21, 22 - две позиции
+# 31, 32, 33 - три позиции
+# 41, 42, 43, 44 - четыре позиции
+
 init:
 
     transform camera_zoom:
@@ -753,7 +768,9 @@ transform ts_move_down(y):
     yoffset y subpixel True
     ease 0.5 yoffset 800
 
-
+transform ts_chess_move_up:
+    xoffset 400 yoffset 300 alpha 0.0 subpixel True
+    ease 0.6 yoffset 50 alpha 1.0
 
 ####
 transform ln41:
@@ -1211,6 +1228,11 @@ transform ts_menu_trans:
         ease 1.5 rotate 0.2
         ease 1.5 rotate -0.2
         repeat
+
+transform ts_blur_zadnika:
+    blur 0.0
+    parallel:
+        linear 1.0 blur 15.0
 
 transform ts_ukachivaet_blya:
     xalign 0.5

@@ -35,12 +35,12 @@ screen ts_widget_changer: # ВИДЖЕТ ТРЕКОВ БЛЯ
 screen ts_font_changer: # РАЗМЕР ШРИФТА
     modal True tag aw_r4
     text "{size=+15}{font=[cit_font]}Увеличить размер шрифта?{/font}{/size}" yalign 0.475 xalign 0.5
-    text "{size=+15}{font=[cit_font]}Или - оставить как есть?{/font}{/size}" yalign 0.525 xalign 0.5
-    textbutton ("{size=+15}Оставить{/size}") yalign 0.685 xalign 0.35:
+    text "{size=+15}{font=[cit_font]}Или - оставить стандартный?{/font}{/size}" yalign 0.525 xalign 0.5
+    textbutton ("{size=+15}Стандартный{/size}") yalign 0.685 xalign 0.35:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action (SetField(persistent, "bazarbig", False), Jump("ts_intro_settings3"))
-    textbutton ("{size=+15}Сделать больше{/size}") yalign 0.685 xalign 0.65:
+    textbutton ("{size=+15}Увеличенный{/size}") yalign 0.685 xalign 0.65:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action (SetField(persistent, "bazarbig", True), Jump("ts_intro_settings3"))

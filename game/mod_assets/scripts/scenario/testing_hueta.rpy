@@ -24,6 +24,10 @@ label testing_label_blya:
 
     m "Пришло моё время..."
 
+    show monika 1a onlayer front at t11
+
+    "хуй"
+
     show ts_club at ts_coridor_glitch
     show monika 1a at t11
     show black zorder 5 at ts_black_glitch

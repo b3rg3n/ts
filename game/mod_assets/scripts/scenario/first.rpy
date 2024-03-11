@@ -6,8 +6,10 @@ screen ts_start_shit_blya: #ПОЯСНЕНИЕ ХУЙНИ ТЕКСТ
 
 screen ts_cens_changer: # АНТИЦЕНЗОР
     modal True tag aw_r2
-    text "{size=+15}{font=[cit_font]}Включить антицензор?{/font}{/size}" yalign 0.475 xalign 0.5
-    text "{size=+15}{font=[cit_font]}Можно изменить в любой момент игры.{/font}{/size}" yalign 0.525 xalign 0.5
+    text "{size=+15}{font=[cit_font]}Убрать цензуру?{/font}{/size}" yalign 0.430 xalign 0.5
+    text "{size=+15}{font=[cit_font]}Если включить - в игре будет{/font}{/size}" yalign 0.480 xalign 0.5
+    text "{size=+15}{font=[cit_font]}присутствовать нецензурная лексика.{/font}{/size}" yalign 0.530 xalign 0.5
+    text "{size=+15}{font=[cit_font]}Можно изменить в любой момент игры.{/font}{/size}" yalign 0.580 xalign 0.5
     textbutton ("{size=+15}Отключить{/size}") yalign 0.685 xalign 0.35:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
@@ -24,7 +26,7 @@ screen ts_widget_changer: # ВИДЖЕТ ТРЕКОВ БЛЯ
     textbutton ("{size=+15}Отключить{/size}") yalign 0.685 xalign 0.35:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        action (SetField(persistent, "music_widget_ts", False), Jump("ts_intro_settings1"))
+        action (SetField(persistent, "music_widget_ts", False), Jump("ts_intro_settings2"))
     textbutton ("{size=+15}Включить{/size}") yalign 0.685 xalign 0.65:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
@@ -120,15 +122,37 @@ label ts_intro_settings1:
     $ renpy.pause(hard=True)
 
 label ts_intro_settings2:
-    hide screen ts_widget_changer
-    show screen ts_font_changer
-    with awrain
+    hide screen ts_widget_changer with awrain
+    pause 1
+    $ TS.Screens(ts_showscreens)
+    brg "Тебя устраивает такой размер шрифта?{w} Или же..."
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+    $ TS.Screens(ts_null_transform)
+    show screen ts_font_changer with awrain
     $ renpy.pause(hard=True)
 
 label ts_intro_settings3:
-    hide screen ts_font_changer
-    show screen ts_set_end_shit_blya
-    with awrain
+    hide screen ts_font_changer with awrain
+    $ TS.Screens(ts_showscreens)
+    brg "А теперь?{w} Или ещё разок поменяем?"
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+    $ TS.Screens(ts_null_transform)
+    menu:
+        "Поменяем":
+            show screen ts_font_changer with awrain
+            $ renpy.pause(hard=True)
+        "Оставь этот":
+            $ TS.Screens(ts_showscreens)
+            brg "Хорошо."
+            $ TS.Screens(ts_hidescreens)
+            " {w=1.0}{nw}"
+            $ TS.Screens(ts_null_transform)
+            jump ts_intro_settings4
+
+label ts_intro_settings4:
+    show screen ts_set_end_shit_blya with awrain
     $ renpy.pause(3, hard=True)
     hide screen ts_set_end_shit_blya with dissolve
     pause 1

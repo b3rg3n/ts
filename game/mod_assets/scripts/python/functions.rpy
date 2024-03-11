@@ -49,11 +49,3 @@ init -15 python in TS:
         """
         renpy.show_layer_at(atl, layer='front')
 
-    def Effects(atl):
-        """
-        IN:
-            atl - transform
-        TYPE:
-            []
-        """
-        renpy.show_layer_at(atl, layer='effects')

@@ -31,3 +31,4 @@ init:
     default n_name = "Нацуки"
     default em_name = glitchtext(12)
     default player = "[user]"
+    default razrab_name = "BERGEN"

@@ -3,6 +3,7 @@
 # Since 2024
 
 init:
+    define brg = DynamicCharacter('razrab_name', what_prefix='"', what_suffix='"')
     define teacher = DynamicCharacter('teacher_name', image='yuri', what_prefix='"', what_suffix='"')
     define ts_ft = DynamicCharacter('ts_ft_name', image='hiroto', what_prefix='"', what_suffix='"')
     define mc = DynamicCharacter('user', what_prefix='"', what_suffix='"')

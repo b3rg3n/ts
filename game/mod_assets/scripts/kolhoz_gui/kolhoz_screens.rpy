@@ -1383,8 +1383,8 @@ init -502 screen nvl_dialogue(dialogue):
                 spacing 10
             if (persistent.bazarbig):
                 if who is not None:
-                    text who id who_id size 33 font nvl_font
-                text what id what_id size 32
+                    text who id who_id size 34 font nvl_font
+                text what id what_id size 33
             else:
                 if who is not None:
                     text who id who_id size 27 font nvl_font

@@ -1,3 +1,7 @@
+# TRUE STORY SCREEN ANIMATION
+# by @b3rg3n (идею гопнул у @superrage)
+# since 2024
+
 init -15 python in TS:
 
     def Master(atl):

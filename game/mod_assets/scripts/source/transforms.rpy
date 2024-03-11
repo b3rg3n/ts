@@ -1,6 +1,6 @@
 # TRUE STORY TRANSFORMS
 # ПОЧТИ ВСЕ ИЗ ОРИГА ДОКИЧЕЙ
-# by @b3rg3n & @dansalvato
+# by @b3rg3n & @dansalvato & @superrage
 # Since 2024
 
 init:
@@ -755,7 +755,7 @@ transform ts_move_down(y):
 
 
 
-
+####
 transform ln41:
     ts_leftin(1.0, 200)
 transform ln42:
@@ -839,7 +839,7 @@ transform lss22:
     ts_leftin(2.0, 880)
 transform lss11:
     ts_leftin(2.0, 640)
-
+####
 transform rn41:
     ts_rightin(1.0, 200)
 transform rn42:
@@ -933,7 +933,102 @@ transform rss22:
     ts_rightin(2.0, 880)
 transform rss11:
     ts_rightin(2.0, 640)
+#####
 
+transform ron41:
+    ts_rightout(1.0, 200)
+transform ron42:
+    ts_rightout(1.0, 493)
+transform ron43:
+    ts_rightout(1.0, 786)
+transform ron44:
+    ts_rightout(1.0, 1080)
+transform ron31:
+    ts_rightout(1.0, 240)
+transform ron32:
+    ts_rightout(1.0, 640)
+transform ron33:
+    ts_rightout(1.0, 1040)
+transform ron21:
+    ts_rightout(1.0, 400)
+transform ron22:
+    ts_rightout(1.0, 880)
+transform ron11:
+    ts_rightout(1.0, 640)
+
+transform rof41:
+    ts_rightout(0.5, 200)
+transform rof42:
+    ts_rightout(0.5, 493)
+transform rof43:
+    ts_rightout(0.5, 786)
+transform rof44:
+    ts_rightout(0.5, 1080)
+transform rof31:
+    ts_rightout(0.5, 240)
+transform rof32:
+    ts_rightout(0.5, 640)
+transform rof33:
+    ts_rightout(0.5, 1040)
+transform rof21:
+    ts_rightout(0.5, 400)
+transform rof22:
+    ts_rightout(0.5, 880)
+transform rof11:
+    ts_rightout(0.5, 640)
+
+transform ros41:
+    ts_rightout(1.5, 200)
+transform ros42:
+    ts_rightout(1.5, 493)
+transform ros43:
+    ts_rightout(1.5, 786)
+transform ros44:
+    ts_rightout(1.5, 1080)
+transform ros31:
+    ts_rightout(1.5, 240)
+transform ros32:
+    ts_rightout(1.5, 640)
+transform ros33:
+    ts_rightout(1.5, 1040)
+transform ros21:
+    ts_rightout(1.5, 400)
+transform ros22:
+    ts_rightout(1.5, 880)
+transform ros11:
+    ts_rightout(1.5, 640)
+transform ros51:
+    ts_rightout(1.5, 216)
+transform ros52:
+    ts_rightout(1.5, 432)
+transform ros53:
+    ts_rightout(1.5, 648)
+transform ros54:
+    ts_rightout(1.5, 864)
+transform ros55:
+    ts_rightout(1.5, 1080)
+
+transform ross41:
+    ts_rightout(2.0, 200)
+transform ross42:
+    ts_rightout(2.0, 493)
+transform ross43:
+    ts_rightout(2.0, 786)
+transform ross44:
+    ts_rightout(2.0, 1080)
+transform ross31:
+    ts_rightout(2.0, 240)
+transform ross32:
+    ts_rightout(2.0, 640)
+transform ross33:
+    ts_rightout(2.0, 1040)
+transform ross21:
+    ts_rightout(2.0, 400)
+transform ross22:
+    ts_rightout(2.0, 880)
+transform ross11:
+    ts_rightout(2.0, 640)
+####
 transform tn41:
     ts_tcommon(1.0, 200)
 transform tn42:

@@ -234,9 +234,15 @@ label ts_scenario_0:
     nvlbazar "{font=[prologue_font]}«Постаралась» бабушка Каори."
     nvlbazar "{font=[prologue_font]}Как бы ни была против я, как бы ни думали и мои родители, что это совершенно нелогично, против семьи не попрёшь."
     nvlbazar "{font=[prologue_font]}Особенно против такого напористого члена семьи, как бабушка Каори."
+
+    $ TS.Screens(ts_hidescreens)
+    nvlbazar " {w=1.0}{nw}"
+    nvl clear
     show kaori at ron11
     pause 0.3
     hide kaori with dissolve
+    $ TS.Screens(ts_showscreens)
+
     nvlbazar "{font=[prologue_font]}А я снова осталась один на один с этим жестоким миром."
     nvlbazar "{font=[prologue_font]}Совсем одна. И больше у меня нет никаких друзей, никаких парней, ничего и никого, что могло бы заполнить эту зияющую пустоту."
     nvlbazar "{font=[prologue_font]}И за годы дружбы, которая казалась вечной, я даже не смогла удосужиться найти себе новых настоящих друзей."

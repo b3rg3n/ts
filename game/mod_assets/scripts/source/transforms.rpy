@@ -1201,6 +1201,32 @@ transform ts_shake(t1=ts_null_transform, t2=ts_null_transform, t3=ts_null_transf
 transform ts_xypos(xp=0.5, yp=1.0, time=0.0):
     ease time xpos xp ypos yp subpixel True
 
+transform ts_menu_trans:
+    xalign 0.5
+    yalign 0.5
+    #zoom 1.0
+    #parallel:
+    #    linear 1.0 zoom 1.05
+    parallel:
+        ease 1.5 rotate 0.2
+        ease 1.5 rotate -0.2
+        repeat
+
+transform ts_ukachivaet_blya:
+    xalign 0.5
+    yalign 0.5
+    zoom 1.0
+    parallel:
+        linear 1.0 zoom 1.05
+    parallel:
+        ease 1.0 xalign 0.45
+        ease 1.0 xalign 0.54
+        repeat
+    parallel:
+        ease 1.5 rotate 1.2 zoom 1.07
+        ease 1.5 rotate -1.4 zoom 1.045
+        repeat
+
 transform ts_super_shake:
     block:
         parallel:

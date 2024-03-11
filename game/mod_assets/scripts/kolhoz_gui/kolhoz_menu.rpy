@@ -21,6 +21,8 @@ label main_menu:
         hour, min, sec = t.split(":")
         hour = int(hour)
 
+    #$ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_menu_trans))
+
     if persistent.firstmenushka == True:
         $ persistent.firstmenushka = False
 

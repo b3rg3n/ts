@@ -12,6 +12,14 @@ label ts_start:
 
     $ unluck_ball = 0 # ОБЩИЕ БАЛЛЫ АНЛАКА БЛЯ
 
+    if config.developer == True: # ПРОВЕРКА НА РАЗРАБА
+        menu:
+            "Выбор главы":
+                call screen scenario_start_change_chapter with dissolve2
+                return
+            "Тесты хуеты":
+                jump testing_label_blya
+
     if persistent.scenario_proshel_blya == True: # ПРОВЕРКА НА ПРОЙДЕННУЮ ИГРУ
         call screen scenario_start_change_chapter with dissolve2
         return

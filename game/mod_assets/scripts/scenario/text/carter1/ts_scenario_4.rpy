@@ -1454,20 +1454,17 @@ label ts_scenario_4:
         ease 1.0 zoom 2.5
         ease 5.0 xpos 0.5 ypos 0.5 rotate 0
         repeat
+
     show noise:
         alpha 0.25
-    show vignette zorder 10:
-        alpha 0.75
-        parallel:
-            0.36
-            alpha 0.75
-            repeat
-        parallel:
-            0.49
-            alpha 0.7
-            repeat
-    show layer master at heartbeat
+
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh
+    show anim_exhausted
+
     with ed_night_dis
+
+    $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "Мне снились... Странные сны. И страшные сны тоже."
     "Неужели... Неужели это я с ними сделала?"
@@ -1475,10 +1472,8 @@ label ts_scenario_4:
     "Они же все такие хорошие... и у каждой из них родственные мне проблемы..."
     "Нет, я просто не могу, не могу, не хочу!!!"
     "Выпустите меня из этих снов, пожалуйста!"
-    #ЛАДНО БЛЯТЬ, Я ОПЯТЬ ПЕРЕДУМАЛ. ПУСТЬ ЭТО ОПЯТЬ ВСЁ ОБЫЧНЫМ ТЕКСТБОКСОМ БУДЕТ, СПРАЙТЫ ОБЫЧНОЙ МОНИКИ (НЕ МАМЫ ЕСЛИ ЧТО)
-    #ИМЯ ЛИБО ГЛИЧТЕКСТОМ, ЛИБО КАКАЯ-ТО АНАГРАММА, НУ ЛИБО ПРОСТО АКИ, КАК В ДЕМЕНЦИИ
-    #НО ШРИФТЫ ВИВАЛЬДИ И АДВЕНТУРЕ ПУСТЬ ОСТАЮТСЯ, КАК БУДТО ЭТО ВРОДЕ И ШИЗА И ОДИН И ТОТ ЖЕ ЧЕЛОВЕК ГОВОРИТ, НО ВРОДЕ КАК И ДИАЛОГ КАКОЙ-ТО
-    #SHOW MONIKA 4R AT T11
+
+    show monika 4r at t11
     window hide
     show zatemnenie_light
     show screen pizda_text5
@@ -1589,6 +1584,8 @@ label ts_scenario_4:
     stop music fadeout 4
     scene black with dissolve4
     pause 4
+
+    $ TS.Screens(ts_null_transform)
 
     jump true_story_credits_label_blya
 

@@ -19,6 +19,20 @@ init:
         pause 5
         repeat
 
+###АНИМАЦИЯ ПИЗДЕЦА В БЛЕКАУТЕ
+    image anim_exhausted:
+        "mod_assets/source/images/anim/blackout/blackout_exh2.webp"
+        0.03 # Задержка
+        "mod_assets/source/images/anim/blackout/blackout_exh3.webp"
+        0.03 # Задержка
+        "mod_assets/source/images/anim/blackout/blackout_exh2.webp"
+        0.03 # Задержка
+        "mod_assets/source/images/anim/blackout/blackout_exh3.webp"
+        0.03 # Задержка
+        "mod_assets/source/images/anim/blackout/blackout_exh2.webp"
+        0.03 # Задержка
+        repeat # Не убирать
+
 ###АНИМАЦИИ МЕНЮШКИ
     image ts_menu_move_anim_three:
         contains:

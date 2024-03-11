@@ -49,6 +49,8 @@ screen ts_set_end_shit_blya: #ПОЯСНЕНИЕ ХУЙНИ ТЕКСТ
 
 label start: # ТУТ НАЧИНАЕТСЯ ПИЗДЕЦ
 
+    $ TS.Screens(ts_null_transform)
+
     python: #ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
         from time import localtime, strftime
         t = strftime("%H:%M:%S", localtime())

@@ -33,6 +33,26 @@ init:
         0.03 # Задержка
         repeat # Не убирать
 
+###АНИМАЦИЯ МОРГАНИЯ ЗАЛУПЫ
+    image ts_blinking:
+        contains:
+            "anim blink_up"
+            pos (0,-720)
+            ease 0.5 xalign 0 yalign 0
+        contains:
+            "anim blink_down"
+            pos (0,720)
+            ease 0.5 xalign 0 yalign 0
+        pause 0.25
+        contains:
+            "anim blink_up"
+            xalign 0 yalign 0
+            ease 0.5 pos (0,-720)
+        contains:
+            "anim blink_down"
+            xalign 0 yalign 0
+            ease 0.5 pos (0,720)
+
 ###АНИМАЦИИ МЕНЮШКИ
     image ts_menu_move_anim_three:
         contains:

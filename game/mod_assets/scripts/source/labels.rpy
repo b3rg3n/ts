@@ -32,3 +32,4 @@ init:
     default em_name = glitchtext(12)
     default player = "[user]"
     default razrab_name = "BERGEN"
+    default cm_name = "???"

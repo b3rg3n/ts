@@ -9,6 +9,8 @@ label ts_start:
     $ unluck4_telek = False
     $ unluck4_reading = False
     $ unluck4_cooking = False
+    $ act2_chess = False
+    $ unluck5 = False
 
     $ unluck_ball = 0 # ОБЩИЕ БАЛЛЫ АНЛАКА БЛЯ
 

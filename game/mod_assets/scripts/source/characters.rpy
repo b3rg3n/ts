@@ -16,5 +16,6 @@ init:
     define ts_unk = Character('???', what_prefix='"', what_suffix='"')
     define pod1 = Character('Подруга 1', image='himari', what_prefix='"', what_suffix='"')
     define pod2 = Character('Подруга 2', image='elena', what_prefix='"', what_suffix='"')
+    define cm = DynamicCharacter('cm_name', image='monika', what_prefix='"', what_suffix='"')
 ###NVL ПАЦАНТРЕ
     define nvlbazar = Character (u' ', kind=nvl, color = "#dd9933", what_color="FFFFFF",)

@@ -42,6 +42,4 @@ label testing_label_blya:
 
     m 2a "Пизда"
 
-    $ persistent.zastavka_skip = False
-
     return

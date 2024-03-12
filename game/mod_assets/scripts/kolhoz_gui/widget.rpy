@@ -15,9 +15,9 @@ init -998 python:
     style.button_text_ts.size = 24
 
     style.button_ts = Style(style.default)
-    style.button_ts.background = Frame(im.Twocolor(("mod_assets/source/images/gui/widgetovr.webp"), "#404040", "#404040"), 8, 8)    
-    style.button_ts.hover_background = Frame(im.Twocolor(("mod_assets/source/images/gui/widgetovr.webp"), "#404040", "#404040"), 8, 8)    
-    style.button_ts.insensitive_background = Frame(im.Twocolor(("mod_assets/source/images/gui/widgetovr.webp"), "#404040", "#404040"), 8, 8)    
+    style.button_ts.background = Frame(im.Twocolor(get_image("gui/widgetovr.webp"), "#404040", "#404040"), 8, 8)    
+    style.button_ts.hover_background = Frame(im.Twocolor(get_image("gui/widgetovr.webp"), "#404040", "#404040"), 8, 8)    
+    style.button_ts.insensitive_background = Frame(im.Twocolor(get_image("gui/widgetovr.webp"), "#404040", "#404040"), 8, 8)    
     style.button_ts.xmargin = 1
     style.button_ts.xpadding = 6
     style.button_ts.ymargin = 1

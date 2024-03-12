@@ -54,15 +54,3 @@ init -1001 python:
         for x in store.names_list:
             char_define(x)
 
-init:
-#ГОПАЕМ ЮЗЕРНАЙМ
-    if renpy.android or renpy.ios:
-        $ user = "Игрок"
-    else:
-        $ user = os.environ.get('username')
-
-    image ru_ground = "mod_assets/source/images/gui/lang/russian_ground.png"
-    image ru_hover = "mod_assets/source/images/gui/lang/russian_hover.png"
-
-    image en_ground = "mod_assets/source/images/gui/lang/english_ground.png"
-    image en_hover = "mod_assets/source/images/gui/lang/english_hover.png"

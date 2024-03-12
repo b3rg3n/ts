@@ -11,6 +11,15 @@ label testing_label_blya:
 
     window hide
     scene ts_class
+    show sayori 1a at t61
+    show monika 1a at t62
+    show yuri 1a at t63
+    show kaori 22a at t64
+    show natsuki 1a at t65
+    show hiroto 1a at t66
+
+    "Так?"
+
     pause 1
     scene ts_class at ts_blur_zadnika
     show zatemnenie_light

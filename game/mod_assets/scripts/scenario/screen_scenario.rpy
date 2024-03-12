@@ -174,3 +174,25 @@ screen chp_text_25:
 
 screen chp_text_26:
     text "{size=+15}{font=[ts_nvl_font2]}Пусть, как оказалось, эта искренность не была столь уж и искренней...{/font}{/size}" yalign 0.5 xalign 0.5
+
+
+screen akt2_chp1_text:
+    text "{size=+15}{font=[ts_nvl_font2]}Да что же это такое? Я же буквально источник всех проблем!{/font}{/size}" yalign 0.5 xalign 0.5
+
+screen akt2_chp1_text1:
+    text "{size=+15}{font=[ts_nvl_font2]}Да что же это такое? Я же буквально источник всех проблем!{/font}{/size}" yalign 0.5 xalign 0.5
+
+screen akt2_chp1_text2:
+    text "{size=+15}{font=[ts_nvl_font2]}Мало того, что напилась в стельку вчера, так ещё и с утра довела и себя, и свою подругу, до истерики!{/font}{/size}" yalign 0.5 xalign 0.5
+
+screen akt2_chp1_text3:
+    text "{size=+15}{font=[adv_font]}Посмотрим, как ты запоёшь через пару циклов...{/font}{/size}" yalign 0.5 xalign 0.5
+
+screen akt2_chp1_text4:
+    text "{size=+15}{font=[ts_nvl_font2]}Циклов?..{/font}{/size}" yalign 0.5 xalign 0.5
+
+screen akt2_chp1_text5:
+    text "{size=+15}{font=[adv_font]}Да так... неважно... потом поймёшь...{/font}{/size}" yalign 0.5 xalign 0.5
+
+screen akt2_chp1_text6:
+    text "{size=+15}{font=[ts_nvl_font2]}ЧТО ТЫ ЗНАЕШЬ? ОТВЕЧАЙ!{/font}{/size}" yalign 0.5 xalign 0.5

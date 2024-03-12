@@ -12,7 +12,7 @@ label ts_start:
 
     $ unluck_ball = 0 # ОБЩИЕ БАЛЛЫ АНЛАКА БЛЯ
 
-    if config.developer == True: # ПРОВЕРКА НА РАЗРАБА
+    if config.developer == True: # МЕНЮШКА РАЗРАБОТЧИКА
         menu:
             "Выбор главы":
                 call screen scenario_start_change_chapter with dissolve2

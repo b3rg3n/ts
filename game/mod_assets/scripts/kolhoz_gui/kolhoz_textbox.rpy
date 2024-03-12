@@ -5,14 +5,6 @@
 screen say(who, what):
     style_prefix "say"
     if (persistent.bazarbig):
-        if showstatus and pps > 0:
-            add im.MatrixColor("mod_assets/source/images/gui/dialogue_box/big/status.webp", im.matrix.colorize("#000", status_color)):
-                xpos 690
-                ypos 550
-            text status_name:
-                xpos 735
-                ypos 552
-                size 17
         imagebutton:
             idle im.MatrixColor("mod_assets/source/images/gui/dialogue_box/big/backward_idle.webp", im.matrix.colorize("#000", status_color))
             hover im.MatrixColor("mod_assets/source/images/gui/dialogue_box/big/backward_hover.webp", im.matrix.colorize("#000", status_color))
@@ -75,14 +67,6 @@ screen say(who, what):
                 size 27
                 line_spacing 1
     else:
-        if showstatus and pps > 0:
-            add im.MatrixColor("mod_assets/source/images/gui/dialogue_box/status.webp", im.matrix.colorize("#000", status_color)):
-                xpos 736
-                ypos 581
-            text status_name:
-                xpos 775
-                ypos 583
-                size 13
         imagebutton:
             idle im.MatrixColor("mod_assets/source/images/gui/dialogue_box/backward_idle.webp", im.matrix.colorize("#000", status_color))
             hover im.MatrixColor("mod_assets/source/images/gui/dialogue_box/backward_hover.webp", im.matrix.colorize("#000", status_color))

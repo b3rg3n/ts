@@ -1464,6 +1464,8 @@ label ts_scenario_4:
 
     with ed_night_dis
 
+    $ pps = 2
+
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "Мне снились... Странные сны. И страшные сны тоже."
@@ -1585,8 +1587,8 @@ label ts_scenario_4:
     scene black with dissolve4
     pause 4
 
+    $ pps = 1
+
     $ TS.Screens(ts_null_transform)
 
-    jump true_story_credits_label_blya
-
-    #jump ts_scenario_5
+    jump ts_scenario_5

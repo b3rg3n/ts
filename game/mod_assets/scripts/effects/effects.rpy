@@ -376,13 +376,13 @@ init python:
 
 
 image blood_particle_drip:
-    "mod_assets/source/images/anim/blood_drop.webp"
+    "mod_assets/source/images/anim/particles/blood_drop.webp"
     yzoom 0 yanchor 0.2 subpixel True
     linear 10 yzoom 8
 
 image blood_particle:
     subpixel True
-    "mod_assets/source/images/anim/blood_drop.webp"
+    "mod_assets/source/images/anim/particles/blood_drop.webp"
     zoom 0.75
     alpha 0.75
     choice:

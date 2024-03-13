@@ -279,86 +279,6 @@ init:
             pause 0.02
             repeat
 
-###ЭФФЕКТ RTX ЛУЧЕЙ (БЛЯ БУДУ)
-    image god_light:
-        contains:
-            "mod_assets/source/images/anim/light_eff.webp"
-            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5 rotate 0
-            linear 120 rotate 360
-            repeat
-        contains:
-            "mod_assets/source/images/anim/light_eff.webp"
-            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5 rotate 180
-            linear 150 rotate -180
-            repeat
-        contains:
-            "mod_assets/source/images/anim/light_eff.webp"
-            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5 rotate 90
-            linear 180 rotate 450
-            repeat
-        contains:
-            "mod_assets/source/images/anim/light_eff.webp"
-            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5 rotate -90
-            linear 210 rotate -450
-            repeat
-        contains:
-            "mod_assets/source/images/anim/light_eff.webp"
-            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5 rotate 45
-            linear 240 rotate 405
-            repeat
-        contains:
-            "mod_assets/source/images/anim/light_eff.webp"
-            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5 rotate -45
-            linear 270 rotate -405
-            repeat
-
-###ЭФФЕКТ МАТРИЦЫ
-    image matrixanim:
-        "mod_assets/source/images/anim/matrix/matrixanim1.png"
-        pause 0.12
-        "mod_assets/source/images/anim/matrix/matrixanim2.png"
-        pause 0.12
-        "mod_assets/source/images/anim/matrix/matrixanim3.png"
-        pause 0.12
-        "mod_assets/source/images/anim/matrix/matrixanim4.png"
-        pause 0.12
-        "mod_assets/source/images/anim/matrix/matrixanim5.png"
-        pause 0.12
-        "mod_assets/source/images/anim/matrix/matrixanim6.png"
-        pause 0.12
-        "mod_assets/source/images/anim/matrix/matrixanim7.png"
-        pause 0.12
-        "mod_assets/source/images/anim/matrix/matrixanim8.png"
-        pause 0.12
-        "mod_assets/source/images/anim/matrix/matrixanim9.png"
-        pause 0.12
-        "mod_assets/source/images/anim/matrix/matrixanim10.png"
-        pause 0.12
-        "mod_assets/source/images/anim/matrix/matrixanim11.png"
-        pause 0.12
-        repeat
-
-###ЭФФЕКТЫ КРОВАВОГО СКВИРТА
-    image bloodanim:
-        "mod_assets/source/images/anim/blood/bloodanim1.png"
-        pause 0.1
-        "mod_assets/source/images/anim/blood/bloodanim2.png"
-        pause 0.1
-        "mod_assets/source/images/anim/blood/bloodanim3.png"
-        pause 0.1
-        "mod_assets/source/images/anim/blood/bloodanim4.png"
-        pause 0.1
-        "mod_assets/source/images/anim/blood/bloodanim5.png"
-        
-    image altbloodanim:
-        "mod_assets/source/images/anim/blood/altbloodanim1.png"
-        pause 0.1
-        "mod_assets/source/images/anim/blood/altbloodanim2.png"
-        pause 0.1
-        "mod_assets/source/images/anim/blood/altbloodanim3.png"
-        pause 0.1
-        "mod_assets/source/images/anim/blood/altbloodanim4.png"
-
 ###НАСТОЯЩИЙ ПСИХОДЕЛ
     image overlay psy_pizdos:
         contains:
@@ -472,60 +392,6 @@ init:
         yzoom 1
         repeat
 
-###ЭФФЕКТЫ ПИЗДЕЛКИ
-    image Fight_Ddv_Dun_png:
-        'mod_assets/source/images/anim/pizdelka/fight_png_01_LW0607.webp' with dissolve
-        pause (0.1)
-        'mod_assets/source/images/anim/pizdelka/fight_png_02_LW0607.webp' with dissolve
-        pause (0.1)
-        repeat
-
-###КОЛДА ТАРАЩИТ
-    image coldherovo:
-        'mod_assets/source/images/spr/cld/pip.webp'
-        zoom 1.0
-        ease 1.0 xzoom 6.5
-        ease 1.0 xzoom 13.1
-        ease 1.0 xzoom 15.2
-        ease 1.0 xzoom 3.2
-        ease 1.0 xzoom 7.7
-        ease 1.0 xzoom 14.2
-        ease 1.0 xzoom 1.2
-        ease 1.0 xzoom 17.45
-        ease 1.0 xzoom 7.27
-        ease 1.0 xzoom 8.2
-        ease 1.0 xzoom 9.2
-        ease 1.0 xzoom 1.0
-        repeat
-
-###ЭФФЕКТ ПСИХОЗА
-    image rageone:
-        "et_rage1" with dissolve
-        pause .6
-        "et_rage2" with dissolve
-        pause .6
-        repeat
-
-    image ragetwo:
-        "et_rage1" with dissolve
-        pause .6
-        "et_rage2" with dissolve
-        pause .6
-        "et_rage3" with dissolve
-        pause .6
-        repeat
-
-    image ragethree:
-        "et_rage1" with dissolve
-        pause .3
-        "et_rage2" with dissolve
-        pause .3
-        "et_rage3" with dissolve
-        pause .3
-        "et_rage4" with dissolve
-        pause .3
-        repeat
-
 ###ЭФФЕКТ ЗЕНЕК
     image unblink:
         contains:
@@ -546,54 +412,6 @@ init:
             "mod_assets/source/images/anim/zenki/blink_down.webp"
             pos (0,1080)
             ease 1.5 xalign 0 yalign 0
-
-###ЭФФЕКТ ВЗРЫВА ЖОПЫ
-    image normalno_ebanulo:
-        'mod_assets/source/images/anim/babah/babah1.webp' with dissolve
-        pause (0.1)
-        'mod_assets/source/images/anim/babah/babah2.webp' with dissolve
-        pause (0.1)
-        'mod_assets/source/images/anim/babah/babah3.webp' with dissolve
-        pause (0.1)
-        'mod_assets/source/images/anim/babah/babah4.webp' with dissolve
-        pause (0.1)
-        'mod_assets/source/images/anim/babah/babah5.webp' with dissolve
-        pause (0.1)
-        'mod_assets/source/images/anim/babah/babah6.webp' with dissolve
-        pause (0.1)
-
-###ДУНУЛ ПОДИК
-    image anim br_smoke:
-        contains:
-            'mod_assets/source/images/anim/smoke/br_smoke_1.webp'
-            xalign 0.5 yalign 0.5 ypos 0.9 alpha 0.0 zoom 1.0
-            pause (0.5)
-            linear 0.75 ypos 0.8 zoom 0.9 alpha 1.0
-            linear 0.75 ypos 0.7 zoom 0.96 alpha 0.0
-        contains:
-            'mod_assets/source/images/anim/smoke/br_smoke_2.webp'
-            xalign 0.5 yalign 0.5 ypos 0.9 alpha 0.0 zoom 1.0
-            pause (0.6)
-            linear 0.75 ypos 0.8 zoom 0.9 alpha 1.0
-            linear 0.75 ypos 0.7 zoom 0.96 alpha 0.0
-        contains:
-            'mod_assets/source/images/anim/smoke/br_smoke_3.webp'
-            xalign 0.5 yalign 0.5 ypos 0.9 alpha 0.0 zoom 1.0
-            pause (0.7)
-            linear 0.75 ypos 0.8 zoom 0.9 alpha 1.0
-            linear 0.75 ypos 0.7 zoom 0.96 alpha 0.0
-        contains:
-            'mod_assets/source/images/anim/smoke/br_smoke_4.webp'
-            xalign 0.5 yalign 0.5 ypos 0.9 alpha 0.0 zoom 1.0
-            pause (0.8)
-            linear 0.75 ypos 0.8 zoom 0.9 alpha 1.0
-            linear 0.75 ypos 0.7 zoom 0.96 alpha 0.0
-        contains:
-            'mod_assets/source/images/anim/smoke/br_smoke_5.webp'
-            xalign 0.5 yalign 0.5 ypos 0.9 alpha 0.0 zoom 1.0
-            pause (0.9)
-            linear 0.75 ypos 0.8 zoom 0.9 alpha 1.0
-            linear 0.75 ypos 0.7 zoom 0.96 alpha 0.0
 
 ###ОВЕРЛЕЙ СТАРОЙ ПЛЁНКИ
     image overlay aw_memory_back_1:
@@ -622,8 +440,6 @@ init:
             alpha 0.5
             pause 0.02
             repeat
-
-
 
     image overlay aw_memory_back_2:
         contains:
@@ -834,16 +650,6 @@ init:
         contains:
             pause 9.5
             "ftf_moving_lepestki"
-
-###ЭФФЕКТ ТРИПА
-    image tripsMVWWW777:
-        'mod_assets/source/images/anim/trip/trip1MVWWW777.webp' with dissolve
-        pause (0.5)
-        'mod_assets/source/images/anim/trip/trip2MVWWW777.webp' with dissolve
-        pause (0.5)
-        'mod_assets/source/images/anim/trip/trip3MVWWW777.webp' with dissolve
-        pause (0.5)
-        repeat
 
 ###ПЫЛЬ ИЗ ДОКИ
     image dust1:

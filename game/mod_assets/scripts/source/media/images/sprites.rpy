@@ -1864,7 +1864,7 @@ image n_moving_mouth:
 
 image natsuki_ghost_blood:
     "#00000000"
-    get_image("spr/natsuki/ghost_blood.webp") with ImageDissolve(get_image("wipedown.webp"), 80.0, ramplen=4, alpha=True)
+    get_image("spr/natsuki/ghost_blood.webp") with ImageDissolve(get_image("anim/transit/wipedown.webp"), 80.0, ramplen=4, alpha=True)
     pos (620,320) zoom 0.80
 
 image natsuki ghost_base:

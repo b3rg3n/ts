@@ -2,19 +2,6 @@
 # by @b3rg3n
 # Since 2024
 
-init -1000 python:
-
-    import os.path
-
-    def get_image(file): # ФУНКЦИЯ ГОПА КАРТИНКИ
-        return "mod_assets/source/images/%s" % file
-
-    def get_font(file): # ФУНКЦИЯ ГОПА ШРИФТА
-        return "mod_assets/source/fonts/%s" % file
-
-    def get_videosos(file): # ФУНКЦИЯ ГОПА ВИДЕОСОСА
-        return "mod_assets/source/videosos/%s" % file
-
 init -1199 python:
     from os import path
     modID = 'mod_assets/source/audio/'

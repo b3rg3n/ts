@@ -4,4 +4,4 @@
 
 init:
 ###CHESS
-    image chess1 = get_image("minigame/chess/1.webp")
+    image chess1 = "mod_assets/source/images/minigame/chess/1.webp"

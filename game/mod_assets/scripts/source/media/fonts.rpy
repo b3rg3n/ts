@@ -4,12 +4,12 @@
 
 init:
 
-    define cit_font = get_font("captureit.ttf")
-    define ts_nvl_font2 = get_font("life.ttf")
-    define pizdec_font = get_font("Surfbars.otf")
-    define adv_font = get_font("ADVENTURE.ttf")
-    define shl_font = get_font("SHLAPAKSCRIPT.otf")
-    define ink_font = get_font("INKFREE.ttf")
-    define sc_font = get_font("SCOTCH.ttf")
-    define ts_main_font_hueta = get_font("2.ttf")
-    define prologue_font = get_font("B52.ttf")
+    define cit_font = "mod_assets/source/fonts/captureit.ttf"
+    define ts_nvl_font2 = "mod_assets/source/fonts/life.ttf"
+    define pizdec_font = "mod_assets/source/fonts/Surfbars.otf"
+    define adv_font = "mod_assets/source/fonts/ADVENTURE.ttf"
+    define shl_font = "mod_assets/source/fonts/SHLAPAKSCRIPT.otf"
+    define ink_font = "mod_assets/source/fonts/INKFREE.ttf"
+    define sc_font = "mod_assets/source/fonts/SCOTCH.ttf"
+    define ts_main_font_hueta = "mod_assets/source/fonts/2.ttf"
+    define prologue_font = "mod_assets/source/fonts/B52.ttf"

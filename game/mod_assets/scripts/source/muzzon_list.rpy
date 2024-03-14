@@ -9,9 +9,9 @@ init:
 ###ИЗ МЕНЮ
     $ music_list_ts["Suicideboys - Kill Yourself pt. II"] = "mod_assets/source/audio/ost/menu_ost/ts_killyourself.ogg"
     $ music_list_ts["LWTOD - Main Theme"] = "mod_assets/source/audio/ost/menu_ost/ts_ytd.ogg"
-    $ music_list_ts["Wildways - Цветы"] = "mod_assets/source/audio/ost/menu_ost/ts_flowers.ogg"
+    $ music_list_ts["Bxmmusic - Brandon (Vanish Canvans cover)"] = "mod_assets/source/audio/ost/menu_ost/ts_flowers.ogg"
     $ music_list_ts["Secret Trails OST - Main Theme"] = "mod_assets/source/audio/ost/menu_ost/ts_tt2ogsr.ogg"
-    $ music_list_ts["Secret Trails OST - Main Theme old"] = "mod_assets/source/audio/ost/menu_ost/ts_tt2ogsr1.ogg"
+    $ music_list_ts["TheRadCat - Без Баб (instr)"] = "mod_assets/source/audio/ost/menu_ost/ts_tt2ogsr1.ogg"
     $ music_list_ts["Xarakter - VIP Eight"] = "mod_assets/source/audio/ost/menu_ost/ts_vip8.ogg"
 ###ИЗ ЗАСТАВОК
     $ music_list_ts["Hallucinator - Mosh"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_mosh.ogg"
@@ -39,5 +39,5 @@ init:
     $ music_list_ts["Pixies - Where is My Mind (piano cover)"] = "mod_assets/source/audio/ost/menu_ost/ts_wmm.ogg"
     $ music_list_ts["HCCH OST - Начало"] = "mod_assets/source/audio/ost/ts_emmk.ogg"
     $ music_list_ts["kelly bailey - inhuman frequency"] = "mod_assets/source/audio/ost/ts_hl2.ogg"
-    $ music_list_ts["Christina Perri - A Thousand Years (Cover)"] = "mod_assets/source/audio/ost/ts_gramatik.ogg"
+    $ music_list_ts["Gramatik - Gungeon Theme"] = "mod_assets/source/audio/ost/ts_gramatik.ogg"
     $ music_list_ts["Joel Nielsen - Black Mesa Theme"] = "mod_assets/source/audio/ost/ts_mk.ogg"

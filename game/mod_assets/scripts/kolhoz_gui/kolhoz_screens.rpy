@@ -256,11 +256,11 @@ screen language_menu:
                     add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.45
                 else:
                     null width 22
-                textbutton translation_new["Russian"] style "log_button" text_style "settings_link" action (Language(None), Function(stop_music), Function(renpy.utter_restart)) ypos 280
+                textbutton translation_new["Russian"] style "log_button" text_style "settings_link" action (Language(None), Function(stop_music), Function(renpy.utter_restart)) ypos 280 xpos -2
 
             hbox xalign 0.5:
                 if _preferences.language == "english":
-                    add "gui/ebanoemenu/leaf.webp" ypos 0.65
+                    add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.65
                 else:
                     null width 22
                 textbutton translation_new["English"] style "log_button" text_style "settings_link" action (Language("english"), Function(stop_music), Function(renpy.utter_restart)) ypos 320

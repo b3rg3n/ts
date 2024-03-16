@@ -33,11 +33,10 @@ init:
     $ music_list_ts["Between August and December - Torture"] = "mod_assets/source/audio/ost/es/ts_tor.ogg"
     $ music_list_ts["Sergey Eybog - Your Bright Side"] = "mod_assets/source/audio/ost/es/ts_ybs.ogg"
     $ music_list_ts["Sergey Eybog - You Lost Me"] = "mod_assets/source/audio/ost/es/ts_ylm.ogg"
+    $ music_list_ts["Sergey Eybog - My Daily Life"] = "mod_assets/source/audio/ost/es/ts_mdl.ogg"
 ###ОСТАЛЬНОЕ
-    $ music_list_ts["Sia - Breathe Me"] = "mod_assets/source/audio/ost/ts_mdl.ogg"
     $ music_list_ts["Marco Beltrami - Wales"] = "mod_assets/source/audio/ost/ts_wales.ogg"
-    $ music_list_ts["Pixies - Where is My Mind (piano cover)"] = "mod_assets/source/audio/ost/menu_ost/ts_wmm.ogg"
     $ music_list_ts["HCCH OST - Начало"] = "mod_assets/source/audio/ost/ts_emmk.ogg"
     $ music_list_ts["kelly bailey - inhuman frequency"] = "mod_assets/source/audio/ost/ts_hl2.ogg"
-    $ music_list_ts["Gramatik - Gungeon Theme"] = "mod_assets/source/audio/ost/ts_gramatik.ogg"
+    $ music_list_ts["Pixies - Where is My Mind (piano cover)"] = "mod_assets/source/audio/ost/ts_gramatik.ogg"
     $ music_list_ts["Joel Nielsen - Black Mesa Theme"] = "mod_assets/source/audio/ost/ts_mk.ogg"

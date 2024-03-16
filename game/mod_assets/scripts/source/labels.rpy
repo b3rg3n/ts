@@ -33,3 +33,5 @@ init:
     default player = "[user]"
     default razrab_name = "BERGEN"
     default cm_name = "???"
+
+    default text_pizda_nahui = glitchtext(24)

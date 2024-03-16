@@ -158,7 +158,7 @@ screen chp_text_20:
     text "{size=+15}{font=[ts_nvl_font2]}Или я что-то путаю?..{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_21:
-    text "{size=+15}{font=[ts_nvl_font2]}Оглядываясь назад, наверное, подумать всё-таки стоило… Но не в тот момент.{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[ts_nvl_font2]}Оглядываясь назад...\nНаверное, подумать\nвсё-таки стоило…\nНо не в тот момент.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_22:
     text "{size=+15}{font=[ts_nvl_font2]}Впрочем, мы же раньше и были маленькими девочками?..{/font}{/size}" yalign 0.5 xalign 0.5

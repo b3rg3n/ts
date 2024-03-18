@@ -33,5 +33,7 @@ init:
     default player = "[user]"
     default razrab_name = "BERGEN"
     default cm_name = "???"
+    default pod1_name = "Подруга"
+    default pod2_name = "Подруга"
 
     default text_pizda_nahui = glitchtext(24)

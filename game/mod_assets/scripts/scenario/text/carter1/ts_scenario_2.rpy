@@ -1164,4 +1164,6 @@ label ts_scenario_2:
     stop music fadeout 7
     scene black with ed_night_dis
 
+    $ TS.Screens(ts_null_transform)
+
     jump ts_scenario_3

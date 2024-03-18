@@ -24,6 +24,8 @@ label ts_scenario_4:
     show unblink
     pause 1
 
+    $ TS.Screens(ts_showscreens)
+
     "Наступила пятница."
 
     stop sound2 fadeout 3
@@ -37,12 +39,25 @@ label ts_scenario_4:
     "У нас же даже никаких заготовок нет! Ни стихов, ни дополнительных развлечений, ничего!"
     "Наш клуб - это скорее четыре подружки, у которых из общего только литература."
 
-    window hide
-    show zatemnenie
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
+    play sound nfy
+
+    show zatemnenie with dspr
+
+    $ TS.Screens(ts_showscreens)
+
     show screen chp_text_25
     pause
-    hide zatemnenie
+    $ TS.Screens(ts_hidescreens)
+    show screen chp_text_25
+    pause 1
     hide screen chp_text_25
+
+    hide zatemnenie with dspr
+
+    $ TS.Screens(ts_showscreens)
 
     "А вместо того, чтобы готовить к этому чёртовому фестивалю хоть что-то, мы сидим, прохлаждаемся, кушаем кексики и пьём чаёк!"
     "В понедельник Нацуки пообещала, что к пятнице она принесёт кексы, а Юри сказала, что принесёт чайный сервиз."
@@ -62,18 +77,36 @@ label ts_scenario_4:
     "готовила темы для следующих дискуссий, была своеобразным медиатором спора, занималась продвижением клуба, и так далее."
     "Так почему я не делаю ничего из этого сейчас, особенно когда я сама же говорила, что литература - это моё призвание?"
 
-    window hide
-    show zatemnenie
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
+    play sound nfy
+
+    show zatemnenie with dspr
+
+    $ TS.Screens(ts_showscreens)
+
     show screen scenario_4_onest_text_suka
     pause
-    hide zatemnenie
+    $ TS.Screens(ts_hidescreens)
+    show screen scenario_4_onest_text_suka
+    pause 1
     hide screen scenario_4_onest_text_suka
 
+    hide zatemnenie with dspr
+
+    $ TS.Screens(ts_showscreens)
+
     "Отгоняя прочь все негативные мысли, я наконец-то встаю с кровати и начинаю свою утреннюю рутину."
+
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
 
     play sound2 pageflip
     scene ts_bathroom
     with wipeleft_scene
+
+    $ TS.Screens(ts_showscreens)
 
     "Холодная вода помогает мне не только взбодриться и освежиться, но и окончательно прогнать от себя все дурные мысли."
     "Хотя, это не значит, что холодная вода от этого станет менее холодной."
@@ -85,16 +118,20 @@ label ts_scenario_4:
 
     "Наспех умывшись и почистив зубы, я спускаюсь."
 
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
     play music audio.t2
     play sound2 pageflip
     scene ts_kitchen
     show hiroto 1a at t11
     with wipeleft_scene
 
+    $ TS.Screens(ts_showscreens)
 
     ts_ft 2b "Доброе утро, дорогая!"
 
-    show hiroto 1a at t11
+    show hiroto 1a at f11
 
     m "Доброе, пап."
     ts_ft 1c "Что-то ты поздновато сегодня, уже половина восьмого почти. Плохо спала?"
@@ -103,7 +140,7 @@ label ts_scenario_4:
 
     m "Да нет, спала нормально, проснулась как обычно. Просто долго встать не могла."
 
-    show hiroto 1g at t11
+    show hiroto 1g at f11
 
     ts_ft "Ладно, садись давай. На завтрак у нас обоих рисовая каша и кукурузные хлопья с кофе."
 
@@ -112,7 +149,7 @@ label ts_scenario_4:
     m "Слу-у-ушай... А может, ты лучше две порции рисовой каши съешь, а я две тарелки хлопьев?"
     ts_ft 1z1 "Ну уж нет. Ешь давай."
 
-    show hiroto at thide
+    show hiroto at cright with move
     hide hiroto
 
     "Сегодня снова готовит папа."
@@ -124,11 +161,11 @@ label ts_scenario_4:
     "Я ведь только зубы почистила..."
     "К счастью, папа сегодня не особо настойчив."
 
-    show hiroto 1c at t11
+    show hiroto 1c at ln11
 
     ts_ft "Нет, если не хочешь, то не ешь. Ты уже девочка достаточно взрослая, чтобы самой решать, что есть, а что не есть."
 
-    show hiroto 1a at t11
+    show hiroto 1a at f11
 
     "И то верно. В последний раз папа готовил рисовую кашу, когда мне было лет... тринадцать?"
     "Иными словами, {b}очень{/b} давно. Для меня это как будто в прошлой жизни было."
@@ -139,9 +176,14 @@ label ts_scenario_4:
 
     "Папа усмехается. Я тоже улыбаюсь."
 
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
     play sound2 pageflip
     scene ts_kitchen
     with wipeleft_scene
+
+    $ TS.Screens(ts_showscreens)
 
     "Пока мы завтракаем (а если точнее, он завтракает, а я пытаюсь перебиться одними хлопьями), папа спрашивает."
 
@@ -150,7 +192,7 @@ label ts_scenario_4:
     ts_ft "Ну что, какие планы на день?"
     ts_ft 1c "Ты мне рассказывала как-то на неделе, что у вас планируется какое-то мероприятие."
 
-    show hiroto 1d at t11
+    show hiroto 1d at f11
 
     m "Да, с чаем и кексиками. В среду у нас уже было первое чаепитие, осталось только, чтобы Нацуки не облажалась с выпечкой."
     ts_ft 1c "Хорошо..."
@@ -159,7 +201,7 @@ label ts_scenario_4:
     ts_ft "..."
     ts_ft 1g "Ну ты хоть попробуй. Она же не кусается."
 
-    show hiroto 1f at t11
+    show hiroto 1f at s11
 
     "Видя, как я странно и даже брезгливо смотрю на тарелку, папа снова пытается заставить меня съесть хоть ложку."
     "Началось..."
@@ -176,18 +218,31 @@ label ts_scenario_4:
     ts_ft "Поскольку у меня теперь нет машины, на работу мне теперь нужно добираться дольше, и следовательно, собираться пораньше."
     ts_ft "Так что через пару минут я уже тебя покину до вечера."
 
-    show hiroto 1e at t11
+    show hiroto 1e at s11
 
     "С тех пор, как у папы сломалась машина, он ходит на работу пешком."
     "И с учётом того, что он работает полный рабочий день, возможность хотя бы взглянуть на неё и понять, в чём именно проблема, у него будет не раньше субботы."
     "А если там что-то серьёзное, то это растянется на несколько недель..."
 
-    window hide
-    show zatemnenie
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
+    play sound nfy
+
+    show zatemnenie with dspr
+
+    $ TS.Screens(ts_showscreens)
+
     show screen scenario_4_onest_text_suka1
     pause
-    hide zatemnenie
+    $ TS.Screens(ts_hidescreens)
+    show screen scenario_4_onest_text_suka1
+    pause 1
     hide screen scenario_4_onest_text_suka1
+
+    hide zatemnenie with dspr
+
+    $ TS.Screens(ts_showscreens)
 
     "И поэтому теперь он уходит намного раньше меня."
     "Что же, мне не привыкать к одиночеству..."
@@ -198,7 +253,7 @@ label ts_scenario_4:
     m "Конечно. Люблю тебя, пап."
     ts_ft 1g "И я тебя люблю, дорогая."
 
-    show hiroto at thide
+    show hiroto at cright with move
     hide hiroto
 
     "С этими словами он ушёл до вечера."
@@ -208,41 +263,67 @@ label ts_scenario_4:
     "А у меня есть ещё минимум полчаса до выхода."
     "Хм-м-м..."
 
-    window hide
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
     show zatemnenie with dspr
+
+    $ TS.Screens(ts_showscreens)
+
     menu:
         "Выйти прямо сейчас":
-            hide zatemnenie with dspr
+            pass
         "Ещё немного посидеть":
             $ unluck4 = True
             $ unluck_ball += 1
-            hide zatemnenie with dspr
+
+    hide zatemnenie with dspr
+
+    $ TS.Screens(ts_showscreens)
 
     if unluck4 == True:
         "Впрочем, а куда спешить? У меня ещё есть куча времени."
         "Можно немного посмотреть телевизор, можно немного почитать, можно даже приготовить то, что не приготовил папа."
 
+        $ TS.Screens(ts_hidescreens)
+        " {w=1.0}{nw}"
+
         show zatemnenie with dspr
+
+        $ TS.Screens(ts_showscreens)
+
         menu:
             "Посмотреть телевизор":
                 hide zatemnenie with dspr
                 $ unluck4_telek = True
 
+                $ TS.Screens(ts_showscreens)
+
                 "Я решаю немного посмотреть телевизор."
                 "Время, когда по утрам крутили хорошие мультики, я уже давно переросла, но всегда можно ненадолго окунуться в детство, правда же?"
+
+                $ TS.Screens(ts_hidescreens)
+                " {w=1.0}{nw}"
 
                 play sound pageflip
                 scene ts_living_room
                 with wipeleft_scene
 
+                $ TS.Screens(ts_showscreens)
+
                 "Мне... не сказать, чтобы сильно повезло, но и не то, чтобы сильно {i}не{/i} повезло."
                 "Мультиков, которые я обожала в детстве, в пятницу не показывали, но зато показывали какое-то развлекательное шоу, которое мне до этого было незнакомо. И, знаете, мне понравилось."
+
+                $ TS.Screens(ts_hidescreens)
+                " {w=1.0}{nw}"
 
                 play sound pageflip
                 scene ts_living_room
                 with wipeleft_scene
 
                 stop music fadeout 3
+
+                $ TS.Screens(ts_showscreens)
 
                 "Шоу было настолько развлекательным и безмозглым, что я даже потеряла счёт времени."
                 "Кстати, который час?"
@@ -251,16 +332,26 @@ label ts_scenario_4:
                 hide zatemnenie with dspr
                 $ unluck4_reading = True
 
+                $ TS.Screens(ts_showscreens)
+
                 "Я решаю немного почитать."
                 "С того момента, как я прочла последнюю книгу, прошло уже довольно много времени, но всегда можно ненадолго окунуться в беззаботное детство, правда же?"
+
+                $ TS.Screens(ts_hidescreens)
+                " {w=1.0}{nw}"
 
                 play sound pageflip
                 scene ts_bedroom
                 with wipeleft_scene
 
+                $ TS.Screens(ts_showscreens)
+
                 "Я решаю выбрать что-то поинтереснее, но не прямо чтобы особо, чтобы я не проглотила всю книгу за один заход."
                 "У меня в спальне есть довольно много книг из классической литературы, но ещё есть несколько книг в жанре фэнтези."
                 "Обожаю фэнтези..."
+
+                $ TS.Screens(ts_hidescreens)
+                " {w=1.0}{nw}"
 
                 play sound pageflip
                 scene ts_bedroom
@@ -268,12 +359,16 @@ label ts_scenario_4:
 
                 stop music fadeout 3
 
+                $ TS.Screens(ts_showscreens)
+
                 "Книга оказалась даже интереснее, чем я изначально предполагала."
                 "Я уже прочла почти сто страниц, и только теперь я решаю посмотреть на время."
 
             "Покашеварить":
                 hide zatemnenie with dspr
                 $ unluck4_cooking = True
+
+                $ TS.Screens(ts_showscreens)
 
                 "Тарелка с рисовой кашей так и осталась нетронутой."
                 if unluck3 == True:
@@ -286,9 +381,14 @@ label ts_scenario_4:
 
                 "Гречка для этого вполне подойдёт."
 
+                $ TS.Screens(ts_hidescreens)
+                " {w=1.0}{nw}"
+
                 play sound2 pageflip
                 scene ts_kitchen
                 with wipeleft_scene
+
+                $ TS.Screens(ts_showscreens)
 
                 "После того, как гречка сварилась, я высыпаю всё на тарелку, добавляю масла и пробую её."
 
@@ -301,17 +401,24 @@ label ts_scenario_4:
                 "Кто знает, когда папа в следующий раз приготовит мне гречку."
                 "Если он вообще её будет готовить..."
 
+                $ TS.Screens(ts_hidescreens)
+                " {w=1.0}{nw}"
+
                 play sound2 pageflip
                 scene ts_kitchen
                 with wipeleft_scene
 
                 stop music fadeout 3
 
+                $ TS.Screens(ts_showscreens)
+
                 "На пищу богов нельзя отвлекаться."
                 "Только после того, как я поела, я всё же решаю посмотреть на время."
                 
         "..."
         play music ts_ap fadein 0.7
+
+        $ TS.Screens(vpunch)
 
         m "ТВОЮ МАТЬ! Я ЖЕ В ШКОЛУ ОПАЗДЫВАЮ!"
         m "Или, скорее, уже конкретно опоздала..."
@@ -352,6 +459,9 @@ label ts_scenario_4:
         "Поэтому я просто собираюсь, закрываю дверь и тоже выхожу из дома."
         "Оделась я заранее, поэтому у меня ещё есть куча свободного времени."
 
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
     play sound2 pageflip
     scene ts_house
     with wipeleft_scene
@@ -362,9 +472,14 @@ label ts_scenario_4:
 
     play music ts_tg
 
+    $ TS.Screens(ts_showscreens)
+
     if unluck4 == True:
         "Хотя... А куда спешить? В школу я всё равно уже безбожно опоздала, хуже уже не будет."
         "Поэтому, как только я вышла из дома, до школы я начала идти как можно медленнее и неторопливее."
+
+        $ TS.Screens(ts_hidescreens)
+        " {w=1.0}{nw}"
 
         play sound2 pageflip
         scene ts_school_gate_day
@@ -382,15 +497,22 @@ label ts_scenario_4:
         scene ts_corridor
         with wipeleft_scene
 
+        $ TS.Screens(ts_showscreens)
+
         "Как я и предполагала, примерно в это время заканчивается второй урок."
         "Поскольку школа у нас специализированная, особенная, то и уроки у нас идут не по сорок пять минут, как обычно, а всего сорок."
         "Казалось бы, да, всего пять минут разницы, но когда у тебя по семь-восемь уроков каждый день, разница становится существенной."
         "Поэтому, я пришла в школу и встала перед классом всего минут за десять до конца второго урока."
         "И было бы ничего, и всё бы обошлось, если бы дальше у нас не были три урока геометрии у того же учителя, в том же кабинете."
 
+        $ TS.Screens(ts_hidescreens)
+        " {w=1.0}{nw}"
+
         play sound2 pageflip
         scene ts_corridor
         with wipeleft_scene
+
+        $ TS.Screens(ts_showscreens)
 
         "На перемене многие у меня спрашивали, почему я не была на первых двух уроках."
         "Я же всем максимально холодно отвечала, что с утра неважно себя чувствовала, но к третьему уроку набралась сил и пошла в школу."
@@ -414,9 +536,14 @@ label ts_scenario_4:
         "Главное, что после этого «объяснения» люди от меня отставали."
         "Или, вернее сказать, «оправдания»..."
 
+        $ TS.Screens(ts_hidescreens)
+        " {w=1.0}{nw}"
+
         play sound2 pageflip
         scene ts_class
         with wipeleft_scene
+
+        $ TS.Screens(ts_showscreens)
 
         "Когда начался третий урок, учитель заметил меня и вопросительно-обвинительно на меня посмотрел."
 
@@ -437,11 +564,16 @@ label ts_scenario_4:
         m "Следующего раза не будет, я вам обещаю."
         teacher "Ладно уж, садитесь..."
 
+        $ TS.Screens(ts_hidescreens)
+        " {w=1.0}{nw}"
+
         play sound2 pageflip
         scene ts_class
         with wipeleft_scene
 
         play music ts_mdl
+
+        $ TS.Screens(ts_showscreens)
 
         "Остальная часть уроков прошла нормально."
         "Хоть следующие три урока были геометрией, а ещё два - физикой, с ними я в гораздо более тёплых отношениях, чем с той же биологией."
@@ -468,6 +600,9 @@ label ts_scenario_4:
     else:
         "Поэтому в школу я шла максимально неторопливо. Всё равно до уроков ещё долго, а дорога до школы много времени не занимает."
 
+        $ TS.Screens(ts_hidescreens)
+        " {w=1.0}{nw}"
+
         play sound2 pageflip
         scene ts_school_gate_day
         with wipeleft_scene
@@ -484,6 +619,8 @@ label ts_scenario_4:
         scene ts_corridor
         with wipeleft_scene
 
+        $ TS.Screens(ts_showscreens)
+
         "Но всё равно я пришла минут за двадцать до начала уроков."
         "Перед уроками многие у меня спрашивали, а чего это так рано."
         "Я же всем максимально холодно отвечала, что просто захотелось."
@@ -492,18 +629,28 @@ label ts_scenario_4:
         "Не буду же я им всем рассказывать, что у отца сломалась машина, поэтому он ушёл пораньше, а я от нечего делать тоже пришла пораньше."
         "Это будет просто некрасиво по отношению к папе..."
 
+        $ TS.Screens(ts_hidescreens)
+        " {w=1.0}{nw}"
+
         play sound2 pageflip
         scene ts_class
         with wipeleft_scene
+
+        $ TS.Screens(ts_showscreens)
 
         "Первые два урока были алгеброй. Сегодня мы только начали проходить интегралы."
         "Честно? Никогда особо не понимала интегралы, но со школьной программой я точно справляюсь."
         "Даже если программа в этой школе как раз специализируется на точных науках."
         "И если на алгебре я даже по теме интегралов была местной звездой, то дальше..."
 
+        $ TS.Screens(ts_hidescreens)
+        " {w=1.0}{nw}"
+
         play sound2 pageflip
         scene ts_class
         with wipeleft_scene
+
+        $ TS.Screens(ts_showscreens)
 
         "Дальше у нас была геометрия. Три урока подряд. В том же кабинете, у того же учителя."
         "И если с алгеброй я была в очень хороших отношениях, то с геометрией..."
@@ -518,16 +665,19 @@ label ts_scenario_4:
         "Видимо, ранняя прогулка до школы всё же дала о себе знать. Поэтому я незаметно для себя проваливаюсь в сон..."
 
         stop music fadeout 3
-        window hide
+        $ TS.Screens(ts_hidescreens)
+        " {w=1.0}{nw}"
         show blink
         pause 3
         hide blink
         play music ts_gp
         show unblink
-
+        $ TS.Screens(ts_showscreens)
         teacher "...исс Ида!"
 
         "Меня разбудил голос учителя. Видимо, всё-таки решил спросить у меня."
+
+        $ TS.Screens(vpunch)
 
         m "А?! Что?.."
         teacher "Я спрашиваю, какой будет объём у этого тетраэдра?"
@@ -552,11 +702,16 @@ label ts_scenario_4:
         "И-и-и... я снова перестаю слушать. Но на этот раз я буду умнее, и не буду засыпать прямо на его уроке."
         "К счастью, больше учитель у меня уже ничего не спрашивал."
 
+        $ TS.Screens(ts_hidescreens)
+        " {w=1.0}{nw}"
+
         play sound2 pageflip
         scene ts_class
         with wipeleft_scene
 
         play music ts_mdl
+
+        $ TS.Screens(ts_showscreens)
 
         "Остальная часть уроков прошла нормально."
         "После марафона по геометрией у нас ещё были два урока по физике."
@@ -571,6 +726,9 @@ label ts_scenario_4:
         "А вот если бы я приготовила себе что-нибудь сама..."
         "Ну да и пусть. Я не особо голодна, а на собрании клуба будут кексы. М-м-м..."
 
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
     play sound2 pageflip
     scene ts_corridor
     with wipeleft_scene
@@ -580,6 +738,8 @@ label ts_scenario_4:
     with wipeleft_scene
 
     play music audio.t3
+
+    $ TS.Screens(ts_showscreens)
 
     "Я как обычно пришла первой."
     "Поскольку сегодня пятница, и ни у кого из нас нет поздних уроков, мы коллективно решили, что по пятницам мы будем проводить собрание раньше на полчаса."
@@ -594,24 +754,28 @@ label ts_scenario_4:
     if unluck4_reading == True:
         "И что, что утром после такого же чтения я опоздала в школу? Было же весело! И интересно даже!"
 
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
     play sound2 pageflip
     scene ts_club
     with wipeleft_scene
+
+    $ TS.Screens(ts_showscreens)
 
     "Прошло уже двадцать минут, а никто так и не появился."
     "Я уже начинаю переживать."
     "Я же не Юри, для которой чтение может быть даже предсмертным желанием."
     "Если начну переживать я, то мне будет точно не до чтения."
 
-
     play sound door_open
 
-    show natsuki 1 at t11
+    show natsuki 1 at ln11
 
     "К счастью, через несколько секунд после того, как я об этом подумала, в комнату входит Нацуки."
     n 1d "Привет, Моника!"
 
-    show natsuki 1 at t11
+    show natsuki 1 at f11
 
     m "Привет, Нацуки. Ты почти на полчаса опоздала."
     n 1l "А-ха-ха, ну, знаешь..."
@@ -624,7 +788,7 @@ label ts_scenario_4:
     n 2h "Нет. Покажу, когда все соберёмся, чтоб торжественнее было."
     n 1m "Кстати, а где остальные?"
 
-    show natsuki 1n at t11
+    show natsuki 1n at s11
 
     m "Остальные ещё не собрались."
 
@@ -633,7 +797,7 @@ label ts_scenario_4:
     m "Видимо, они тоже далеко не старожилы."
     n 1l "А-ха-ха!"
 
-    show natsuki 1z at t11
+    show natsuki 1z at s11
 
     stop music fadeout 4
 
@@ -648,17 +812,17 @@ label ts_scenario_4:
 
     play sound door_open
 
-    show yuri 1b at t21
+    show yuri 1b at ln21
     show natsuki 1u at t22
 
     y "Всем добрый день."
     m "Да, привет... Ты знаешь, что ты на полчаса опоздала?"
 
-    show yuri 1n at t21
+    show yuri 1n at d21
 
     y "Ч-что?"
 
-    show yuri 4b at t21
+    show yuri 4b at s21
 
     y "П-простите, я не знала..."
     m "Всё в порядке, Нацуки тоже только недавно пришла."
@@ -674,7 +838,7 @@ label ts_scenario_4:
     y 2zi "Ну... необычный..."
     n 2t "Ну, покажи хоть..."
 
-    show natsuki 1u at t22
+    show natsuki 1u at h22
 
     y 3r "Нет!"
     y 2y6 "Покажу, когда все соберёмся."
@@ -691,14 +855,14 @@ label ts_scenario_4:
 
     play sound door_break
 
-    show sayori 4m at t31
+    show sayori 4m at ln31
     show yuri 1i at t32
     show natsuki 1o at t33
     with vpunch
 
     s "Простите извините я опоздала да извините за опоздание {w=1}{nw}"
 
-    show sayori 4n at t31
+    show sayori 4n at h31
 
     m "Ну, во-первых, здравствуй, Сайори... А во-вторых, ты и так опаздываешь на каждое собрание, так что я даже не удивлена..."
     s 1y "..."
@@ -707,9 +871,9 @@ label ts_scenario_4:
 
     m "Так вот..."
 
-    show sayori 1d at t31
-    show yuri 1e at t32
-    show natsuki 1j at t33
+    show sayori 1d at f31
+    show yuri 1e at f32
+    show natsuki 1j at f33
 
     m "Итак, ребята!"
     m "В понедельник нас наконец-то стало четверо, наш Литературный клуб наконец-то официально открылся..."
@@ -722,8 +886,8 @@ label ts_scenario_4:
     m "Скажу честно, их не пробовала даже я, поэтому {w=0.5}{nw}"
     n "Ладно, хватит прелюдий, налетайте!"
 
-    show sayori 1q at t31
-    show natsuki 1z at t33
+    show sayori 1q at s31
+    show natsuki 1z at s33
 
     "Каждая, включая меня, берёт по одному кексу."
     "..."
@@ -733,7 +897,7 @@ label ts_scenario_4:
     "Разница разве что в начинке."
     "Слишком хорошо для новичка. Но для профессионала, каким, как оказалось, и является Нацуки - самое то."
 
-    show sayori 2n at t31
+    show sayori 2n at f31
 
     "Сайори зря времени не теряет, и пока остальные только открывают и надкусывают кекс, Сайори уже его полностью съела."
     "...нет, её точно не кормят дома."
@@ -747,26 +911,25 @@ label ts_scenario_4:
 
     n "А-ха-ха, ну, знаешь... Человек - это такое существо, которому главное - это не сдохнуть. А для этого он пойдёт на немыслимое."
 
-    show sayori 2q at thide
-    show natsuki 1d at thide
-    show yuri 1c at thide
-
+    show sayori 2q at cright with move
     hide sayori
+    show natsuki 1d at cright with move
     hide natsuki
+    show yuri 1c at cright with move
     hide yuri
 
     "Кажется, я поняла, что Нацуки на самом деле подразумевала."
     "Но вот поняли ли остальные?"
 
-    show yuri 1c at t21
-    show sayori 1q at t22
+    show yuri 1c at ln21
+    show sayori 1q at ln22
 
     "..."
     "Кажется, нет..."
 
-    show yuri 1c at t31
-    show sayori 2o at t32
-    show natsuki 1j at t33
+    show yuri 1c at f31
+    show sayori 2o at f32
+    show natsuki 1j at f33
 
     "Тем временем Нацуки как-то двусмысленно продолжает."
     n 1l "Ладно, что вы кексы всухомятку едите? Кажется, Юри что-то там про чай говорила..."
@@ -787,9 +950,9 @@ label ts_scenario_4:
 
     play music ts_heather fadein 3
 
-    show yuri 1y6 at t31
-    show sayori 2o at t32
-    show natsuki 1m at t33
+    show yuri 1y6 at h31
+    show sayori 2o at h32
+    show natsuki 1m at h33
 
     "Бутылка красного вина."
 
@@ -797,25 +960,53 @@ label ts_scenario_4:
 
     "..."
 
-    window hide
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
+    play sound nfy
+
+    $ TS.Screens(ts_showscreens)
+
     show screen alko_text1
     pause
+    $ TS.Screens(ts_hidescreens)
+    show screen alko_text1
+    pause 1
     hide screen alko_text1
+
+    $ TS.Screens(ts_showscreens)
+
     show screen alko_text2
     pause
+    $ TS.Screens(ts_hidescreens)
+    show screen alko_text2
+    pause 1
     hide screen alko_text2
+
+    $ TS.Screens(ts_showscreens)
+
     show screen alko_text3
     pause
+    $ TS.Screens(ts_hidescreens)
+    show screen alko_text3
+    pause 1
     hide screen alko_text3
+
+    $ TS.Screens(ts_showscreens)
+
     show screen alko_text4
     pause
+    $ TS.Screens(ts_hidescreens)
+    show screen alko_text4
+    pause 1
     hide screen alko_text4
-    
     hide zatemnenie with dspr
 
-    show yuri 3y5 at t31
-    show sayori 1e at t32
-    show natsuki 1n at t33
+    show yuri 3y5 at s31
+    show sayori 1e at s32
+    show natsuki 1n at s33
+
+    $ TS.Screens(ts_showscreens)
 
     "Все мы удручённо смотрим друг на друга. Юри же неестественно дружелюбно улыбается во весь рот."
     y 2f "Ну а что такого? Я уже совершеннолетняя, и могу свободно покупать алкоголь."
@@ -841,7 +1032,7 @@ label ts_scenario_4:
     "А ведь действительно, в одной бутылке вина меньше литра. Разделить на четверых, и каждой едва ли достанется хотя бы по два полных стакана."
     "Хотя, тут уже другой вопрос: а выдержим ли эти два стакана, если никто из нас ранее никогда не пил спиртное?.."
 
-    show sayori 2y at t32
+    show sayori 2y at s32
 
     s "..."
     n 2t "Ну, раз такое дело..."
@@ -856,6 +1047,10 @@ label ts_scenario_4:
     show yuri 3y4 at t11
     with flash
 
+    $ pps = 2
+
+    $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
+
     y "Мне хочется разорвать твою плоть и заползти внутрь тебя."
     "...у Юри были такие же глаза, как и в моём кошмаре?"
 
@@ -867,7 +1062,14 @@ label ts_scenario_4:
     show natsuki 1j at t33
     with flash
 
+    $ pps = 1
+
+    $ TS.Screens(ts_showscreens)
+
     "Н-нет, наверное, всё-таки показалось..."
+
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
 
     play sound2 pageflip
     scene ts_club
@@ -876,14 +1078,16 @@ label ts_scenario_4:
     show natsuki 2z at t33
     with wipeleft_scene
 
+    $ TS.Screens(ts_showscreens)
+
     "Мы все наливаем по половинке чашки из сервиза Юри."
     "Поскольку это наш первый опыт с алкоголем (кроме, разве что, Юри, хотя и здесь я не уверена), мы изначально решили попробовать по чуть-чуть."
     "Да и просто чтобы немного растянуть удовольствие."
     "А то что это, мы выпьем по полтора стакана каждая, и через пятнадцать минут от вина ничего уже и не останется."
 
-    show yuri 2e at t31
-    show sayori 1d at t32
-    show natsuki 1j at t33
+    show yuri 2e at f31
+    show sayori 1d at f32
+    show natsuki 1j at f33
 
     stop music fadeout 5
 
@@ -908,15 +1112,15 @@ label ts_scenario_4:
     n 1t "Да, Юри, не ожидала я от тебя такого..."
     y 2f "А что такого? Вы же сказали про праздник, вот я и придала этому мероприятию хоть какой-то соответствующий вид."
 
-    show yuri 2d at t31
-    show sayori 3s at t32
-    show natsuki 2z at t33
+    show yuri 2d at h31
+    show sayori 3s at h32
+    show natsuki 2z at h33
 
     "Все снова засмеялись пуще прежнего."
 
-    show yuri 2e at t31 with dissolve_cg
-    show sayori 1d at t32 with dissolve_cg
-    show natsuki 1j at t33 with dissolve_cg
+    show yuri 2e at s31
+    show sayori 1d at s32
+    show natsuki 1j at s33
 
     m "Ну так вот, да..."
     m "Изначально я создавала этот клуб для своего собственного спокойствия и умиротворения."
@@ -933,7 +1137,7 @@ label ts_scenario_4:
     m "Пусть мы все читаем очень разные стили литературы, но я взяла за правило, что в моём клубе не будет слова «неправильно»."
     m "И неправильно ставить один стиль литературы выше или ниже другого, потому что они все одинаковы."
 
-    show natsuki 2y at t33
+    show natsuki 2y at f33
 
     "Последнее предложение было намёком в сторону Нацуки. И, судя по её выражению лица, она этот намёк поняла. Но заговорить не решилась."
     "Впрочем, и правильно. Нечего перебивать."
@@ -951,13 +1155,16 @@ label ts_scenario_4:
 
     $ m_name = "Все вместе"
 
+    $ TS.Screens(vpunch)
+
     m "За литературу!"
 
     $ m_name = "Моника"
 
     "Все делают по глотку..."
 
-    play music ts_heather
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
 
     play sound2 pageflip
     scene ts_club
@@ -966,6 +1173,9 @@ label ts_scenario_4:
     show natsuki 2v at h33
     with wipeleft_scene
 
+    play music ts_heather
+
+    $ TS.Screens(ts_showscreens)
 
     "...а затем все, кроме Юри, плюются от непривычно крепкого вкуса."
     "Я же говорила, что Юри уже не первый раз пьёт спиртное."
@@ -991,7 +1201,7 @@ label ts_scenario_4:
     y 1n "М-может, н-не так быстро?"
     y 1o "Н-ну то есть, С-Сайори тоже едва губами коснулась..."
 
-    show sayori 2k at t32
+    show sayori 2k at f32
 
     "Мрачный и отсутствующий взгляд Сайори говорит нам лучше самой Сайори."
     "Ей, судя по всему, вино тоже не совсем по вкусу пришлось."
@@ -999,6 +1209,9 @@ label ts_scenario_4:
 
     m "Ладно, пусть либо допьёт, либо скажет, что вино и ей не понравилось, и наливай следующую."
     y 1q "Л-ладно..."
+
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
 
     play sound2 pageflip
     scene ts_club:
@@ -1013,6 +1226,7 @@ label ts_scenario_4:
         blur 2.5 
     with wipeleft_scene
 
+    $ TS.Screens(ts_showscreens)
 
     "Как и ожидалось, Сайори тоже сделала пару глотков и сказала, что пить больше не будет."
     "Поэтому остались только мы с Юри."
@@ -1020,31 +1234,50 @@ label ts_scenario_4:
     "Какое же оно крепкое!"
     "Но сегодня я как будто на вершине мира. Правда, вершина эта уже немного покачивается..."
 
-    show yuri 1g at t31:
+    show yuri 1g at f31:
         blur 2.5 
 
     "Юри налила мне и ей ещё по половине чашки. На мои протесты по поводу того, что мы уже взрослые, Юри парировала, что первый опыт с алкоголем зачастую не самый приятный."
     "Особенно когда наступает похмелье."
 
-    window hide
-    show zatemnenie
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
+    play sound nfy
+
+    show zatemnenie with dspr
+
+    $ TS.Screens(ts_showscreens)
+
     show screen alko_text5
     pause
+    $ TS.Screens(ts_hidescreens)
+    show screen alko_text5
+    pause 1
     hide screen alko_text5
+
+    $ TS.Screens(ts_showscreens)
+
     show screen alko_text6
     pause
+    $ TS.Screens(ts_hidescreens)
+    show screen alko_text6
+    pause 1
     hide screen alko_text6
-    hide zatemnenie
+
+    hide zatemnenie with dspr
+
+    $ TS.Screens(ts_showscreens)
 
     "Я наигранно разочарованно вздохнула и согласилась."
 
     m "Ну что, Юри, я уже тост произнесла. А поскольку пьющих больше не осталось, то это право переходит к тебе."
 
-    show yuri 3n at t31:
+    show yuri 3n at f31:
         blur 2.5 
-    show sayori 2x at t32:
+    show sayori 2x at f32:
         blur 2.5 
-    show natsuki 1d at t33:
+    show natsuki 1d at f33:
         blur 2.5
 
     "Сайори и Нацуки заметно повеселели. Юри же... Ну, по одному её выражению лица понятно, что говорить она не хочет."
@@ -1081,6 +1314,8 @@ label ts_scenario_4:
 
     $ m_name = "Все вместе"
 
+    $ TS.Screens(vpunch)
+
     m "За новое!"
 
     $ m_name = "Моника"
@@ -1088,6 +1323,9 @@ label ts_scenario_4:
     "Мы с Юри поднимаем чашки и чокаемся."
     "Но чтобы Сайори и Нацуки не чувствовали себя обделёнными, мы легонько чокаем их по лбу."
     "Юри делает пару глотков. Я же снова выпила всю чашку залпом."
+
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
 
     play sound2 pageflip
     scene ts_club:
@@ -1101,6 +1339,8 @@ label ts_scenario_4:
     show natsuki 1u at t33:
         blur 5.0
     with wipeleft_scene
+
+    $ TS.Screens(ts_showscreens)
 
     y "Осторожнее..."
     s "Да, а то до конца вечера не дотянешь..."
@@ -1118,7 +1358,7 @@ label ts_scenario_4:
     m "Нет, хочу пить, и буду пить! В конце концов, тварь я дрожащая, или право имею?"
     m "Наливай!"
 
-    show yuri 1o at t31:
+    show yuri 1o at f31:
         blur 5.0
 
     "Юри что-то хотела сказать, но не решилась, и вместо этого выполнила то, что от неё требовалось."
@@ -1145,9 +1385,9 @@ label ts_scenario_4:
     "Ну предупреждала и предупреждала, и что с того? В конце концов, я и сама взрослый человек, и вправе делать что-угодно!"
     "Может, завтра мне и будет плохо... Но зато сегодня-то как хорошо!"
 
-    show yuri 1v at t31:
+    show yuri 1v at s31:
         blur 5.0
-    show sayori 1k at t32:
+    show sayori 1k at s32:
         blur 5.0
     show natsuki 1u at t33:
         blur 5.0
@@ -1155,7 +1395,9 @@ label ts_scenario_4:
     "Третий тост не объявил никто. Сайори и Нацуки уже не пьют, а мы с Юри уже сделали тост."
     "Поэтому пьём мы молча."
 
-    window hide
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
     scene ts_club:
         default subpixel True blur 9.0
         Null(1280.0, 720.0)
@@ -1168,6 +1410,8 @@ label ts_scenario_4:
         blur 9.0
     with ed_night_dis
 
+    $ TS.Screens(ts_showscreens)
+
     "Третья чашка пошла уже не так легко, как первые две."
     "Это уже пресловутое похмелье или ещё нет?"
     "Впрочем, неважно. Более важно то, что бутылка вина закончилась."
@@ -1179,9 +1423,9 @@ label ts_scenario_4:
     s 5c "Да! Мы хотели сделать культурное чаепитие, а не попойку для одного человека!"
     n 2o "..."
 
-    show yuri 1y4 at t31:
+    show yuri 1y4 at f31:
         blur 9.0
-    show sayori 5d at t32:
+    show sayori 5d at f32:
         blur 9.0
 
     "Кажется, я в меньшинстве..."
@@ -1201,22 +1445,30 @@ label ts_scenario_4:
     s "Да..."
     m "Хршо..."
 
-    window hide
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
     play sound2 pageflip
     scene black
     with ed_night_dis
 
     play music audio.t10y
 
+    $ TS.Screens(ts_showscreens)
+
     "Я закрываю глаза."
     "Я слышу, как девочки ещё что-то щебечут, но сейчас это совершенно не важно."
 
-    window hide
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
     scene ts_club:
         default subpixel True blur 9.0
         Null(1280.0, 720.0)
         'ts_club'
     with ed_night_dis
+
+    $ TS.Screens(ts_showscreens)
 
     "Я даже и не заметила, как задремала."
     "Прошло примерно полчаса или около того. Совсем потеряла счёт времени."
@@ -1254,23 +1506,47 @@ label ts_scenario_4:
 
     pause 2
 
-    show screen pizda_text1 with dissolve
+    play sound nfy
+
+    $ TS.Screens(ts_showscreens)
+
+    show screen pizda_text1
     pause
+    $ TS.Screens(ts_hidescreens)
+    show screen pizda_text1
+    pause 1
     hide screen pizda_text1
+
+    $ TS.Screens(ts_showscreens)
+
     show screen pizda_text2
-    with dissolve
     pause
+    $ TS.Screens(ts_hidescreens)
+    show screen pizda_text2
+    pause 1
     hide screen pizda_text2
+
+    $ TS.Screens(ts_showscreens)
+
     show screen pizda_text3
-    with dissolve
     pause
+    $ TS.Screens(ts_hidescreens)
+    show screen pizda_text3
+    pause 1
     hide screen pizda_text3
+
+    $ TS.Screens(ts_showscreens)
+
     show screen pizda_text4
-    with dissolve
     pause
+    $ TS.Screens(ts_hidescreens)
+    show screen pizda_text4
+    pause 1
     hide screen pizda_text4
+
+    $ TS.Screens(ts_showscreens)
+
     show screen pizda_text41
-    with dissolve
     pause 0.5
     hide screen pizda_text41
 
@@ -1490,7 +1766,7 @@ label ts_scenario_4:
     else:
         m "А ты вообще кто такая?" with vpunch
 
-    show monika 3b at t11
+    show monika 3b at f11
 
     em "Я - [em_name], твоё...{w} Подсознание,{w=0.2} твоя интуиция...{w} Называй это как хочешь.{w} Это я была,{w=0.2} да и остаюсь,{w=0.2} тем - {w}«голосом дурных мыслей»."
 
@@ -1498,7 +1774,7 @@ label ts_scenario_4:
 
     em "Но,{w=0.2} да - {w}каждую из них убила именно ты." with vpunch
 
-    show monika 2n at t11
+    show monika 2n at h11
 
     window hide
     show zatemnenie_light
@@ -1506,7 +1782,7 @@ label ts_scenario_4:
     pause
     hide screen pizda_text6
 
-    show monika 2i at t11
+    show monika 2i at f11
 
     show screen pizda_text7
     pause
@@ -1518,7 +1794,7 @@ label ts_scenario_4:
     pause
     hide screen pizda_text8
 
-    show monika 1g at t11
+    show monika 1g at s11
 
     show screen pizda_text9
     pause
@@ -1530,7 +1806,7 @@ label ts_scenario_4:
     pause
     hide screen pizda_text10
 
-    show monika 1g at t11
+    show monika 1g at f11
 
     show screen pizda_text11
     pause
@@ -1546,7 +1822,7 @@ label ts_scenario_4:
     pause
     hide screen pizda_text13
 
-    show monika 2p at t11
+    show monika 2p at s11
 
     show screen pizda_text14
     pause
@@ -1559,7 +1835,7 @@ label ts_scenario_4:
     hide screen pizda_text15
     hide zatemnenie_light
 
-    show monika 4m at t11
+    show monika 4m at f11
 
     "Нет..."
 

@@ -28,12 +28,6 @@ init python:
         elif pps == 4: # ОРАНЖЕВЫЙ
             status_color = "#ff8800"
             status_color_custom = "#ffffff"
-        elif pps == 5: # ФИОЛЕТОВЫЙ
-            status_color = "#ff00c8"
-            status_color_custom = "#ffffff"
-        elif pps == 6: # СИНИЙ
-            status_color = "#2600ff"
-            status_color_custom = "#ffffff"
 
     while ts_status in config.window_overlay_functions:
         config.window_overlay_functions.remove(ts_status)

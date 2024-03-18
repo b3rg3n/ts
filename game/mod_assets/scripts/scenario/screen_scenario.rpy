@@ -85,7 +85,7 @@ screen scenario_2_onest_text_suka:
     text "{size=+15}{font=[ts_nvl_font2]}Впрочем, а {i}я{/i} когда-нибудь была психически здоровой?{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen scenario_2_onest_text_suka1:
-    text "{size=+15}{font=[ts_nvl_font2]}Отстань уже, не видишь, девочка только плакать перестала, а ты опять нагнетаешь.{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[ts_nvl_font2]}Отстань уже, не видишь,\nдевочка только плакать перестала,\nа ты опять нагнетаешь.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen scenario_3_onest_text_suka:
     text "{size=+15}{font=[ts_nvl_font2]}Впрочем, я же и так её не особо одобряю...{/font}{/size}" yalign 0.5 xalign 0.5
@@ -122,7 +122,7 @@ screen chp_text_8:
     text "{size=+15}{font=[adv_font]}Ну-у-у... или чуть больше...{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_9:
-    text "{size=+15}{font=[adv_font]}Очнись, у тебя девочка слезами захлёбывается, а ты просто стоишь и ничерта не делаешь!{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[adv_font]}Очнись, у тебя девочка слезами захлёбывается,\nа ты просто стоишь и ничерта не делаешь!{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_10:
     text "{size=+15}{font=[adv_font]}Какая же ты всё-таки эгоистичная...{/font}{/size}" yalign 0.5 xalign 0.5
@@ -173,7 +173,7 @@ screen chp_text_25:
     text "{size=+15}{font=[ts_nvl_font2]}Ну и проблемы: у каждой из девочек есть общие со мной проблемы.{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen chp_text_26:
-    text "{size=+15}{font=[ts_nvl_font2]}Пусть, как оказалось, эта искренность не была столь уж и искренней...{/font}{/size}" yalign 0.5 xalign 0.5
+    text "{size=+15}{font=[ts_nvl_font2]}Пусть, как оказалось, эта искренность\nне была столь уж и искренней...{/font}{/size}" yalign 0.5 xalign 0.5
 
 
 screen akt2_chp1_text:

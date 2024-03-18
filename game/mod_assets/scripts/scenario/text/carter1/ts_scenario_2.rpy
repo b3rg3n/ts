@@ -236,10 +236,9 @@ label ts_scenario_2:
     "Впрочем, ничего удивительного. Сайори всегда немного опаздывает."
 
     play sound door_break
+    show sayori 4p at ln11
 
     "И как будто специально, как только я об этом подумала, Сайори буквально вваливается в кабинет Литературного клуба."
-
-    show sayori 4p at ln11
 
     $ TS.Screens(vpunch)
 
@@ -280,6 +279,9 @@ label ts_scenario_2:
     m "Да они что, издеваются?!"
     m "Я почти два месяца изо всех сил добивалась того, чтобы в этом клубе было больше народу, а они, видите ли, и знать не знают о таком клубе?!"
 
+    scene ts_club
+    show sayori 1m at f11
+    pause 0.1
     show sayori 1u at t11
 
     m "..."
@@ -294,7 +296,7 @@ label ts_scenario_2:
 
     $ TS.Screens(ts_showscreens)
 
-    show screen chp_text_22
+    show screen chp_text_23
     pause
     $ TS.Screens(ts_hidescreens)
     show screen chp_text_23
@@ -313,26 +315,26 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show sayori 1u zorder 2 at h11
-    pause 0.25
-    show sayori 1 zorder 2 at h11
-    pause 0.25
-    show sayori 2c zorder 2 at h11
-    pause 0.25
-    show sayori 3m zorder 2 at h11
-    pause 0.25
-    show sayori 3n zorder 2 at h11
-    pause 0.25
-    show sayori 1o zorder 2 at h11
-    pause 0.25
-    show sayori 2l zorder 2 at h11
-    pause 0.25
-    show sayori 3e zorder 2 at h11
-    pause 0.25
-    show sayori 5a zorder 2 at h11
-    pause 0.25
-    show sayori 5b zorder 2 at h11
-    pause 0.25
+    show sayori 1u zorder 2 at f11
+    pause 0.15
+    show sayori 1 zorder 2 at t11
+    pause 0.15
+    show sayori 2c zorder 2 at s11
+    pause 0.15
+    show sayori 3m zorder 2 at t11
+    pause 0.15
+    show sayori 3n zorder 2 at f11
+    pause 0.15
+    show sayori 1o zorder 2 at t11
+    pause 0.15
+    show sayori 2l zorder 2 at s11
+    pause 0.15
+    show sayori 3e zorder 2 at t11
+    pause 0.15
+    show sayori 5a zorder 2 at f11
+    pause 0.15
+    show sayori 5b zorder 2 at t11
+    pause 0.15
 
     show sayori 4p at h11
 
@@ -661,6 +663,8 @@ label ts_scenario_2:
     show sayori 1k at t22
     "Мы с Сайори озадаченно обмениваемся взглядами."
 
+    $ pps = 3
+
     m "..."
     s 1l "Что же..."
     s 2l "Если надо, то надо..."
@@ -693,10 +697,11 @@ label ts_scenario_2:
         "Посмотреть в других классах":
             $ unluck = True
             $ unluck_ball += 1
-            hide zatemnenie with dspr
         "Идти вперёд":
-            hide zatemnenie with dspr
             pass
+
+    hide zatemnenie with dspr
+    $ TS.Screens(ts_showscreens)
 
     if unluck == True:
         "Я решаю поискать её в других классах."
@@ -749,6 +754,8 @@ label ts_scenario_2:
     play sound pageflip
     scene ts_school_bathroom
     with wipeleft_scene
+
+    $ pps = 4
 
     $ TS.Screens(ts_showscreens)
 
@@ -813,6 +820,10 @@ label ts_scenario_2:
 
     "После этих слов кабинка открылась, и..."
 
+    $ pps = 2
+
+    $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
+
     show yuri 9p at t11
     
     play music ts_dead_theme fadein 1
@@ -824,25 +835,16 @@ label ts_scenario_2:
     "Это был... совершенно другой человек."
     "Психически нездоровый человек."
 
-    $ TS.Screens(ts_hidescreens)
-    " {w=1.0}{nw}"
-
     play sound nfy
 
     show zatemnenie with dspr
 
-    $ TS.Screens(ts_showscreens)
-
     show screen scenario_2_onest_text_suka
     pause
-    $ TS.Screens(ts_hidescreens)
-    show screen scenario_2_onest_text_suka
-    pause 1
     hide screen scenario_2_onest_text_suka
 
     hide zatemnenie with dspr
 
-    $ TS.Screens(ts_showscreens)
 
     "Вся в порезах, вся в крови..."
 
@@ -874,47 +876,29 @@ label ts_scenario_2:
     "После этих слов Юри снова начинает бесконтрольно рыдать."
     "А я просто стою и смотрю."
 
-    $ TS.Screens(ts_hidescreens)
-    " {w=1.0}{nw}"
-
     play sound nfy
 
     show zatemnenie with dspr
 
-    $ TS.Screens(ts_showscreens)
-
     show screen chp_text_9
     pause
-    $ TS.Screens(ts_hidescreens)
-    show screen chp_text_9
-    pause 1
     hide screen chp_text_9
 
     hide zatemnenie with dspr
 
-    $ TS.Screens(ts_showscreens)
-
     "Как я могу кого-то утешать, когда меня саму никогда не утешали, и я совершенно не знаю, как это делать?!"
 
-    $ TS.Screens(ts_hidescreens)
-    " {w=1.0}{nw}"
 
     play sound nfy
 
     show zatemnenie with dspr
 
-    $ TS.Screens(ts_showscreens)
 
     show screen chp_text_10
     pause
-    $ TS.Screens(ts_hidescreens)
-    show screen chp_text_10
-    pause 1
     hide screen chp_text_10
 
     hide zatemnenie with dspr
-
-    $ TS.Screens(ts_showscreens)
 
 #ТУТ БУДЕТ ЦГШКА (ЭТИМ ЗАНИМАТЬСЯ БУДЕМ НЕ МЫ, А СПЕЦИАЛЬНЫЙ ЧЕЛОВЕЧЕК, ЕСЛИ ЧТО)
     "Я присаживаюсь, но подойти вплотную к Юри не решилась."
@@ -927,6 +911,15 @@ label ts_scenario_2:
     y "Ч-что у меня так никогда и не будет никаких друзей..."
 
     stop music fadeout 4
+
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
+    pause 2
+
+    $ TS.Screens(ts_showscreens)
+
+    $ pps = 4
 
     m "Уже есть."
 
@@ -1011,6 +1004,8 @@ label ts_scenario_2:
     pause 1
     hide screen scenario_2_onest_text_suka1
 
+    hide zatemnenie with dspr
+
     $ TS.Screens(ts_showscreens)
 
     "Так вот..."
@@ -1020,6 +1015,8 @@ label ts_scenario_2:
     m "Не бывает «неправильных» людей. Есть только «другие» люди, «особенные» люди."
 
     show yuri 1u at f11
+
+    $ pps = 3
 
     "Впервые с момента нашей встречи Юри мне улыбнулась."
     "Значит, я всё делаю правильно!"
@@ -1052,6 +1049,8 @@ label ts_scenario_2:
     play sound pageflip
     scene ts_school_bathroom
     with wipeleft_scene
+
+    $ pps = 1
 
     $ TS.Screens(ts_showscreens)
 

@@ -611,3 +611,98 @@ transform ross22:
     ts_rightout(2.0, 880)
 transform ross11:
     ts_rightout(2.0, 640)
+
+# LEFTOUT
+transform lon41:
+    ts_leftout(1.0, 200)
+transform lon42:
+    ts_leftout(1.0, 493)
+transform lon43:
+    ts_leftout(1.0, 786)
+transform lon44:
+    ts_leftout(1.0, 1080)
+transform lon31:
+    ts_leftout(1.0, 240)
+transform lon32:
+    ts_leftout(1.0, 640)
+transform lon33:
+    ts_leftout(1.0, 1040)
+transform lon21:
+    ts_leftout(1.0, 400)
+transform lon22:
+    ts_leftout(1.0, 880)
+transform lon11:
+    ts_leftout(1.0, 640)
+
+transform lof41:
+    ts_leftout(0.5, 200)
+transform lof42:
+    ts_leftout(0.5, 493)
+transform lof43:
+    ts_leftout(0.5, 786)
+transform lof44:
+    ts_leftout(0.5, 1080)
+transform lof31:
+    ts_leftout(0.5, 240)
+transform lof32:
+    ts_leftout(0.5, 640)
+transform lof33:
+    ts_leftout(0.5, 1040)
+transform lof21:
+    ts_leftout(0.5, 400)
+transform lof22:
+    ts_leftout(0.5, 880)
+transform lof11:
+    ts_leftout(0.5, 640)
+
+transform los41:
+    ts_leftout(1.5, 200)
+transform los42:
+    ts_leftout(1.5, 493)
+transform los43:
+    ts_leftout(1.5, 786)
+transform los44:
+    ts_leftout(1.5, 1080)
+transform los31:
+    ts_leftout(1.5, 240)
+transform los32:
+    ts_leftout(1.5, 640)
+transform los33:
+    ts_leftout(1.5, 1040)
+transform los21:
+    ts_leftout(1.5, 400)
+transform los22:
+    ts_leftout(1.5, 880)
+transform los11:
+    ts_leftout(1.5, 640)
+transform los51:
+    ts_leftout(1.5, 216)
+transform los52:
+    ts_leftout(1.5, 432)
+transform los53:
+    ts_leftout(1.5, 648)
+transform los54:
+    ts_leftout(1.5, 864)
+transform los55:
+    ts_leftout(1.5, 1080)
+
+transform loss41:
+    ts_leftout(2.0, 200)
+transform loss42:
+    ts_leftout(2.0, 493)
+transform loss43:
+    ts_leftout(2.0, 786)
+transform loss44:
+    ts_leftout(2.0, 1080)
+transform loss31:
+    ts_leftout(2.0, 240)
+transform loss32:
+    ts_leftout(2.0, 640)
+transform loss33:
+    ts_leftout(2.0, 1040)
+transform loss21:
+    ts_leftout(2.0, 400)
+transform loss22:
+    ts_leftout(2.0, 880)
+transform loss11:
+    ts_leftout(2.0, 640)

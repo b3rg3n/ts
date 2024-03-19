@@ -34,6 +34,9 @@ init:
     $ music_list_ts["Sergey Eybog - Your Bright Side"] = "mod_assets/source/audio/ost/es/ts_ybs.ogg"
     $ music_list_ts["Sergey Eybog - You Lost Me"] = "mod_assets/source/audio/ost/es/ts_ylm.ogg"
     $ music_list_ts["Sergey Eybog - My Daily Life"] = "mod_assets/source/audio/ost/es/ts_mdl.ogg"
+    $ music_list_ts["Between August and December - Glimmering Coals"] = "mod_assets/source/audio/ost/es/ts_gc.ogg"
+    $ music_list_ts["Sergey Eybog — So Good To Be Careless"] = "mod_assets/source/audio/ost/es/ts_sgtbc.ogg"
+    $ music_list_ts["Sergey Eybog — Afterword"] = "mod_assets/source/audio/ost/es/ts_afterword.ogg"
 ###ОСТАЛЬНОЕ
     $ music_list_ts["Marco Beltrami - Wales"] = "mod_assets/source/audio/ost/ts_wales.ogg"
     $ music_list_ts["HCCH OST - Начало"] = "mod_assets/source/audio/ost/ts_emmk.ogg"

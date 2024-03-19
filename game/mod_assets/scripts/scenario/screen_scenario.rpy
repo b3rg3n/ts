@@ -196,3 +196,7 @@ screen akt2_chp1_text5:
 
 screen akt2_chp1_text6:
     text "{size=+15}{font=[ts_nvl_font2]}ЧТО ТЫ ЗНАЕШЬ? ОТВЕЧАЙ!{/font}{/size}" yalign 0.5 xalign 0.5
+
+
+screen chp_5_text1:
+    text "{size=+15}{font=[adv_font]}Это ты сейчас так говоришь.{/font}{/size}" yalign 0.5 xalign 0.5

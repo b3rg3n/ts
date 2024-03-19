@@ -12,6 +12,8 @@ init python:
         rpc.connect() # ПОДКЛЮЧЕНИЕ К ДС
     except DiscordNotFound:
         pass
+    except ConnectionRefusedError:
+        pass
 
 # КАК ЮЗАТЬ ЭТУ ПОЕБЕНЬ:
 #

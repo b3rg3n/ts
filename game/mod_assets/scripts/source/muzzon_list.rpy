@@ -17,7 +17,7 @@ init:
     $ music_list_ts["Hallucinator - Mosh"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_mosh.ogg"
     $ music_list_ts["Moe Era OST - Final Scene Soft"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_soft.ogg"
 ###ИЗ БЛ
-    $ music_list_ts["Between August and December - Awayking Power"] = "mod_assets/source/audio/ost/es/ts_ap.ogg"
+    $ music_list_ts["Between August and December - Awakening Power"] = "mod_assets/source/audio/ost/es/ts_ap.ogg"
     $ music_list_ts["Sergey Eybog - Confession"] = "mod_assets/source/audio/ost/es/ts_conf.ogg"
     $ music_list_ts["Sergey Eybog - Meet Me There"] = "mod_assets/source/audio/ost/es/ts_dead_theme.ogg"
     $ music_list_ts["Sergey Eybog - A Promise From Distant Days"] = "mod_assets/source/audio/ost/es/ts_dist.ogg"

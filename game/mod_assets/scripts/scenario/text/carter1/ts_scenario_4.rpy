@@ -300,7 +300,7 @@ label ts_scenario_4:
                 " {w=1.0}{nw}"
 
                 play sound pageflip
-                scene ts_living_room
+                scene ts_living_room_late_telek
                 with wipeleft_scene
 
                 $ TS.Screens(ts_showscreens)
@@ -312,7 +312,7 @@ label ts_scenario_4:
                 " {w=1.0}{nw}"
 
                 play sound pageflip
-                scene ts_living_room
+                scene ts_living_room_late_telek
                 with wipeleft_scene
 
                 stop music fadeout 3
@@ -961,31 +961,12 @@ label ts_scenario_4:
 
     show screen alko_text1
     pause
-    $ TS.Screens(ts_hidescreens)
-    show screen alko_text1
-    pause 1
     hide screen alko_text1
-
-    $ TS.Screens(ts_showscreens)
-
     show screen alko_text2
     pause
-    $ TS.Screens(ts_hidescreens)
-    show screen alko_text2
-    pause 1
     hide screen alko_text2
-
-    $ TS.Screens(ts_showscreens)
-
     show screen alko_text3
     pause
-    $ TS.Screens(ts_hidescreens)
-    show screen alko_text3
-    pause 1
-    hide screen alko_text3
-
-    $ TS.Screens(ts_showscreens)
-
     show screen alko_text4
     pause
     $ TS.Screens(ts_hidescreens)

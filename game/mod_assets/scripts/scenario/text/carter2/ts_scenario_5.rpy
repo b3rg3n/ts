@@ -401,6 +401,8 @@ label ts_scenario_5:
 
     play music ts_dist
 
+    $ TS.Screens(ts_showscreens)
+
     m "Ой, а я этот район знаю! Это же..."
 
     window hide
@@ -1466,7 +1468,7 @@ label ts_scenario_5:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
     play sound2 pageflip
-    scene ts_darkbed
+    scene ts_bedroom
     show monika 2bb at i11
     with wipeleft_scene
 

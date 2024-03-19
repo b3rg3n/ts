@@ -7,6 +7,7 @@ label ts_scenario_5:
         except AssertionError:
             pass
 
+    $ persistent.rpclabel = "5"
     $ persistent.carter2menu = True
     $ persistent.carter3menu = False
 

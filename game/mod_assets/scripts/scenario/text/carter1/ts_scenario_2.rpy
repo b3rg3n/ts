@@ -290,8 +290,6 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -416,8 +414,6 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -499,7 +495,6 @@ label ts_scenario_2:
     " {w=1.0}{nw}"
 
     stop music
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -557,7 +552,6 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -835,8 +829,6 @@ label ts_scenario_2:
     "Это был... совершенно другой человек."
     "Психически нездоровый человек."
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     show screen scenario_2_onest_text_suka
@@ -876,8 +868,6 @@ label ts_scenario_2:
     "После этих слов Юри снова начинает бесконтрольно рыдать."
     "А я просто стою и смотрю."
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     show screen chp_text_9
@@ -887,9 +877,6 @@ label ts_scenario_2:
     hide zatemnenie with dspr
 
     "Как я могу кого-то утешать, когда меня саму никогда не утешали, и я совершенно не знаю, как это делать?!"
-
-
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -946,8 +933,6 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -980,8 +965,6 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -992,8 +975,6 @@ label ts_scenario_2:
     show screen chp_text_12
     pause 1
     hide screen chp_text_12
-
-    play sound nfy
 
     $ TS.Screens(ts_showscreens)
 

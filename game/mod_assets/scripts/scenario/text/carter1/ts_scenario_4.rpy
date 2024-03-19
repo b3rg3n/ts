@@ -42,8 +42,6 @@ label ts_scenario_4:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -79,8 +77,6 @@ label ts_scenario_4:
 
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
-
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -226,8 +222,6 @@ label ts_scenario_4:
 
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
-
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -963,8 +957,6 @@ label ts_scenario_4:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     $ TS.Screens(ts_showscreens)
 
     show screen alko_text1
@@ -1243,8 +1235,6 @@ label ts_scenario_4:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -1505,8 +1495,6 @@ label ts_scenario_4:
     scene black with vpunch
 
     pause 2
-
-    play sound nfy
 
     $ TS.Screens(ts_showscreens)
 

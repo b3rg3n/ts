@@ -719,8 +719,6 @@ label ts_scenario_5:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)

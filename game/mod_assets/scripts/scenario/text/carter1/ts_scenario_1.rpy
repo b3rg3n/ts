@@ -118,6 +118,15 @@ label ts_scenario_1:
 
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
+
+    show yuri 1 at i31:
+        alpha 0.0
+    show sayori 1 at i32:
+        alpha 0.0
+    show natsuki 1 at i33:
+        alpha 0.0
+    with dissolve
+
     pause 1
     $ TS.Screens(ts_showscreens)
 
@@ -394,7 +403,6 @@ label ts_scenario_1:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -606,7 +614,6 @@ label ts_scenario_1:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -678,8 +685,6 @@ label ts_scenario_1:
 
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
-
-    play sound nfy
 
     $ TS.Screens(ts_showscreens)
 

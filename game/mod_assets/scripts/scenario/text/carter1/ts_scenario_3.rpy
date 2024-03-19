@@ -199,8 +199,6 @@ label ts_scenario_3:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -777,8 +775,6 @@ label ts_scenario_3:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -1134,8 +1130,6 @@ label ts_scenario_3:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -1258,8 +1252,6 @@ label ts_scenario_3:
 
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
-
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -1472,8 +1464,6 @@ label ts_scenario_3:
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     show screen chp_text_1
@@ -1666,8 +1656,6 @@ label ts_scenario_3:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
-
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -1724,8 +1712,6 @@ label ts_scenario_3:
 
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
-
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -1874,8 +1860,6 @@ label ts_scenario_3:
 
                 $ TS.Screens(ts_hidescreens)
                 " {w=1.0}{nw}"
-
-                play sound nfy
 
                 show zatemnenie with dspr
 
@@ -2302,8 +2286,6 @@ label ts_scenario_3:
 
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
-
-    play sound nfy
 
     show zatemnenie with dspr
 

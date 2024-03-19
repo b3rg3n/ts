@@ -30,7 +30,7 @@ label main_menu:
 
         if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
 
-            call updateconsole ("os.open(\"source/music/ts_flowers.ogg\")", "Запущен трек Wildays - Цветы.") from _call_updateconsole_0
+            call updateconsole ("os.open(\"source/music/ts_flowers.ogg\")", "Запущен трек Vanish Canvans - Brandon.") from _call_updateconsole_0
             play music ts_flowers fadein 2
             pause 1.0
             call updateconsole ("os.open(\"source/videosos/ts_menu_vid_night.webm\")", "Видео ts_menu_vid_night.webm успешно открыто.") from _call_updateconsole_1

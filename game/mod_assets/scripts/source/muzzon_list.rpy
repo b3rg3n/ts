@@ -8,10 +8,7 @@ init:
 ###МУЗОНЫ
 ###ИЗ МЕНЮ
     $ music_list_ts["Darkest Time - Main Theme"] = "mod_assets/source/audio/ost/menu_ost/ts_killyourself.ogg"
-    $ music_list_ts["LWTOD - Main Theme"] = "mod_assets/source/audio/ost/menu_ost/ts_ytd.ogg"
-    $ music_list_ts["Bxmmusic - The Other Side"] = "mod_assets/source/audio/ost/menu_ost/ts_flowers.ogg"
-    $ music_list_ts["Secret Trails OST - Main Theme"] = "mod_assets/source/audio/ost/menu_ost/ts_tt2ogsr.ogg"
-    $ music_list_ts["Andreas Rönnberg - Its Over"] = "mod_assets/source/audio/ost/menu_ost/ts_tt2ogsr1.ogg"
+    $ music_list_ts["finalded"] = "mod_assets/source/audio/ost/menu_ost/ts_finalded.ogg"
     $ music_list_ts["MND - Polar Day"] = "mod_assets/source/audio/ost/menu_ost/ts_pd.ogg"
 ###ИЗ ЗАСТАВОК
     $ music_list_ts["Hallucinator - Mosh"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_mosh.ogg"

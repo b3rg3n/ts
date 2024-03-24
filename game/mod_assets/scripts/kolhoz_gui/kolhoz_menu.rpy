@@ -30,8 +30,8 @@ label main_menu:
 
         if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
 
-            call updateconsole ("os.open(\"source/music/ts_flowers.ogg\")", "Запущен трек Bxmmusic - The Other Side.") from _call_updateconsole_0
-            play music ts_flowers fadein 2
+            call updateconsole ("os.open(\"source/music/ts_flowers.ogg\")", "Запущен трек MND - Polar Day.") from _call_updateconsole_0
+            play music ts_pd fadein 2
             pause 1.0
             call updateconsole ("os.open(\"source/videosos/ts_menu_vid_night.webm\")", "Видео ts_menu_vid_night.webm успешно открыто.") from _call_updateconsole_1
             pause 1.0
@@ -85,29 +85,29 @@ label main_menu:
                 show ts_rain
                 show zatemnenie_light
             elif True: #ДЕНЬ
-                play music ts_tt2ogsr fadein 5
+                play music ts_killyourself fadein 5
                 scene black
                 show ts_menu_move_anim_three
                 show zatemnenie_light
 
         elif persistent.carter2menu == True: #МЕНЮШКА КАРТЕРА 2
             if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-                play music ts_ytd fadein 5
-                scene ts_menu_art_carter2_night
-                show ts_rain
-                show zatemnenie_light
-            elif True: #ДЕНЬ
-                play music ts_tt2ogsr1 fadein 5
+                play music ts_finalded fadein 5
                 scene ts_menu_art3_night
                 show dust1
                 show dust2
                 show dust3
                 show dust4
                 show zatemnenie_light
+            elif True: #ДЕНЬ
+                play music ts_finalded fadein 5
+                scene ts_menu_art_carter2_night
+                show ts_rain
+                show zatemnenie_light
 
         else: #МЕНЮШКА КАРТЕРА 1
             if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-                play music ts_flowers fadein 5
+                play music ts_pd fadein 5
                 scene ts_menu_vid_night
                 show zatemnenie_light
             elif True: #ДЕНЬ

@@ -7,5 +7,5 @@ init:
     image ts_menu_vid_night = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/mr.webm")
     image ts_menu_vid_sunset = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/mn.webm")
 ###БГ
-    image ts_living_room_night_telek = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/bg/living_room_night_telek.ogv")
-    image ts_living_room_late_telek = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/bg/living_room_late_telek.ogv")
+    image ts_living_room_night_telek = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/bg/telek/hors_night.ogv")
+    image ts_living_room_late_telek = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/bg/telek/hors_sunset.ogv")

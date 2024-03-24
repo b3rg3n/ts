@@ -11,14 +11,36 @@ label testing_label_blya:
 
     window hide
     scene ts_class
-    show sayori 1a at t61
-    show monika 1a at t62
-    show yuri 1a at t63
-    show kaori 22a at t64
-    show natsuki 1a at t65
-    show hiroto 1a at t66
+    #show sayori 1a at t61
+    #show monika 1a at t62
+    #show yuri 1a at t63
+    #show kaori 22a at t64
+    #show natsuki 1a at t65
+    #show hiroto 1a at t66
+
+    show sayori 1a at Glitch(_fps=1000., glitch_strength=.3)
 
     "Так?"
+
+    hide sayori
+
+    show yuri 1a at Glitch(_fps=20., color_range1="c00a", color_range2="f00", glitch_strength=.5)
+
+    "Хуй"
+
+    hide yuri
+
+    show natsuki 1a at Glitch(_fps=1000.)
+    "Ускорим анимацию."
+    hide natsuki
+    show kaori 22a at Glitch(_fps=1000., glitch_strength=.3)
+    "Усилим эффект."
+    hide kaori
+    show hiroto 1a at Glitch(_fps=1000., glitch_strength=.3, color_range1="#0a00", color_range2="0f0")
+
+    "Пизда"
+
+    hide hiroto
 
     pause 1
     scene ts_class at ts_blur_zadnika

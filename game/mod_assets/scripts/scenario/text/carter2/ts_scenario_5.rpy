@@ -672,6 +672,7 @@ label ts_scenario_5:
             m "Уж об этом не беспокойся, я после этого случая вообще пить не буду."
         "Соврать":
             $ unluck5 = True
+            $ unluck_ball += 1
             hide zatemnenie with dspr
             $ TS.Screens(ts_showscreens)
             "Я решаю соврать. Как будто в первый раз."

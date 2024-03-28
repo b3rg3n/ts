@@ -42,3 +42,4 @@ init:
 
     default text_pizda_nahui = glitchtext(24)
     default badmenuglitchname = glitchtext(7)
+    default sost_glitch_hueta = glitchtext(6)

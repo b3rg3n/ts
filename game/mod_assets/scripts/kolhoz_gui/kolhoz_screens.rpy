@@ -1359,8 +1359,7 @@ init -502 screen help():
 
     style_prefix "history" tag menu
 
-    window background Frame("mod_assets/source/images/gui/choice_box.png") left_padding 75 right_padding 75 bottom_padding 80 top_padding 80:
-
+    window background Frame("mod_assets/source/images/gui/choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.01 bottom_padding 0.1 top_padding 0.1:
 
         has viewport id "history":
             draggable True

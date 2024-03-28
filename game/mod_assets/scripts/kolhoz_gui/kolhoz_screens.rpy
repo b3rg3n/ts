@@ -219,6 +219,11 @@ init -501 screen main_menu:
             action ShowMenu('quit')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+    if config.developer:
+        if _preferences.language == "english":
+            text "{size=+10}{font=[cit_font]}Developer mode{/font}{/size}" yalign 0.933 xalign 0.990
+        else:
+            text "{size=+10}{font=[cit_font]}Режим разработчика{/font}{/size}" yalign 0.933 xalign 0.990
     text "{size=+10}{font=[cit_font]} RenPy ver. [renpy.version_only] | Mod ver. [config.version]{/font}{/size}" yalign 0.983 xalign 0.990
 
 init -1 python:
@@ -233,8 +238,8 @@ init -501 screen quit:
 
     text translation_new["Quit_confirm"] style "settings_link" size 60 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
 
-    textbutton translation_new["Yes"] text_size 70 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.55 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    textbutton translation_new["No"] text_size 70 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.55 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+    textbutton translation_new["Yes"] text_size 70 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+    textbutton translation_new["No"] text_size 70 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
 
 label _compat_confirm_quit:
     $ renpy.call_screen('quit')

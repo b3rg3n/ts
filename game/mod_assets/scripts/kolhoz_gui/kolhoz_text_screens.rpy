@@ -40,7 +40,7 @@ init -1002 python:
 
 init -1003 python:
     translation_ru = {
-        "Quit_confirm" : "Уверен?",
+        "Quit_confirm" : "Уверен?\nТы хочешь уйти,\nтак и недослушав\nмою историю?",
         "Yes" : "Конечно",
         "No" : "Не особо",
         "Noo" : "Передумал",

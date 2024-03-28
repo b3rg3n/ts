@@ -10,6 +10,8 @@ init:
     $ music_list_ts["Darkest Time - Main Theme"] = "mod_assets/source/audio/ost/menu_ost/ts_killyourself.ogg"
     $ music_list_ts["finalded"] = "mod_assets/source/audio/ost/menu_ost/ts_finalded.ogg"
     $ music_list_ts["MND - Polar Day"] = "mod_assets/source/audio/ost/menu_ost/ts_pd.ogg"
+    $ music_list_ts["[badmenuglitchname]"] = "mod_assets/source/audio/ost/menu_ost/bad_menu_ost.ogg"
+    $ music_list_ts["Cjayho - Final Peace"] = "mod_assets/source/audio/ost/menu_ost/good_menu_ost.ogg"
 ###ИЗ ЗАСТАВОК
     $ music_list_ts["Hallucinator - Mosh"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_mosh.ogg"
     $ music_list_ts["Moe Era OST - Final Scene Soft"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_soft.ogg"

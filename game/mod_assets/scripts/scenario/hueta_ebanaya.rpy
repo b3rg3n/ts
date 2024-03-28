@@ -28,20 +28,53 @@ label ts_start:
                 $ persistent.skip_splash = False
                 $ persistent.first_poem = False
                 $ persistent.scenario_proshel_blya = False
+                $ persistent.badendmenuperedglitch = False
+                $ persistent.badendmenuskipglitch = False
+                $ persistent.carter2menu = False
+                $ persistent.carter3menu = False
+                $ persistent.badendmenu = False
                 return
             "Выбрать нужную менюшку":
                 menu:
                     "Из первого акта":
                         $ persistent.carter2menu = False
                         $ persistent.carter3menu = False
+                        $ persistent.badendmenu = False
+                        $ persistent.badendmenuperedglitch = False
+                        $ persistent.badendmenuskipglitch = False
+                        $ persistent.goodendmenu = False
                         return
                     "Из второго акта":
                         $ persistent.carter2menu = True
                         $ persistent.carter3menu = False
+                        $ persistent.badendmenu = False
+                        $ persistent.badendmenuperedglitch = False
+                        $ persistent.badendmenuskipglitch = False
+                        $ persistent.goodendmenu = False
                         return
                     "Из третьего акта":
                         $ persistent.carter2menu = False
                         $ persistent.carter3menu = True
+                        $ persistent.badendmenu = False
+                        $ persistent.badendmenuperedglitch = False
+                        $ persistent.badendmenuskipglitch = False
+                        $ persistent.goodendmenu = False
+                        return
+                    "После плохой концовки":
+                        $ persistent.badendmenuperedglitch = True
+                        $ persistent.badendmenuskipglitch = False
+                        $ persistent.badendmenu = True
+                        $ persistent.carter2menu = False
+                        $ persistent.carter3menu = False
+                        $ persistent.goodendmenu = False
+                        return
+                    "После хорошей концовки":
+                        $ persistent.badendmenuperedglitch = False
+                        $ persistent.badendmenuskipglitch = False
+                        $ persistent.badendmenu = False
+                        $ persistent.carter2menu = False
+                        $ persistent.carter3menu = False
+                        $ persistent.goodendmenu = True
                         return
                     "Вернуться":
                         jump ts_start

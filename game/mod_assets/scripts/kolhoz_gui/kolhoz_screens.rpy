@@ -186,45 +186,114 @@ init -501 screen main_menu:
     text "{image=ts_logo_menu}" ypos 150 xpos 75
 
     if _preferences.language == "english":
-        textbutton ("{size=+15}New Game {/size}") ypos 342 xpos 75:
-            action Start()
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton ("{size=+15}Load {/size}") ypos 392 xpos 75:
-            action ShowMenu('load')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton ("{size=+15}Settings{/size}") ypos 442 xpos 75:
-            action ShowMenu('preferences')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton ("{size=+15}Leave{/size}") ypos 492 xpos 75:
-            action ShowMenu('quit')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        if persistent.badendmenu and persistent.badendmenuskipglitch:
+            textbutton ("{size=+15}resurrect{/size}") ypos 342 xpos 75:
+                action Start()
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        elif persistent.badendmenuperedglitch:
+            textbutton ("{size=+15}Now{/size}") ypos 342 xpos 75:
+                action NullAction()
+                activate_sound button_error
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        else:
+            textbutton ("{size=+15}go barmy{/size}") ypos 342 xpos 75:
+                action Start()
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        if persistent.badendmenuperedglitch:
+            textbutton ("{size=+15}Everyone{/size}") ypos 392 xpos 75:
+                action NullAction()
+                activate_sound button_error
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            textbutton ("{size=+15}Can вe{/size}") ypos 442 xpos 75:
+                action NullAction()
+                activate_sound button_error
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            textbutton ("{size=+15}Happy{/size}") ypos 492 xpos 75:
+                action NullAction()
+                activate_sound button_error
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        else:
+            textbutton ("{size=+15}rememвer {/size}") ypos 392 xpos 75:
+                action ShowMenu('load')
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            textbutton ("{size=+15}Settings{/size}") ypos 442 xpos 75:
+                action ShowMenu('preferences')
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            textbutton ("{size=+15}escape{/size}") ypos 492 xpos 75:
+                action ShowMenu('quit')
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
     else:
-        textbutton ("{size=+15}Сойти с ума{/size}") ypos 342 xpos 75:
-            action Start()
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton ("{size=+15}Вспомнить{/size}") ypos 392 xpos 75:
-            action ShowMenu('load')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton ("{size=+15}Настройки{/size}") ypos 442 xpos 75:
-            action ShowMenu('preferences')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton ("{size=+15}Сбежать{/size}") ypos 492 xpos 75:
-            action ShowMenu('quit')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        if persistent.badendmenu and persistent.badendmenuskipglitch:
+            textbutton ("{size=+15}Воскреснуть{/size}") ypos 342 xpos 75:
+                action Start()
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        elif persistent.badendmenuperedglitch:
+            textbutton ("{size=+15}Теперь{/size}") ypos 342 xpos 75:
+                action NullAction()
+                activate_sound button_error
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        elif persistent.goodendmenu:
+            textbutton ("{size=+15}Ещё разок?{/size}") ypos 342 xpos 75:
+                action Start()
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        else:
+            textbutton ("{size=+15}Сойти с ума{/size}") ypos 342 xpos 75:
+                action Start()
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        if persistent.badendmenuperedglitch:
+            textbutton ("{size=+15}Все{/size}") ypos 392 xpos 75:
+                action NullAction()
+                activate_sound button_error
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            textbutton ("{size=+15}Будут{/size}") ypos 442 xpos 75:
+                action NullAction()
+                activate_sound button_error
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            textbutton ("{size=+15}Счастливы{/size}") ypos 492 xpos 75:
+                action NullAction()
+                activate_sound button_error
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        else:
+            textbutton ("{size=+15}Вспомнить{/size}") ypos 392 xpos 75:
+                action ShowMenu('load')
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            textbutton ("{size=+15}Настройки{/size}") ypos 442 xpos 75:
+                action ShowMenu('preferences')
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            textbutton ("{size=+15}Сбежать{/size}") ypos 492 xpos 75:
+                action ShowMenu('quit')
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
     if config.developer:
         if _preferences.language == "english":
-            text "{size=+10}{font=[cit_font]}Developer mode{/font}{/size}" yalign 0.933 xalign 0.990
+            if persistent.badendmenuperedglitch:
+                text "{size=+10}{font=[cit_font]}Are you happy with the result?{/font}{/size}" yalign 0.933 xalign 0.990
+            else:
+                text "{size=+10}{font=[cit_font]}Developer mode{/font}{/size}" yalign 0.933 xalign 0.990
         else:
-            text "{size=+10}{font=[cit_font]}Режим разработчика{/font}{/size}" yalign 0.933 xalign 0.990
-    text "{size=+10}{font=[cit_font]} RenPy ver. [renpy.version_only] | Mod ver. [config.version]{/font}{/size}" yalign 0.983 xalign 0.990
+            if persistent.badendmenuperedglitch:
+                text "{size=+10}{font=[cit_font]}Ты доволен результатом?{/font}{/size}" yalign 0.933 xalign 0.990
+            else:
+                text "{size=+10}{font=[cit_font]}Режим разработчика{/font}{/size}" yalign 0.933 xalign 0.990
+    if persistent.badendmenuperedglitch:
+        if _preferences.language == "english":
+            text "{size=+10}{font=[cit_font]}It's all your own damn fault.{/font}{/size}" yalign 0.983 xalign 0.990
+        else:
+            text "{size=+10}{font=[cit_font]}Это всё - твоя вина.{/font}{/size}" yalign 0.983 xalign 0.990
+    else:
+        text "{size=+10}{font=[cit_font]} RenPy ver. [renpy.version_only] | Mod ver. [config.version]{/font}{/size}" yalign 0.983 xalign 0.990
+    if persistent.badendmenuperedglitch:
+        timer 10 action [Hide("main_menu"), Jump("glitch_main_menu_ending")]
 
 init -1 python:
     def force_quit():
@@ -236,10 +305,18 @@ init -501 screen quit:
 
     add "mod_assets/source/images/anim/zatemnenie.webp"
 
-    text translation_new["Quit_confirm"] style "settings_link" size 60 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
-
-    textbutton translation_new["Yes"] text_size 70 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    textbutton translation_new["No"] text_size 70 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+    if persistent.badendmenu:
+        text translation_new["Quit_confirm_bad"] style "settings_link" size 60 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
+        textbutton translation_new["Yes_quit_bad"] text_size 50 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton translation_new["No_quit_bad"] text_size 50 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+    elif persistent.goodendmenu:
+        text translation_new["Quit_confirm_good"] style "settings_link" size 60 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
+        textbutton translation_new["Yes_quit_good"] text_size 50 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton translation_new["No_quit_good"] text_size 50 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+    else:
+        text translation_new["Quit_confirm"] style "settings_link" size 60 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
+        textbutton translation_new["Yes_quit"] text_size 50 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton translation_new["No_quit"] text_size 50 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
 
 label _compat_confirm_quit:
     $ renpy.call_screen('quit')

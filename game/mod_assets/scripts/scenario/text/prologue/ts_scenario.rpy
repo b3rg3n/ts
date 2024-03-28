@@ -10,6 +10,10 @@ label ts_scenario_0:
 
     $ persistent.carter2menu = False
     $ persistent.carter3menu = False
+    $ persistent.badendmenuperedglitch = False
+    $ persistent.badendmenuskipglitch = False
+    $ persistent.badendmenu = False
+    $ persistent.goodendmenu = False
 
     $ save_name = "Предыстория"
     window hide
@@ -273,7 +277,7 @@ label ts_scenario_0:
     nvlbazar "{font=[prologue_font]}В любом случае, Каори успешно общалась с мамой на языке жестов, ну а я просто писала ей, потому что я языка жестов не знаю. Она, соответственно, писала мне в ответ."
     nvlbazar "{font=[prologue_font]}В общем, один {i}настоящий{/i} друг детства у меня был."
     nvlbazar "{font=[adv_font]}«Ура-а-а, достижение, у тебя был хоть кто-то, кто о тебе заботился.»"
-    show kaori at dhide
+    show kaori at thide
     hide kaori
     nvl clear
 

@@ -8,6 +8,13 @@ label ts_scenario_1:
 
     $ persistent.rpclabel = "1"
 
+    $ persistent.carter2menu = False
+    $ persistent.carter3menu = False
+    $ persistent.badendmenuperedglitch = False
+    $ persistent.badendmenuskipglitch = False
+    $ persistent.badendmenu = False
+    $ persistent.goodendmenu = False
+
     $ save_name = "Поиски. Сайори"
 
     scene black
@@ -1213,8 +1220,17 @@ label ts_scenario_1:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
+    $ generate_random_number_tv() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
+
     play sound pageflip
-    scene ts_living_room_late_telek
+    if random_tv_label == 2 or random_tv_label == 8:
+        scene ts_living_room_late_telek_hors
+    elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
+        scene ts_living_room_late_telek_bumer
+    elif random_tv_label == 9:
+        scene ts_living_room_late_telek_oxik
+    elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
+        scene ts_living_room_late_telek_sudba
     with wipeleft_scene
 
     $ TS.Screens(ts_showscreens)
@@ -1229,13 +1245,30 @@ label ts_scenario_1:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
+    $ generate_random_number_tv() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
+
     play sound pageflip
-    scene ts_living_room_night_telek
+    if random_tv_label == 2 or random_tv_label == 8:
+        scene ts_living_room_night_telek_hors
+    elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
+        scene ts_living_room_night_telek_bumer
+    elif random_tv_label == 9:
+        scene ts_living_room_night_telek_oxik
+    elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
+        scene ts_living_room_night_telek_sudba
     with wipeleft_scene
 
     $ TS.Screens(ts_showscreens)
 
-    "За просмотром банального пятничного фильма на вечер время пролетело гораздо быстрее, чем ожидалось."
+    if random_tv_label == 2 or random_tv_label == 8:
+        "За просмотром очередного видоса на вечер время пролетело гораздо быстрее, чем ожидалось."
+    elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
+        "За просмотром легендарного криминального фильма на вечер время пролетело гораздо быстрее, чем ожидалось."
+    elif random_tv_label == 9:
+        "За просмотром легендарного батла на вечер время пролетело гораздо быстрее, чем ожидалось."
+    elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
+        "За просмотром ностальгического фильма на вечер время пролетело гораздо быстрее, чем ожидалось."
+
     "Настолько, что уже начало одиннадцатого, хотя начали мы смотреть телевизор вот буквально пять минут назад."
     
     show hiroto 2g at ln11

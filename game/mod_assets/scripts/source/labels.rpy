@@ -13,6 +13,8 @@ init:
 ### МЕНЮШКИ
     default persistent.carter2menu = False
     default persistent.carter3menu = False
+    default persistent.badendmenu = False
+    default persistent.goodendmenu = False
 
 ### ПЕРЕМЕННЫЕ СКИПИНГА
     default persistent.firstmenushka = True
@@ -20,6 +22,9 @@ init:
     default persistent.skip_splash = False
     default persistent.first_poem = False
     default persistent.scenario_proshel_blya = False
+
+    default persistent.badendmenuperedglitch = False
+    default persistent.badendmenuskipglitch = False
 
 ### ИМЕНА
     default teacher_name = "Учитель"
@@ -36,3 +41,4 @@ init:
     default pod2_name = "Подруга"
 
     default text_pizda_nahui = glitchtext(24)
+    default badmenuglitchname = glitchtext(7)

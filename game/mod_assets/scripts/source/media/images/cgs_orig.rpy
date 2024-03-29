@@ -335,6 +335,8 @@ image y_cg2_dust4:
 
 image n_cg1_bg:
     "mod_assets/source/images/cg/n_cg1_bg.webp"
+image n_cg1_b1:
+    "mod_assets/source/images/cg/n_cg1b.webp"
 image n_cg1_base:
     "mod_assets/source/images/cg/n_cg1_base.webp"
 

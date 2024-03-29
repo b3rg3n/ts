@@ -32,6 +32,7 @@ init:
     define ed_earth_draw = ImageDissolve("mod_assets/source/images/anim/transit/ed_earth_draw.webp", 3.0) # ЭФФЕКТ ЗЕМЛИ ОБВАЛ
     define ed_lap = ImageDissolve("mod_assets/source/images/anim/transit/ed_lap.webp", 2.0) # ЭФФЕКТ ЧАСОВ
     define ed_night_dis = ImageDissolve("mod_assets/source/images/anim/transit/ed_night_dis.webp", 5.0) # ЭФФЕКТ СГОРАЮЩЕЙ БУМАГИ
+    define ed_night_dis_faster = ImageDissolve("mod_assets/source/images/anim/transit/ed_night_dis.webp", 2.5) # ЭФФЕКТ СГОРАЮЩЕЙ БУМАГИ
     define poplil_pacan = ImageDissolve("mod_assets/source/images/anim/transit/wow_blya.webp", 1.66) # ЭФФЕКТ ПЕРЛИВАНИЯ КРОВИ
     define poplil_pacan1 = ImageDissolve("mod_assets/source/images/anim/transit/wow_blya.webp", 6.66) # ЭФФЕКТ ПЕРЛИВАНИЯ КРОВИ
     define awrain = ImageDissolve("mod_assets/source/images/anim/transit/awrain.webp", 1.5, 60, reverse=False) # ЭФФЕКТ СМЫВА ДОЖДЁМ

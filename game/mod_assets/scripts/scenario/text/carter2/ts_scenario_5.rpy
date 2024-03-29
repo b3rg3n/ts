@@ -1641,4 +1641,6 @@ label ts_scenario_5:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    return
+    scene black
+
+    jump ts_scenario_6

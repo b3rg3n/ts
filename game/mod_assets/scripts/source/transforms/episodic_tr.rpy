@@ -12,6 +12,14 @@ init:
         xoffset 400 yoffset 50 alpha 1.0 subpixel True
         ease 0.6 yoffset 300 alpha 0.0
 
+    transform ts_split_move_up: # АНИМАЦИИ ДЛЯ СПЛИТА
+        xoffset 400 yoffset 300 alpha 0.0 subpixel True
+        ease 0.6 yoffset 50 alpha 1.0
+
+    transform ts_split_move_down: # АНИМАЦИИ ДЛЯ СПЛИТА
+        xoffset 400 yoffset 550 alpha 0.0 subpixel True
+        ease 0.6 yoffset 300 alpha 1.0
+
     transform ts_fon_blur_postepenno:
         blur 0.0
         linear 20.0 blur 20.0

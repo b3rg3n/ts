@@ -13,6 +13,7 @@ init:
     image ts_darkbed = "mod_assets/source/images/bg/darkbed.webp"
     image ts_gost = "mod_assets/source/images/bg/gost.webp"
     image ts_gost_night = "mod_assets/source/images/bg/gost_night.webp"
+    image ts_gost_sunset = "mod_assets/source/images/bg/gost_sunset.webp"
     image ts_gym = "mod_assets/source/images/bg/gym_n.webp"
     image ts_house = "mod_assets/source/images/bg/house.webp"
     image ts_house_monika_evening = "mod_assets/source/images/bg/house_monika_evening.webp"
@@ -41,6 +42,9 @@ init:
     image ts_city_day = "mod_assets/source/images/bg/city_day.webp"
     image ts_sayori_bedroom = "mod_assets/source/images/bg/sayori_bedroom.webp"
     image ts_notebook = "mod_assets/source/images/bg/notebook.webp"
+    image ts_notebook_glitch = "mod_assets/source/images/bg/notebook-glitch.webp"
+    image ts_entrance_day = "mod_assets/source/images/bg/entrance_day.webp"
+    image ts_hotel = "mod_assets/source/images/bg/hotel.webp"
 
 ###ЗАБЛЮРЕНО НАХОЙ
     image ts_club_blur = im.Blur("mod_assets/source/images/bg/club.webp", 3.0)

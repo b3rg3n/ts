@@ -65,6 +65,12 @@ label after_load: # ВОСКРЕШЕНИЕ RPC ПРИ ЗАГРУЗКЕ
                     rpc.update(state="Акт II | Глава I",details="С возвращением, Моника!",large_image="atwocone",start=time.time())
                 except AssertionError:
                     pass
+    elif persistent.rpclabel == "6":
+            python: # ОБНОВЛЯЕМ RPC
+                try:
+                    rpc.update(state="Акт II | Глава II",details="Новые начинания",large_image="atwoctwo",start=time.time())
+                except AssertionError:
+                    pass
 
     elif persistent.rpclabel == "999":
             python: # ОБНОВЛЯЕМ RPC

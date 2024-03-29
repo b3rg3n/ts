@@ -37,6 +37,10 @@ init python:
             status_color = "#ff0000"
             status_color_custom = "#ffffff"
             status_name = "Состояние: [sost_glitch_hueta]"
+        elif pps == 6: # Зелёный
+            status_color = "#00ff00"
+            status_color_custom = "#ffffff"
+            status_name = "Состояние: Приподнятое"
 
     while ts_status in config.window_overlay_functions:
         config.window_overlay_functions.remove(ts_status)

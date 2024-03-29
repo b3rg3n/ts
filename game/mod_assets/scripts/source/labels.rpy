@@ -39,6 +39,7 @@ init:
     default cm_name = "???"
     default pod1_name = "Подруга"
     default pod2_name = "Подруга"
+    default ts_mt_name = "Минами"
 
     default text_pizda_nahui = glitchtext(24)
     default badmenuglitchname = glitchtext(7)

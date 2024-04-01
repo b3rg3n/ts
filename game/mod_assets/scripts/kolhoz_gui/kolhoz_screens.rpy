@@ -1,5 +1,5 @@
 # TRUE STORY SCREENS
-# ТУТ ЛЕЖИТ ВЕСЬ МОЙ КРАФТОВЫЙ GUI KOLHOZ STYLE БЛЯ
+# ТУТ ЛЕЖИТ ВЕСЬ МОЙ КРАФТОВЫЙ GUI KOLHOZ STYLE v2
 # ЛУЧШЕ НИЧЕГО НЕ ТРОГАЙ
 # И ТАК ВСЁ НА СОПЛЯХ ДЕРЖИТСЯ
 # ДА ПАШЕТ НА "ЗАКЛЯТИЯХ" БЕРГЕНЧИКА
@@ -16,7 +16,6 @@ init -1 python:
     nvl_font = "mod_assets/source/fonts/nvl_font.ttf"
     header_font = "mod_assets/source/fonts/captureit.ttf"
     link_font = "mod_assets/source/fonts/captureit.ttf"
-    info_font = "mod_assets/source/fonts/2.ttf"
     splash_font = "mod_assets/source/fonts/captureit.ttf"
 
 
@@ -183,7 +182,7 @@ init -501 screen main_menu:
 
     modal True tag menu
 
-    text "{image=ts_logo_menu}" ypos 150 xpos 75
+    text "{size=+17}{font=[ts_atomic]}True Story{/font}{/size}" ypos 292 xpos 75 # {image=ts_logo_menu}
 
     if _preferences.language == "english":
         if persistent.badendmenu and persistent.badendmenuskipglitch:
@@ -354,7 +353,8 @@ init -501 screen game_menu_selector:
     modal True tag menu
     add "mod_assets/source/images/gui/ebanoemenu/ingame_menu.webp"
 
-    text "{image=ts_logo_menu}" ypos 150 xpos 75
+    #text "{image=ts_logo_menu}" ypos 150 xpos 75
+    text "{size=+17}{font=[ts_atomic]}True Story{/font}{/size}" ypos 292 xpos 75 # {image=ts_logo_menu}
 
     if _preferences.language == "english":
         textbutton ("{size=+15}main menu{/size}") ypos 342 xpos 75:
@@ -398,13 +398,15 @@ init -501 screen game_menu_selector:
             action ShowMenu('preferences')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton ("{size=+15}Сбежать{/size}") ypos 542 xpos 75:
+        textbutton ("{size=+15}Сбежать{/size}") ypos 542 xpos 74:
             action ShowMenu('quit')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         imagebutton ypos 0 xpos 0:
             auto "mod_assets/source/images/gui/ebanoemenu/nope_%s.webp"
             action Return()
+        if not track_checker_blya == "empty":
+            text "{font=[cit_font]}{size=+15}[track_checker_blya]{size=+15}{/font}" ypos 600 xpos 77
         text "{font=[cit_font]}{size=+15}Сходишь с ума уже {image=gametime}{size=+15}{/font}" ypos 650 xpos 76
 
 init -101 python:

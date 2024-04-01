@@ -40,6 +40,7 @@ init python:
 
     build.classify("game/**.webm", "truestory")
     build.classify("game/**.ogv", "truestory")
+    build.classify("game/**.ogm", "truestory")
 
     build.documentation('*.html')
     build.documentation('*.txt')

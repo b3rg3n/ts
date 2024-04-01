@@ -41,6 +41,22 @@ init python:
             status_color = "#00ff00"
             status_color_custom = "#ffffff"
             status_name = "Состояние: Приподнятое"
+        elif pps == 7: # КРАСНЫЙ
+            status_color = "#ff0000"
+            status_color_custom = "#ffffff"
+            status_name = "Состояние: Ненависть"
+        elif pps == 8: # СИНИЙ
+            status_color = "#0000FF"
+            status_color_custom = "#ffffff"
+            status_name = "Состояние: Страх"
+        elif pps == 9: # ФИОЛЕТОВЫЙ
+            status_color = "#8B00FF"
+            status_color_custom = "#ffffff"
+            status_name = "Состояние: Грусть"
+        elif pps == 10: # ЦИАНОВЫЙ
+            status_color = "#00f7ff"
+            status_color_custom = "#ffffff"
+            status_name = "Состояние: Разочарование"
 
     while ts_status in config.window_overlay_functions:
         config.window_overlay_functions.remove(ts_status)

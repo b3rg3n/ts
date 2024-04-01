@@ -15,12 +15,16 @@ label ts_start:
 
     $ unluck_ball = 0 # ОБЩИЕ БАЛЛЫ АНЛАКА БЛЯ
 
-    if config.developer == True: # МЕНЮШКА РАЗРАБОТЧИКА
+    if config.developer: # МЕНЮШКА РАЗРАБОТЧИКА
+        scene ts_razrab_menu with dissolve2
+        $ TS.Screens(ts_showscreens)
         menu:
             "Выбор главы":
+                $ TS.Screens(ts_null_transform)
                 call screen scenario_start_change_chapter with dissolve2
                 return
             "Тестовый label":
+                $ TS.Screens(ts_null_transform)
                 jump testing_label_blya
             "Очистить переменные":
                 $ persistent.zastavka_skip = False
@@ -85,6 +89,8 @@ label ts_start:
         call screen scenario_start_change_chapter with dissolve2
         return
     else:
+        scene black with dissolve2
+        pause 2
         jump ts_scenario_0
 
 screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
@@ -95,19 +101,19 @@ screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
     textbutton ("{size=+10}Начать с пролога{/size}") yalign 0.2 xalign 0.5:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        action Jump("ts_scenario_0")
+        action Jump("ts_chapter_prologue_changes")
 
     text "{size=+20}{font=[ts_main_font_hueta]}{color=#FF0000}Акт первый:{/color}{/font}{/size}" yalign 0.3 xalign 0.1
 
     textbutton ("{size=+10}Первая глава{/size}") yalign 0.4 xalign 0.1:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        action Jump("ts_scenario_1")
+        action Jump("ts_chapter_one_changes")
 
     textbutton ("{size=+10}Вторая глава{/size}") yalign 0.5 xalign 0.1:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        action Jump("ts_scenario_2")
+        action Jump("ts_chapter_two_changes")
 
     textbutton ("{size=+10}Третья глава{/size}") yalign 0.6 xalign 0.1:
         activate_sound start_sound_suka
@@ -133,10 +139,28 @@ screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
 
     text "{size=+20}{font=[ts_main_font_hueta]}{color=#FF0000}Акт третий:{/color}{/font}{/size}" yalign 0.3 xalign 0.9
 
+label ts_chapter_prologue_changes:
+    scene black with dissolve2
+    pause 2
+    jump ts_scenario_0
+
+label ts_chapter_one_changes:
+    scene black with dissolve2
+    pause 2
+    jump ts_scenario_1
+
+label ts_chapter_two_changes:
+    scene black with dissolve2
+    pause 2
+    jump ts_scenario_2
+
 label ts_chapter_three_changes: # ВЫБОРЫ ПЕРЕД ТРЕТЬЕЙ ГЛАВОЙ
     show screen scenario_start_change_chapter_one with dissolve2
     pause 1
     hide screen scenario_start_change_chapter_one with dissolve2
+    pause 2
+
+    scene black with dissolve2
     pause 2
 
     play sound fb
@@ -168,6 +192,9 @@ label ts_chapter_four_changes: # ВЫБОРЫ ПЕРЕД ЧЕТВЁРТОЙ ГЛ
     show screen scenario_start_change_chapter_one with dissolve2
     pause 1
     hide screen scenario_start_change_chapter_one with dissolve2
+    pause 2
+
+    scene black with dissolve2
     pause 2
 
     play sound fb
@@ -223,6 +250,9 @@ label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
     show screen scenario_start_change_chapter_one with dissolve2
     pause 1
     hide screen scenario_start_change_chapter_one with dissolve2
+    pause 2
+
+    scene black with dissolve2
     pause 2
 
     play sound fb
@@ -298,6 +328,9 @@ label ts_chapter_six_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВО�
     show screen scenario_start_change_chapter_one with dissolve2
     pause 1
     hide screen scenario_start_change_chapter_one with dissolve2
+    pause 2
+
+    scene black with dissolve2
     pause 2
 
     play sound fb

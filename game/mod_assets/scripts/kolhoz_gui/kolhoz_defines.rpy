@@ -64,7 +64,7 @@ define -2 gui.interface_text_color = '#ffffff'
 
 define -2 gui.text_font = "mod_assets/source/fonts/nvl_font.ttf"
 define -2 gui.name_text_font = "mod_assets/source/fonts/nvl_font.ttf"
-define -2 gui.interface_text_font = "mod_assets/source/fonts/2.ttf"
+define -2 gui.interface_text_font = "mod_assets/source/fonts/captureit.ttf"
 
 define -2 gui.text_size = 22
 define -2 gui.name_text_size = 30
@@ -232,7 +232,7 @@ define -4 gui.nvl_button_xalign = 0.0
 
 init -3 style base_font is default
 init -3 style base_font:
-    font "mod_assets/source/fonts/2.ttf"
+    font "mod_assets/source/fonts/captureit.ttf"
     size 19
     line_spacing 2
     color "#ffdd7d"

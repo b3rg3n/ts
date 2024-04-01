@@ -21,8 +21,13 @@ screen ts_cens_changer: # АНТИЦЕНЗОР
 
 screen ts_widget_changer: # ВИДЖЕТ ТРЕКОВ БЛЯ
     modal True tag aw_r2
-    text "{size=+15}{font=[cit_font]}Включить вывод названий играющих треков?{/font}{/size}" yalign 0.475 xalign 0.5
-    text "{size=+15}{font=[cit_font]}Можно изменить в любой момент игры.{/font}{/size}" yalign 0.525 xalign 0.5
+    text "{size=+15}{font=[cit_font]}Включить вывод названий играющих треков?{/font}{/size}" yalign 0.430 xalign 0.5
+    text "{size=+15}{font=[cit_font]}Они будут показываться в меню быстрого доступа{/font}{/size}" yalign 0.480 xalign 0.5
+    if renpy.android or renpy.ios:
+        text "{size=+15}{font=[cit_font]}которое вызывается свайпом вверх.{/font}{/size}" yalign 0.530 xalign 0.5
+    else:
+        text "{size=+15}{font=[cit_font]}которое вызывается нажатием пкм.{/font}{/size}" yalign 0.530 xalign 0.5
+    text "{size=+15}{font=[cit_font]}Можно изменить в любой момент игры.{/font}{/size}" yalign 0.580 xalign 0.5
     textbutton ("{size=+15}Отключить{/size}") yalign 0.685 xalign 0.35:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
@@ -103,11 +108,14 @@ label start: # ТУТ НАЧИНАЕТСЯ ПИЗДЕЦ
 
     stop sound fadeout 2
     stop music fadeout 2
-    scene black with dissolve2
+    scene black with dissolve
     pause 0.5
     if persistent.zastavka_skip is True:
         jump ts_start
     else:
+        play music ts_wnuk fadein 2
+        scene ts_razrab_menu
+        with dissolve2
         show screen ts_start_shit_blya with awrain
         $ renpy.pause(3, hard=True)
         hide screen ts_start_shit_blya
@@ -138,9 +146,10 @@ label ts_intro_settings3:
     brg "А теперь?{w} Или ещё разок поменяем?"
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
-    $ TS.Screens(ts_null_transform)
+    $ TS.Screens(ts_showscreens)
     menu:
         "Поменяем":
+            $ TS.Screens(ts_null_transform)
             show screen ts_font_changer with awrain
             $ renpy.pause(hard=True)
         "Оставь этот":
@@ -154,6 +163,7 @@ label ts_intro_settings3:
 label ts_intro_settings4:
     show screen ts_set_end_shit_blya with awrain
     $ renpy.pause(3, hard=True)
+    stop music fadeout 3
     hide screen ts_set_end_shit_blya with dissolve
     pause 1
     $ persistent.zastavka_skip = True

@@ -28,6 +28,13 @@ label good_credits_ts_label:
 
     $ persistent.rpclabel = "999"
 
+    $ persistent.badendmenuperedglitch = False
+    $ persistent.badendmenuskipglitch = False
+    $ persistent.badendmenu = False
+    $ persistent.carter2menu = False
+    $ persistent.carter3menu = False
+    $ persistent.goodendmenu = True
+
     stop music fadeout 3
     scene black with ed_night_dis
 
@@ -139,13 +146,6 @@ label good_credits_ts_label:
 
     $ TS.Screens(ts_null_transform)
 
-    $ persistent.badendmenuperedglitch = False
-    $ persistent.badendmenuskipglitch = False
-    $ persistent.badendmenu = False
-    $ persistent.carter2menu = False
-    $ persistent.carter3menu = False
-    $ persistent.goodendmenu = True
-
     return
 
 
@@ -158,6 +158,13 @@ label bad_credits_ts_label:
             pass
 
     $ persistent.rpclabel = "999"
+
+    $ persistent.badendmenuperedglitch = True
+    $ persistent.badendmenuskipglitch = False
+    $ persistent.badendmenu = True
+    $ persistent.carter2menu = False
+    $ persistent.carter3menu = False
+    $ persistent.goodendmenu = False
 
     stop music fadeout 3
     scene black with ed_night_dis
@@ -300,13 +307,6 @@ label bad_credits_ts_label:
     pause 1
 
     $ TS.Screens(ts_null_transform)
-
-    $ persistent.badendmenuperedglitch = True
-    $ persistent.badendmenuskipglitch = False
-    $ persistent.badendmenu = True
-    $ persistent.carter2menu = False
-    $ persistent.carter3menu = False
-    $ persistent.goodendmenu = False
 
     return
 

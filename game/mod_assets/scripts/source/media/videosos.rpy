@@ -24,4 +24,3 @@ init:
     image ts_living_room_night_telek_sudba = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/bg/telek/sudba_night.ogv")
     image ts_living_room_late_telek_sudba = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/bg/telek/sudba_sunset.ogv")
     image ts_living_room_telek_sudba = Movie(fps=24, size = (1280, 720), play="mod_assets/source/videosos/bg/telek/sudba_day.ogv")
-

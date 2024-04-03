@@ -10,6 +10,14 @@ transform ts_showscreens:
     ypos 0.2 alpha 0.0 subpixel True
     ease 1.0 ypos 0.0 alpha 1.0
 
+transform ts_hide_credits_videosos:
+    xpos 0.2 ypos 0.4 alpha 1.0 subpixel True
+    ease 1.0 xpos 0.2 ypos 0.2 alpha 0.0
+
+transform ts_show_credits_videosos:
+    xpos 0.2 ypos 0.2 alpha 0.0 subpixel True
+    ease 1.0 xpos 0.2 ypos 0.4 alpha 1.0
+
 transform ts_super_effect:
     xalign 0.5 yalign 0.5 zoom 1.1 subpixel True
     parallel:

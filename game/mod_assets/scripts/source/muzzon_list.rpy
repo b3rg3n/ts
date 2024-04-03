@@ -15,6 +15,9 @@ init:
 ###ИЗ ЗАСТАВОК
     $ music_list_ts["Hallucinator - Mosh"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_mosh.ogg"
     $ music_list_ts["Moe Era OST - Final Scene Soft"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_soft.ogg"
+    $ music_list_ts["wnuk2380 - Outofit"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_wnuk.ogg"
+    $ music_list_ts["Mudasheep - One Way or Another"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_bad_credits.ogg"
+    $ music_list_ts["Dead Before Down OST"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_good_credits.ogg"
 ###ИЗ БЛ
     $ music_list_ts["Between August and December - Awakening Power"] = "mod_assets/source/audio/ost/es/ts_ap.ogg"
     $ music_list_ts["Sergey Eybog - Confession"] = "mod_assets/source/audio/ost/es/ts_conf.ogg"

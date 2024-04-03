@@ -26,6 +26,15 @@ label ts_start:
             "Тестовый label":
                 $ TS.Screens(ts_null_transform)
                 jump testing_label_blya
+            "Смотреть титры":
+                $ TS.Screens(ts_showscreens)
+                menu:
+                    "good":
+                        $ TS.Screens(ts_null_transform)
+                        jump good_credits_ts_label
+                    "bad":
+                        $ TS.Screens(ts_null_transform)
+                        jump bad_credits_ts_label
             "Очистить переменные":
                 $ persistent.zastavka_skip = False
                 $ persistent.firstmenushka = True

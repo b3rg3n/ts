@@ -17,3 +17,7 @@ init:
 
     image mon_piano = "mod_assets/source/images/cg/mon_piano.webp"
     image mon_piano_start = "mod_assets/source/images/cg/mon_piano_start.webp"
+
+###CREDITS
+    image ts_credits_mad_1 = "mod_assets/source/images/credits/ts_credits_mad_1.webp"
+    image ts_credits_bergen_1 = "mod_assets/source/images/credits/ts_credits_bergen_1.webp"

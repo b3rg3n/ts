@@ -15,6 +15,7 @@ label ts_scenario_1:
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
 
+
     $ save_name = "Поиски. Сайори"
 
     scene black

@@ -15,6 +15,8 @@ label ts_scenario_5:
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
 
+    $ pps = 1
+
     $ save_name = "С возвращением,\nМоника!"
 
     play sound chp2
@@ -1594,8 +1596,26 @@ label ts_scenario_5:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    $ TS.Screens(ts_null_transform)
-    call showpoem (poem_test, img="monika 2bn")
+    $ TS.Screens(ts_showscreens)
+
+    if not persistent.first_poem:
+        $ persistent.first_poem = True
+        show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
+            xpos 1050 ypos 590
+
+    play sound page_turn
+
+    show screen poem(poem_test)
+
+    pause
+
+    play sound page_turn
+    $ TS.Screens(ts_hidescreens)
+    pause 1.0
+    hide screen poem
+    hide poem_dismiss
+    
+    show monika 2bn at rn11
 
     $ TS.Screens(ts_showscreens)
 

@@ -37,8 +37,12 @@ init -1001 python:
         for chnl in ("sound", "sound2", "sound3", "sound_loop", "sound_loop2", "sound_loop3", "ambience", "ambience2"):
             renpy.sound.stop(channel=chnl)
 
+    def get_pos(channel='music'): # ДОБАВЛЯЕМ ВЫЧЕТ ПОЗИЦИИ
+        pos = renpy.music.get_pos(channel=channel)
+        if pos: return pos
+        return 0
+
     def reload_names(): # ПЕРЕЗАГРУЖАЕМ ИМЕНА ПРИ ПЕРЕВОДЕ
         global store
         for x in store.names_list:
             char_define(x)
-

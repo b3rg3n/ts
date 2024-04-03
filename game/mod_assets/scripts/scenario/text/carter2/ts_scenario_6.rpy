@@ -156,20 +156,24 @@ label ts_scenario_6:
     show hiroto 1s at t11
 
     "Я хотела было возразить ему, что, скорее всего, в университете будет что-то вроде столовой, в которой профессионалы своего дела за сдельную плату организуют всё тебе по высшему разряду, но не стала."
-    "В конце концов, я же на самом деле умею варить ту же гречку или макароны, а это уже открывает окно для возможностей. Добавить те же сосиски, и вот тебе приемлемый ужин."
+    "В конце концов, я же на самом деле умею варить ту же гречку или макароны, а это уже открывает окно для возможностей. Добавить тот же шпинат, и вот тебе приемлемый ужин."
 
     ts_ft 1c "Ну, в любом случае, я лучше бутербродами перебьюсь. Они {i}питательнее{/i}, в конце концов."
 
-    stop music fadeout 3
 
     show hiroto 1e at s11
+
+    stop music fadeout 2
 
     "Он язвительно сделал акцент на слове «питательнее»."
 
     show hiroto at cright with move
     hide hiroto
 
-    play music audio.t6o fadein 3
+    #$ currentpos = get_pos()
+    #$ audio.t6o =  '<from ' + str(currentpos) + ' loop 10.893>mod_assets/source/audio/ost/orig/6o.ogg'
+
+    play music audio.t6o fadein 2
 
     "Он идёт к хлебнице над холодильником и отрезает три кусочка хлеба."
     "Затем он берёт из холодильника колбасу и сыр, и аккуратными ломтиками кладёт по паре кусочков на каждый ломтик хлеба."
@@ -185,13 +189,14 @@ label ts_scenario_6:
 
     $ TS.Screens(ts_showscreens)
 
+    stop music fadeout 3
+
     "Когда чайник закипел, я разливаю кофе по чашкам, и начинаю есть хлопья."
     "Нет, кофе тоже можно поставить, но он всё равно ещё очень горячий, а в условиях не самого большого стола, есть риск, что мой кофе просто разольётся."
 
-    stop music fadeout 2
-
     "Поэтому пусть лучше стоит на большом столе, вдали от моих или папиных рук."
 
+    #$ audio.t6 =  '<from ' + str(currentpos) + ' loop 10.893>mod_assets/source/audio/ost/orig/6.ogg'
     play music audio.t6 fadein 2
 
     show hiroto 1a at rn11
@@ -1065,7 +1070,22 @@ label ts_scenario_6:
 
     $ TS.Screens(ts_showscreens)
 
-    call showpoem (poem_m1) from _call_showpoem
+    if not persistent.first_poem:
+        $ persistent.first_poem = True
+        show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
+            xpos 1050 ypos 590
+
+    play sound page_turn
+
+    show screen poem(poem_m1)
+
+    pause
+
+    play sound page_turn
+    $ TS.Screens(ts_hidescreens)
+    pause 1.0
+    hide screen poem
+    hide poem_dismiss
 
     scene ts_club
     with pushright

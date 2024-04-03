@@ -15,6 +15,8 @@ label ts_scenario_3:
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
 
+    $ pps = 1
+
     $ save_name = "Поиски. Нацуки"
 
     pause 2

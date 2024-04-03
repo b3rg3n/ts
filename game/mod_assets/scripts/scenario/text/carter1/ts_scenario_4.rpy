@@ -15,6 +15,8 @@ label ts_scenario_4:
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
 
+    $ pps = 1
+
     $ save_name = "Всё же хорошо?"
 
     play sound chp1

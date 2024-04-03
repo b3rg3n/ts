@@ -37,7 +37,7 @@ label ts_start:
                 $ persistent.carter2menu = False
                 $ persistent.carter3menu = False
                 $ persistent.badendmenu = False
-                return
+                $ renpy.full_restart(transition=None, label="splashscreen")
             "Выбрать нужную менюшку":
                 menu:
                     "Из первого акта":

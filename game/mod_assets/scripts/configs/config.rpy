@@ -4,6 +4,8 @@
 
 python early:
     config.allow_duplicate_labels = True
+    config.framebuffer_vsync = False
+    config.max_fps = 360
 
 define config.name = _("True Story")
 define gui.show_name = False

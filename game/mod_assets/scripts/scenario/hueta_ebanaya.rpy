@@ -91,6 +91,10 @@ label ts_start:
                         return
                     "Вернуться":
                         jump ts_start
+            "Заменить рендер":
+                show zatemnenie with dspr
+                $ TS.Screens(ts_showscreens)
+                call screen ts_render_changer
             "Обратно в меню":
                 return
 

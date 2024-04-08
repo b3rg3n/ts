@@ -18,9 +18,21 @@ label testing_label_blya:
     #show natsuki 1a at t65
     #show hiroto 1a at t66
 
-    show sayori 1a at Glitch(_fps=1000., glitch_strength=.3)
+    show sayori 1a at t11:
+        shader "example.gradient"
+        u_gradient_left (1.0, 0.0, 0.0, 1.0)
+        u_gradient_right (0.0, 0.0, 1.0, 1.0)
 
     "Так?"
+
+    show ts_street_rain
+    "Хуй"
+    scene black
+    show ts_school_gate_day_rain
+    "хуй"
+    scene black
+    show ts_city_day_rain
+    "елда"
 
     hide sayori
 

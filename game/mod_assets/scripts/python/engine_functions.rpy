@@ -46,3 +46,4 @@ init -1001 python:
         global store
         for x in store.names_list:
             char_define(x)
+

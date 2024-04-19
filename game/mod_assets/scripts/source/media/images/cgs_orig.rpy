@@ -5,7 +5,7 @@
 
 image exception_bg = "#dadada"
 image fake_exception = Text("Произошла ошибка.", size=40, style="_default")
-image fake_exception2 = Text("File \"game/script-ch5.rpy\", line 307\nSee traceback.txt for details.", size=20, style="_default")
+image fake_exception2 = Text("File \"mod_assets/scripts/scenario/ts_scenario4.rpy\", line 1576\nSee traceback.txt for details.", size=20, style="_default")
 image white = "#ffffff"
 
 image mask_child:

@@ -9,8 +9,128 @@ label testing_label_blya:
 
     #call showpoem (poem_y1, img="yuri 3t") from _call_showpoem
 
+
     window hide
-    scene ts_class
+    play music td
+    show s_kill_bg2
+    show s_kill2
+    show s_kill_bg as s_kill_bg at s_kill_bg_start
+    show s_kill as s_kill at s_kill_start
+    pause 3.75
+    show s_kill_bg2 as s_kill_bg
+    show s_kill2 as s_kill
+    pause 0.01
+
+    play sound s_kill_glitch1
+    show s_kill_bg2 as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    $ renpy.pause(0.25, hard=True)
+    stop sound
+
+    hide s_kill_bg
+    hide s_kill
+    show s_kill_bg_zoom zorder 1
+    show s_kill_bg2_zoom zorder 1
+    show s_kill_zoom zorder 3
+    show s_kill2_zoom zorder 3
+    show s_kill as s_kill_zoom_trans zorder 3:
+        truecenter
+        alpha 0.5
+        zoom 2.0 xalign 0.5 yalign 0.05
+        pause 0.5
+        dizzy(1, 1.0)
+    pause 2.0
+    show noise zorder 3:
+        alpha 0.0
+        linear 3.0 alpha 0.25
+    show vignette zorder 3:
+        alpha 0.0
+        linear 3.0 alpha 0.75
+    pause 1.5
+    show anarchy_glitch_logo zorder 2 at ts_coridor_glitch
+    pause 1.5
+
+    play sound s_kill_glitch1
+    show anarchy_glitch_logo as bg1 at br_glitches(_fps=160, glitch_strength=1) zorder 2
+    $ renpy.pause(0.25, hard=True)
+    stop sound
+    hide anarchy_glitch_logo
+
+    pause 4.0
+
+    play sound s_kill_glitch1
+    show anarchy_glitch_logo as bg1 at br_glitches(_fps=160, glitch_strength=1) zorder 2
+    $ renpy.pause(0.25, hard=True)
+    stop sound
+    hide anarchy_glitch_logo
+
+    hide anarchy_glitch_logo
+    show splash_glitch2 zorder 2
+    show splash_glitch_m zorder 2
+    show splash_glitch_n zorder 2
+    show splash_glitch_y zorder 2
+    pause 0.75
+    hide white
+    hide splash_glitch2
+    hide splash_glitch_m
+    hide splash_glitch_n
+    hide splash_glitch_y
+    show exception_bg zorder 2
+    show fake_exception zorder 2:
+        xpos 0.1 ypos 0.05
+    show fake_exception2 zorder 2:
+        xpos 0.1 ypos 0.15
+    pause 6.0
+
+    stop music fadeout 4
+    play sound coldazvuk
+    pause 4.3
+    scene black
+    pause 2
+
+
+    return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    window hide
+
+    show exception_bg zorder 2
+    show fake_exception zorder 2:
+        xpos 0.1 ypos 0.05
+    show fake_exception2 zorder 2:
+        xpos 0.1 ypos 0.15
+
+    "..."
+
+    $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
+    $ pps = 5
+
+    play sound_loop psy_fast_3
+
+    show anarchy_glitch_logo zorder 4 at ts_coridor_glitch
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh zorder 5
+    show anim_exhausted zorder 5
+    show m_rectstatic zorder 5
+
+    "Ну типа..."
+
+    hide fake_exception
+    hide fake_exception2
+    hide exception_bg
+
+    #scene ts_class
     #show sayori 1a at t61
     #show monika 1a at t62
     #show yuri 1a at t63

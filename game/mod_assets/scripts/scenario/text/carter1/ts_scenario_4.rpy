@@ -1574,7 +1574,6 @@ label ts_scenario_4:
     hide screen pizda_text41
 
 #САЙОРИ ЕБЁТ МОЗГИ
-
     window hide
     play music td
     show s_kill_bg2
@@ -1611,25 +1610,24 @@ label ts_scenario_4:
         alpha 0.0
         linear 3.0 alpha 0.75
     pause 1.5
-    show white zorder 2
-    show splash_glitch zorder 2
+    show anarchy_glitch_logo zorder 2 at ts_coridor_glitch
     pause 1.5
 
     play sound s_kill_glitch1
-    show splash_glitch1 as bg1 at br_glitches(_fps=160, glitch_strength=1) zorder 2
+    show anarchy_glitch_logo as bg1 at br_glitches(_fps=160, glitch_strength=1) zorder 2
     $ renpy.pause(0.25, hard=True)
     stop sound
-    hide splash_glitch1
+    hide anarchy_glitch_logo
 
     pause 4.0
 
     play sound s_kill_glitch1
-    show splash_glitch1 as bg1 at br_glitches(_fps=160, glitch_strength=1) zorder 2
+    show anarchy_glitch_logo as bg1 at br_glitches(_fps=160, glitch_strength=1) zorder 2
     $ renpy.pause(0.25, hard=True)
     stop sound
-    hide splash_glitch1
+    hide anarchy_glitch_logo
 
-    hide splash_glitch
+    hide anarchy_glitch_logo
     show splash_glitch2 zorder 2
     show splash_glitch_m zorder 2
     show splash_glitch_n zorder 2

@@ -3,6 +3,29 @@
 # Since 2024
 
 init:
+
+###ЛАГАЮЩЕЕ ЛОГО, ЕБАТЬ
+    image anarchy_glitch_logo:
+        "mod_assets/source/images/anarchy/anarchisty1.webp"
+        pause 0.1
+        "mod_assets/source/images/anarchy/anarchisty3.webp"
+        pause 0.1
+        "mod_assets/source/images/anarchy/anarchisty2.webp"
+        pause 0.1
+        "mod_assets/source/images/anarchy/anarchisty3.webp"
+        pause 0.1
+        "mod_assets/source/images/anarchy/anarchisty1.webp"
+        pause 0.1
+        "mod_assets/source/images/anarchy/anarchisty2.webp"
+        pause 0.1
+        "mod_assets/source/images/anarchy/anarchisty3.webp"
+        pause 0.1
+        "mod_assets/source/images/anarchy/anarchisty1.webp"
+        pause 0.1
+        "mod_assets/source/images/anarchy/anarchisty2.webp"
+        pause 0.1
+        repeat
+
 ###АНИМАЦИЯ КОШМАРА МОНИКИ В КОНЦЕ 4 ГЛАВЫ 1 АКТА НАХ
     image vse_pizda_monike:
         "mod_assets/source/images/cg/brg_kolhoz_blya/s1.png" with poplil_pacan1

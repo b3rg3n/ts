@@ -184,53 +184,9 @@ label ts_scenario_0:
 
     nvl clear
 
-    $ generate_random_number() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
+    show kaori 22a at ln11
 
-    if random_test_label == 1:
-        show kaori 22a at ln11
-
-        nvlbazar "{font=[prologue_font]}Её звали Каори. И она была чуть ли не полной противоположностью меня."
-    elif random_test_label == 2:
-        stop ambience
-        $ renpy.music.set_volume(0.0)
-
-        play sound_loop psy_fast_3
-
-        show ts_l5_glitch_pizdets at ts_coridor_glitch
-        show kaori_glitch_pizdets at ln11
-        show black zorder 5 at ts_black_glitch
-        show blackout_exh
-        show anim_exhausted
-
-        $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
-
-        show m_rectstatic zorder 0
-
-        nvlbazar "{font=[prologue_font]}Её звали [em_name]. Я ненавидела эту мразь всем сердцем.{nw}"
-
-        nvl clear
-
-        $ TS.Screens(ts_null_transform)
-
-        stop sound_loop
-
-        play sound br_glitch
-        show ts_l5 as bg1 at br_glitches(_fps=160, glitch_strength=1)
-        $ renpy.pause(1.1, hard=True)
-        stop sound
-
-        $ renpy.music.set_volume(0.6)
-
-        play ambience pechatka
-        scene ts_l5
-        show dust1
-        show dust2
-        show dust3
-        show dust4
-        show kaori 22a at i11
-
-        nvlbazar "{font=[prologue_font]}Её звали Каори. И она была чуть ли не полной противоположностью меня.{fast}"
-
+    nvlbazar "{font=[prologue_font]}Её звали Каори. И она была чуть ли не полной противоположностью меня."
     nvlbazar "{font=[prologue_font]}Я была спокойной девочкой."
     show kaori 23c at h11
     nvlbazar "{font=[prologue_font]}Каори была неугомонной."

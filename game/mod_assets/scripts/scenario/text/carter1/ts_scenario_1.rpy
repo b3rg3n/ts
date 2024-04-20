@@ -160,66 +160,15 @@ label ts_scenario_1:
     pause 1.5
     play sound door_open
 
-    $ generate_random_number() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
+    show sayori 3b zorder 2 at ln11
 
-    if random_test_label == 1:
-        show sayori 3b zorder 2 at ln11
+    $ TS.Screens(ts_showscreens)
 
-        $ TS.Screens(ts_showscreens)
+    s "Извините, а это Литературный клуб?"
 
-        s "Извините, а это Литературный клуб?"
+    "Это хоть и не было резко, но я всё равно дёрнулась. В общий шум моего голоса и тишины врезался ещё один голос."
 
-        "Это хоть и не было резко, но я всё равно дёрнулась. В общий шум моего голоса и тишины врезался ещё один голос."
-
-        m "А!.. Э-э-э... Да..."
-    elif random_test_label == 2:
-        stop ambience
-        $ renpy.music.set_volume(0.0)
-
-        play sound_loop psy_fast_3
-
-        show ts_club_glitch_pizdets at ts_coridor_glitch
-        show sayori_glitch_pizdets at ln11
-        show black zorder 5 at ts_black_glitch
-        show blackout_exh
-        show anim_exhausted
-
-        $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
-
-        show m_rectstatic zorder 0
-
-        s "{font=[prologue_font]}Здарова, [text_pizda_nahui]. Как жизнь пожилая?{nw}"
-
-        if persistent.cens_mode == True:
-            "{font=[prologue_font]}Я конкретно ахуела, когда увидела [text_pizda_nahui] в проходе блять.{nw}"
-        else:
-            "{font=[prologue_font]}Я конкретно [text_pizda_nahui], когда увидела [text_pizda_nahui] в проходе.{nw}"
-
-        s "{font=[prologue_font]}Если да, то нам надо [text_pizda_nahui].{nw}"
-
-        "{font=[prologue_font]}[text_pizda_nahui].{nw}"
-
-        m "{font=[prologue_font]}Приходи, когда [text_pizda_nahui].{nw}"
-
-        $ TS.Screens(ts_null_transform)
-
-        stop sound_loop
-
-        play sound br_glitch
-        show ts_club as bg1 at br_glitches(_fps=160, glitch_strength=1)
-        $ renpy.pause(1.1, hard=True)
-        stop sound
-
-        $ renpy.music.set_volume(0.6)
-
-        scene ts_club
-        show sayori 3b zorder 2 at i11
-
-        s "Извините, а это Литературный клуб?"
-
-        "Это хоть и не было резко, но я всё равно дёрнулась. В общий шум моего голоса и тишины врезался ещё один голос."
-
-        m "А!.. Э-э-э... Да..."
+    m "А!.. Э-э-э... Да..."
 
     show sayori 2s at h11
 
@@ -944,46 +893,9 @@ label ts_scenario_1:
 
     m "Мам, пап, я пришла!"
 
-    $ generate_random_number() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
+    show hiroto 1b zorder 2 at ln11
 
-    if random_test_label == 1:
-        show hiroto 1b zorder 2 at ln11
-
-        ts_ft "Добрый уже вечер, Моника. Как дела в школе?"
-    elif random_test_label == 2:
-        stop ambience
-        $ renpy.music.set_volume(0.0)
-
-        play sound_loop psy_fast_3
-
-        show ts_kitchen_glitch_pizdets at ts_coridor_glitch
-        show hiroto_glitch_pizdets at ln11
-        show black zorder 5 at ts_black_glitch
-        show blackout_exh
-        show anim_exhausted
-
-        $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
-
-        show m_rectstatic zorder 0
-
-        ts_ft "{font=[prologue_font]}Ну привет, [text_pizda_nahui]. Как дела в аду?{nw}"
-
-        $ TS.Screens(ts_null_transform)
-
-        stop sound_loop
-
-        play sound br_glitch
-        show ts_kitchen as bg1 at br_glitches(_fps=160, glitch_strength=1)
-        $ renpy.pause(1.1, hard=True)
-        stop sound
-
-        $ renpy.music.set_volume(0.6)
-
-        scene ts_kitchen
-
-        show hiroto 1b zorder 2 at i11
-
-        ts_ft "Добрый уже вечер, Моника. Как дела в школе?"
+    ts_ft "Добрый уже вечер, Моника. Как дела в школе?"
     
     show hiroto 1a zorder 2 at f11
     

@@ -9,6 +9,28 @@ label testing_label_blya:
 
     #call showpoem (poem_y1, img="yuri 3t") from _call_showpoem
 
+    $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
+    $ pps = 5
+
+    play sound slender
+
+    show ts_club_glitch_pizdets zorder 4 at ts_coridor_glitch
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh zorder 5
+    show anim_exhausted zorder 5
+    show m_rectstatic zorder 5
+    show natsuki ghost3 zorder 6 at Glitch(_fps=1000.)
+
+    pause 2.5
+
+    stop sound
+
+    scene ts_club
+    show natsuki 1a at i11
+
+    "Ахуеть"
+
+    return
 
     window hide
     play music td

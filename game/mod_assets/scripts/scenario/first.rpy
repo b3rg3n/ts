@@ -58,7 +58,7 @@ screen ts_render_changer: # ЗАМЕНА РЕНДЕРА ЁПТЫТЬ
     modal True tag aw_r2
 
     text "{size=+15}{font=[cit_font]}Выключить режим энергосбережения?{/font}{/size}" yalign 0.175 xalign 0.5
-    text "{size=+15}{font=[cit_font]}Возростает нагрузка на ЦП (+FPS).{/font}{/size}" yalign 0.225 xalign 0.5
+    text "{size=+15}{font=[cit_font]}Возрастает нагрузка на ЦП (+FPS).{/font}{/size}" yalign 0.225 xalign 0.5
     textbutton ("{size=+15}Включить{/size}") yalign 0.285 xalign 0.35:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")

@@ -11,7 +11,7 @@ python early:
 
 define config.name = _("True Story")
 define gui.show_name = False
-define config.version = "1.0"
+define config.version = "1.15"
 
 define gui.about = _p("""
 """)

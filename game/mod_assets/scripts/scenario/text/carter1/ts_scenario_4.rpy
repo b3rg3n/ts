@@ -1232,16 +1232,11 @@ label ts_scenario_4:
     " {w=1.0}{nw}"
 
     play sound2 pageflip
-    scene ts_club:
-        default subpixel True blur 2.5 
-        Null(1280.0, 720.0)
-        'ts_club'
-    show yuri 1i at t31:
-        blur 2.5 
-    show sayori 2l at t32:
-        blur 2.5 
-    show natsuki 1i at t33:
-        blur 2.5 
+    scene ts_club
+    show yuri 1i at t31
+    show sayori 2l at t32
+    show natsuki 1i at t33
+    show layer master at blur_drunk_blya_lowest
     with wipeleft_scene
 
     $ TS.Screens(ts_showscreens)
@@ -1252,8 +1247,7 @@ label ts_scenario_4:
     "Какое же оно крепкое!"
     "Но сегодня я как будто на вершине мира. Правда, вершина эта уже немного покачивается..."
 
-    show yuri 1g at f31:
-        blur 2.5 
+    show yuri 1g at f31
 
     "Юри налила мне и ей ещё по половине чашки. На мои протесты по поводу того, что мы уже взрослые, Юри парировала, что первый опыт с алкоголем зачастую не самый приятный."
     "Особенно когда наступает похмелье."
@@ -1291,12 +1285,9 @@ label ts_scenario_4:
 
     m "Ну что, Юри, я уже тост произнесла. А поскольку пьющих больше не осталось, то это право переходит к тебе."
 
-    show yuri 3n at f31:
-        blur 2.5 
-    show sayori 2x at f32:
-        blur 2.5 
-    show natsuki 1d at f33:
-        blur 2.5
+    show yuri 3n at f31
+    show sayori 2x at f32
+    show natsuki 1d at f33
 
     "Сайори и Нацуки заметно повеселели. Юри же... По одному её выражению лица понятно, что говорить она не хочет."
 
@@ -1309,26 +1300,21 @@ label ts_scenario_4:
     m "Некрасиво же!"
     y "Н-ну х-хорошо..."
 
-    show yuri 1l at t31:
-        blur 2.5
+    show yuri 1l at t31
 
     "Переведя дыхание несколько раз и помолившись одной только ей известной богам, Юри начала тост."
 
     y 1g "Н-ну ч-что же..."
 
-    show natsuki 1y at t33:
-        blur 2.5
+    show natsuki 1y at t33
 
     y 2f "Да, как Нацуки и сказала, я немногословна. Но она меня убедила хотя бы попробовать."
     y "П-поэтому я хочу поднять бокалы... т-то есть, чашки... за то, чтобы мы все пробовали что-то новое."
     y 2d "Потому что иначе мы так никогда и не узнаем, нравится оно нам или нет."
 
-    show yuri 2d at h31:
-        blur 2.5
-    show sayori 4s at h32:
-        blur 2.5
-    show natsuki 1z at h33:
-        blur 2.5
+    show yuri 2d at h31
+    show sayori 4s at h32
+    show natsuki 1z at h33
 
     $ m_name = "Все вместе"
 
@@ -1349,16 +1335,11 @@ label ts_scenario_4:
     " {w=1.0}{nw}"
 
     play sound2 pageflip
-    scene ts_club:
-        default subpixel True blur 5.0
-        Null(1280.0, 720.0)
-        'ts_club'
-    show yuri 2y6 at t31:
-        blur 5.0
-    show sayori 1k at t32:
-        blur 5.0
-    show natsuki 1u at t33:
-        blur 5.0
+    scene ts_club
+    show yuri 2y6 at t31
+    show sayori 1k at t32
+    show natsuki 1u at t33
+    show layer master at blur_drunk_blya_low
     with wipeleft_scene
 
     $ TS.Screens(ts_showscreens)
@@ -1379,13 +1360,22 @@ label ts_scenario_4:
     m "Нет, хочу пить, и буду пить! В конце концов, тварь я дрожащая, или право имею?"
     m "Наливай!"
 
-    show yuri 1o at f31:
-        blur 5.0
+    show yuri 1o at f31
 
     "Юри что-то хотела сказать, но не решилась, и вместо этого выполнила то, что от неё требовалось."
     "Ну и правильно. Я же целый президент Литературного клуба!"
 
     window hide
+    scene ts_club:
+        default subpixel True blur 3.0 
+        Null(1280.0, 720.0)
+        'ts_club'
+    show yuri 1o at i31:
+        blur 3.0
+    show sayori 1k at i32:
+        blur 3.0
+    show natsuki 1u at i33:
+        blur 3.0
     stop music
     play sound br_glitch
     show ts_club_blur as bg1 at br_glitches(_fps=160, glitch_strength=1)
@@ -1394,24 +1384,18 @@ label ts_scenario_4:
 
     play music ts_heather
 
-    scene ts_club:
-        default subpixel True blur 5.0
-        Null(1280.0, 720.0)
-        'ts_club'
+    scene ts_club
+    show layer master at blur_drunk_blya_low
 
-    show yuri 1r at t31:
-        blur 5.0
+    show yuri 1r at t31
 
     "Юри сдалась и налила мне полную чашку, причём сама налила себе совсем чуть-чуть, как бы говоря мне «я тебя предупреждала»."
     "Ну предупреждала и предупреждала, и что с того? В конце концов, я и сама взрослый человек, и вправе делать что угодно!"
     "Может, завтра мне и будет плохо... Но зато сегодня-то как хорошо!"
 
-    show yuri 1v at s31:
-        blur 5.0
-    show sayori 1k at s32:
-        blur 5.0
-    show natsuki 1u at t33:
-        blur 5.0
+    show yuri 1v at s31
+    show sayori 1k at s32
+    show natsuki 1u at t33
 
     "Третий тост не объявил никто. Сайори и Нацуки уже не пьют, а мы с Юри уже сделали тост."
     "Поэтому пьём мы молча."
@@ -1419,17 +1403,13 @@ label ts_scenario_4:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    scene ts_club:
-        default subpixel True blur 10.0
-        Null(1280.0, 720.0)
-        'ts_club'
-    show yuri 1v at t31:
-        blur 10.0
-    show sayori 1k at t32:
-        blur 10.0
-    show natsuki 1u at t33:
-        blur 10.0
-    with ed_night_dis
+    play sound pageflip
+    scene ts_club
+    show yuri 1v at t31
+    show sayori 1k at t32
+    show natsuki 1u at t33
+    show layer master at blur_drunk_blya
+    with wipeleft_scene
 
     $ TS.Screens(ts_showscreens)
 
@@ -1444,21 +1424,16 @@ label ts_scenario_4:
     s 5c "Да! Мы хотели сделать культурное чаепитие, а не попойку для одного человека!"
     n 2o "..."
 
-    show yuri 1y4 at f31:
-        blur 10.0
-    show sayori 5d at f32:
-        blur 10.0
+    show yuri 1y4 at f31
+    show sayori 5d at f32
 
     "Кажется, я в меньшинстве..."
     "Ну и ладно! Ну и пожалуйста! Ну и не нужно!"
     "Обойдусь..."
 
-    show yuri 1t at t31:
-        blur 10.0
-    show sayori 2h at t32:
-        blur 10.0
-    show natsuki 1n at t33:
-        blur 10.0
+    show yuri 1t at t31
+    show sayori 2h at t32
+    show natsuki 1n at t33
 
     stop music fadeout 3
 
@@ -1469,11 +1444,11 @@ label ts_scenario_4:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound2 pageflip
-    scene black
-    with ed_night_dis
+    show blink
 
     play music audio.t10y
+
+    pause 2
 
     $ TS.Screens(ts_showscreens)
 
@@ -1483,11 +1458,9 @@ label ts_scenario_4:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    scene ts_club:
-        default subpixel True blur 10.0
-        Null(1280.0, 720.0)
-        'ts_club'
-    with ed_night_dis
+    scene ts_club
+    show unblink
+    show layer master at blur_drunk_blya
 
     $ TS.Screens(ts_showscreens)
 
@@ -1496,14 +1469,13 @@ label ts_scenario_4:
     "Неужели это то, через что каждый раз проходят мои родители?"
     "Я имею в виду, через, это, как же это называется... похмелье, да..."
     "Или это ещё не похмелье, и худшее только впереди..."
+    scene ts_club at ts_alkonersha
+    show layer master at blur_drunk_blya
     "Я рефлекторно пытаюсь встать, но, естественно, у меня не получается."
 
-    show yuri 1t at t31:
-        blur 10.0
-    show sayori 2h at t32:
-        blur 10.0
-    show natsuki 1n at t33:
-        blur 10.0
+    show yuri 1t at t31
+    show sayori 2h at t32
+    show natsuki 1n at t33
 
     y "Тише, тише, куда ты встаёшь..."
     m "{cps=*0.44}Раз ты не х-х-х-хочешь купить мне е-ещ-ш-щ-ш-щё, то я пойду и куплю с-с-с-сама!{/cps}"
@@ -1519,8 +1491,9 @@ label ts_scenario_4:
     m "{cps=*0.44}Поэтому я сама лутше както...{/cps}"
 
     window hide
-    scene ts_club_blur9 at ts_razebal
-    pause 0.4
+    scene ts_club at ts_alkonersha
+    show layer master at blur_drunk_blya
+    pause 0.8
     stop music
     play sound sfx_body_bump
     scene black with vpunch

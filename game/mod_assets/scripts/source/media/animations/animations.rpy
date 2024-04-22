@@ -3,6 +3,26 @@
 # Since 2024
 
 init:
+###АЛКОТРИП БЛЯ
+    image ts_club_alkoner:
+        'ts_club'
+        subpixel True
+        anchor (0.5, 0.5)
+        pos (0.5, 0.5)
+        zoom 1
+        parallel:
+            ease 0.95 pos (0.4, 0.65) zoom 1.935
+            pause 0.15
+            easein 0.55 pos (0.5, 0.5) zoom 1.2
+            pause 0.05
+            easeout 0.65 pos (0.7, 0.4) zoom 2.15
+            pause 0.1
+            ease 1.3 pos (0.5, 0.5) zoom 1
+        parallel:
+            ease 1.1 rotate 20
+            easein 0.6 rotate -2.5
+            easeout 0.8 rotate -25
+            ease 1.3 rotate 0
 
 ###ЛАГАЮЩЕЕ ЛОГО, ЕБАТЬ
     image anarchy_glitch_logo:

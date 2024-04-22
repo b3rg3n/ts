@@ -9,6 +9,16 @@ label testing_label_blya:
 
     #call showpoem (poem_y1, img="yuri 3t") from _call_showpoem
 
+    stop music fadeout 2
+    scene black with dissolve2
+
+    scene ts_club with dspr
+    show layer master at blur_drunk_blya
+
+    pause
+
+    return
+
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     $ pps = 5
 

@@ -4,6 +4,25 @@
 
 init:
 ### АНИМАЦИИ НЕ ДЛЯ СПРАЙТОВ БЛЯ
+    transform ts_alkonersha:
+        subpixel True
+        anchor (0.5, 0.5)
+        pos (0.5, 0.5)
+        zoom 1
+        parallel:
+            ease 0.95 pos (0.4, 0.65) zoom 1.935
+            pause 0.15
+            easein 0.55 pos (0.5, 0.5) zoom 1.2
+            pause 0.05
+            easeout 0.65 pos (0.7, 0.4) zoom 2.15
+            pause 0.1
+            ease 1.3 pos (0.5, 0.5) zoom 1
+        parallel:
+            ease 1.1 rotate 20
+            easein 0.6 rotate -2.5
+            easeout 0.8 rotate -25
+            ease 1.3 rotate 0
+
     transform ts_chess_move_up: # АНИМАЦИИ ДЛЯ ШАХМАТ
         xoffset 400 yoffset 300 alpha 0.0 subpixel True
         ease 0.6 yoffset 50 alpha 1.0

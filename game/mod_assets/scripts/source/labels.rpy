@@ -8,6 +8,7 @@ init:
     default persistent.cens_mode = True
     default persistent.music_widget_ts = False
     default persistent.vsyncebaniy = True
+    default persistent.ts_mouse_anim_set = "0"
 ### RPC
     default persistent.rpclabel = "228"
 

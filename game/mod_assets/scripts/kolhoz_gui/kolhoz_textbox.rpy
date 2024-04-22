@@ -5,7 +5,7 @@
 screen say(who, what):
     style_prefix "say"
 
-    text "{size=+5}{font=[cit_font]}True Story BETA | вuild [config.version]{/font}{/size}" yalign 0.015 xalign 0.015
+    #text "{size=+5}{font=[cit_font]}True Story BETA | вuild [config.version]{/font}{/size}" yalign 0.015 xalign 0.015
 
     if (persistent.bazarbig):
         if config.developer:

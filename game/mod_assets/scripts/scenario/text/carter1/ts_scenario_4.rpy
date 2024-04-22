@@ -1628,13 +1628,16 @@ label ts_scenario_4:
 
     play sound fb
     scene ts_club
+    #show noise zorder 6:
+    #    alpha 0.25
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     show natsuki ghost1 at t11
     with flash
-    show n_rects_ghost1 zorder 4
-    show n_rects_ghost2 zorder 4
-    show n_rects_ghost3 zorder 4
-    show natsuki ghost1 at t11
-    show natsuki_ghost_blood zorder 3
+    #show n_rects_ghost1 zorder 4
+    #show n_rects_ghost2 zorder 4
+    #show n_rects_ghost3 zorder 4
+    #show natsuki ghost1 at t11
+    #show natsuki_ghost_blood zorder 3
     pause 3
     hide n_rects_ghost3
     pause 1
@@ -1660,6 +1663,9 @@ label ts_scenario_4:
 
     play sound fb
     scene ts_club
+    #show noise zorder 6:
+    #    alpha 0.25
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     show yuri 3y3 at i11
     with flash
     pause 1
@@ -1708,6 +1714,7 @@ label ts_scenario_4:
         linear 0.10 alpha 0 pos (0.0, 0.0) zoom 1.0
     pause 1.75
     hide monika_scare
+    hide noise
     scene black
     pause 2
 
@@ -1725,7 +1732,7 @@ label ts_scenario_4:
         ease 5.0 xpos 0.5 ypos 0.5 rotate 0
         repeat
 
-    show noise:
+    show noise zorder 5:
         alpha 0.25
 
     show black zorder 5 at ts_black_glitch

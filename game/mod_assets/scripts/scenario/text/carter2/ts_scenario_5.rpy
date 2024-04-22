@@ -75,6 +75,7 @@ label ts_scenario_5:
 
     play music audio.m1
     window hide
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     play sound fb
     show s_kill_bg_zoom zorder 1
     show s_kill_bg2_zoom zorder 1
@@ -318,6 +319,7 @@ label ts_scenario_5:
     show natsuki 1n at t33:
         blur 10
     show overlay aw_memory_back_1
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
     $ TS.Screens(ts_showscreens)
@@ -411,6 +413,7 @@ label ts_scenario_5:
     play sound fb
     scene ts_residential
     show overlay aw_memory_back_1
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
 

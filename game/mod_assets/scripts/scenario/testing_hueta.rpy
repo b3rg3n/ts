@@ -12,8 +12,27 @@ label testing_label_blya:
     stop music fadeout 2
     scene black with dissolve2
 
-    scene ts_club with dspr
-    show layer master at blur_drunk_blya
+    scene ts_city_day_rain
+
+    pause
+
+    scene ts_club
+    show natsuki 1a zorder 2 at t41
+    show noise zorder 3:
+        alpha 0.2
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+
+    pause
+
+    show monika 1a zorder 2 at ln42
+
+    pause
+
+    show yuri 1a zorder 2 at ln43
+
+    pause
+
+    show sayori 1a zorder 2 at ln44
 
     pause
 

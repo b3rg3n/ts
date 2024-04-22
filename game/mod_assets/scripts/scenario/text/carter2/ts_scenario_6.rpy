@@ -224,7 +224,9 @@ label ts_scenario_6:
     scene ts_kitchen at ts_fon_blur_postepenno
     show hiroto 1a at s11
 
-    show overlay aw_memory_back_1 with dissolve2
+    show overlay aw_memory_back_1
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    with dissolve2
 
     $ TS.Screens(ts_showscreens)
 
@@ -784,6 +786,7 @@ label ts_scenario_6:
 
     show overlay aw_memory_back_1
     show zatemnenie_light
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with dspr
 
     $ pps = 3
@@ -922,6 +925,7 @@ label ts_scenario_6:
 
     show overlay aw_memory_back_1
     show zatemnenie_light
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with dspr
 
     $ pps = 3
@@ -1538,6 +1542,7 @@ label ts_scenario_6:
 
     show zatemnenie_light
     show overlay aw_memory_back_1
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with dissolve2
 
     $ TS.Screens(ts_showscreens)
@@ -1552,8 +1557,9 @@ label ts_scenario_6:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    hide overlay aw_memory_back_1
-    hide zatemnenie_light
+
+    scene ts_kitchen
+    show hiroto 1e at i11
     with dissolve2
 
     $ TS.Screens(ts_showscreens)

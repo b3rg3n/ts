@@ -49,6 +49,7 @@ label ts_scenario_3:
     show yuri 9p at t11
     show zatemnenie_light
     show overlay aw_memory_back_1
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
     $ pps = 2
@@ -327,6 +328,7 @@ label ts_scenario_3:
     pause 0.2
     scene ts_darkbed
     show overlay aw_memory_back_1
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with vpunch
     pause 1
 
@@ -750,7 +752,7 @@ label ts_scenario_3:
     "Фух."
 
     show overlay aw_memory_back_1 with dspr
-
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     $ pps = 2
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
@@ -947,6 +949,7 @@ label ts_scenario_3:
     show yuri 9p at t11
     show zatemnenie_light
     show overlay aw_memory_back_1
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
     $ pps = 2
@@ -1642,6 +1645,7 @@ label ts_scenario_3:
     scene ts_club
     show natsuki 12f at t11
     show overlay aw_memory_back_1
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
     $ pps = 3
@@ -2356,6 +2360,7 @@ label ts_scenario_3:
     scene ts_club
     show natsuki 2k at t11
     show overlay aw_memory_back_1
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
     $ pps = 9

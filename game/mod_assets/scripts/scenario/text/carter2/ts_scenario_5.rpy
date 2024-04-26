@@ -1599,6 +1599,9 @@ label ts_scenario_5:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
+    scene ts_notebook with dissolve:
+        blur 9.0
+
     $ TS.Screens(ts_showscreens)
 
     if not persistent.first_poem:
@@ -1617,7 +1620,9 @@ label ts_scenario_5:
     pause 1.0
     hide screen poem
     hide poem_dismiss
-    
+
+    scene ts_notebook with dissolve
+
     show monika 2bn at rn11
 
     $ TS.Screens(ts_showscreens)

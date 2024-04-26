@@ -7,7 +7,48 @@ label testing_label_blya:
         except AssertionError:
             pass
 
+
+    scene ts_club
+    m "Тест"
+
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
+    scene ts_club with dissolve:
+        blur 9.0
+
+    $ TS.Screens(ts_showscreens)
+
+    if not persistent.first_poem:
+        $ persistent.first_poem = True
+        show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
+            xpos 1050 ypos 590
+
+    play sound page_turn
+
+    show screen poem(poem_test)
+
+    pause
+
+    play sound page_turn
+    $ TS.Screens(ts_hidescreens)
+    pause 1.0
+    hide screen poem
+    hide poem_dismiss
+    scene ts_club with dissolve
+    show monika 2bn at rn11
+
+    $ TS.Screens(ts_showscreens)
+
+    m "Ахуенно, я считаю."
+    m "Пиздатый блюр."
+
     #call showpoem (poem_y1, img="yuri 3t") from _call_showpoem
+
+    #$ br_paral_scene(("ts_club"), ("natsuki 1a"))
+    
+    #pause
+
 
     stop music fadeout 2
     scene black with dissolve2

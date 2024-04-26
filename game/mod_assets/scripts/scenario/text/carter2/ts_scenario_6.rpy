@@ -1072,6 +1072,9 @@ label ts_scenario_6:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
+    scene ts_notebook with dissolve:
+        blur 9.0
+
     $ TS.Screens(ts_showscreens)
 
     if not persistent.first_poem:

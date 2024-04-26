@@ -7,9 +7,9 @@ init:
     $ music_list_ts[" - "] = "mod_assets/source/audio/ost/.ogg"
 ###МУЗОНЫ
 ###ИЗ МЕНЮ
-    $ music_list_ts["Darkest Time - Main Theme"] = "mod_assets/source/audio/ost/menu_ost/ts_killyourself.ogg"
-    $ music_list_ts["finalded"] = "mod_assets/source/audio/ost/menu_ost/ts_finalded.ogg"
-    $ music_list_ts["MND - Polar Day"] = "mod_assets/source/audio/ost/menu_ost/ts_pd.ogg"
+    $ music_list_ts["Maybeshewill - He Films The Clouds Pt. 2"] = "mod_assets/source/audio/ost/ts_killyourself.ogg"
+    $ music_list_ts["Maybeshewill - Takotsubo"] = "mod_assets/source/audio/ost/menu_ost/ts_pd.ogg"
+    $ music_list_ts["Maybeshewill - Ixnay On The Autoplay"] = "mod_assets/source/audio/ost/menu_ost/ts_finalded.ogg"
     $ music_list_ts["[badmenuglitchname]"] = "mod_assets/source/audio/ost/menu_ost/bad_menu_ost.ogg"
     $ music_list_ts["Cjayho - Final Peace"] = "mod_assets/source/audio/ost/menu_ost/good_menu_ost.ogg"
 ###ИЗ ЗАСТАВОК
@@ -44,8 +44,10 @@ init:
     $ music_list_ts["Sergey Eybog - Silhouette In Sunset"] = "mod_assets/source/audio/ost/es/ts_sis.ogg"
     $ music_list_ts["Sergey Eybog - Waltz Of Doubts"] = "mod_assets/source/audio/ost/es/ts_wod.ogg"
 ###ОСТАЛЬНОЕ
+    $ music_list_ts["MND - Polar Day"] = "mod_assets/source/audio/ost/ts_cloudlyday.ogg"
     $ music_list_ts["Marco Beltrami - Wales"] = "mod_assets/source/audio/ost/ts_wales.ogg"
     $ music_list_ts["HCCH OST - Начало"] = "mod_assets/source/audio/ost/ts_emmk.ogg"
     $ music_list_ts["kelly bailey - inhuman frequency"] = "mod_assets/source/audio/ost/ts_hl2.ogg"
     $ music_list_ts["Pixies - Where is My Mind (piano cover)"] = "mod_assets/source/audio/ost/ts_gramatik.ogg"
     $ music_list_ts["Joel Nielsen - Black Mesa Theme"] = "mod_assets/source/audio/ost/ts_mk.ogg"
+    $ music_list_ts["Darkest Time - Main Theme"] = "mod_assets/source/audio/ost/ts_darkest.ogg"

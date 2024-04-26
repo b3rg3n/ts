@@ -17,6 +17,7 @@ init:
     default persistent.carter3menu = False
     default persistent.badendmenu = False
     default persistent.goodendmenu = False
+    default persistent.badendbg = "1"
 
 ### ПЕРЕМЕННЫЕ СКИПИНГА
     default persistent.firstmenushka = True

@@ -78,24 +78,47 @@ label main_menu:
     else:
 
         if persistent.badendmenu == True: #МЕНЮШКА ПОСЛЕ БЕД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
-            play music bad_menu_ost
-            scene ts_menu_bad_end
+            play music ts_killyourself fadein 5
+            scene black
+            if persistent.badendbg == "1":
+                show ts_menu_move_anim_bad_end
+            elif persistent.badendbg == "2":
+                show ts_menu_move_anim_bad_end1
+            else:
+                show ts_menu_move_anim_bad_end2
+            #show noise:
+            #    alpha 0.15
+            show zatemnenie_light
 
         elif persistent.goodendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
             play music good_menu_ost fadein 5
-            scene ts_sakura
+            scene ts_menu_move_anim_good_end:
+                xalign 0.5
+                yalign 0.5
+                zoom 1.0
+                parallel:
+                    linear 1.0 zoom 1.05
+                parallel:
+                    ease 1.0 xalign 0.45
+                    ease 1.0 xalign 0.54
+                    repeat
+                parallel:
+                    ease 1.5 rotate 1.2 zoom 1.07
+                    ease 1.5 rotate -1.4 zoom 1.045
+                    repeat
             show zatemnenie_light
-            show lepestki_krutyatsa
+            show overlay aw_memory_back_1
+            #show lepestki_krutyatsa
 
         elif persistent.carter3menu == True: #МЕНЮШКА КАРТЕРА 3
             if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-                play music ts_killyourself fadein 5
+                play music bad_menu_ost fadein 5
                 scene black
                 show ts_menu_move_anim
                 show ts_rain
                 show zatemnenie_light
             elif True: #ДЕНЬ
-                play music ts_killyourself fadein 5
+                play music bad_menu_ost fadein 5
                 scene black
                 show ts_menu_move_anim_three
                 show zatemnenie_light
@@ -129,10 +152,10 @@ label main_menu:
 
         if persistent.badendmenu == True: #МЕНЮШКА ПООСЛЕ БЕД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
             play sound br_glitch
-            show ts_menu_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            show ts_menu_move_anim_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
             pause 0.6
             stop sound
-            hide ts_menu_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            hide ts_menu_move_anim_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
 
         elif persistent.carter3menu == True: #МЕНЮШКА КАРТЕРА 3
             if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
@@ -182,10 +205,10 @@ label glitch_main_menu_ending:
     $ persistent.badendmenuperedglitch = False
     $ persistent.badendmenuskipglitch = True
     play sound br_glitch
-    show ts_menu_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    show ts_menu_move_anim_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
     pause 0.6
     stop sound
-    hide ts_menu_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    hide ts_menu_move_anim_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
     call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
 
 label splashscreen:

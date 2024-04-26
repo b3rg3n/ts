@@ -6,12 +6,6 @@ init:
     $ music_list_ts = {}
     $ music_list_ts[" - "] = "mod_assets/source/audio/ost/.ogg"
 ###МУЗОНЫ
-###ИЗ МЕНЮ
-    $ music_list_ts["Maybeshewill - He Films The Clouds Pt. 2"] = "mod_assets/source/audio/ost/ts_killyourself.ogg"
-    $ music_list_ts["Maybeshewill - Takotsubo"] = "mod_assets/source/audio/ost/menu_ost/ts_pd.ogg"
-    $ music_list_ts["Maybeshewill - Ixnay On The Autoplay"] = "mod_assets/source/audio/ost/menu_ost/ts_finalded.ogg"
-    $ music_list_ts["[badmenuglitchname]"] = "mod_assets/source/audio/ost/menu_ost/bad_menu_ost.ogg"
-    $ music_list_ts["Cjayho - Final Peace"] = "mod_assets/source/audio/ost/menu_ost/good_menu_ost.ogg"
 ###ИЗ ЗАСТАВОК
     $ music_list_ts["Hallucinator - Mosh"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_mosh.ogg"
     $ music_list_ts["Moe Era OST - Final Scene Soft"] = "mod_assets/source/audio/ost/menu_ost/zastavka/ts_soft.ogg"

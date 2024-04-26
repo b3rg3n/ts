@@ -97,6 +97,132 @@ init:
             ease 0.5 pos (0,720)
 
 ###АНИМАЦИИ МЕНЮШКИ
+
+    image ts_menu_move_anim_bad_end:
+        contains:
+            "mod_assets/source/images/intro/menu/monikill.webp" #with Fade(1.5, 1, 2)
+            zoom 1.0 xalign 0.0 yalign 0.6 alpha 0.0
+            parallel:
+                ease 0.2 alpha 1.0
+            parallel:
+                linear 15.0 xalign 1.0 yalign 0.4
+            "mod_assets/source/images/intro/menu/monikill.webp"
+            zoom 1.0 xalign 1.0 yalign 0.4 alpha 0.0
+            parallel:
+                ease 0.2 alpha 1.0
+            parallel:
+                linear 15.0 xalign 0.0 yalign 0.6
+            repeat
+        contains:
+            parallel:
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+            parallel:
+                parallel:
+                    choice:
+                        xzoom 1.0
+                    choice:
+                        xzoom -1.0
+                parallel:
+                    choice:
+                        yzoom 1.0
+                    choice:
+                        yzoom -1.0
+            alpha 0.5
+            pause 0.02
+            repeat
+
+    image ts_menu_move_anim_bad_end1:
+        contains:
+            "mod_assets/source/images/intro/menu/monikill1.webp" #with Fade(1.5, 1, 2)
+            zoom 1.0 xalign 0.0 yalign 0.6 alpha 0.0
+            parallel:
+                ease 0.2 alpha 1.0
+            parallel:
+                linear 15.0 xalign 1.0 yalign 0.4
+            "mod_assets/source/images/intro/menu/monikill1.webp"
+            zoom 1.0 xalign 1.0 yalign 0.4 alpha 0.0
+            parallel:
+                ease 0.2 alpha 1.0
+            parallel:
+                linear 15.0 xalign 0.0 yalign 0.6
+            repeat
+        contains:
+            parallel:
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+            parallel:
+                parallel:
+                    choice:
+                        xzoom 1.0
+                    choice:
+                        xzoom -1.0
+                parallel:
+                    choice:
+                        yzoom 1.0
+                    choice:
+                        yzoom -1.0
+            alpha 0.5
+            pause 0.02
+            repeat
+
+    image ts_menu_move_anim_good_end = "mod_assets/source/images/intro/menu/good_menu_anim_suka.webp"
+
+    image ts_menu_move_anim_good_end1:
+        contains:
+            "mod_assets/source/images/intro/menu/good_menu_anim_suka.webp" #with Fade(1.5, 1, 2)
+            zoom 1.0 xalign 0.0 yalign 0.6 alpha 0.0
+            parallel:
+                ease 0.2 alpha 1.0
+            parallel:
+                linear 15.0 xalign 1.0 yalign 0.4
+            "mod_assets/source/images/intro/menu/good_menu_anim_suka.webp"
+            zoom 1.0 xalign 1.0 yalign 0.4 alpha 0.0
+            parallel:
+                ease 0.2 alpha 1.0
+            parallel:
+                linear 15.0 xalign 0.0 yalign 0.6
+            repeat
+        contains:
+            parallel:
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                choice:
+                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+            parallel:
+                parallel:
+                    choice:
+                        xzoom 1.0
+                    choice:
+                        xzoom -1.0
+                parallel:
+                    choice:
+                        yzoom 1.0
+                    choice:
+                        yzoom -1.0
+            alpha 0.5
+            pause 0.02
+            repeat
+
     image ts_menu_move_anim_three:
         contains:
             "mod_assets/source/images/intro/menu/ts_menu_art3.webp"

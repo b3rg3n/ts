@@ -4,6 +4,11 @@
 # TEAM ANARCHY (c)
 # SINCE 2024
 
+image elena a test = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), "mod_assets/source/images/spr/elena/A.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), "mod_assets/source/images/spr/elena/A.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), "mod_assets/source/images/spr/elena/A.webp") )
+
 ####CUSTOM HUETA
 ####ЕЛЕНА
 image elena a = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/elena/A.webp")

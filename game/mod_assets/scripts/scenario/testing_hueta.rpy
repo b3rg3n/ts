@@ -43,41 +43,16 @@ label testing_label_blya:
     m "Ахуенно, я считаю."
     m "Пиздатый блюр."
 
-    #call showpoem (poem_y1, img="yuri 3t") from _call_showpoem
+    show elena a test at rn11
+    pause
 
-    #$ br_paral_scene(("ts_club"), ("natsuki 1a"))
-    
-    #pause
-
-
-    stop music fadeout 2
-    scene black with dissolve2
-
-    scene ts_city_day_rain
+    $ ts_day_time()
 
     pause
 
-    scene ts_club
-    show natsuki 1a zorder 2 at t41
-    show noise zorder 3:
-        alpha 0.2
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ ts_sunset_time()
 
     pause
-
-    show monika 1a zorder 2 at ln42
-
-    pause
-
-    show yuri 1a zorder 2 at ln43
-
-    pause
-
-    show sayori 1a zorder 2 at ln44
-
-    pause
-
-    return
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     $ pps = 5

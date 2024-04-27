@@ -1,4 +1,5 @@
 # Useless files
+.vscode/
 game/cache/
 game/saves/
 game/mod_assets/scripts/.vscode/

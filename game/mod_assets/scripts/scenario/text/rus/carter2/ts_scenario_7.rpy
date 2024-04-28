@@ -552,7 +552,7 @@ label ts_scenario_7:
     "...нет, Нацуки определённо не умеет выбирать друзей."
     hide himari
     hide elena
-    show monika 2i at fi11
+    show monika 2i at f11
     em "Ты на себя-то посмотри. У неё они хотя бы есть."
     show monika 2h at t11
     m "Да лучше вообще без друзей жить, чем с такими..."
@@ -933,7 +933,7 @@ label cartersevenpoemsblya:
                 m "Да. Поэтому в сложности и абстрактности стихотворения я победила саму себя..."
                 show sayori 2f at f11
                 s "..."
-                show sayori 2s at f11
+                show sayori 2s at t11
                 s "Та-а-ак... Хочешь теперь моё почитать?"
             s 3l "Не переживай, я в стихосложении не специалист, это вообще моё самое первое стихотворение..."
             s "Так что я уверена, что мой стих и рядом не будет стоять с твоим..."
@@ -947,7 +947,7 @@ label cartersevenpoemsblya:
 
             scene ts_club:
                 blur 9.0
-            show sayori 3l at f11:
+            show sayori 3l at i11:
                 blur 9.0
             with dissolve
 
@@ -971,12 +971,11 @@ label cartersevenpoemsblya:
             hide poem_dismiss
 
             scene ts_club
-            show sayori 3l at f11
+            show sayori 2l at i11
             with dissolve
 
             $ TS.Screens(ts_showscreens)
 
-            show sayori 2l at f11
             s "Знаю, знаю, я бездарность, стих тебе не понравился, он так по-простому написан, и кажется, будто я написала это буквально три минуты назад{nw}"
             em "Эй, это моя реплика!"
             m "Мне понравилось."

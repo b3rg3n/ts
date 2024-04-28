@@ -113,7 +113,10 @@ label ts_start:
     else:
         scene black with dissolve2
         pause 2
-        jump ts_scenario_0
+        if _preferences.language == "english":
+            jump ts_scenario_0_eng
+        else:
+            jump ts_scenario_0
 
 screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
 

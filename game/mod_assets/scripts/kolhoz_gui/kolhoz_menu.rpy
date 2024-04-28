@@ -234,7 +234,7 @@ label splashscreen:
                 _preferences.language = "english"
                 translation_new=translation_en
                 translate_names("english")
-                reload_names()
+                #reload_names()
                 renpy.show("ru_ground", [lang_ru_ground])
                 renpy.show("en_hover", [lang_en_hover])
 

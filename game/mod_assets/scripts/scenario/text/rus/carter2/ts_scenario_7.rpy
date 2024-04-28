@@ -941,24 +941,41 @@ label cartersevenpoemsblya:
                 m "Конечно, давай."
                 if ts_y_carterseven_readpoem and ts_n_carterseven_readpoem == False:
                     "В конце концов, я это всё мероприятие и придумала, и мне же теперь за мои хотелки и отдуваться..."
-                poem_s1 = Poem(
-                author = "sayori",
-                title = "Дорогие солнца лучики",
-                text = """\
-                То, как ваш свет через жалюзи утром проходит,
-                Даёт мне понять, что вы скучали по мне.
-                Вы целуете меня в лобик, помогая с постели подняться скорей.
-                И глаза открыть, если сонливость с них долго не сходит
-                
-                Вы просите меня выйти поиграть вместе с вами?
-                Верите, что дождливый день прогнать я смогу?
-                Я гляжу наверх: гладь да синева под небесами.
-                Вам я тоже верю, по секрету скажу.
 
-                Если б не вы, я бы спала дни и ночи.
-                Но я не сержусь,
+                $ TS.Screens(ts_hidescreens)
+                " {w=1.0}{nw}"
 
-                Только вот кушать хочется очень."""
+                scene ts_club:
+                    blur 9.0
+                show sayori 3l at f11:
+                    blur 9.0
+                with dissolve
+
+                $ TS.Screens(ts_showscreens)
+
+                if not persistent.first_poem:
+                    $ persistent.first_poem = True
+                    show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
+                        xpos 1050 ypos 590
+
+                play sound page_turn
+
+                show screen poem(poem_s1)
+
+                pause
+
+                play sound page_turn
+                $ TS.Screens(ts_hidescreens)
+                pause 1.0
+                hide screen poem
+                hide poem_dismiss
+
+                scene ts_club
+                show sayori 3l at f11
+                with dissolve
+
+                $ TS.Screens(ts_showscreens)
+
                 show sayori 2l at f11
                 s "Знаю, знаю, я бездарность, стих тебе не понравился, он так по-простому написан, и кажется, будто я написала это буквально три минуты назад{nw}"
                 em "Эй, это моя реплика!"
@@ -1100,19 +1117,39 @@ label cartersevenpoemsblya:
                 show natsuki 12e at f11
                 n "...ладно, читай уж. Только предупреждаю, он и рядом с твоим стихом не стоит."
                 
-                poem_n1 = Poem(
-                author = "natsuki",
-                title = "Орлы могут летать",
-                text = """\
-                Обезьянки могут лазать,
-                Сверчки же - ловко прыгать,
-                Лошадки - скакать грациозно,
-                Совы - зыркать серьёзно,
-                Гепарды - быстро бегать,
-                Орлы - летать под облаками,
-                А люди могут попытаться,
-                Но на этом всё."""
-                )
+                $ TS.Screens(ts_hidescreens)
+                " {w=1.0}{nw}"
+
+                scene ts_club:
+                    blur 9.0
+                show natsuki 12e at f11:
+                    blur 9.0
+                with dissolve
+
+                $ TS.Screens(ts_showscreens)
+
+                if not persistent.first_poem:
+                    $ persistent.first_poem = True
+                    show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
+                        xpos 1050 ypos 590
+
+                play sound page_turn
+
+                show screen poem(poem_n1)
+
+                pause
+
+                play sound page_turn
+                $ TS.Screens(ts_hidescreens)
+                pause 1.0
+                hide screen poem
+                hide poem_dismiss
+
+                scene ts_club
+                show natsuki 12e at f11
+                with dissolve
+
+                $ TS.Screens(ts_showscreens)
                 
                 "Нет, я и так примерно представляла по количеству строк, что оно короткое, но чтобы настолько?"
                 show natsuki 12e at f11
@@ -1136,11 +1173,11 @@ label cartersevenpoemsblya:
                 show natsuki 2d at f11
                 n "Что, п-правда???"
                 n "Спасибо, Моника! Ты самая лучшая подруга, о которой я могла бы мечтать!"
-                if s_readpoem_1 == True:
+                if ts_s_carterseven_readpoem == True:
                     n 2c "Знаешь, когда я обменивалась стихами с Юри, она восприняла мой стих куда более прохладно."
-                elif y_readpoem_1 == True:
+                elif ts_y_carterseven_readpoem == True:
                     n 2c "Знаешь, когда я обменивалась стихами с Сайори, она тоже его похвалила, но и близко не так, как ты."
-                elif y_readpoem_1 and s_readpoem_1 == True:
+                elif ts_y_carterseven_readpoem and ts_s_carterseven_readpoem == True:
                     n 2c "Знаешь, когда я обменивалась стихами с другими девочками, они в целом его похвалили, но гораздо прохладнее и безразличнее."
                 show natsuki 1a at t11
                 "Ну, мне же не нужно, чтобы после первого же обмена девочки коллективно жаловались на то, что я заваливаю их непомерной работой, и что у них и без того домашние задания есть."
@@ -1162,7 +1199,7 @@ label cartersevenpoemsblya:
                 m "Ну... спасибо ещё раз, Нацуки."
                 show natsuki 1d at f11
                 n "Да не за что!"
-                if s_readpoem_1 and y_readpoem_1 == True:
+                if ts_s_carterseven_readpoem and ts_y_carterseven_readpoem == True:
                     hide natsuki
                 else:
                     n 1d "Ну, я дальше пойду?"
@@ -1170,15 +1207,17 @@ label cartersevenpoemsblya:
                     m "Иди, конечно..."
                     hide natsuki
                     "А сама я дальше пойду к..."
-                #call poemresponse_natsuki from _call_poemresponse_natsuki
-            "Юри" #if not y_readpoem:
-                $ y_readpoem_1 = True
-                if poemsread == 0:
+                jump cartersevenpoemsblya
+
+            "Юри" if not ts_y_carterseven_readpoem:
+                $ ts_y_carterseven_readpoem = True
+                if not ts_first_carterseven_readpoem:
                     "Юри у нас самая начитанная в клубе, а значит, самая опытная в поэзии."
                     "По крайней мере, Сайори так кажется..."
                     "В любом случае, начать лучше с неё, чтобы когда дело дойдёт до остальных, мне было бы уже не так обидно за мои бездарные писательские навыки."
                     em "Ну вот, ты и сама уже об этом говоришь! Значит, точно бездарность!"
                     "Отстань."
+                    $ ts_first_carterseven_readpoem = True
                 #вайплефт на бг клуба
                 show yuri 2b at f11
                 y "Здравствуй, Моника."
@@ -1202,7 +1241,7 @@ label cartersevenpoemsblya:
                 y 2q "П-правда, позже мне показалось, что в моём стихотворении всё не так, и... переписала его..."
                 y 2d "Но зато теперь стих чист, опрятен, и его можно показывать другим!"
                 show yuri 1c at t11
-                if s_readpoem_1 and n_readpoem_1 == True:
+                if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem == True:
                     "Ну, хоть один человек догадался, что не обязательно предоставлять мне стихи до конца встречи клуба, и что это терпит до завтрашней встречи."
                     "Правда, Сайори что-то говорила про то, что она переписывала стих по памяти... Но это другое."
                 m "Ну так... покажешь?"
@@ -1210,7 +1249,7 @@ label cartersevenpoemsblya:
                 y "Конечно!"
                 show yuri 3c at t11
                 "Юри достаёт записную книжку со своим стихотворением."
-                if s_readpoem_1 and n_readpoem_1 == True:
+                if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem == True:
                     "Из всех трёх её книжка выглядит самой красивой, хотя и не могу не отметить, что очень уж она своеобразная."
                 else:
                     "Красивая, хотя и... очень своеобразная."
@@ -1240,7 +1279,7 @@ label cartersevenpoemsblya:
                 y 2v "В-видно, твоё стихотворение - уже далеко не первое..."
                 y 2zi "Какой у тебя писательский опыт?"
                 show yuri 2s at t11
-                if n_readpoem_1 == True:
+                if ts_n_carterseven_readpoem == True:
                     "Юри повторяет тот же вопрос, что и Нацуки."
                     "Что же, буду давать такой же ответ."
                 m "Н-ну... Небольшой..."
@@ -1262,10 +1301,10 @@ label cartersevenpoemsblya:
                 em "И кто за это в ответе?"
                 "«А про кого этот стих, напомните-ка?»"
                 em "Ну так отчитывают тебя, а не меня!"
-                if s_readpoem_1 and n_readpoem_1 == False:
+                if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem == False:
                     "Но зато я в итоге оказалась права - Юри действительно самая опытная в плане писательских навыков."
                 m "С-спасибо, Юри, за конструктивную критику..."
-                if s_readpoem_1 and n_readpoem_1 == True:
+                if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem == True:
                     "Хоть кто-то действительно понял суть этого мероприятия..."
                 show yuri 1zi at f11
                 y "Всегда пожалуйста."
@@ -1276,20 +1315,39 @@ label cartersevenpoemsblya:
                 show yuri 2d at f11
                 y "Тогда вот!"
                 
-                poem_y1 = Poem(
-                author = "yuri",
-                title = "Призрак в тусклом свете",
-                text = """\
-                Пряди моих волос злато отражают, в янтарном свете ниспадающем
-                Купаясь.
-                А вот его источник, стоящий одиноко.
-                Последний уличный фонарь, временем испытанный жестоко.
-                Неоном будущего сине-изумрудным он вскоре будет заменён.
-                И всё же продолжаю плыть я в нём.
-                В тиши вдыхаю воздух настоящего, но в прошлом существую.
-                Мерцает свет.
-                Мерцаю я ему в ответ."""
-                )
+                $ TS.Screens(ts_hidescreens)
+                " {w=1.0}{nw}"
+
+                scene ts_club:
+                    blur 9.0
+                show yuri 2d at f11:
+                    blur 9.0
+                with dissolve
+
+                $ TS.Screens(ts_showscreens)
+
+                if not persistent.first_poem:
+                    $ persistent.first_poem = True
+                    show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
+                        xpos 1050 ypos 590
+
+                play sound page_turn
+
+                show screen poem(poem_y1)
+
+                pause
+
+                play sound page_turn
+                $ TS.Screens(ts_hidescreens)
+                pause 1.0
+                hide screen poem
+                hide poem_dismiss
+
+                scene ts_club
+                show yuri 2d at f11
+                with dissolve
+
+                $ TS.Screens(ts_showscreens)
                 
                 "Постойте... а здесь вообще ритм есть?"
                 "Я понимаю, что Юри критиковала моё стихотворение за недостаточное отсутствие ритма, но моё стихотворение, как она выразилась, было «хаотическим»."
@@ -1311,7 +1369,7 @@ label cartersevenpoemsblya:
                 y "М-может... м-может, и так..."
                 y 2zi "Т-тогда... я пойду дальше?"
                 show yuri 2s at t11
-                if n_readpoem_1 and s_readpoem_1 == True:
+                if ts_n_carterseven_readpoem and ts_s_carterseven_readpoem == True:
                     m "Так мы же уже закончили..."
                     show yuri 2q at f11
                     y "Д-да, в-верно, п-прости..."
@@ -1333,7 +1391,7 @@ label cartersevenpoemsblya:
                     hide yuri
                     "Тогда и я пойду дальше..."
                     "А следующей у нас будет..."
-                #КОНЕЦ ПОЕМРЕСПОНСОВ ЭТИХ ЕБАНЫХ СУКА КАК ЖЕ Я ЗАЕБАЛСЯ БЛЯТЬ
+                jump cartersevenpoemsblya
 #вайплефт на клуб
 
     play music t8

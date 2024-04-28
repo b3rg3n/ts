@@ -1800,4 +1800,4 @@ label ts_scenario_6:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    return
+    jump ts_scenario_7

@@ -53,8 +53,3 @@ init -1001 python:
         pos = renpy.music.get_pos(channel=channel)
         if pos: return pos
         return 0
-
-    def reload_names(): # ПЕРЕЗАГРУЖАЕМ ИМЕНА ПРИ ПЕРЕВОДЕ
-        global store
-        for x in store.names_list:
-            char_define(x)

@@ -12,11 +12,44 @@ init:
     define em = DynamicCharacter('em_name', image='monika', what_prefix='"', what_suffix='"')
     define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"')
     define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"')
-    define ny = Character('Нацуки и Юри', what_prefix='"', what_suffix='"')
-    define ts_unk = Character('???', what_prefix='"', what_suffix='"')
+    define ny = DynamicCharacter('natandyuriname', what_prefix='"', what_suffix='"')
+    define ts_unk = DynamicCharacter('unk_name', what_prefix='"', what_suffix='"')
     define pod1 = DynamicCharacter('pod1_name', image='himari', what_prefix='"', what_suffix='"')
     define pod2 = DynamicCharacter('pod2_name', image='elena', what_prefix='"', what_suffix='"')
     define cm = DynamicCharacter('cm_name', image='monika', what_prefix='"', what_suffix='"')
     define ts_mt = DynamicCharacter('ts_mt_name', image='monika', what_prefix='"', what_suffix='"')
+    define stud = DynamicCharacter('stud_name', what_prefix='"', what_suffix='"')
 ###NVL ПАЦАНТРЕ
     define nvlbazar = Character (u' ', kind=nvl, color = "#dd9933", what_color="FFFFFF",)
+
+### ИМЕНА
+    if _preferences.language == "english":
+        $ teacher_name = "Teacher"
+        $ ts_ft_name = "Dad"
+        $ s_name = "Sayori"
+        $ m_name = "Monika"
+        $ y_name = "Yuri"
+        $ n_name = "Natsuki"
+        $ pod1_name = "Girlfriend"
+        $ pod2_name = "Girlfriend"
+        $ ts_mt_name = "Minami"
+        $ natandyuriname = "Natsuki and Yuri"
+        $ stud_name = "Classmate"
+    else:
+        $ teacher_name = "Учитель"
+        $ ts_ft_name = "Папа"
+        $ s_name = "Сайори"
+        $ m_name = "Моника"
+        $ y_name = "Юри"
+        $ n_name = "Нацуки"
+        $ pod1_name = "Подруга"
+        $ pod2_name = "Подруга"
+        $ ts_mt_name = "Минами"
+        $ natandyuriname = "Нацуки и Юри"
+        $ stud_name = "Одноклассник"
+
+    $ unk_name = "???"
+    $ em_name = glitchtext(12)
+    $ player = "[user]"
+    $ razrab_name = "BERGEN"
+    $ cm_name = "???"

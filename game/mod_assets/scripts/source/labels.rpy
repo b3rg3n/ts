@@ -29,21 +29,6 @@ init:
     default persistent.badendmenuperedglitch = False
     default persistent.badendmenuskipglitch = False
 
-### ИМЕНА
-    default teacher_name = "Учитель"
-    default ts_ft_name = "Папа"
-    default s_name = "Сайори"
-    default m_name = "Моника"
-    default y_name = "Юри"
-    default n_name = "Нацуки"
-    default em_name = glitchtext(12)
-    default player = "[user]"
-    default razrab_name = "BERGEN"
-    default cm_name = "???"
-    default pod1_name = "Подруга"
-    default pod2_name = "Подруга"
-    default ts_mt_name = "Минами"
-
     default text_pizda_nahui = glitchtext(24)
     default badmenuglitchname = glitchtext(7)
     default sost_glitch_hueta = glitchtext(6)

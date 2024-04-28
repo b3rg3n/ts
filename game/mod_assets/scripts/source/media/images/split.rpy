@@ -3,8 +3,8 @@
 # SINCE 2024
 
 init:
-    image ts_hotel_split = "mod_assets/source/images/bg/split/hotel_split.webp"
-    image ts_gost_split = "mod_assets/source/images/bg/split/gost_split.webp"
+    image ts_hotel_split = ts_bg + "split/hotel_split.webp"
+    image ts_gost_split = ts_bg + "split/gost_split.webp"
 
     image ts_gost_split_animated: # pause 0.99
         default subpixel True 

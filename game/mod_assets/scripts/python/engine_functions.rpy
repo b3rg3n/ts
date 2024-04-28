@@ -12,6 +12,18 @@ init -1199 python:
             if file.endswith((".wav", ".mp2", ".mp3", ".ogg", ".opus")):
                 globals()[file_name] = file
 
+    # ПЕРЕМЕННЫЕ ДЛЯ УКОРОТА ПУТИ ДЕФАЙНА
+    ts_source = "mod_assets/source/"
+    ts_images = ts_source + "images/"
+    ts_spr = ts_images + "spr/"
+    ts_bg = ts_images + "bg/"
+    ts_cg = ts_images + "cg/"
+    ts_anim = ts_images + "anim/"
+    ts_fonts = ts_source + "fonts/"
+    ts_videosos = ts_source + "videosos/"
+    ts_muzzon = ts_source + "audio/ost/"
+    ts_sfx = ts_source + "audio/sfx/"
+    ts_gui = ts_images + "gui/"
 
 init -1001 python:
 # РЕГЕСТРИРУЕМ ДОП КАНАЛЫ

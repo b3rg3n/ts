@@ -26,53 +26,53 @@ init:
 
 ###ЛАГАЮЩЕЕ ЛОГО, ЕБАТЬ
     image anarchy_glitch_logo:
-        "mod_assets/source/images/anarchy/anarchisty1.webp"
+        ts_images + "anarchy/anarchisty1.webp"
         pause 0.1
-        "mod_assets/source/images/anarchy/anarchisty3.webp"
+        ts_images + "anarchy/anarchisty3.webp"
         pause 0.1
-        "mod_assets/source/images/anarchy/anarchisty2.webp"
+        ts_images + "anarchy/anarchisty2.webp"
         pause 0.1
-        "mod_assets/source/images/anarchy/anarchisty3.webp"
+        ts_images + "anarchy/anarchisty3.webp"
         pause 0.1
-        "mod_assets/source/images/anarchy/anarchisty1.webp"
+        ts_images + "anarchy/anarchisty1.webp"
         pause 0.1
-        "mod_assets/source/images/anarchy/anarchisty2.webp"
+        ts_images + "anarchy/anarchisty2.webp"
         pause 0.1
-        "mod_assets/source/images/anarchy/anarchisty3.webp"
+        ts_images + "anarchy/anarchisty3.webp"
         pause 0.1
-        "mod_assets/source/images/anarchy/anarchisty1.webp"
+        ts_images + "anarchy/anarchisty1.webp"
         pause 0.1
-        "mod_assets/source/images/anarchy/anarchisty2.webp"
+        ts_images + "anarchy/anarchisty2.webp"
         pause 0.1
         repeat
 
 ###АНИМАЦИЯ КОШМАРА МОНИКИ В КОНЦЕ 4 ГЛАВЫ 1 АКТА НАХ
     image vse_pizda_monike:
-        "mod_assets/source/images/cg/brg_kolhoz_blya/s1.png" with poplil_pacan1
+        ts_cg + "brg_kolhoz_blya/s1.png" with poplil_pacan1
         pause 5
-        "mod_assets/source/images/cg/brg_kolhoz_blya/1a.webp" with poplil_pacan1
+        ts_cg + "brg_kolhoz_blya/1a.webp" with poplil_pacan1
         pause 5
-        "mod_assets/source/images/cg/brg_kolhoz_blya/n_cg2_bg.webp" with poplil_pacan1
+        ts_cg + "brg_kolhoz_blya/n_cg2_bg.webp" with poplil_pacan1
         pause 5
-        "mod_assets/source/images/cg/brg_kolhoz_blya/monika_scare.webp" with poplil_pacan1
+        ts_cg + "brg_kolhoz_blya/monika_scare.webp" with poplil_pacan1
         pause 5
-        "mod_assets/source/images/cg/brg_kolhoz_blya/s2.png" with poplil_pacan1
+        ts_cg + "brg_kolhoz_blya/s2.png" with poplil_pacan1
         pause 5
-        "mod_assets/source/images/cg/brg_kolhoz_blya/3b.webp" with poplil_pacan1
+        ts_cg + "brg_kolhoz_blya/3b.webp" with poplil_pacan1
         pause 5
         repeat
 
 ###АНИМАЦИЯ ПИЗДЕЦА В БЛЕКАУТЕ
     image anim_exhausted:
-        "mod_assets/source/images/anim/blackout/blackout_exh2.webp"
+        ts_anim + "blackout/blackout_exh2.webp"
         0.03 # Задержка
-        "mod_assets/source/images/anim/blackout/blackout_exh3.webp"
+        ts_anim + "blackout/blackout_exh3.webp"
         0.03 # Задержка
-        "mod_assets/source/images/anim/blackout/blackout_exh2.webp"
+        ts_anim + "blackout/blackout_exh2.webp"
         0.03 # Задержка
-        "mod_assets/source/images/anim/blackout/blackout_exh3.webp"
+        ts_anim + "blackout/blackout_exh3.webp"
         0.03 # Задержка
-        "mod_assets/source/images/anim/blackout/blackout_exh2.webp"
+        ts_anim + "blackout/blackout_exh2.webp"
         0.03 # Задержка
         repeat # Не убирать
 
@@ -100,13 +100,13 @@ init:
 
     image ts_menu_move_anim_bad_end:
         contains:
-            "mod_assets/source/images/intro/menu/monikill.webp" #with Fade(1.5, 1, 2)
+            ts_images + "intro/menu/monikill.webp" #with Fade(1.5, 1, 2)
             zoom 1.0 xalign 0.0 yalign 0.6 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
             parallel:
                 linear 15.0 xalign 1.0 yalign 0.4
-            "mod_assets/source/images/intro/menu/monikill.webp"
+            ts_images + "intro/menu/monikill.webp"
             zoom 1.0 xalign 1.0 yalign 0.4 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
@@ -116,13 +116,13 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                    ts_anim + "mb/aw_o_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                    ts_anim + "mb/aw_o_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                    ts_anim + "mb/aw_o_3.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+                    ts_anim + "mb/aw_o_4.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -141,13 +141,13 @@ init:
 
     image ts_menu_move_anim_bad_end1:
         contains:
-            "mod_assets/source/images/intro/menu/monikill1.webp" #with Fade(1.5, 1, 2)
+            ts_images + "intro/menu/monikill1.webp" #with Fade(1.5, 1, 2)
             zoom 1.0 xalign 0.0 yalign 0.6 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
             parallel:
                 linear 15.0 xalign 1.0 yalign 0.4
-            "mod_assets/source/images/intro/menu/monikill1.webp"
+            ts_images + "intro/menu/monikill1.webp"
             zoom 1.0 xalign 1.0 yalign 0.4 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
@@ -157,13 +157,13 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                    ts_anim + "mb/aw_o_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                    ts_anim + "mb/aw_o_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                    ts_anim + "mb/aw_o_3.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+                    ts_anim + "mb/aw_o_4.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -180,17 +180,17 @@ init:
             pause 0.02
             repeat
 
-    image ts_menu_move_anim_good_end = "mod_assets/source/images/intro/menu/good_menu_anim_suka.webp"
+    image ts_menu_move_anim_good_end = ts_images + "intro/menu/good_menu_anim_suka.webp"
 
     image ts_menu_move_anim_good_end1:
         contains:
-            "mod_assets/source/images/intro/menu/good_menu_anim_suka.webp" #with Fade(1.5, 1, 2)
+            ts_images + "intro/menu/good_menu_anim_suka.webp" #with Fade(1.5, 1, 2)
             zoom 1.0 xalign 0.0 yalign 0.6 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
             parallel:
                 linear 15.0 xalign 1.0 yalign 0.4
-            "mod_assets/source/images/intro/menu/good_menu_anim_suka.webp"
+            ts_images + "intro/menu/good_menu_anim_suka.webp"
             zoom 1.0 xalign 1.0 yalign 0.4 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
@@ -200,13 +200,13 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                    ts_anim + "mb/aw_o_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                    ts_anim + "mb/aw_o_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                    ts_anim + "mb/aw_o_3.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+                    ts_anim + "mb/aw_o_4.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -225,13 +225,13 @@ init:
 
     image ts_menu_move_anim_three:
         contains:
-            "mod_assets/source/images/intro/menu/ts_menu_art3.webp"
+            ts_images + "intro/menu/ts_menu_art3.webp"
             zoom 1.0 xalign 0.0 yalign 0.6 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
             parallel:
                 linear 15.0 xalign 1.0 yalign 0.4
-            "mod_assets/source/images/intro/menu/ts_menu_art3.webp"
+            ts_images + "intro/menu/ts_menu_art3.webp"
             zoom 1.0 xalign 1.0 yalign 0.4 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
@@ -241,13 +241,13 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                    ts_anim + "mb/aw_o_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                    ts_anim + "mb/aw_o_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                    ts_anim + "mb/aw_o_3.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+                    ts_anim + "mb/aw_o_4.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -266,19 +266,19 @@ init:
 
     image ts_menu_move_anim:
         contains:
-            "mod_assets/source/images/intro/menu/menu_art1.webp" #with Fade(1.5, 1, 2)
+            ts_images + "intro/menu/menu_art1.webp" #with Fade(1.5, 1, 2)
             zoom 1.0 xalign 0.0 yalign 0.6 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
             parallel:
                 linear 15.0 xalign 1.0 yalign 0.4
-            "mod_assets/source/images/intro/menu/menu_art2.webp" #with Fade(1.5, 1, 2)
+            ts_images + "intro/menu/menu_art2.webp" #with Fade(1.5, 1, 2)
             zoom 1.0 xalign 0.0 yalign 0.6 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
             parallel:
                 linear 15.0 xalign 1.0 yalign 0.4
-            "mod_assets/source/images/intro/menu/menu_art3.webp" #with Fade(1.5, 1, 2)
+            ts_images + "intro/menu/menu_art3.webp" #with Fade(1.5, 1, 2)
             zoom 1.0 xalign 0.0 yalign 0.6 alpha 0.0
             parallel:
                 ease 0.2 alpha 1.0
@@ -288,13 +288,13 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                    ts_anim + "mb/aw_o_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                    ts_anim + "mb/aw_o_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                    ts_anim + "mb/aw_o_3.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+                    ts_anim + "mb/aw_o_4.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -323,13 +323,13 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                    ts_anim + "mb/aw_o_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                    ts_anim + "mb/aw_o_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                    ts_anim + "mb/aw_o_3.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+                    ts_anim + "mb/aw_o_4.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -357,13 +357,13 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                    ts_anim + "mb/aw_o_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                    ts_anim + "mb/aw_o_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                    ts_anim + "mb/aw_o_3.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+                    ts_anim + "mb/aw_o_4.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -391,13 +391,13 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                    ts_anim + "mb/aw_o_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                    ts_anim + "mb/aw_o_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                    ts_anim + "mb/aw_o_3.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+                    ts_anim + "mb/aw_o_4.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -425,13 +425,13 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                    ts_anim + "mb/aw_o_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                    ts_anim + "mb/aw_o_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                    ts_anim + "mb/aw_o_3.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+                    ts_anim + "mb/aw_o_4.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -523,40 +523,40 @@ init:
 ###БЕЛЫЙ ШУМ
     image noise:
         truecenter
-        "mod_assets/source/images/anim/noise/noise1.webp"
+        ts_anim + "noise/noise1.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise2.webp"
+        ts_anim + "noise/noise2.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise3.webp"
+        ts_anim + "noise/noise3.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise4.webp"
+        ts_anim + "noise/noise4.webp"
         pause 0.1
         xzoom -1
-        "mod_assets/source/images/anim/noise/noise1.webp"
+        ts_anim + "noise/noise1.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise2.webp"
+        ts_anim + "noise/noise2.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise3.webp"
+        ts_anim + "noise/noise3.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise4.webp"
+        ts_anim + "noise/noise4.webp"
         pause 0.1
         yzoom -1
-        "mod_assets/source/images/anim/noise/noise1.webp"
+        ts_anim + "noise/noise1.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise2.webp"
+        ts_anim + "noise/noise2.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise3.webp"
+        ts_anim + "noise/noise3.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise4.webp"
+        ts_anim + "noise/noise4.webp"
         pause 0.1
         xzoom 1
-        "mod_assets/source/images/anim/noise/noise1.webp"
+        ts_anim + "noise/noise1.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise2.webp"
+        ts_anim + "noise/noise2.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise3.webp"
+        ts_anim + "noise/noise3.webp"
         pause 0.1
-        "mod_assets/source/images/anim/noise/noise4.webp"
+        ts_anim + "noise/noise4.webp"
         pause 0.1
         yzoom 1
         repeat
@@ -564,21 +564,21 @@ init:
 ###ЭФФЕКТ ЗЕНЕК
     image unblink:
         contains:
-            "mod_assets/source/images/anim/zenki/blink_up.webp"
+            ts_anim + "zenki/blink_up.webp"
             xalign 0 yalign 0
             ease 1.5 pos (0,-1080)
         contains:
-            "mod_assets/source/images/anim/zenki/blink_down.webp"
+            ts_anim + "zenki/blink_down.webp"
             xalign 0 yalign 0
             ease 1.5 pos (0,1080)
 
     image blink:
         contains:
-            "mod_assets/source/images/anim/zenki/blink_up.webp"
+            ts_anim + "zenki/blink_up.webp"
             pos (0,-1080)
             ease 1.5 xalign 0 yalign 0
         contains:
-            "mod_assets/source/images/anim/zenki/blink_down.webp"
+            ts_anim + "zenki/blink_down.webp"
             pos (0,1080)
             ease 1.5 xalign 0 yalign 0
 
@@ -587,13 +587,13 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_1.webp"
+                    ts_anim + "mb/aw_o_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_2.webp"
+                    ts_anim + "mb/aw_o_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_3.webp"
+                    ts_anim + "mb/aw_o_3.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/aw_o_4.webp"
+                    ts_anim + "mb/aw_o_4.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -614,11 +614,11 @@ init:
         contains:
             parallel:
                 choice:
-                    "mod_assets/source/images/anim/mb/a_1.webp"
+                    ts_anim + "mb/a_1.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/a_2.webp"
+                    ts_anim + "mb/a_2.webp"
                 choice:
-                    "mod_assets/source/images/anim/mb/a_3.webp"
+                    ts_anim + "mb/a_3.webp"
             xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
             parallel:
                 parallel:
@@ -638,28 +638,28 @@ init:
 ###АНИМАЦИЯ ДОЖДЯ
     image ts_rain:
         contains:
-            "mod_assets/source/images/anim/rain.webp"
+            ts_anim + "rain.webp"
             xpos 0.5 ypos -1.0
         contains:
-            "mod_assets/source/images/anim/rain.webp"
+            ts_anim + "rain.webp"
             xpos -0.5 ypos -1.0
         contains:
-            "mod_assets/source/images/anim/rain.webp"
+            ts_anim + "rain.webp"
             xpos 0.5 ypos 0.0
         contains:
-            "mod_assets/source/images/anim/rain.webp"
+            ts_anim + "rain.webp"
             xpos -0.5 ypos 0.0
         contains:
-            "mod_assets/source/images/anim/rain.webp"
+            ts_anim + "rain.webp"
             xpos 0.5 ypos 1.0
         contains:
-            "mod_assets/source/images/anim/rain.webp"
+            ts_anim + "rain.webp"
             xpos -0.5 ypos 1.0
         contains:
-            "mod_assets/source/images/anim/rain.webp"
+            ts_anim + "rain.webp"
             xpos 0.5 ypos 2.0
         contains:
-            "mod_assets/source/images/anim/rain.webp"
+            ts_anim + "rain.webp"
             xpos -0.5 ypos 2.0
         block:
             yanchor 1.0
@@ -670,15 +670,15 @@ init:
 
     image lepestki:
         choice:
-            "mod_assets/source/images/anim/particles/lep/lep_1.webp"
+            ts_anim + "particles/lep/lep_1.webp"
         choice:
-            "mod_assets/source/images/anim/particles/lep/lep_2.webp"
+            ts_anim + "particles/lep/lep_2.webp"
         choice:
-            "mod_assets/source/images/anim/particles/lep/lep_3.webp"
+            ts_anim + "particles/lep/lep_3.webp"
         choice:
-            "mod_assets/source/images/anim/particles/lep/lep_4.webp"
+            ts_anim + "particles/lep/lep_4.webp"
         choice:
-            "mod_assets/source/images/anim/particles/lep/lep_5.webp"
+            ts_anim + "particles/lep/lep_5.webp"
         xanchor 0.5 yanchor 0.5 rotate 0
         parallel:
             choice:
@@ -822,7 +822,7 @@ init:
 
 ###ПЫЛЬ ИЗ ДОКИ
     image dust1:
-        "mod_assets/source/images/anim/particles/dust/dust1.webp"
+        ts_anim + "particles/dust/dust1.webp"
         subpixel True
         parallel:
             alpha 1.00
@@ -843,7 +843,7 @@ init:
             repeat
 
     image dust2:
-        "mod_assets/source/images/anim/particles/dust/dust2.webp"
+        ts_anim + "particles/dust/dust2.webp"
         subpixel True
         parallel:
             alpha 1.00
@@ -864,7 +864,7 @@ init:
             repeat
 
     image dust3:
-        "mod_assets/source/images/anim/particles/dust/dust3.webp"
+        ts_anim + "particles/dust/dust3.webp"
         subpixel True
         parallel:
             alpha 1.00
@@ -885,7 +885,7 @@ init:
             repeat
 
     image dust4:
-        "mod_assets/source/images/anim/particles/dust/dust4.webp"
+        ts_anim + "particles/dust/dust4.webp"
         subpixel True
         parallel:
             alpha 1.00

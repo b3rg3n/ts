@@ -12,11 +12,11 @@ init -1 python:
 
     renpy.music.register_channel("menu_zvuk", "sfx", False)
 
-    main_font = "mod_assets/source/fonts/captureit.ttf"
-    nvl_font = "mod_assets/source/fonts/nvl_font.ttf"
-    header_font = "mod_assets/source/fonts/captureit.ttf"
-    link_font = "mod_assets/source/fonts/captureit.ttf"
-    splash_font = "mod_assets/source/fonts/captureit.ttf"
+    main_font = ts_fonts + "captureit.ttf"
+    nvl_font = ts_fonts + "nvl_font.ttf"
+    header_font = ts_fonts + "captureit.ttf"
+    link_font = ts_fonts + "captureit.ttf"
+    splash_font = ts_fonts + "captureit.ttf"
 
 
     style.file_picker_text = Style(style.default)
@@ -30,18 +30,18 @@ init -1 python:
     style.file_picker_text.drop_shadow_color = "#000"
 
     style.save_load_button = Style(style.button)
-    style.save_load_button.background = "mod_assets/source/images/gui/save_load/thumbnail_idle.webp"
-    style.save_load_button.hover_background = "mod_assets/source/images/gui/save_load/thumbnail_hover.webp"
-    style.save_load_button.selected_background = "mod_assets/source/images/gui/save_load/thumbnail_selected.webp"
-    style.save_load_button.selected_hover_background = "mod_assets/source/images/gui/save_load/thumbnail_selected.webp"
-    style.save_load_button.selected_idle_background = "mod_assets/source/images/gui/save_load/thumbnail_selected.webp"
+    style.save_load_button.background = ts_gui + "save_load/thumbnail_idle.webp"
+    style.save_load_button.hover_background = ts_gui + "save_load/thumbnail_hover.webp"
+    style.save_load_button.selected_background = ts_gui + "save_load/thumbnail_selected.webp"
+    style.save_load_button.selected_hover_background = ts_gui + "save_load/thumbnail_selected.webp"
+    style.save_load_button.selected_idle_background = ts_gui + "save_load/thumbnail_selected.webp"
 
     style.blank_button = Style(style.button)
-    style.blank_button.background = "mod_assets/source/images/gui/none.webp"
-    style.blank_button.hover_background = "mod_assets/source/images/gui/none.webp"
-    style.blank_button.selected_background = "mod_assets/source/images/gui/none.webp"
-    style.blank_button.selected_hover_background = "mod_assets/source/images/gui/none.webp"
-    style.blank_button.selected_idle_background = "mod_assets/source/images/gui/none.webp"
+    style.blank_button.background = ts_gui + "none.webp"
+    style.blank_button.hover_background = ts_gui + "none.webp"
+    style.blank_button.selected_background = ts_gui + "none.webp"
+    style.blank_button.selected_hover_background = ts_gui + "none.webp"
+    style.blank_button.selected_idle_background = ts_gui + "none.webp"
 
     style.base_font = Style(style.default)
     style.base_font.font  = nvl_font
@@ -189,90 +189,90 @@ init -501 screen main_menu:
             textbutton ("{size=+15}resurrect{/size}") ypos 342 xpos 75:
                 action Start()
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         elif persistent.badendmenuperedglitch:
             textbutton ("{size=+15}Now{/size}") ypos 342 xpos 75:
                 action NullAction()
                 activate_sound button_error
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         else:
             textbutton ("{size=+15}go barmy{/size}") ypos 342 xpos 75:
                 action Start()
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         if persistent.badendmenuperedglitch:
             textbutton ("{size=+15}Everyone{/size}") ypos 392 xpos 75:
                 action NullAction()
                 activate_sound button_error
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
             textbutton ("{size=+15}Can вe{/size}") ypos 442 xpos 75:
                 action NullAction()
                 activate_sound button_error
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
             textbutton ("{size=+15}Happy{/size}") ypos 492 xpos 75:
                 action NullAction()
                 activate_sound button_error
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         else:
             textbutton ("{size=+15}rememвer {/size}") ypos 392 xpos 75:
                 action ShowMenu('load')
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
             textbutton ("{size=+15}Settings{/size}") ypos 442 xpos 75:
                 action ShowMenu('preferences')
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
             textbutton ("{size=+15}escape{/size}") ypos 492 xpos 75:
                 action ShowMenu('quit')
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
     else:
         if persistent.badendmenu and persistent.badendmenuskipglitch:
             textbutton ("{size=+15}Воскреснуть{/size}") ypos 342 xpos 75:
                 action Start()
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         elif persistent.badendmenuperedglitch:
             textbutton ("{size=+15}Теперь{/size}") ypos 342 xpos 75:
                 action NullAction()
                 activate_sound button_error
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         elif persistent.goodendmenu:
             textbutton ("{size=+15}Ещё разок?{/size}") ypos 342 xpos 75:
                 action Start()
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         else:
             textbutton ("{size=+15}Сойти с ума{/size}") ypos 342 xpos 75:
                 action Start()
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         if persistent.badendmenuperedglitch:
             textbutton ("{size=+15}Все{/size}") ypos 392 xpos 75:
                 action NullAction()
                 activate_sound button_error
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
             textbutton ("{size=+15}Будут{/size}") ypos 442 xpos 75:
                 action NullAction()
                 activate_sound button_error
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
             textbutton ("{size=+15}Счастливы{/size}") ypos 492 xpos 75:
                 action NullAction()
                 activate_sound button_error
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         else:
             textbutton ("{size=+15}Вспомнить{/size}") ypos 392 xpos 75:
                 action ShowMenu('load')
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
             textbutton ("{size=+15}Настройки{/size}") ypos 442 xpos 75:
                 action ShowMenu('preferences')
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
             textbutton ("{size=+15}Сбежать{/size}") ypos 492 xpos 75:
                 action ShowMenu('quit')
                 activate_sound start_sound_suka
-                hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
     if config.developer:
         if _preferences.language == "english":
             if persistent.badendmenuperedglitch:
@@ -302,20 +302,20 @@ init -501 screen quit:
 
     modal True tag menu
 
-    add "mod_assets/source/images/anim/zatemnenie.webp"
+    add ts_images + "anim/zatemnenie.webp"
 
     if persistent.badendmenu:
         text translation_new["Quit_confirm_bad"] style "settings_link" size 60 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
-        textbutton translation_new["Yes_quit_bad"] text_size 50 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton translation_new["No_quit_bad"] text_size 50 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton translation_new["Yes_quit_bad"] text_size 50 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["No_quit_bad"] text_size 50 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
     elif persistent.goodendmenu:
         text translation_new["Quit_confirm_good"] style "settings_link" size 60 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
-        textbutton translation_new["Yes_quit_good"] text_size 50 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton translation_new["No_quit_good"] text_size 50 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton translation_new["Yes_quit_good"] text_size 50 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["No_quit_good"] text_size 50 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
     else:
         text translation_new["Quit_confirm"] style "settings_link" size 60 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
-        textbutton translation_new["Yes_quit"] text_size 50 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton translation_new["No_quit"] text_size 50 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton translation_new["Yes_quit"] text_size 50 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["No_quit"] text_size 50 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
 label _compat_confirm_quit:
     $ renpy.call_screen('quit')
@@ -327,21 +327,21 @@ screen language_menu:
 
     button style "blank_button" xpos 0 ypos 0 xfill True yfill True action Hide('language_menu')
 
-    window background "mod_assets/source/images/anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
+    window background ts_images + "anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
 
         has vbox xalign 0.5
 
         grid 1 14 xfill True:
             hbox xalign 0.5:
                 if _preferences.language == None:
-                    add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.45
+                    add ts_gui + "ebanoemenu/leaf.webp" ypos 0.45
                 else:
                     null width 22
                 textbutton translation_new["Russian"] style "log_button" text_style "settings_link" action (Language(None), Function(stop_music), Function(renpy.utter_restart)) ypos 280 xpos -2
 
             hbox xalign 0.5:
                 if _preferences.language == "english":
-                    add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.65
+                    add ts_gui + "ebanoemenu/leaf.webp" ypos 0.65
                 else:
                     null width 22
                 textbutton translation_new["English"] style "log_button" text_style "settings_link" action (Language("english"), Function(stop_music), Function(renpy.utter_restart)) ypos 320
@@ -351,7 +351,7 @@ init -1 python:
 init -501 screen game_menu_selector:
 
     modal True tag menu
-    add "mod_assets/source/images/gui/ebanoemenu/ingame_menu.webp"
+    add ts_gui + "ebanoemenu/ingame_menu.webp"
 
     #text "{image=ts_logo_menu}" ypos 150 xpos 75
     text "{size=+17}{font=[ts_atomic]}True Story{/font}{/size}" ypos 292 xpos 75 # {image=ts_logo_menu}
@@ -360,50 +360,50 @@ init -501 screen game_menu_selector:
         textbutton ("{size=+15}main menu{/size}") ypos 342 xpos 75:
             action MainMenu()
             activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         textbutton ("{size=+15}Save {/size}") ypos 392 xpos 75:
             action ShowMenu('save')
             activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         textbutton ("{size=+15}Load {/size}") ypos 442 xpos 75:
             action ShowMenu('load')
             activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         textbutton ("{size=+15}Settings{/size}") ypos 492 xpos 75:
             action ShowMenu('preferences')
             activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         textbutton ("{size=+15}Leave{/size}") ypos 542 xpos 75:
             action ShowMenu('quit')
             activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         imagebutton ypos 0 xpos 0:
-            auto "mod_assets/source/images/gui/ebanoemenu/nope_%s.webp"
+            auto ts_gui + "ebanoemenu/nope_%s.webp"
             action Return()
         text "{font=[cit_font]}{size=+15}You've already played the mod {image=gametime}{size=+15}{/font}" ypos 650 xpos 76
     else:
         textbutton ("{size=+15}На Главную{/size}") ypos 342 xpos 75:
             action MainMenu()
             activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         textbutton ("{size=+15}Запомнить{/size}") ypos 392 xpos 75:
             action ShowMenu('save')
             activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         textbutton ("{size=+15}Вспомнить{/size}") ypos 442 xpos 75:
             action ShowMenu('load')
             activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         textbutton ("{size=+15}Настройки{/size}") ypos 492 xpos 75:
             action ShowMenu('preferences')
             activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         textbutton ("{size=+15}Сбежать{/size}") ypos 542 xpos 74:
             action ShowMenu('quit')
             activate_sound start_sound_suka
-            hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         imagebutton ypos 0 xpos 0:
-            auto "mod_assets/source/images/gui/ebanoemenu/nope_%s.webp"
+            auto ts_gui + "ebanoemenu/nope_%s.webp"
             action Return()
         if not track_checker_blya == "empty":
             text "{font=[cit_font]}{size=+15}[track_checker_blya]{size=+15}{/font}" ypos 600 xpos 77
@@ -461,26 +461,26 @@ init -501 screen save:
 
     modal True tag menu
 
-    window background "mod_assets/source/images/anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
+    window background ts_images + "anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
 
-        textbutton translation_new["settings"] style "log_button" text_style "settings_link" xalign 0.02 yalign 0.08 action ShowMenu('preferences') activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton translation_new["LOAD"] style "log_button" text_style "settings_link" xalign 0.98 yalign 0.08 action ShowMenu('load') activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton translation_new["settings"] style "log_button" text_style "settings_link" xalign 0.02 yalign 0.08 action ShowMenu('preferences') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["LOAD"] style "log_button" text_style "settings_link" xalign 0.98 yalign 0.08 action ShowMenu('load') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         hbox xalign 0.5 yalign 0.08:
-            add "mod_assets/source/images/gui/ebanoemenu/star.webp" yalign 0.65
+            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
             text " "+translation_new["SAVE"]+" " style "settings_link" yalign 0.5 color "#ffffff"
-            add "mod_assets/source/images/gui/ebanoemenu/star.webp" yalign 0.65
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
-        textbutton translation_new["Save_game"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.5 action (FunctionCallback(on_save_callback, selected_slot), FileSave(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton "{size=-12}{b}x{/b} {/size}"+translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton translation_new["Save_game"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.5 action (FunctionCallback(on_save_callback, selected_slot), FileSave(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton "{size=-12}{b}x{/b} {/size}"+translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
         vbox xalign 0.023 yalign 0.5:
             grid 1 10:
                 for i in range(0, 10):
                     if i == 0:
-                        textbutton translation_new["Auto"] text_size 25 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        textbutton translation_new["Auto"] text_size 25 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                     else:
-                        textbutton str(i) text_size 25 right_padding 25 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        textbutton str(i) text_size 25 right_padding 25 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
         grid 4 3 xpos 0.13 ypos 0.2 xmaximum 0.81 ymaximum 0.65:
             transpose False
@@ -494,7 +494,7 @@ init -501 screen save:
                     button:
                         action SetVariable("selected_slot", i)
                         activate_sound start_sound_suka
-                        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                         xfill False
                         yfill False
                         style "save_load_button"
@@ -508,25 +508,25 @@ init -501 screen load:
 
     modal True tag menu
 
-    window background "mod_assets/source/images/anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
+    window background ts_images + "anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
 
-        textbutton translation_new["settings"] style "log_button" text_style "settings_link" xalign 0.02 yalign 0.08 action ShowMenu('preferences') activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton translation_new["SAVE"] style "log_button" text_style "settings_link" xalign 0.98 yalign 0.08 action ShowMenu('save') activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton translation_new["settings"] style "log_button" text_style "settings_link" xalign 0.02 yalign 0.08 action ShowMenu('preferences') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["SAVE"] style "log_button" text_style "settings_link" xalign 0.98 yalign 0.08 action ShowMenu('save') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         hbox xalign 0.5 yalign 0.08:
-            add "mod_assets/source/images/gui/ebanoemenu/star.webp" yalign 0.65
+            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
             text " "+translation_new["LOAD"]+" " style "settings_link" yalign 0.5 color "#ffffff"
-            add "mod_assets/source/images/gui/ebanoemenu/star.webp" yalign 0.65
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton translation_new["Load_game"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.5 action (FunctionCallback(on_load_callback,selected_slot), FileLoad(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton "{size=-12}{b}x{/b} {/size}"+translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["Load_game"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.5 action (FunctionCallback(on_load_callback,selected_slot), FileLoad(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton "{size=-12}{b}x{/b} {/size}"+translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
         vbox xalign 0.023 yalign 0.5:
             grid 1 10:
                 for i in range(0, 10):
                     if i == 0:
-                        textbutton translation_new["Auto"] text_size 25 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        textbutton translation_new["Auto"] text_size 25 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                     else:
-                        textbutton str(i) text_size 25 right_padding 25 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        textbutton str(i) text_size 25 right_padding 25 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
         grid 4 3 xpos 0.13 ypos 0.2 xmaximum 0.81 ymaximum 0.65:
             transpose False
@@ -540,7 +540,7 @@ init -501 screen load:
                     button:
                         action SetVariable("selected_slot", i)
                         activate_sound start_sound_suka
-                        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                         xfill False
                         yfill False
                         style "save_load_button"
@@ -551,18 +551,18 @@ init -501 screen preferences:
 
     modal True tag menu
 
-    $ bar_null = Frame("mod_assets/source/images/gui/ebanoemenu/bar_null.webp",36,36)
-    $ bar_full = Frame("mod_assets/source/images/gui/ebanoemenu/bar_full.webp",36,36)
+    $ bar_null = Frame(ts_gui + "ebanoemenu/bar_null.webp",36,36)
+    $ bar_full = Frame(ts_gui + "ebanoemenu/bar_full.webp",36,36)
 
-    window background "mod_assets/source/images/anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
+    window background ts_images + "anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
 
-        textbutton translation_new["SAVE"] style "log_button" text_style "settings_link" xalign 0.02 yalign 0.08 action ShowMenu('save') activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-        textbutton translation_new["LOAD"] style "log_button" text_style "settings_link" xalign 0.98 yalign 0.08 action ShowMenu('load') activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        textbutton translation_new["SAVE"] style "log_button" text_style "settings_link" xalign 0.02 yalign 0.08 action ShowMenu('save') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["LOAD"] style "log_button" text_style "settings_link" xalign 0.98 yalign 0.08 action ShowMenu('load') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         hbox xalign 0.5 yalign 0.08:
-            add "mod_assets/source/images/gui/ebanoemenu/star.webp" yalign 0.65
+            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
             text " "+translation_new["settings"]+" " style "settings_link" yalign 0.5 color "#ffffff"
-            add "mod_assets/source/images/gui/ebanoemenu/star.webp" yalign 0.65
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
         side "c b r":
             area (0.25, 0.23, 0.51, 0.71)
@@ -578,17 +578,17 @@ init -501 screen preferences:
 
                         hbox xalign 0.5:
                             if _preferences.skip_unseen:
-                                add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                             else:
                                 null width 22
-                            textbutton translation_new["Skip_all"] style "log_button" text_style "settings_text" action Preference("skip", "all") activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                            textbutton translation_new["Skip_all"] style "log_button" text_style "settings_text" action Preference("skip", "all") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
                         hbox xalign 0.5:
                             if not _preferences.skip_unseen:
-                                add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                             else:
                                 null width 22
-                            textbutton translation_new["Skip_seen"] style "log_button" text_style "settings_text" action Preference("skip", "seen") activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                            textbutton translation_new["Skip_seen"] style "log_button" text_style "settings_text" action Preference("skip", "seen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
                 else:
                     text translation_new["Window_mode"] style "settings_header" xalign 0.5
@@ -596,51 +596,51 @@ init -501 screen preferences:
 
                         hbox xalign 0.5:
                             if _preferences.fullscreen:
-                                add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                             else:
                                 null width 22
-                            textbutton translation_new["Fullscreen"] style "log_button" text_style "settings_text" action Preference("display", "fullscreen") activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                            textbutton translation_new["Fullscreen"] style "log_button" text_style "settings_text" action Preference("display", "fullscreen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
                         hbox xalign 0.5:
                             if not _preferences.fullscreen:
-                                add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                             else:
                                 null width 22
-                            textbutton translation_new["Window"] style "log_button" text_style "settings_text" action Preference("display", "window") activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                            textbutton translation_new["Window"] style "log_button" text_style "settings_text" action Preference("display", "window") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
                     text translation_new["Skip"] style "settings_header" xalign 0.5
                     grid 2 1 xfill True:
 
                         hbox xalign 0.5:
                             if _preferences.skip_unseen:
-                                add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                             else:
                                 null width 22
-                            textbutton translation_new["Skip_all"] style "log_button" text_style "settings_text" action Preference("skip", "all") activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                            textbutton translation_new["Skip_all"] style "log_button" text_style "settings_text" action Preference("skip", "all") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
                         hbox xalign 0.5:
                             if not _preferences.skip_unseen:
-                                add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                             else:
                                 null width 22
-                            textbutton translation_new["Skip_seen"] style "log_button" text_style "settings_text" action Preference("skip", "seen") activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                            textbutton translation_new["Skip_seen"] style "log_button" text_style "settings_text" action Preference("skip", "seen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
                 text translation_new["Volume"] style "settings_header" xalign 0.5
 
                 grid 2 1 xfill True:
-                    textbutton translation_new["Music_lower"] style "log_button" text_style "settings_text" action Play("music2", "mod_assets/source/audio/sfx/funeral/zubek.ogg") xpos 0.1 ypos -0.2
-                    bar value Preference("music volume") left_bar bar_full right_bar bar_null thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" hover_thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
+                    textbutton translation_new["Music_lower"] style "log_button" text_style "settings_text" action Play("music2", ts_sfx + "funeral/zubek.ogg") xpos 0.1 ypos -0.2
+                    bar value Preference("music volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
 
                 grid 2 1 xfill True:
-                    textbutton translation_new["Sound"] style "log_button" text_style "settings_text" action Play("sound", "mod_assets/source/audio/sfx/funeral/zubek.ogg") xpos 0.1 ypos -0.2
-                    bar value Preference("sound volume") left_bar bar_full right_bar bar_null thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" hover_thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
+                    textbutton translation_new["Sound"] style "log_button" text_style "settings_text" action Play("sound", ts_sfx + "funeral/zubek.ogg") xpos 0.1 ypos -0.2
+                    bar value Preference("sound volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
 
                 grid 2 1 xfill True:
-                    textbutton translation_new["Ambience"] style "log_button" text_style "settings_text" action Play("ambience2", "mod_assets/source/audio/sfx/funeral/zubek.ogg") xpos 0.1 ypos -0.2
-                    bar value Preference("voice volume") left_bar bar_full right_bar bar_null thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" hover_thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
+                    textbutton translation_new["Ambience"] style "log_button" text_style "settings_text" action Play("ambience2", ts_sfx + "funeral/zubek.ogg") xpos 0.1 ypos -0.2
+                    bar value Preference("voice volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
 
                 text translation_new["Text_speed"] style "settings_header" xalign 0.5
-                bar value Preference("text speed") left_bar bar_full right_bar bar_null thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" hover_thumb "mod_assets/source/images/gui/ebanoemenu/htumb.webp" xalign 0.5 xmaximum 0.8 ymaximum 3
+                bar value Preference("text speed") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xalign 0.5 xmaximum 0.8 ymaximum 3
 
                 textbutton translation_new["Language"] style "log_button" text_style "settings_text" text_size 28 xalign 0.5 action ShowMenu("language_menu")
 
@@ -648,54 +648,54 @@ init -501 screen preferences:
                 grid 2 1 xfill True:
                     hbox xalign 0.5:
                         if persistent.bazarbig == True:
-                            add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                         else:
                             null width 22
-                        textbutton translation_new["Normal_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        textbutton translation_new["Normal_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
                     hbox xalign 0.5:
                         if not persistent.bazarbig == False:
-                            add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                         else:
                             null width 22
-                        textbutton translation_new["Big_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        textbutton translation_new["Big_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
                 text translation_new["Music_widget_set"] style "settings_header" xalign 0.5
                 grid 2 1 xfill True:
                     hbox xalign 0.5:
                         if persistent.music_widget_ts == True:
-                            add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                         else:
                             null width 22
-                        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
                     hbox xalign 0.5:
                         if not persistent.music_widget_ts == False:
-                            add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                         else:
                             null width 22
-                        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
 
                 text translation_new["Cens_mode_set"] style "settings_header" xalign 0.5
                 grid 2 1 xfill True:
                     hbox xalign 0.5:
                         if persistent.cens_mode == True:
-                            add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                         else:
                             null width 22
-                        textbutton translation_new["Cens_mode_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        textbutton translation_new["Cens_mode_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
                     hbox xalign 0.5:
                         if not persistent.cens_mode == False:
-                            add "mod_assets/source/images/gui/ebanoemenu/leaf.webp" ypos 0.12
+                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
                         else:
                             null width 22
-                        textbutton translation_new["Cens_mode_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        textbutton translation_new["Cens_mode_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
 
-            bar value XScrollValue("preferences") left_bar "mod_assets/source/images/gui/none.webp" right_bar "mod_assets/source/images/gui/none.webp" thumb "mod_assets/source/images/gui/none.webp" hover_thumb "mod_assets/source/images/gui/none.webp"
-            vbar value YScrollValue("preferences") bottom_bar "mod_assets/source/images/gui/none.webp" top_bar "mod_assets/source/images/gui/none.webp" thumb "mod_assets/source/images/gui/ebanoemenu/vthumb.webp" thumb_offset -12
+            bar value XScrollValue("preferences") left_bar ts_gui + "none.webp" right_bar ts_gui + "none.webp" thumb ts_gui + "none.webp" hover_thumb ts_gui + "none.webp"
+            vbar value YScrollValue("preferences") bottom_bar ts_gui + "none.webp" top_bar ts_gui + "none.webp" thumb ts_gui + "ebanoemenu/vthumb.webp" thumb_offset -12
 
 
 init -501 screen choice(items):
@@ -712,7 +712,7 @@ init -501 screen choice(items):
                         background None
                         action action
                         activate_sound start_sound_suka
-                        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+                        hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                         text caption font 'mod_assets/source/fonts/captureit.ttf' size 35 hover_size 37 at ec_tr_choice
                         xalign 0.5
 
@@ -760,7 +760,7 @@ init -1 style notify_text is gui_text
 init -1 style notify_frame:
     ypos gui.notify_ypos
 
-    background Frame("mod_assets/source/images/gui/notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
+    background Frame(ts_gui + "notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
     padding gui.notify_frame_borders.padding
 
 init -1 style notify_text:
@@ -789,27 +789,27 @@ init -501 screen quick_menu():
 
 init -1 style window:
     variant "small"
-    background "mod_assets/source/images/gui/phone/textbox.png"
+    background ts_gui + "phone/textbox.png"
 
 init -1 style radio_button:
     variant "small"
-    foreground "mod_assets/source/images/gui/phone/button/radio_[prefix_]foreground.png"
+    foreground ts_gui + "phone/button/radio_[prefix_]foreground.png"
 
 init -1 style check_button:
     variant "small"
-    foreground "mod_assets/source/images/gui/phone/button/check_[prefix_]foreground.png"
+    foreground ts_gui + "phone/button/check_[prefix_]foreground.png"
 
 init -1 style nvl_window:
     variant "small"
-    background "mod_assets/source/images/gui/phone/nvl.png"
+    background ts_gui + "phone/nvl.png"
 
 init -1 style main_menu_frame:
     variant "small"
-    background "mod_assets/source/images/gui/phone/overlay/main_menu.png"
+    background ts_gui + "phone/overlay/main_menu.png"
 
 init -1 style game_menu_outer_frame:
     variant "small"
-    background "mod_assets/source/images/gui/phone/overlay/game_menu.png"
+    background ts_gui + "phone/overlay/game_menu.png"
 
 init -1 style game_menu_navigation_frame:
     variant "small"
@@ -826,38 +826,38 @@ init -1 style pref_vbox:
 init -1 style bar:
     variant "small"
     ysize gui.bar_size
-    left_bar Frame("mod_assets/source/images/gui/phone/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
-    right_bar Frame("mod_assets/source/images/gui/phone/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
+    left_bar Frame(ts_gui + "phone/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
+    right_bar Frame(ts_gui + "phone/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
 
 init -1 style vbar:
     variant "small"
     xsize gui.bar_size
-    top_bar Frame("mod_assets/source/images/gui/phone/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
-    bottom_bar Frame("mod_assets/source/images/gui/phone/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
+    top_bar Frame(ts_gui + "phone/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
+    bottom_bar Frame(ts_gui + "phone/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
 
 init -1 style scrollbar:
     variant "small"
     ysize gui.scrollbar_size
-    base_bar Frame("mod_assets/source/images/gui/phone/scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
-    thumb Frame("mod_assets/source/images/gui/phone/scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    base_bar Frame(ts_gui + "phone/scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    thumb Frame(ts_gui + "phone/scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
 
 init -1 style vscrollbar:
     variant "small"
     xsize gui.scrollbar_size
-    base_bar Frame("mod_assets/source/images/gui/phone/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
-    thumb Frame("mod_assets/source/images/gui/phone/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+    base_bar Frame(ts_gui + "phone/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+    thumb Frame(ts_gui + "phone/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
 
 init -1 style slider:
     variant "small"
     ysize gui.slider_size
-    base_bar Frame("mod_assets/source/images/gui/phone/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
-    thumb "mod_assets/source/images/gui/phone/slider/horizontal_[prefix_]thumb.png"
+    base_bar Frame(ts_gui + "phone/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
+    thumb ts_gui + "phone/slider/horizontal_[prefix_]thumb.png"
 
 init -1 style vslider:
     variant "small"
     xsize gui.slider_size
-    base_bar Frame("mod_assets/source/images/gui/phone/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
-    thumb "mod_assets/source/images/gui/phone/slider/vertical_[prefix_]thumb.png"
+    base_bar Frame(ts_gui + "phone/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
+    thumb ts_gui + "phone/slider/vertical_[prefix_]thumb.png"
 
 init -1 style slider_vbox:
     variant "small"
@@ -874,10 +874,10 @@ init -501 screen confirm(message, yes_action, no_action):
 
     zorder 200
 
-    add "mod_assets/source/images/gui/base.png"
+    add ts_gui + "base.png"
     text _(message) text_align 0.5 yalign 0.36 xalign 0.5 color "#ffffff" font header_font size 60
-    textbutton translation_new["Yes"] text_size 60 style "log_button" text_style "settings_link" yalign 0.65 xalign 0.3 action yes_action activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
-    textbutton translation_new["Noo"] text_size 60 style "log_button" text_style "settings_link" yalign 0.65 xalign 0.7 action no_action activate_sound start_sound_suka hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+    textbutton translation_new["Yes"] text_size 60 style "log_button" text_style "settings_link" yalign 0.65 xalign 0.3 action yes_action activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+    textbutton translation_new["Noo"] text_size 60 style "log_button" text_style "settings_link" yalign 0.65 xalign 0.7 action no_action activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
 
 
@@ -888,7 +888,7 @@ init -1 style confirm_button is gui_medium_button
 init -1 style confirm_button_text is gui_medium_button_text
 
 init -1 style confirm_frame:
-    background Frame([ "mod_assets/source/images/gui/confirm_frame.png", "mod_assets/source/images/gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame([ ts_gui + "confirm_frame.png", ts_gui + "frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
@@ -966,7 +966,7 @@ init -1 style skip_triangle is skip_text
 
 init -1 style skip_frame:
     ypos gui.skip_ypos
-    background Frame("mod_assets/source/images/gui/skip.png", gui.skip_frame_borders, tile=gui.frame_tile)
+    background Frame(ts_gui + "skip.png", gui.skip_frame_borders, tile=gui.frame_tile)
     padding gui.skip_frame_borders.padding
 
 init -1 style skip_text:
@@ -994,7 +994,7 @@ init -1 style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("mod_assets/source/images/gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image(ts_gui + "textbox.png", xalign=0.5, yalign=1.0)
 
 init -1 style namebox:
     xpos gui.name_xpos
@@ -1003,7 +1003,7 @@ init -1 style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("mod_assets/source/images/gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame(ts_gui + "namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 init -1 style say_label:
@@ -1039,7 +1039,7 @@ init -1 style gui_text:
 
 init -1 style button:
     properties gui.button_properties("button")
-    background "mod_assets/source/images/gui/button/[prefix_]background.png"
+    background ts_gui + "button/[prefix_]background.png"
 
 init -1 style button_text is gui_text:
     properties gui.text_properties("button")
@@ -1055,38 +1055,38 @@ init -1 style prompt_text is gui_text:
 
 init -1 style bar:
     ysize gui.bar_size
-    left_bar Frame("mod_assets/source/images/gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
-    right_bar Frame("mod_assets/source/images/gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
+    left_bar Frame(ts_gui + "bar/left.png", gui.bar_borders, tile=gui.bar_tile)
+    right_bar Frame(ts_gui + "bar/right.png", gui.bar_borders, tile=gui.bar_tile)
 
 init -1 style vbar:
     xsize gui.bar_size
-    top_bar Frame("mod_assets/source/images/gui/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
-    bottom_bar Frame("mod_assets/source/images/gui/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
+    top_bar Frame(ts_gui + "bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
+    bottom_bar Frame(ts_gui + "bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
 
 init -1 style scrollbar:
     ysize gui.scrollbar_size
-    base_bar Frame("mod_assets/source/images/gui/scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
-    thumb Frame("mod_assets/source/images/gui/scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    base_bar Frame(ts_gui + "scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    thumb Frame(ts_gui + "scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
 
 init -1 style vscrollbar:
     xsize gui.scrollbar_size
-    base_bar Frame("mod_assets/source/images/gui/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
-    thumb Frame("mod_assets/source/images/gui/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+    base_bar Frame(ts_gui + "scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+    thumb Frame(ts_gui + "scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
 
 init -1 style slider:
     ysize gui.slider_size
-    base_bar Frame("mod_assets/source/images/gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
-    thumb "mod_assets/source/images/gui/slider/horizontal_[prefix_]thumb.png"
+    base_bar Frame(ts_gui + "slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
+    thumb ts_gui + "slider/horizontal_[prefix_]thumb.png"
 
 init -1 style vslider:
     xsize gui.slider_size
-    base_bar Frame("mod_assets/source/images/gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
-    thumb "mod_assets/source/images/gui/slider/vertical_[prefix_]thumb.png"
+    base_bar Frame(ts_gui + "slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
+    thumb ts_gui + "slider/vertical_[prefix_]thumb.png"
 
 
 init -1 style frame:
     padding gui.frame_borders.padding
-    background Frame("mod_assets/source/images/gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
+    background Frame(ts_gui + "frame.png", gui.frame_borders, tile=gui.frame_tile)
 
 init -501 screen quick_menu():
 
@@ -1198,7 +1198,7 @@ init -1 style main_menu_frame:
     xsize 280
     yfill True
 
-    background "mod_assets/source/images/gui/overlay/main_menu.png"
+    background ts_gui + "overlay/main_menu.png"
 
 init -1 style main_menu_vbox:
     xalign 1.0
@@ -1300,7 +1300,7 @@ init -1 style game_menu_outer_frame:
     bottom_padding 30
     top_padding 120
 
-    background "mod_assets/source/images/gui/overlay/game_menu.png"
+    background ts_gui + "overlay/game_menu.png"
 
 init -1 style game_menu_navigation_frame:
     xsize 280
@@ -1361,7 +1361,7 @@ init -502 screen help():
 
     style_prefix "history" tag menu
 
-    window background Frame("mod_assets/source/images/gui/choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.01 bottom_padding 0.1 top_padding 0.1:
+    window background Frame(ts_gui + "choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.01 bottom_padding 0.1 top_padding 0.1:
 
         has viewport id "history":
             draggable True
@@ -1420,7 +1420,7 @@ init -2 style history_label_text:
 init -2 style history_vscrollbar:
     xsize gui.scrollbar_size
     base_bar None
-    xoffset -10 thumb "mod_assets/source/images/gui/ebanoemenu/vthumb.webp"
+    xoffset -10 thumb ts_gui + "ebanoemenu/vthumb.webp"
 
 init -2 style history_button:
     focus_mask None
@@ -1431,7 +1431,7 @@ init -502 screen nvl(dialogue, items=None):
 
     $ timeofday = persistent.timeofday
 
-    window background Frame("mod_assets/source/images/gui/choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.01 bottom_padding 0.2 top_padding 0.1:
+    window background Frame(ts_gui + "choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.01 bottom_padding 0.2 top_padding 0.1:
         style "nvl_window"
 
         has vbox

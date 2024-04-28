@@ -7,8 +7,52 @@ label testing_label_blya:
         except AssertionError:
             pass
 
+    #$ _window_show(dissolve)
 
+    #image bg ext_beach_gray:
+    #    'bg ext_beach_day'
+    #    im.Grayscale("images/bg/ext_beach_day.jpg") with Dissolve(5)
+
+    #image bg ext_library_red = im.Recolor("images/bg/ext_library_day.jpg", 139, 0, 0, 170)
+    #image bg int_pantry_dark = im.MatrixColor(ed_images + "/bg/int_pantry.jpg", im.matrix.tint(0.35, 0.35, 0.35))
+    #image bg int_storage_ruined_dark = im.MatrixColor(ed_images + "/bg/int_storage_ruined.jpg", im.matrix.tint(0.25, 0.25, 0.25))
+
+    #image cg ed_another_camp:
+    #    choice:
+    #        'bg ext_bus_red' with Dissolve(3)
+    #    choice:
+    #        'bg ext_camp_entrance_red' with Dissolve(3)
+    #    choice:
+    #        'bg ext_road_red' with Dissolve(3)
+    #    choice:
+    #        'bg ext_sea_red' with Dissolve(3)
+    #    choice:
+    #        'bg ext_square_red' with Dissolve(3)
+    #    choice:
+    #        'bg ext_house_of_mt_red' with Dissolve(3)
+    #    pause 2
+    #    repeat
+
+    #image anim ed_aidpost:
+    #    contains:
+    #        'bg int_aidpost_gray' with ed_blot8
+    #        pause 8
+    #        'bg int_aidpost_red' with ed_blot8
+    #        pause 8
+    #        repeat
+    #    subpixel True
+    #    anchor (0.5, 0.5)
+    #    pos (0.5, 0.5)
+    #    zoom 1
+    #    ease 10 zoom 2.1
+    #    block:
+    #        linear 20 rotate 360
+    #        rotate 0
+    #        repeat
+#    $ ed_blot8 = ImageDissolve(ed_images + "gui/dissolves/ed_blot.jpg", 8.0)
     scene ts_club
+    $ ts_black_sparkles()
+    $ ts_red_sparkles()
     m "Тест"
 
     $ TS.Screens(ts_hidescreens)

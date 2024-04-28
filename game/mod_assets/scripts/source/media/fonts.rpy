@@ -4,13 +4,13 @@
 
 init:
 
-    define cit_font = "mod_assets/source/fonts/captureit.ttf"
-    define ts_nvl_font2 = "mod_assets/source/fonts/life.ttf"
-    define pizdec_font = "mod_assets/source/fonts/Surfbars.otf"
-    define adv_font = "mod_assets/source/fonts/ADVENTURE.ttf"
-    define shl_font = "mod_assets/source/fonts/SHLAPAKSCRIPT.otf"
-    define ink_font = "mod_assets/source/fonts/INKFREE.ttf"
-    define sc_font = "mod_assets/source/fonts/SCOTCH.ttf"
-    define ts_main_font_hueta = "mod_assets/source/fonts/captureit.ttf"
-    define prologue_font = "mod_assets/source/fonts/B52.ttf"
-    define ts_atomic = "mod_assets/source/fonts/cyr.ttf"
+    define cit_font = ts_fonts + "captureit.ttf"
+    define ts_nvl_font2 = ts_fonts + "life.ttf"
+    define pizdec_font = ts_fonts + "Surfbars.otf"
+    define adv_font = ts_fonts + "ADVENTURE.ttf"
+    define shl_font = ts_fonts + "SHLAPAKSCRIPT.otf"
+    define ink_font = ts_fonts + "INKFREE.ttf"
+    define sc_font = ts_fonts + "SCOTCH.ttf"
+    define ts_main_font_hueta = ts_fonts + "captureit.ttf"
+    define prologue_font = ts_fonts + "B52.ttf"
+    define ts_atomic = ts_fonts + "cyr.ttf"

@@ -4,7 +4,7 @@
 
 define audio.t1 = "<loop 22.073>mod_assets/source/audio/ost/orig/1.ogg"
 define audio.t2 = "<loop 4.499>mod_assets/source/audio/ost/orig/2.ogg"
-define audio.t2g = "mod_assets/source/audio/ost/orig/2g.ogg"
+define audio.t2g = ts_muzzon + "orig/2g.ogg"
 define audio.t2g2 = "<from 4.499 loop 4.499>mod_assets/source/audio/ost/orig/2.ogg"
 define audio.t2g3 = "<loop 4.492>mod_assets/source/audio/ost/orig/2g2.ogg"
 define audio.t3 = "<loop 4.618>mod_assets/source/audio/ost/orig/3.ogg"

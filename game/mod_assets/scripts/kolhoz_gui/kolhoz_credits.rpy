@@ -5,7 +5,7 @@
 init:
 
     $ style.credits = Style(style.default)
-    $ style.credits.font  = "mod_assets/source/fonts/captureit.ttf"
+    $ style.credits.font  = ts_fonts + "captureit.ttf"
     $ style.credits.color = "#fff"
     $ style.credits.drop_shadow = [ (1, 1), (1, 1), (1, 1), (1, 1) ]
     $ style.credits.drop_shadow_color = "#000"

@@ -4,15 +4,15 @@
 
 init:
 ###ОВРЕЛЕИ
-    image zatemnenie = Image("mod_assets/source/images/anim/zatemnenie.webp") # ЗАТЕМНЕНИЕ СРЕДНЕЕ
-    image zatemnenie_light = Image("mod_assets/source/images/anim/zatemnenie_light.webp") # ЗАТЕМНЕНИЕ ЛЁГКОЕ
-    image blood = "mod_assets/source/images/anim/ovr/blood.webp" # КРОВЬ ПО БОКАМ ЭКРАНА
+    image zatemnenie = Image(ts_anim + "zatemnenie.webp") # ЗАТЕМНЕНИЕ СРЕДНЕЕ
+    image zatemnenie_light = Image(ts_anim + "zatemnenie_light.webp") # ЗАТЕМНЕНИЕ ЛЁГКОЕ
+    image blood = ts_anim + "ovr/blood.webp" # КРОВЬ ПО БОКАМ ЭКРАНА
 ###АНИМАЦИЯ ЗАКРЫТИЯ/ОТКРЫТИЯ ЗЕНЕК
-    image anim blink_down = "mod_assets/source/images/anim/zenki/blink_down.webp" # ВЕРНХНИЕ ВЕКИ
-    image anim blink_up = "mod_assets/source/images/anim/zenki/blink_up.webp" # НИЖНИЕ ВЕКИ
+    image anim blink_down = ts_anim + "zenki/blink_down.webp" # ВЕРНХНИЕ ВЕКИ
+    image anim blink_up = ts_anim + "zenki/blink_up.webp" # НИЖНИЕ ВЕКИ
 ###БЛЭКАУТ
-    image blackout = "mod_assets/source/images/anim/transit/blackout.webp"
-    image blackout2 = "mod_assets/source/images/anim/transit/blackout2.webp"
-    image blackout_exh = "mod_assets/source/images/anim/blackout/blackout_exh.webp"
-    image blackout_exh2 = "mod_assets/source/images/anim/blackout/blackout_exh2.webp"
-    image blackout_exh3 = "mod_assets/source/images/anim/blackout/blackout_exh3.webp"
+    image blackout = ts_anim + "transit/blackout.webp"
+    image blackout2 = ts_anim + "transit/blackout2.webp"
+    image blackout_exh = ts_anim + "blackout/blackout_exh.webp"
+    image blackout_exh2 = ts_anim + "blackout/blackout_exh2.webp"
+    image blackout_exh3 = ts_anim + "blackout/blackout_exh3.webp"

@@ -7,8 +7,8 @@
 init -2:
     $ ctc_pos = 0.995
     $ ctc_pos_nvl = 0.93
-    image ctc_animation = Animation("mod_assets/source/images/gui/misc/ctc01.png", 0.15, "mod_assets/source/images/gui/misc/ctc02.png", 0.15, "mod_assets/source/images/gui/misc/ctc03.png", 0.15, "mod_assets/source/images/gui/misc/ctc04.png", 0.15, "mod_assets/source/images/gui/misc/ctc05.png", 0.15, "mod_assets/source/images/gui/misc/ctc06.png", 0.15, "mod_assets/source/images/gui/misc/ctc07.png", 0.15, "mod_assets/source/images/gui/misc/ctc08.png", 0.15, xpos=ctc_pos, ypos=0.99, xanchor=1.0, yanchor=1.0)
-    image ctc_animation_nvl = Animation("mod_assets/source/images/gui/misc/ctc01.png", 0.15, "mod_assets/source/images/gui/misc/ctc02.png", 0.15, "mod_assets/source/images/gui/misc/ctc03.png", 0.15, "mod_assets/source/images/gui/misc/ctc04.png", 0.15, "mod_assets/source/images/gui/misc/ctc05.png", 0.15, "mod_assets/source/images/gui/misc/ctc06.png", 0.15, "mod_assets/source/images/gui/misc/ctc07.png", 0.15, "mod_assets/source/images/gui/misc/ctc08.png", 0.15, xpos=ctc_pos_nvl, ypos=0.94, xanchor=1.0, yanchor=1.0)
+    image ctc_animation = Animation(ts_gui + "misc/ctc01.png", 0.15, ts_gui + "misc/ctc02.png", 0.15, ts_gui + "misc/ctc03.png", 0.15, ts_gui + "misc/ctc04.png", 0.15, ts_gui + "misc/ctc05.png", 0.15, ts_gui + "misc/ctc06.png", 0.15, ts_gui + "misc/ctc07.png", 0.15, ts_gui + "misc/ctc08.png", 0.15, xpos=ctc_pos, ypos=0.99, xanchor=1.0, yanchor=1.0)
+    image ctc_animation_nvl = Animation(ts_gui + "misc/ctc01.png", 0.15, ts_gui + "misc/ctc02.png", 0.15, ts_gui + "misc/ctc03.png", 0.15, ts_gui + "misc/ctc04.png", 0.15, ts_gui + "misc/ctc05.png", 0.15, ts_gui + "misc/ctc06.png", 0.15, ts_gui + "misc/ctc07.png", 0.15, ts_gui + "misc/ctc08.png", 0.15, xpos=ctc_pos_nvl, ypos=0.94, xanchor=1.0, yanchor=1.0)
 
     $ std_set_for_preview = {}
     $ std_set = {}
@@ -62,9 +62,9 @@ define -2 gui.hover_muted_color = '#7a0000'
 define -2 gui.text_color = '#ffffff'
 define -2 gui.interface_text_color = '#ffffff'
 
-define -2 gui.text_font = "mod_assets/source/fonts/nvl_font.ttf"
-define -2 gui.name_text_font = "mod_assets/source/fonts/nvl_font.ttf"
-define -2 gui.interface_text_font = "mod_assets/source/fonts/captureit.ttf"
+define -2 gui.text_font = ts_fonts + "nvl_font.ttf"
+define -2 gui.name_text_font = ts_fonts + "nvl_font.ttf"
+define -2 gui.interface_text_font = ts_fonts + "captureit.ttf"
 
 define -2 gui.text_size = 22
 define -2 gui.name_text_size = 30
@@ -73,8 +73,8 @@ define -2 gui.label_text_size = 24
 define -2 gui.notify_text_size = 16
 define -2 gui.title_text_size = 50
 
-define -2 gui.main_menu_background = "mod_assets/source/images/gui/main_menu.png"
-define -2 gui.game_menu_background = "mod_assets/source/images/gui/game_menu.png"
+define -2 gui.main_menu_background = ts_gui + "main_menu.png"
+define -2 gui.game_menu_background = ts_gui + "game_menu.png"
 
 define -2 gui.textbox_height = 185
 define -2 gui.textbox_yalign = 1.0
@@ -232,7 +232,7 @@ define -4 gui.nvl_button_xalign = 0.0
 
 init -3 style base_font is default
 init -3 style base_font:
-    font "mod_assets/source/fonts/captureit.ttf"
+    font ts_fonts + "captureit.ttf"
     size 19
     line_spacing 2
     color "#ffdd7d"

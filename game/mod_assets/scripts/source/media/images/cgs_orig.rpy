@@ -9,20 +9,20 @@ image fake_exception2 = Text("File \"mod_assets/scripts/scenario/ts_scenario4.rp
 image white = "#ffffff"
 
 image mask_child:
-    "mod_assets/source/images/cg/monika/child_2.webp"
+    ts_cg + "monika/child_2.webp"
     xtile 2
 
 image mask_mask:
-    "mod_assets/source/images/cg/monika/mask.webp"
+    ts_cg + "monika/mask.webp"
     xtile 3
 
 image mask_mask_flip:
-    "mod_assets/source/images/cg/monika/mask.webp"
+    ts_cg + "monika/mask.webp"
     xtile 3 xzoom -1
 
 
 image maskb:
-    "mod_assets/source/images/cg/monika/maskb.webp"
+    ts_cg + "monika/maskb.webp"
     xtile 3
 
 image mask_test = AnimatedMask("#ff6000", "mask_mask", "maskb", 0.10, 32)
@@ -31,7 +31,7 @@ image mask_test3 = AnimatedMask("#ff6000", "mask_mask_flip", "maskb", 0.10, 32)
 image mask_test4 = AnimatedMask("#ffffff", "mask_mask_flip", "maskb", 0.03, 16)
 
 image mask_2:
-    "mod_assets/source/images/cg/monika/mask_2.webp"
+    ts_cg + "monika/mask_2.webp"
     xtile 3 subpixel True
     block:
         xoffset 1280
@@ -39,59 +39,59 @@ image mask_2:
         repeat
 
 image mask_3:
-    "mod_assets/source/images/cg/monika/mask_3.webp"
+    ts_cg + "monika/mask_3.webp"
     xtile 3 subpixel True
     block:
         xoffset 1280
         linear 180 xoffset 0
         repeat
 
-image monika_room = "mod_assets/source/images/cg/monika/monika_room.webp"
+image monika_room = ts_cg + "monika/monika_room.webp"
 image monika_room_highlight:
-    "mod_assets/source/images/cg/monika/monika_room_highlight.webp"
+    ts_cg + "monika/monika_room_highlight.webp"
     function monika_alpha
-image monika_bg = "mod_assets/source/images/cg/monika/monika_bg.webp"
+image monika_bg = ts_cg + "monika/monika_bg.webp"
 image monika_bg_highlight:
-    "mod_assets/source/images/cg/monika/monika_bg_highlight.webp"
+    ts_cg + "monika/monika_bg_highlight.webp"
     function monika_alpha
-image monika_scare = "mod_assets/source/images/cg/monika/monika_scare.webp"
+image monika_scare = ts_cg + "monika/monika_scare.webp"
 
 image monika_body_glitch1:
-    "mod_assets/source/images/cg/monika/monika_glitch1.webp"
+    ts_cg + "monika/monika_glitch1.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch2.webp"
+    ts_cg + "monika/monika_glitch2.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch1.webp"
+    ts_cg + "monika/monika_glitch1.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch2.webp"
+    ts_cg + "monika/monika_glitch2.webp"
     1.00
-    "mod_assets/source/images/cg/monika/monika_glitch1.webp"
+    ts_cg + "monika/monika_glitch1.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch2.webp"
+    ts_cg + "monika/monika_glitch2.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch1.webp"
+    ts_cg + "monika/monika_glitch1.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch2.webp"
+    ts_cg + "monika/monika_glitch2.webp"
 
 image monika_body_glitch2:
-    "mod_assets/source/images/cg/monika/monika_glitch3.webp"
+    ts_cg + "monika/monika_glitch3.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch4.webp"
+    ts_cg + "monika/monika_glitch4.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch3.webp"
+    ts_cg + "monika/monika_glitch3.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch4.webp"
+    ts_cg + "monika/monika_glitch4.webp"
     1.00
-    "mod_assets/source/images/cg/monika/monika_glitch3.webp"
+    ts_cg + "monika/monika_glitch3.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch4.webp"
+    ts_cg + "monika/monika_glitch4.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch3.webp"
+    ts_cg + "monika/monika_glitch3.webp"
     0.15
-    "mod_assets/source/images/cg/monika/monika_glitch4.webp"
+    ts_cg + "monika/monika_glitch4.webp"
 
 
-image room_glitch = "mod_assets/source/images/cg/monika/monika_bg_glitch.webp"
+image room_glitch = ts_cg + "monika/monika_bg_glitch.webp"
 
 image room_mask = LiveComposite((1280, 720), (0, 0), "mask_test", (0, 0), "mask_test2")
 image room_mask2 = LiveComposite((1280, 720), (0, 0), "mask_test3", (0, 0), "mask_test4")
@@ -216,21 +216,21 @@ image n_rects_ghost5:
     easeout 0.25 zoom 4.5 xoffset 250 yoffset -100
 
 image y_cg2_bg:
-    "mod_assets/source/images/cg/y_cg2_bg1.webp"
+    ts_cg + "y_cg2_bg1.webp"
     6.0
-    "mod_assets/source/images/cg/y_cg2_bg2.webp" with Dissolve(1)
+    ts_cg + "y_cg2_bg2.webp" with Dissolve(1)
     2
-    "mod_assets/source/images/cg/y_cg2_bg1.webp" with Dissolve(1)
+    ts_cg + "y_cg2_bg1.webp" with Dissolve(1)
     1
     repeat
 image y_cg2_base:
-    "mod_assets/source/images/cg/y_cg2_base.webp"
+    ts_cg + "y_cg2_base.webp"
 image y_cg2_nochoc:
-    "mod_assets/source/images/cg/y_cg2_nochoc.webp"
+    ts_cg + "y_cg2_nochoc.webp"
     on hide:
         linear 0.5 alpha 0
 image y_cg2_details:
-    "mod_assets/source/images/cg/y_cg2_details.webp"
+    ts_cg + "y_cg2_details.webp"
     alpha 1.00
     6.0
     linear 1.0 alpha 0.35
@@ -239,20 +239,20 @@ image y_cg2_details:
     repeat
 
 image y_cg2_exp2:
-    "mod_assets/source/images/cg/y_cg2_exp2.webp"
+    ts_cg + "y_cg2_exp2.webp"
     alpha 0
     linear 0.5 alpha 1
     on hide:
         linear 0.5 alpha 0
 image y_cg2_exp3:
-    "mod_assets/source/images/cg/y_cg2_exp3.webp"
+    ts_cg + "y_cg2_exp3.webp"
     alpha 0
     linear 0.5 alpha 1
     on hide:
         linear 0.5 alpha 0
 
 image y_cg2_dust1:
-    "mod_assets/source/images/cg/y_cg2_dust1.webp"
+    ts_cg + "y_cg2_dust1.webp"
     subpixel True
     parallel:
         alpha 1.00
@@ -272,7 +272,7 @@ image y_cg2_dust1:
         linear 14.0 xoffset -100 yoffset 100
         repeat
 image y_cg2_dust2:
-    "mod_assets/source/images/cg/y_cg2_dust2.webp"
+    ts_cg + "y_cg2_dust2.webp"
     subpixel True
     parallel:
         alpha 1.00
@@ -292,7 +292,7 @@ image y_cg2_dust2:
         linear 32.0 xoffset -100 yoffset 100
         repeat
 image y_cg2_dust3:
-    "mod_assets/source/images/cg/y_cg2_dust3.webp"
+    ts_cg + "y_cg2_dust3.webp"
     subpixel True
     parallel:
         alpha 1.00
@@ -313,7 +313,7 @@ image y_cg2_dust3:
         repeat
 
 image y_cg2_dust4:
-    "mod_assets/source/images/cg/y_cg2_dust4.webp"
+    ts_cg + "y_cg2_dust4.webp"
     subpixel True
     parallel:
         alpha 1.00
@@ -334,24 +334,24 @@ image y_cg2_dust4:
         repeat
 
 image n_cg1_bg:
-    "mod_assets/source/images/cg/n_cg1_bg.webp"
+    ts_cg + "n_cg1_bg.webp"
 image n_cg1_b1:
-    "mod_assets/source/images/cg/n_cg1b.webp"
+    ts_cg + "n_cg1b.webp"
 image n_cg1_base:
-    "mod_assets/source/images/cg/n_cg1_base.webp"
+    ts_cg + "n_cg1_base.webp"
 
 image n_cg1_exp1:
-    "mod_assets/source/images/cg/n_cg1_exp1.webp"
+    ts_cg + "n_cg1_exp1.webp"
 image n_cg1_exp2:
-    "mod_assets/source/images/cg/n_cg1_exp2.webp"
+    ts_cg + "n_cg1_exp2.webp"
 image n_cg1_exp3:
-    "mod_assets/source/images/cg/n_cg1_exp3.webp"
+    ts_cg + "n_cg1_exp3.webp"
 image n_cg1_exp4:
-    "mod_assets/source/images/cg/n_cg1_exp4.webp"
+    ts_cg + "n_cg1_exp4.webp"
 image n_cg1_exp5:
-    "mod_assets/source/images/cg/n_cg1_exp5.webp"
+    ts_cg + "n_cg1_exp5.webp"
 
-image n_cg1b = LiveComposite((1280,720), (0,0), "mod_assets/source/images/cg/n_cg1b.webp", (882,325), "n_rects1", (732,400), "n_rects2", (850,475), "n_rects3")
+image n_cg1b = LiveComposite((1280,720), (0,0), ts_cg + "n_cg1b.webp", (882,325), "n_rects1", (732,400), "n_rects2", (850,475), "n_rects3")
 
 image n_rects1:
     RectCluster(Solid("#000"), 12, 30, 30).sm
@@ -369,73 +369,73 @@ image n_rects3:
     size (30, 20)
 
 image n_cg2_bg:
-    "mod_assets/source/images/cg/n_cg2_bg.webp"
+    ts_cg + "n_cg2_bg.webp"
 image n_cg2_base:
-    "mod_assets/source/images/cg/n_cg2_base.webp"
+    ts_cg + "n_cg2_base.webp"
 image n_cg2_exp1:
-    "mod_assets/source/images/cg/n_cg2_exp1.webp"
+    ts_cg + "n_cg2_exp1.webp"
 image n_cg2_exp2:
-    "mod_assets/source/images/cg/n_cg2_exp2.webp"
+    ts_cg + "n_cg2_exp2.webp"
 
 image n_cg3_base:
-    "mod_assets/source/images/cg/n_cg3_base.webp"
+    ts_cg + "n_cg3_base.webp"
 image n_cg3_cake:
-    "mod_assets/source/images/cg/n_cg3_cake.webp"
+    ts_cg + "n_cg3_cake.webp"
 image n_cg3_exp1:
-    "mod_assets/source/images/cg/n_cg3_exp1.webp"
+    ts_cg + "n_cg3_exp1.webp"
 image n_cg3_exp2:
-    "mod_assets/source/images/cg/n_cg3_exp2.webp"
+    ts_cg + "n_cg3_exp2.webp"
 
 image y_cg1_base:
-    "mod_assets/source/images/cg/y_cg1_base.webp"
+    ts_cg + "y_cg1_base.webp"
 image y_cg1_exp1:
-    "mod_assets/source/images/cg/y_cg1_exp1.webp"
+    ts_cg + "y_cg1_exp1.webp"
 image y_cg1_exp2:
-    "mod_assets/source/images/cg/y_cg1_exp2.webp"
+    ts_cg + "y_cg1_exp2.webp"
 image y_cg1_exp3:
-    "mod_assets/source/images/cg/y_cg1_exp3.webp"
+    ts_cg + "y_cg1_exp3.webp"
 
 image y_cg3_base:
-    "mod_assets/source/images/cg/y_cg3_base.webp"
+    ts_cg + "y_cg3_base.webp"
 image y_cg3_exp1:
-    "mod_assets/source/images/cg/y_cg3_exp1.webp"
+    ts_cg + "y_cg3_exp1.webp"
 
 image s_cg1:
-    "mod_assets/source/images/cg/s_cg1.webp"
+    ts_cg + "s_cg1.webp"
 
 image s_cg2_base1:
-    "mod_assets/source/images/cg/s_cg2_base1.webp"
+    ts_cg + "s_cg2_base1.webp"
 image s_cg2_base2:
-    "mod_assets/source/images/cg/s_cg2_base2.webp"
+    ts_cg + "s_cg2_base2.webp"
 image s_cg2_exp1:
-    "mod_assets/source/images/cg/s_cg2_exp1.webp"
+    ts_cg + "s_cg2_exp1.webp"
 image s_cg2_exp2:
-    "mod_assets/source/images/cg/s_cg2_exp2.webp"
+    ts_cg + "s_cg2_exp2.webp"
 image s_cg2_exp3:
-    "mod_assets/source/images/cg/s_cg2_exp3.webp"
+    ts_cg + "s_cg2_exp3.webp"
 
 image s_cg3:
-    "mod_assets/source/images/cg/s_cg3.webp"
+    ts_cg + "s_cg3.webp"
 
 image s_kill_bg:
     subpixel True
-    "mod_assets/source/images/cg/s_kill_bg.webp"
+    ts_cg + "s_kill_bg.webp"
 
 image s_kill:
     subpixel True
-    "mod_assets/source/images/cg/s_kill.webp"
+    ts_cg + "s_kill.webp"
 
 image s_kill_bg2:
     subpixel True
-    "mod_assets/source/images/cg/s_kill_bg2.webp"
+    ts_cg + "s_kill_bg2.webp"
 
 image s_kill2:
     subpixel True
-    "mod_assets/source/images/cg/s_kill2.webp"
+    ts_cg + "s_kill2.webp"
 
 image y_kill:
     subpixel True
-    "mod_assets/source/images/cg/y_kill/1a.webp"
+    ts_cg + "y_kill/1a.webp"
 
 transform s_kill_bg_start:
     truecenter

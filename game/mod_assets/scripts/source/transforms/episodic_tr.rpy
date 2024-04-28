@@ -3,6 +3,16 @@
 # Since 2024
 
 init:
+
+    transform ts_punch(x=0,y=0): # ts_punch(-0.22) или ts_punch()
+        anchor (0.5, 0.5)
+        pos (0.5+x, 0.5+y)
+        rotate 0
+        parallel:
+            ease 0.4 pos (0.75+x, 1.33+y)
+        parallel:
+            ease 0.5 rotate 90
+
 ### АНИМАЦИИ НЕ ДЛЯ СПРАЙТОВ БЛЯ
     transform ts_alkonersha:
         subpixel True

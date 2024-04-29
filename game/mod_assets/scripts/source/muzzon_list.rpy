@@ -14,7 +14,9 @@ init:
     $ music_list_ts["Dead Before Down OST"] = ts_muzzon + "menu_ost/zastavka/ts_good_credits.ogg"
 ###ИЗ БЛ
     $ music_list_ts["Between August and December - Awakening Power"] = ts_muzzon + "es/ts_ap.ogg"
+    $ music_list_ts["Between August and December - Doomed to be Defeated"] = ts_muzzon + "es/ts_dtbd.ogg"
     $ music_list_ts["Sergey Eybog - Confession"] = ts_muzzon + "es/ts_conf.ogg"
+    $ music_list_ts["Sergey Eybog - Eat Some Troubles"] = ts_muzzon + "es/ts_est.ogg"
     $ music_list_ts["Sergey Eybog - Meet Me There"] = ts_muzzon + "es/ts_dead_theme.ogg"
     $ music_list_ts["Sergey Eybog - A Promise From Distant Days"] = ts_muzzon + "es/ts_dist.ogg"
     $ music_list_ts["Sergey Eybog - Trapped In Dreams"] = ts_muzzon + "es/ts_dreams.ogg"

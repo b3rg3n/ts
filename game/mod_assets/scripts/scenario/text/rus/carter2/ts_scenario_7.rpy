@@ -39,12 +39,29 @@ label ts_scenario_7:
     "Вдруг я понимаю, что телефона-то у меня и нет."
     "И только потом я вспоминаю, что..."
 
-#флешбек до вечерней гостиной
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
 
-    show hiroto 1a at t31
+    $ ts_sunset_time()
+    play sound fb
+    scene ts_gost_sunset
+    show hiroto 1a at i31
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    with flash
+
+    $ TS.Screens(ts_showscreens)
+
     ts_ft "Можешь идти, я тебе потом телефон занесу."
 
-#обратно на даркбед
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
+    $ ts_night_time()
+    play sound fb
+    scene ts_darkbed
+    with flash
+
+    $ TS.Screens(ts_showscreens)
 
     "Телефон-то у папы остался. А положил он его, по всей видимости, уже после того, как я вырубилась."
     "В потёмках я вижу что-то отдалённо похожее на телефон и включаю его."
@@ -52,20 +69,42 @@ label ts_scenario_7:
     "Наверное, не стоило засыпать настолько рано..."
     "Ну и что прикажете делать? Спать я уже не сильно-то и хочу, но доспать лишние пару часов - это тоже важно."
     "Я хоть и жаворонок, но не {i}настолько{/i}, чтобы ложиться спать с первыми курицами, а вставать с первыми петухами."
+
+    $ TS.Screens(ts_hidescreens)
+    " {w=1.0}{nw}"
+
+    show zatemnenie with dissolve
+
+    $ TS.Screens(ts_showscreens)
+
     menu:
         "Лечь спать дальше":
+            $ TS.Screens(ts_showscreens)
             $ unluck6 = True
+
             "Из карикатурных ангела и демона на плечах победил последний."
             "Несмотря на то, что я выспалась, много сна не бывает."
             "Поэтому, положив телефон рядом с подушкой, я ложусь спать дальше."
-            stop music
-            #диссолв на сцене блек, потом рассолв на дневную спальню Моники
+
+            stop music fadeout 3
+            $ TS.Screens(ts_hidescreens)
+            " {w=1.0}{nw}"
+            show blink
+            pause 2
+            $ ts_day_time()
+            scene ts_bedroom
+            show unblink
+            $ TS.Screens(ts_showscreens)
+
             "Вот так-то лучше."
             "Сейчас я {i}окончательно{/i} выспалась, что кажется, что я теперь несколько суток без сна протяну."
             "Кстати, а кто сегодня готовит завтрак?.."
-            #сфх открытия двери. Не мягко, но и не сильно громко
+
+            play sound door_open
+
             "Кажется, ответ нарисовался сам собой..."
-            show hiroto 1p at t11
+
+            show hiroto 1p at ln11
             "Сегодня готовит папа. Но, судя по всему, он уже сам поел, уже собирается на работу, и единственное, что осталось - это разбудить непутёвую дочь..."
             show hiroto 1q at f11
             ts_ft "Моника, просыпайся!"
@@ -74,9 +113,13 @@ label ts_scenario_7:
             show hiroto 1q at f11
             ts_ft "Уже начало девятого! Просыпайся, а то в школу опоздаешь!"
             show hiroto 1p at t11
+
             play sound ssikanul
-            #play music doomed to be defeated
+            play music ts_dtbd
+
+            $ TS.Screens(vpunch)
             "ТВОЮ ЖЕ МАТЬ!"
+
             show hiroto 1v at f11
             ts_ft "Завтрак на столе, кофе новый сделаешь, дверь закроешь на ключ."
             show hiroto 1q at f11
@@ -91,17 +134,30 @@ label ts_scenario_7:
             m "Только не задерживайся ещё сильнее!"
             show hiroto 1c at f11
             ts_ft "А я поехал, уже и сам опаздываю. Всё, давай, до вечера."
-            stop music
+
+            stop music fadeout 3
+            play sound door_open
+            show hiroto at cright with move
             hide hiroto
-            #сфх закрытия двери
+
             m "Люблю те... Ладно, неважно..."
             "Сказала бы я это или нет - он уже в любом случае ушёл."
             "Но папа прав: надо поторапливаться. Если всё сделаю быстро, может, даже вовремя приду."
-            #вайплефт до ванной
-            #play music eat some troubles
+
+            $ TS.Screens(ts_hidescreens)
+            " {w=1.0}{nw}"
+
+            play music ts_est fadein 2
+
+            play sound pageflip
+            scene ts_bathroom
+            with wipeleft_scene
+
+            $ TS.Screens(ts_showscreens)
+
             "Я и обычно умываюсь довольно быстро, но когда я на грани опоздания, то умываюсь я просто молниеносно."
             "Я даже думаю о том, чтобы не чистить зубы сегодня, но затем... вспоминаю обо всех законах подлости, которые со мной могут приключиться."
-            show monika 2bk at f11
+            show monika 2bk at rn11
             em "Ты иногда забываешь, что самый большой закон подлости - это ты сама!"
             show monika 2bl at f11
             em "Хотя, это скорее не закон подлости, а закон бездарности. Но в любом случае ты самый большой из всех них!"
@@ -116,12 +172,21 @@ label ts_scenario_7:
             em "Ладно, ладно..."
             show monika 1bc at t11
             "Я в спешке заканчиваю утренний моцион и бегу завтракать."
-            #вайплефт до кухни
+
+            $ TS.Screens(ts_hidescreens)
+            " {w=1.0}{nw}"
+
+            play sound pageflip
+            scene ts_kitchen
+            with wipeleft_scene
+
+            $ TS.Screens(ts_showscreens)
+
             "Надо же. Кофе ещё до конца остыл. Хотя бы не придётся выливать и греть новую чашку."
             "Я олимпийскими темпами съедаю хлопья, осушиваю всю чашку кофе в три глотка, и выбегаю на улицу, предварительно не забыв закрыть дверь на ключ."
             "У нас хоть район и благополучный, но если вся семья весь день отсутствует, а дверь останется открытой, то кто знает, какие козни наши соседи или проходимцы могут поставить."
             #вайплефт до дома Моники
-            stop music fadeout 2# немного, секунды должно быть достаточно
+            stop music fadeout 2
             "Я проверяю время."
             "На часах 8:23."
             #play music always ready

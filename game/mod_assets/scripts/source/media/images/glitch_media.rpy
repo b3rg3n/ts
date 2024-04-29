@@ -38,6 +38,23 @@ image sayori_glitch_pizdets:
     0.03 # Задержка
     repeat # Не убирать
 
+image natsuki ghost3_1 = im.Composite((960, 960), (0, 0), ts_spr + "natsuki/glitch/ghost3_1.webp")
+image natsuki ghost3_2 = im.Composite((960, 960), (0, 0), ts_spr + "natsuki/glitch/ghost3_2.webp")
+image natsuki ghost3_3 = im.Composite((960, 960), (0, 0), ts_spr + "natsuki/glitch/ghost3_3.webp")
+
+image natsuki_demon_glitch_pizdets:
+    "natsuki ghost3_1"
+    0.03 # Задержка
+    "natsuki ghost3_3"
+    0.03 # Задержка
+    "natsuki ghost3_2"
+    0.03 # Задержка
+    "natsuki ghost3_1"
+    0.03 # Задержка
+    "natsuki ghost3_3"
+    0.03 # Задержка
+    repeat # Не убирать
+
 image hiroto 3b111 = im.Composite((960, 960), (0, 0), ts_spr + "hiroto/glitch/b1.webp")
 image hiroto 3b222 = im.Composite((960, 960), (0, 0), ts_spr + "hiroto/glitch/b2.webp")
 image hiroto 3b333 = im.Composite((960, 960), (0, 0), ts_spr + "hiroto/glitch/b3.webp")

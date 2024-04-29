@@ -51,9 +51,72 @@ label testing_label_blya:
     #        repeat
 #    $ ed_blot8 = ImageDissolve(ed_images + "gui/dissolves/ed_blot.jpg", 8.0)
     scene ts_club
-    $ ts_black_sparkles()
-    $ ts_red_sparkles()
     m "Тест"
+    $ ts_uncolorize_lite()
+    m "чуток обесцветили"
+    $ ts_uncolorize_full()
+    m "Вообще пиздец"
+    $ ts_uncolorize_off()
+    "Убрал"
+    scene ts_corridor
+    $ ts_uncolorize_lite()
+    m "чуток обесцветили"
+    $ ts_uncolorize_full()
+    m "Вообще пиздец"
+    $ ts_uncolorize_off()
+    "Убрал"
+    scene ts_house
+    $ ts_uncolorize_lite()
+    m "чуток обесцветили"
+    $ ts_uncolorize_full()
+    m "Вообще пиздец"
+    $ ts_uncolorize_off()
+    "Убрал"
+    scene ts_house_monika_evening
+    $ ts_uncolorize_lite()
+    m "чуток обесцветили"
+    $ ts_uncolorize_full()
+    m "Вообще пиздец"
+    $ ts_uncolorize_off()
+    "Убрал"
+
+    show elena a at ln11
+    "без"
+    $ ts_sunset_time()
+    "чуток"
+    $ ts_night_time()
+    "ночь"
+    $ ts_day_time()
+    "день"
+
+    show elena a1 at ln11
+    "без"
+    $ ts_sunset_time()
+    "чуток"
+    $ ts_night_time()
+    "ночь"
+    $ ts_day_time()
+    "день"
+
+    show elena b at ln11
+    "без"
+    $ ts_sunset_time()
+    "чуток"
+    $ ts_night_time()
+    "ночь"
+    $ ts_day_time()
+    "день"
+
+    show elena q at ln11
+    "без"
+    $ ts_sunset_time()
+    "чуток"
+    $ ts_night_time()
+    "ночь"
+    $ ts_day_time()
+    "день"
+
+    return
 
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
@@ -97,7 +160,7 @@ label testing_label_blya:
     $ ts_sunset_time()
 
     pause
-
+##############
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     $ pps = 5
 
@@ -108,7 +171,7 @@ label testing_label_blya:
     show blackout_exh zorder 5
     show anim_exhausted zorder 5
     show m_rectstatic zorder 5
-    show natsuki ghost3 zorder 6 at Glitch(_fps=1000.)
+    show natsuki_demon_glitch_pizdets zorder 6 at Glitch(_fps=1000.)
 
     pause 2.5
 
@@ -118,7 +181,7 @@ label testing_label_blya:
     show natsuki 1a at i11
 
     "Ахуеть"
-
+###############
     return
 
     window hide

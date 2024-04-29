@@ -92,20 +92,7 @@ label main_menu:
 
         elif persistent.goodendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
             play music good_menu_ost fadein 5
-            scene ts_menu_move_anim_good_end:
-                xalign 0.5
-                yalign 0.5
-                zoom 1.0
-                parallel:
-                    linear 1.0 zoom 1.05
-                parallel:
-                    ease 1.0 xalign 0.45
-                    ease 1.0 xalign 0.54
-                    repeat
-                parallel:
-                    ease 1.5 rotate 1.2 zoom 1.07
-                    ease 1.5 rotate -1.4 zoom 1.045
-                    repeat
+            scene ts_menu_move_anim_good_end at ts_ustal_suka
             show zatemnenie_light
             show overlay aw_memory_back_1
             #show lepestki_krutyatsa

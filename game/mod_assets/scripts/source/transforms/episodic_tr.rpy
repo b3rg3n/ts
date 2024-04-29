@@ -103,6 +103,21 @@ init:
         ease 0.5 pos (-0.8, 0.85)
         ease 0.5 pos (-1.0, 0.85) alpha 0.0
 
+    transform ts_ustal_suka: # ЭФФЕКТ УКАЧИВАНИЯ
+        xalign 0.5
+        yalign 0.5
+        zoom 1.0
+        parallel:
+            linear 1.0 zoom 1.05
+        parallel:
+            ease 1.0 xalign 0.45
+            ease 1.0 xalign 0.54
+            repeat
+        parallel:
+            ease 1.5 rotate 1.2 zoom 1.07
+            ease 1.5 rotate -1.4 zoom 1.045
+            repeat
+
     transform ts_running_fast: # БЫСТРЫЙ БЕГ
         truecenter
         zoom 1.25

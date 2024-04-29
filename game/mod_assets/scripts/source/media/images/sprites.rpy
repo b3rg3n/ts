@@ -4,54 +4,192 @@
 # TEAM ANARCHY (c)
 # SINCE 2024
 
-image elena a test = ConditionSwitch(
+####CUSTOM HUETA
+####ЕЛЕНА
+image elena a = ConditionSwitch(
 "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/A.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
 "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/A.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
 True,im.Composite((960,960), (0,0), ts_spr + "elena/A.webp") )
 
-####CUSTOM HUETA
-####ЕЛЕНА
-image elena a = im.Composite((960, 960), (0, 0), ts_spr + "elena/A.webp")
-image elena a1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/A1.webp")
-image elena a2 = im.Composite((960, 960), (0, 0), ts_spr + "elena/A2.webp")
-image elena b = im.Composite((960, 960), (0, 0), ts_spr + "elena/B.webp")
-image elena b2 = im.Composite((960, 960), (0, 0), ts_spr + "elena/B2.webp")
-image elena c = im.Composite((960, 960), (0, 0), ts_spr + "elena/C.webp")
-image elena c1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/C1.webp")
-image elena d = im.Composite((960, 960), (0, 0), ts_spr + "elena/D.webp")
-image elena d1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/D1.webp")
-image elena e = im.Composite((960, 960), (0, 0), ts_spr + "elena/E.webp")
-image elena e1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/E1.webp")
-image elena f = im.Composite((960, 960), (0, 0), ts_spr + "elena/F.webp")
-image elena f1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/F1.webp")
-image elena f2 = im.Composite((960, 960), (0, 0), ts_spr + "elena/F2.webp")
-image elena g = im.Composite((960, 960), (0, 0), ts_spr + "elena/G.webp")
-image elena g1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/G1.webp")
-image elena h = im.Composite((960, 960), (0, 0), ts_spr + "elena/H.webp")
-image elena i = im.Composite((960, 960), (0, 0), ts_spr + "elena/I.webp")
-image elena i1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/I1.webp")
-image elena i2 = im.Composite((960, 960), (0, 0), ts_spr + "elena/I2.webp")
-image elena j = im.Composite((960, 960), (0, 0), ts_spr + "elena/J.webp")
-image elena j1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/J1.webp")
-image elena j2 = im.Composite((960, 960), (0, 0), ts_spr + "elena/J2.webp")
-image elena k = im.Composite((960, 960), (0, 0), ts_spr + "elena/K.webp")
-image elena k1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/K1.webp")
-image elena l = im.Composite((960, 960), (0, 0), ts_spr + "elena/L.webp")
-image elena l1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/L1.webp")
-image elena l2 = im.Composite((960, 960), (0, 0), ts_spr + "elena/L2.webp")
-image elena l3 = im.Composite((960, 960), (0, 0), ts_spr + "elena/L3.webp")
-image elena m = im.Composite((960, 960), (0, 0), ts_spr + "elena/M.webp")
-image elena m1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/M1.webp")
-image elena n = im.Composite((960, 960), (0, 0), ts_spr + "elena/N.webp")
-image elena n1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/N1.webp")
-image elena n2 = im.Composite((960, 960), (0, 0), ts_spr + "elena/N2.webp")
-image elena o = im.Composite((960, 960), (0, 0), ts_spr + "elena/O.webp")
-image elena o1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/O1.webp")
-image elena p = im.Composite((960, 960), (0, 0), ts_spr + "elena/P.webp")
-image elena q = im.Composite((960, 960), (0, 0), ts_spr + "elena/Q.webp")
-image elena r = im.Composite((960, 960), (0, 0), ts_spr + "elena/R.webp")
-image elena s = im.Composite((960, 960), (0, 0), ts_spr + "elena/S.webp")
-image elena s1 = im.Composite((960, 960), (0, 0), ts_spr + "elena/S1.webp")
+image elena a1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/A1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/A1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/A1.webp") )
+
+image elena a2 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/A2.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/A2.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/A2.webp") )
+
+image elena b = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/B.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/B.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/B.webp") )
+
+image elena b2 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/B2.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/B2.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/B2.webp") )
+
+image elena c = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/C.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/C.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/A.webp") )
+
+image elena c1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/C1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/C1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/C1.webp") )
+
+image elena d = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/D.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/D.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/D.webp") )
+
+image elena d1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/D1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/D1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/D1.webp") )
+
+image elena e = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/E.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/E.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/E.webp") )
+
+image elena e1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/E1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/E1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/E1.webp") )
+
+image elena f = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/F.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/F.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/F.webp") )
+
+image elena f1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/F1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/F1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/F1.webp") )
+
+image elena f2 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/F2.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/F2.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/F2.webp") )
+
+image elena g = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/G.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/G.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/G.webp") )
+
+image elena g1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/G1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/G1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/G1.webp") )
+
+image elena h = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/H.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/H.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/H.webp") )
+
+image elena i = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/I.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/I.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/I.webp") )
+
+image elena i1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/I1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/I1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/I1.webp") )
+
+image elena i2 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/I2.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/I2.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/I2.webp") )
+
+image elena j = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/J.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/J.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/J.webp") )
+
+image elena j1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/J1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/J1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/J1.webp") )
+
+image elena j2 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/J2.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/J2.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/J2.webp") )
+
+image elena k = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/K.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/K.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/K.webp") )
+
+image elena k1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/K1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/K1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/K1.webp") )
+
+image elena m = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/M.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/M.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/M.webp") )
+
+image elena m1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/M1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/M1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/M1.webp") )
+
+image elena n = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/N.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/N.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/N.webp") )
+
+image elena n1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/N1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/N1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/N1.webp") )
+
+image elena n2 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/I1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/I1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/I1.webp") )
+
+image elena o = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/O.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/O.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/O.webp") )
+
+image elena o1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/O1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/O1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/O1.webp") )
+
+image elena p = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/P.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/P.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/P.webp") )
+
+image elena q = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/Q.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/Q.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/Q.webp") )
+
+image elena r = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/R.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/R.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/R.webp") )
+
+image elena s = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/S.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/S.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/S.webp") )
+
+image elena s1 = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/S1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/S1.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_spr + "elena/S1.webp") )
 
 ####ХИМАРИ
 image himari 1a = im.Composite((960, 960), (0, 0), ts_spr + "himari/1.webp", (0, 0), ts_spr + "himari/a.webp")

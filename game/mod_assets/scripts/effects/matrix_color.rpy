@@ -7,6 +7,8 @@
 # НОЧНЫЕ $ ts_night_time()
 # НЕ НОЧНЫЕ, НО И НЕ ДНЕВНЫЕ $ ts_sunset_time()
 
+# ТАК ЖЕ И С ОБЕСЦВЕТОМ
+
 init python:
     def ts_day_time():
         persistent.sprite_time='day'
@@ -15,5 +17,13 @@ init python:
     def ts_night_time():
         persistent.sprite_time='night'
 
+    def ts_uncolorize_off():
+        persistent.uncolorize='none'
+    def ts_uncolorize_lite():
+        persistent.uncolorize='lite'
+    def ts_uncolorize_full():
+        persistent.uncolorize='full'
+
 init:
-    default persistent.sprite_time = 'night'
+    default persistent.sprite_time = 'day'
+    default persistent.uncolorize = 'none'

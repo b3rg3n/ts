@@ -217,11 +217,24 @@ init:
     image ts_club_blur = im.Blur(ts_bg + "club.webp", 3.0)
     image ts_club_blur9 = im.Blur(ts_bg + "club.webp", 9.0)
 
+###ОВЕРЛЕИ
+    image ts_club_rain_ovr = ts_bg + "ovr/club_rain_ovr.webp"
+    image ts_club_rain = ts_bg + "ovr/club_rain.webp"
+
+    image ts_living_room_rain_ovr = ts_bg + "ovr/living_room_rain_ovr.webp"
+    image ts_living_room_rain = ts_bg + "ovr/living_room_rain.webp"
+
+    image ts_shkola_rain = ts_bg + "courtyard-rain.webp"
+    image ts_street_rain = ts_bg + "street7.webp"
+
+
 ###ЛОГО ХУЙНИ
     image ts_logo = "mod_assets/source/images/gui/ts_logo.webp"
     image ts_logo_menu = "mod_assets/source/images/gui/ts_logo_menu.webp"
 
 ###ШЕЙДЕРЫ
-    image ts_city_day_rain = RainOnWindow("ts_city_day", width = 1280, height = 720, rainamount = 1.0)
-    image ts_school_gate_day_rain = RainOnWindow("ts_school_gate_day", width = 1280, height = 720, rainamount = 1.0)
-    image ts_street_rain = RainOnWindow("ts_street", width = 1280, height = 720, rainamount = 1.0)
+    #image ts_city_day_rain = RainOnWindow("ts_city_day", width = 1280, height = 720, rainamount = 1.0)
+    #image ts_school_gate_day_rain = RainOnWindow("ts_school_gate_day", width = 1280, height = 720, rainamount = 1.0)
+    #image ts_street_rain = RainOnWindow("ts_street", width = 1280, height = 720, rainamount = 1.0)
+    image ts_club_rain_shader = RainOnWindow("ts_club_rain", width = 1280, height = 720, rainamount = 1.0)
+    image ts_living_room_rain_shader = RainOnWindow("ts_living_room_rain", width = 1280, height = 720, rainamount = 1.0)

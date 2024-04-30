@@ -50,6 +50,31 @@ label testing_label_blya:
     #        rotate 0
     #        repeat
 #    $ ed_blot8 = ImageDissolve(ed_images + "gui/dissolves/ed_blot.jpg", 8.0)
+    play ambience rain_in
+    scene ts_club_rain_shader
+    show ts_club_rain_ovr
+
+    m "Пиздатые шейдеры."
+
+    scene ts_living_room_rain_shader
+    show ts_living_room_rain_ovr
+
+    m "Ещё пизже."
+
+    play ambience rain_out
+
+    scene ts_shkola_rain
+    show ts_rain
+
+    m "Анимация."
+
+    scene ts_street_rain
+    show ts_rain
+
+    m "Ещё анимация."
+
+    return
+
     scene ts_club
     m "Тест"
     $ ts_uncolorize_lite()

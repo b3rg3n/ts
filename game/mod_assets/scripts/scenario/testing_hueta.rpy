@@ -50,6 +50,17 @@ label testing_label_blya:
     #        rotate 0
     #        repeat
 #    $ ed_blot8 = ImageDissolve(ed_images + "gui/dissolves/ed_blot.jpg", 8.0)
+#    show ed_un_d2_smile_pioneer_2_night:
+#        align (0.5, 0.5) zoom 1.2 alpha 1
+#        ease 1 zoom 0.9 alpha 0
+
+#    show ed_sl_kowai_night at ts_move(x1=0.15,x2=-0.5)
+#    show ed_sh_kowai_night at ts_move(t=1.75,x1=0.9,x2=1.5)
+#    show ed_el_kowai_night at ts_move(t=2.625,x1=0.6,x2=1.5)
+
+#    show ed_mt_mite at ts_move(t=2,x1=-0.6,x2=0.4)
+#    show ed_sl_fly at ts_move(t=2,x1=-0.4,x2=0.6)
+
     play ambience rain_in
     scene ts_club_rain_shader
     show ts_club_rain_ovr

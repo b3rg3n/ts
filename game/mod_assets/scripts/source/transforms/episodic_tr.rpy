@@ -4,6 +4,20 @@
 
 init:
 
+    transform ts_walking:
+        align (0.5, 0.5)
+        zoom 1.01
+        ease 0.5 xalign 0.35 yalign 0.65
+        ease 0.5 xalign 0.50 yalign 0.50
+        ease 0.5 xalign 0.65 yalign 0.65
+        ease 0.5 xalign 0.50 yalign 0.50
+        repeat
+
+    transform ts_move(t=2,x1=-0.5,x2=0.5):
+        anchor (0.5, 0.5)
+        pos (x1, 0.5)
+        ease t xpos x2
+
     transform ts_punch(x=0,y=0): # ts_punch(-0.22) или ts_punch()
         anchor (0.5, 0.5)
         pos (0.5+x, 0.5+y)

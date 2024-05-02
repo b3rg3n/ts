@@ -1,4 +1,6 @@
-﻿
+﻿# True Story Glitches
+# by @Vladya (продублировал инфу для ебантяев, которые хотят мне предъявить(хоть и в class всё уже было написано изначально))
+# Since 2024
 init -100 python in _glitch_setting:
 
     import random

@@ -1,3 +1,4 @@
+# Nai @ Make Visual Novels - АВТОР ШЕЙДЕРОВ
 init python:
 # Variables Section
 

@@ -3,13 +3,6 @@
 # Since 2024
 
 init:
-###ТРАНЗИТЫ
-    define ts_pixel = Pixellate(0.3, 5)
-    define flash = Fade(.25, 0, .75, color="#fff")
-    define dissolve2 = Dissolve(2.0)
-    define dspr = Dissolve(.2)
-    define flash_red = Fade(1, 0, 1, color="#e11")
-    define dissolve4 = Dissolve(4)
 ###ТРАНЗИТЫ IMAGE
     define ed_night_dis = ImageDissolve(ts_anim + "transit/ed_night_dis.webp", 5.0) # ЭФФЕКТ СГОРАЮЩЕЙ БУМАГИ
     define ed_night_dis_faster = ImageDissolve(ts_anim + "transit/ed_night_dis.webp", 2.5) # ЭФФЕКТ СГОРАЮЩЕЙ БУМАГИ

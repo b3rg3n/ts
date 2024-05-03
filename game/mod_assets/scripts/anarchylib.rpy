@@ -12,6 +12,7 @@ init -1199 python:
     import getpass # ЭТО ТОЖЕ
     import datetime # НУЖНО ДЛЯ ГОПА ВРЕМЕНИ
     from os import path # ЭТО ДЛЯ ГОПА АУДИО
+    import random # НУЖНО ДЛЯ ГЛИТЧТЕКСТА
 
     modID = 'mod_assets/source/audio/' # ПУТЬ, ГДЕ У ТЕБЯ ЛЕЖАТ ЗВУКИ И МУЗОНЫ
 
@@ -104,8 +105,67 @@ init -15 python in TS:
     def Front(atl):
         renpy.show_layer_at(atl, layer='front')
 
+# СМЕНА ВРЕМЕНИ СПРАЙТОВ (ПОКРАСКА, ЁПТА)
+# КАК ЮЗАТЬ ЭТУ ПОЕБЕНЬ:
+# НУЖНЫ ДНЕВНЫЕ СПРАЙТЫ? $ ts_day_time()
+# НОЧНЫЕ $ ts_night_time()
+# НЕ НОЧНЫЕ, НО И НЕ ДНЕВНЫЕ $ ts_sunset_time()
+# ТАК ЖЕ И С ОБЕСЦВЕТОМ
+
+# КАК ПРОПИСАТЬ СПРАЙТ И БГ ДЛЯ ПОКРАСКИ?
+# БГ: (ДЛЯ ОБЕСЦВЕТА)
+#    image ts_stairsre = ConditionSwitch(
+#    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "stairsre.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+#    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "stairsre.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+#    True,im.Composite((1280,720), (0,0), ts_bg + "stairsre.webp") )
+# СПРАЙТ: (ДЛЯ ПОКРАСКИ)
+#    image elena a = ConditionSwitch(
+#    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/A.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+#    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_spr + "elena/A.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+#    True,im.Composite((960,960), (0,0), ts_spr + "elena/A.webp") )
+
+    def ts_day_time():
+        persistent.sprite_time='day'
+    def ts_sunset_time():
+        persistent.sprite_time='sunset'
+    def ts_night_time():
+        persistent.sprite_time='night'
+
+    def ts_uncolorize_off():
+        persistent.uncolorize='none'
+    def ts_uncolorize_lite():
+        persistent.uncolorize='lite'
+    def ts_uncolorize_full():
+        persistent.uncolorize='full'
+
+# УПРОЩЁННАЯ РЕГИСТРАЦИЯ ИМЁН ПЕРСОНАЖЕЙ
+# ВЗЯЛ У ХАЙТА, А ОТКУДА БРАЛ ОН - Я ХЗ
+# АМ СОРРИ, МЭН
+
+    def reg_char(id, name, who_color, what_color = "#fff", pref = "", suf = ""):
+        global Character
+        gl = globals()
+        
+        gl[id] = Character( name, color=who_color, what_color=what_color, drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000", what_prefix=pref, what_suffix=suf )
+
+    #reg_char("th", '', "#18FFEB", pref="~", suf="~") # ПРИМЕР, КАК НАДО ДЕФАЙНИТЬ
+
+init python: # ОТДЕЛЬНЫЙ, Т.К. С ОСТАЛЬНЫМИ ЧЁТ НЕ ДЕФАЙНИТ БЛЯ
+# ФИЧА С ГЛИТЧТЕКСТОМ
+# ВЗЯТО ИЗ ОРИГА ДОКИ (@danslvato)
+# ЮЗАТЬ ТАК = $ glitch_hueta_text = glitchtext(12) з.ы - 12 это кол-во символов хуйни (потом [glitch_hueta_text])
+    nonunicode = "¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽž"
+
+    def glitchtext(length):
+        output = ""
+        for x in range(length):
+            output += random.choice(nonunicode)
+        return output
 
 init:
+# ДЕФОЛТНЫЕ ЗНАЧЕНИЯ ПЕРЕМЕННЫХ ДЛЯ ОБЕСЦЕВЕТА И ВРЕМЕНИ СПРАЙТА
+    default persistent.sprite_time = 'day'
+    default persistent.uncolorize = 'none'
 #ГОПАЕМ ЮЗЕРНАЙМ
     if renpy.android or renpy.ios: # ПРОВЕРКА НА КАЛОЗВОНЫ (В ПЕРЕМЕННУЮ МОЖЕШЬ ВПИСАТЬ СВОЙ ВАРИК ЮЗЕРА)
         $ user = "Игрок"
@@ -115,3 +175,11 @@ init:
         $ user = os.environ.get('username') # ДЕДОВСКИЙ МЕТОД ГОПА ЮЗЕРА НА ВИНДЕ
 
     image gametime = DynamicDisplayable(show_gametime) # ВЫВОД ЗАТРАЧЕННОГО ВРЕМЕНИ - ЮЗАТЬ ТАК = [gametime]
+
+###ТРАНЗИТЫ (ИЗ НАЗВАНИЙ ПОНЯТНО, ЧТО ЭТО ЗА ТРАНЗИТЫ БЛЯ)
+    define flash = Fade(.25, 0, .75, color="#fff")
+    define flash_red = Fade(1, 0, 1, color="#e11")
+    define dspr = Dissolve(.2)
+    define dissolve2 = Dissolve(2.0)
+    define dissolve3 = Dissolve(3.0)
+    define dissolve4 = Dissolve(4)

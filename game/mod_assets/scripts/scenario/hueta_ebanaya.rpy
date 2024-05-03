@@ -162,6 +162,11 @@ screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_six_changes")
 
+    textbutton ("{size=+10}Третья глава{/size}") yalign 0.6 xalign 0.5:
+        activate_sound start_sound_suka
+        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        action Jump("ts_chapter_seven_changes")
+
     text "{size=+20}{font=[ts_main_font_hueta]}{color=#FF0000}Акт третий:{/color}{/font}{/size}" yalign 0.3 xalign 0.9
 
 label ts_chapter_prologue_changes:
@@ -457,6 +462,115 @@ label ts_chapter_six_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВО�
     pause 2
 
     jump ts_scenario_6
+
+label ts_chapter_seven_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВОЙ
+    show screen scenario_start_change_chapter_one with dissolve2
+    pause 1
+    hide screen scenario_start_change_chapter_one with dissolve2
+    pause 2
+
+    scene black with dissolve2
+    pause 2
+
+    play sound fb
+    scene ts_corridor
+    show zatemnenie
+    with flash
+
+    menu:
+        "Посмотреть в других классах":
+            $ unluck = True
+            $ unluck_ball += 1
+        "Идти вперёд":
+            pass
+
+    play sound fb
+    scene ts_school_bathroom
+    show zatemnenie
+    with flash
+
+    menu:
+        "Искать дальше":
+            $ unluck2 = True
+            $ unluck_ball += 1
+        "Успокоиться и вернуться":
+            pass
+
+    play sound fb
+    scene ts_kitchen
+    show zatemnenie
+    with flash
+
+    menu:
+        "Пожарить":
+            $ unluck3 = True
+            $ unluck_ball += 1
+        "Сварить":
+            pass
+
+    play sound fb
+    scene ts_kitchen
+    show zatemnenie
+    with flash
+
+    menu:
+        "Выйти прямо сейчас":
+            pass
+        "Ещё немного посидеть":
+            $ unluck4 = True
+            $ unluck_ball += 1
+            menu:
+                "Посмотреть телевизор":
+                    $ unluck4_telek = True
+                "Почитать":
+                    $ unluck4_reading = True
+                "Покашеварить":
+                    $ unluck4_cooking = True
+
+    play sound fb
+    scene ts_kitchen
+    show hiroto 2r at i11
+    show zatemnenie
+    with flash
+
+    menu:
+        "Сказать правду":
+            pass
+        "Соврать":
+            $ unluck5 = True
+            $ unluck_ball += 1
+
+    play sound fb
+    scene ts_kitchen
+    show hiroto 1e at i21
+    show monika 1a at i22
+    show zatemnenie
+    with flash
+
+    menu:
+        "Играть в шахматы":
+            $ act2_chess = True
+            cm "Итак, я повторяю свой вопрос: ты хочешь обучиться игре в шахматы?"
+            menu:
+                "Да":
+                    $ chess_tutor = True
+                "Нет":
+                    pass
+        "Сразу пойти к себе":
+            pass
+
+    window hide
+    play sound fb
+    scene black
+    with flash
+    pause 2
+
+    show screen scenario_start_change_chapter_one1 with dissolve2
+    pause 1
+    hide screen scenario_start_change_chapter_one1 with dissolve2
+    pause 2
+
+    jump ts_scenario_7
 
 screen scenario_start_change_chapter_one: # ВАРНИНГ ХУЙНИ
     text "{size=+15}{font=[ts_main_font_hueta]}Сделай нужные выборы.{/font}{/size}" yalign 0.5 xalign 0.5

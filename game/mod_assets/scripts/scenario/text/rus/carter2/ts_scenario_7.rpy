@@ -282,15 +282,55 @@ label ts_scenario_7:
             show monika at cright with move
             hide monika
             m "Вот уж спасибо..."
-            #вайплефт на школьный двор, потом на локеры, потом на лестницу, потом на коридор, потом ОПЯТЬ БЛЯТЬ НА ЛЕСТНИЦУ (только другую уже), ОПЯТЬ НА КОРИДОР (другой) (бгшки я скинул)...
+
+            $ TS.Screens(ts_hidescreens)
+            " {w=1.0}{nw}"
+
+            play sound pageflip
+            scene ts_school_courtyard_day
+            with wipeleft_scene
+
+            play sound pageflip
+            scene ts_l5
+            with wipeleft_scene
+
+            play sound pageflip
+            scene ts_stairs
+            with wipeleft_scene
+
+            play sound pageflip
+            scene ts_corridor
+            with wipeleft_scene
+
+            play sound pageflip
+            scene ts_stairsre
+            with wipeleft_scene
+
+            play sound pageflip
+            scene ts_corridorrev
+            with wipeleft_scene
+
+            $ TS.Screens(ts_showscreens)
+
             "Да сколько это может продолжаться... Я по школе уже набегалась чуть ли не больше, чем занял весь путь от дома до входа в эту школу!"
             "Уроки начались уже три минуты назад."
             "Может, мне удастся затеряться среди других учеников, которые тоже не к самому звонку приходят на первый урок?"
-            #и завершаем весь марафон бекграундом класса
+
+            stop music fadeout 5
+
+            $ TS.Screens(ts_hidescreens)
+            " {w=1.0}{nw}"
+
+            play sound pageflip
+            scene ts_class
+            with wipeleft_scene
+
+            $ TS.Screens(ts_showscreens)
+
             "Я тихо, как мышка, пробираюсь к своей парте."
-            stop music
+
             "Однако все мои надежды были разрушены строгим голосом учителя."
-            teacher "Мисс Ида!"
+            teacher "Мисс Ида!" with vpunch
             m "А, да, что?"
             teacher "Что, даже не скажете ничего? Ни «извините за опоздание», вообще ничего?"
             m "Извините... за опоздание..."
@@ -964,7 +1004,6 @@ label ts_scenario_7:
     $ ts_s_carterseven_readpoem = False
     $ ts_y_carterseven_readpoem = False
     $ ts_n_carterseven_readpoem = False
-    $ ts_all_carterseven_readpoem = False
     $ ts_first_carterseven_readpoem = False
 
     jump cartersevenpoemsblya
@@ -974,10 +1013,7 @@ label cartersevenpoemsblya:
     scene ts_club
     with wipeleft_scene
 
-    if ts_s_carterseven_readpoem == True and ts_y_carterseven_readpoem == True and ts_n_carterseven_readpoem == True:
-        $ ts_all_carterseven_readpoem = True
-    
-    if ts_all_carterseven_readpoem == True:
+    if ts_s_carterseven_readpoem and ts_y_carterseven_readpoem and ts_n_carterseven_readpoem:
         jump ts_carterseven_poem_finally
 
     if not ts_first_carterseven_readpoem:

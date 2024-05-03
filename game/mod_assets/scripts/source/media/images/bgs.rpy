@@ -211,7 +211,15 @@ init:
     "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "bedroom.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
     True,im.Composite((1280,720), (0,0), ts_bg + "bedroom.webp") )
 
+    image ts_corridorrev = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "corridorrev.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "corridorrev.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "corridorrev.webp") )
 
+    image ts_stairsre = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "stairsre.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "stairsre.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "stairsre.webp") )
 
 ###ЗАБЛЮРЕНО НАХОЙ
     image ts_club_blur = im.Blur(ts_bg + "club.webp", 3.0)
@@ -238,3 +246,4 @@ init:
     #image ts_street_rain = RainOnWindow("ts_street", width = 1280, height = 720, rainamount = 1.0)
     image ts_club_rain_shader = RainOnWindow("ts_club_rain", width = 1280, height = 720, rainamount = 1.0)
     image ts_living_room_rain_shader = RainOnWindow("ts_living_room_rain", width = 1280, height = 720, rainamount = 1.0)
+

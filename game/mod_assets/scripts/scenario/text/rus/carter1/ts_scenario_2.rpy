@@ -15,8 +15,6 @@ label ts_scenario_2:
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
 
-    $ pps = 1
-
     $ save_name = "Поиски. Юри"
 
     pause 2
@@ -302,7 +300,6 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -427,7 +424,6 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -550,7 +546,6 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -650,7 +645,6 @@ label ts_scenario_2:
     show sayori 1k at t22
     "Мы с Сайори озадаченно обмениваемся взглядами."
 
-    $ pps = 3
 
     m "..."
     s 1l "Что же..."
@@ -742,7 +736,6 @@ label ts_scenario_2:
     scene ts_school_bathroom
     with wipeleft_scene
 
-    $ pps = 4
 
     $ TS.Screens(ts_showscreens)
 
@@ -810,8 +803,6 @@ label ts_scenario_2:
 
     "После этих слов кабинка открылась, и..."
 
-    $ pps = 2
-
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     show yuri 9p at t11
@@ -825,7 +816,6 @@ label ts_scenario_2:
     "Это был... совершенно другой человек."
     "Психически нездоровый человек."
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -866,7 +856,6 @@ label ts_scenario_2:
     "После этих слов Юри снова начинает бесконтрольно рыдать."
     "А я просто стою и смотрю."
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -879,7 +868,6 @@ label ts_scenario_2:
     "Как я могу кого-то утешать, когда меня саму никогда не утешали, и я совершенно не знаю, как это делать?!"
 
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -913,8 +901,6 @@ label ts_scenario_2:
 
     $ TS.Screens(ts_showscreens)
 
-    $ pps = 4
-
     m "Уже есть."
 
     scene ts_school_bathroom with dspr
@@ -942,7 +928,6 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -976,7 +961,6 @@ label ts_scenario_2:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -989,7 +973,6 @@ label ts_scenario_2:
     pause 1
     hide screen chp_text_12
 
-    play sound nfy
 
     $ TS.Screens(ts_showscreens)
 
@@ -1011,8 +994,6 @@ label ts_scenario_2:
     m "Не бывает «неправильных» людей. Есть только «другие» люди, «особенные» люди."
 
     show yuri 1u at f11
-
-    $ pps = 3
 
     "Впервые с момента нашей встречи Юри мне улыбнулась."
     "Значит, я всё делаю правильно!"
@@ -1045,8 +1026,6 @@ label ts_scenario_2:
     play sound pageflip
     scene ts_school_bathroom
     with wipeleft_scene
-
-    $ pps = 1
 
     $ TS.Screens(ts_showscreens)
 

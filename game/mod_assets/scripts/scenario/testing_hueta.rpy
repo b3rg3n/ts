@@ -210,7 +210,6 @@ label testing_label_blya:
     pause
 ##############
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
-    $ pps = 5
 
     play sound slender
 
@@ -336,7 +335,6 @@ label testing_label_blya:
     "..."
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
-    $ pps = 5
 
     play sound_loop psy_fast_3
 

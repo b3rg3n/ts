@@ -12,5 +12,5 @@ init:
     define ink_font = ts_fonts + "INKFREE.ttf"
     define sc_font = ts_fonts + "SCOTCH.ttf"
     define ts_main_font_hueta = ts_fonts + "captureit.ttf"
-    define prologue_font = ts_fonts + "B52.ttf"
+    define prologue_font = ts_fonts + "Unageo-Light.ttf"
     define ts_atomic = ts_fonts + "cyr.ttf"

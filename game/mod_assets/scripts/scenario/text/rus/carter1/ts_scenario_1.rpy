@@ -368,7 +368,6 @@ label ts_scenario_1:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -538,12 +537,8 @@ label ts_scenario_1:
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
-    $ pps = 3
-
     s "Если можно просто умереть."
     s "Раз уж я такая бесполезная."
-
-    $ pps = 4
 
     show sayori 1zd at t11
     
@@ -552,8 +547,6 @@ label ts_scenario_1:
     show sayori 1v at f11
     
     s "Обычно я притворялась счастливой в кругу новых знакомых, чтобы они подумали, что я всегда такая, и что обидеть меня невозможно."
-
-    $ pps = 2
 
     show sayori 1t at t11
     
@@ -572,8 +565,6 @@ label ts_scenario_1:
     show sayori 3p at h11
     with flash
 
-    $ pps = 1
-
     $ TS.Screens(vpunch)
 
     m "Ну уж нет!"
@@ -583,7 +574,6 @@ label ts_scenario_1:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
     show zatemnenie with dspr
 
     $ TS.Screens(ts_showscreens)
@@ -650,8 +640,6 @@ label ts_scenario_1:
 
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
-
-    play sound nfy
 
     $ TS.Screens(ts_showscreens)
 

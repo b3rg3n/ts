@@ -15,8 +15,6 @@ label ts_scenario_4:
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
 
-    $ pps = 1
-
     $ save_name = "Всё же хорошо?"
 
     play sound chp1
@@ -75,7 +73,6 @@ label ts_scenario_4:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -971,7 +968,6 @@ label ts_scenario_4:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     $ TS.Screens(ts_showscreens)
 
@@ -1063,7 +1059,6 @@ label ts_scenario_4:
     show yuri 3y4 at t11
     with flash
 
-    $ pps = 2
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
@@ -1078,7 +1073,6 @@ label ts_scenario_4:
     show natsuki 1j at t33
     with flash
 
-    $ pps = 1
 
     $ TS.Screens(ts_showscreens)
 
@@ -1255,7 +1249,6 @@ label ts_scenario_4:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -1500,7 +1493,6 @@ label ts_scenario_4:
 
     pause 2
 
-    play sound nfy
 
     $ TS.Screens(ts_showscreens)
 
@@ -1741,7 +1733,6 @@ label ts_scenario_4:
 
     with ed_night_dis
 
-    $ pps = 5
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
@@ -1864,7 +1855,6 @@ label ts_scenario_4:
     scene black with dissolve4
     pause 4
 
-    $ pps = 1
 
     $ TS.Screens(ts_null_transform)
 

@@ -50,18 +50,18 @@ init -1 python:
 
     style.settings_header = Style(style.base_font)
     style.settings_header.font  = header_font
-    style.settings_header.size = 29
+    style.settings_header.size = 49
     style.settings_header.color = "#FFFFFF"
     style.settings_header.hover_color = "#FFFFFF"
 
     style.settings_text = Style(style.settings_header)
-    style.settings_text.size = 29
+    style.settings_text.size = 39
     style.settings_text.selected_color = "#FF0000"
     style.settings_text.hover_color = "#FFFFFF"
 
     style.settings_link = Style(style.base_font)
     style.settings_link.font  = link_font
-    style.settings_link.size = 45
+    style.settings_link.size = 70
     style.settings_link.kerning = 3
     style.settings_link.color = "#ffffff"
     style.settings_link.hover_color = "#ff0000"
@@ -175,7 +175,6 @@ init -1 python:
     style.log_button_text_edit = Style(style.log_button_text)
     style.log_button_text_edit.size = 33
 
-
 init -1 python:
     _main_menu_screen = "main_menu"
 init -501 screen main_menu:
@@ -186,90 +185,90 @@ init -501 screen main_menu:
 
     if _preferences.language == "english":
         if persistent.badendmenu and persistent.badendmenuskipglitch:
-            textbutton ("{size=+15}resurrect{/size}") ypos 342 xpos 75:
+            textbutton ("{size=+25}resurrect{/size}") ypos 342 xpos 75:
                 action Start()
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         elif persistent.badendmenuperedglitch:
-            textbutton ("{size=+15}Now{/size}") ypos 342 xpos 75:
+            textbutton ("{size=+25}Now{/size}") ypos 342 xpos 75:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         else:
-            textbutton ("{size=+15}go barmy{/size}") ypos 342 xpos 75:
+            textbutton ("{size=+25}go barmy{/size}") ypos 342 xpos 75:
                 action Start()
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         if persistent.badendmenuperedglitch:
-            textbutton ("{size=+15}Everyone{/size}") ypos 392 xpos 75:
+            textbutton ("{size=+25}Everyone{/size}") ypos 392 xpos 75:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+15}Can вe{/size}") ypos 442 xpos 75:
+            textbutton ("{size=+25}Can вe{/size}") ypos 442 xpos 75:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+15}Happy{/size}") ypos 492 xpos 75:
+            textbutton ("{size=+25}Happy{/size}") ypos 492 xpos 75:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         else:
-            textbutton ("{size=+15}rememвer {/size}") ypos 392 xpos 75:
+            textbutton ("{size=+25}rememвer {/size}") ypos 392 xpos 75:
                 action ShowMenu('load')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+15}Settings{/size}") ypos 442 xpos 75:
+            textbutton ("{size=+25}Settings{/size}") ypos 442 xpos 75:
                 action ShowMenu('preferences')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+15}escape{/size}") ypos 492 xpos 75:
+            textbutton ("{size=+25}escape{/size}") ypos 492 xpos 75:
                 action ShowMenu('quit')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
     else:
         if persistent.badendmenu and persistent.badendmenuskipglitch:
-            textbutton ("{size=+15}Воскреснуть{/size}") ypos 342 xpos 75:
+            textbutton ("{size=+25}Воскреснуть{/size}") ypos 342 xpos 75:
                 action Start()
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         elif persistent.badendmenuperedglitch:
-            textbutton ("{size=+15}Теперь{/size}") ypos 342 xpos 75:
+            textbutton ("{size=+25}Теперь{/size}") ypos 342 xpos 75:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         elif persistent.goodendmenu:
-            textbutton ("{size=+15}Ещё разок?{/size}") ypos 342 xpos 75:
+            textbutton ("{size=+25}Ещё разок?{/size}") ypos 342 xpos 75:
                 action Start()
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         else:
-            textbutton ("{size=+15}Сойти с ума{/size}") ypos 342 xpos 75:
+            textbutton ("{size=+25}Сойти с ума{/size}") ypos 342 xpos 75:
                 action Start()
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         if persistent.badendmenuperedglitch:
-            textbutton ("{size=+15}Все{/size}") ypos 392 xpos 75:
+            textbutton ("{size=+25}Все{/size}") ypos 392 xpos 75:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+15}Будут{/size}") ypos 442 xpos 75:
+            textbutton ("{size=+25}Будут{/size}") ypos 442 xpos 75:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+15}Счастливы{/size}") ypos 492 xpos 75:
+            textbutton ("{size=+25}Счастливы{/size}") ypos 492 xpos 75:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         else:
-            textbutton ("{size=+15}Вспомнить{/size}") ypos 392 xpos 75:
+            textbutton ("{size=+25}Вспомнить{/size}") ypos 392 xpos 75:
                 action ShowMenu('load')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+15}Настройки{/size}") ypos 442 xpos 75:
+            textbutton ("{size=+25}Настройки{/size}") ypos 442 xpos 75:
                 action ShowMenu('preferences')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+15}Сбежать{/size}") ypos 492 xpos 75:
+            textbutton ("{size=+25}Сбежать{/size}") ypos 492 xpos 75:
                 action ShowMenu('quit')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
@@ -357,48 +356,23 @@ init -501 screen game_menu_selector:
     text "{size=+17}{font=[ts_atomic]}True Story{/font}{/size}" ypos 292 xpos 75 # {image=ts_logo_menu}
 
     if _preferences.language == "english":
-        textbutton ("{size=+15}main menu{/size}") ypos 342 xpos 75:
+        textbutton ("{size=+25}main menu{/size}") ypos 342 xpos 75:
             action MainMenu()
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+15}Save {/size}") ypos 392 xpos 75:
+        textbutton ("{size=+25}Save {/size}") ypos 392 xpos 75:
             action ShowMenu('save')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+15}Load {/size}") ypos 442 xpos 75:
+        textbutton ("{size=+25}Load {/size}") ypos 442 xpos 75:
             action ShowMenu('load')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+15}Settings{/size}") ypos 492 xpos 75:
+        textbutton ("{size=+25}Settings{/size}") ypos 492 xpos 75:
             action ShowMenu('preferences')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+15}Leave{/size}") ypos 542 xpos 75:
-            action ShowMenu('quit')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        imagebutton ypos 0 xpos 0:
-            auto ts_gui + "ebanoemenu/nope_%s.webp"
-            action Return()
-        text "{font=[cit_font]}{size=+15}You've already played the mod {image=gametime}{size=+15}{/font}" ypos 650 xpos 76
-    else:
-        textbutton ("{size=+15}На Главную{/size}") ypos 342 xpos 75:
-            action MainMenu()
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+15}Запомнить{/size}") ypos 392 xpos 75:
-            action ShowMenu('save')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+15}Вспомнить{/size}") ypos 442 xpos 75:
-            action ShowMenu('load')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+15}Настройки{/size}") ypos 492 xpos 75:
-            action ShowMenu('preferences')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+15}Сбежать{/size}") ypos 542 xpos 74:
+        textbutton ("{size=+25}Leave{/size}") ypos 542 xpos 75:
             action ShowMenu('quit')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
@@ -406,8 +380,35 @@ init -501 screen game_menu_selector:
             auto ts_gui + "ebanoemenu/nope_%s.webp"
             action Return()
         if not track_checker_blya == "empty":
-            text "{font=[cit_font]}{size=+15}[track_checker_blya]{size=+15}{/font}" ypos 600 xpos 77
-        text "{font=[cit_font]}{size=+15}Сходишь с ума уже {image=gametime}{size=+15}{/font}" ypos 650 xpos 76
+            text "{font=[cit_font]}{size=+25}[track_checker_blya]{size=+15}{/font}" ypos 600 xpos 77
+        text "{font=[cit_font]}{size=+25}You've already played the mod {image=gametime}{size=+15}{/font}" ypos 650 xpos 76
+    else:
+        textbutton ("{size=+25}На Главную{/size}") ypos 342 xpos 75:
+            action MainMenu()
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton ("{size=+25}Запомнить{/size}") ypos 392 xpos 75:
+            action ShowMenu('save')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton ("{size=+25}Вспомнить{/size}") ypos 442 xpos 75:
+            action ShowMenu('load')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton ("{size=+25}Настройки{/size}") ypos 492 xpos 75:
+            action ShowMenu('preferences')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton ("{size=+25}Сбежать{/size}") ypos 542 xpos 74:
+            action ShowMenu('quit')
+            activate_sound start_sound_suka
+            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        imagebutton ypos 0 xpos 0:
+            auto ts_gui + "ebanoemenu/nope_%s.webp"
+            action Return()
+        if not track_checker_blya == "empty":
+            text "{font=[cit_font]}{size=+25}[track_checker_blya]{size=+15}{/font}" ypos 600 xpos 77
+        text "{font=[cit_font]}{size=+25}Сходишь с ума уже {image=gametime}{size=+15}{/font}" ypos 650 xpos 76
 
 init -101 python:
 
@@ -642,7 +643,7 @@ init -501 screen preferences:
                 text translation_new["Text_speed"] style "settings_header" xalign 0.5
                 bar value Preference("text speed") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xalign 0.5 xmaximum 0.8 ymaximum 3
 
-                textbutton translation_new["Language"] style "log_button" text_style "settings_text" text_size 28 xalign 0.5 action ShowMenu("language_menu")
+                textbutton translation_new["Language"] style "log_button" text_style "settings_link" text_size 28 xalign 0.5 action ShowMenu("language_menu")
 
                 text translation_new["Font"] style "settings_header" xalign 0.5
                 grid 2 1 xfill True:
@@ -1431,7 +1432,7 @@ init -502 screen nvl(dialogue, items=None):
 
     $ timeofday = persistent.timeofday
 
-    window background Frame(ts_gui + "choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.01 bottom_padding 0.2 top_padding 0.1:
+    window background Frame(ts_gui + "choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.05 bottom_padding 0.2 top_padding 0.1:
         style "nvl_window"
 
         has vbox
@@ -1465,8 +1466,8 @@ init -502 screen nvl_dialogue(dialogue):
                 spacing 10
             if (persistent.bazarbig):
                 if who is not None:
-                    text who id who_id size 34 font nvl_font
-                text what id what_id size 33
+                    text who id who_id size 33 font nvl_font
+                text what id what_id size 32
             else:
                 if who is not None:
                     text who id who_id size 27 font nvl_font

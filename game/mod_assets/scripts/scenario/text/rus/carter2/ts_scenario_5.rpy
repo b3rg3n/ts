@@ -15,7 +15,6 @@ label ts_scenario_5:
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
 
-    $ pps = 1
 
     $ save_name = "С возвращением,\nМоника!"
 
@@ -90,7 +89,6 @@ label ts_scenario_5:
     show overlay aw_memory_back_1 zorder 4
     with flash
 
-    $ pps = 2
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
@@ -146,7 +144,6 @@ label ts_scenario_5:
 
     show sayori 2pk at s11
 
-    $ pps = 4
 
     $ TS.Screens(ts_showscreens)
 
@@ -168,7 +165,6 @@ label ts_scenario_5:
 
     show sayori 2pm at h11
 
-    $ pps = 2
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
@@ -220,8 +216,6 @@ label ts_scenario_5:
     with dissolve
 
     stop music fadeout 4
-
-    $ pps = 4
 
     $ TS.Screens(ts_showscreens)
 
@@ -359,7 +353,6 @@ label ts_scenario_5:
     s 2pl "Да, ладно, всё бывает в первый раз. И похмелье тоже."
     s 2pzc "Прощаю."
 
-    $ pps = 1
 
     show sayori 1px at t11
     play music audio.okevrsay
@@ -498,7 +491,6 @@ label ts_scenario_5:
 
     show monika 5ba at t11
 
-    $ pps = 3
 
     em "Даже и не пытайся, всё равно не вспомнишь."
     m "А! Ты вообще откуда взялась?"
@@ -560,7 +552,6 @@ label ts_scenario_5:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    $ pps = 1
 
     play sound2 pageflip
     scene ts_house
@@ -725,7 +716,6 @@ label ts_scenario_5:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -1504,7 +1494,7 @@ label ts_scenario_5:
 
     show monika 2bn at ln11
 
-    $ pps = 3
+
     $ TS.Screens(hpunch)
 
     em "И не говори... Я сама хоть и не пила вчера, но чувствую себя немногим лучше..."
@@ -1518,7 +1508,6 @@ label ts_scenario_5:
 
     show monika 2bj at t11
 
-    $ pps = 1
 
     m "..."
     m "Ну, с другой стороны, хоть с умным человеком поговорю..."

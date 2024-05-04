@@ -82,7 +82,7 @@ init -1199 python:
         persistent.gametime += dt.total_seconds()
         minutes, seconds = divmod(int(persistent.gametime), 60)
         hours, minutes = divmod(minutes, 60)
-        img = Text("{size=+15}{font=[cit_font]}%0*d:%0*d:%0*d{/font}{/size}" % (2, hours, 2, minutes, 2, seconds))
+        img = Text("{size=+25}{font=[cit_font]}%0*d:%0*d:%0*d{/font}{/size}" % (2, hours, 2, minutes, 2, seconds))
         return img, .1
 
 # АХУЕННАЯ ФИШКА, КОТОРАЯ ПОЗВОЛИТ ТЕБЕ ЮЗАТЬ ATL НА РАЗНЫХ ОВЕРЛЕЯХ

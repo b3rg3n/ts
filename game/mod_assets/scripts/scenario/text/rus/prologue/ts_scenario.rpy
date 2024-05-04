@@ -37,16 +37,16 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
+
     nvlbazar "{font=[prologue_font]}Конечно же, всё начиналось совсем по-другому..."
     nvlbazar "{font=[prologue_font]}Всё начиналось как у остальных людей: родилась, пошла в школу, выучилась... Правда, ещё не до конца, но всё же."
     nvlbazar "{font=[prologue_font]}С самого детства взрослые называли меня «одарённой девочкой»."
-    nvlbazar "{font=[prologue_font]}Что во мне такого «одарённого»? В ранние годы я этого не понимала. Но, как говорится, «кто я такая, чтобы спорить со взрослыми?»."
+    nvlbazar "{font=[prologue_font]}Что во мне такого «одарённого»? В ранние годы я этого не понимала. Но,\nкак говорится, «кто я такая, чтобы спорить со взрослыми?»."
     nvlbazar "{font=[prologue_font]}«Маленькая ещё»... «Не доросла ещё»... «Подрастёшь - поймёшь»... Продолжать можно до бесконечности…"
 
     nvl clear
 
-    nvlbazar "{font=[prologue_font]}Однако, оглядываясь назад, я поняла: что-то одарённое во мне действительно было."
+    nvlbazar "{font=[prologue_font]}Однако, оглядываясь назад, я поняла: что-то одарённое во мне\nдействительно было."
 
     nvl clear
 
@@ -67,7 +67,6 @@ label ts_scenario_0:
     with wipeleft_scene
 
     $ TS.Screens(ts_showscreens)
-    play ambience pechatka
 
     nvlbazar "{font=[prologue_font]}Дальше, уже в школе, пока остальные до сих пор учили буквы, я уже невообразимо быстро читала."
     nvlbazar "{font=[prologue_font]}А пока остальные до сих пор складывали два плюс два, я без калькулятора уже могла перемножать двузначные числа."
@@ -125,7 +124,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     nvlbazar "{font=[prologue_font]}Нет, гением я себя назвать не могу, пусть даже и результат был лучше, чем у большинства детей моего возраста."
     nvlbazar "{font=[prologue_font]}Но помимо чтения, таблицы умножения и прочего, такого важного в начальной школе, и такого бесполезного во всём остальном…"
     nvlbazar "{font=[prologue_font]}Я совершенно не знала, как взаимодействовать с людьми."
@@ -149,7 +147,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     nvlbazar "{font=[prologue_font]}Мы постоянно ходили друг к другу в гости, где постоянно играли друг с другом."
     nvlbazar "{font=[prologue_font]}Мира была немного старше меня, но мы с ней как будто были на одной волне."
 
@@ -173,7 +170,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     nvlbazar "{font=[prologue_font]}Однако, когда я пришла в школу к Мире, она как будто отдалилась от меня."
     nvlbazar "{font=[prologue_font]}Оказалось, что у Миры были и свои подруги, с которыми она росла вместе на одной улице, и подруги эти с каким-то презрением смотрели на «какую-то странную девочку»."
     nvlbazar "{font=[prologue_font]}А иногда и вообще смотрели на меня, как на пустое место."
@@ -287,7 +283,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     nvlbazar "{font=[prologue_font]}Но это мы уже слишком далеко зашли. Сначала немного откатимся в прошлое."
     nvlbazar "{font=[prologue_font]}Родители всегда требовали от меня становиться лучше. Стараться лучше. {i}Быть{/i} лучше."
     nvlbazar "{font=[prologue_font]}Каждый раз, когда я получала тройку, или даже четвёрку, хотя это и было редко, папа каждый раз раздувал из этого целое событие."
@@ -328,7 +323,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     nvlbazar "{font=[prologue_font]}Даже несмотря на то, что с годами читала я уже заметно меньше, а последнюю книгу я прочла где-то за год до того, как меня записали в Книжный клуб."
     nvlbazar "{font=[prologue_font]}Когда папа заставил меня прочитать «Графа Монте-Кристо» в одиннадцать лет, у меня просто пропало желание читать хоть что-то."
     nvlbazar "{font=[prologue_font]}Я всё равно довольно успешно справлялась. Я даже была вице-президентом клуба."
@@ -349,7 +343,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     nvlbazar "{font=[prologue_font]}В следующем году меня направили в Музыкальный клуб. И поначалу мне это действительно нравилось."
     nvlbazar "{font=[prologue_font]}У дедушки было пианино, и я, ещё будучи ребёнком, время от времени наобум стучала по клавишам, поэтому, когда мне предложили выбрать инструмент, я без раздумий указала на пианино."
     nvlbazar "{font=[prologue_font]}Да, школьное пианино было далеко не первого качества, и играть я, по сути, не умела..."
@@ -368,7 +361,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     nvlbazar "{font=[prologue_font]}Но мне это было и не важно."
     nvlbazar "{font=[prologue_font]}Мне это нравилось."
     nvlbazar "{font=[prologue_font]}Я быстро научилась играть несколько простых песенок."
@@ -388,7 +380,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     nvlbazar "{font=[prologue_font]}Но... Помните, как я говорила, что я невообразимая лентяйка?"
     nvlbazar "{font=[prologue_font]}Так вот: может, это просто лень, а может, расстройство посерьёзнее, но как только дело дошло до композиций посложнее, я разленилась."
     nvlbazar "{font=[prologue_font]}И дело даже не в том, что я не хотела учиться, или не могла – с должным старанием всё должно получиться."
@@ -417,7 +408,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     nvlbazar "{font=[prologue_font]}После приключений с Музыкальным клубом меня потянуло в спорт."
     nvlbazar "{font=[prologue_font]}Нет, в хоккей и в прочие преимущественно мужские виды спорта, где в основном нужна грубая сила, а не утончённость, я не играла."
     nvlbazar "{font=[prologue_font]}В конце концов, я же девочка, а не бугай двухметровый..."
@@ -470,7 +460,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     nvlbazar "{font=[prologue_font]}В прошлом году меня перевели в другой класс."
     nvlbazar "{font=[prologue_font]}Все эти люди казались мне совершенно незнакомыми. Впрочем, кроме Каори, со мной и в прошлом классе особо никто не общался."
     nvlbazar "{font=[prologue_font]}Но Каори перевели в другую школу. Так что я как была одна-одинокая, так и после того, как меня перевели в другой класс, ситуация не улучшилась."
@@ -512,7 +501,6 @@ label ts_scenario_0:
 
     $ TS.Screens(ts_showscreens)
 
-    play ambience pechatka
     stop music fadeout 10
     nvlbazar "{font=[prologue_font]}Пришло время выпускного года. И я, побывав уже во многих клубах, примерно понимаю, что я хочу и чего я не хочу видеть в своём клубе."
     nvlbazar "{font=[prologue_font]}Я хочу, чтобы в моём клубе не было слова «неправильно»."

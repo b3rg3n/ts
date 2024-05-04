@@ -15,8 +15,6 @@ label ts_scenario_3:
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
 
-    $ pps = 1
-
     $ save_name = "Поиски. Нацуки"
 
     pause 2
@@ -52,8 +50,6 @@ label ts_scenario_3:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
-    $ pps = 2
-
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "Меня напугала её мания навредить себе."
@@ -68,7 +64,6 @@ label ts_scenario_3:
     scene ts_bedroom
     with flash
 
-    $ pps = 1
     $ TS.Screens(ts_showscreens)
 
     "А до клуба мне ещё многое нужно сделать."
@@ -209,7 +204,6 @@ label ts_scenario_3:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -245,8 +239,6 @@ label ts_scenario_3:
     play music audio.t10y
     show layer master at heartbeat
     play ambience audio.hb
-
-    $ pps = 5
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
@@ -332,7 +324,6 @@ label ts_scenario_3:
     with vpunch
     pause 1
 
-    $ pps = 1
     $ TS.Screens(ts_showscreens)
 
     "А затем я просыпаюсь."
@@ -565,8 +556,6 @@ label ts_scenario_3:
     show himari 1zzzh at h21
     show elena i at h22
 
-    $ pps = 3
-
     "Они обе засмеялись."
     "Хотя нет, не засмеялись. Заржали, как самые что ни на есть лошади."
 
@@ -574,8 +563,6 @@ label ts_scenario_3:
     $ pod2_name = "Кобыла"
 
     play music ts_ylm
-
-    $ pps = 4
 
     "Не стерпев такого хамства, я подбегаю к ним."
     "Нужно {cps=24}{i}аккуратно{/i}{/cps} выяснить, куда же она побежала."
@@ -590,8 +577,6 @@ label ts_scenario_3:
     
     show himari 1y at t21
     show elena b2 at t22
-
-    $ pps = 7
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
@@ -617,8 +602,6 @@ label ts_scenario_3:
     play sound pageflip
     scene ts_school_bathroom
     with wipeleft_scene
-
-    $ pps = 4
 
     $ TS.Screens(ts_showscreens)
 
@@ -715,8 +698,6 @@ label ts_scenario_3:
 
     play music ts_ybs
 
-    $ pps = 3
-
     n 1t "А, Моника... А я тебя знаю."
     n 2l "Ты же у нас вроде гордости школы?"
 
@@ -753,7 +734,6 @@ label ts_scenario_3:
 
     show overlay aw_memory_back_1 with dspr
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
-    $ pps = 2
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
@@ -767,8 +747,6 @@ label ts_scenario_3:
     scene ts_school_courtyard_day
     show natsuki 1i at t11
     with flash
-
-    $ pps = 3
 
     $ TS.Screens(ts_showscreens)
 
@@ -789,7 +767,6 @@ label ts_scenario_3:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -952,8 +929,6 @@ label ts_scenario_3:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
-    $ pps = 2
-
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "Меня напугала её мания навредить себе."
@@ -1002,7 +977,6 @@ label ts_scenario_3:
 
     if unluck2 == True:
 
-        $ pps = 2
         $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     
         $ TS.Screens(ts_showscreens)
@@ -1056,7 +1030,6 @@ label ts_scenario_3:
         scene ts_corridor
         with wipeleft_scene
 
-        $ pps = 3
     
         $ TS.Screens(ts_showscreens)
 
@@ -1074,8 +1047,6 @@ label ts_scenario_3:
         with wipeleft_scene
 
         play music audio.t3
-
-        $ pps = 1
 
         $ TS.Screens(ts_showscreens)
 
@@ -1103,7 +1074,6 @@ label ts_scenario_3:
 
         stop music fadeout 5
 
-        $ pps = 4
     
         $ TS.Screens(ts_showscreens)
 
@@ -1124,8 +1094,6 @@ label ts_scenario_3:
         with wipeleft_scene
 
         play music audio.t3
-
-        $ pps = 1
     
         $ TS.Screens(ts_showscreens)
 
@@ -1146,7 +1114,6 @@ label ts_scenario_3:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -1333,8 +1300,6 @@ label ts_scenario_3:
 
     scene black with ed_night_dis
 
-    $ pps = 3
-
     $ TS.Screens(ts_showscreens)
 
     "Справлюсь ли я со своим собственным клубом?"
@@ -1344,8 +1309,6 @@ label ts_scenario_3:
     "Ну уж нет!.."
     "Литература - это моё призвание, моя страсть. И я ни за какие коврижки не променяю литературу и этот клуб на что-либо ещё."
     "..."
-
-    $ pps = 1
 
     play sound wakeup
     stop music
@@ -1463,11 +1426,9 @@ label ts_scenario_3:
     show layer master at heartbeat
     with flash
 
-    $ pps = 2
 
     $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -1552,7 +1513,6 @@ label ts_scenario_3:
         hide screen chp_text_7
         hide zatemnenie with dspr
 
-    $ pps = 1
     window hide
     play sound fb
     scene ts_club
@@ -1648,8 +1608,6 @@ label ts_scenario_3:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
-    $ pps = 3
-
     $ TS.Screens(ts_showscreens)
 
     "Мысли о Нацуки не дают мне покоя."
@@ -1662,7 +1620,6 @@ label ts_scenario_3:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -1686,7 +1643,6 @@ label ts_scenario_3:
     "Но это я сужу как Моника. А как президент Литературного клуба я сужу совсем иначе."
     "Тяжело..."
 
-    $ pps = 1
 
     window hide
     play sound fb
@@ -1721,7 +1677,6 @@ label ts_scenario_3:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    play sound nfy
 
     show zatemnenie with dspr
 
@@ -1784,8 +1739,6 @@ label ts_scenario_3:
         "..."
         "А хотя нет... не начинаю..."
 
-        $ pps = 7
-
         $ TS.Screens(vpunch)
 
         if persistent.cens_mode == True:
@@ -1795,8 +1748,6 @@ label ts_scenario_3:
 
         $ TS.Screens(ts_hidescreens)
         " {w=1.0}{nw}"
-
-        $ pps = 1
 
         play sound2 pageflip
         scene ts_kitchen
@@ -1864,8 +1815,6 @@ label ts_scenario_3:
         scene ts_kitchen
         with wipeleft_scene
 
-        $ pps = 10
-
         $ TS.Screens(ts_showscreens)
 
         "Однако вместо картошки от неё остались одни только угольки."
@@ -1877,7 +1826,6 @@ label ts_scenario_3:
                 $ TS.Screens(ts_hidescreens)
                 " {w=1.0}{nw}"
 
-                play sound nfy
 
                 show zatemnenie with dspr
 
@@ -2083,8 +2031,6 @@ label ts_scenario_3:
 
         $ TS.Screens(ts_hidescreens)
         " {w=1.0}{nw}"
-
-        $ pps = 1
 
         play sound2 pageflip
         scene ts_kitchen
@@ -2363,15 +2309,11 @@ label ts_scenario_3:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
-    $ pps = 9
-
     $ TS.Screens(ts_showscreens)
 
     n 12f "Но... Папа считает, что я, хоть и уже слишком взрослая для чтения манги... ещё недостаточно взрослая и самостоятельная, чтобы самой вправе что-то решать."
     n 12c "И ведь с ним не поспоришь даже! Он же папа, он же взрослый, умный, а я что?"
     n 12f "Всего лишь маленькая девочка..."
-
-    $ pps = 1
 
     play sound fb
     window hide

@@ -20,6 +20,8 @@ init -2:
 
 init -4 python:
 
+    config.mouse_displayable = MouseDisplayable("ts_cursor_anim", 0, 0)
+
     #def translate():
     if _preferences.language == "english":
         layout.ARE_YOU_SURE = "Are you sure? "

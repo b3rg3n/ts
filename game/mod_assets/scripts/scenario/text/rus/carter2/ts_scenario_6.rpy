@@ -305,7 +305,7 @@ label ts_scenario_6:
 
     stop music
     play sound stol_udar
-    $ pps = 4
+
 
     m "Да заткнись ты уже!" with vpunch
 
@@ -427,12 +427,10 @@ label ts_scenario_6:
     extend " {b}ГОЛОВЫ!{/b}" with vpunch
 
     if unluck_ball >= 3:
-        $ pps = 3
         "Пара человек как-то подозрительно на меня посмотрели."
         "Однако сразу после они просто хмыкнули, мол, «ненормальная», и пошли себе дальше."
         em "Тише, тише, не нужно так кричать. Или ты хочешь опозориться перед каждым живым человеком?"
         "«Убирайся из моей головы.»"
-        $ pps = 1
 
     em "Ладно, ладно, убираюсь..."
 
@@ -478,7 +476,6 @@ label ts_scenario_6:
 
     stop music
 
-    $ pps = 3
     play sound ssikanul
     teacher "Мисс Ида!" with vpunch
 
@@ -588,7 +585,6 @@ label ts_scenario_6:
 
     show natsuki 1za at t11
 
-    $ pps = 1
 
     "Повседневка... Оглядываясь назад, теперь я её в какой-то мере понимаю."
     "Когда папа заставил меня прочитать «Графа Монте-Кристо» примерно в том же возрасте, я тоже кривилась и противилась."
@@ -701,7 +697,6 @@ label ts_scenario_6:
 
     show natsuki 1j at s11
 
-    $ pps = 3
 
     "Я что, на допросе?"
     m "Ну, э-э-э... Да в целом, сам стиль повествования... неплох..."
@@ -710,7 +705,6 @@ label ts_scenario_6:
 
     show natsuki 1g at t11
 
-    $ pps = 4
 
     "Я лихорадочно начинаю перебирать все варианты и выпаливаю первое, что приходит в голову."
     m "Ну-у-у... Минори... понравилась..."
@@ -732,7 +726,6 @@ label ts_scenario_6:
     $ TS.Screens(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    $ pps = 1
 
     play sound stuk
     pause 3
@@ -789,7 +782,6 @@ label ts_scenario_6:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with dspr
 
-    $ pps = 3
 
     $ TS.Screens(ts_showscreens)
 
@@ -799,7 +791,6 @@ label ts_scenario_6:
     "«Фе, какая мерзость!»"
     em "Ой, да как будто ты через пару циклов будешь лучше."
 
-    $ pps = 1
 
     stop music
     window hide
@@ -928,7 +919,6 @@ label ts_scenario_6:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with dspr
 
-    $ pps = 3
 
     $ TS.Screens(ts_showscreens)
 
@@ -947,7 +937,6 @@ label ts_scenario_6:
     show yuri 1g at f31
     with flash
 
-    $ pps = 1
 
     $ TS.Screens(ts_showscreens)
 
@@ -1025,7 +1014,6 @@ label ts_scenario_6:
     "Девочки тоже натужно пытаются выжать из себя хоть что-то."
     "Но их ручки хотя бы двигаются. Значит, что-то да получается."
 
-    $ pps = 5
 
     $ renpy.music.set_volume(0.0)
 
@@ -1056,7 +1044,6 @@ label ts_scenario_6:
     em "Но это не отменяет того, что ты бездарность."
     "«Просто... не мешай...»"
 
-    $ pps = 1
     window hide
     stop sound2
     $ renpy.music.set_volume(0.6)
@@ -1185,7 +1172,6 @@ label ts_scenario_6:
 
     "Распрощавшись, девочки уходят. А я остаюсь думать."
 
-    $ pps = 3
 
     show monika 4k at ln11
 
@@ -1354,7 +1340,6 @@ label ts_scenario_6:
     scene ts_house_monika_evening
     with wipeleft_scene
 
-    $ pps = 1
 
     $ TS.Screens(ts_showscreens)
 
@@ -1604,7 +1589,6 @@ label ts_scenario_6:
 
     pause 8
 
-    $ pps = 6
 
     $ TS.Screens(ts_showscreens)
 

@@ -189,7 +189,7 @@ label bad_credits_ts_label:
 
     $ TS.Screens(ts_showscreens)
 
-    show ts_credits_bergen_1 at Glitch(_fps=120., glitch_strength=.3):
+    show bergencheek_pizdos:
         xpos 0.2 ypos 0.2 alpha 0.0 subpixel True
         ease 1.0 xpos 0.2 ypos 0.4 alpha 1.0
     
@@ -200,7 +200,7 @@ label bad_credits_ts_label:
 
     $ TS.Screens(ts_hidescreens)
 
-    show ts_credits_bergen_1 at Glitch(_fps=120., glitch_strength=.3):
+    show bergencheek_pizdos:
         xpos 0.2 ypos 0.4 alpha 1.0 subpixel True
         ease 1.0 xpos 0.2 ypos 0.2 alpha 0.0
 
@@ -219,7 +219,7 @@ label bad_credits_ts_label:
 
     $ TS.Screens(ts_showscreens)
 
-    show ts_credits_mad_1 at Glitch(_fps=120., glitch_strength=.3):
+    show vladick_pizdos:
         xpos 0.2 ypos 0.2 alpha 0.0 subpixel True
         ease 1.0 xpos 0.2 ypos 0.4 alpha 1.0
     
@@ -230,7 +230,7 @@ label bad_credits_ts_label:
 
     $ TS.Screens(ts_hidescreens)
 
-    show ts_credits_mad_1 at Glitch(_fps=120., glitch_strength=.3):
+    show vladick_pizdos:
         xpos 0.2 ypos 0.4 alpha 1.0 subpixel True
         ease 1.0 xpos 0.2 ypos 0.2 alpha 0.0
     
@@ -249,7 +249,7 @@ label bad_credits_ts_label:
 
     $ TS.Screens(ts_showscreens)
 
-    show ts_credits_bergen_1 at Glitch(_fps=120., glitch_strength=.3):
+    show bergencheek_pizdos:
         xpos 0.2 ypos 0.2 alpha 0.0 subpixel True
         ease 1.0 xpos 0.2 ypos 0.4 alpha 1.0
     
@@ -260,7 +260,7 @@ label bad_credits_ts_label:
 
     $ TS.Screens(ts_hidescreens)
 
-    show ts_credits_bergen_1 at Glitch(_fps=120., glitch_strength=.3):
+    show bergencheek_pizdos:
         xpos 0.2 ypos 0.4 alpha 1.0 subpixel True
         ease 1.0 xpos 0.2 ypos 0.2 alpha 0.0
     

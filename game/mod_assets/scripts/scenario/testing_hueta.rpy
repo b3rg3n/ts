@@ -61,6 +61,18 @@ label testing_label_blya:
 #    show ed_mt_mite at ts_move(t=2,x1=-0.6,x2=0.4)
 #    show ed_sl_fly at ts_move(t=2,x1=-0.4,x2=0.6)
 
+    scene ts_club
+    m "Ты готов?"
+    window hide
+    play sound ts_glitch5
+    show nat_pizdos
+    show natsuki_pizdec5
+    pause 2.3
+    stop sound
+    hide nat_pizdos
+    hide natsuki_pizdec5
+    "Ахуеть, да?"
+
     play ambience rain_in
     scene ts_club_rain_shader
     show ts_club_rain_ovr

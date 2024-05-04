@@ -106,6 +106,19 @@ init -15 python in TS:
     def Front(atl):
         renpy.show_layer_at(atl, layer='front')
 
+# УПРОЩЁННАЯ РЕГИСТРАЦИЯ ИМЁН ПЕРСОНАЖЕЙ
+# ВЗЯЛ У ХАЙТА, А ОТКУДА БРАЛ ОН - Я ХЗ
+# АМ СОРРИ, МЭН
+
+    def reg_char(id, name, who_color, what_color = "#fff", pref = "", suf = ""):
+        global Character
+        gl = globals()
+        
+        gl[id] = Character( name, color=who_color, what_color=what_color, drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000", what_prefix=pref, what_suffix=suf )
+
+    #reg_char("th", '', "#18FFEB", pref="~", suf="~") # ПРИМЕР, КАК НАДО ДЕФАЙНИТЬ
+
+init python:
 # СМЕНА ВРЕМЕНИ СПРАЙТОВ (ПОКРАСКА, ЁПТА)
 # КАК ЮЗАТЬ ЭТУ ПОЕБЕНЬ:
 # НУЖНЫ ДНЕВНЫЕ СПРАЙТЫ? $ ts_day_time()
@@ -138,18 +151,6 @@ init -15 python in TS:
         persistent.uncolorize='lite'
     def ts_uncolorize_full():
         persistent.uncolorize='full'
-
-# УПРОЩЁННАЯ РЕГИСТРАЦИЯ ИМЁН ПЕРСОНАЖЕЙ
-# ВЗЯЛ У ХАЙТА, А ОТКУДА БРАЛ ОН - Я ХЗ
-# АМ СОРРИ, МЭН
-
-    def reg_char(id, name, who_color, what_color = "#fff", pref = "", suf = ""):
-        global Character
-        gl = globals()
-        
-        gl[id] = Character( name, color=who_color, what_color=what_color, drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000", what_prefix=pref, what_suffix=suf )
-
-    #reg_char("th", '', "#18FFEB", pref="~", suf="~") # ПРИМЕР, КАК НАДО ДЕФАЙНИТЬ
 
 init python: # ОТДЕЛЬНЫЙ, Т.К. С ОСТАЛЬНЫМИ ЧЁТ НЕ ДЕФАЙНИТ БЛЯ
 # ФИЧА С ГЛИТЧТЕКСТОМ

@@ -32,7 +32,7 @@ python early:
             if m in music_list_ts.values():
                 globals()['track_checker_blya'] = check_muzlo_ts(m)[:50]
             elif m == None:
-                globals()['track_checker_blya'] = "Нет музыки"
+                globals()['track_checker_blya'] = " "
             else:
                 globals()['track_checker_blya'] = "Не прописано название трека"
     config.overlay_functions.append(widget_music_ts)

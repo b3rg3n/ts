@@ -51,13 +51,13 @@ init -1 python:
     style.settings_header = Style(style.base_font)
     style.settings_header.font  = header_font
     style.settings_header.size = 49
-    style.settings_header.color = "#FFFFFF"
-    style.settings_header.hover_color = "#FFFFFF"
+    style.settings_header.color = "#ffffff"
+    style.settings_header.hover_color = "#f35656"
 
     style.settings_text = Style(style.settings_header)
     style.settings_text.size = 39
     style.settings_text.selected_color = "#FF0000"
-    style.settings_text.hover_color = "#FFFFFF"
+    style.settings_text.hover_color = "#f35656"
 
     style.settings_link = Style(style.base_font)
     style.settings_link.font  = link_font
@@ -66,7 +66,7 @@ init -1 python:
     style.settings_link.color = "#ffffff"
     style.settings_link.hover_color = "#ff0000"
     style.settings_link.selected_color = "#ffffff"
-    style.settings_link.selected_idle_color = "#ffffff"
+    style.settings_link.selected_idle_color = "#f77272"
     style.settings_link.selected_hover_color = "#ff0000"
     style.settings_link.insensitive_color = "#ffffff"
 
@@ -158,7 +158,7 @@ init -1 python:
     style.cards_button_text = Style(style.button_text)
     style.cards_button_text.color = "#FFF"
     style.cards_button_text.selected_color = "#ff0000"
-    style.cards_button_text.insensitive_color = "#ffffff"
+    style.cards_button_text.insensitive_color = "#f84343"
 
     style.log_button = Style(style.button)
     style.log_button.child = None
@@ -555,148 +555,50 @@ init -501 screen preferences:
     $ bar_null = Frame(ts_gui + "ebanoemenu/bar_null.webp",36,36)
     $ bar_full = Frame(ts_gui + "ebanoemenu/bar_full.webp",36,36)
 
-    window background ts_images + "anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
+    window background ts_anim + "zatemnenie.webp" xmaximum 1280 ymaximum 720:
+# КНОПКА НАЗАД
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.5 yalign 0.85 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+# ВЫБОР РЕЖИМА ОКНА
+        text translation_new["Window_mode"] style "settings_header" xalign 0.03 yalign 0.01
+        if renpy.ios or renpy.android:
+            text translation_new["Window_no_change"] style "settings_text" xalign 0.323 yalign 0.02
+        else:
+            textbutton translation_new["Fullscreen"] style "log_button" text_style "settings_text" action Preference("display", "fullscreen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.3 yalign 0.01
+            textbutton translation_new["Window"] style "log_button" text_style "settings_text" action Preference("display", "window") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.45 yalign 0.01
+# СКИП
+        text translation_new["Skip"] style "settings_header" xalign 0.03 yalign 0.1
+        textbutton translation_new["Skip_all"] style "log_button" text_style "settings_text" action Preference("skip", "all") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.295 yalign 0.1
+        textbutton translation_new["Skip_seen"] style "log_button" text_style "settings_text" action Preference("skip", "seen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.49 yalign 0.1
+# ШРИФТ
+        text translation_new["Font"] style "settings_header" xalign 0.03 yalign 0.2
+        textbutton translation_new["Normal_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.298 yalign 0.2
+        textbutton translation_new["Big_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.478 yalign 0.2
+# ВИДЖЕТ ТРЕКОВ БЛЯ
+        text translation_new["Music_widget_set"] style "settings_header" xalign 0.03 yalign 0.3
+        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.292 yalign 0.3
+        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.463 yalign 0.3
+# АНТИЦЕНЗОР
+        text translation_new["Cens_mode_set"] style "settings_header" xalign 0.03 yalign 0.4
+        textbutton translation_new["Cens_mode_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.292 yalign 0.4
+        textbutton translation_new["Cens_mode_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.463 yalign 0.4
+# ЯЗЫК
+        text translation_new["Language"] style "settings_header" xalign 0.03 yalign 0.5
+        textbutton translation_new["Russian"] style "log_button" text_style "settings_text" action (Language(None), Function(stop_music), Function(renpy.utter_restart)) xalign 0.285 yalign 0.5
+        textbutton translation_new["English"] style "log_button" text_style "settings_text" action (Language("english"), Function(stop_music), Function(renpy.utter_restart)) xalign 0.473 yalign 0.5
+# ГРОМКОСТЬ
+        text translation_new["Volume"] style "settings_header" xalign 0.8 yalign 0.01
+        textbutton translation_new["Music_lower"] style "log_button" text_style "settings_text" action Play("music2", ts_sfx + "funeral/zubek.ogg") xalign 0.65 yalign 0.1
+        bar value Preference("music volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.25 ymaximum 3 xalign 0.93 yalign 0.115
+#
+        textbutton translation_new["Sound"] style "log_button" text_style "settings_text" action Play("sound", ts_sfx + "funeral/zubek.ogg") xalign 0.6385 yalign 0.2
+        bar value Preference("sound volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.25 ymaximum 3 xalign 0.93 yalign 0.215
+#
+        textbutton translation_new["Ambience"] style "log_button" text_style "settings_text" action Play("ambience2", ts_sfx + "funeral/zubek.ogg") xalign 0.628 yalign 0.3
+        bar value Preference("voice volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.25 ymaximum 3 xalign 0.93 yalign 0.315
+# СКОРОСТЬ ТЕКСТА
+        text translation_new["Text_speed"] style "settings_header" xalign 0.84 yalign 0.4
+        bar value Preference("text speed") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.34 ymaximum 3 xalign 0.92 yalign 0.5
 
-        textbutton translation_new["SAVE"] style "log_button" text_style "settings_link" xalign 0.02 yalign 0.08 action ShowMenu('save') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton translation_new["LOAD"] style "log_button" text_style "settings_link" xalign 0.98 yalign 0.08 action ShowMenu('load') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        hbox xalign 0.5 yalign 0.08:
-            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
-            text " "+translation_new["settings"]+" " style "settings_link" yalign 0.5 color "#ffffff"
-            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-        side "c b r":
-            area (0.25, 0.23, 0.51, 0.71)
-            viewport id "preferences":
-                mousewheel True
-                draggable True
-                scrollbars None
-
-                has grid 1 17 xfill True spacing 15
-                if renpy.android or renpy.ios:
-                    text translation_new["Skip"] style "settings_header" xalign 0.5
-                    grid 2 1 xfill True:
-
-                        hbox xalign 0.5:
-                            if _preferences.skip_unseen:
-                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                            else:
-                                null width 22
-                            textbutton translation_new["Skip_all"] style "log_button" text_style "settings_text" action Preference("skip", "all") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-                        hbox xalign 0.5:
-                            if not _preferences.skip_unseen:
-                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                            else:
-                                null width 22
-                            textbutton translation_new["Skip_seen"] style "log_button" text_style "settings_text" action Preference("skip", "seen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-                else:
-                    text translation_new["Window_mode"] style "settings_header" xalign 0.5
-                    grid 2 1 xfill True:
-
-                        hbox xalign 0.5:
-                            if _preferences.fullscreen:
-                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                            else:
-                                null width 22
-                            textbutton translation_new["Fullscreen"] style "log_button" text_style "settings_text" action Preference("display", "fullscreen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-                        hbox xalign 0.5:
-                            if not _preferences.fullscreen:
-                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                            else:
-                                null width 22
-                            textbutton translation_new["Window"] style "log_button" text_style "settings_text" action Preference("display", "window") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-                    text translation_new["Skip"] style "settings_header" xalign 0.5
-                    grid 2 1 xfill True:
-
-                        hbox xalign 0.5:
-                            if _preferences.skip_unseen:
-                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                            else:
-                                null width 22
-                            textbutton translation_new["Skip_all"] style "log_button" text_style "settings_text" action Preference("skip", "all") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-                        hbox xalign 0.5:
-                            if not _preferences.skip_unseen:
-                                add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                            else:
-                                null width 22
-                            textbutton translation_new["Skip_seen"] style "log_button" text_style "settings_text" action Preference("skip", "seen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-                text translation_new["Volume"] style "settings_header" xalign 0.5
-
-                grid 2 1 xfill True:
-                    textbutton translation_new["Music_lower"] style "log_button" text_style "settings_text" action Play("music2", ts_sfx + "funeral/zubek.ogg") xpos 0.1 ypos -0.2
-                    bar value Preference("music volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
-
-                grid 2 1 xfill True:
-                    textbutton translation_new["Sound"] style "log_button" text_style "settings_text" action Play("sound", ts_sfx + "funeral/zubek.ogg") xpos 0.1 ypos -0.2
-                    bar value Preference("sound volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
-
-                grid 2 1 xfill True:
-                    textbutton translation_new["Ambience"] style "log_button" text_style "settings_text" action Play("ambience2", ts_sfx + "funeral/zubek.ogg") xpos 0.1 ypos -0.2
-                    bar value Preference("voice volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.8 ymaximum 3 xpos -0.35
-
-                text translation_new["Text_speed"] style "settings_header" xalign 0.5
-                bar value Preference("text speed") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xalign 0.5 xmaximum 0.8 ymaximum 3
-
-                textbutton translation_new["Language"] style "log_button" text_style "settings_link" text_size 28 xalign 0.5 action ShowMenu("language_menu")
-
-                text translation_new["Font"] style "settings_header" xalign 0.5
-                grid 2 1 xfill True:
-                    hbox xalign 0.5:
-                        if persistent.bazarbig == True:
-                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                        else:
-                            null width 22
-                        textbutton translation_new["Normal_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-                    hbox xalign 0.5:
-                        if not persistent.bazarbig == False:
-                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                        else:
-                            null width 22
-                        textbutton translation_new["Big_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-                text translation_new["Music_widget_set"] style "settings_header" xalign 0.5
-                grid 2 1 xfill True:
-                    hbox xalign 0.5:
-                        if persistent.music_widget_ts == True:
-                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                        else:
-                            null width 22
-                        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-                    hbox xalign 0.5:
-                        if not persistent.music_widget_ts == False:
-                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                        else:
-                            null width 22
-                        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-
-                text translation_new["Cens_mode_set"] style "settings_header" xalign 0.5
-                grid 2 1 xfill True:
-                    hbox xalign 0.5:
-                        if persistent.cens_mode == True:
-                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                        else:
-                            null width 22
-                        textbutton translation_new["Cens_mode_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-                    hbox xalign 0.5:
-                        if not persistent.cens_mode == False:
-                            add ts_gui + "ebanoemenu/leaf.webp" ypos 0.12
-                        else:
-                            null width 22
-                        textbutton translation_new["Cens_mode_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-
-
-            bar value XScrollValue("preferences") left_bar ts_gui + "none.webp" right_bar ts_gui + "none.webp" thumb ts_gui + "none.webp" hover_thumb ts_gui + "none.webp"
-            vbar value YScrollValue("preferences") bottom_bar ts_gui + "none.webp" top_bar ts_gui + "none.webp" thumb ts_gui + "ebanoemenu/vthumb.webp" thumb_offset -12
 
 
 init -501 screen choice(items):

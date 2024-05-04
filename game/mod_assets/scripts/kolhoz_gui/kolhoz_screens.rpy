@@ -25,7 +25,7 @@ init -1 python:
     style.file_picker_text.color = "#bdbdbd"
     style.file_picker_text.selected_color = "#ffffff"
     style.file_picker_text.hover_color = "#ffffff"
-    style.file_picker_text.size = 17
+    style.file_picker_text.size = 25
     style.file_picker_text.drop_shadow=(2, 2)
     style.file_picker_text.drop_shadow_color = "#000"
 
@@ -452,8 +452,8 @@ init 4 python:
             renpy.rollback(True, k+1)
 
 
-    config.thumbnail_width = 141
-    config.thumbnail_height = 78
+    config.thumbnail_width = 211
+    config.thumbnail_height = 117
 
     style.file_picker_ss_window.xpos = 0
     style.file_picker_ss_window.ypos = 0
@@ -464,24 +464,20 @@ init -501 screen save:
 
     window background ts_images + "anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
 
-        textbutton translation_new["settings"] style "log_button" text_style "settings_link" xalign 0.02 yalign 0.08 action ShowMenu('preferences') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton translation_new["LOAD"] style "log_button" text_style "settings_link" xalign 0.98 yalign 0.08 action ShowMenu('load') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        hbox xalign 0.5 yalign 0.08:
-            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
-            text " "+translation_new["SAVE"]+" " style "settings_link" yalign 0.5 color "#ffffff"
-            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        text " "+translation_new["SAVE"]+" " style "settings_link" color "#ffffff" xalign 0.5 yalign 0.08
 
-        textbutton translation_new["Save_game"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.5 action (FunctionCallback(on_save_callback, selected_slot), FileSave(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton "{size=-12}{b}x{/b} {/size}"+translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.95 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+
+        textbutton translation_new["Save_game"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.5 action (FunctionCallback(on_save_callback, selected_slot), FileSave(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
         vbox xalign 0.023 yalign 0.5:
             grid 1 10:
                 for i in range(0, 10):
                     if i == 0:
-                        textbutton translation_new["Auto"] text_size 25 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+                        textbutton translation_new["Auto"] text_size 35 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                     else:
-                        textbutton str(i) text_size 25 right_padding 25 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+                        textbutton str(i) text_size 35 right_padding 35 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
         grid 4 3 xpos 0.13 ypos 0.2 xmaximum 0.81 ymaximum 0.65:
             transpose False
@@ -511,23 +507,20 @@ init -501 screen load:
 
     window background ts_images + "anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
 
-        textbutton translation_new["settings"] style "log_button" text_style "settings_link" xalign 0.02 yalign 0.08 action ShowMenu('preferences') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton translation_new["SAVE"] style "log_button" text_style "settings_link" xalign 0.98 yalign 0.08 action ShowMenu('save') activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        hbox xalign 0.5 yalign 0.08:
-            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
-            text " "+translation_new["LOAD"]+" " style "settings_link" yalign 0.5 color "#ffffff"
-            add ts_gui + "ebanoemenu/star.webp" yalign 0.65
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton translation_new["Load_game"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.5 action (FunctionCallback(on_load_callback,selected_slot), FileLoad(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton "{size=-12}{b}x{/b} {/size}"+translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.92 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+
+        text " "+translation_new["LOAD"]+" " style "settings_link" color "#ffffff" xalign 0.5 yalign 0.08
+
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.95 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["Load_game"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.5 action (FunctionCallback(on_load_callback,selected_slot), FileLoad(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+        textbutton translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
         vbox xalign 0.023 yalign 0.5:
             grid 1 10:
                 for i in range(0, 10):
                     if i == 0:
-                        textbutton translation_new["Auto"] text_size 25 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+                        textbutton translation_new["Auto"] text_size 35 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                     else:
-                        textbutton str(i) text_size 25 right_padding 25 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+                        textbutton str(i) text_size 35 right_padding 35 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
         grid 4 3 xpos 0.13 ypos 0.2 xmaximum 0.81 ymaximum 0.65:
             transpose False

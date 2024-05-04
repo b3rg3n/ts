@@ -90,7 +90,7 @@ init:
             linear l rotate 360
             repeat
 
-    transform ec_tr_choice: # АНИМАЦИЯ МЕНЮ ВЫБОРА
+    transform ts_choice_anim: # АНИМАЦИЯ МЕНЮ ВЫБОРА
         on hover:
             easein 0.1 yoffset -2
         on idle:

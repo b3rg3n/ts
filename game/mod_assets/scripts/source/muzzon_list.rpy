@@ -46,6 +46,9 @@ init:
     $ music_list_ts["Sergey Eybog - I Want To Play"] = ts_muzzon + "es/ts_iwtp.ogg"
     $ music_list_ts["Sergey Eybog - Silhouette In Sunset"] = ts_muzzon + "es/ts_sis.ogg"
     $ music_list_ts["Sergey Eybog - Waltz Of Doubts"] = ts_muzzon + "es/ts_wod.ogg"
+    $ music_list_ts["Sergey Eybog - Smooth Machine"] = ts_muzzon + "es/ts_sm.ogg"
+    $ music_list_ts["Sergey Eybog - Dance Of Fireflies"] = ts_muzzon + "es/ts_dof.ogg"
+
 ###ОСТАЛЬНОЕ
     $ music_list_ts["Marco Beltrami - Wales"] = ts_muzzon + "ts_wales.ogg"
     $ music_list_ts["HCCH OST - Начало"] = ts_muzzon + "ts_emmk.ogg"

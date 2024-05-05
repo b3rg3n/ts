@@ -12,6 +12,7 @@ label ts_start:
     $ act2_chess = False
     $ unluck5 = False
     $ chess_tutor = False
+    $ unluck6 = False
 
     $ unluck_ball = 0 # ОБЩИЕ БАЛЛЫ АНЛАКА БЛЯ
 

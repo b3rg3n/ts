@@ -38,37 +38,6 @@ init -1199 python:
     ts_sfx = ts_source + "audio/sfx/"
     ts_gui = ts_images + "gui/"
 
-# РЕГЕСТРИРУЕМ ДОП КАНАЛЫ
-# ЛИШНИМ НЕ БУДЕТ
-# ЮЗАТЬ ТАК = play sound4 peerdune
-# З.Ы. - НЕНУЖНЫЕ МОЖЕШЬ ПРОСТО УБРАТЬ
-    renpy.music.register_channel("sound", "sfx", False)
-    renpy.music.register_channel("sound2", "sfx", False)
-    renpy.music.register_channel("sound3", "sfx", False)
-    renpy.music.register_channel("sound4", "sfx", False)
-    renpy.music.register_channel("sound_loop", "voice", True)
-    renpy.music.register_channel("sound_loop2", "voice", True)
-    renpy.music.register_channel("sound_loop3", "voice", True)
-    renpy.music.register_channel("ambience", "voice", True)
-    renpy.music.register_channel("ambience2", "voice", False)
-    renpy.music.register_channel("music2", "music", False)
-
-    def volume(vol, chnl): # ФУНКЦИЯ РЕГУЛИРОВКИ ГРОМКОСТИ ОДНОЙ СТРОКОЙ КОДА ($ volume(0.2, sound))
-        renpy.music.set_volume(vol, channel=chnl)
-
-    def stop_music(): # ДОБАВЛЯЕМ НОВЫЕ КАНАЛЫ В СТОП МУЗОН (ДАБЫ ОНИ ТОЖЕ СТОПАЛИСЬ НАХ)
-        for chnl in ("sound", "sound2", "sound3", "sound_loop", "sound_loop2", "sound_loop3", "ambience", "music", "music2"):
-            renpy.music.stop(channel=chnl)
-
-    def stop_sound(): # ДОБАВЛЯЕМ НОВЫЕ КАНАЛЫ В СТОП ЗВУКИ (АНАЛОГИЧНО ВЫШЕ)
-        for chnl in ("sound", "sound2", "sound3", "sound_loop", "sound_loop2", "sound_loop3", "ambience", "ambience2"):
-            renpy.sound.stop(channel=chnl)
-
-    def get_pos(channel='music'): # ДОБАВЛЯЕМ ВЫЧЕТ ПОЗИЦИИ (ИСПОЛЬЗУЕТСЯ В ДОКИ МОДАХ ДЛЯ СИНХРОНА ХУЙНИ)
-        pos = renpy.music.get_pos(channel=channel)
-        if pos: return pos
-        return 0
-
 # ЗАКОСТЫЛИМ МЕТОД ПОДСЧЁТА ИГРОВОГО ВРЕМЕНИ
 # УДАЛЯЕТСЯ ВМЕСТЕ С ПОСТОЯННЫМИ ДАННЫМИ
 
@@ -110,13 +79,44 @@ init -15 python in TS:
 # ВЗЯЛ У ХАЙТА, А ОТКУДА БРАЛ ОН - Я ХЗ
 # АМ СОРРИ, МЭН
 
-    def reg_char(id, name, who_color, what_color = "#fff", pref = "", suf = ""):
-        global Character
-        gl = globals()
+    #def reg_char(id, name, who_color, what_color = "#fff", pref = "", suf = ""):
+    #    global Character
+    #    gl = globals()
         
-        gl[id] = Character( name, color=who_color, what_color=what_color, drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000", what_prefix=pref, what_suffix=suf )
+    #    gl[id] = Character( name, color=who_color, what_color=what_color, drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000", what_prefix=pref, what_suffix=suf )
 
     #reg_char("th", '', "#18FFEB", pref="~", suf="~") # ПРИМЕР, КАК НАДО ДЕФАЙНИТЬ
+
+init python:
+# РЕГЕСТРИРУЕМ ДОП КАНАЛЫ
+# ЛИШНИМ НЕ БУДЕТ
+# ЮЗАТЬ ТАК = play sound4 peerdune
+# З.Ы. - НЕНУЖНЫЕ МОЖЕШЬ ПРОСТО УБРАТЬ
+    renpy.music.register_channel("sound", "sfx", False)
+    renpy.music.register_channel("sound2", "sfx", False)
+    renpy.music.register_channel("sound3", "sfx", False)
+    renpy.music.register_channel("sound4", "sfx", False)
+    renpy.music.register_channel("sound_loop", "voice", True)
+    renpy.music.register_channel("sound_loop2", "voice", True)
+    renpy.music.register_channel("sound_loop3", "voice", True)
+    renpy.music.register_channel("ambience", "voice", True)
+    renpy.music.register_channel("ambience2", "voice", False)
+    renpy.music.register_channel("music2", "music", False)
+
+init python:
+
+    def stop_music(): # ДОБАВЛЯЕМ НОВЫЕ КАНАЛЫ В СТОП МУЗОН (ДАБЫ ОНИ ТОЖЕ СТОПАЛИСЬ НАХ)
+        for chnl in ("sound", "sound2", "sound3", "sound_loop", "sound_loop2", "sound_loop3", "ambience", "music", "music2"):
+            renpy.music.stop(channel=chnl)
+
+    def stop_sound(): # ДОБАВЛЯЕМ НОВЫЕ КАНАЛЫ В СТОП ЗВУКИ (АНАЛОГИЧНО ВЫШЕ)
+        for chnl in ("sound", "sound2", "sound3", "sound_loop", "sound_loop2", "sound_loop3", "ambience", "ambience2"):
+            renpy.sound.stop(channel=chnl)
+
+    def get_pos(channel='music'): # ДОБАВЛЯЕМ ВЫЧЕТ ПОЗИЦИИ (ИСПОЛЬЗУЕТСЯ В ДОКИ МОДАХ ДЛЯ СИНХРОНА ХУЙНИ)
+        pos = renpy.music.get_pos(channel=channel)
+        if pos: return pos
+        return 0
 
 init python:
 # СМЕНА ВРЕМЕНИ СПРАЙТОВ (ПОКРАСКА, ЁПТА)

@@ -2,6 +2,14 @@
 # by @b3rg3n & @dansalvato
 # Since 2024
 
+transform aki_spawn: # АНИМАЦИЯ ПОЯВЛЕНИЯ ЭТОЙ ДУРЫ ИЗ ВОЗДУХА
+    xcenter 640 zoom 0.4 alpha 0
+    ease 1 zoom 0.78 alpha 1
+
+transform aki_uhod: # АНИМАЦИЯ УХОДА ЭТОЙ ДУРЫ ВНИКУДА СУКА
+    xcenter 640 zoom 0.78 alpha 1
+    ease 1 zoom 0.4 alpha 0
+
 transform ts_leftin(e=1.0, x=640, y=1.03, z=0.80):
     xcenter -300 yoffset 0 yanchor 1.0 ypos y zoom z*1.00 alpha 1.00 subpixel True
     easein e xcenter x

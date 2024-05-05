@@ -220,7 +220,7 @@ init -501 screen main_menu:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+75}Счастливы{/size}") xalign 0.06 yalign 0.8 at ts_choice_anim:
+            textbutton ("{size=+40}Счастливы{/size}") xalign 0.06 yalign 0.8 at ts_choice_anim:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")

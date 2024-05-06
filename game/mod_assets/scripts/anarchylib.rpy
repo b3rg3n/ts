@@ -37,6 +37,17 @@ init -1199 python:
     ts_muzzon = ts_source + "audio/ost/"
     ts_sfx = ts_source + "audio/sfx/"
     ts_gui = ts_images + "gui/"
+    ts_natsuki_pt = ts_spr + "natsuki/"
+    ts_bug_pt = ts_spr + "bug/"
+    ts_elena_pt = ts_spr + "elena/"
+    ts_himari_pt = ts_spr + "himari/"
+    ts_hime_pt = ts_spr + "hime/"
+    ts_hiroto_pt = ts_spr + "hiroto/"
+    ts_kotonoha_pt = ts_spr + "kotonoha/"
+    ts_momika_pt = ts_spr + "momika/"
+    ts_monika_pt = ts_spr + "monika/"
+    ts_yuri_pt = ts_spr + "yuri/"
+    ts_sayori_pt = ts_spr + "sayori/"
 
 # ЗАКОСТЫЛИМ МЕТОД ПОДСЧЁТА ИГРОВОГО ВРЕМЕНИ
 # УДАЛЯЕТСЯ ВМЕСТЕ С ПОСТОЯННЫМИ ДАННЫМИ

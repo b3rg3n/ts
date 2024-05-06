@@ -14,6 +14,8 @@ label ts_scenario_4:
     $ persistent.badendmenuskipglitch = False
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
+    $ persistent.peredbadendmenu = False
+    $ persistent.peredgoodendmenu = False
 
     $ save_name = "Всё же хорошо?"
 

@@ -14,7 +14,8 @@ label ts_scenario_5:
     $ persistent.badendmenuskipglitch = False
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
-
+    $ persistent.peredbadendmenu = False
+    $ persistent.peredgoodendmenu = False
 
     $ save_name = "С возвращением,\nМоника!"
 
@@ -1495,7 +1496,7 @@ label ts_scenario_5:
     show monika 2bn at ln11
 
 
-    $ TS.Screens(hpunch)
+    show layer screens at hpunch
 
     em "И не говори... Я сама хоть и не пила вчера, но чувствую себя немногим лучше..."
 

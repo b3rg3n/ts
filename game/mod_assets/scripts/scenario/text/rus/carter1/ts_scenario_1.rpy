@@ -14,7 +14,8 @@ label ts_scenario_1:
     $ persistent.badendmenuskipglitch = False
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
-
+    $ persistent.peredbadendmenu = False
+    $ persistent.peredgoodendmenu = False
 
     $ save_name = "Поиски. Сайори"
 
@@ -649,8 +650,6 @@ label ts_scenario_1:
     show screen chp_text_22
     pause 1
     hide screen chp_text_22
-
-    #$ TS.Screens(ts_null_transform)
 
     play sound pageflip
     scene ts_corridor

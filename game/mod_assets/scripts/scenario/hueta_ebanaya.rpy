@@ -18,7 +18,7 @@ label ts_start:
 
     if config.developer: # МЕНЮШКА РАЗРАБОТЧИКА
         scene ts_razrab_menu with dissolve2
-        $ TS.Screens(ts_showscreens)
+        show layer screens at ts_showscreens
         menu:
             "Выбор главы":
                 show layer screens at ts_null_transform
@@ -28,7 +28,7 @@ label ts_start:
                 show layer screens at ts_null_transform
                 jump testing_label_blya
             "Смотреть титры":
-                $ TS.Screens(ts_showscreens)
+                show layer screens at ts_showscreens
                 menu:
                     "good":
                         show layer screens at ts_null_transform
@@ -47,6 +47,8 @@ label ts_start:
                 $ persistent.carter2menu = False
                 $ persistent.carter3menu = False
                 $ persistent.badendmenu = False
+                $ persistent.peredbadendmenu = False
+                $ persistent.peredgoodendmenu = False
                 $ renpy.full_restart(transition=None, label="splashscreen")
             "Выбрать нужную менюшку":
                 menu:
@@ -57,6 +59,8 @@ label ts_start:
                         $ persistent.badendmenuperedglitch = False
                         $ persistent.badendmenuskipglitch = False
                         $ persistent.goodendmenu = False
+                        $ persistent.peredbadendmenu = False
+                        $ persistent.peredgoodendmenu = False
                         return
                     "Из второго акта":
                         $ persistent.carter2menu = True
@@ -65,6 +69,8 @@ label ts_start:
                         $ persistent.badendmenuperedglitch = False
                         $ persistent.badendmenuskipglitch = False
                         $ persistent.goodendmenu = False
+                        $ persistent.peredbadendmenu = False
+                        $ persistent.peredgoodendmenu = False
                         return
                     "Из третьего акта":
                         $ persistent.carter2menu = False
@@ -73,6 +79,28 @@ label ts_start:
                         $ persistent.badendmenuperedglitch = False
                         $ persistent.badendmenuskipglitch = False
                         $ persistent.goodendmenu = False
+                        $ persistent.peredbadendmenu = False
+                        $ persistent.peredgoodendmenu = False
+                        return
+                    "Перед гуд концовкой":
+                        $ persistent.carter2menu = False
+                        $ persistent.carter3menu = False
+                        $ persistent.badendmenu = False
+                        $ persistent.badendmenuperedglitch = False
+                        $ persistent.badendmenuskipglitch = False
+                        $ persistent.goodendmenu = False
+                        $ persistent.peredbadendmenu = False
+                        $ persistent.peredgoodendmenu = True
+                        return
+                    "Перед бэд концовкой":
+                        $ persistent.carter2menu = False
+                        $ persistent.carter3menu = False
+                        $ persistent.badendmenu = False
+                        $ persistent.badendmenuperedglitch = False
+                        $ persistent.badendmenuskipglitch = False
+                        $ persistent.goodendmenu = False
+                        $ persistent.peredbadendmenu = True
+                        $ persistent.peredgoodendmenu = False
                         return
                     "После плохой концовки":
                         $ persistent.badendmenuperedglitch = True
@@ -81,6 +109,8 @@ label ts_start:
                         $ persistent.carter2menu = False
                         $ persistent.carter3menu = False
                         $ persistent.goodendmenu = False
+                        $ persistent.peredbadendmenu = False
+                        $ persistent.peredgoodendmenu = False
                         menu:
                             "1 фон":
                                 $ persistent.badendbg = "1"
@@ -98,12 +128,14 @@ label ts_start:
                         $ persistent.carter2menu = False
                         $ persistent.carter3menu = False
                         $ persistent.goodendmenu = True
+                        $ persistent.peredbadendmenu = False
+                        $ persistent.peredgoodendmenu = False
                         return
                     "Вернуться":
                         jump ts_start
             "Заменить рендер":
                 show zatemnenie with dspr
-                $ TS.Screens(ts_showscreens)
+                show layer screens at ts_showscreens
                 call screen ts_render_changer
             "Обратно в меню":
                 return

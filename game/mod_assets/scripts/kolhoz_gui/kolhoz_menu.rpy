@@ -21,8 +21,6 @@ label main_menu:
         hour, min, sec = t.split(":")
         hour = int(hour)
 
-    #$ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_menu_trans))
-
     if persistent.firstmenushka == True:
         $ persistent.firstmenushka = False
 
@@ -86,8 +84,6 @@ label main_menu:
                 show ts_menu_move_anim_bad_end1
             else:
                 show ts_menu_move_anim_bad_end2
-            #show noise:
-            #    alpha 0.15
             show zatemnenie_light
 
         elif persistent.goodendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
@@ -95,7 +91,16 @@ label main_menu:
             scene ts_menu_move_anim_good_end at ts_ustal_suka
             show zatemnenie_light
             show overlay aw_memory_back_1
-            #show lepestki_krutyatsa
+
+        elif persistent.peredgoodendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
+            play music pered_good_menu_ost fadein 5
+            scene mon_piano_glitch_anim at ts_ustal_suka
+            show zatemnenie_light
+
+        elif persistent.peredbadendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
+            play music pered_bad_menu_ost fadein 5
+            scene mon_piano_another_glitch_anim at ts_ustal_suka
+            show zatemnenie_light
 
         elif persistent.carter3menu == True: #МЕНЮШКА КАРТЕРА 3
             if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
@@ -143,6 +148,27 @@ label main_menu:
             pause 0.6
             stop sound
             hide ts_menu_move_anim_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
+
+        elif persistent.goodendmenu == True: #МЕНЮШКА ПООСЛЕ БЕД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
+            play sound br_glitch
+            show ts_menu_move_anim_good_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            pause 0.6
+            stop sound
+            hide ts_menu_move_anim_good_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
+
+        elif persistent.peredgoodendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
+            play sound br_glitch
+            show mon_piano_glitch_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            pause 0.6
+            stop sound
+            hide mon_piano_glitch_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
+
+        elif persistent.peredbadendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
+            play sound br_glitch
+            show mon_piano_another_glitch_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            pause 0.6
+            stop sound
+            hide mon_piano_another_glitch_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
 
         elif persistent.carter3menu == True: #МЕНЮШКА КАРТЕРА 3
             if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ

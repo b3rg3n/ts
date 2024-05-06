@@ -3,6 +3,69 @@
 # Since 2024
 
 init:
+
+    image mon_piano_glitch_anim: # ПЕРЕД ГУД КОНЦОВКОЙ МЕНЮ АНИМАЦИЯ
+        'mon_piano'
+        pause 2.1
+        'mon_piano_glitch'
+        pause 0.11
+        'mon_piano'
+        pause 2.1
+        'mon_piano_glitch'
+        pause 0.11
+        'mon_piano_glitch1'
+        pause 0.11
+        'mon_piano'
+        pause 2.1
+        'mon_piano_glitch'
+        pause 0.11
+        'mon_piano_glitch1'
+        pause 0.11
+        'mon_piano_glitch2'
+        pause 0.11
+        'mon_piano'
+        pause 2.1
+        'mon_piano_glitch'
+        pause 0.11
+        'mon_piano_glitch1'
+        pause 0.11
+        'mon_piano_glitch2'
+        pause 0.11
+        'mon_piano_glitch3'
+        pause 0.11
+        repeat
+
+    image mon_piano_another_glitch_anim: # ЧАСТЬ МЕНЮШКИ
+        'mon_piano_another'
+        pause 2.1
+        'mon_piano_another_glitch'
+        pause 0.11
+        'mon_piano_another'
+        pause 2.1
+        'mon_piano_another_glitch'
+        pause 0.11
+        'mon_piano_another_glitch1'
+        pause 0.11
+        'mon_piano_another'
+        pause 2.1
+        'mon_piano_another_glitch'
+        pause 0.11
+        'mon_piano_another_glitch1'
+        pause 0.11
+        'mon_piano_another_glitch2'
+        pause 0.11
+        'mon_piano_another'
+        pause 2.1
+        'mon_piano_another_glitch'
+        pause 0.11
+        'mon_piano_another_glitch1'
+        pause 0.11
+        'mon_piano_another_glitch2'
+        pause 0.11
+        'mon_piano_another_glitch3'
+        pause 0.11
+        repeat
+
     image vladick_pizdos: # ГЛИЧЁВЫЙ СЦЕНАРИСТ ЭТОЙ ХУЙНИ
         contains:
             choice:
@@ -1045,3 +1108,140 @@ init:
             linear 19.0 xoffset -100 yoffset 100
             repeat
 
+# TRUE STORY ANIMATION's DEFINE's
+# by @b3rg3n
+# Since 2024
+###ОВРЕЛЕИ
+    image zatemnenie = Image(ts_anim + "zatemnenie.webp") # ЗАТЕМНЕНИЕ СРЕДНЕЕ
+    image zatemnenie_light = Image(ts_anim + "zatemnenie_light.webp") # ЗАТЕМНЕНИЕ ЛЁГКОЕ
+    image blood = ts_anim + "ovr/blood.webp" # КРОВЬ ПО БОКАМ ЭКРАНА
+###АНИМАЦИЯ ЗАКРЫТИЯ/ОТКРЫТИЯ ЗЕНЕК
+    image anim blink_down = ts_anim + "zenki/blink_down.webp" # ВЕРНХНИЕ ВЕКИ
+    image anim blink_up = ts_anim + "zenki/blink_up.webp" # НИЖНИЕ ВЕКИ
+###БЛЭКАУТ
+    image blackout = ts_anim + "transit/blackout.webp"
+    image blackout2 = ts_anim + "transit/blackout2.webp"
+    image blackout_exh = ts_anim + "blackout/blackout_exh.webp"
+    image blackout_exh2 = ts_anim + "blackout/blackout_exh2.webp"
+    image blackout_exh3 = ts_anim + "blackout/blackout_exh3.webp"
+###ТРАНЗИТЫ IMAGE
+    define ed_night_dis = ImageDissolve(ts_anim + "transit/ed_night_dis.webp", 5.0) # ЭФФЕКТ СГОРАЮЩЕЙ БУМАГИ
+    define ed_night_dis_faster = ImageDissolve(ts_anim + "transit/ed_night_dis.webp", 2.5) # ЭФФЕКТ СГОРАЮЩЕЙ БУМАГИ
+    define poplil_pacan = ImageDissolve(ts_anim + "transit/wow_blya.webp", 1.66) # ЭФФЕКТ ПЕРЛИВАНИЯ КРОВИ
+    define poplil_pacan1 = ImageDissolve(ts_anim + "transit/wow_blya.webp", 6.66) # ЭФФЕКТ ПЕРЛИВАНИЯ КРОВИ
+    define awrain = ImageDissolve(ts_anim + "transit/awrain.webp", 1.5, 60, reverse=False) # ЭФФЕКТ СМЫВА ДОЖДЁМ
+    define awrain2 = ImageDissolve(ts_anim + "transit/awrain.webp", 4.5, 80, reverse=False) # ЭФФЕКТ СМЫВА ДОЖДЁМ
+    define wipeleft = ImageDissolve(ts_anim + "transit/wipeleft.webp", 0.5, ramplen=64)
+    define wipeleft_scene = MultipleTransition([
+        False, ImageDissolve(ts_anim + "transit/wipeleft.webp", 0.5, ramplen=64),
+        Solid("#000"), Pause(0.25),
+        Solid("#000"), ImageDissolve(ts_anim + "transit/wipeleft.webp", 0.5, ramplen=64),
+        True])
+
+# TRUE STORY SPLIT IMAGES
+    image ts_hotel_split = ts_bg + "split/hotel_split.webp"
+    image ts_gost_split = ts_bg + "split/gost_split.webp"
+
+    image ts_gost_split_animated: # pause 0.99
+        default subpixel True 
+        parallel:
+            Null(1280.0, 720.0)
+            'ts_gost_split'
+        parallel:
+            ypos 1.5 alpha 0.0
+            linear 0.99 ypos 1.0 alpha 1.0
+
+    image ts_hotel_split_animated: # pause 0.99
+        default subpixel True 
+        parallel:
+            Null(1280.0, 720.0)
+            'ts_hotel_split'
+        parallel:
+            ypos 0.5 alpha 0.0
+            linear 0.99 ypos 1.0 alpha 1.0
+
+###INTERFACE DEFINES
+    image ru_ground = ts_images + "gui/lang/russian_ground.png"
+    image ru_hover = ts_images + "gui/lang/russian_hover.png"
+
+    image en_ground = ts_images + "gui/lang/english_ground.png"
+    image en_hover = ts_images + "gui/lang/english_hover.png"
+
+    image ts_cursor_anim = 'mod_assets/source/images/gui/mouse/ts_mouse_white.png'
+
+###CHESS
+    image chess1 = ts_images + "minigame/chess/1.webp"
+    image chess2 = ts_images + "minigame/chess/2.webp"
+    image chess3 = ts_images + "minigame/chess/3.webp"
+    image chess4 = ts_images + "minigame/chess/4.webp"
+    image chess5 = ts_images + "minigame/chess/5.webp"
+    image chess6 = ts_images + "minigame/chess/6.webp"
+    image chess7 = ts_images + "minigame/chess/7.png"
+    image chess8 = ts_images + "minigame/chess/8.png"
+    image chess9 = ts_images + "minigame/chess/9.png"
+    image chess10 = ts_images + "minigame/chess/10.png"
+    image chess11 = ts_images + "minigame/chess/11.png"
+    image chess12 = ts_images + "minigame/chess/12.png"
+    image chess13 = ts_images + "minigame/chess/13.png"
+    image chess14 = ts_images + "minigame/chess/14.png"
+    image chess15 = ts_images + "minigame/chess/15.png"
+    image chess16 = ts_images + "minigame/chess/16.png"
+    image chess17 = ts_images + "minigame/chess/17.png"
+    image chess18 = ts_images + "minigame/chess/18.png"
+    image chess19 = ts_images + "minigame/chess/19.png"
+
+# TRUE STORY GLITCH STUFF
+# by @b3rg3n
+# Since 2024
+
+#BG's
+    image ts_l51 = ts_bg + "glitch/l51.webp"
+    image ts_l52 = ts_bg + "glitch/l52.webp"
+    image ts_l53 = ts_bg + "glitch/l53.webp"
+
+    image ts_l5_glitch_pizdets:
+        "ts_l51"
+        0.03 # Задержка
+        "ts_l53"
+        0.03 # Задержка
+        "ts_l52"
+        0.03 # Задержка
+        "ts_l51"
+        0.03 # Задержка
+        "ts_l53"
+        0.03 # Задержка
+        repeat # Не убирать
+
+    image ts_club1 = ts_bg + "glitch/club1.webp"
+    image ts_club2 = ts_bg + "glitch/club2.webp"
+    image ts_club3 = ts_bg + "glitch/club3.webp"
+
+    image ts_club_glitch_pizdets:
+        "ts_club1"
+        0.03 # Задержка
+        "ts_club3"
+        0.03 # Задержка
+        "ts_club2"
+        0.03 # Задержка
+        "ts_club1"
+        0.03 # Задержка
+        "ts_club3"
+        0.03 # Задержка
+        repeat # Не убирать
+
+    image ts_kitchen1 = ts_bg + "glitch/kitchen1.webp"
+    image ts_kitchen2 = ts_bg + "glitch/kitchen2.webp"
+    image ts_kitchen3 = ts_bg + "glitch/kitchen3.webp"
+
+    image ts_kitchen_glitch_pizdets:
+        "ts_kitchen1"
+        0.03 # Задержка
+        "ts_kitchen3"
+        0.03 # Задержка
+        "ts_kitchen2"
+        0.03 # Задержка
+        "ts_kitchen1"
+        0.03 # Задержка
+        "ts_kitchen3"
+        0.03 # Задержка
+        repeat # Не убирать

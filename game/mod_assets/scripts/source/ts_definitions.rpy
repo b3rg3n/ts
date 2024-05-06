@@ -3,6 +3,54 @@
 # Since 2024
 
 init:
+###ЦГ
+    image ts_anarchy = Image(ts_images + "intro/anarchy.webp")
+    image ts_intro_1 = ts_images + "intro/intro1.webp"
+    image ts_intro_2 = ts_images + "intro/intro2.webp"
+    image ts_intro_3 = ts_images + "intro/intro3.webp"
+    image ts_intro_31 = ts_images + "intro/intro31.webp"
+    image ts_intro_4 = ts_images + "intro/intro4.webp"
+
+    image ts_menu_art_carter2_night = ts_images + "intro/menu/menu_art_night.webp"
+
+    image ts_menu_art3_night = ts_images + "intro/menu/ts_menu_art3_night.webp"
+
+    image mon_piano = ts_images + "intro/menu/mon_piano.webp"
+    image mon_piano_glitch = ts_images + "intro/menu/mon_piano_glitch.webp"
+    image mon_piano_glitch1 = ts_images + "intro/menu/mon_piano_glitch1.webp"
+    image mon_piano_glitch2 = ts_images + "intro/menu/mon_piano_glitch2.webp"
+    image mon_piano_glitch3 = ts_images + "intro/menu/mon_piano_glitch3.webp"
+
+    image mon_piano_another = ts_images + "intro/menu/mon_piano_another.webp"
+    image mon_piano_another_glitch = ts_images + "intro/menu/mon_piano_another_glitch.webp"
+    image mon_piano_another_glitch1 = ts_images + "intro/menu/mon_piano_another_glitch1.webp"
+    image mon_piano_another_glitch2 = ts_images + "intro/menu/mon_piano_another_glitch2.webp"
+    image mon_piano_another_glitch3 = ts_images + "intro/menu/mon_piano_another_glitch3.webp"
+
+    image mon_piano_start = ts_cg + "mon_piano_start.webp"
+    image yurec_pizdec = ts_cg + "yurec_pizdec.webp"
+
+###GLITCH
+    image natsuki_pizdec = ts_cg + "glitch_kolhoz/natsuki_pizdec.webp"
+    image natsuki_pizdec1 = ts_cg + "glitch_kolhoz/natsuki_pizdec1.webp"
+    image natsuki_pizdec2 = ts_cg + "glitch_kolhoz/natsuki_pizdec2.webp"
+    image natsuki_pizdec3 = ts_cg + "glitch_kolhoz/natsuki_pizdec3.webp"
+    image natsuki_pizdec4 = ts_cg + "glitch_kolhoz/natsuki_pizdec4.webp"
+
+    image natsuki_pizdec5 = LiveComposite((1280,720), (0,0), ts_cg + "pustota.webp", (882,325), "n_rects1", (732,400), "n_rects2", (850,475), "n_rects3")
+
+
+###CREDITS
+    image ts_credits_mad_1 = ts_images + "credits/ts_credits_mad_1.webp"
+    image ts_credits_mad_2 = ts_images + "credits/ts_credits_mad_2.webp"
+    image ts_credits_mad_3 = ts_images + "credits/ts_credits_mad_3.webp"
+    image ts_credits_mad_4 = ts_images + "credits/ts_credits_mad_4.webp"
+
+    image ts_credits_bergen_1 = ts_images + "credits/ts_credits_bergen_1.webp"
+    image ts_credits_bergen_2 = ts_images + "credits/ts_credits_bergen_2.webp"
+    image ts_credits_bergen_3 = ts_images + "credits/ts_credits_bergen_3.webp"
+    image ts_credits_bergen_4 = ts_images + "credits/ts_credits_bergen_4.webp"
+
 ###БГ
 
     image ts_club = ConditionSwitch(
@@ -263,3 +311,39 @@ init:
     image ts_club_rain_shader = RainOnWindow("ts_club_rain", width = 1280, height = 720, rainamount = 1.0)
     image ts_living_room_rain_shader = RainOnWindow("ts_living_room_rain", width = 1280, height = 720, rainamount = 1.0)
 
+###ШРИФТЫ
+
+    define cit_font = ts_fonts + "captureit.ttf"
+    define ts_nvl_font2 = ts_fonts + "life.ttf"
+    define pizdec_font = ts_fonts + "Surfbars.otf"
+    define adv_font = ts_fonts + "ADVENTURE.ttf"
+    define shl_font = ts_fonts + "SHLAPAKSCRIPT.otf"
+    define ink_font = ts_fonts + "INKFREE.ttf"
+    define sc_font = ts_fonts + "SCOTCH.ttf"
+    define ts_main_font_hueta = ts_fonts + "captureit.ttf"
+    define prologue_font = ts_fonts + "Unageo-Light.ttf"
+    define ts_atomic = ts_fonts + "cyr.ttf"
+
+# TRUE STORY VIDEO
+###МЕНЮШКИ
+    image ts_menu_vid = Movie(fps=24, size = (1280, 720), play=ts_videosos + "jm.webm")
+    image ts_menu_vid_night = Movie(fps=24, size = (1280, 720), play=ts_videosos + "mr.webm")
+    image ts_menu_vid_sunset = Movie(fps=24, size = (1280, 720), play=ts_videosos + "mn.webm")
+    image ts_menu_bad_end = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bad_end_menu.ogv")
+    image ts_razrab_menu = Movie(fps=24, size = (1280, 720), play=ts_videosos + "menu_video.ogm")
+###БГ
+    image ts_living_room_night_telek_hors = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/hors_night.ogv")
+    image ts_living_room_late_telek_hors = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/hors_sunset.ogv")
+    image ts_living_room_telek_hors = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/hors_day.ogv")
+
+    image ts_living_room_night_telek_bumer = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/bumer_night.ogv")
+    image ts_living_room_late_telek_bumer = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/bumer_sunset.ogv")
+    image ts_living_room_telek_bumer = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/bumer_day.ogv")
+
+    image ts_living_room_night_telek_oxik = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/oxik_night.ogv")
+    image ts_living_room_late_telek_oxik = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/oxik_sunset.ogv")
+    image ts_living_room_telek_oxik = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/oxik_day.ogv")
+
+    image ts_living_room_night_telek_sudba = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/sudba_night.ogv")
+    image ts_living_room_late_telek_sudba = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/sudba_sunset.ogv")
+    image ts_living_room_telek_sudba = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/sudba_day.ogv")

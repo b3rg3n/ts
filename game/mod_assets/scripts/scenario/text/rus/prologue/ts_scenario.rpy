@@ -14,6 +14,8 @@ label ts_scenario_0:
     $ persistent.badendmenuskipglitch = False
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
+    $ persistent.peredbadendmenu = False
+    $ persistent.peredgoodendmenu = False
 
     $ save_name = "Предыстория"
     window hide
@@ -35,7 +37,7 @@ label ts_scenario_0:
     pause 0.5
     hide zatemnenie with dspr
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
 
     nvlbazar "{font=[prologue_font]}Конечно же, всё начиналось совсем по-другому..."
@@ -52,7 +54,7 @@ label ts_scenario_0:
 
     nvlbazar "{font=[prologue_font]}В три года я научилась читать. К пяти годам я уже знала всю базовую таблицу умножения."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
 
     nvl clear
@@ -66,7 +68,7 @@ label ts_scenario_0:
     show dust4
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}Дальше, уже в школе, пока остальные до сих пор учили буквы, я уже невообразимо быстро читала."
     nvlbazar "{font=[prologue_font]}А пока остальные до сих пор складывали два плюс два, я без калькулятора уже могла перемножать двузначные числа."
@@ -83,7 +85,7 @@ label ts_scenario_0:
     nvlbazar "{font=[prologue_font]}В любом случае, после очередного родительского собрания, на котором, по всей видимости, меня в очередной раз гнобили и принижали, папа этого не стерпел."
     nvlbazar "{font=[prologue_font]}И отдал меня в другую, специализированную школу."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
 
     nvl clear
@@ -99,30 +101,30 @@ label ts_scenario_0:
 
     show hiroto 1b at ln11
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     ts_ft "Хочешь в школу к Мире?"
 
     show hiroto 1a at t11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
     m "Конечно!"
     ts_ft 1b "Тогда скажи до свидания этой школе."
     ts_ft "С завтрашнего дня у тебя будет новая жизнь в {i}новой{/i} школе."
 
     show hiroto 1a at t11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
     m "До свидания, школа!"
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     show hiroto 1a at ron11
     pause 0.3
     hide hiroto with dissolve
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}Нет, гением я себя назвать не могу, пусть даже и результат был лучше, чем у большинства детей моего возраста."
     nvlbazar "{font=[prologue_font]}Но помимо чтения, таблицы умножения и прочего, такого важного в начальной школе, и такого бесполезного во всём остальном…"
@@ -131,7 +133,7 @@ label ts_scenario_0:
     nvlbazar "{font=[prologue_font]}Сначала у меня была одна подружка. Звали её Мира."
     nvlbazar "{font=[prologue_font]}Наши родители и её родители дружили семьями. Как и мы сами, собственно."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
 
     nvl clear
@@ -145,7 +147,7 @@ label ts_scenario_0:
     show dust4
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}Мы постоянно ходили друг к другу в гости, где постоянно играли друг с другом."
     nvlbazar "{font=[prologue_font]}Мира была немного старше меня, но мы с ней как будто были на одной волне."
@@ -155,7 +157,7 @@ label ts_scenario_0:
     nvlbazar "{font=[prologue_font]}У неё была ещё старшая сестра, однако сестра эта была от другого брака, да и была она намного старше нас с Мирой."
     nvlbazar "{font=[prologue_font]}Поэтому ни о какой дружбе между мной и ей не могло быть и речи. Уважать друг друга - да. Дружить - уж извольте."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
     nvl clear
 
@@ -168,7 +170,7 @@ label ts_scenario_0:
     show dust4
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}Однако, когда я пришла в школу к Мире, она как будто отдалилась от меня."
     nvlbazar "{font=[prologue_font]}Оказалось, что у Миры были и свои подруги, с которыми она росла вместе на одной улице, и подруги эти с каким-то презрением смотрели на «какую-то странную девочку»."
@@ -255,20 +257,20 @@ label ts_scenario_0:
     nvlbazar "{font=[prologue_font]}Как бы ни была против я, как бы ни думали и мои родители, что это совершенно нелогично, против семьи не попрёшь."
     nvlbazar "{font=[prologue_font]}Особенно против такого напористого члена семьи, как бабушка Каори."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
     nvl clear
     show kaori at ron11
     pause 0.3
     hide kaori with dissolve
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}А я снова осталась один на один с этим жестоким миром."
     nvlbazar "{font=[prologue_font]}Совсем одна. И больше у меня нет никаких друзей, никаких парней, ничего и никого, что могло бы заполнить эту зияющую пустоту."
     nvlbazar "{font=[prologue_font]}И за годы дружбы, которая казалась вечной, я даже не смогла удосужиться найти себе новых настоящих друзей."
     nvlbazar "{font=[prologue_font]}Нет, у меня были какие-то знакомые, и даже хорошие знакомые, но друзьями назвать их у меня язык не повернётся."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
     nvl clear
 
@@ -281,7 +283,7 @@ label ts_scenario_0:
     show dust4
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}Но это мы уже слишком далеко зашли. Сначала немного откатимся в прошлое."
     nvlbazar "{font=[prologue_font]}Родители всегда требовали от меня становиться лучше. Стараться лучше. {i}Быть{/i} лучше."
@@ -308,7 +310,7 @@ label ts_scenario_0:
     nvlbazar "{font=[prologue_font]}Сначала это был Книжный клуб."
     nvlbazar "{font=[prologue_font]}Я в детстве довольно много читала, поэтому учителя подумали, что логично было отправить меня именно в Книжный клуб."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
     nvl clear
 
@@ -321,14 +323,14 @@ label ts_scenario_0:
     show dust4
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}Даже несмотря на то, что с годами читала я уже заметно меньше, а последнюю книгу я прочла где-то за год до того, как меня записали в Книжный клуб."
     nvlbazar "{font=[prologue_font]}Когда папа заставил меня прочитать «Графа Монте-Кристо» в одиннадцать лет, у меня просто пропало желание читать хоть что-то."
     nvlbazar "{font=[prologue_font]}Я всё равно довольно успешно справлялась. Я даже была вице-президентом клуба."
     nvlbazar "{font=[prologue_font]}Но мне это просто очень быстро наскучило, поэтому к концу года я вышла из клуба с твёрдым желанием найти себе клуб получше."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
     nvl clear
 
@@ -341,13 +343,13 @@ label ts_scenario_0:
     show dust4
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}В следующем году меня направили в Музыкальный клуб. И поначалу мне это действительно нравилось."
     nvlbazar "{font=[prologue_font]}У дедушки было пианино, и я, ещё будучи ребёнком, время от времени наобум стучала по клавишам, поэтому, когда мне предложили выбрать инструмент, я без раздумий указала на пианино."
     nvlbazar "{font=[prologue_font]}Да, школьное пианино было далеко не первого качества, и играть я, по сути, не умела..."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
     nvl clear
 
@@ -359,13 +361,13 @@ label ts_scenario_0:
     show dust4
     with poplil_pacan
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}Но мне это было и не важно."
     nvlbazar "{font=[prologue_font]}Мне это нравилось."
     nvlbazar "{font=[prologue_font]}Я быстро научилась играть несколько простых песенок."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
     nvl clear
 
@@ -378,7 +380,7 @@ label ts_scenario_0:
     show dust4
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}Но... Помните, как я говорила, что я невообразимая лентяйка?"
     nvlbazar "{font=[prologue_font]}Так вот: может, это просто лень, а может, расстройство посерьёзнее, но как только дело дошло до композиций посложнее, я разленилась."
@@ -393,7 +395,7 @@ label ts_scenario_0:
     nvlbazar "{font=[prologue_font]}Особенно с учётом того, что это было уже несколько лет назад..."
     nvlbazar "{font=[prologue_font]}А когда ты ещё так молода, тебе кажется, что несколько лет назад были как будто в прошлой жизни."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
     nvl clear
 
@@ -406,7 +408,7 @@ label ts_scenario_0:
     show dust4
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}После приключений с Музыкальным клубом меня потянуло в спорт."
     nvlbazar "{font=[prologue_font]}Нет, в хоккей и в прочие преимущественно мужские виды спорта, где в основном нужна грубая сила, а не утончённость, я не играла."
@@ -445,7 +447,7 @@ label ts_scenario_0:
     nvlbazar "{font=[prologue_font]}Другим казалось, что я мастер на все руки."
     nvlbazar "{font=[prologue_font]}Я же знаю, что так-то оно так, только руки у меня не совсем из правильного места растут..."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
     nvl clear
 
@@ -458,7 +460,7 @@ label ts_scenario_0:
     show dust4
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     nvlbazar "{font=[prologue_font]}В прошлом году меня перевели в другой класс."
     nvlbazar "{font=[prologue_font]}Все эти люди казались мне совершенно незнакомыми. Впрочем, кроме Каори, со мной и в прошлом классе особо никто не общался."
@@ -486,7 +488,7 @@ label ts_scenario_0:
     nvlbazar "{font=[prologue_font]}Так что я просто попросилась, чтобы меня сняли с должности, а сама я ушла в закат, оставив эти интрижки для кого-то другого."
     nvlbazar "{font=[prologue_font]}Пусть другие это расхлёбывают. Не я."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     nvlbazar " {w=1.0}{nw}"
     nvl clear
 
@@ -499,7 +501,7 @@ label ts_scenario_0:
     show dust4
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     stop music fadeout 10
     nvlbazar "{font=[prologue_font]}Пришло время выпускного года. И я, побывав уже во многих клубах, примерно понимаю, что я хочу и чего я не хочу видеть в своём клубе."

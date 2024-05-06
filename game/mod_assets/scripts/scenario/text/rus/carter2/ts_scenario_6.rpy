@@ -14,6 +14,8 @@ label ts_scenario_6:
     $ persistent.badendmenuskipglitch = False
     $ persistent.badendmenu = False
     $ persistent.goodendmenu = False
+    $ persistent.peredbadendmenu = False
+    $ persistent.peredgoodendmenu = False
 
     $ save_name = "Новые начинания"
 
@@ -1272,7 +1274,7 @@ label ts_scenario_6:
 
     show monika 2a at t11
 
-    $ TS.Screens(hpunch)
+    show layer screens at hpunch
     m "Господи, да когда же это всё закончится..."
 
     show monika 2i at f11
@@ -1291,7 +1293,7 @@ label ts_scenario_6:
         show monika 2i at f11
 
         em "Ну, кто знает..."
-        $ TS.Screens(hpunch)
+        show layer screens at hpunch
         em "Может, ты вообще в коме находишься, а ущипнуть себя - это своего рода проверка на то, спишь ты или нет."
 
         show monika 2h at t11
@@ -1313,7 +1315,7 @@ label ts_scenario_6:
         m "Ну, людям свойственно меняться..."
 
         show monika 2k at f11
-        $ TS.Screens(hpunch)
+        show layer screens at hpunch
         em "Даже таким бездарностям, как ты?"
 
         show monika 2j at t11

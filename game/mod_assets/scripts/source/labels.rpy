@@ -11,14 +11,14 @@ init:
     default persistent.ts_mouse_anim_set = "0"
 ### RPC
     default persistent.rpclabel = "228"
-
 ### МЕНЮШКИ
     default persistent.carter2menu = False
     default persistent.carter3menu = False
+    default persistent.peredbadendmenu = False
+    default persistent.peredgoodendmenu = False
     default persistent.badendmenu = False
     default persistent.goodendmenu = False
     default persistent.badendbg = "1"
-
 ### ПЕРЕМЕННЫЕ СКИПИНГА
     default persistent.firstmenushka = True
     default persistent.zastavka_skip = False

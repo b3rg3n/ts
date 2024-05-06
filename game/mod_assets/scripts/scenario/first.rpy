@@ -1,7 +1,7 @@
 # ТУТ ПРОИСХОДИТ СТАРТ ИГРЫ БЛЯ
 label start:
 
-    $ TS.Screens(ts_null_transform)
+    show layer screens at ts_null_transform
 
     python: #ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
         from time import localtime, strftime
@@ -77,32 +77,32 @@ label ts_intro_settings1:
 label ts_intro_settings2:
     hide screen ts_widget_changer with awrain
     pause 1
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
     brg "Тебя устраивает такой размер шрифта?{w} Или же..."
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    $ TS.Screens(ts_null_transform)
+    show layer screens at ts_null_transform
     show screen ts_font_changer with awrain
     $ renpy.pause(hard=True)
 
 label ts_intro_settings3:
     hide screen ts_font_changer with awrain
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
     brg "А теперь?{w} Или ещё разок поменяем?"
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
     menu:
         "Поменяем":
-            $ TS.Screens(ts_null_transform)
+            show layer screens at ts_null_transform
             show screen ts_font_changer with awrain
             $ renpy.pause(hard=True)
         "Оставь этот":
-            $ TS.Screens(ts_showscreens)
+            show layer screens at ts_showscreens
             brg "Хорошо."
-            $ TS.Screens(ts_hidescreens)
+            show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
-            $ TS.Screens(ts_null_transform)
+            show layer screens at ts_null_transform
             jump ts_intro_settings4
 
 label ts_intro_settings4:

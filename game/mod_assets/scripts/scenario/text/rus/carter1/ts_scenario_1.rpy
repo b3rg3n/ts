@@ -32,34 +32,34 @@ label ts_scenario_1:
     scene ts_club
     with ed_night_dis
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Сказать гораздо проще, чем сделать."
     "Я же хотела создать Литературный клуб. Я и создала. Но, как оказалось, одного только моего желания ой как недостаточно."
     "К счастью, я, поучаствовав во многих других клубах и позанимав там высокие должности, и так уже примерно знаю, что именно мне нужно для открытия нового клуба."
     "И прежде всего, мне нужны новые люди... Хотя бы ещё три человека."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_house
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Отец, узнав, что я ушла из Дискуссионного клуба, очень на меня разозлился."
     "Он сказал, что это очень важно для поступления в университет, и что моё легкомыслие меня до добра не доведёт."
     "Ну, хотя бы из дома не выгнал. Уже достижение."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_club
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Я уже довольно долгое время одна-единственная в клубе."
     "Администратор клубов, конечно, пошёл мне навстречу и дал мне время хотя бы до фестиваля, который предстоит ещё нескоро, но..."
@@ -75,14 +75,14 @@ label ts_scenario_1:
     "«С должным старанием всё должно получиться»?"
     "Но у меня не получается!"
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_club
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Время идёт."
     "До этого злополучного фестиваля осталось чуть больше месяца."
@@ -90,7 +90,7 @@ label ts_scenario_1:
     "Я уже постепенно схожу с ума."
     "Я всё чаще замечаю, что общаюсь с несуществующими членами клуба."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     show yuri 1 at ln31:
@@ -100,19 +100,19 @@ label ts_scenario_1:
     show natsuki 1 at ln33:
         alpha 0.5
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Я общаюсь с ними, делюсь с ними сокровенным, задаю домашние задания на следующие встречи клуба…"
     "Да у меня же шизофрения, самая что ни на есть настоящая."
     "Если кто-то со стороны посмотрит, то мне быстро выпишут направление в жёлтый дом, накормят вкусными таблеточками и уложат спать."
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_club
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
     "Так продолжалось день за днём."
     "Каждую новую неделю администратор клубов приходит в клуб, видит, что так никто и не появился, даже несмотря на всю мою рекламу, разочарованно вздыхает и жестом показывает на часы."
     if persistent.cens_mode == True:
@@ -129,22 +129,22 @@ label ts_scenario_1:
 
     stop music fadeout 5
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     pause 1
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Хотя, а что «можно»? Я же даже не знаю, какие активности можно предложить новым членам клуба!"
     "Наверное, зря я ушла из Дискуссионного клуба..."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_club
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Настал очередной день моей шизофрении, которую я называю Литературным клубом."
     "Я опять одна-одинокая."
@@ -162,7 +162,7 @@ label ts_scenario_1:
 
     show sayori 3b zorder 2 at ln11
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     s "Извините, а это Литературный клуб?"
 
@@ -172,7 +172,7 @@ label ts_scenario_1:
 
     show sayori 2s at h11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     s "О, отлично! Я как раз по адресу!"
 
@@ -196,7 +196,7 @@ label ts_scenario_1:
     
     show sayori 2x at h11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     s "Взаимно!"
 
@@ -207,7 +207,7 @@ label ts_scenario_1:
 
     show sayori 2h at d11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     s "Почему это зря?"
     
@@ -222,7 +222,7 @@ label ts_scenario_1:
 
     show sayori 4h at h11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     s "Но это же глупо! Не поверю, что в этой школе нет ни одного человека, которого бы не интересовала литература!"
 
@@ -237,7 +237,7 @@ label ts_scenario_1:
 
     show sayori 4x at h11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     s "Спасибо!"
 
@@ -268,7 +268,7 @@ label ts_scenario_1:
     s "..."
     m "..."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -276,7 +276,7 @@ label ts_scenario_1:
     show sayori 1 at t11
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Остальная часть собрания клуба прошла гораздо быстрее."
     "Мы с Сайори придумывали идеи, как бы нам набрать участников, чтобы добрать до минимально разрешённого состава клуба."
@@ -294,7 +294,7 @@ label ts_scenario_1:
 
     show sayori 1r at f11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     s "Но всё равно мы здорово поработали!"
 
@@ -311,14 +311,14 @@ label ts_scenario_1:
 
     m "Да... До завтра..."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_club
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     stop music fadeout 6
 
@@ -328,7 +328,7 @@ label ts_scenario_1:
     "Впрочем, я подумаю об этом завтра..."
     "Сегодня я так устала..."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -336,7 +336,7 @@ label ts_scenario_1:
     show sayori 1 at t11
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     play music ts_mdl
 
@@ -361,20 +361,20 @@ label ts_scenario_1:
 
     s "Чёрт, я надеялась, что за готовку будешь отвечать как раз ты."
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     "Её что, не кормят?"
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     show zatemnenie with dspr
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     show screen chp_text_20
     pause
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     show screen chp_text_20
     pause 1
     hide screen chp_text_20
@@ -383,7 +383,7 @@ label ts_scenario_1:
 
     show sayori 1u at f11
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     show sayori 3b at d11
 
@@ -401,7 +401,7 @@ label ts_scenario_1:
     
     m "Да..."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -409,7 +409,7 @@ label ts_scenario_1:
     show sayori 1k at t11
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Следующие несколько дней прошли в таком же ритме."
     "Мы с Сайори безуспешно пытались найти новых участников, а новые участники что-то не спешили подходить к нам."
@@ -425,7 +425,7 @@ label ts_scenario_1:
 
     stop music fadeout 5
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     m "Сайори!"
     s "Да?"
@@ -445,7 +445,7 @@ label ts_scenario_1:
 
     "Не удовлетворившись такой расплывчатой формулировкой, я решила повторить вопрос, но настойчивее."
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     m "Сайори. Посмотри на меня."
 
@@ -483,18 +483,18 @@ label ts_scenario_1:
     m "ГОСПОДИ, САЙОРИ!"
     "Я выбегаю вслед за ней."
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     m "Сайори!"
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_corridor
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     m "Сайори!"
 
@@ -535,7 +535,7 @@ label ts_scenario_1:
     show ts_corridor at ts_fon_blur_postepenno
     show sayori 1w at s11
 
-    $ TS.Screens(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 
     s "Если можно просто умереть."
     s "Раз уж я такая бесполезная."
@@ -565,22 +565,22 @@ label ts_scenario_1:
     show sayori 3p at h11
     with flash
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     m "Ну уж нет!"
 
     "Выпалила я, не подумав."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     show zatemnenie with dspr
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     show screen chp_text_21
     pause
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     show screen chp_text_21
     pause 1
     hide screen chp_text_21
@@ -589,7 +589,7 @@ label ts_scenario_1:
 
     show sayori 1u at f11
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     m "Я изначально хотела, чтобы Литературный клуб был местом, где не будет слова неправильно."
     m "И это касается не только всяких книжек и прочего... Но и людей тоже."
@@ -617,14 +617,14 @@ label ts_scenario_1:
     
     m "Но я чувствую, что литература – это моё призвание. А если ты зашла в эту дверь и до сих пор от меня не сбежала – то это и твоё призвание тоже."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene black
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Я обнимаю Сайори."
 
@@ -638,14 +638,14 @@ label ts_scenario_1:
 
     "Сюрреалистичная сцена – вот вроде две относительно взрослые девушки, а плачем обе как маленькие девочки."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     show screen chp_text_22
     pause
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     show screen chp_text_22
     pause 1
     hide screen chp_text_22
@@ -657,13 +657,13 @@ label ts_scenario_1:
     show sayori 1zc at t11
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Наконец, Сайори отпускает меня из объятий и вытирает слёзы."
 
     show sayori 1j at h11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     s "Да! Мы обязательно разовьём этот клуб и покажем всему миру, чего мы стоим!"
 
@@ -696,14 +696,14 @@ label ts_scenario_1:
     
     m "До понедельника."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_corridor
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Сайори вприпрыжку идёт по коридору по направлению к выходу."
     "А я остаюсь думать, кто же на самом деле Сайори?"
@@ -716,13 +716,13 @@ label ts_scenario_1:
 
     play music ts_rem
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     scene ts_club
     with poplil_pacan
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "С момента нашего «разговора по душам» с Сайори прошла неделя."
     "За это время мы особенно сдружились."
@@ -788,7 +788,7 @@ label ts_scenario_1:
 
     show sayori 5 at s11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     extend " Не знаю..."
 
@@ -813,7 +813,7 @@ label ts_scenario_1:
 
     "Сайори хмуро смотрит на меня."
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     "Да она сама виновата!"
     "Хотя, если так подумать, то она делает для клуба хотя бы что-то, а не просто сидит на пятой точке ровно, как я."
@@ -842,7 +842,7 @@ label ts_scenario_1:
     "Впрочем, думаю я недолго, потому что уже начинает темнеть."
     "Ладно. По дороге домой что-нибудь решу."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play music ts_dreams
@@ -851,7 +851,7 @@ label ts_scenario_1:
     scene ts_street_late
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Ненавижу ходить в школу в октябре. А ноябрь-декабрь - это и вовсе пиши пропало."
     "Утром идёшь в школу по темноте, после уроков в четыре часа вечера идёшь домой по темноте..."
@@ -859,25 +859,25 @@ label ts_scenario_1:
     "Вот гораздо лучше ходить в школу весной, особенно где-то в апреле-мае."
     "Вот это совсем другой разговор."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_house_monika_evening
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Пока я думала о том, как же плохо ходить в школу зимой, и как же хорошо ходить в школу весной, я сама не заметила, как уже дошла до дома."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_kitchen
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     m "Мам, пап, я пришла!"
 
@@ -923,7 +923,7 @@ label ts_scenario_1:
     
     show hiroto 2e at f11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     m "Папа!.."
     m "Ты же знаешь..."
@@ -1022,7 +1022,7 @@ label ts_scenario_1:
     
     show hiroto 2j at h11
 
-    $ TS.Screens(vpunch)
+    show layer screens at vpunch
 
     m "Папа!.."
 
@@ -1089,14 +1089,14 @@ label ts_scenario_1:
 
     play music ts_mk
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_bedroom
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "У меня есть несколько вопросов касательно сегодняшних событий."
     "Но прежде всего - кто же эта таинственная девушка?"
@@ -1121,7 +1121,7 @@ label ts_scenario_1:
     "Вот будут выходные, будет новый день, будет новая пища, буду читать новые книжки."
     "Сейчас же, наверное, лучше стоит спуститься в гостиную и посмотреть телевизор вместе с папой."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     $ generate_random_number_tv() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
@@ -1137,7 +1137,7 @@ label ts_scenario_1:
         scene ts_living_room_late_telek_sudba
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     ts_ft "Моника, это ты?"
     m "Ну а кто же ещё, пап?"
@@ -1146,7 +1146,7 @@ label ts_scenario_1:
     ts_ft "Ну-у-у, хорошо, как скажешь..."
     m "Вот и здорово!"
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     $ generate_random_number_tv() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
@@ -1162,7 +1162,7 @@ label ts_scenario_1:
         scene ts_living_room_night_telek_sudba
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     if random_tv_label == 2 or random_tv_label == 8:
         "За просмотром очередного видоса на вечер время пролетело гораздо быстрее, чем ожидалось."
@@ -1190,14 +1190,14 @@ label ts_scenario_1:
     "Каждый раз, когда мы заканчиваем вечер подобным образом, папа говорит одно и то же. Слово в слово."
     "Впрочем, я не раздражаюсь. Я и сама жаворонок."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_gost_night
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     show hiroto 1f at ln11
 
@@ -1212,14 +1212,14 @@ label ts_scenario_1:
 
     "Каждый ушёл в свою спальню."
 
-    $ TS.Screens(ts_hidescreens)
+    show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_darkbed
     with wipeleft_scene
 
-    $ TS.Screens(ts_showscreens)
+    show layer screens at ts_showscreens
 
     "Как только я разделась и легла, я ещё немного думаю перед сном."
     "Завтра будет день, завтра будет пища."

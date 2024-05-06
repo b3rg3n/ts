@@ -54,39 +54,6 @@ init -1199 python:
         img = Text("{size=+25}{font=[cit_font]}%0*d:%0*d:%0*d{/font}{/size}" % (2, hours, 2, minutes, 2, seconds))
         return img, .1
 
-# АХУЕННАЯ ФИШКА, КОТОРАЯ ПОЗВОЛИТ ТЕБЕ ЮЗАТЬ ATL НА РАЗНЫХ ОВЕРЛЕЯХ
-# МЕТОД ВЗЯЛ У БРАТКА С НИКОМ @superrage
-# ЮЗАТЬ ТАК = $ TS.Screens(ts_tryaska_hueta_ebanaya) Т.Е. В СКОБКАХ TRANSFORM, ПЕРЕД СКОБКАМИ - НУЖНЫЙ ОВЕРЛЕЙ
-# ПРИ НЕОБХОДИМОСТИ МОЖЕШЬ ПРИСРАТЬ СВОЙ
-init -15 python in TS:
-
-    def Master(atl):
-        renpy.show_layer_at(atl, layer='master')
-
-    def Screens(atl):
-        renpy.show_layer_at(atl, layer='screens')
-
-    def Transient(atl):
-        renpy.show_layer_at(atl, layer='transient')
-
-    def Overlay(atl):
-        renpy.show_layer_at(atl, layer='overlay')
-
-    def Front(atl):
-        renpy.show_layer_at(atl, layer='front')
-
-# УПРОЩЁННАЯ РЕГИСТРАЦИЯ ИМЁН ПЕРСОНАЖЕЙ
-# ВЗЯЛ У ХАЙТА, А ОТКУДА БРАЛ ОН - Я ХЗ
-# АМ СОРРИ, МЭН
-
-    #def reg_char(id, name, who_color, what_color = "#fff", pref = "", suf = ""):
-    #    global Character
-    #    gl = globals()
-        
-    #    gl[id] = Character( name, color=who_color, what_color=what_color, drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000", what_prefix=pref, what_suffix=suf )
-
-    #reg_char("th", '', "#18FFEB", pref="~", suf="~") # ПРИМЕР, КАК НАДО ДЕФАЙНИТЬ
-
 init python:
 # РЕГЕСТРИРУЕМ ДОП КАНАЛЫ
 # ЛИШНИМ НЕ БУДЕТ

@@ -21,20 +21,20 @@ label ts_start:
         $ TS.Screens(ts_showscreens)
         menu:
             "Выбор главы":
-                $ TS.Screens(ts_null_transform)
+                show layer screens at ts_null_transform
                 call screen scenario_start_change_chapter with dissolve2
                 return
             "Тестовый label":
-                $ TS.Screens(ts_null_transform)
+                show layer screens at ts_null_transform
                 jump testing_label_blya
             "Смотреть титры":
                 $ TS.Screens(ts_showscreens)
                 menu:
                     "good":
-                        $ TS.Screens(ts_null_transform)
+                        show layer screens at ts_null_transform
                         jump good_credits_ts_label
                     "bad":
-                        $ TS.Screens(ts_null_transform)
+                        show layer screens at ts_null_transform
                         jump bad_credits_ts_label
             "Очистить переменные":
                 $ persistent.zastavka_skip = False

@@ -269,17 +269,17 @@ init -501 screen quit:
     add ts_images + "anim/zatemnenie.webp"
 
     if persistent.badendmenu:
-        text translation_new["Quit_confirm_bad"] style "settings_link" size 85 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
-        textbutton translation_new["Yes_quit_bad"] text_size 75 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
-        textbutton translation_new["No_quit_bad"] text_size 75 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+        text translation_new["Quit_confirm_bad"] style "settings_link" size 85 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+        textbutton translation_new["Yes_quit_bad"] text_size 75 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
+        textbutton translation_new["No_quit_bad"] text_size 75 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
     elif persistent.goodendmenu:
-        text translation_new["Quit_confirm_good"] style "settings_link" size 85 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
-        textbutton translation_new["Yes_quit_good"] text_size 75 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
-        textbutton translation_new["No_quit_good"] text_size 75 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+        text translation_new["Quit_confirm_good"] style "settings_link" size 85 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+        textbutton translation_new["Yes_quit_good"] text_size 75 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
+        textbutton translation_new["No_quit_good"] text_size 75 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
     else:
-        text translation_new["Quit_confirm"] style "settings_link" size 85 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2
-        textbutton translation_new["Yes_quit"] text_size 75 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
-        textbutton translation_new["No_quit"] text_size 75 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+        text translation_new["Quit_confirm"] style "settings_link" size 85 text_align 0.5 xalign 0.5 yalign 0.33 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+        textbutton translation_new["Yes_quit"] text_size 75 style "log_button" text_style "settings_link" xalign 0.21 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Quit(confirm=False) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
+        textbutton translation_new["No_quit"] text_size 75 style "log_button" text_style "settings_link" xalign 0.75 yalign 0.75 text_color "#FFFFFF" text_hover_color "#FF0000" action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
 
 label _compat_confirm_quit:
     $ renpy.call_screen('quit')
@@ -318,57 +318,57 @@ init -501 screen game_menu_selector:
     add ts_gui + "ebanoemenu/ingame_menu.webp"
 
     if _preferences.language == "english":
-        textbutton ("{size=+75}На Главную{/size}") xalign 0.5 yalign 0.3 at ts_choice_anim:
+        textbutton ("{size=+75}На Главную{/size}") xalign 0.5 yalign 0.3 at ts_preferences_anim:
             action MainMenu()
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Запомнить{/size}") xalign 0.5 yalign 0.43 at ts_choice_anim:
+        textbutton ("{size=+75}Запомнить{/size}") xalign 0.5 yalign 0.43 at ts_preferences_anim:
             action ShowMenu('save')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Вспомнить{/size}") xalign 0.5 yalign 0.56 at ts_choice_anim:
+        textbutton ("{size=+75}Вспомнить{/size}") xalign 0.5 yalign 0.56 at ts_preferences_anim:
             action ShowMenu('load')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Настройки{/size}") xalign 0.5 yalign 0.69 at ts_choice_anim:
+        textbutton ("{size=+75}Настройки{/size}") xalign 0.5 yalign 0.69 at ts_preferences_anim:
             action ShowMenu('preferences')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Сбежать{/size}") xalign 0.5 yalign 0.82 at ts_choice_anim:
+        textbutton ("{size=+75}Сбежать{/size}") xalign 0.5 yalign 0.82 at ts_preferences_anim:
             action ShowMenu('quit')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         imagebutton ypos 0 xpos 0:
             auto ts_gui + "ebanoemenu/nope_%s.webp"
             action Return()
-        text "{font=[cit_font]}{size=+25}Сходишь с ума уже {image=gametime}{size=+15}{/font}" xalign 0.5 yalign 0.95
+        text "{font=[cit_font]}{size=+25}Сходишь с ума уже {image=gametime}{size=+15}{/font}" xalign 0.5 yalign 0.95 at ts_preferences_anim
     else:
-        textbutton ("{size=+75}На Главную{/size}") xalign 0.5 yalign 0.3 at ts_choice_anim:
+        textbutton ("{size=+75}На Главную{/size}") xalign 0.5 yalign 0.3 at ts_preferences_anim:
             action MainMenu()
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Запомнить{/size}") xalign 0.5 yalign 0.43 at ts_choice_anim:
+        textbutton ("{size=+75}Запомнить{/size}") xalign 0.5 yalign 0.43 at ts_preferences_anim:
             action ShowMenu('save')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Вспомнить{/size}") xalign 0.5 yalign 0.56 at ts_choice_anim:
+        textbutton ("{size=+75}Вспомнить{/size}") xalign 0.5 yalign 0.56 at ts_preferences_anim:
             action ShowMenu('load')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Настройки{/size}") xalign 0.5 yalign 0.69 at ts_choice_anim:
+        textbutton ("{size=+75}Настройки{/size}") xalign 0.5 yalign 0.69 at ts_preferences_anim:
             action ShowMenu('preferences')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Сбежать{/size}") xalign 0.5 yalign 0.82 at ts_choice_anim:
+        textbutton ("{size=+75}Сбежать{/size}") xalign 0.5 yalign 0.82 at ts_preferences_anim:
             action ShowMenu('quit')
             activate_sound start_sound_suka
             hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         imagebutton ypos 0 xpos 0:
             auto ts_gui + "ebanoemenu/nope_%s.webp"
             action Return()
-        text "{font=[cit_font]}{size=+25}Сходишь с ума уже {image=gametime}{size=+15}{/font}" xalign 0.5 yalign 0.95
+        text "{font=[cit_font]}{size=+25}Сходишь с ума уже {image=gametime}{size=+15}{/font}" xalign 0.5 yalign 0.95 at ts_preferences_anim
     if not track_checker_blya == "empty":
-        text "{font=[cit_font]}{size=+25}[track_checker_blya]{size=+15}{/font}" xalign 0.5 yalign 0.1
+        text "{font=[cit_font]}{size=+25}[track_checker_blya]{size=+15}{/font}" xalign 0.5 yalign 0.1 at ts_preferences_anim
 init -101 python:
 
     store.selected_slot = "_"
@@ -423,22 +423,22 @@ init -501 screen save:
 
     window background ts_images + "anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
 
-        text " "+translation_new["SAVE"]+" " style "settings_link" color "#ffffff" xalign 0.5 yalign 0.08
+        text " "+translation_new["SAVE"]+" " style "settings_link" color "#ffffff" xalign 0.5 yalign 0.08 at ts_preferences_anim
 
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.95 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.95 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
 
-        textbutton translation_new["Save_game"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.5 action (FunctionCallback(on_save_callback, selected_slot), FileSave(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
-        textbutton translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+        textbutton translation_new["Save_game"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.5 action (FunctionCallback(on_save_callback, selected_slot), FileSave(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
+        textbutton translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
 
         vbox xalign 0.023 yalign 0.5:
             grid 1 10:
                 for i in range(0, 10):
                     if i == 0:
-                        textbutton translation_new["Auto"] text_size 35 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+                        textbutton translation_new["Auto"] text_size 35 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
                     else:
-                        textbutton str(i) text_size 35 right_padding 35 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+                        textbutton str(i) text_size 35 right_padding 35 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
 
-        grid 4 3 xpos 0.13 ypos 0.2 xmaximum 0.81 ymaximum 0.65:
+        grid 4 3 xpos 0.13 ypos 0.2 xmaximum 0.81 ymaximum 0.65 at ts_preferences_anim:
             transpose False
             xfill True
             yfill True
@@ -467,21 +467,21 @@ init -501 screen load:
     window background ts_images + "anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
 
 
-        text " "+translation_new["LOAD"]+" " style "settings_link" color "#ffffff" xalign 0.5 yalign 0.08
+        text " "+translation_new["LOAD"]+" " style "settings_link" color "#ffffff" xalign 0.5 yalign 0.08 at ts_preferences_anim
 
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.95 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
-        textbutton translation_new["Load_game"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.5 action (FunctionCallback(on_load_callback,selected_slot), FileLoad(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
-        textbutton translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.95 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
+        textbutton translation_new["Load_game"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.5 action (FunctionCallback(on_load_callback,selected_slot), FileLoad(selected_slot)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
+        textbutton translation_new["Delete"] style "log_button" text_style "settings_link" yalign 0.95 xalign 0.97 action FileDelete(selected_slot) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
 
         vbox xalign 0.023 yalign 0.5:
             grid 1 10:
                 for i in range(0, 10):
                     if i == 0:
-                        textbutton translation_new["Auto"] text_size 35 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+                        textbutton translation_new["Auto"] text_size 35 style "log_button" text_style "settings_link" action (FilePage("auto"), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
                     else:
-                        textbutton str(i) text_size 35 right_padding 35 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+                        textbutton str(i) text_size 35 right_padding 35 style "log_button" text_style "settings_link" action (FilePage(i), SetVariable("selected_slot", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
 
-        grid 4 3 xpos 0.13 ypos 0.2 xmaximum 0.81 ymaximum 0.65:
+        grid 4 3 xpos 0.13 ypos 0.2 xmaximum 0.81 ymaximum 0.65 at ts_preferences_anim:
             transpose False
             xfill True
             yfill True
@@ -509,47 +509,47 @@ init -501 screen preferences:
 
     window background ts_anim + "zatemnenie.webp" xmaximum 1280 ymaximum 720:
 # КНОПКА НАЗАД
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.5 yalign 0.85 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.5 yalign 0.85 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
 # ВЫБОР РЕЖИМА ОКНА
-        text translation_new["Window_mode"] style "settings_header" xalign 0.03 yalign 0.01
+        text translation_new["Window_mode"] style "settings_header" xalign 0.03 yalign 0.01 at ts_preferences_anim
         if renpy.ios or renpy.android:
-            text translation_new["Window_no_change"] style "settings_text" xalign 0.323 yalign 0.02
+            text translation_new["Window_no_change"] style "settings_text" xalign 0.323 yalign 0.02 at ts_preferences_anim
         else:
-            textbutton translation_new["Fullscreen"] style "log_button" text_style "settings_text" action Preference("display", "fullscreen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.3 yalign 0.01 at ts_choice_anim
-            textbutton translation_new["Window"] style "log_button" text_style "settings_text" action Preference("display", "window") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.45 yalign 0.01 at ts_choice_anim
+            textbutton translation_new["Fullscreen"] style "log_button" text_style "settings_text" action Preference("display", "fullscreen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.3 yalign 0.01 at ts_preferences_anim
+            textbutton translation_new["Window"] style "log_button" text_style "settings_text" action Preference("display", "window") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.45 yalign 0.01 at ts_preferences_anim
 # СКИП
-        text translation_new["Skip"] style "settings_header" xalign 0.03 yalign 0.1
-        textbutton translation_new["Skip_all"] style "log_button" text_style "settings_text" action Preference("skip", "all") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.295 yalign 0.1 at ts_choice_anim
-        textbutton translation_new["Skip_seen"] style "log_button" text_style "settings_text" action Preference("skip", "seen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.49 yalign 0.1 at ts_choice_anim
+        text translation_new["Skip"] style "settings_header" xalign 0.03 yalign 0.1 at ts_preferences_anim
+        textbutton translation_new["Skip_all"] style "log_button" text_style "settings_text" action Preference("skip", "all") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.295 yalign 0.1 at ts_preferences_anim
+        textbutton translation_new["Skip_seen"] style "log_button" text_style "settings_text" action Preference("skip", "seen") activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.49 yalign 0.1 at ts_preferences_anim
 # ШРИФТ
-        text translation_new["Font"] style "settings_header" xalign 0.03 yalign 0.2
-        textbutton translation_new["Normal_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.298 yalign 0.2 at ts_choice_anim
-        textbutton translation_new["Big_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.478 yalign 0.2 at ts_choice_anim
+        text translation_new["Font"] style "settings_header" xalign 0.03 yalign 0.2 at ts_preferences_anim
+        textbutton translation_new["Normal_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.298 yalign 0.2 at ts_preferences_anim
+        textbutton translation_new["Big_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.478 yalign 0.2 at ts_preferences_anim
 # ВИДЖЕТ ТРЕКОВ БЛЯ
-        text translation_new["Music_widget_set"] style "settings_header" xalign 0.03 yalign 0.3
-        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.292 yalign 0.3 at ts_choice_anim
-        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.463 yalign 0.3 at ts_choice_anim
+        text translation_new["Music_widget_set"] style "settings_header" xalign 0.03 yalign 0.3 at ts_preferences_anim
+        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.292 yalign 0.3 at ts_preferences_anim
+        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.463 yalign 0.3 at ts_preferences_anim
 # АНТИЦЕНЗОР
-        text translation_new["Cens_mode_set"] style "settings_header" xalign 0.03 yalign 0.4
-        textbutton translation_new["Cens_mode_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.292 yalign 0.4 at ts_choice_anim
-        textbutton translation_new["Cens_mode_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.463 yalign 0.4 at ts_choice_anim
+        text translation_new["Cens_mode_set"] style "settings_header" xalign 0.03 yalign 0.4 at ts_preferences_anim
+        textbutton translation_new["Cens_mode_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.292 yalign 0.4 at ts_preferences_anim
+        textbutton translation_new["Cens_mode_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.463 yalign 0.4 at ts_preferences_anim
 # ЯЗЫК
-        text translation_new["Language"] style "settings_header" xalign 0.03 yalign 0.5
-        textbutton translation_new["Russian"] style "log_button" text_style "settings_text" action (Language(None), Function(stop_music), Function(renpy.utter_restart)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.285 yalign 0.5 at ts_choice_anim
-        textbutton translation_new["English"] style "log_button" text_style "settings_text" action (Language("english"), Function(stop_music), Function(renpy.utter_restart)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.473 yalign 0.5 at ts_choice_anim
+        text translation_new["Language"] style "settings_header" xalign 0.03 yalign 0.5 at ts_preferences_anim
+        textbutton translation_new["Russian"] style "log_button" text_style "settings_text" action (Language(None), Function(stop_music), Function(renpy.utter_restart)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.285 yalign 0.5 at ts_preferences_anim
+        textbutton translation_new["English"] style "log_button" text_style "settings_text" action (Language("english"), Function(stop_music), Function(renpy.utter_restart)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.473 yalign 0.5 at ts_preferences_anim
 # ГРОМКОСТЬ
         text translation_new["Volume"] style "settings_header" xalign 0.8 yalign 0.01
-        textbutton translation_new["Music_lower"] style "log_button" text_style "settings_text" action Play("music2", ts_sfx + "funeral/zubek.ogg") hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.65 yalign 0.1 at ts_choice_anim
-        bar value Preference("music volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.25 ymaximum 3 xalign 0.93 yalign 0.115
+        textbutton translation_new["Music_lower"] style "log_button" text_style "settings_text" action Play("music2", ts_sfx + "funeral/zubek.ogg") hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.65 yalign 0.1 at ts_preferences_anim
+        bar value Preference("music volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.25 ymaximum 3 xalign 0.93 yalign 0.115 at ts_preferences_anim
 #
-        textbutton translation_new["Sound"] style "log_button" text_style "settings_text" action Play("sound", ts_sfx + "funeral/zubek.ogg") hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.6385 yalign 0.2 at ts_choice_anim
-        bar value Preference("sound volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.25 ymaximum 3 xalign 0.93 yalign 0.215
+        textbutton translation_new["Sound"] style "log_button" text_style "settings_text" action Play("sound", ts_sfx + "funeral/zubek.ogg") hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.6385 yalign 0.2 at ts_preferences_anim
+        bar value Preference("sound volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.25 ymaximum 3 xalign 0.93 yalign 0.215 at ts_preferences_anim
 #
-        textbutton translation_new["Ambience"] style "log_button" text_style "settings_text" action Play("ambience2", ts_sfx + "funeral/zubek.ogg") hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.628 yalign 0.3 at ts_choice_anim
-        bar value Preference("voice volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.25 ymaximum 3 xalign 0.93 yalign 0.315
+        textbutton translation_new["Ambience"] style "log_button" text_style "settings_text" action Play("ambience2", ts_sfx + "funeral/zubek.ogg") hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.628 yalign 0.3 at ts_preferences_anim
+        bar value Preference("voice volume") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.25 ymaximum 3 xalign 0.93 yalign 0.315 at ts_preferences_anim
 # СКОРОСТЬ ТЕКСТА
-        text translation_new["Text_speed"] style "settings_header" xalign 0.84 yalign 0.4
-        bar value Preference("text speed") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.34 ymaximum 3 xalign 0.92 yalign 0.5
+        text translation_new["Text_speed"] style "settings_header" xalign 0.84 yalign 0.4 at ts_preferences_anim
+        bar value Preference("text speed") left_bar bar_full right_bar bar_null thumb ts_gui + "ebanoemenu/htumb.webp" hover_thumb ts_gui + "ebanoemenu/htumb.webp" xmaximum 0.34 ymaximum 3 xalign 0.92 yalign 0.5 at ts_preferences_anim
 
 
 

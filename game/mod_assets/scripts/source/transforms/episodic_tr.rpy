@@ -90,12 +90,6 @@ init:
             linear l rotate 360
             repeat
 
-    transform ts_choice_anim: # АНИМАЦИЯ МЕНЮ ВЫБОРА
-        on hover:
-            easein 0.1 yoffset -2
-        on idle:
-            easein 0.1 yoffset 2
-
     transform ts_razebal: # ВЛЕТЕЛ С РАЗБЕГУ НАХУЙ
         xalign 0.5 yalign 0.5
         parallel:

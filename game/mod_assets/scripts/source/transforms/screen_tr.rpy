@@ -194,3 +194,17 @@ transform ts_coridor_glitch:
         0.49
         xoffset 0
         repeat
+
+transform ts_choice_anim: # АНИМАЦИЯ МЕНЮ ВЫБОРА
+    on hover:
+        easein 0.1 yoffset -2
+    on idle:
+        easein 0.1 yoffset 2
+
+transform ts_preferences_anim: # АНИМАЦИЯ МЕНЮ НАСТРОЕК
+    zoom 0.4 alpha 0
+    ease 0.5 zoom 1.0 alpha 1
+    on hover:
+        easein 0.1 yoffset -2
+    on idle:
+        easein 0.1 yoffset 2

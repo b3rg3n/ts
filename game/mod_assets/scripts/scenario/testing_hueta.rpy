@@ -7,7 +7,8 @@ label testing_label_blya:
         except AssertionError:
             pass
 
-    scene mon_piano_glitch_anim
+    scene mon_piano_glitch_anim:
+        blur 10
     m "ну как"
 
 ##############

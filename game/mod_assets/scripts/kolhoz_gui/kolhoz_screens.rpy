@@ -730,9 +730,9 @@ init -501 screen confirm(message, yes_action, no_action):
     zorder 200
 
     add ts_gui + "base.png"
-    text _(message) text_align 0.5 yalign 0.36 xalign 0.5 color "#ffffff" font header_font size 60
-    textbutton translation_new["Yes"] text_size 60 style "log_button" text_style "settings_link" yalign 0.65 xalign 0.3 action yes_action activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
-    textbutton translation_new["Noo"] text_size 60 style "log_button" text_style "settings_link" yalign 0.65 xalign 0.7 action no_action activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_choice_anim
+    text _(message) text_align 0.5 yalign 0.36 xalign 0.5 color "#ffffff" font header_font size 60 at ts_preferences_anim
+    textbutton translation_new["Yes"] text_size 60 style "log_button" text_style "settings_link" yalign 0.65 xalign 0.3 action yes_action activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
+    textbutton translation_new["Noo"] text_size 60 style "log_button" text_style "settings_link" yalign 0.65 xalign 0.7 action no_action activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
 
 
 

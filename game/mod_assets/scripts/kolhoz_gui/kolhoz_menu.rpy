@@ -58,19 +58,6 @@ label main_menu:
 
         with Fade(1.5, 1, 2)
 
-        if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-            play sound br_glitch
-            show ts_menu_vid_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
-            pause 0.6
-            stop sound
-            hide ts_menu_vid_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
-        elif True: #ДЕНЬ
-            play sound br_glitch
-            show ts_menu_vid as bg1 at br_glitches(_fps=160, glitch_strength=1)
-            pause 0.6
-            stop sound
-            hide ts_menu_vid as bg1 at br_glitches(_fps=160, glitch_strength=1)
-
         call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
 
     else:
@@ -141,76 +128,6 @@ label main_menu:
                 show zatemnenie_light
 
         with Fade(1.5, 1, 2)
-
-        if persistent.badendmenu == True: #МЕНЮШКА ПООСЛЕ БЕД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
-            play sound br_glitch
-            show ts_menu_move_anim_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
-            pause 0.6
-            stop sound
-            hide ts_menu_move_anim_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
-
-        elif persistent.goodendmenu == True: #МЕНЮШКА ПООСЛЕ БЕД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
-            play sound br_glitch
-            show ts_menu_move_anim_good_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
-            pause 0.6
-            stop sound
-            hide ts_menu_move_anim_good_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
-
-        elif persistent.peredgoodendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
-            play sound br_glitch
-            show mon_piano_glitch_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
-            pause 0.6
-            stop sound
-            hide mon_piano_glitch_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
-
-        elif persistent.peredbadendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
-            play sound br_glitch
-            show mon_piano_another_glitch_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
-            pause 0.6
-            stop sound
-            hide mon_piano_another_glitch_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
-
-        elif persistent.carter3menu == True: #МЕНЮШКА КАРТЕРА 3
-            if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-                play sound br_glitch
-                show ts_menu_move_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
-                pause 0.6
-                stop sound
-                hide ts_menu_move_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
-            elif True: #ДЕНЬ
-                play sound br_glitch
-                show ts_menu_move_anim_three as bg1 at br_glitches(_fps=160, glitch_strength=1)
-                pause 0.6
-                stop sound
-                hide ts_menu_move_anim_three as bg1 at br_glitches(_fps=160, glitch_strength=1)
-
-        elif persistent.carter2menu == True: #МЕНЮШКА КАРТЕРА 2
-            if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-                play sound br_glitch
-                show ts_menu_art_carter2_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
-                pause 0.6
-                stop sound
-                hide ts_menu_art_carter2_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
-            elif True: #ДЕНЬ
-                play sound br_glitch
-                show ts_menu_art3_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
-                pause 0.6
-                stop sound
-                hide ts_menu_art3_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
-
-        else: #МЕНЮШКА КАРТЕРА 1
-            if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-                play sound br_glitch
-                show ts_menu_vid_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
-                pause 0.6
-                stop sound
-                hide ts_menu_vid_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
-            elif True: #ДЕНЬ
-                play sound br_glitch
-                show ts_menu_vid as bg1 at br_glitches(_fps=160, glitch_strength=1)
-                pause 0.6
-                stop sound
-                hide ts_menu_vid as bg1 at br_glitches(_fps=160, glitch_strength=1)
 
         call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
 

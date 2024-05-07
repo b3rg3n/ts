@@ -22,7 +22,7 @@ label ts_start:
         menu:
             "Выбор главы":
                 show layer screens at ts_null_transform
-                call screen scenario_start_change_chapter with dissolve2
+                call screen scenario_start_change_chapter with wipeleft
                 return
             "Тестовый label":
                 show layer screens at ts_null_transform
@@ -154,53 +154,53 @@ label ts_start:
 screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
 
     modal True tag ts_chng_two
-    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Начнём сначала? Или выберешь главу?{/color}{/font}{/size}" yalign 0.1 xalign 0.5
+    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Начнём сначала? Или выберешь главу?{/color}{/font}{/size}" yalign 0.1 xalign 0.5 at ts_preferences_anim
 
-    textbutton ("{size=+30}Начать с пролога{/size}") yalign 0.2 xalign 0.5 at ts_choice_anim:
+    textbutton ("{size=+30}Начать с пролога{/size}") yalign 0.2 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_prologue_changes")
 
-    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Акт первый:{/color}{/font}{/size}" yalign 0.3 xalign 0.1
+    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Акт первый:{/color}{/font}{/size}" yalign 0.3 xalign 0.1 at ts_preferences_anim
 
-    textbutton ("{size=+30}Первая глава{/size}") yalign 0.4 xalign 0.1 at ts_choice_anim:
+    textbutton ("{size=+30}Первая глава{/size}") yalign 0.4 xalign 0.1 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_one_changes")
 
-    textbutton ("{size=+30}Вторая глава{/size}") yalign 0.5 xalign 0.1 at ts_choice_anim:
+    textbutton ("{size=+30}Вторая глава{/size}") yalign 0.5 xalign 0.1 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_two_changes")
 
-    textbutton ("{size=+30}Третья глава{/size}") yalign 0.6 xalign 0.1 at ts_choice_anim:
+    textbutton ("{size=+30}Третья глава{/size}") yalign 0.6 xalign 0.1 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_three_changes")
 
-    textbutton ("{size=+30}Четвёртая глава{/size}") yalign 0.7 xalign 0.1 at ts_choice_anim:
+    textbutton ("{size=+30}Четвёртая глава{/size}") yalign 0.7 xalign 0.1 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_four_changes")
 
-    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Акт второй:{/color}{/font}{/size}" yalign 0.3 xalign 0.5
+    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Акт второй:{/color}{/font}{/size}" yalign 0.3 xalign 0.5 at ts_preferences_anim
 
-    textbutton ("{size=+30}Первая глава{/size}") yalign 0.4 xalign 0.5 at ts_choice_anim:
+    textbutton ("{size=+30}Первая глава{/size}") yalign 0.4 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_five_changes")
 
-    textbutton ("{size=+30}Вторая глава{/size}") yalign 0.5 xalign 0.5 at ts_choice_anim:
+    textbutton ("{size=+30}Вторая глава{/size}") yalign 0.5 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_six_changes")
 
-    textbutton ("{size=+30}Третья глава{/size}") yalign 0.6 xalign 0.5 at ts_choice_anim:
+    textbutton ("{size=+30}Третья глава{/size}") yalign 0.6 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_seven_changes")
 
-    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Акт третий:{/color}{/font}{/size}" yalign 0.3 xalign 0.9
+    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Акт третий:{/color}{/font}{/size}" yalign 0.3 xalign 0.9 at ts_preferences_anim
 
 label ts_chapter_prologue_changes:
     scene black with dissolve2

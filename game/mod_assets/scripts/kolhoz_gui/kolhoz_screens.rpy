@@ -181,80 +181,80 @@ init -501 screen main_menu:
 
     modal True tag menu
 
-    text "{size=+17}{font=[ts_atomic]}True Story{/font}{/size}" xalign 0.06 yalign 0.4
+    text "{size=+17}{font=[ts_atomic]}True Story{/font}{/size}" xalign 0.06 yalign 0.4 at ts_preferences_anim
 
     if _preferences.language == "english":
         if persistent.badendmenu and persistent.badendmenuskipglitch:
-            textbutton ("{size=+40}resurrect{/size}") xalign 0.03 yalign 0.45:
+            textbutton ("{size=+40}resurrect{/size}") xalign 0.03 yalign 0.45 at ts_preferences_anim:
                 action Start()
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
 
     else:
         if persistent.badendmenu and persistent.badendmenuskipglitch:
-            textbutton ("{size=+40}Воскреснуть{/size}") xalign 0.06 yalign 0.5 at ts_choice_anim:
+            textbutton ("{size=+40}Воскреснуть{/size}") xalign 0.06 yalign 0.5 at ts_preferences_anim:
                 action Start()
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         elif persistent.badendmenuperedglitch:
-            textbutton ("{size=+40}Теперь{/size}") xalign 0.06 yalign 0.5 at ts_choice_anim:
+            textbutton ("{size=+40}Теперь{/size}") xalign 0.06 yalign 0.5 at ts_preferences_anim:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         elif persistent.goodendmenu:
-            textbutton ("{size=+40}Ещё разок?{/size}") xalign 0.06 yalign 0.5 at ts_choice_anim:
+            textbutton ("{size=+40}Ещё разок?{/size}") xalign 0.06 yalign 0.5 at ts_preferences_anim:
                 action Start()
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         else:
-            textbutton ("{size=+40}Сойти с ума{/size}") xalign 0.06 yalign 0.5 at ts_choice_anim:
+            textbutton ("{size=+40}Сойти с ума{/size}") xalign 0.06 yalign 0.5 at ts_preferences_anim:
                 action Start()
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         if persistent.badendmenuperedglitch:
-            textbutton ("{size=+40}Все{/size}") xalign 0.06 yalign 0.6 at ts_choice_anim:
+            textbutton ("{size=+40}Все{/size}") xalign 0.06 yalign 0.6 at ts_preferences_anim:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+40}Будут{/size}") xalign 0.06 yalign 0.7 at ts_choice_anim:
+            textbutton ("{size=+40}Будут{/size}") xalign 0.06 yalign 0.7 at ts_preferences_anim:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+40}Счастливы{/size}") xalign 0.06 yalign 0.8 at ts_choice_anim:
+            textbutton ("{size=+40}Счастливы{/size}") xalign 0.06 yalign 0.8 at ts_preferences_anim:
                 action NullAction()
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
         else:
-            textbutton ("{size=+40}Вспомнить{/size}") xalign 0.06 yalign 0.6 at ts_choice_anim:
+            textbutton ("{size=+40}Вспомнить{/size}") xalign 0.06 yalign 0.6 at ts_preferences_anim:
                 action ShowMenu('load')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+40}Настройки{/size}") xalign 0.06 yalign 0.7 at ts_choice_anim:
+            textbutton ("{size=+40}Настройки{/size}") xalign 0.06 yalign 0.7 at ts_preferences_anim:
                 action ShowMenu('preferences')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+40}Сбежать{/size}") xalign 0.06 yalign 0.8 at ts_choice_anim:
+            textbutton ("{size=+40}Сбежать{/size}") xalign 0.06 yalign 0.8 at ts_preferences_anim:
                 action ShowMenu('quit')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
     if config.developer:
         if _preferences.language == "english":
             if persistent.badendmenuperedglitch:
-                text "{size=+25}{font=[cit_font]}Are you happy with the result?{/font}{/size}" yalign 0.93 xalign 0.990
+                text "{size=+25}{font=[cit_font]}Are you happy with the result?{/font}{/size}" yalign 0.93 xalign 0.990 at ts_preferences_anim
             else:
-                text "{size=+25}{font=[cit_font]}Developer mode{/font}{/size}" yalign 0.93 xalign 0.990
+                text "{size=+25}{font=[cit_font]}Developer mode{/font}{/size}" yalign 0.93 xalign 0.990 at ts_preferences_anim
         else:
             if persistent.badendmenuperedglitch:
-                text "{size=+25}{font=[cit_font]}Ты доволен результатом?{/font}{/size}" yalign 0.93 xalign 0.990
+                text "{size=+25}{font=[cit_font]}Ты доволен результатом?{/font}{/size}" yalign 0.93 xalign 0.990 at ts_preferences_anim
             else:
-                text "{size=+25}{font=[cit_font]}Режим разработчика{/font}{/size}" yalign 0.93 xalign 0.990
+                text "{size=+25}{font=[cit_font]}Режим разработчика{/font}{/size}" yalign 0.93 xalign 0.990 at ts_preferences_anim
     if persistent.badendmenuperedglitch:
         if _preferences.language == "english":
-            text "{size=+25}{font=[cit_font]}It's all your own damn fault.{/font}{/size}" yalign 0.995 xalign 0.990
+            text "{size=+25}{font=[cit_font]}It's all your own damn fault.{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
         else:
-            text "{size=+25}{font=[cit_font]}Это всё - твоя вина.{/font}{/size}" yalign 0.995 xalign 0.990
+            text "{size=+25}{font=[cit_font]}Это всё - твоя вина.{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
     else:
-        text "{size=+25}{font=[cit_font]} RenPy ver. [renpy.version_only] | Mod ver. [config.version]{/font}{/size}" yalign 0.995 xalign 0.990
+        text "{size=+25}{font=[cit_font]} RenPy ver. [renpy.version_only] | Mod ver. [config.version]{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
     if persistent.badendmenuperedglitch:
         timer 10 action [Hide("main_menu"), Jump("glitch_main_menu_ending")]
 

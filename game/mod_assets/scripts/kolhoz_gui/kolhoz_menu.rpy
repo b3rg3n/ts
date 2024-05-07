@@ -238,11 +238,11 @@ label splashscreen2:
 screen skitsoglasenblya:
 
     modal True tag aw_r1
-    textbutton ("{size=+10}Выход{/size}") yalign 0.685 xalign 0.35 at ts_choice_anim:
+    textbutton ("{size=+10}Выход{/size}") yalign 0.685 xalign 0.35 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Quit(confirm=not main_menu)
-    textbutton ("{size=+10}Продолжить{/size}") yalign 0.685 xalign 0.65 at ts_choice_anim:
+    textbutton ("{size=+10}Продолжить{/size}") yalign 0.685 xalign 0.65 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("splashscreen2")

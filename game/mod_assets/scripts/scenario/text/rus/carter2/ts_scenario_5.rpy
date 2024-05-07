@@ -628,7 +628,7 @@ label ts_scenario_5:
 
     show zatemnenie with dspr
 
-    show layer screens at ts_showscreens
+    show layer screens at ts_null_transform
 
     menu:
         "Сказать правду":
@@ -812,7 +812,7 @@ label ts_scenario_5:
 
     show zatemnenie with dspr
 
-    show layer screens at ts_showscreens
+    show layer screens at ts_null_transform
 
     menu:
         "Играть в шахматы":
@@ -920,7 +920,7 @@ label ts_scenario_5:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
 
-            show layer screens at ts_showscreens
+            show layer screens at ts_null_transform
 
             show zatemnenie with dspr
 
@@ -948,7 +948,7 @@ label ts_scenario_5:
 
             show zatemnenie with dspr
 
-            show layer screens at ts_showscreens
+            show layer screens at ts_null_transform
 
             menu:
                 "Да":
@@ -978,7 +978,7 @@ label ts_scenario_5:
 
                     show zatemnenie with dspr
 
-                    show layer screens at ts_showscreens
+                    show layer screens at ts_null_transform
 
                     menu:
                         "Да":

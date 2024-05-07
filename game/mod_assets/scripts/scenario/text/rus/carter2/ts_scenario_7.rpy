@@ -77,7 +77,7 @@ label ts_scenario_7:
 
     show zatemnenie with dspr
 
-    show layer screens at ts_showscreens
+    show layer screens at ts_null_transform
 
     menu:
         "Лечь спать дальше":

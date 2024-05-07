@@ -568,7 +568,7 @@ init -501 screen choice(items):
                         action action
                         activate_sound start_sound_suka
                         hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                        text caption font 'mod_assets/source/fonts/captureit.ttf' size 50 hover_size 55 at ts_choice_anim
+                        text caption font 'mod_assets/source/fonts/captureit.ttf' size 50 hover_size 55 at ts_preferences_anim
                         xalign 0.5
 
 

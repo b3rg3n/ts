@@ -674,7 +674,7 @@ label ts_scenario_2:
 
     show zatemnenie with dspr
 
-    show layer screens at ts_showscreens
+    show layer screens at ts_null_transform
 
     menu:
         "Посмотреть в других классах":

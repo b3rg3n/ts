@@ -18,23 +18,17 @@ label ts_start:
 
     if config.developer: # МЕНЮШКА РАЗРАБОТЧИКА
         scene ts_razrab_menu with dissolve2
-        show layer screens at ts_showscreens
         menu:
             "Выбор главы":
-                show layer screens at ts_null_transform
                 call screen scenario_start_change_chapter with wipeleft
                 return
             "Тестовый label":
-                show layer screens at ts_null_transform
                 jump testing_label_blya
             "Смотреть титры":
-                show layer screens at ts_showscreens
                 menu:
                     "good":
-                        show layer screens at ts_null_transform
                         jump good_credits_ts_label
                     "bad":
-                        show layer screens at ts_null_transform
                         jump bad_credits_ts_label
             "Очистить переменные":
                 $ persistent.zastavka_skip = False
@@ -135,13 +129,12 @@ label ts_start:
                         jump ts_start
             "Заменить рендер":
                 show zatemnenie with dspr
-                show layer screens at ts_showscreens
                 call screen ts_render_changer
             "Обратно в меню":
                 return
 
     if persistent.scenario_proshel_blya == True: # ПРОВЕРКА НА ПРОЙДЕННУЮ ИГРУ
-        call screen scenario_start_change_chapter with dissolve2
+        call screen scenario_start_change_chapter with wipeleft
         return
     else:
         scene black with dissolve2

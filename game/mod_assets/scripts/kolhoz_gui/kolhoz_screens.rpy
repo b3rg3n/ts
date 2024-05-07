@@ -1239,7 +1239,7 @@ init -502 screen help():
                         if "color" in h.who_args:
                             color h.who_args["color"]
 
-                textbutton h.what text_style "normal_day" text_size history_text_size action RollbackToIdentifier(h.rollback_identifier) xpos xposition xmaximum xmax text_hover_color "#40e138"
+                textbutton h.what text_style "normal_day" text_size history_text_size action RollbackToIdentifier(h.rollback_identifier) xpos xposition xmaximum xmax text_hover_color "#40e138" at ts_preferences_anim
 
 
 init -2 style history_window is empty

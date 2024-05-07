@@ -77,7 +77,8 @@ label main_menu:
             play music good_menu_ost fadein 5
             scene ts_menu_move_anim_good_end at ts_ustal_suka
             show zatemnenie_light
-            show overlay aw_memory_back_1
+            show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+            #show overlay aw_memory_back_1
 
         elif persistent.peredgoodendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
             play music pered_good_menu_ost fadein 5

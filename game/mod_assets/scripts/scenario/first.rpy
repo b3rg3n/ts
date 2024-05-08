@@ -61,32 +61,30 @@ label start:
         play music ts_wnuk fadein 2
         scene ts_razrab_menu
         with dissolve2
-        show screen ts_start_shit_blya with awrain
+        show screen ts_start_shit_blya
         $ renpy.pause(3, hard=True)
-        hide screen ts_start_shit_blya
+        hide screen ts_start_shit_blya with dspr
         show screen ts_cens_changer
-        with awrain
         $ renpy.pause(hard=True)
 
 label ts_intro_settings1:
-    hide screen ts_cens_changer
+    hide screen ts_cens_changer with dspr
     show screen ts_widget_changer
-    with awrain
     $ renpy.pause(hard=True)
 
 label ts_intro_settings2:
-    hide screen ts_widget_changer with awrain
+    hide screen ts_widget_changer with dspr
     pause 1
     show layer screens at ts_showscreens
     brg "Тебя устраивает такой размер шрифта?{w} Или же..."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     show layer screens at ts_null_transform
-    show screen ts_font_changer with awrain
+    show screen ts_font_changer
     $ renpy.pause(hard=True)
 
 label ts_intro_settings3:
-    hide screen ts_font_changer with awrain
+    hide screen ts_font_changer with dspr
     show layer screens at ts_showscreens
     brg "А теперь?{w} Или ещё разок поменяем?"
     show layer screens at ts_hidescreens
@@ -95,7 +93,7 @@ label ts_intro_settings3:
     menu:
         "Поменяем":
             show layer screens at ts_null_transform
-            show screen ts_font_changer with awrain
+            show screen ts_font_changer
             $ renpy.pause(hard=True)
         "Оставь этот":
             show layer screens at ts_showscreens
@@ -106,10 +104,10 @@ label ts_intro_settings3:
             jump ts_intro_settings4
 
 label ts_intro_settings4:
-    show screen ts_set_end_shit_blya with awrain
+    show screen ts_set_end_shit_blya
     $ renpy.pause(3, hard=True)
     stop music fadeout 3
-    hide screen ts_set_end_shit_blya with dissolve
+    hide screen ts_set_end_shit_blya with dspr
     pause 1
     $ persistent.zastavka_skip = True
     jump ts_start

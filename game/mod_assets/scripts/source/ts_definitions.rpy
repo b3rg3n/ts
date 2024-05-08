@@ -4,7 +4,10 @@
 
 init:
 ###ЦГ
-    image ts_anarchy = Image(ts_images + "intro/anarchy.webp")
+    image ts_anarchy = Image(ts_images + "anarchy/anarchisty.webp")
+    image ts_anarchy1 = Image(ts_images + "anarchy/anarchisty11.webp")
+
+
     image ts_intro_1 = ts_images + "intro/intro1.webp"
     image ts_intro_2 = ts_images + "intro/intro2.webp"
     image ts_intro_3 = ts_images + "intro/intro3.webp"

@@ -10,10 +10,9 @@ init:
     $ music_list_ts["MND - Polar Day"] = ts_muzzon + "menu_ost/ts_pd.ogg"
     $ music_list_ts["John Murphy - Ghosts"] = ts_muzzon + "menu_ost/bad_menu_ost.ogg"
     $ music_list_ts["Darkest Time - Main Theme"] = ts_muzzon + "menu_ost/ts_killyourself.ogg"
-    $ music_list_ts["pg.lost - Still Alright"] = ts_muzzon + "menu_ost/ts_finalded.ogg"
+    $ music_list_ts["Marco Beltrami - Wales"] = ts_muzzon + "menu_ost/ts_finalded.ogg"
     $ music_list_ts["Akira Yamaoka - Not Tomorrow"] = ts_muzzon + "menu_ost/good_menu_ost.ogg"
     $ music_list_ts["Intig - 10 Years Later"] = ts_muzzon + "menu_ost/pered_bad_menu_ost.ogg"
-    $ music_list_ts["Marty Simon - The Lexx Escape"] = ts_muzzon + "menu_ost/pered_good_menu_ost.ogg"
 ###ИЗ ЗАСТАВОК
     $ music_list_ts["Hallucinator - Mosh"] = ts_muzzon + "menu_ost/zastavka/ts_mosh.ogg"
     $ music_list_ts["Moe Era OST - Final Scene Soft"] = ts_muzzon + "menu_ost/zastavka/ts_soft.ogg"
@@ -52,7 +51,7 @@ init:
     $ music_list_ts["Sergey Eybog - Dance Of Fireflies"] = ts_muzzon + "es/ts_dof.ogg"
 
 ###ОСТАЛЬНОЕ
-    $ music_list_ts["Marco Beltrami - Wales"] = ts_muzzon + "ts_wales.ogg"
+
     $ music_list_ts["HCCH OST - Начало"] = ts_muzzon + "ts_emmk.ogg"
     $ music_list_ts["kelly bailey - inhuman frequency"] = ts_muzzon + "ts_hl2.ogg"
     $ music_list_ts["Pixies - Where is My Mind (piano cover)"] = ts_muzzon + "ts_gramatik.ogg"

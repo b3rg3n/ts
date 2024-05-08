@@ -1156,10 +1156,10 @@ label ts_scenario_7:
     "У меня же постоянные клубы, так что я совсем не замечала, как обстоят дела с другими."
     "И пока Аки не продолжила тираду про то, что я бездарность, в комнату входят Юри и Нацуки."
     em "А я продолжу. Но после клуба."
-#сфх открытия двери, но более галантно
-#наложи музыку Юрца и Нацуки, ну как 5_all, только дорожки Сайры и Моники замуть, только Юрец и Нацуки
-    show yuri 1a at t21
-    show natsuki 1d at f22
+    play sound door_squeak_light
+    play music audio.t5_yn fadein 2
+    show yuri 1a at ln21
+    show natsuki 1d at ln22
     n "А вот и мы!"
     n "Я тут встретила Юри по пути в клуб..."
     show yuri 2q at t21
@@ -1196,29 +1196,42 @@ label ts_scenario_7:
     show yuri 2d at t21
     "Мы с Нацуки тоже смеёмся."
     "Настроение было лучше некуда. Единственное, нужно теперь, чтобы и Сайори привела новичка к нам в клуб."
-#вайплефт на тот же бг, та же музыка
-    show yuri 1a at t21
-    show natsuki 1j at t22
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound2 pageflip
+    scene ts_club
+    show yuri 1a at i21
+    show natsuki 1j at i22
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Однако прошло уже десять минут после нашего с девочками разговора, а Сайори так и не пришла."
     "Что её так могло задержать?"
-#сфх открытия двери
+
+    play sound door_open
+
     "Как раз в этот момент приходит и сама Сайори."
     show yuri 1e at t31
-    show sayori 1f at t32
+    show sayori 1f at ln32
     show natsuki 1za at t33
-    stop music
+    stop music fadeout 3
     "Однако, судя по её удручённому выражению лица, пришла она явно не с хорошими новостями."
     m "Ну что?"
     "Мне настолько было невтерпёж, что я сразу же полезла к ней с расспросами."
     show yuri 1zg at t31
     show sayori 1h at f32
     show natsuki 1u at t33
-    #play music confession
+    play music audio.t10
     s "Что-что... Отказался он."
+    show layer screens at vpunch
     s 5c "Он наотрез отказался вступать к нам."
     s 5d "Не помогло и то, что мы все милые девочки. Не помогли даже обещания кексиков, которыми славится Нацуки."
     show sayori 5d at t32
     show natsuki 2p at f33
+    show layer screens at vpunch
     n "Э-эй! Я на внеочередную готовку не подписывалась!"
     show sayori 5a at f32
     show natsuki 2p at t33

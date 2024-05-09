@@ -56,3 +56,5 @@ init:
     $ music_list_ts["kelly bailey - inhuman frequency"] = ts_muzzon + "ts_hl2.ogg"
     $ music_list_ts["Pixies - Where is My Mind (piano cover)"] = ts_muzzon + "ts_gramatik.ogg"
     $ music_list_ts["Joel Nielsen - Black Mesa Theme"] = ts_muzzon + "ts_mk.ogg"
+    $ music_list_ts["The Distorion - Stellar"] = ts_muzzon + "ts_stellar.ogg"
+    $ music_list_ts["The Distorion - Thank God"] = ts_muzzon + "ts_tgod.ogg"

@@ -721,7 +721,7 @@ label ts_scenario_7:
 
             show layer screens at ts_showscreens
 
-            #play audio stellar #МОЯ МУЗЫКА ЕС ЧО
+            play music ts_stellar
             "Ну что же, сказано - сделано. Теперь главное - не разгуливать слишком долго."
             "А то что это получается, я вышла ни свет ни заря, а в итоге всё равно в школу опоздаю? Ну уж нет."
             "Так что, хоть я сама себе и прибавила лишней работы, я всё равно иду довольно быстро."
@@ -2297,7 +2297,7 @@ label ts_carterseven_poem_finally:
 
     show layer screens at ts_showscreens
 
-    #play music thank god #МОЯ КОМПОЗИШЕН
+    play music ts_tgod
     "Наконец-то... мягкая кроватка..."
     show monika 2bd at aki_spawn
     em "До кровати тебе ещё далеко. Ты забыла, что тебе ещё стих написать надо?"

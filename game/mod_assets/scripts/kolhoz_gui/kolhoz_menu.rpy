@@ -199,7 +199,6 @@ label splashscreen3:
     pause 0.5
     scene black
     with dissolve
-    pause 0.5
     return
 
 screen skitsoglasenblya:

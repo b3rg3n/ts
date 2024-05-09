@@ -1055,15 +1055,11 @@ label ts_scenario_7:
 
     $ renpy.sound.set_volume(1.0)
 
-    play sound ts_bezdarnost
+    play sound_loop ts_bezdarnost
 
     em "Бездарность, бездарность, бездарность, бездарность, бездарность, безда{nw}"
 
     $ renpy.sound.set_volume(0.3)
-
-    stop sound fadeout 5
-
-    play ambience ts_bezdarnost fadein 5
 
     show monika 4a at t11
     m "Ладно, ладно, ХВАТИТ!"
@@ -1104,7 +1100,7 @@ label ts_scenario_7:
     "Нет, это просто невыносимо!"
 
     $ renpy.sound.set_volume(1.0)
-    stop ambience
+    stop sound_loop
     show layer screens at vpunch
     m "{b}{size=+20}ТАК, ПО ОДНОМУ!!!{/b}{/size}"
     show sayori 4n at t21
@@ -1235,6 +1231,7 @@ label ts_scenario_7:
     n "Э-эй! Я на внеочередную готовку не подписывалась!"
     show sayori 5a at f32
     show natsuki 2p at t33
+    stop music fadeout 5
     s "Да это так, на перспективу... Кексики-то у тебя действительно получаются превосходные."
     show sayori 2l at t32
     show natsuki 2t at f33
@@ -1249,12 +1246,9 @@ label ts_scenario_7:
     s "А он сказал, что внешность бывает очень обманчивой, и что я, видите ли, подкупаю его едой, которую даже не я приготовила!"
     s 5d "Одним словом, злюка."
     show sayori 5d at t32
-    stop music
     "Ну и ну..."
-    hide yuri
-    hide sayori
-    hide natsuki
-    #play music you lost me
+    show layer master at ts_fon_blur_postepenno
+    play music ts_ylm
     "А я ещё считала его нормальным парнем. А оно вот как оказывается..."
     "Впрочем, нам же будет только лучше без этого неудачника!"
     "Наверняка он вместо нас, милых девочек, вступит в какой-нибудь Анимешный клуб, в котором одни только прыщавые и очкастые парни..."
@@ -1267,9 +1261,11 @@ label ts_scenario_7:
     "«В чьём видении?»"
     em "А хотя знаешь, неважно уже..."
     "Как знаешь..."
+    show layer master
     show yuri 3w at t31
     show sayori 2k at t32
     show natsuki 2s at t33
+    stop music fadeout 6
     "Девочки тем временем угрюмо сидят и разве что томно вздыхают."
     "Надо срочно спасать положение."
     m "Девочки..."
@@ -1277,16 +1273,16 @@ label ts_scenario_7:
     m "Девочки, ну..."
     "Ответа всё так же не последовало."
     "Ну что же..."
-    stop music
-    m "{size=+10}ИТАК, РЕБЯТА!{/size}" #со скрин шейком
     show yuri 3n at h31
     show sayori 2m at h32
     show natsuki 2zb at h33
+    show layer screens at vpunch
+    m "{size=+10}ИТАК, РЕБЯТА!{/size}"
     "Вот так-то лучше."
     "Правда, девочки выглядят испуганно из-за того, что я так внезапно наорала..."
     "Но у меня просто выхода другого не было."
     "Что же, приходится спасать положение, {i}снова{/i}."
-    #play music i dont blame you
+    play music ts_idby
     m "Девчата..."
     show yuri 2v at t31
     show sayori 2f at t32
@@ -1319,6 +1315,9 @@ label ts_scenario_7:
     "Все угрюмо закивали."
     m "Ну тогда... начинаем..."
 
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
     $ ts_s_carterseven_readpoem = False
     $ ts_y_carterseven_readpoem = False
     $ ts_n_carterseven_readpoem = False
@@ -1327,28 +1326,41 @@ label ts_scenario_7:
     jump cartersevenpoemsblya
 
 label cartersevenpoemsblya:
-    play sound pageflip
-    scene ts_club
-    with wipeleft_scene
+    show layer screens at ts_null_transform
 
     if ts_s_carterseven_readpoem and ts_y_carterseven_readpoem and ts_n_carterseven_readpoem:
         jump ts_carterseven_poem_finally
+
+    play sound pageflip
+    scene ts_club
+    with wipeleft_scene
 
     if not ts_first_carterseven_readpoem:
         $ carterseven_vibor_text_suka = "Кому я покажу стихотворение первой?"
     else:
         $ carterseven_vibor_text_suka = "Кому я покажу стихотворение следующей?"
 
-
+    show zatemnenie_light with dspr
     menu:
         "[carterseven_vibor_text_suka]"
         "Сайори" if not ts_s_carterseven_readpoem:
+            play music audio.okevrsay
+            hide zatemnenie_light with dspr
             $ ts_s_carterseven_readpoem = True
             if not ts_first_carterseven_readpoem:
+                show layer screens at ts_showscreens
                 "Меня до сих пор гложет чувство вины за то, что я так отозвалась о её друге детства..."
                 "Так что лучше сразу начать с неё, чтобы уладить все недопонимания."
                 $ ts_first_carterseven_readpoem = True
-            #вайплефт на бг клуба
+                show layer screens at ts_hidescreens
+                " {w=1.0}{nw}"
+
+
+            play sound pageflip
+            scene ts_club
+            with wipeleft_scene
+            show layer screens at ts_showscreens
+
             show sayori 1k at t11
             m "С-Сайори... Ты... п-прости меня... з-за то, что я так плохо отозвалась о Мицуо..."
             m "В конце концов, мне в-вашу дружбу н-не понять..."
@@ -1473,6 +1485,7 @@ label cartersevenpoemsblya:
             show sayori 2d at t11
             m "Да, мне тоже так кажется."
             show sayori 2x at f11
+            stop music fadeout 5
             s "Тогда я дальше пойду обмениваться!"
             if ts_y_carterseven_readpoem and ts_n_carterseven_readpoem == True:
                 show sayori 2a at t11
@@ -1487,20 +1500,33 @@ label cartersevenpoemsblya:
                 m "А-ха-ха, Сайори, не так быстро. Вот будет следующий обмен стихами, тогда и наменяешься вдоволь."
                 show sayori 3l at f11
                 s "Н-ну... л-ладно..."
+            show sayori at cright with move
             hide sayori
             if ts_y_carterseven_readpoem and ts_n_carterseven_readpoem == False:
                 "Хорошо. Первый обмен стихами прошёл успешно. Осталось ещё два. Но эта парочка будет куда более скептична к тому, что я написала."
             else:
                 "Так, что там дальше по плану?"
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
             jump cartersevenpoemsblya
 
         "Нацуки" if not ts_n_carterseven_readpoem:
+            hide zatemnenie_light with dspr
+            play music audio.okevrnat
             $ ts_n_carterseven_readpoem = True
             if not ts_first_carterseven_readpoem:
+                show layer screens at ts_showscreens
                 "Мне не очень понятно, как и о чём Нацуки пишет..."
                 "Поэтому, чтобы развеять эту неизвестность, начну-ка я лучше с неё."
                 $ ts_first_carterseven_readpoem = True
-            #вайплефт на бг клуба
+                show layer screens at ts_hidescreens
+                " {w=1.0}{nw}"
+
+            play sound pageflip
+            scene ts_club
+            with wipeleft_scene
+            show layer screens at ts_showscreens
+
             show natsuki 1a at t11
             m "Привет, Нацуки."
             show natsuki 1d at f11
@@ -1541,8 +1567,8 @@ label cartersevenpoemsblya:
             show natsuki 1y at t11
             m "Х-хорошо..."
             "Я даю ей своё стихотворение."
-            window hide # 4или как там блять параметры виндоухайда прописываются, если прописываются вообще, но вроде прописываются
-            #ну и тем временем блять:
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
             show natsuki 1y at t11
             pause 0.4
             show natsuki 2w at t11
@@ -1555,8 +1581,8 @@ label cartersevenpoemsblya:
             pause 0.4
             show natsuki 1u at t11
             pause 0.4
-            #параметры можно и поменять, главное спрайты не трош, ну и чтоб Нацуки не прыгала туда-сюда, как-то поприземлённее шоль - она же не мировой щидевар написала всё-таки
             show natsuki 2t at f11
+            show layer screens at ts_showscreens
             n "Л-ладно... П-прежде в-всего..."
             pause 1.5
             n 1q "М-мне... даже и п-придраться не к чему..."
@@ -1661,29 +1687,44 @@ label cartersevenpoemsblya:
             show natsuki 1l at f11
             n "А, да пустяки! Это я должна тебя поблагодарить за клуб и всё сопутствующее!"
             show natsuki 1j at t11
+            stop music fadeout 4
             m "Ну... спасибо ещё раз, Нацуки."
             show natsuki 1d at f11
             n "Да не за что!"
             if ts_s_carterseven_readpoem and ts_y_carterseven_readpoem == True:
+                show natsuki at cright with move
                 hide natsuki
             else:
                 n 1d "Ну, я дальше пойду?"
                 show natsuki 1a at t11
                 m "Иди, конечно..."
+                show natsuki at cright with move
                 hide natsuki
                 "А сама я дальше пойду к..."
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
             jump cartersevenpoemsblya
 
         "Юри" if not ts_y_carterseven_readpoem:
+            hide zatemnenie_light with dspr
+            play music audio.okevryuri
             $ ts_y_carterseven_readpoem = True
             if not ts_first_carterseven_readpoem:
+                show layer screens at ts_showscreens
                 "Юри у нас самая начитанная в клубе, а значит, самая опытная в поэзии."
                 "По крайней мере, Сайори так кажется..."
                 "В любом случае, начать лучше с неё, чтобы когда дело дойдёт до остальных, мне было бы уже не так обидно за мои бездарные писательские навыки."
                 em "Ну вот, ты и сама уже об этом говоришь! Значит, точно бездарность!"
                 "Отстань."
                 $ ts_first_carterseven_readpoem = True
-            #вайплефт на бг клуба
+                show layer screens at ts_hidescreens
+                " {w=1.0}{nw}"
+
+            play sound pageflip
+            scene ts_club
+            with wipeleft_scene
+            show layer screens at ts_showscreens
+
             show yuri 2b at f11
             y "Здравствуй, Моника."
             y "С чем ты сегодня?"
@@ -1833,6 +1874,7 @@ label cartersevenpoemsblya:
             show yuri 2q at f11
             y "М-может... м-может, и так..."
             y 2zi "Т-тогда... я пойду дальше?"
+            stop music fadeout 4
             show yuri 2s at t11
             if ts_n_carterseven_readpoem and ts_s_carterseven_readpoem == True:
                 m "Так мы же уже закончили..."
@@ -1847,15 +1889,19 @@ label cartersevenpoemsblya:
                 m "Я ещё раз поговорю со всеми остальными, а потом можем заканчивать."
                 show yuri 1v at f11
                 y "Х... хорошо..."
+                show yuri at cright with move
                 hide yuri
                 "В мгновение ока Юри уже нет."
             else:
                 m "Да, конечно, иди..."
                 show yuri 2zi at f11
                 y "Х-хорошо..."
+                show yuri at cright with move
                 hide yuri
                 "Тогда и я пойду дальше..."
                 "А следующей у нас будет..."
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
             jump cartersevenpoemsblya
 
 label ts_carterseven_poem_finally:
@@ -1866,11 +1912,13 @@ label ts_carterseven_poem_finally:
     show sayori 1a at t32
     show natsuki 1a at t33
     with wipeleft_scene
+    show layer screens at ts_showscreens
     m "Итак, ребята! Все закончили со стихами?"
     show yuri 2d at f31
     show sayori 3r at f32
     show natsuki 2y at f33
     $ m_name = "Все вместе"
+    show layer screens at vpunch
     m "Да!"
     show yuri 2c at t31
     show sayori 3q at t32
@@ -1893,6 +1941,7 @@ label ts_carterseven_poem_finally:
     show sayori 4m at h32
     show natsuki 2p at h33
     $ m_name = "Все вместе"
+    show layer screens at vpunch
     m "!!!"
     $ m_name = "Моника"
     m "Да ладно вам, девочки! Вы уже уже написали один стих, дальше будет гораздо проще!"
@@ -1903,7 +1952,7 @@ label ts_carterseven_poem_finally:
     show yuri 2c at t31
     show sayori 4p at h32
     show natsuki 2z at t33
-    #play music eat some troubles
+    play music ts_est
     s "Моника, так нечестно!"
     show sayori 5c at f32
     s "Сама же поставила меня в безвыходное положение, да ещё и нагло пользуешься этим!"
@@ -1920,6 +1969,7 @@ label ts_carterseven_poem_finally:
     y "Я обязательно напишу."
     show yuri 1m at t31
     show natsuki 2t at f33
+    stop music fadeout 5
     n "Ну, раз осталась только я, то чего уж там..."
     n 2d "Можешь на меня рассчитывать! "
     extend 2y "Завтра я напишу лучшее стихотворение на свете!"
@@ -1927,11 +1977,21 @@ label ts_carterseven_poem_finally:
     show sayori 3r at t32
     show natsuki 2z at t33
     "Мы все вместе посмеялись. Отличная разрядка обстановки после несколько напряжённого и неловкого обмена стихами."
-#вайплефт на тот же бг клуба (как же он заебал честно говоря, ну ничё, через несколько строк этого бг в этой главе больше не будет)
-    #play music afterword
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_club
     show yuri 1a at t31
     show sayori 1a at t32
     show natsuki 1a at t33
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+    play music ts_afterword
+
     m "Ладно, девочки, не смею вас больше задерживать."
     m "Не забудьте задание на следующую встречу: стихотворение, чтобы все могли друг с другом поделиться."
     m "А сейчас - до завтра!"
@@ -1939,43 +1999,118 @@ label ts_carterseven_poem_finally:
     show sayori 1x at f32
     show natsuki 1l at f33
     $ m_name = "Все вместе"
+    show layer screens at vpunch
     m "До завтра, Моника!"
+    $ m_name = "Моника"
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    play sound door_open
+    show yuri at cleft with move
     hide yuri
+    pause 0.6
+    show sayori at cleft with move
     hide sayori
-    hide natsuki #э ну бля крч сделай так, чтобы они не одинаково выходили, но и не чтобы как это пятилетка делал, который неделю назад узнал, чё такое Ренпай, и какие способы хайда ваще есть
+    pause 0.6
+    show natsuki at cleft with move
+    hide natsuki
+    show layer screens at ts_showscreens
     "Все ушли. Что же, я тоже не смею задерживать себя в клубе."
     "Я выключаю свет и выхожу."
-#вайплефт на коридор (СВЕТ ВЫКЛЮЧЕН ЕСЛИ ЧТО, бгшник я уже скинул), на лестницу, на ВЕЧЕРНИЙ вход в школу, и файнали на ВЕЧЕРНЮЮ улицу
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_light_off_corridor
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_stairs
+    with wipeleft_scene
+
+    stop music fadeout 5
+
+    play sound pageflip
+    scene ts_school_gate_evening
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_street_late
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Наконец-то... домой..."
     "Наконец-то тишина..."
-    #play music always ready
-    show monika 2l at f11
+    play music ts_ar
+    show monika 2l at aki_spawn
     em "И не мечтай!"
     em 2i "Думаешь, я забыла? А я {i}очень{/i} злопамятная."
     em 1n "Кхе-кхе..."
-#начинается войс про бездарность
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+
+    play ambience ts_bezdarnost
+
     em 4k "Бездарность бездарность бездарность бездарность бездарность бездарность безда{nw}"
-#войс приглушается
-    if persistent cens_mode == True:
+
+    python:
+        _preferences.volumes['voice'] = .3
+
+    show layer screens at vpunch
+    if persistent.cens_mode == True:
         m "ДА ИДИ ТЫ НАХУЙ УЖЕ!"
     else:
         m "Да пошла ты!"
-#опять фул громкость
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+
     em "Нет, не пойду!"
     em "арность бездарность бездарность бездарность безд{nw}"
-#приглушённо
-#эффект быстрого бега
+
+    python:
+        _preferences.volumes['voice'] = .3
+
+    play sound_loop ts_running
+
+    scene ts_street_late at ts_running_fast
+    show monika 4k at i11
+
     if unluck6 == True:
         "Я бегу со школы до дома ещё быстрее, чем утром, только чтобы эта мразь унялась."
     else:
         "Я бегу со школы до дома так быстро, как только могу, только чтобы эта мразь унялась."
-#на фулах
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+
     em "Ты, наверное, забыла, что я с тобой {b}постоянно{/b}? И днём, и ночью, в любое время. И я всегда тебе буду повторять, что ты бездарность!"
-    hide monika
-#приглушённо
+    show monika 4k at aki_uhod
+
+    python:
+        _preferences.volumes['voice'] = .3
+
     "Я её не слушаю. Я вообще ничего и никого не слушаю. У меня есть цель, и я её придерживаюсь."
-#вайплефт на вечерний дом Моники. Эффект бега заканчивается, эффект одышки начинается, стоп музик, и войс про бездарность тоже заканчивается
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
     stop music
+    stop sound_loop
+    stop ambience
+
+    python:
+        _preferences.volumes['voice'] = .65
+
+    play sound2 ts_othodos_ot_bega fadein 2
+    play sound pageflip
+    scene ts_house_monika_evening at ts_ustal_suka
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Наконец, передо мной показался дом."
     "Хорошо так побегала. И под аккомпанемент Аки я даже не сильно-то и устала."
     if unluck6 == True:
@@ -1986,13 +2121,39 @@ label ts_carterseven_poem_finally:
     m "Так ты же...{w=0.3} и так...{w=0.3} со мной...{w=0.3} не разгова...{w=0.3} риваешь..."
     em "Ой, всё, отстань..."
     "Хе-хе-хе."
-#вайплефт на ночной вход без света, потом со светом, потом на кухню
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound2 door_open
+    scene ts_vhod_nolight
+    with wipeleft_scene
+
+    pause 0.5
+
+    play sound svet_on
+
+    scene ts_vhod_night
+    with flash
+
+    play sound pageflip
+    scene ts_kitchen
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     m "Папа? Я пришла!"
     "Однако папа не ответил."
     "Хм-м-м... а может..."
-#вайплефт на вечернюю гостиную
-#поставь на телеке какую-то очередную политоту, потому что мой батя просто обожает такие политсрачи
-    #play music my daily life
+
+    play music ts_mdl fadein 2
+
+    play sound pageflip
+    scene ts_living_room_telek_stas
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Ах, ну конечно - папа уже с головой окунулся в очередную политическую передачу, в которой я совершенно ничего не понимаю..."
     m "Папа! Я пришла!"
     show hiroto 1z at h11

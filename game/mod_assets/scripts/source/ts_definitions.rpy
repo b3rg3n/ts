@@ -56,6 +56,11 @@ init:
 
 ###БГ
 
+    image ts_light_off_corridor = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "light_off_corridor.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "light_off_corridor.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "light_off_corridor.webp") )
+
     image ts_club = ConditionSwitch(
     "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "club.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
     "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "club.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
@@ -335,18 +340,8 @@ init:
     image ts_menu_bad_end = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bad_end_menu.ogv")
     image ts_razrab_menu = Movie(fps=24, size = (1280, 720), play=ts_videosos + "menu_video.ogm")
 ###БГ
-    image ts_living_room_night_telek_hors = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/hors_night.ogv")
-    image ts_living_room_late_telek_hors = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/hors_sunset.ogv")
-    image ts_living_room_telek_hors = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/hors_day.ogv")
 
-    image ts_living_room_night_telek_bumer = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/bumer_night.ogv")
-    image ts_living_room_late_telek_bumer = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/bumer_sunset.ogv")
-    image ts_living_room_telek_bumer = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/bumer_day.ogv")
-
-    image ts_living_room_night_telek_oxik = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/oxik_night.ogv")
-    image ts_living_room_late_telek_oxik = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/oxik_sunset.ogv")
-    image ts_living_room_telek_oxik = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/oxik_day.ogv")
-
-    image ts_living_room_night_telek_sudba = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/sudba_night.ogv")
-    image ts_living_room_late_telek_sudba = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/sudba_sunset.ogv")
-    image ts_living_room_telek_sudba = Movie(fps=24, size = (1280, 720), play=ts_videosos + "bg/telek/sudba_day.ogv")
+    image ts_living_room_telek_stas = Movie(fps=24, size = (1280, 720), play=ts_telek + "stas.webm")
+    image ts_living_room_telek_putin = Movie(fps=24, size = (1280, 720), play=ts_telek + "interview.webm")
+    image ts_living_room_telek_sudba_night = Movie(fps=24, size = (1280, 720), play=ts_telek + "sudba_night.webm")
+    image ts_living_room_telek_sudba_day = Movie(fps=24, size = (1280, 720), play=ts_telek + "sudba.webm")

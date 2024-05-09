@@ -1123,17 +1123,8 @@ label ts_scenario_1:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    $ generate_random_number_tv() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
-
     play sound pageflip
-    if random_tv_label == 2 or random_tv_label == 8:
-        scene ts_living_room_late_telek_hors
-    elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-        scene ts_living_room_late_telek_bumer
-    elif random_tv_label == 9:
-        scene ts_living_room_late_telek_oxik
-    elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-        scene ts_living_room_late_telek_sudba
+    scene ts_living_room_telek_sudba_day
     with wipeleft_scene
 
     show layer screens at ts_showscreens
@@ -1148,29 +1139,13 @@ label ts_scenario_1:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    $ generate_random_number_tv() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
-
     play sound pageflip
-    if random_tv_label == 2 or random_tv_label == 8:
-        scene ts_living_room_night_telek_hors
-    elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-        scene ts_living_room_night_telek_bumer
-    elif random_tv_label == 9:
-        scene ts_living_room_night_telek_oxik
-    elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-        scene ts_living_room_night_telek_sudba
+    scene ts_living_room_telek_sudba_night
     with wipeleft_scene
 
     show layer screens at ts_showscreens
 
-    if random_tv_label == 2 or random_tv_label == 8:
-        "За просмотром очередного видоса на вечер время пролетело гораздо быстрее, чем ожидалось."
-    elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-        "За просмотром легендарного криминального фильма на вечер время пролетело гораздо быстрее, чем ожидалось."
-    elif random_tv_label == 9:
-        "За просмотром легендарного батла на вечер время пролетело гораздо быстрее, чем ожидалось."
-    elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-        "За просмотром ностальгического фильма на вечер время пролетело гораздо быстрее, чем ожидалось."
+    "За просмотром ностальгического фильма на вечер время пролетело гораздо быстрее, чем ожидалось."
 
     "Настолько, что уже начало одиннадцатого, хотя начали мы смотреть телевизор вот буквально пять минут назад."
     

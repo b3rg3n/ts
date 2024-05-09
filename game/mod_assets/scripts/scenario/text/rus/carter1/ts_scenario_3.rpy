@@ -2275,31 +2275,16 @@ label ts_scenario_3:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    $ generate_random_number_tv() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
 
     play sound pageflip
-    if random_tv_label == 2 or random_tv_label == 8:
-        scene ts_living_room_night_telek_hors
-    elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-        scene ts_living_room_night_telek_bumer
-    elif random_tv_label == 9:
-        scene ts_living_room_night_telek_oxik
-    elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-        scene ts_living_room_night_telek_sudba
+    scene ts_living_room_telek_sudba_night
     with wipeleft_scene
 
     play music audio.t9
 
     show layer screens at ts_showscreens
 
-    if random_tv_label == 2 or random_tv_label == 8:
-        "Мы сидим молча и просто слушаем эмоциональный голос «Хорса»."
-    elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-        "Мы сидим молча и просто наблюдаем за разборками в начале двухтысячных."
-    elif random_tv_label == 9:
-        "Мы сидим молча и просто слушаем шикарные панчлайны «Гнойного»."
-    elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-        "Мы сидим молча и просто смотрим «Иронию судьбы»."
+    "Мы сидим молча и просто наблюдаем за приключениями в Ленинграде."
 
     "Как вдруг на меня накатывает новая волна воспоминаний о Нацуки."
 
@@ -2319,14 +2304,7 @@ label ts_scenario_3:
 
     play sound fb
     window hide
-    if random_tv_label == 2 or random_tv_label == 8:
-        scene ts_living_room_night_telek_hors
-    elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-        scene ts_living_room_night_telek_bumer
-    elif random_tv_label == 9:
-        scene ts_living_room_night_telek_oxik
-    elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-        scene ts_living_room_night_telek_sudba
+    scene ts_living_room_telek_sudba_night
     with flash
 
     show layer screens at ts_showscreens
@@ -2371,14 +2349,7 @@ label ts_scenario_3:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    if random_tv_label == 2 or random_tv_label == 8:
-        scene ts_living_room_night_telek_hors
-    elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-        scene ts_living_room_night_telek_bumer
-    elif random_tv_label == 9:
-        scene ts_living_room_night_telek_oxik
-    elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-        scene ts_living_room_night_telek_sudba
+    scene ts_living_room_telek_sudba_night
     show hiroto 1f at t11
     with dspr
 

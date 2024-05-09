@@ -34,6 +34,7 @@ init -1199 python:
     ts_anim = ts_images + "anim/"
     ts_fonts = ts_source + "fonts/"
     ts_videosos = ts_source + "videosos/"
+    ts_telek = ts_videosos + "bg/telek/"
     ts_muzzon = ts_source + "audio/ost/"
     ts_sfx = ts_source + "audio/sfx/"
     ts_gui = ts_images + "gui/"
@@ -74,7 +75,7 @@ init python:
     renpy.music.register_channel("sound2", "sfx", False)
     renpy.music.register_channel("sound3", "sfx", False)
     renpy.music.register_channel("sound4", "sfx", False)
-    renpy.music.register_channel("sound_loop", "voice", True)
+    renpy.music.register_channel("sound_loop", "sfx", True)
     renpy.music.register_channel("sound_loop2", "voice", True)
     renpy.music.register_channel("sound_loop3", "voice", True)
     renpy.music.register_channel("ambience", "voice", True)

@@ -278,58 +278,28 @@ label ts_scenario_4:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
 
-                $ generate_random_number_tv() # ВЫЗОВ ФУНКЦИИ НА ПЕРЕЗАПИСЬ ПЕРЕМЕННОЙ
-
                 play sound pageflip
-                if random_tv_label == 2 or random_tv_label == 8:
-                    scene ts_living_room_telek_hors
-                elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-                    scene ts_living_room_telek_bumer
-                elif random_tv_label == 9:
-                    scene ts_living_room_telek_oxik
-                elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-                    scene ts_living_room_telek_sudba
+                scene ts_living_room_telek_sudba_day
                 with wipeleft_scene
 
                 show layer screens at ts_showscreens
 
                 "Мне... не сказать, чтобы сильно повезло, но и не сказать, чтобы сильно {i}не{/i} повезло."
 
-                if random_tv_label == 2 or random_tv_label == 8:
-                    "Мультиков, которые я обожала в детстве, в пятницу не показывали, но зато показывали обзор на игру «Escape From Tarkov». И, знаете, мне понравилось."
-                elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-                    "Мультиков, которые я обожала в детстве, в пятницу не показывали, но зато показывали фильм «Бумер». И, знаете, мне понравилось."
-                elif random_tv_label == 9:
-                    "Мультиков, которые я обожала в детстве, в пятницу не показывали, но зато показывали легендарный батл «Оксимирона» и «Гнойного». И, знаете, мне понравилось."
-                elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-                    "Мультиков, которые я обожала в детстве, в пятницу не показывали, но зато показывали фильм «Ирония судьбы». И, знаете, мне понравилось."
+                "Мультиков, которые я обожала в детстве, в пятницу не показывали, но зато показывали фильм «Ирония судьбы». И, знаете, мне понравилось."
 
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
 
                 play sound pageflip
-                if random_tv_label == 2 or random_tv_label == 8:
-                    scene ts_living_room_telek_hors
-                elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-                    scene ts_living_room_telek_bumer
-                elif random_tv_label == 9:
-                    scene ts_living_room_telek_oxik
-                elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-                    scene ts_living_room_telek_sudba
+                scene ts_living_room_telek_sudba_day
                 with wipeleft_scene
 
                 stop music fadeout 3
 
                 show layer screens at ts_showscreens
 
-                if random_tv_label == 2 or random_tv_label == 8:
-                    "Обзор был настолько развлекательным, что я даже потеряла счёт времени."
-                elif random_tv_label == 6 or random_tv_label == 7 or random_tv_label == 5 or random_tv_label == 1:
-                    "Фильм был настолько жёстким, что я даже потеряла счёт времени."
-                elif random_tv_label == 9:
-                    "Батл был настолько шикарным и смешным, что я даже потеряла счёт времени."
-                elif random_tv_label == 3 or random_tv_label == 4 or random_tv_label == 10:
-                    "Фильм был настолько интересным, что я даже потеряла счёт времени."
+                "Фильм был настолько интересным, что я даже потеряла счёт времени."
 
                 "Кстати, который час?"
 

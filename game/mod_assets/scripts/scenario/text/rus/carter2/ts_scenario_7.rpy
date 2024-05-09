@@ -1053,13 +1053,15 @@ label ts_scenario_7:
     em 2i "Тогда я просто буду повторять тебе, что ты бездарность, пока не устану."
     em 4b "А я никогда не устану!"
 
-    $ renpy.sound.set_volume(1.0)
+    python:
+        _preferences.volumes['voice'] = 1.0
 
-    play sound_loop ts_bezdarnost
+    play ambience ts_bezdarnost
 
     em "Бездарность, бездарность, бездарность, бездарность, бездарность, безда{nw}"
 
-    $ renpy.sound.set_volume(0.3)
+    python:
+        _preferences.volumes['voice'] = .30
 
     show monika 4a at t11
     m "Ладно, ладно, ХВАТИТ!"
@@ -1099,8 +1101,11 @@ label ts_scenario_7:
     s "В клуб!{w=1}{nw}"
     "Нет, это просто невыносимо!"
 
-    $ renpy.sound.set_volume(1.0)
-    stop sound_loop
+    stop ambience
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+
     show layer screens at vpunch
     m "{b}{size=+20}ТАК, ПО ОДНОМУ!!!{/b}{/size}"
     show sayori 4n at t21
@@ -2146,6 +2151,9 @@ label ts_carterseven_poem_finally:
     "Однако папа не ответил."
     "Хм-м-м... а может..."
 
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
     play music ts_mdl fadein 2
 
     play sound pageflip
@@ -2178,8 +2186,17 @@ label ts_carterseven_poem_finally:
     ts_ft "Да-да, ты иди, я догоню..."
     show hiroto 1s at t11
     "Я разочарованно вздыхаю и иду обратно на кухню."
-#вайплефт обратно на кухню
-    show hiroto 1e at t11
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+    show hiroto 1e at rn11
     "Спустя несколько минут наконец приходит и папа."
     "Дождался рекламы и только потом пришёл повидаться с любимой дочерью, не иначе."
     show hiroto 2g at f11
@@ -2245,7 +2262,16 @@ label ts_carterseven_poem_finally:
     m "..."
     show hiroto 1g at t11
     "Однако после этого мы просто оба посмеялись."
-#вайплефт на тот же бг
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     show hiroto 1a at t11
     "После ужина папа спрашивает:"
     show hiroto 1c at f11
@@ -2258,12 +2284,22 @@ label ts_carterseven_poem_finally:
     m "Хорошо, пап. Люблю тебя."
     show hiroto 1g at f11
     ts_ft "И я тебя люблю."
+    show hiroto at cright with move
     hide hiroto
     "После этого каждый пошёл своей дорогой: папа - в гостиную, а я - в свою комнату."
-#вайплефт на бг спальни
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_bedroom
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     #play music thank god #МОЯ КОМПОЗИШЕН
     "Наконец-то... мягкая кроватка..."
-    show monika 2bd at f11
+    show monika 2bd at aki_spawn
     em "До кровати тебе ещё далеко. Ты забыла, что тебе ещё стих написать надо?"
     show monika 1bc at t11
     m "Х-х-х..."
@@ -2277,8 +2313,17 @@ label ts_carterseven_poem_finally:
     show monika 2bj at t11
     m "А может, и как сегодня! В любом случае - стих я напишу. А теперь дай мне отдохнуть. Я в конце концов заслужила."
     show monika 3bf at t11
-#звук выключателя, после чего бг даркбеда
-    stop music
+
+    stop music fadeout 5
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound svet_on
+    scene ts_darkbed
+
+    show layer screens at ts_showscreens
+
     "Нарочито игнорируя Аки, я выключаю свет, раздеваюсь и ложусь дремать."
     "Хотя, учитывая то, который сейчас час, уже бы и полноценно поспать пора, а я только дремать собралась."
     if unluck6 == False:

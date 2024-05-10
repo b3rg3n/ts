@@ -1066,23 +1066,53 @@ label ts_scenario_7:
     show monika 4a at t11
     m "Ладно, ладно, ХВАТИТ!"
     show monika 4k at f11
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+
     em "Что, теперь хочешь поговорить?"
     show monika 4j at t11
+
+    python:
+        _preferences.volumes['voice'] = .30
+
     m "М-м-м... нет."
     show monika 2r at f11
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+    
     em "Что же, тогда..."
     em 4b "Бездарность, бездарность, бездарность, бездарность, бездарность, безда{nw}"
     show monika 4b at t11
+
+    python:
+        _preferences.volumes['voice'] = .30
+
     "Если я не буду обращать на неё внимания, она уйдёт."
     "Уйдёт ведь?"
     show monika 4b at hf11
+    python:
+        _preferences.volumes['voice'] = 1.0
     em "Нет, не уйду!"
     show monika 4b at f11
     em "Бездарность, бездарность, бездарно{nw}"
+
+    python:
+        _preferences.volumes['voice'] = .30
+
     m "*неразборчивые звуки, которые ближе всего можно описать звуком «Ха-а-а-а-а-а-А-А-А-а-а-А-а-А-А-а»*"
     m "Ты можешь помолчать...{w=0.44} ХОТЯ БЫ ПЯТЬ МИНУТ?"
     show monika 4b at hf11
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+
     em "Нет, не могу! Бездарность бездарность бездарность бездарность бездарность безд{nw}"
+
+    python:
+        _preferences.volumes['voice'] = .30
+
     stop music
     play sound door_break
     show layer screens at vpunch
@@ -1091,13 +1121,48 @@ label ts_scenario_7:
     show sayori 4m at ln21
     show monika 4b at f22
     s "Моника!{nw}"
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+
     em "бездарность бездарность{nw}"
+
+    python:
+        _preferences.volumes['voice'] = .30
+
+
     s "Моника!{nw}"
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+
     em "ность бездарность бездар{nw}"
+
+    python:
+        _preferences.volumes['voice'] = .30
+
+
     s "Я нашла!{nw}"
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+
     em "сть бездарность бездарность безда{nw}"
+
+    python:
+        _preferences.volumes['voice'] = .30
+
+
     s "Нового члена!{nw}"
+
+    python:
+        _preferences.volumes['voice'] = 1.0
+
     em "ность бездарность бездарность безд{nw}"
+
+    python:
+        _preferences.volumes['voice'] = .30
+
     s "В клуб!{w=1}{nw}"
     "Нет, это просто невыносимо!"
 

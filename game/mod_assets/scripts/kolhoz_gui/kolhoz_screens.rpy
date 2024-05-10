@@ -233,7 +233,11 @@ init -501 screen main_menu:
                 action ShowMenu('preferences')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+40}Сбежать{/size}") xalign 0.06 yalign 0.8 at ts_preferences_anim:
+            textbutton ("{size=+40}Разработчики{/size}") xalign 0.06 yalign 0.8 at ts_preferences_anim:
+                action ShowMenu('ts_credits_list_suka')
+                activate_sound start_sound_suka
+                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+            textbutton ("{size=+40}Сбежать{/size}") xalign 0.06 yalign 0.9 at ts_preferences_anim:
                 action ShowMenu('quit')
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")

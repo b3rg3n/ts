@@ -127,9 +127,6 @@ label ts_start:
                         return
                     "Вернуться":
                         jump ts_start
-            "Заменить рендер":
-                show zatemnenie with dspr
-                call screen ts_render_changer
             "Обратно в меню":
                 return
 
@@ -144,53 +141,54 @@ label ts_start:
 screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
 
     modal True tag ts_chng_two
-    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Начнём сначала? Или выберешь главу?{/color}{/font}{/size}" yalign 0.1 xalign 0.5 at ts_preferences_anim
 
-    textbutton ("{size=+30}Начать с пролога{/size}") yalign 0.2 xalign 0.5 at ts_preferences_anim:
+    text translation_new["ts_govno_text1"] style "settings_link" size 75 text_align 0.5 yalign 0.1 xalign 0.5 color "#FF0000" antialias True kerning 2 at ts_preferences_anim
+
+    textbutton translation_new["ts_govno_text2"] style "log_button" text_style "change_chapter_suka" yalign 0.2 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_prologue_changes")
 
-    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Акт первый:{/color}{/font}{/size}" yalign 0.3 xalign 0.1 at ts_preferences_anim
+    text translation_new["ts_govno_text3"] style "settings_link" size 75 text_align 0.5 yalign 0.3 xalign 0.1 color "#FF0000" antialias True kerning 2 at ts_preferences_anim
 
-    textbutton ("{size=+30}Первая глава{/size}") yalign 0.4 xalign 0.1 at ts_preferences_anim:
+    textbutton translation_new["ts_govno_text4"] style "log_button" text_style "change_chapter_suka" yalign 0.4 xalign 0.1 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_one_changes")
 
-    textbutton ("{size=+30}Вторая глава{/size}") yalign 0.5 xalign 0.1 at ts_preferences_anim:
+    textbutton translation_new["ts_govno_text5"] style "log_button" text_style "change_chapter_suka" yalign 0.5 xalign 0.1 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_two_changes")
 
-    textbutton ("{size=+30}Третья глава{/size}") yalign 0.6 xalign 0.1 at ts_preferences_anim:
+    textbutton translation_new["ts_govno_text6"] style "log_button" text_style "change_chapter_suka" yalign 0.6 xalign 0.1 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_three_changes")
 
-    textbutton ("{size=+30}Четвёртая глава{/size}") yalign 0.7 xalign 0.1 at ts_preferences_anim:
+    textbutton translation_new["ts_govno_text7"] style "log_button" text_style "change_chapter_suka" yalign 0.7 xalign 0.1 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_four_changes")
 
-    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Акт второй:{/color}{/font}{/size}" yalign 0.3 xalign 0.5 at ts_preferences_anim
+    text translation_new["ts_govno_text8"] style "settings_link" size 75 text_align 0.5 yalign 0.3 xalign 0.5 color "#FF0000" antialias True kerning 2 at ts_preferences_anim
 
-    textbutton ("{size=+30}Первая глава{/size}") yalign 0.4 xalign 0.5 at ts_preferences_anim:
+    textbutton translation_new["ts_govno_text4"] style "log_button" text_style "change_chapter_suka" yalign 0.4 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_five_changes")
 
-    textbutton ("{size=+30}Вторая глава{/size}") yalign 0.5 xalign 0.5 at ts_preferences_anim:
+    textbutton translation_new["ts_govno_text5"] style "log_button" text_style "change_chapter_suka" yalign 0.5 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_six_changes")
 
-    textbutton ("{size=+30}Третья глава{/size}") yalign 0.6 xalign 0.5 at ts_preferences_anim:
+    textbutton translation_new["ts_govno_text6"] style "log_button" text_style "change_chapter_suka" yalign 0.6 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_seven_changes")
 
-    text "{size=+50}{font=[ts_main_font_hueta]}{color=#FF0000}Акт третий:{/color}{/font}{/size}" yalign 0.3 xalign 0.9 at ts_preferences_anim
+    text translation_new["ts_govno_text9"] style "settings_link" size 75 text_align 0.5 yalign 0.3 xalign 0.9 color "#FF0000" antialias True kerning 2 at ts_preferences_anim
 
 label ts_chapter_prologue_changes:
     scene black with dissolve2
@@ -208,7 +206,7 @@ label ts_chapter_two_changes:
     jump ts_scenario_2
 
 label ts_chapter_three_changes: # ВЫБОРЫ ПЕРЕД ТРЕТЬЕЙ ГЛАВОЙ
-    show screen scenario_start_change_chapter_one with dissolve2
+    show screen scenario_start_change_chapter_one
     pause 1
     hide screen scenario_start_change_chapter_one with dissolve2
     pause 2
@@ -234,7 +232,7 @@ label ts_chapter_three_changes: # ВЫБОРЫ ПЕРЕД ТРЕТЬЕЙ ГЛА�
     with flash
     pause 2
     
-    show screen scenario_start_change_chapter_one1 with dissolve2
+    show screen scenario_start_change_chapter_one1
     pause 1
     hide screen scenario_start_change_chapter_one1 with dissolve2
     pause 2
@@ -242,7 +240,7 @@ label ts_chapter_three_changes: # ВЫБОРЫ ПЕРЕД ТРЕТЬЕЙ ГЛА�
     jump ts_scenario_3
 
 label ts_chapter_four_changes: # ВЫБОРЫ ПЕРЕД ЧЕТВЁРТОЙ ГЛАВОЙ
-    show screen scenario_start_change_chapter_one with dissolve2
+    show screen scenario_start_change_chapter_one
     pause 1
     hide screen scenario_start_change_chapter_one with dissolve2
     pause 2
@@ -292,7 +290,7 @@ label ts_chapter_four_changes: # ВЫБОРЫ ПЕРЕД ЧЕТВЁРТОЙ ГЛ
     with flash
     pause 2
     
-    show screen scenario_start_change_chapter_one1 with dissolve2
+    show screen scenario_start_change_chapter_one1
     pause 1
     hide screen scenario_start_change_chapter_one1 with dissolve2
     pause 2
@@ -300,7 +298,7 @@ label ts_chapter_four_changes: # ВЫБОРЫ ПЕРЕД ЧЕТВЁРТОЙ ГЛ
     jump ts_scenario_4
 
 label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
-    show screen scenario_start_change_chapter_one with dissolve2
+    show screen scenario_start_change_chapter_one
     pause 1
     hide screen scenario_start_change_chapter_one with dissolve2
     pause 2
@@ -369,7 +367,7 @@ label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
     with flash
     pause 2
 
-    show screen scenario_start_change_chapter_one1 with dissolve2
+    show screen scenario_start_change_chapter_one1
     pause 1
     hide screen scenario_start_change_chapter_one1 with dissolve2
     pause 2
@@ -378,7 +376,7 @@ label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
 
 
 label ts_chapter_six_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВОЙ
-    show screen scenario_start_change_chapter_one with dissolve2
+    show screen scenario_start_change_chapter_one
     pause 1
     hide screen scenario_start_change_chapter_one with dissolve2
     pause 2
@@ -479,7 +477,7 @@ label ts_chapter_six_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВО�
     with flash
     pause 2
 
-    show screen scenario_start_change_chapter_one1 with dissolve2
+    show screen scenario_start_change_chapter_one1
     pause 1
     hide screen scenario_start_change_chapter_one1 with dissolve2
     pause 2
@@ -487,7 +485,7 @@ label ts_chapter_six_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВО�
     jump ts_scenario_6
 
 label ts_chapter_seven_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВОЙ
-    show screen scenario_start_change_chapter_one with dissolve2
+    show screen scenario_start_change_chapter_one
     pause 1
     hide screen scenario_start_change_chapter_one with dissolve2
     pause 2
@@ -588,7 +586,7 @@ label ts_chapter_seven_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВ�
     with flash
     pause 2
 
-    show screen scenario_start_change_chapter_one1 with dissolve2
+    show screen scenario_start_change_chapter_one1
     pause 1
     hide screen scenario_start_change_chapter_one1 with dissolve2
     pause 2
@@ -596,7 +594,7 @@ label ts_chapter_seven_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВ�
     jump ts_scenario_7
 
 screen scenario_start_change_chapter_one: # ВАРНИНГ ХУЙНИ
-    text "{size=+15}{font=[ts_main_font_hueta]}Сделай нужные выборы.{/font}{/size}" yalign 0.5 xalign 0.5
+    text translation_new["ts_govno_text10"] style "ebanko_ingame" size 75 text_align 0.5 yalign 0.5 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen scenario_start_change_chapter_one1: # ВАРНИНГ ХУЙНИ 2
-    text "{size=+15}{font=[ts_main_font_hueta]}Направляемся в нужное место.{/font}{/size}" yalign 0.5 xalign 0.5
+    text translation_new["ts_govno_text11"] style "ebanko_ingame" size 75 text_align 0.5 yalign 0.5 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim

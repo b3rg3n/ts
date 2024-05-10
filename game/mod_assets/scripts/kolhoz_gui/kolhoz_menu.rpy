@@ -204,36 +204,36 @@ label splashscreen3:
 screen skitsoglasenblya:
 
     modal True tag aw_r1
-    textbutton ("{size=+10}Выход{/size}") yalign 0.785 xalign 0.35 at ts_preferences_anim:
+    textbutton translation_new["ts_splash_set14"] style "log_button" text_style "splash_button_link" yalign 0.785 xalign 0.35 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Quit(confirm=False)
-    textbutton ("{size=+10}Продолжить{/size}") yalign 0.785 xalign 0.65 at ts_preferences_anim:
+    textbutton translation_new["ts_splash_set15"] style "log_button" text_style "splash_button_link" yalign 0.785 xalign 0.65 at ts_preferences_anim:
         activate_sound start_sound_suka
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("splashscreen2")
 
 screen bergenchik_intro_ebat0:
-    text "{size=+10}{font=[cit_font]}Запрещено для несовершеннолетних и{/font}{/size}" yalign 0.175 xalign 0.5 at ts_preferences_anim
-    text "{size=+10}{font=[cit_font]}для слишком впечатлительных особ.{/font}{/size}" yalign 0.225 xalign 0.5 at ts_preferences_anim
+    text translation_new["ts_splash_set1"] style "settings_link" size 35 text_align 0.5 yalign 0.175 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_splash_set2"] style "settings_link" size 35 text_align 0.5 yalign 0.225 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen bergenchik_intro_ebat1:
-    text "{size=+10}{font=[cit_font]}Яркие вспышки света и мелькающие изображения могут навредить{/font}{/size}" yalign 0.275 xalign 0.5 at ts_preferences_anim
-    text "{size=+10}{font=[cit_font]}людям с высокой светочувствительностью и страдающим эпилепсией.{/font}{/size}" yalign 0.325 xalign 0.5 at ts_preferences_anim
+    text translation_new["ts_splash_set3"] style "settings_link" size 35 text_align 0.5 yalign 0.275 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_splash_set4"] style "settings_link" size 35 text_align 0.5 yalign 0.325 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen bergenchik_intro_ebat2:
-    text "{size=+10}{font=[cit_font]}Права на использованные в моде материалы{/font}{/size}" yalign 0.375 xalign 0.5 at ts_preferences_anim
-    text "{size=+10}{font=[cit_font]}принадлежат их авторам.{/font}{/size}" yalign 0.425 xalign 0.5 at ts_preferences_anim
+    text translation_new["ts_splash_set5"] style "settings_link" size 35 text_align 0.5 yalign 0.375 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_splash_set6"] style "settings_link" size 35 text_align 0.5 yalign 0.425 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen bergenchik_intro_ebat3:
-    text "{size=+10}{font=[cit_font]}Мод никак не связан с Team Salvato.{/font}{/size}" yalign 0.475 xalign 0.5 at ts_preferences_anim
-    text "{size=+10}{font=[cit_font]}Оригинальные файлы лежат на ddlc.moe{/font}{/size}" yalign 0.525 xalign 0.5 at ts_preferences_anim
+    text translation_new["ts_splash_set7"] style "settings_link" size 35 text_align 0.5 yalign 0.475 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_splash_set8"] style "settings_link" size 35 text_align 0.5 yalign 0.525 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen bergenchik_intro_ebat4:
-    text "{size=+10}{font=[cit_font]}Ты всё ещё хочешь в это играть?{/font}{/size}" yalign 0.575 xalign 0.5 at ts_preferences_anim
-    text "{size=+10}{font=[cit_font]}Серьёзно?{/font}{/size}" yalign 0.625 xalign 0.5 at ts_preferences_anim
-    text "{size=+10}{font=[cit_font]}Не боишься <<сильно впечатлиться>>?{/font}{/size}" yalign 0.675 xalign 0.5 at ts_preferences_anim
+    text translation_new["ts_splash_set9"] style "settings_link" size 35 text_align 0.5 yalign 0.575 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_splash_set10"] style "settings_link" size 35 text_align 0.5 yalign 0.625 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_splash_set11"] style "settings_link" size 35 text_align 0.5 yalign 0.675 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen bergenchik_intro_ebat5:
-    text "{size=+10}{font=[cit_font]}И не говори потом,{/font}{/size}" yalign 0.475 xalign 0.5 at ts_preferences_anim
-    text "{size=+10}{font=[cit_font]}что я тебя не предупреждала.{/font}{/size}" yalign 0.525 xalign 0.5 at ts_preferences_anim
+    text translation_new["ts_splash_set12"] style "settings_link" size 35 text_align 0.5 yalign 0.475 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_splash_set13"] style "settings_link" size 35 text_align 0.5 yalign 0.525 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim

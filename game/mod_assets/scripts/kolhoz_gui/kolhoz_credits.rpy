@@ -311,19 +311,19 @@ label bad_credits_ts_label:
     return
 
 screen ts_good_credits_scr_1:
-    text "{size=+35}{font=[cit_font]}Идея:{/font}{/size}" xalign 0.5 yalign 0.5
+    text translation_new["ts_credits_ending1"] style "credits_moda" size 75 text_align 0.5 yalign 0.5 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_good_credits_scr_11:
-    text "{size=+35}{font=[cit_font]}BERGEN{/font}{/size}" xalign 0.5 yalign 0.65
+    text translation_new["ts_crd_mishlent"] style "credits_moda" size 75 text_align 0.5 yalign 0.65 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_good_credits_scr_2:
-    text "{size=+35}{font=[cit_font]}Сценарий:{/font}{/size}" xalign 0.65 yalign 0.5
+    text translation_new["ts_credits_ending2"] style "credits_moda" size 75 text_align 0.5 yalign 0.5 xalign 0.65 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_good_credits_scr_22:
-    text "{size=+35}{font=[cit_font]}Maddie, The Mad{/font}{/size}" xalign 0.7 yalign 0.65
+    text translation_new["ts_crd_vladick"] style "credits_moda" size 75 text_align 0.5 yalign 0.65 xalign 0.7 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_good_credits_scr_3:
-    text "{size=+35}{font=[cit_font]}Визуал:{/font}{/size}" xalign 0.5 yalign 0.5
+    text translation_new["ts_credits_ending3"] style "credits_moda" size 75 text_align 0.5 yalign 0.5 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_good_credits_scr_33:
-    text "{size=+35}{font=[cit_font]}BERGEN{/font}{/size}" xalign 0.5 yalign 0.65
+    text translation_new["ts_crd_mishlent"] style "credits_moda" size 75 text_align 0.5 yalign 0.65 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim

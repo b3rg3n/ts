@@ -70,6 +70,83 @@ init -1 python:
     style.settings_link.selected_hover_color = "#ff0000"
     style.settings_link.insensitive_color = "#ffffff"
 
+    style.credits_moda = Style(style.base_font)
+    style.credits_moda.font  = link_font
+    style.credits_moda.size = 70
+    style.credits_moda.kerning = 3
+    style.credits_moda.color = "#ffffff"
+    style.credits_moda.hover_color = "#ff0000"
+    style.credits_moda.selected_color = "#ffffff"
+    style.credits_moda.selected_idle_color = "#f77272"
+    style.credits_moda.selected_hover_color = "#ff0000"
+    style.credits_moda.insensitive_color = "#ffffff"
+
+    style.ebanko_ingame = Style(style.base_font)
+    style.ebanko_ingame.font  = link_font
+    style.ebanko_ingame.size = 75
+    style.ebanko_ingame.kerning = 3
+    style.ebanko_ingame.color = "#ffffff"
+    style.ebanko_ingame.hover_color = "#ff0000"
+    style.ebanko_ingame.selected_color = "#ffffff"
+    style.ebanko_ingame.selected_idle_color = "#f77272"
+    style.ebanko_ingame.selected_hover_color = "#ff0000"
+    style.ebanko_ingame.insensitive_color = "#ffffff"
+
+    style.menu_buttons_suka = Style(style.base_font)
+    style.menu_buttons_suka.font  = link_font
+    style.menu_buttons_suka.size = 50
+    style.menu_buttons_suka.kerning = 3
+    style.menu_buttons_suka.color = "#ffffff"
+    style.menu_buttons_suka.hover_color = "#ff0000"
+    style.menu_buttons_suka.selected_color = "#ffffff"
+    style.menu_buttons_suka.selected_idle_color = "#f77272"
+    style.menu_buttons_suka.selected_hover_color = "#ff0000"
+    style.menu_buttons_suka.insensitive_color = "#ffffff"
+
+    style.ingame_buttons_suka = Style(style.base_font)
+    style.ingame_buttons_suka.font  = link_font
+    style.ingame_buttons_suka.size = 75
+    style.ingame_buttons_suka.kerning = 3
+    style.ingame_buttons_suka.color = "#ffffff"
+    style.ingame_buttons_suka.hover_color = "#ff0000"
+    style.ingame_buttons_suka.selected_color = "#ffffff"
+    style.ingame_buttons_suka.selected_idle_color = "#f77272"
+    style.ingame_buttons_suka.selected_hover_color = "#ff0000"
+    style.ingame_buttons_suka.insensitive_color = "#ffffff"
+
+    style.change_chapter_suka = Style(style.base_font)
+    style.change_chapter_suka.font  = link_font
+    style.change_chapter_suka.size = 50
+    style.change_chapter_suka.kerning = 3
+    style.change_chapter_suka.color = "#ffffff"
+    style.change_chapter_suka.hover_color = "#ff0000"
+    style.change_chapter_suka.selected_color = "#ffffff"
+    style.change_chapter_suka.selected_idle_color = "#f77272"
+    style.change_chapter_suka.selected_hover_color = "#ff0000"
+    style.change_chapter_suka.insensitive_color = "#ffffff"
+
+    style.logo_font_menu = Style(style.base_font)
+    style.logo_font_menu.font  = ts_fonts + "cyr.ttf"
+    style.logo_font_menu.size = 48
+    style.logo_font_menu.kerning = 3
+    style.logo_font_menu.color = "#ffffff"
+    style.logo_font_menu.hover_color = "#ff0000"
+    style.logo_font_menu.selected_color = "#ffffff"
+    style.logo_font_menu.selected_idle_color = "#f77272"
+    style.logo_font_menu.selected_hover_color = "#ff0000"
+    style.logo_font_menu.insensitive_color = "#ffffff"
+
+    style.splash_button_link = Style(style.base_font)
+    style.splash_button_link.font  = link_font
+    style.splash_button_link.size = 35
+    style.splash_button_link.kerning = 3
+    style.splash_button_link.color = "#ffffff"
+    style.splash_button_link.hover_color = "#ff0000"
+    style.splash_button_link.selected_color = "#ffffff"
+    style.splash_button_link.selected_idle_color = "#f77272"
+    style.splash_button_link.selected_hover_color = "#ff0000"
+    style.splash_button_link.insensitive_color = "#ffffff"
+
     style.finger = Style(style.base_font)
     style.finger.font  = link_font
     style.finger.size = 15
@@ -85,80 +162,6 @@ init -1 python:
     style.hyperlink_text.underline = True
     style.hyperlink_text.hover_color = "#0ff"
     style.hyperlink_text.idle_color = "#08f"
-
-    style.music_link = Style(style.settings_link)
-    style.music_link.insensitive_color = "#4f4f4f"
-    style.music_link.selected_color = "#ffffff"
-
-    style.sprite_menu = Style(style.settings_text)
-    style.sprite_menu.size = 30
-    style.sprite_menu.color = "#466123"
-    style.sprite_menu.selected_color = "#466123"
-    style.sprite_menu.hover_color = "#9dcd55"
-
-    style.say_dialogue = Style(style.base_font)
-    style.say_label = Style(style.base_font)
-    style.say_label.size = 28
-    style.say_label.drop_shadow=(2, 2)
-    style.say_label.drop_shadow_color = "#000"
-
-    style.chapter = Style(style.base_font)
-    style.chapter.font  = header_font
-    style.chapter.size = 80
-    style.chapter.color = "#fff"
-
-    style.chapter.outlines = [ (1, "#ffdd7d", 0, 0) ]
-
-    style.daynum = Style(style.chapter)
-    style.daynum.font  = header_font
-    style.daynum.size = 30
-
-    style.normal_day = Style(style.base_font)
-    style.normal_day.color = "#ffdd7d"
-    style.normal_day.drop_shadow=(2, 2)
-    style.normal_day.drop_shadow_color = "#000"
-    style.narrator_day = Style(style.normal_day)
-    style.narrator_day.italic = False
-    style.thoughts_day = Style(style.normal_day)
-    style.thoughts_day.bold = False
-
-    style.normal_sunset = Style(style.base_font)
-    style.normal_sunset.color = "#ffdd7d"
-    style.normal_sunset.drop_shadow=(2, 2)
-    style.normal_sunset.drop_shadow_color = "#000"
-    style.narrator_sunset = Style(style.normal_sunset)
-    style.narrator_sunset.italic = False
-    style.thoughts_sunset = Style(style.normal_sunset)
-    style.thoughts_sunset.bold = False
-
-    style.normal_night = Style(style.base_font)
-    style.normal_night.color = "#ffdd7d"
-    style.normal_night.drop_shadow=(2, 2)
-    style.normal_night.drop_shadow_color = "#000"
-    style.narrator_night = Style(style.normal_night)
-    style.narrator_night.italic = False
-    style.thoughts_night = Style(style.normal_night)
-    style.thoughts_night.bold = False
-
-    style.normal_prolog = Style(style.base_font)
-    style.normal_prolog.color = "#ffdd7d"
-    style.normal_prolog.drop_shadow=(2, 2)
-    style.normal_prolog.drop_shadow_color = "#000"
-    style.narrator_prolog = Style(style.normal_prolog)
-    style.narrator_prolog.italic = False
-    style.thoughts_prolog = Style(style.normal_prolog)
-    style.thoughts_prolog.bold = False
-
-    style.cards_button = Style(style.button)
-    style.cards_button.font  = header_font
-    style.cards_button.background = RoundRect("#000", False)
-    style.cards_button.hover_background = RoundRect("#555", False)
-    style.cards_button.insensitive_background = RoundRect("#404040", False)
-
-    style.cards_button_text = Style(style.button_text)
-    style.cards_button_text.color = "#FFF"
-    style.cards_button_text.selected_color = "#ff0000"
-    style.cards_button_text.insensitive_color = "#f84343"
 
     style.log_button = Style(style.button)
     style.log_button.child = None
@@ -181,84 +184,80 @@ init -501 screen main_menu:
 
     modal True tag menu
 
-    text "{size=+17}{font=[ts_atomic]}True Story{/font}{/size}" xalign 0.06 yalign 0.4 at ts_preferences_anim
+    text translation_new["ts_menu_set1"] style "logo_font_menu" size 48 text_align 0.5 yalign 0.4 xalign 0.06 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
-    if _preferences.language == "english":
-        if persistent.badendmenu and persistent.badendmenuskipglitch:
-            textbutton ("{size=+40}resurrect{/size}") xalign 0.03 yalign 0.45 at ts_preferences_anim:
-                action Start()
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
+    if persistent.badendmenu and persistent.badendmenuskipglitch:
+        textbutton translation_new["ts_menu_set2"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.5 at ts_preferences_anim:
+            action Start()
+            activate_sound start_sound_suka
+            hover_sound button_menu
+
+    elif persistent.badendmenuperedglitch:
+        textbutton translation_new["ts_menu_set3"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.5 at ts_preferences_anim:
+            action NullAction()
+            activate_sound button_error
+            hover_sound button_menu
+
+    elif persistent.goodendmenu:
+        textbutton translation_new["ts_menu_set4"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.5 at ts_preferences_anim:
+            action Start()
+            activate_sound start_sound_suka
+            hover_sound button_menu
 
     else:
-        if persistent.badendmenu and persistent.badendmenuskipglitch:
-            textbutton ("{size=+40}Воскреснуть{/size}") xalign 0.06 yalign 0.5 at ts_preferences_anim:
-                action Start()
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        elif persistent.badendmenuperedglitch:
-            textbutton ("{size=+40}Теперь{/size}") xalign 0.06 yalign 0.5 at ts_preferences_anim:
-                action NullAction()
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        elif persistent.goodendmenu:
-            textbutton ("{size=+40}Ещё разок?{/size}") xalign 0.06 yalign 0.5 at ts_preferences_anim:
-                action Start()
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        else:
-            textbutton ("{size=+40}Сойти с ума{/size}") xalign 0.06 yalign 0.5 at ts_preferences_anim:
-                action Start()
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        if persistent.badendmenuperedglitch:
-            textbutton ("{size=+40}Все{/size}") xalign 0.06 yalign 0.6 at ts_preferences_anim:
-                action NullAction()
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+40}Будут{/size}") xalign 0.06 yalign 0.7 at ts_preferences_anim:
-                action NullAction()
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+40}Счастливы{/size}") xalign 0.06 yalign 0.8 at ts_preferences_anim:
-                action NullAction()
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        else:
-            textbutton ("{size=+40}Вспомнить{/size}") xalign 0.06 yalign 0.6 at ts_preferences_anim:
-                action ShowMenu('load')
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+40}Настройки{/size}") xalign 0.06 yalign 0.7 at ts_preferences_anim:
-                action ShowMenu('preferences')
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+40}Разработчики{/size}") xalign 0.06 yalign 0.8 at ts_preferences_anim:
-                action ShowMenu('ts_credits_list_suka')
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-            textbutton ("{size=+40}Сбежать{/size}") xalign 0.06 yalign 0.9 at ts_preferences_anim:
-                action ShowMenu('quit')
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-    if config.developer:
-        if _preferences.language == "english":
-            if persistent.badendmenuperedglitch:
-                text "{size=+25}{font=[cit_font]}Are you happy with the result?{/font}{/size}" yalign 0.93 xalign 0.990 at ts_preferences_anim
-            else:
-                text "{size=+25}{font=[cit_font]}Developer mode{/font}{/size}" yalign 0.93 xalign 0.990 at ts_preferences_anim
-        else:
-            if persistent.badendmenuperedglitch:
-                text "{size=+25}{font=[cit_font]}Ты доволен результатом?{/font}{/size}" yalign 0.93 xalign 0.990 at ts_preferences_anim
-            else:
-                text "{size=+25}{font=[cit_font]}Режим разработчика{/font}{/size}" yalign 0.93 xalign 0.990 at ts_preferences_anim
+        textbutton translation_new["ts_menu_set5"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.5 at ts_preferences_anim:
+            action Start()
+            activate_sound start_sound_suka
+            hover_sound button_menu
+
     if persistent.badendmenuperedglitch:
-        if _preferences.language == "english":
-            text "{size=+25}{font=[cit_font]}It's all your own damn fault.{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
+        textbutton translation_new["ts_menu_set6"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.6 at ts_preferences_anim:
+            action NullAction()
+            activate_sound button_error
+            hover_sound button_menu
+
+        textbutton translation_new["ts_menu_set7"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.7 at ts_preferences_anim:
+            action NullAction()
+            activate_sound button_error
+            hover_sound button_menu
+
+        textbutton translation_new["ts_menu_set8"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.8 at ts_preferences_anim:
+            action NullAction()
+            activate_sound button_error
+            hover_sound button_menu
+
+    else:
+        textbutton translation_new["ts_menu_set9"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.6 at ts_preferences_anim:
+            action ShowMenu('load')
+            activate_sound start_sound_suka
+            hover_sound button_menu
+
+        textbutton translation_new["ts_menu_set10"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.7 at ts_preferences_anim:
+            action ShowMenu('preferences')
+            activate_sound start_sound_suka
+            hover_sound button_menu
+
+        textbutton translation_new["ts_menu_set11"] style "log_button" text_style "menu_buttons_suka" xalign 0.065 yalign 0.8 at ts_preferences_anim:
+            action ShowMenu('ts_credits_list_suka')
+            activate_sound start_sound_suka
+            hover_sound button_menu
+
+        textbutton translation_new["ts_menu_set12"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.9 at ts_preferences_anim:
+            action ShowMenu('quit')
+            activate_sound start_sound_suka
+            hover_sound button_menu
+
+    if config.developer:
+        if persistent.badendmenuperedglitch:
+            text translation_new["ts_menu_set13"] style "settings_link" size 35 text_align 0.5 yalign 0.93 xalign 0.990 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
         else:
-            text "{size=+25}{font=[cit_font]}Это всё - твоя вина.{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
+            text translation_new["ts_menu_set14"] style "settings_link" size 35 text_align 0.5 yalign 0.93 xalign 0.990 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+    if persistent.badendmenuperedglitch:
+            text translation_new["ts_menu_set15"] style "settings_link" size 35 text_align 0.5 yalign 0.995 xalign 0.990 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
     else:
         text "{size=+25}{font=[cit_font]} RenPy ver. [renpy.version_only] | Mod ver. [config.version]{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
+
     if persistent.badendmenuperedglitch:
         timer 10 action [Hide("main_menu"), Jump("glitch_main_menu_ending")]
 
@@ -321,58 +320,36 @@ init -501 screen game_menu_selector:
     modal True tag menu
     add ts_gui + "ebanoemenu/ingame_menu.webp"
 
-    if _preferences.language == "english":
-        textbutton ("{size=+75}На Главную{/size}") xalign 0.5 yalign 0.3 at ts_preferences_anim:
-            action MainMenu()
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Запомнить{/size}") xalign 0.5 yalign 0.43 at ts_preferences_anim:
-            action ShowMenu('save')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Вспомнить{/size}") xalign 0.5 yalign 0.56 at ts_preferences_anim:
-            action ShowMenu('load')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Настройки{/size}") xalign 0.5 yalign 0.69 at ts_preferences_anim:
-            action ShowMenu('preferences')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Сбежать{/size}") xalign 0.5 yalign 0.82 at ts_preferences_anim:
-            action ShowMenu('quit')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        imagebutton ypos 0 xpos 0:
-            auto ts_gui + "ebanoemenu/nope_%s.webp"
-            action Return()
-        text "{font=[cit_font]}{size=+25}Сходишь с ума уже {image=gametime}{size=+15}{/font}" xalign 0.5 yalign 0.95 at ts_preferences_anim
-    else:
-        textbutton ("{size=+75}На Главную{/size}") xalign 0.5 yalign 0.3 at ts_preferences_anim:
-            action MainMenu()
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Запомнить{/size}") xalign 0.5 yalign 0.43 at ts_preferences_anim:
-            action ShowMenu('save')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Вспомнить{/size}") xalign 0.5 yalign 0.56 at ts_preferences_anim:
-            action ShowMenu('load')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Настройки{/size}") xalign 0.5 yalign 0.69 at ts_preferences_anim:
-            action ShowMenu('preferences')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        textbutton ("{size=+75}Сбежать{/size}") xalign 0.5 yalign 0.82 at ts_preferences_anim:
-            action ShowMenu('quit')
-            activate_sound start_sound_suka
-            hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-        imagebutton ypos 0 xpos 0:
-            auto ts_gui + "ebanoemenu/nope_%s.webp"
-            action Return()
-        text "{font=[cit_font]}{size=+25}Сходишь с ума уже {image=gametime}{size=+15}{/font}" xalign 0.5 yalign 0.95 at ts_preferences_anim
+    textbutton translation_new["ts_menu_set16"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.3 at ts_preferences_anim:
+        action MainMenu()
+        activate_sound start_sound_suka
+        hover_sound button_menu
+
+    textbutton translation_new["ts_menu_set17"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.43 at ts_preferences_anim:
+        action ShowMenu('save')
+        activate_sound start_sound_suka
+        hover_sound button_menu
+
+    textbutton translation_new["ts_menu_set9"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.56 at ts_preferences_anim:
+        action ShowMenu('load')
+        activate_sound start_sound_suka
+        hover_sound button_menu
+
+    textbutton translation_new["ts_menu_set10"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.69 at ts_preferences_anim:
+        action ShowMenu('preferences')
+        activate_sound start_sound_suka
+        hover_sound button_menu
+
+    textbutton translation_new["ts_menu_set12"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.82 at ts_preferences_anim:
+        action ShowMenu('quit')
+        activate_sound start_sound_suka
+        hover_sound button_menu
+
+    text translation_new["ts_menu_set18"] + "{font=[cit_font]} {image=gametime}{/font}" style "ebanko_ingame" size 35 text_align 0.5 yalign 0.95 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
     if not track_checker_blya == "empty":
-        text "{font=[cit_font]}{size=+25}[track_checker_blya]{size=+15}{/font}" xalign 0.5 yalign 0.1 at ts_preferences_anim
+        text "{font=[cit_font]}{size=+25}[track_checker_blya]{/font}" xalign 0.5 yalign 0.1 at ts_preferences_anim
+
 init -101 python:
 
     store.selected_slot = "_"
@@ -799,7 +776,7 @@ init -501 screen skip_indicator():
         has hbox:
             spacing 6
 
-        text _("Перематываю")
+        text translation_new["Skippinghueta"] style "settings_link" size 25
 
         text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
         text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"

@@ -10,14 +10,14 @@ label testing_label_blya:
 
     scene ts_club
     show sayori 1a at t11
-    show layer master at Static
+    show layer master at AnimatedAberate(20.0)
     s "Ну что, Моника..."
     show sayori 1b at t11
     s "Пиздец тебе, да?"
-    show layer screens at AnimatedAberate(10.0)
+    show layer screens at Static
     show sayori 1c at t11
     s "Косоёбит?"
-    pause
+    return
 ##############
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 

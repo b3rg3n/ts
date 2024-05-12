@@ -10,11 +10,11 @@ label testing_label_blya:
 
     scene ts_club
     show sayori 1a at t11
-    show layer master at AnimatedAberate(20.0)
+    show layer master at Static
+    show layer screens at Static
     s "Ну что, Моника..."
     show sayori 1b at t11
     s "Пиздец тебе, да?"
-    show layer screens at Static
     show sayori 1c at t11
     s "Косоёбит?"
     return

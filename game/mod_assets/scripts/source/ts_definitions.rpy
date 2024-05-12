@@ -16,6 +16,8 @@ init:
 
     image ts_menu_art_carter2_night = ts_images + "intro/menu/menu_art_night.webp"
 
+    image ts_menu_art_carter2_night1 = ts_images + "intro/menu/menu_art_night1.webp"
+
     image ts_menu_art3_night = ts_images + "intro/menu/ts_menu_art3_night.webp"
 
     image mon_piano = ts_images + "intro/menu/mon_piano.webp"
@@ -313,6 +315,10 @@ init:
     image ts_logo_menu = "mod_assets/source/images/gui/ts_logo_menu.webp"
 
 ###ШЕЙДЕРЫ
+
+
+    image ts_living_room_rain_shader_rain = RainOnWindow("ts_menu_art_carter2_night1", width = 1280, height = 720, rainamount = 0.4)
+
     image ts_club_rain_shader = RainOnWindow("ts_club_rain", width = 1280, height = 720, rainamount = 1.0)
     image ts_living_room_rain_shader = RainOnWindow("ts_living_room_rain", width = 1280, height = 720, rainamount = 1.0)
 

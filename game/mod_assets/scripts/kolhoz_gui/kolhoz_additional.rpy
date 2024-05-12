@@ -115,7 +115,7 @@ screen ts_credits_list_suka: # ЭКРАН РАЗРАБОВ СУКА
     textbutton translation_new["Back"] style "log_button" text_style "settings_link" yalign 0.8 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka
         hover_sound button_menu
-        action [Hide("ts_credits_list_suka"), Show("main_menu")]
+        action Return()
 
 screen ts_bergen_credit_info:
     text translation_new["ts_crd_scr1"] style "settings_link" size 50 text_align 0.5 yalign 0.920 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim

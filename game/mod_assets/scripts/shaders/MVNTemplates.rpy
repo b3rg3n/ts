@@ -12,25 +12,25 @@
 
 # Nai @ Make Visual Novels
 
-transform AnimatedAberate:
+transform AnimatedAberate(x): # РАЗЪЕЗЖАЮЩАЯСЯ КАРТИНКА (МБ ЛАГАЕТ, НАДО ТЕСТИТЬ - В Х ЧИСЛО 10.0 СТАНДАРТ)
     shader "MakeVisualNovels.AnimatedAberration"
-    u_aberrationAmount(10.0)
+    u_aberrationAmount(x)
 
-transform StillAberate:
+transform StillAberate(x): # ТО ЖЕ САМОЕ, ЧТО И СВЕРХУ, НО СТАТИЧЕСКОЕ
     shader "MakeVisualNovels.StillAberration"
-    u_aberrationAmount(10.0)
+    u_aberrationAmount(x)
 
-transform IntenseAberate:
+transform IntenseAberate(x): # КОНКРЕТНЫЙ РАЗЪЕЗД КАРТИНКИ С НАЛОЖЕНИЕМ ГЛИТЧА ПОВЕРХ (СТОК ЗНАЧЕНИЕ 50.0)
     shader "MakeVisualNovels.StillAberration"
-    u_aberrationAmount(50.0)
+    u_aberrationAmount(x)
 
-transform bits16:
+transform bits16: # ИЗ НАЗВАНИЯ ПОНЯТНО
     shader "MakeVisualNovels.256colors"
 
-transform bits8:
+transform bits8: # ИЗ НАЗВАНИЯ ПОНЯТНО
     shader "MakeVisualNovels.16colors"
    
-transform VHS(a, b, c, d):
+transform VHS(a, b, c, d): # ИЗ НАЗВАНИЯ ПОНЯТНО
     shader "MakeVisualNovels.VHS"
     #Color applies a shift in color.
     #Remember R G B A.  Values are expressed between 0.0 and 1.0
@@ -39,7 +39,7 @@ transform VHS(a, b, c, d):
     #Pure black turns the entire image black.
     u_color (a, b, c, d)
 
-transform WhiteNoise:
+transform WhiteNoise: # ЕБЕЙШИЙ БЕЛЫЙ ШУМ
     shader "MakeVisualNovels.Static"
     #See #Color section at the bottom for details.
     u_color (1.0, 1.0, 1.0, 1.0)
@@ -50,7 +50,7 @@ transform WhiteNoise:
     # Why? Because math.
     u_mode (0)
 
-transform Static:
+transform Static: # ЕБЕЙШИЙ БЕЛЫЙ ШУМ С ТЕМНЫМ ОТТЕНКОМ
     shader "MakeVisualNovels.Static"
     #See #Color section at the bottom for details.
     u_color (1.0, 1.0, 1.0, 1.0)

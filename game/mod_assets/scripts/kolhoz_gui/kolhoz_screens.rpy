@@ -288,31 +288,6 @@ label _compat_confirm_quit:
     $ renpy.call_screen('quit')
 
 
-screen language_menu:
-
-    modal True
-
-    button style "blank_button" xpos 0 ypos 0 xfill True yfill True action Hide('language_menu')
-
-    window background ts_images + "anim/zatemnenie.webp" xmaximum 1280 ymaximum 720:
-
-        has vbox xalign 0.5
-
-        grid 1 14 xfill True:
-            hbox xalign 0.5:
-                if _preferences.language == None:
-                    add ts_gui + "ebanoemenu/leaf.webp" ypos 0.45
-                else:
-                    null width 22
-                textbutton translation_new["Russian"] style "log_button" text_style "settings_link" action (Language(None), Function(stop_music), Function(renpy.utter_restart)) ypos 280 xpos -2
-
-            hbox xalign 0.5:
-                if _preferences.language == "english":
-                    add ts_gui + "ebanoemenu/leaf.webp" ypos 0.65
-                else:
-                    null width 22
-                textbutton translation_new["English"] style "log_button" text_style "settings_link" action (Language("english"), Function(stop_music), Function(renpy.utter_restart)) ypos 320
-
 init -1 python:
     _game_menu_screen = "game_menu_selector"
 init -501 screen game_menu_selector:
@@ -490,7 +465,7 @@ init -501 screen preferences:
 
     window background ts_anim + "zatemnenie.webp" xmaximum 1280 ymaximum 720:
 # КНОПКА НАЗАД
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.5 yalign 0.85 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.5 yalign 0.9 action Return() activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") at ts_preferences_anim
 # ВЫБОР РЕЖИМА ОКНА
         text translation_new["Window_mode"] style "settings_header" xalign 0.03 yalign 0.01 at ts_preferences_anim
         if renpy.ios or renpy.android:
@@ -507,17 +482,27 @@ init -501 screen preferences:
         textbutton translation_new["Normal_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.298 yalign 0.2 at ts_preferences_anim
         textbutton translation_new["Big_font"] style "log_button" text_style "settings_text" action [SetField(persistent,'bazarbig', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.478 yalign 0.2 at ts_preferences_anim
 # ВИДЖЕТ ТРЕКОВ БЛЯ
-        text translation_new["Music_widget_set"] style "settings_header" xalign 0.03 yalign 0.3 at ts_preferences_anim
+        textbutton translation_new["Music_widget_set"] style "log_button" text_style "settings_header" action NullAction() hovered [Show("ts_muzzon_info")] unhovered Hide("ts_muzzon_info") activate_sound start_sound_suka hover_sound button_menu xalign 0.0262 yalign 0.3 at ts_preferences_anim
         textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.292 yalign 0.3 at ts_preferences_anim
         textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'music_widget_ts', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.463 yalign 0.3 at ts_preferences_anim
 # АНТИЦЕНЗОР
-        text translation_new["Cens_mode_set"] style "settings_header" xalign 0.03 yalign 0.4 at ts_preferences_anim
+        textbutton translation_new["Cens_mode_set"] style "log_button" text_style "settings_header" action NullAction() hovered [Show("ts_anticens_info")] unhovered Hide("ts_anticens_info") activate_sound start_sound_suka hover_sound button_menu xalign 0.0262 yalign 0.4 at ts_preferences_anim
         textbutton translation_new["Cens_mode_off"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', False)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.292 yalign 0.4 at ts_preferences_anim
         textbutton translation_new["Cens_mode_on"] style "log_button" text_style "settings_text" action [SetField(persistent,'cens_mode', True)] activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.463 yalign 0.4 at ts_preferences_anim
 # ЯЗЫК
-        text translation_new["Language"] style "settings_header" xalign 0.03 yalign 0.5 at ts_preferences_anim
+        text translation_new["Language"] style "settings_header" xalign 0.028 yalign 0.5 at ts_preferences_anim
         textbutton translation_new["Russian"] style "log_button" text_style "settings_text" action (Language(None), Function(stop_music), Function(renpy.utter_restart)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.285 yalign 0.5 at ts_preferences_anim
         textbutton translation_new["English"] style "log_button" text_style "settings_text" action (Language("english"), Function(stop_music), Function(renpy.utter_restart)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.473 yalign 0.5 at ts_preferences_anim
+# ПОВЕРСЕЙВ БЛЯТЬ
+        textbutton translation_new["fix_hueta_energy"] style "log_button" text_style "settings_header" action NullAction() hovered [Show("ts_powersave_info")] unhovered Hide("ts_powersave_info") activate_sound start_sound_suka hover_sound button_menu xalign 0.03 yalign 0.6 at ts_preferences_anim
+        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action (Preference("gl powersave", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.292 yalign 0.6 at ts_preferences_anim
+        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action (Preference("gl powersave", True)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.463 yalign 0.6 at ts_preferences_anim
+# РАЗРЫВ КАДРОВ
+        textbutton translation_new["fix_hueta_tearing"] style "log_button" text_style "settings_header" action NullAction() hovered [Show("ts_tearing_info")] unhovered Hide("ts_tearing_info") activate_sound start_sound_suka hover_sound button_menu xalign 0.03 yalign 0.7 at ts_preferences_anim
+        textbutton translation_new["Music_widget_off"] style "log_button" text_style "settings_text" action (Preference("gl tearing", False)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.292 yalign 0.7 at ts_preferences_anim
+        textbutton translation_new["Music_widget_on"] style "log_button" text_style "settings_text" action (Preference("gl tearing", True)) activate_sound start_sound_suka hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.463 yalign 0.7 at ts_preferences_anim
+
+
 # ГРОМКОСТЬ
         text translation_new["Volume"] style "settings_header" xalign 0.8 yalign 0.01
         textbutton translation_new["Music_lower"] style "log_button" text_style "settings_text" action Play("music2", ts_sfx + "funeral/zubek.ogg") hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg") xalign 0.65 yalign 0.1 at ts_preferences_anim

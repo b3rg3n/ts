@@ -132,3 +132,19 @@ screen ts_vk_credit_info:
 screen ts_ds_credit_info:
     text translation_new["ts_crd_scr6"] style "settings_link" size 50 text_align 0.5 yalign 0.920 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
     text translation_new["ts_crd_scr7"] style "settings_link" size 50 text_align 0.5 yalign 0.980 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+
+screen ts_powersave_info:
+    text translation_new["ts_powersave_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+screen ts_tearing_info:
+    text translation_new["ts_tearing_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+screen ts_anticens_info:
+    text translation_new["ts_anticens_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+screen ts_muzzon_info:
+    if renpy.android or renpy.ios:
+        text translation_new["ts_muzzon_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    else:
+        text translation_new["ts_muzzon_info2"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim

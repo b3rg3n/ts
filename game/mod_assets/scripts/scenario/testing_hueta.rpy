@@ -9,8 +9,7 @@ label testing_label_blya:
 
 
 
-    show screen ts_credits_list_suka
-
+    scene ts_club at TransRights
     pause
 ##############
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)

@@ -66,7 +66,7 @@ transform Static: # ЕБЕЙШИЙ БЕЛЫЙ ШУМ С ТЕМНЫМ ОТТЕН�
 # Caution should be exercised when applied to characters
 # It may make them too awesome.
 
-transform TransRights:
+transform TransRights: # ЗАСВЕТ СПРАВА, ХЗ НАХУЯ ОНО НУЖНО, НО ПУСТЬ БУДЕТ
     shader "MakeVisualNovels.SimulatedLighting"
     u_back_light_color (1.0, 1.0, 1.0) # White  
     u_key_light_color (0, 0, 1.0)  # Blue  
@@ -84,7 +84,7 @@ transform TransRights:
 # Caution should be exercised when applied to characters
 # It may make them too awesome.
 
-transform Bisexuality:
+transform Bisexuality: # АНАЛОГИЧНО ВЕРХНЕМУ, ТОК НАОБОРОТ
     shader "MakeVisualNovels.SimulatedLighting"
     u_back_light_color (1.0, 0.0, 1.0)  
     u_key_light_color (0.7, 0.7, 1.0)    
@@ -100,7 +100,7 @@ transform Bisexuality:
 
 
 # A Preset for the Simulated Lighting Shader
-transform SunsetLighting:
+transform SunsetLighting: # АНАЛОГИЧНО ВЕРХНЕМУ
     shader "MakeVisualNovels.SimulatedLighting"
     u_back_light_color (0.9, 0.7, 0.4)  
     u_key_light_color (0.0, 0.0, 0.5)
@@ -116,7 +116,7 @@ transform SunsetLighting:
 
 
 # Default Settings for characters, because they're pretty decent
-transform SimulatedLighting:
+transform SimulatedLighting: # АНАЛОГИЧНО, ТОК ТИПА ПАСМУРНАЯ ПОГОДА
     shader "MakeVisualNovels.SimulatedLighting"
     u_back_light_color (1.0, 1.0, 1.0)  
     u_key_light_color (1.0, 1.0, 1.0)    
@@ -135,7 +135,7 @@ transform SimulatedLighting:
     u_fill_light_intensity (-0.5)  
 
 
-transform Regicide:
+transform Regicide: # ТИПА ВОДА БУЛЬКАЕТ, Я ХУЙ ЗНАЕТ, КАК ОПИСАТЬ
     shader "MakeVisualNovels.PerlinWarp"
     # How many changes per second.
     # Higher is more energetic.
@@ -158,21 +158,21 @@ transform Regicide:
     #repeat 
     #to make RenPy actually render it properly.
     
-transform VirtualBoy:
+transform VirtualBoy: # ШЕЙДЕР ПОКРАСКИ В ОДИН ЦВЕТ (КРАСНЫЙ) ПРИ СОХРАНЕНИИ КОНТУРОВ, ТИПА КАК КАРАНДАШ СУКА
     #Why
     shader "MakeVisualNovels.Manga"
     u_color (0.7, 0.1, 0.1, 1.0)
     #Intensity here is 0 to 1 and determines how much of the darker colors are crushed to black.
     u_intensity (0.6)
 
-transform Manga:
+transform Manga: # ЧЕРНЫЕ ОЧЕРТАНИЯ (ХУНЯ КАРОЧЕ)
     shader "MakeVisualNovels.Manga"
     #Makes the fill color transparent.
     u_color (0.0,0.0,0.0,0.0) 
     #Intensity here is 0 to 1 and determines how much of the darker colors are crushed to black.
     u_intensity (0.6)
 
-transform TakeOnMe:
+transform TakeOnMe: # ЧБ ОЧЕРТАНИЯ С АНИМАЦИЕЙ, ОХУЕННО (МОЖНО ИСПОЛЬЗОВАТЬ ДЛЯ ГЛИТЧА)
     shader "MakeVisualNovels.TakeOnMe"
     #Intensity here is 0 to 1 and determines how much of the darker colors are crushed to black.
     u_color (1.0,1.0,1.0,1.0)

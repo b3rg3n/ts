@@ -41,10 +41,9 @@ label ts_scenario_5:
 
     window hide
     play sound fb
-    scene ts_sayori_bedroom:
-        blur 10
-    show sayori 4pi at t11:
-        blur 10
+    scene ts_sayori_bedroom
+    show sayori 4pi at t11
+    show layer master at AnimatedAberate(20.0)
     with flash
 
     show layer screens at ts_showscreens
@@ -60,6 +59,10 @@ label ts_scenario_5:
 
     hide ts_blinking
     show ts_blinking
+
+    pause 0.5
+
+    show layer master
 
     show layer screens at ts_showscreens
 

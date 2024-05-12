@@ -8,8 +8,15 @@ label testing_label_blya:
             pass
 
 
-
-    scene ts_club at TransRights
+    scene ts_club
+    show sayori 1a at t11
+    show layer master at Static
+    s "Ну что, Моника..."
+    show sayori 1b at t11
+    s "Пиздец тебе, да?"
+    show layer screens at AnimatedAberate(10.0)
+    show sayori 1c at t11
+    s "Косоёбит?"
     pause
 ##############
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)

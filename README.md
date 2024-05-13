@@ -1,9 +1,11 @@
 ![poster](https://github.com/b3rg3n/ts/assets/124900745/99c0df04-b0fa-40e7-818d-38c97ad62d4e)
-# Исходный код модификации для DDLC - True Story
+# Разработчики:
+1. BERGEN (Визуал, код, тестирование) - [Reddit](https://www.reddit.com/user/iamnineoneone/) | [VK](https://vk.com/b3rg3n)
+2. Maddie, The Mad (Сценарий, редактура, перевод) - [Reddit](https://www.reddit.com/user/Neljas/) | [VK](https://vk.com/maddiethemad)
 
-Разработчики - https://discord.com/invite/8B3eKkU37q | https://vk.com/teamanarkhisty
-
-Для компиляции использовать последнюю версию движка RenPy.
+# Наши ресурсы:
+1. [Сервер Discord](https://discord.com/invite/8B3eKkU37q)
+2. [Группа в VK](https://vk.com/teamanarkhisty)
 
 # «Модные» плюшки:
 1. Красивый и галантный GUI
@@ -13,6 +15,7 @@
 5. Оптимизация
 6. Высокая производительность
 7. Всегда свежая версия движка
+8. Уникальный (как для DDLC мода) сценарий, что написан сразу на двух языках
 
 # All Rights Reserved:
 1. Team Salvato (c) - Original Game

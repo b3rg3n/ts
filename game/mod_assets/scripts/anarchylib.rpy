@@ -27,17 +27,19 @@ init -1199 python:
 # МЕНЬШЕ ПОТРЕБЛЯЕТСЯ ПАМЯТИ = МЕНЬШЕ ПРОСАДОК
 # ЮЗАТЬ ТАК = image perdun = ts_images + "sheeptune/ebanko.png" (полный путь сократился "mod_assets/source/images/sheeptune/ebanko.png")
     ts_source = "mod_assets/source/"
+
+    ts_fonts = ts_source + "fonts/"
+
+    ts_muzzon = ts_source + "audio/ost/"
+    ts_sfx = ts_source + "audio/sfx/"
+
     ts_images = ts_source + "images/"
     ts_spr = ts_images + "spr/"
     ts_bg = ts_images + "bg/"
     ts_cg = ts_images + "cg/"
     ts_anim = ts_images + "anim/"
-    ts_fonts = ts_source + "fonts/"
-    ts_videosos = ts_source + "videosos/"
-    ts_telek = ts_videosos + "bg/telek/"
-    ts_muzzon = ts_source + "audio/ost/"
-    ts_sfx = ts_source + "audio/sfx/"
     ts_gui = ts_images + "gui/"
+
     ts_natsuki_pt = ts_spr + "natsuki/"
     ts_bug_pt = ts_spr + "bug/"
     ts_elena_pt = ts_spr + "elena/"
@@ -49,6 +51,9 @@ init -1199 python:
     ts_monika_pt = ts_spr + "monika/"
     ts_yuri_pt = ts_spr + "yuri/"
     ts_sayori_pt = ts_spr + "sayori/"
+
+    ts_videosos = ts_source + "videosos/"
+    ts_telek = ts_videosos + "bg/telek/"
 
 # ЗАКОСТЫЛИМ МЕТОД ПОДСЧЁТА ИГРОВОГО ВРЕМЕНИ
 # УДАЛЯЕТСЯ ВМЕСТЕ С ПОСТОЯННЫМИ ДАННЫМИ

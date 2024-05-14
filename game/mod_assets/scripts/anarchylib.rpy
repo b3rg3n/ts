@@ -15,14 +15,6 @@ init -1199 python:
     from os import path # ЭТО ДЛЯ ГОПА АУДИО
     import random # НУЖНО ДЛЯ ГЛИТЧТЕКСТА
 
-    modID = 'mod_assets/source/audio/' # ПУТЬ, ГДЕ У ТЕБЯ ЛЕЖАТ ЗВУКИ И МУЗОНЫ
-
-    for file in renpy.list_files(): # ФУНКЦИЯ ГОПА АУДИО БЕЗ ДЕФАЙНА
-        if modID in file:
-            file_name = path.splitext(path.basename(file))[0]
-            if file.endswith((".wav", ".mp2", ".mp3", ".ogg", ".opus")):
-                globals()[file_name] = file
-
 # ПЕРЕМЕННЫЕ ДЛЯ УКОРОТА ПУТИ ДЕФАЙНА
 # МЕНЬШЕ ПОТРЕБЛЯЕТСЯ ПАМЯТИ = МЕНЬШЕ ПРОСАДОК
 # ЮЗАТЬ ТАК = image perdun = ts_images + "sheeptune/ebanko.png" (полный путь сократился "mod_assets/source/images/sheeptune/ebanko.png")
@@ -30,8 +22,9 @@ init -1199 python:
 
     ts_fonts = ts_source + "fonts/"
 
-    ts_muzzon = ts_source + "audio/ost/"
-    ts_sfx = ts_source + "audio/sfx/"
+    ts_audio = ts_source + "audio/"
+    ts_muzzon = ts_audio + "ost/"
+    ts_sfx = ts_audio + "sfx/"
 
     ts_images = ts_source + "images/"
     ts_spr = ts_images + "spr/"
@@ -54,6 +47,12 @@ init -1199 python:
 
     ts_videosos = ts_source + "videosos/"
     ts_telek = ts_videosos + "bg/telek/"
+
+    for file in renpy.list_files(): # ФУНКЦИЯ ГОПА АУДИО БЕЗ ДЕФАЙНА
+        if ts_audio in file:
+            file_name = path.splitext(path.basename(file))[0]
+            if file.endswith((".wav", ".mp2", ".mp3", ".ogg", ".opus")):
+                globals()[file_name] = file
 
 # ЗАКОСТЫЛИМ МЕТОД ПОДСЧЁТА ИГРОВОГО ВРЕМЕНИ
 # УДАЛЯЕТСЯ ВМЕСТЕ С ПОСТОЯННЫМИ ДАННЫМИ

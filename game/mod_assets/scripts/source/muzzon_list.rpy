@@ -19,6 +19,7 @@ init:
     $ music_list_ts["wnuk2380 - Outofit"] = ts_muzzon + "menu_ost/zastavka/ts_wnuk.ogg"
     $ music_list_ts["Mudasheep - One Way or Another"] = ts_muzzon + "menu_ost/zastavka/ts_bad_credits.ogg"
     $ music_list_ts["Dead Before Down OST"] = ts_muzzon + "menu_ost/zastavka/ts_good_credits.ogg"
+    $ music_list_ts["Yabai The Maid - It Always Happens No Matter What"] = ts_muzzon + "menu_ost/zastavka/ts_new_zastavka_ost_suka.ogg"
 ###ИЗ БЛ
     $ music_list_ts["Between August and December - Awakening Power"] = ts_muzzon + "es/ts_ap.ogg"
     $ music_list_ts["Between August and December - Doomed to be Defeated"] = ts_muzzon + "es/ts_dtbd.ogg"

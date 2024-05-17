@@ -154,7 +154,7 @@ init:
 #ГОПАЕМ ЮЗЕРНАЙМ
     if renpy.android or renpy.ios: # ПРОВЕРКА НА КАЛОЗВОНЫ (В ПЕРЕМЕННУЮ МОЖЕШЬ ВПИСАТЬ СВОЙ ВАРИК ЮЗЕРА)
         $ user = "Игрок"
-    if renpy.linux:
+    elif renpy.linux:
         $ user = getpass.getuser() # МЕТОД ГОПА НА ЛИНУКСЕ (ТРЕБУЕТ ТРЕТИЙ ПИТОН, Т.Е. РЕНДРИСТ 8 И НОВЕЕ)
     else:
         $ user = os.environ.get('username') # ДЕДОВСКИЙ МЕТОД ГОПА ЮЗЕРА НА ВИНДЕ

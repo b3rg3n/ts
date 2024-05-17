@@ -33,7 +33,16 @@ init:
     image mon_piano_another_glitch3 = ts_images + "intro/menu/mon_piano_another_glitch3.webp"
 
     image mon_piano_start = ts_cg + "mon_piano_start.webp"
-    image yurec_pizdec = ts_cg + "yurec_pizdec.webp"
+
+    image yurec_pizdec1 = ts_cg + "yurec_pizdec/v1.webp"
+    image yurec_pizdec2 = ts_cg + "yurec_pizdec/v2.webp"
+    image yurec_pizdec3 = ts_cg + "yurec_pizdec/v3.webp"
+    image yurec_pizdec4 = ts_cg + "yurec_pizdec/v4.webp"
+    image yurec_pizdec5 = ts_cg + "yurec_pizdec/v5.webp"
+    image yurec_pizdec6 = ts_cg + "yurec_pizdec/v6.webp"
+    image yurec_pizdec7 = ts_cg + "yurec_pizdec/v7.webp"
+    image yurec_pizdec8 = ts_cg + "yurec_pizdec/v8.webp"
+    image yurec_pizdec9 = ts_cg + "yurec_pizdec/v9.webp"
 
 ###GLITCH
     image natsuki_pizdec = ts_cg + "glitch_kolhoz/natsuki_pizdec.webp"

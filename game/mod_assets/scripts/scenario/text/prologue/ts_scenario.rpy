@@ -522,28 +522,68 @@ label ts_scenario_0:
     $ renpy.pause(1.1, hard=True)
     stop sound
     scene black
-    play music ts_soft fadein 4
-    pause 2
+    play music ts_new_zastavka_ost_suka fadein 2
+    pause 1
+    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Я говорила - ты слушал.\nИ так было всегда.{/size}{/font}":
+        xalign 0.5 yalign 0.5
+        zoom 0.4 alpha 0
+        ease 1.5 zoom 1.0 alpha 1
+    pause 3
+    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Я говорила - ты слушал.\nИ так было всегда.{/size}{/font}":
+        xalign 0.5 yalign 0.5
+        zoom 1.0 alpha 1
+        ease 1.5 zoom 0.4 alpha 0
+    pause 3
+    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Правда, [user]?{/size}{/font}":
+        xalign 0.5 yalign 0.5
+        zoom 0.4 alpha 0
+        ease 1.5 zoom 1.0 alpha 1
+    pause 3
+    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Правда, [user]?{/size}{/font}":
+        xalign 0.5 yalign 0.5
+        zoom 1.0 alpha 1
+        ease 1.5 zoom 0.4 alpha 0
+    pause 3
+    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}В моменте я перестаю различать:\nгде сон, а где реальность.{/size}{/font}":
+        xalign 0.5 yalign 0.5
+        zoom 0.4 alpha 0
+        ease 1.5 zoom 1.0 alpha 1
+    pause 3
+    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}В моменте я перестаю различать:\nгде сон, а где реальность.{/size}{/font}":
+        xalign 0.5 yalign 0.5
+        zoom 1.0 alpha 1
+        ease 1.5 zoom 0.4 alpha 0
+    pause 3
+    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Просто...\nДослушай до конца...{/size}{/font}":
+        xalign 0.5 yalign 0.5
+        zoom 0.4 alpha 0
+        ease 1.5 zoom 1.0 alpha 1
+    pause 3
+    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Просто...\nДослушай до конца...\nЭту историю...{/size}{/font}":
+        xalign 0.5 yalign 0.5
+        zoom 1.0 alpha 1
+        ease 1.5 zoom 0.4 alpha 0
+    pause 3
     scene ts_intro_move_1
     show zatemnenie
-    #show layer master at heartbeat
+
     with ed_night_dis
     $ Chapter("TEAM АНАРХИСТЫ")
     $ Chapter("ПРЕДСТАВЛЯЮТ")
     scene ts_intro_move_2
     show zatemnenie
-    #show layer master at heartbeat
+
     with ed_night_dis
     $ Chapter("МОДИФИКАЦИЮ")
     $ Chapter("ДЛЯ DDLC")
     scene ts_intro_move_3
     show zatemnenie
-    #show layer master at heartbeat
+
     with ed_night_dis
     $ Chapter("TRUE STORY")
     scene ts_intro_move_4
     show zatemnenie
-    #show layer master at heartbeat
+
     with ed_night_dis
     $ Chapter("ПРИЯТНОГО ЧТЕНИЯ")
     stop music

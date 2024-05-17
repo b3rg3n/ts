@@ -309,6 +309,9 @@ init:
     image ts_shkola_rain = ts_bg + "courtyard-rain.webp"
     image ts_street_rain = ts_bg + "street7.webp"
 
+    image ts_house_rain_ovr = ts_bg + "ovr/house_rain_ovr.webp"
+    image ts_shkola_rain_ovr = ts_bg + "ovr/shkola_rain_ovr.webp"
+    image ts_street_rain_ovr = ts_bg + "ovr/street_rain_ovr.webp"
 
 ###ЛОГО ХУЙНИ
     image ts_logo = "mod_assets/source/images/gui/ts_logo.webp"
@@ -348,3 +351,5 @@ init:
     image ts_living_room_telek_putin = Movie(fps=24, size = (1280, 720), play=ts_telek + "interview.webm")
     image ts_living_room_telek_sudba_night = Movie(fps=24, size = (1280, 720), play=ts_telek + "sudba_night.webm")
     image ts_living_room_telek_sudba_day = Movie(fps=24, size = (1280, 720), play=ts_telek + "sudba.webm")
+
+    image ts_nebo_fon_bgshka_suka = Movie(fps=24, size = (1280, 720), play=ts_telek + "nebo_pasmurnoe.webm")

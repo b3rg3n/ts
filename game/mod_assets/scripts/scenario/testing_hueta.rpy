@@ -7,6 +7,24 @@ label testing_label_blya:
         except AssertionError:
             pass
 
+    scene ts_nebo_fon_bgshka_suka
+    show ts_house_rain_ovr
+    show ts_rain
+    "тест"
+
+
+    scene ts_nebo_fon_bgshka_suka
+    show ts_shkola_rain_ovr
+    show ts_rain
+    "тест"
+
+    scene ts_nebo_fon_bgshka_suka
+    show ts_street_rain_ovr
+    show ts_rain
+    "тест"
+
+
+    return
 
     scene ts_club
     show sayori 1a at t11

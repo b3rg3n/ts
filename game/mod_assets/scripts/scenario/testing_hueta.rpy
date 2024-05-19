@@ -7,6 +7,13 @@ label testing_label_blya:
         except AssertionError:
             pass
 
+    $ ts_uncolorize_off()
+    scene ts_bedroom
+    "без"
+    $ ts_uncolorize_lite()
+    "с"
+    return
+
     scene ts_nebo_fon_bgshka_suka
     show ts_house_rain_ovr
     show ts_rain

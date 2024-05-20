@@ -313,14 +313,25 @@ init:
     image ts_club_blur9 = im.Blur(ts_bg + "club.webp", 9.0)
 
 ###ОВЕРЛЕИ
-    image ts_club_rain_ovr = ts_bg + "ovr/club_rain_ovr.webp"
-    image ts_class_rain_ovr = ts_bg + "ovr/class_rain_ovr.webp"
-    image ts_living_room_rain_ovr = ts_bg + "ovr/living_room_rain_ovr.webp"
+    image ts_club_rain_ovr = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/club_rain_ovr.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/club_rain_ovr.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ovr/club_rain_ovr.webp") )
+
+    image ts_living_room_rain_ovr = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/living_room_rain_ovr.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/living_room_rain_ovr.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ovr/living_room_rain_ovr.webp") )
 
     image ts_class_rain_ovr = ConditionSwitch(
     "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/class_rain_ovr.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
     "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/class_rain_ovr.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
     True,im.Composite((1280,720), (0,0), ts_bg + "ovr/class_rain_ovr.webp") )
+
+    image ts_corridor_rain_ovr = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/corridor_rain_ovr.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/corridor_rain_ovr.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ovr/corridor_rain_ovr.webp") )
 
     image ts_shkola_rain = ts_bg + "courtyard-rain.webp"
     image ts_street_rain = ts_bg + "street7.webp"
@@ -338,10 +349,12 @@ init:
     image ts_class_rain = ts_bg + "ovr/class_rain.webp"
     image ts_living_room_rain = ts_bg + "ovr/living_room_rain.webp"
     image ts_club_rain = ts_bg + "ovr/club_rain.webp"
+    image ts_corridor_rain = ts_bg + "ovr/ts_corridor_rain.webp"
 
     image ts_class_rain_shader = RainOnWindow("ts_class_rain", width = 1280, height = 720, rainamount = 0.25)
     image ts_living_room_rain_shader = RainOnWindow("ts_living_room_rain", width = 1280, height = 720, rainamount = 0.25)
     image ts_club_rain_shader = RainOnWindow("ts_club_rain", width = 1280, height = 720, rainamount = 0.25)
+    image ts_corridor_rain_shader = RainOnWindow("ts_corridor_rain", width = 1280, height = 720, rainamount = 0.25)
 
 ###ШРИФТЫ
 

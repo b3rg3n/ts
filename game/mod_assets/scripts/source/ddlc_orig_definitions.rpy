@@ -302,10 +302,7 @@ define audio.t9 = "<loop 3.172>mod_assets/source/audio/ost/orig/9.ogg"
 define audio.t10 = "<loop 5.861>mod_assets/source/audio/ost/orig/10.ogg"
 define audio.t10y = "<loop 0>mod_assets/source/audio/ost/orig/10-yuri.ogg"
 define audio.td = "<loop 36.782>mod_assets/source/audio/ost/orig/d.ogg"
-
 define audio.m1 = "<loop 0>mod_assets/source/audio/ost/orig/m1.ogg"
-define audio.mend = "<loop 6.424>mod_assets/source/audio/ost/orig/monika-end.ogg"
-
 define audio.hb = "<loop 0>mod_assets/source/audio/ost/orig/heartbeat.ogg"
 define audio.okevrsay = "<loop 4.444>mod_assets/source/audio/ost/orig/5_sayori.ogg"
 define audio.okevryuri = "<loop 4.444>mod_assets/source/audio/ost/orig/5_yuri.ogg"

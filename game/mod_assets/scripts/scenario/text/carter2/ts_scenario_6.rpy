@@ -1071,13 +1071,13 @@ label ts_scenario_6:
         show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
             xpos 1050 ypos 590
 
-    play sound page_turn
+    play sound pageflip
 
     show screen poem(poem_m1)
 
     pause
 
-    play sound page_turn
+    play sound pageflip
     show layer screens at ts_hidescreens
     pause 1.0
     hide screen poem

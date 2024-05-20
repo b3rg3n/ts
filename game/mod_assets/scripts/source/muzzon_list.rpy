@@ -50,7 +50,7 @@ init:
     $ music_list_ts["Sergey Eybog - Waltz Of Doubts"] = ts_muzzon + "es/ts_wod.ogg"
     $ music_list_ts["Sergey Eybog - Smooth Machine"] = ts_muzzon + "es/ts_sm.ogg"
     $ music_list_ts["Sergey Eybog - Dance Of Fireflies"] = ts_muzzon + "es/ts_dof.ogg"
-
+    $ music_list_ts["Sergey Eybog - Raindrops"] = ts_muzzon + "es/ts_raindrops.ogg"
 ###ОСТАЛЬНОЕ
 
     $ music_list_ts["HCCH OST - Начало"] = ts_muzzon + "ts_emmk.ogg"

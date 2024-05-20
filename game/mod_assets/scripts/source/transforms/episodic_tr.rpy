@@ -4,6 +4,14 @@
 
 init:
 
+    transform ts_bg_into:
+        xzoom 1.0 yzoom 1.0
+        ease 0.5 xzoom 1.2 yzoom 1.2
+
+    transform ts_bg_exodus:
+        xzoom 1.2 yzoom 1.2
+        ease 0.5 xzoom 1.0 yzoom 1.0
+
     transform ts_walking:
         align (0.5, 0.5)
         zoom 1.01

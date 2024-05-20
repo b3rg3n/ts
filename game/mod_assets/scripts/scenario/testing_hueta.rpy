@@ -7,11 +7,19 @@ label testing_label_blya:
         except AssertionError:
             pass
 
-    $ ts_uncolorize_off()
-    scene ts_bedroom
-    "без"
-    $ ts_uncolorize_lite()
-    "с"
+    "1212"
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    show blink
+    pause 2
+    play ambience rain_int fadein 2
+    pause 1
+    scene ts_class_rain_shader
+    show ts_class_rain_ovr
+    show unblink
+    pause 1
+    show layer screens at ts_showscreens
+    "11"
     return
 
     scene ts_nebo_fon_bgshka_suka

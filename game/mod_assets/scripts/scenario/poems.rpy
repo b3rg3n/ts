@@ -238,7 +238,7 @@ style monika_text:
 label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, where=i11, paper=None):
     if poem == None:
         return
-    play sound page_turn
+    play sound pageflip
     window hide
     if paper:
         show screen poem(poem, paper=paper)

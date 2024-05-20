@@ -1506,13 +1506,13 @@ label cartersevenpoemsblya:
                 show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
                     xpos 1050 ypos 590
 
-            play sound page_turn
+            play sound pageflip
 
             show screen poem(poem_s1)
 
             pause
 
-            play sound page_turn
+            play sound pageflip
             show layer screens at ts_hidescreens
             pause 1.0
             hide screen poem
@@ -1694,13 +1694,13 @@ label cartersevenpoemsblya:
                 show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
                     xpos 1050 ypos 590
 
-            play sound page_turn
+            play sound pageflip
 
             show screen poem(poem_n1)
 
             pause
 
-            play sound page_turn
+            play sound pageflip
             show layer screens at ts_hidescreens
             pause 1.0
             hide screen poem
@@ -1907,13 +1907,13 @@ label cartersevenpoemsblya:
                 show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
                     xpos 1050 ypos 590
 
-            play sound page_turn
+            play sound pageflip
 
             show screen poem(poem_y1)
 
             pause
 
-            play sound page_turn
+            play sound pageflip
             show layer screens at ts_hidescreens
             pause 1.0
             hide screen poem
@@ -2395,4 +2395,14 @@ label ts_carterseven_poem_finally:
         "Но с другой стороны, я и вчера уснула и проснулась рано, плюс сегодня был напряжённый день, так что как минимум отдохнуть - это скорее не прихоть, а необходимость."
     "В любом случае, поспать надо. А стих будет попозже."
 
-    return
+    show blink
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    pause 1
+
+    scene black
+
+    show layer screens at ts_null_transform
+
+    jump ts_scenario_8

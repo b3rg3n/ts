@@ -20,7 +20,8 @@ init -2:
 
 init -4 python:
 
-    config.mouse_displayable = MouseDisplayable("ts_cursor_anim", 0, 0)
+    if not renpy.android or renpy.ios:
+        config.mouse_displayable = MouseDisplayable("ts_cursor_anim", 0, 0)
 
     #def translate():
     if _preferences.language == "english":

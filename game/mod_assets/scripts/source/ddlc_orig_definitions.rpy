@@ -294,6 +294,7 @@ define audio.t2g2 = "<from 4.499 loop 4.499>mod_assets/source/audio/ost/orig/2.o
 define audio.t2g3 = "<loop 4.492>mod_assets/source/audio/ost/orig/2g2.ogg"
 define audio.t3 = "<loop 4.618>mod_assets/source/audio/ost/orig/3.ogg"
 define audio.t4 = "<loop 19.451>mod_assets/source/audio/ost/orig/4.ogg"
+define audio.t5 = "<loop 4.444>mod_assets/source/audio/ost/orig/5.ogg"
 define audio.t6 = "<loop 10.893>mod_assets/source/audio/ost/orig/6.ogg"
 define audio.t6o = "<loop 10.893>mod_assets/source/audio/ost/orig/6o.ogg"
 define audio.t6s = "<loop 43.572>mod_assets/source/audio/ost/orig/6s.ogg"

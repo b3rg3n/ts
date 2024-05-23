@@ -22,6 +22,7 @@ init:
     $ music_list_ts["Yabai The Maid - It Always Happens No Matter What"] = ts_muzzon + "menu_ost/zastavka/ts_new_zastavka_ost_suka.ogg"
 ###ИЗ БЛ
     $ music_list_ts["Between August and December - Awakening Power"] = ts_muzzon + "es/ts_ap.ogg"
+    $ music_list_ts["Between August and December - That's our Madhouse"] = ts_muzzon + "es/ts_tom.ogg"
     $ music_list_ts["Between August and December - Doomed to be Defeated"] = ts_muzzon + "es/ts_dtbd.ogg"
     $ music_list_ts["Sergey Eybog - Confession"] = ts_muzzon + "es/ts_conf.ogg"
     $ music_list_ts["Sergey Eybog - always ready"] = ts_muzzon + "es/ts_ar.ogg"

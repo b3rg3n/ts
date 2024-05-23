@@ -338,6 +338,12 @@ init:
     "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/corridor_rain_ovr.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
     True,im.Composite((1280,720), (0,0), ts_bg + "ovr/corridor_rain_ovr.webp") )
 
+    image ts_corridor_rain_ovr1 = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/corridor_rain_ovr1.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ovr/corridor_rain_ovr1.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ovr/corridor_rain_ovr1.webp") )
+
+
     image ts_shkola_rain = ts_bg + "courtyard-rain.webp"
     image ts_street_rain = ts_bg + "street7.webp"
 
@@ -355,14 +361,18 @@ init:
     image ts_living_room_rain = ts_bg + "ovr/living_room_rain.webp"
     image ts_club_rain = ts_bg + "ovr/club_rain.webp"
     image ts_club_rain1 = ts_bg + "ovr/club_rain1.webp"
-    image ts_corridor_rain = ts_bg + "ovr/ts_corridor_rain.webp"
+    image ts_corridor_rain = ts_bg + "ovr/corridor_rain.webp"
+    image ts_corridor_rain1 = ts_bg + "ovr/corridor_rain1.webp"
+    image ts_residential_rain = ts_bg + "ovr/residential_rain.webp"
 
+    image ts_residential_rain_shader = RainOnWindow("ts_residential_rain", width = 1280, height = 720, rainamount = 1.0)
     image ts_class_rain_shader = RainOnWindow("ts_class_rain", width = 1280, height = 720, rainamount = 0.25)
     image ts_living_room_rain_shader = RainOnWindow("ts_living_room_rain", width = 1280, height = 720, rainamount = 0.25)
     image ts_club_rain_shader = RainOnWindow("ts_club_rain", width = 1280, height = 720, rainamount = 0.25)
     image ts_corridor_rain_shader = RainOnWindow("ts_corridor_rain", width = 1280, height = 720, rainamount = 0.25)
     image ts_club_rain_shader1 = RainOnWindow("ts_club_rain1", width = 1280, height = 720, rainamount = 0.25)
-    
+    image ts_corridor_rain_shader1 = RainOnWindow("ts_corridor_rain1", width = 1280, height = 720, rainamount = 0.25)
+
 ###ШРИФТЫ
 
     define cit_font = ts_fonts + "captureit.ttf"

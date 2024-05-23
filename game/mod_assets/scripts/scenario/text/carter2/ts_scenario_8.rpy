@@ -22,8 +22,8 @@ label ts_scenario_8:
     play sound chp2
     $ Chapter("АКТ ВТОРОЙ")
     $ Chapter("АКТ ВТОРОЙ")
-    $ Chapter("Глава третья")
-    $ Chapter("Глава третья")
+    $ Chapter("Глава четвёртая")
+    $ Chapter("Глава четвёртая")
     $ Chapter("Затишье перед бурей")
     stop sound fadeout 7
     $ Chapter("Затишье перед бурей")
@@ -312,7 +312,7 @@ label ts_scenario_8:
 
     scene ts_street at ts_bg_into
     pause 0.5
-    scene school_gate_day at ts_bg_exodus
+    scene ts_school_gate_day at ts_bg_exodus
     pause 0.5
 
     show layer screens at ts_showscreens
@@ -365,7 +365,7 @@ label ts_scenario_8:
     "Мы всем классом плавно переходим в кабинет."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-
+    stop ambience fadeout 3
     play sound pageflip
     scene ts_corridor:
         align (0.5, 0.5) zoom 1
@@ -594,17 +594,21 @@ label ts_scenario_8:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    play sound pageflip
+    show blink
+    pause 1.5
+
     scene ts_corridor_rain_shader
     show ts_corridor_rain_ovr
-    with wipeleft_scene
+    show unblink
 
     pause 2
 
-    play sound pageflip
+    show blink
+    pause 1.5
+
     scene ts_club_rain_shader
     show ts_club_rain_ovr
-    with wipeleft_scene
+    show unblink
 
     show layer screens at ts_showscreens
 
@@ -685,8 +689,8 @@ label ts_scenario_8:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show layer master with dissolve:
-        blur 9.0
+    show layer master at ts_blur_ahuenno
+    with dissolve
 
     show layer screens at ts_showscreens
 
@@ -707,7 +711,8 @@ label ts_scenario_8:
     hide screen poem
     hide poem_dismiss
 
-    show layer master with dissolve
+    show layer master
+    with dissolve
 
     show layer screens at ts_showscreens
 
@@ -723,10 +728,12 @@ label ts_scenario_8:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    play sound pageflip
+    show blink
+    pause 1.5
+
     scene ts_club_rain_shader
     show ts_club_rain_ovr
-    with wipeleft_scene
+    show unblink
 
     show layer screens at ts_showscreens
 
@@ -746,7 +753,7 @@ label poemresponses2suka:
     if ts_carter8_poem_sayori and ts_carter8_poem_natsuki and ts_carter8_poem_yuri:
         jump ts_carter8_posle_poems_suka
 
-    if ts_carter8_poem_firstread == false:
+    if ts_carter8_poem_firstread == False:
         $ menutext = "Кому я покажу стихотворение первой?"
     else:
         $ menutext = "Кому я покажу стихотворение следующей?"
@@ -770,11 +777,13 @@ label poemresponses2suka:
 
             stop music fadeout 2
 
-            play sound pageflip
+            show blink
+            pause 1.5
+
             scene ts_club_rain_shader
             show ts_club_rain_ovr
             show sayori 1a at i11
-            with wipeleft_scene
+            show unblink
 
             show layer screens at ts_showscreens
 
@@ -847,8 +856,8 @@ label poemresponses2suka:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
 
-            show layer master with dissolve:
-                blur 9.0
+            show layer master at ts_blur_ahuenno
+            with dissolve
 
             show layer screens at ts_showscreens
 
@@ -869,7 +878,8 @@ label poemresponses2suka:
             hide screen poem
             hide poem_dismiss
 
-            show layer master with dissolve
+            show layer master
+            with dissolve
 
             show layer screens at ts_showscreens
     
@@ -976,7 +986,7 @@ label poemresponses2suka:
                 s "Здорово!"
                 show sayori at cright with move
                 hide sayori
-                if ts_carter8_poem_yuti:
+                if ts_carter8_poem_yuri:
                     "После этих слов она быстро пошла обмениваться стихами с Юри."
                 elif ts_carter8_poem_natsuki:
                     "После этих слов она быстро пошла обмениваться стихами с Нацуки."
@@ -998,11 +1008,13 @@ label poemresponses2suka:
 
             stop music fadeout 2
 
-            play sound pageflip
+            show blink
+            pause 1.5
+
             scene ts_club_rain_shader
             show ts_club_rain_ovr
             show natsuki 1a at i11
-            with wipeleft_scene
+            show unblink
 
             show layer screens at ts_showscreens
 
@@ -1134,8 +1146,8 @@ label poemresponses2suka:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
 
-            show layer master with dissolve:
-                blur 9.0
+            show layer master at ts_blur_ahuenno
+            with dissolve
 
             show layer screens at ts_showscreens
 
@@ -1156,7 +1168,8 @@ label poemresponses2suka:
             hide screen poem
             hide poem_dismiss
 
-            show layer master with dissolve
+            show layer master
+            with dissolve
 
             show layer screens at ts_showscreens
     
@@ -1216,11 +1229,13 @@ label poemresponses2suka:
                 " {w=1.0}{nw}"
             stop music fadeout 2
 
-            play sound pageflip
+            show blink
+            pause 1.5
+
             scene ts_club_rain_shader
             show ts_club_rain_ovr
             show yuri 1c at i11
-            with wipeleft_scene
+            show unblink
 
             show layer screens at ts_showscreens
 
@@ -1298,8 +1313,8 @@ label poemresponses2suka:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
 
-            show layer master with dissolve:
-                blur 9.0
+            show layer master at ts_blur_ahuenno
+            with dissolve
 
             show layer screens at ts_showscreens
 
@@ -1320,7 +1335,8 @@ label poemresponses2suka:
             hide screen poem
             hide poem_dismiss
 
-            show layer master with dissolve
+            show layer master
+            with dissolve
 
             show layer screens at ts_showscreens
     
@@ -1378,13 +1394,14 @@ label poemresponses2suka:
             jump poemresponses2suka
 
 label ts_carter8_posle_poems_suka:
-    play sound pageflip
+    show blink
+    pause 1.5
     scene ts_club_rain_shader1
     show ts_club_rain_ovr1
     show yuri 1e at i31
     show sayori 1b at i32
     show natsuki 1za at i33
-    with wipeleft_scene
+    show unblink
 
     show layer screens at ts_showscreens
 
@@ -1466,8 +1483,8 @@ label ts_carter8_posle_poems_suka:
         _preferences.volumes['sfx'] = 1.0
         _preferences.volumes['music'] = 0.0
     play sound ts_flashback
-    show layer master with dissolve2:
-        blur 20.0
+    show layer master at ts_blur_ahuenno1
+    with dissolve2
     show layer screens at ts_showscreens
     "«Аки, можно мне немного помощи?»"
     em "Всё-таки признаёшь, что сама ты ничего придумать не можешь, и наконец обращаешься за помощью ко мне, к своему {i}больному подсознанию?{/i}"
@@ -1512,8 +1529,8 @@ label ts_carter8_posle_poems_suka:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show layer master with dissolve:
-        blur 9.0
+    show layer master at ts_blur_ahuenno
+    with dissolve
 
     show layer screens at ts_showscreens
 
@@ -1534,7 +1551,8 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    show layer master with dissolve
+    show layer master
+    with dissolve
 
     show layer screens at ts_showscreens
     
@@ -1566,8 +1584,8 @@ label ts_carter8_posle_poems_suka:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show layer master with dissolve:
-        blur 9.0
+    show layer master at ts_blur_ahuenno
+    with dissolve
 
     show layer screens at ts_showscreens
 
@@ -1588,7 +1606,8 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    show layer master with dissolve
+    show layer master
+    with dissolve
 
     show layer screens at ts_showscreens
 
@@ -1612,8 +1631,8 @@ label ts_carter8_posle_poems_suka:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show layer master with dissolve:
-        blur 9.0
+    show layer master at ts_blur_ahuenno
+    with dissolve
 
     show layer screens at ts_showscreens
 
@@ -1634,7 +1653,8 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    show layer master with dissolve
+    show layer master
+    with dissolve
 
     show layer screens at ts_showscreens
 
@@ -1657,8 +1677,8 @@ label ts_carter8_posle_poems_suka:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show layer master with dissolve:
-        blur 9.0
+    show layer master at ts_blur_ahuenno
+    with dissolve
 
     show layer screens at ts_showscreens
 
@@ -1679,7 +1699,8 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    show layer master with dissolve
+    show layer master
+    with dissolve
 
     show layer screens at ts_showscreens
     
@@ -1697,13 +1718,17 @@ label ts_carter8_posle_poems_suka:
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    play sound pageflip
+
+    show blink
+    pause 1.5
+
     scene ts_club_rain_shader1
     show ts_club_rain_ovr1
     show yuri 1a at i31
     show sayori 1a at i32
     show natsuki 1a at i33
-    with wipeleft_scene
+
+    show unblink
 
     show layer screens at ts_showscreens
 
@@ -1762,13 +1787,14 @@ label ts_carter8_posle_poems_suka:
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    play sound pageflip
+    show blink
+    pause 1.5
     scene ts_club_rain_shader1
     show ts_club_rain_ovr1
     show yuri 1a at i31
     show sayori 1a at i32
     show natsuki 1a at i33
-    with wipeleft_scene
+    show unblink
 
     show layer screens at ts_showscreens
 
@@ -1809,204 +1835,343 @@ label ts_carter8_posle_poems_suka:
     hide sayori
     show layer screens at ts_showscreens
     "После этих слов девочки расходятся. Да и мне смысла задерживаться больше нет. В конце концов, уже поздно, даже несмотря на то, что сегодня мы начали пораньше."
-#вайплефт на бг коридора С ДОЖДЁМ, бг локеров, бг двора С ДОЖДЁМ, и бг улицы ТОЖЕ СУКА С ДОЖДЁМ
-#ШЕЙДАКИ ПИЗДЕЦКОГО ЛИВНЯ ЕЩЁ ПРИХУЯРЬ
-play music raindrops
-"Твою же мать!"
-"Я, конечно, понимала, что за окном ливень бушует всё сильнее и сильнее, но я всё равно не ожидала, что ливень будет настолько сильным!"
-"Да, я помню, как рассказывала о том, что люблю погулять в дождь, но не в настолько сильный ливень. Здесь вообще ни одной души, кроме девочек из Литературного клуба. Да и то, не всех."
-"Нацуки и Юри в надежде на то, что дождь рано или поздно закончится, просто остались сидеть у входа."
-"Что касается Сайори, то, как я знаю, её дом находится недалеко от школы, поэтому она всё-таки решила испытать удачу и пошла навстречу ливню даже без зонтика."
-"Кстати, о нём - зонтик тут тоже не особый помощник, поскольку, помимо сильного дождя, сегодня ещё и сильный ветер, и капли всё равно будут падать на меня."
-"Поэтому я, по сути, просто зря его взяла."
-"Так что единственным решением будет просто пробежать рысью от школы до дома."
-if unluck6 == True:
-    "Тем более, что я в этом деле уже оскомину набила, сейчас мне будет легче."
-else:
-    "Всего-то полтора километра. Не умру же я, пока буду бежать!"
-#эффект ебать какого быстрого бега, даже скип дома, потому что у нас дождевого варианта нет. Но если нарулишь, то вот те доп строки на всякий случай
-#если нарулишь, то бг дома Моники. Если не нарулишь, то сразу бг входа со светом
-#эффект одышки, тоже ебейшей
-"Фух."
-if unluck6 == True:
-    "Понемногу я уже начинаю привыкать к забегам на средние дистанции, и пока я бежала до дома, не сильно и устала."
-    "Правда, как только я подхожу к дому и вхожу в него, я буквально вваливаюсь из последних сил."
-else:
-    "Видимо, желание не намокнуть было сильнее усталости, поэтому пока я бежала до дома, не сильно и устала."
-    "Правда, к моменту, когда до дома оставалось вот буквально пара шагов, адреналин кончился, и я буквально вваливаюсь из последних сил."
-#вайплефт на вечерний вход, флеш на вечерний вход со светом, вайплефт на кухню
-stop music
-m "Папа!.. Я пришла..."
-"Поскольку у папы ненормированный рабочий день, но нормированная 40-часовая рабочая неделя, в пятницу папа уходит с работы пораньше где-то на полтора часа."
-"Но даже если бы это была не пятница, а любой другой рабочий день, я знаю, что пришла я слишком поздно, чтобы прийти домой первой."
-play music reflection on water
-show hiroto 2g at f11
-ts_ft "Ну здравствуй, Моника."
-ts_ft 2h "Что-то ты сегодня слишком поздно домой пришла."
-ts_ft "Ты хоть не промокла?"
-show hiroto 1j at t11
-m "Что? А, да нет, я просто очень быстро бежала, я промокнуть просто не успела бы."
-show hiroto 2h at f11
-ts_ft "Точно не промокла? Может, лучше горячий душ примешь? А не то простудишься..."
-show hiroto 2j at t11
-m "Пап, да говорю же тебе, я и не замёрзла, и не промокла особо. Тут от школы до дома десять минут пешком, а если бежать всю дорогу, то и не больше пяти."
-show hiroto 1z at t11
-ts_ft "Ну, за пять минут непрерывного бега многое может произойти..."
-ts_ft 1h "Кстати, почему так поздно?"
-show hiroto 1j at t11
-m "Да опять в клубе задержалась..."
-show hiroto 1z at f11
-ts_ft "Понятно... Ну как в клубе дела?"
-show hiroto 1b1 at t11
-m "Да как обычно, мы поделились стихами, а потом... ну, это же последний учебный день перед фестивалем, поэтому я всем дала задание сделать кое-что, в чём каждая из них хороша."
-show hiroto 1c at f11
-ts_ft "Так, подожди, а ты что будешь делать?"
-show hiroto 1e at t11
-"Значит, не одна Нацуки такая вредина, а это просто вполне логичный вопрос."
-m "А я просто буду помогать каждой из них."
-"Что, кстати, вполне логичный ответ, потому что я хороша во всём понемногу."
-"Ну, кроме готовки, разумеется. Не знаю, почему Нацуки согласилась на это, но я буду что-то вроде помощницы повара из разряда «подай-принеси», пока сама она будет непосредственно готовить."
-m "Сначала помогу Сайори с листовками, потом помогу Юри с украшениями, а в воскресенье помогу Нацуки с выпечкой кексов."
-show hiroto 2b at f11
-ts_ft "У-у-у, да у вас очень качественное мероприятие будет, с учётом того, что вас всего четверо."
-ts_ft "Вот что: я в понедельник как-то отпрошусь, если не на целый день, то хотя бы на пару часов, чтобы посмотреть на ваш клуб."
-show hiroto 2a at t11
-m "Пап, впереди два выходных дня, а фестиваль уже в понедельник - отгул тебе никто не подпишет."
-show hiroto 1v at f11
-ts_ft "И то верно."
-ts_ft 2b "Но я же всегда могу отпроситься на пару часов, чтобы посмотреть на любимую дочурку и её поделку, которую она смастерила с нуля."
-ts_ft 1z1 "А если я не смогу отпроситься легально, я просто скажу, что мне нужно будет в несколько судов сразу, а сам просто в школу пойду."
-show hiroto 2b at t11
-"После этого папа рассмеялся. Да и я тоже начинаю смеяться."
-#вайплефт на тот же бг
-play music ts_mdl
-show hiroto 1c at f11
-ts_ft "Ладно, шутки шутками, но есть тоже нужно."
-ts_ft "Я сегодня пораньше с работы ушёл, так что успел полноценный ужин приготовить."
-show hiroto 1a at t11
-m "Так а что же на ужин?"
-show hiroto 2b at f11
-ts_ft "На ужин у нас рис с овощным салатом."
-ts_ft 1c "Правда, я уже поел, поэтому рис с овощным салатом будет только у тебя."
-show hiroto 1a at t11
-m "Отлично."
-stop music
-"Я подхожу к кастрюле и накладываю себе столько риса, сколько я могу себе позволить."
-#НВЛ ЕБАТЬ
-play music reminiscences
-"У нас вообще семья довольно... взрослая и понимающая. Нет такого, чтобы родители готовили то, что я совсем есть не буду, да и накладываем мы каждый себе сам, ровно столько, сколько мы можем съесть."
-"Нет такого, чтобы папа наложил мне больше положенного, а я как маленькая девочка дулась, наотрез отказываясь то, что мне было насыпано."
-"...ладно, каюсь, в детстве было несколько раз. Но поскольку мы все втроём уже взрослые, то таких казусов не происходит."
-"Да, кстати, как вы уже могли догадаться, никаких других сестёр и братьев у меня тоже никогда не было. Всю жизнь были лишь мама, папа да я."
-"Бабушек и дедушек, естественно, я в учёт не беру."
-"Хотя, если бы и брала, родители каждого родителя живут очень далеко от нас, да и приезжают они к нам довольно редко, поэтому можно сказать, что воспитали меня лишь мама с папой."
-"Но даже несмотря на то, что они редко к нам приезжают, в детстве я очень часто каталась к ним на лето, а иногда и на зимние каникулы."
-"Хорошее время было, беззаботное. До всех этих клубов, стресса и всего сопутствующего."
-#КОНЕЦ НВЛА ЕБАТЬ
-stop music
-"Но что-то я отвлеклась."
-play music ts_mdl
-"Я накладываю рис в тарелку, а также досыпаю немного овощного салата."
-show hiroto 1c at f11
-ts_ft "Так, в общем, ты кушай, пей чаёк, а я пока телевизор пойду посмотрю."
-show hiroto 1e at t11
-m "Хорошо, пап."
-show hiroto 2b at f11
-ts_ft "Ну вот и славненько."
-ts_ft "Всё, приятного тебе аппетита."
-show hiroto 2a at t11
-m "Спасибо, пап. Люблю тебя."
-show hiroto 2g at f11
-ts_ft "И я тебя люблю, солнышко."
-show hiroto at thide
-hide hiroto
-"С этими словами папа отправлися обратно в гостиную, досматривать очередную политическую передачу, в которой я ничего не смыслю."
-"А я приступаю к тому, чего я ждала со второй перемены: кушать."
-#вайплефт на тот же бг
-play music t8
-"Ужин получился просто замечательным."
-"Теперь надо бы как-то и сказать «пока» по-хорошему, чтобы папа не подумал, что я от него просто убегаю."
-"Я кое-как доковыливаю до гостиной."
-#вайплефт до вечерней гостиной с дождём, на экране телека опять политота, ТОЛЬКО БЛЯТЬ ДРУГАЯ УЖЕ, НЕ СТАСИК И МАКСИМКА КАЦ
-"Папа как всегда, даже не обращает на меня внимания, пока по телевизору идёт какая-то политическая передача."
-m "Пап, спасибо за ужин, было очень вкусно."
-ts_ft "Не за что, дорогая." #офскрин батя
-"Я пытаюсь придумать ещё хоть что-то для поддержания беседы."
-m "Ты же не забыл, что завтрак на следующий день готовишь ты?"
-ts_ft "Не забыл, конечно."
-"Разговор очевидно не клеился, но к счастью, папа спасает меня."
-ts_ft "Ты к себе пойдёшь или как?"
-m "Да, что-то устала я... Пойду отдыхать."
-ts_ft "Хорошо тогда. Я ещё телевизор посмотрю немного, и тоже уже спать лягу."
-m "Тогда, спокойной ночи?"
-ts_ft "Спокойной ночи, солнце. Люблю тебя."
-"Жаль только, что сегодня к вечеру солнце полностью исчезло."
-em "И не говори..."
-m "И я тебя люблю, пап."
-"С этими словами папа продолжил смотреть телевизор, а я отправилась к себе."
-#вайплефт на спальню Моники
-"Наконец-то... Родная спальня..."
-play music door to nightmare
-show monika 2bi at f11
-em "Что же, что же..."
-em "Настало время поговорить с тобой начистоту."
-show monika 2bh at t11
-m "Что ты вообще имеешь в виду?"
-show monika 4bd at f11
-em "Я имею в виду всю эту неделю."
-em 3bi "Я надеюсь, что даже такая бездарность, как ты, за неделю успела понять, что разговор со своим «подсознанием» - это..."
-em 2bn "Ну, не совсем правильно."
-show monika 2bm at t11
-m "Я повторяю свой вопрос: что ты вообще имеешь в виду?"
-#НУ НАКОНЕЦ-ТО НАЧИНАЕТСЯ БЛЯТЬ, НАЧИНАЕТСЯ АЛЬФА НОЙЗ БЛЯТЬ, ВСЯ ХУЙНЯ, СНАЧАЛА ПОКА СЛАБЕНЬКИЙ, 0.1-0.2
-show monika 2bi at f11
-em "Я, видимо, переоценила твои умственные способности."
-em 4bi "Ты спишь. Всё происходящее за эту неделю - это всё не было реальностью. Это было лишь твоё воображение."
-em "Всё, включая похмелье и утро у Сайори."
-if act2_chess == True:
-    em "Включая партию в шахматы с папой."
-#НОЙЗ СИЛЬНЕЕ, УЖЕ ГДЕ-ТО 0.3
-em "Написание своего первого стиха спустя несколько лет застоя, чтение манги с Нацуки, обмен стихами, подготовка к фестивалю..."
-em "Всё происходящее за эту неделю с того момента, как ты проснулась в субботу с дикого бодуна, и вплоть до того, как ты уснёшь сегодня..."
-#НОЙЗ 0.5
-em "Было просто сном. Больной фантазией одной девочки, которой захотелось друзей и уважения."
-em 3bd "Поэтому-то ты разговариваешь с моей {i}телесной формой{/i} только эту неделю. Потому что всё остальное время ты просто отмахивалась от меня, как от назойливых мух."
-#НОЙЗ 0.7
-em 4bi "Потому что я ненастоящая. Просто плод твоего воображения."
-hide monika
-#НОЙЗ РЕЗКО ТАК ПРЕКРАЩАЕТСЯ
-"Нет... Как же так?.."
-play music eerie #ЭТО МОЯ МУЗЫКА БЛЕАТЬ
-#ШЕЙДАКИ ОКНА С КАПЛЯМИ НУ НАКОНЕЦ-ТО ПРИГОЖДАЮТСЯ СУКА
-"Я подхожу к окну и задумываюсь."
-"Что, если всё, что происходило в эту неделю, на самом деле было просто сном?"
-"Да ну нет же, я же точно помню, как мне и самой снились сны..."
-"А сон во сне, внутри сна... Ну это же немыслимо!"
-"Как я каждое утро прощалась с папой..."
-if unluck6 == True:
-    "Ну, или почти каждое..."
-"А потом каждый вечер мы снова здоровались..."
-"Мы же обнимались при этом! И объятия при этом были очень даже реальными!"
-"Я кушала каждый день, пила кофе, умывалась ледяной водой, чистила зубы..."
-"...ну нет же, я в это просто не верю!"
-"Всё происходящее было слишком реальным, чтобы обозвать это «просто сном»!"
-"А Аки просто как обычно врёт... Ха-ха-ха, хе-хе-хе... Да, врёт..."
-"Да точно говорю, врёт и не краснеет!"
-"На этой ноте самовнушения я нервно хихикаю, выключаю свет, раздеваюсь и готовлюсь ко сну."
-em "Спокойной ночи, {i}Моника{/i}."
-em "Впереди у тебя будет {b}очень{/b} тяжёлая неделя."
-m "Ну, мы за выходные подготовимся к фестивалю, в понедельник будет сам фестиваль... Но потом-то что?"
-em "Увидишь сама. Завтра же."
-em "Посмотрим, как у тебя медленно будет течь крыша."
-em "Ты же помнишь, как я в субботу что-то говорила про циклы?"
-m "Помню, ясно и отчётливо. Так что ты всё-таки под этим имела в виду?"
-em "Ну, в общем... ты и сама завтра увидишь."
-m "ЧТО Я ДОЛЖНА УВИДЕТЬ?"
-em "Всё."
-em "А сейчас - спокойной ночи, правда."
-em "Это будет последняя твоя спокойная ночь..."
-em "Затишье уже закончилось. С завтрашнего дня начинается настоящая буря..."
-"Я не обращаю внимания на угрозы Аки и просто ложусь спать."
-"Завтра будет большой день."
-em "О-хо-хо, ещё какой!"
-m "Ну вот завтра и посмотрим..."
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_corridor_rain_shader1
+    show ts_corridor_rain_ovr1
+    with wipeleft_scene
+
+    stop ambience fadeout 2
+
+    pause 1
+
+    play sound pageflip
+    scene ts_l5
+    with wipeleft_scene
+
+    play ambience rain_out fadein 2
+    play sound pageflip
+    scene ts_nebo_fon_bgshka_suka
+    show ts_shkola_rain_ovr
+    show ts_rain
+    with wipeleft_scene
+
+    pause 2
+
+    play sound pageflip
+    scene ts_nebo_fon_bgshka_suka
+    show ts_street_rain_ovr
+    show ts_rain
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+    play music ts_raindrops fadein 2
+    "Твою же мать!"
+    "Я, конечно, понимала, что за окном ливень бушует всё сильнее и сильнее, но я всё равно не ожидала, что ливень будет настолько сильным!"
+    "Да, я помню, как рассказывала о том, что люблю погулять в дождь, но не в настолько сильный ливень. Здесь вообще ни одной души, кроме девочек из Литературного клуба. Да и то, не всех."
+    "Нацуки и Юри в надежде на то, что дождь рано или поздно закончится, просто остались сидеть у входа."
+    "Что касается Сайори, то, как я знаю, её дом находится недалеко от школы, поэтому она всё-таки решила испытать удачу и пошла навстречу ливню даже без зонтика."
+    "Кстати, о нём - зонтик тут тоже не особый помощник, поскольку, помимо сильного дождя, сегодня ещё и сильный ветер, и капли всё равно будут падать на меня."
+    "Поэтому я, по сути, просто зря его взяла."
+    "Так что единственным решением будет просто пробежать рысью от школы до дома."
+    if unluck6:
+        "Тем более, что я в этом деле уже оскомину набила, сейчас мне будет легче."
+    else:
+        "Всего-то полтора километра. Не умру же я, пока буду бежать!"
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound2 ts_woda_beg
+
+    show layer master at ts_running_fast
+
+    pause 4
+    stop sound2 fadeout 1
+    play sound pageflip
+    play sound3 ts_othodos_ot_bega fadein 2
+    scene ts_nebo_fon_bgshka_suka
+    show ts_house_rain_ovr
+    show ts_rain
+    show layer master at ts_ustal_suka
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+    "Фух."
+    if unluck6:
+        "Понемногу я уже начинаю привыкать к забегам на средние дистанции, и пока я бежала до дома, не сильно и устала."
+        "Правда, как только я подхожу к дому и вхожу в него, я буквально вваливаюсь из последних сил."
+    else:
+        "Видимо, желание не намокнуть было сильнее усталости, поэтому пока я бежала до дома, не сильно и устала."
+        "Правда, к моменту, когда до дома оставалось вот буквально пара шагов, адреналин кончился, и я буквально вваливаюсь из последних сил."
+
+    stop ambience fadeout 1
+    stop music fadeout 4
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play ambience rain_int fadein 2
+    play sound pageflip
+    scene ts_vhod_nolight
+    with wipeleft_scene
+
+    pause 1
+
+    play sound svet_on
+    scene ts_vhod_night
+    with flash
+
+    pause 1
+
+    play sound pageflip
+    scene ts_kitchen
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+    m "Папа!.. Я пришла..."
+    "Поскольку у папы ненормированный рабочий день, но нормированная 40-часовая рабочая неделя, в пятницу папа уходит с работы пораньше где-то на полтора часа."
+    "Но даже если бы это была не пятница, а любой другой рабочий день, я знаю, что пришла я слишком поздно, чтобы прийти домой первой."
+    play music ts_row fadein 2
+    show hiroto 2g at rn11
+    ts_ft "Ну здравствуй, Моника."
+    ts_ft 2h "Что-то ты сегодня слишком поздно домой пришла."
+    ts_ft "Ты хоть не промокла?"
+    show hiroto 1j at t11
+    m "Что? А, да нет, я просто очень быстро бежала, я промокнуть просто не успела бы."
+    show hiroto 2h at f11
+    ts_ft "Точно не промокла? Может, лучше горячий душ примешь? А не то простудишься..."
+    show hiroto 2j at t11
+    m "Пап, да говорю же тебе, я и не замёрзла, и не промокла особо. Тут от школы до дома десять минут пешком, а если бежать всю дорогу, то и не больше пяти."
+    show hiroto 1z at t11
+    ts_ft "Ну, за пять минут непрерывного бега многое может произойти..."
+    ts_ft 1h "Кстати, почему так поздно?"
+    show hiroto 1j at t11
+    m "Да опять в клубе задержалась..."
+    show hiroto 1z at f11
+    ts_ft "Понятно... Ну как в клубе дела?"
+    show hiroto 1b1 at t11
+    m "Да как обычно, мы поделились стихами, а потом... ну, это же последний учебный день перед фестивалем, поэтому я всем дала задание сделать кое-что, в чём каждая из них хороша."
+    show hiroto 1c at f11
+    ts_ft "Так, подожди, а ты что будешь делать?"
+    show hiroto 1e at t11
+    "Значит, не одна Нацуки такая вредина, а это просто вполне логичный вопрос."
+    m "А я просто буду помогать каждой из них."
+    "Что, кстати, вполне логичный ответ, потому что я хороша во всём понемногу."
+    "Ну, кроме готовки, разумеется. Не знаю, почему Нацуки согласилась на это, но я буду что-то вроде помощницы повара из разряда «подай-принеси», пока сама она будет непосредственно готовить."
+    m "Сначала помогу Сайори с листовками, потом помогу Юри с украшениями, а в воскресенье помогу Нацуки с выпечкой кексов."
+    show hiroto 2b at f11
+    ts_ft "У-у-у, да у вас очень качественное мероприятие будет, с учётом того, что вас всего четверо."
+    ts_ft "Вот что: я в понедельник как-то отпрошусь, если не на целый день, то хотя бы на пару часов, чтобы посмотреть на ваш клуб."
+    show hiroto 2a at t11
+    m "Пап, впереди два выходных дня, а фестиваль уже в понедельник - отгул тебе никто не подпишет."
+    show hiroto 1v at f11
+    stop music fadeout 4
+    ts_ft "И то верно."
+    ts_ft 2b "Но я же всегда могу отпроситься на пару часов, чтобы посмотреть на любимую дочурку и её поделку, которую она смастерила с нуля."
+    ts_ft 1z1 "А если я не смогу отпроситься легально, я просто скажу, что мне нужно будет в несколько судов сразу, а сам просто в школу пойду."
+    show hiroto 2b at t11
+    "После этого папа рассмеялся. Да и я тоже начинаю смеяться."
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
+    show hiroto 1c at f11
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+    play music ts_mdl fadein 2
+
+    ts_ft "Ладно, шутки шутками, но есть тоже нужно."
+    ts_ft "Я сегодня пораньше с работы ушёл, так что успел полноценный ужин приготовить."
+    show hiroto 1a at t11
+    m "Так а что же на ужин?"
+    show hiroto 2b at f11
+    ts_ft "На ужин у нас рис с овощным салатом."
+    stop music fadeout 4
+    ts_ft 1c "Правда, я уже поел, поэтому рис с овощным салатом будет только у тебя."
+    show hiroto 1a at t11
+    m "Отлично."
+    "Я подхожу к кастрюле и накладываю себе столько риса, сколько я могу себе позволить."
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    show layer master at ts_blur_ahuenno1
+    with dissolve2
+    show layer screens at ts_showscreens
+    play music ts_rem fadein 2
+    nvl clear
+    nvlbazar "{font=[prologue_font]}У нас вообще семья довольно... взрослая и понимающая. Нет такого, чтобы родители готовили то, что я совсем есть не буду, да и накладываем мы каждый себе сам, ровно столько, сколько мы можем съесть."
+    nvlbazar "{font=[prologue_font]}Нет такого, чтобы папа наложил мне больше положенного, а я как маленькая девочка дулась, наотрез отказываясь то, что мне было насыпано."
+    nvlbazar "{font=[prologue_font]}...ладно, каюсь, в детстве было несколько раз. Но поскольку мы все втроём уже взрослые, то таких казусов не происходит."
+    nvl clear
+    nvlbazar "{font=[prologue_font]}Да, кстати, как вы уже могли догадаться, никаких других сестёр и братьев у меня тоже никогда не было. Всю жизнь были лишь мама, папа да я."
+    nvlbazar "{font=[prologue_font]}Бабушек и дедушек, естественно, я в учёт не беру."
+    nvl clear
+    nvlbazar "{font=[prologue_font]}Хотя, если бы и брала, родители каждого родителя живут очень далеко от нас, да и приезжают они к нам довольно редко, поэтому можно сказать, что воспитали меня лишь мама с папой."
+    nvlbazar "{font=[prologue_font]}Но даже несмотря на то, что они редко к нам приезжают, в детстве я очень часто каталась к ним на лето, а иногда и на зимние каникулы."
+    nvlbazar "{font=[prologue_font]}Хорошее время было, беззаботное. До всех этих клубов, стресса и всего сопутствующего."
+    show layer screens at ts_hidescreens
+    nvlbazar " {w=1.0}{nw}"
+    show layer master
+    with dissolve2
+    stop music fadeout 2
+    show layer screens at ts_showscreens
+    "Но что-то я отвлеклась."
+    play music ts_mdl fadein 2
+    "Я накладываю рис в тарелку, а также досыпаю немного овощного салата."
+    show hiroto 1c at f11
+    ts_ft "Так, в общем, ты кушай, пей чаёк, а я пока телевизор пойду посмотрю."
+    show hiroto 1e at t11
+    m "Хорошо, пап."
+    show hiroto 2b at f11
+    ts_ft "Ну вот и славненько."
+    ts_ft "Всё, приятного тебе аппетита."
+    show hiroto 2a at t11
+    m "Спасибо, пап. Люблю тебя."
+    show hiroto 2g at f11
+    ts_ft "И я тебя люблю, солнышко."
+    show hiroto at cright with move
+    hide hiroto
+    stop music fadeout 4
+    "С этими словами папа отправлися обратно в гостиную, досматривать очередную политическую передачу, в которой я ничего не смыслю."
+    "А я приступаю к тому, чего я ждала со второй перемены: кушать."
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+    play music audio.t8 fadein 3
+    "Ужин получился просто замечательным."
+    "Теперь надо бы как-то и сказать «пока» по-хорошему, чтобы папа не подумал, что я от него просто убегаю."
+    "Я кое-как доковыливаю до гостиной."
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    show blink
+    pause 1.5
+
+    scene ts_living_room_rain_shader
+    show ts_living_room_rain_ovr
+    show unblink
+
+    show layer screens at ts_showscreens
+    "Папа как всегда, даже не обращает на меня внимания, пока по телевизору идёт какая-то политическая передача."
+    m "Пап, спасибо за ужин, было очень вкусно."
+    ts_ft "Не за что, дорогая."
+    "Я пытаюсь придумать ещё хоть что-то для поддержания беседы."
+    m "Ты же не забыл, что завтрак на следующий день готовишь ты?"
+    ts_ft "Не забыл, конечно."
+    "Разговор очевидно не клеился, но к счастью, папа спасает меня."
+    ts_ft "Ты к себе пойдёшь или как?"
+    m "Да, что-то устала я... Пойду отдыхать."
+    ts_ft "Хорошо тогда. Я ещё телевизор посмотрю немного, и тоже уже спать лягу."
+    m "Тогда, спокойной ночи?"
+    ts_ft "Спокойной ночи, солнце. Люблю тебя."
+    "Жаль только, что сегодня к вечеру солнце полностью исчезло."
+    em "И не говори..."
+    m "И я тебя люблю, пап."
+    "С этими словами папа продолжил смотреть телевизор, а я отправилась к себе."
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    show blink
+    pause 1.5
+
+    scene ts_bedroom
+    show unblink
+
+    show layer screens at ts_showscreens
+
+    "Наконец-то... Родная спальня..."
+    play music ts_dtn fadein 2
+    show monika 2bi at aki_spawn
+    em "Что же, что же..."
+    em "Настало время поговорить с тобой начистоту."
+    show monika 2bh at t11
+    m "Что ты вообще имеешь в виду?"
+    show monika 4bd at f11
+    em "Я имею в виду всю эту неделю."
+    em 3bi "Я надеюсь, что даже такая бездарность, как ты, за неделю успела понять, что разговор со своим «подсознанием» - это..."
+    em 2bn "Ну, не совсем правильно."
+    show monika 2bm at t11
+    m "Я повторяю свой вопрос: что ты вообще имеешь в виду?"
+    show layer master at Static(0.1)
+    show layer screens at Static(0.1)
+    show monika 2bi at f11
+    em "Я, видимо, переоценила твои умственные способности."
+    em 4bi "Ты спишь. Всё происходящее за эту неделю - это всё не было реальностью. Это было лишь твоё воображение."
+    em "Всё, включая похмелье и утро у Сайори."
+    if act2_chess:
+        em "Включая партию в шахматы с папой."
+    show layer master at Static(0.3)
+    show layer screens at Static(0.3)
+    em "Написание своего первого стиха спустя несколько лет застоя, чтение манги с Нацуки, обмен стихами, подготовка к фестивалю..."
+    em "Всё происходящее за эту неделю с того момента, как ты проснулась в субботу с дикого бодуна, и вплоть до того, как ты уснёшь сегодня..."
+    show layer master at Static(0.5)
+    show layer screens at Static(0.5)
+    em "Было просто сном. Больной фантазией одной девочки, которой захотелось друзей и уважения."
+    em 3bd "Поэтому-то ты разговариваешь с моей {i}телесной формой{/i} только эту неделю. Потому что всё остальное время ты просто отмахивалась от меня, как от назойливых мух."
+    show layer master at Static(0.7)
+    show layer screens at Static(0.7)
+    em 4bi "Потому что я ненастоящая. Просто плод твоего воображения."
+    hide monika
+    show layer master
+    show layer screens
+    "Нет... Как же так?.."
+    play music ts_roae fadein 2
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    show blink
+    pause 1.5
+
+    scene ts_residential_rain_shader
+    show unblink
+
+    show layer screens at ts_showscreens
+    "Я подхожу к окну и задумываюсь."
+    "Что, если всё, что происходило в эту неделю, на самом деле было просто сном?"
+    "Да ну нет же, я же точно помню, как мне и самой снились сны..."
+    "А сон во сне, внутри сна... Ну это же немыслимо!"
+    "Как я каждое утро прощалась с папой..."
+    if unluck6:
+        "Ну, или почти каждое..."
+    "А потом каждый вечер мы снова здоровались..."
+    "Мы же обнимались при этом! И объятия при этом были очень даже реальными!"
+    "Я кушала каждый день, пила кофе, умывалась ледяной водой, чистила зубы..."
+    "...ну нет же, я в это просто не верю!"
+    "Всё происходящее было слишком реальным, чтобы обозвать это «просто сном»!"
+    "А Аки просто как обычно врёт... Ха-ха-ха, хе-хе-хе... Да, врёт..."
+    "Да точно говорю, врёт и не краснеет!"
+    "На этой ноте самовнушения я нервно хихикаю, выключаю свет, раздеваюсь и готовлюсь ко сну."
+    em "Спокойной ночи, {i}Моника{/i}."
+    em "Впереди у тебя будет {b}очень{/b} тяжёлая неделя."
+    m "Ну, мы за выходные подготовимся к фестивалю, в понедельник будет сам фестиваль... Но потом-то что?"
+    em "Увидишь сама. Завтра же."
+    em "Посмотрим, как у тебя медленно будет течь крыша."
+    em "Ты же помнишь, как я в субботу что-то говорила про циклы?"
+    m "Помню, ясно и отчётливо. Так что ты всё-таки под этим имела в виду?"
+    em "Ну, в общем... ты и сама завтра увидишь."
+    show layer screens at vpunch
+    m "ЧТО Я ДОЛЖНА УВИДЕТЬ?"
+    em "Всё."
+    em "А сейчас - спокойной ночи, правда."
+    em "Это будет последняя твоя спокойная ночь..."
+    em "Затишье уже закончилось. С завтрашнего дня начинается настоящая буря..."
+    "Я не обращаю внимания на угрозы Аки и просто ложусь спать."
+    "Завтра будет большой день."
+    em "О-хо-хо, ещё какой!"
+    m "Ну вот завтра и посмотрим..."
+    return

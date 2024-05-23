@@ -50,11 +50,11 @@ transform WhiteNoise: # ЕБЕЙШИЙ БЕЛЫЙ ШУМ
     # Why? Because math.
     u_mode (0)
 
-transform Static: # ЕБЕЙШИЙ БЕЛЫЙ ШУМ С ТЕМНЫМ ОТТЕНКОМ
+transform Static(x): # ЕБЕЙШИЙ БЕЛЫЙ ШУМ С ТЕМНЫМ ОТТЕНКОМ (1)
     shader "MakeVisualNovels.Static"
     #See #Color section at the bottom for details.
     u_color (1.0, 1.0, 1.0, 1.0)
-    u_intensity (1)
+    u_intensity (x)
     # 0 for additive(brightening) static, 1 for multiplicative(darkening) static
     # When 0, intensity is inversed and higher numbers are less pronounced.
     # When 1, intensity is normal, and higher numbers are more pronounced.

@@ -8,6 +8,14 @@ init:
         xzoom 1.0 yzoom 1.0
         ease 0.5 xzoom 1.2 yzoom 1.2
 
+    transform ts_blur_ahuenno:
+        blur 0.0
+        ease 1.5 blur 9.0
+
+    transform ts_blur_ahuenno1:
+        blur 0.0
+        ease 1.5 blur 20.0
+
     transform ts_bg_exodus:
         xzoom 1.2 yzoom 1.2
         ease 0.5 xzoom 1.0 yzoom 1.0

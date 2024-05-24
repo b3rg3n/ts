@@ -236,6 +236,8 @@ label ts_scenario_0:
     hide kaori
     nvl clear
 
+    $ persistent.sprite_time = "day"
+
     nvlbazar "{font=[prologue_font]}Кстати, совсем забыла вас познакомить."
     nvlbazar "{font=[prologue_font]}Хотя, {i}познакомить{/i} кажется не совсем правильным словом..."
     nvlbazar "{font=[prologue_font]}Но с самого детства у меня были очень навязчивые мысли."

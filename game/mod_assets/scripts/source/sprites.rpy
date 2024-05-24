@@ -3743,7 +3743,6 @@ image hiroto 2z1 = ConditionSwitch(
 "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hiroto_pt + "2l.webp",(0,0), ts_hiroto_pt + "2r.webp",(0,0), ts_hiroto_pt + "z1.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
 True,im.Composite((960,960), (0,0), ts_hiroto_pt + "2l.webp",(0,0), ts_hiroto_pt + "2r.webp",(0,0), ts_hiroto_pt + "z1.webp") )
 
-
 ####ORIG
 ####САЁРИ
 image sayori 1 = im.Composite((960, 960), (0, 0), ts_sayori_pt + "1l.webp", (0, 0), ts_sayori_pt + "1r.webp", (0, 0), ts_sayori_pt + "a.webp")

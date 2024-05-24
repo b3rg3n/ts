@@ -7,58 +7,37 @@ label testing_label_blya:
         except AssertionError:
             pass
 
-    show hiroto 1a at t11
-    "1"
-    $ persistent.sprite_time = "sunset"
-    "2"
-    $ persistent.sprite_time = "night"
-    "3"
-    $ persistent.sprite_time = "day"
-    "4"
+    #$ persistent.sprite_time = "day"
 
-    "1212"
-    show layer screens at ts_hidescreens
-    " {w=1.0}{nw}"
-    show blink
-    pause 2
-    play ambience rain_int fadein 2
-    pause 1
-    scene ts_class_rain_shader
-    show ts_class_rain_ovr
-    show unblink
-    pause 1
-    show layer screens at ts_showscreens
-    "11"
-    return
+    #$ persistent.sprite_time = "clodly"
 
-    scene ts_nebo_fon_bgshka_suka
-    show ts_house_rain_ovr
-    show ts_rain
-    "тест"
+    #$ persistent.sprite_time = "sunset"
 
+    #$ persistent.sprite_time = "night"
 
-    scene ts_nebo_fon_bgshka_suka
-    show ts_shkola_rain_ovr
-    show ts_rain
-    "тест"
+    #$ persistent.uncolorize = "none"
 
-    scene ts_nebo_fon_bgshka_suka
-    show ts_street_rain_ovr
-    show ts_rain
-    "тест"
+    #$ persistent.uncolorize = "lite"
 
-
-    return
+    #$ persistent.uncolorize = "full"
 
     scene ts_club
-    show sayori 1a at t11
-    show layer master at Static
-    show layer screens at Static
-    s "Ну что, Моника..."
-    show sayori 1b at t11
-    s "Пиздец тебе, да?"
-    show sayori 1c at t11
-    s "Косоёбит?"
+    $ persistent.uncolorize = "none"
+    "без"
+    $ persistent.uncolorize = "lite"
+    "лёгкое"
+    $ persistent.uncolorize = "full"
+    "полное"
+    $ persistent.sprite_time = "day"
+    show elena a at t11
+    "день"
+    $ persistent.sprite_time = "cloudly"
+    "облачно"
+    $ persistent.sprite_time = "sunset"
+    "вечер"
+    $ persistent.sprite_time = "night"
+    "ночь"
+
     return
 ##############
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)

@@ -39,6 +39,7 @@ label ts_scenario_0:
 
     show layer screens at ts_showscreens
 
+    $ persistent.sprite_time = "cloudly"
 
     nvlbazar "{font=[prologue_font]}Конечно же, всё начиналось совсем по-другому..."
     nvlbazar "{font=[prologue_font]}Всё начиналось как у остальных людей: родилась, пошла в школу, выучилась... Правда, ещё не до конца, но всё же."

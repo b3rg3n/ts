@@ -78,8 +78,7 @@ init:
     $ music_list_ts["Sergey Eybog - Dance Of Fireflies"] = ts_muzzon + "es/ts_dof.ogg"
     $ music_list_ts["Sergey Eybog - Raindrops"] = ts_muzzon + "es/ts_raindrops.ogg"
 ###ОСТАЛЬНОЕ
-
-    $ music_list_ts["HCCH OST - Начало"] = ts_muzzon + "ts_emmk.ogg"
+    $ music_list_ts["Kashiwa Daisuke - april.#19"] = ts_muzzon + "ts_emmk.ogg"
     $ music_list_ts["kelly bailey - inhuman frequency"] = ts_muzzon + "ts_hl2.ogg"
     $ music_list_ts["Pixies - Where is My Mind (piano cover)"] = ts_muzzon + "ts_gramatik.ogg"
     $ music_list_ts["Joel Nielsen - Black Mesa Theme"] = ts_muzzon + "ts_mk.ogg"

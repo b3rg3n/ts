@@ -1094,7 +1094,6 @@ label ts_scenario_2:
 
     play sound door_break
     window hide
-    play music t6r
     scene ts_corridor at ts_razebal
     pause 0.3
     scene ts_corridor at ts_beg

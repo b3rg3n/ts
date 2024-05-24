@@ -21,24 +21,6 @@ label testing_label_blya:
 
     #$ persistent.uncolorize = "full"
 
-    scene ts_club
-    $ persistent.uncolorize = "none"
-    "без"
-    $ persistent.uncolorize = "lite"
-    "лёгкое"
-    $ persistent.uncolorize = "full"
-    "полное"
-    $ persistent.sprite_time = "day"
-    show elena a at t11
-    "день"
-    $ persistent.sprite_time = "cloudly"
-    "облачно"
-    $ persistent.sprite_time = "sunset"
-    "вечер"
-    $ persistent.sprite_time = "night"
-    "ночь"
-
-    return
 ##############
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 

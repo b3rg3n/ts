@@ -7,6 +7,15 @@ label testing_label_blya:
         except AssertionError:
             pass
 
+    play music audio.t5_yrec_pizdec
+    "1"
+    play music audio.t6o
+    "2"
+    play music audio.t6s
+    "3"
+    play music audio.t10y
+    "4"
+
     "1212"
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"

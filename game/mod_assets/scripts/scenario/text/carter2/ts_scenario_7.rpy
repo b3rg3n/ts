@@ -1392,6 +1392,9 @@ label ts_scenario_7:
     $ ts_y_carterseven_readpoem = False
     $ ts_n_carterseven_readpoem = False
     $ ts_first_carterseven_readpoem = False
+    $ ts_y_first_carterseven_readpoem = False
+    $ ts_n_first_carterseven_readpoem = False
+    $ ts_s_first_carterseven_readpoem = False
 
     jump cartersevenpoemsblya
 
@@ -1414,6 +1417,8 @@ label cartersevenpoemsblya:
     menu:
         "[carterseven_vibor_text_suka]"
         "Сайори" if not ts_s_carterseven_readpoem:
+            if not ts_y_first_carterseven_readpoem or ts_n_first_carterseven_readpoem:
+                $ ts_s_first_carterseven_readpoem = True
             play music audio.okevrsay
             hide zatemnenie_light with dspr
             $ ts_s_carterseven_readpoem = True
@@ -1538,17 +1543,17 @@ label cartersevenpoemsblya:
             s 2zd "Моника, спасибо, ты лучшая!"
             show sayori 2t at t11
             "На глазах Сайори даже выступили небольшие слёзки."
-            if ts_y_carterseven_readpoem and ts_n_carterseven_readpoem == False:
+            if not ts_y_carterseven_readpoem and ts_n_carterseven_readpoem:
                 em "Да, Моника, утешай малое дитя. Уверена, Юри и Нацуки её бездарный стиль в пух и прах разнесут."
             m "Ну, ну, Сайори, не плачь..."
             show sayori 2zd at f11
             s "Да это просто... слёзы счастья..."
             show sayori 1t at t11
             "Ну и ну... если она из-за одного только моего мнения аж прослезилась от счастья, то я даже не представляю, как будут обстоять дела с остальными..."
-            if ts_y_carterseven_readpoem or ts_n_carterseven_readpoem or (ts_y_carterseven_readpoem and ts_n_carterseven_readpoem) == True:
+            if ts_y_carterseven_readpoem or ts_n_carterseven_readpoem or (ts_y_carterseven_readpoem and ts_n_carterseven_readpoem):
                 "Хотя, возможно, это только передо мной она была настолько открытой..."
                 "В конце концов, другие же не знают о её депрессии. Хотя и могут подозревать."
-                if ts_y_carterseven_readpoem == True:
+                if ts_y_carterseven_readpoem:
                     "Особенно Юри. Она ведь дольше в клубе. Следовательно, дольше знает Сайори и её повадки."
             show sayori 2zc at f11
             s "Ладно, что-то мы Юри и Нацуки задерживаем..."
@@ -1557,7 +1562,7 @@ label cartersevenpoemsblya:
             show sayori 2x at f11
             stop music fadeout 5
             s "Тогда я дальше пойду обмениваться!"
-            if ts_y_carterseven_readpoem and ts_n_carterseven_readpoem == True:
+            if ts_y_carterseven_readpoem and ts_n_carterseven_readpoem:
                 show sayori 2a at t11
                 m "Сайори, это вообще-то последний обмен стихами, мы после этого уже домой пойдём."
                 show sayori 5b at f11
@@ -1572,7 +1577,7 @@ label cartersevenpoemsblya:
                 s "Н-ну... л-ладно..."
             show sayori at cright with move
             hide sayori
-            if ts_y_carterseven_readpoem and ts_n_carterseven_readpoem == False:
+            if not ts_y_carterseven_readpoem and ts_n_carterseven_readpoem:
                 "Хорошо. Первый обмен стихами прошёл успешно. Осталось ещё два. Но эта парочка будет куда более скептична к тому, что я написала."
             else:
                 "Так, что там дальше по плану?"
@@ -1581,6 +1586,8 @@ label cartersevenpoemsblya:
             jump cartersevenpoemsblya
 
         "Нацуки" if not ts_n_carterseven_readpoem:
+            if not ts_y_first_carterseven_readpoem or ts_s_first_carterseven_readpoem:
+                $ ts_n_first_carterseven_readpoem = True
             hide zatemnenie_light with dspr
             play music audio.okevrnat
             $ ts_n_carterseven_readpoem = True
@@ -1610,7 +1617,7 @@ label cartersevenpoemsblya:
             n "Ха-ха, и то верно."
             show natsuki 2j at t11
             "Нацуки достаёт своё стихотворение."
-            if ts_s_carterseven_readpoem == True:
+            if ts_s_carterseven_readpoem:
                 "В отличие от стиха Сайори, стихотворение Нацуки тоже было записано в какой-то записной книжке."
                 "Она кажется дешёвой, но хотя бы лучше, чем просто мятый лист бумаги."
                 "Правда, на первый взгляд строк как-то маловато... Ну да и пусть."
@@ -1734,11 +1741,11 @@ label cartersevenpoemsblya:
             show natsuki 2d at f11
             n "Что, п-правда???"
             n "Спасибо, Моника! Ты самая лучшая подруга, о которой я могла бы мечтать!"
-            if ts_s_carterseven_readpoem == True:
+            if ts_s_first_carterseven_readpoem:
                 n 2c "Знаешь, когда я обменивалась стихами с Юри, она восприняла мой стих куда более прохладно."
-            elif ts_y_carterseven_readpoem == True:
+            elif ts_y_first_carterseven_readpoem:
                 n 2c "Знаешь, когда я обменивалась стихами с Сайори, она тоже его похвалила, но и близко не так, как ты."
-            elif ts_y_carterseven_readpoem and ts_s_carterseven_readpoem == True:
+            elif ts_y_carterseven_readpoem and ts_s_carterseven_readpoem:
                 n 2c "Знаешь, когда я обменивалась стихами с другими девочками, они в целом его похвалили, но гораздо прохладнее и безразличнее."
             show natsuki 1a at t11
             "Ну, мне же не нужно, чтобы после первого же обмена девочки коллективно жаловались на то, что я заваливаю их непомерной работой, и что у них и без того домашние задания есть."
@@ -1776,6 +1783,8 @@ label cartersevenpoemsblya:
             jump cartersevenpoemsblya
 
         "Юри" if not ts_y_carterseven_readpoem:
+            if not ts_n_first_carterseven_readpoem or ts_s_first_carterseven_readpoem:
+                $ ts_y_first_carterseven_readpoem = True
             hide zatemnenie_light with dspr
             play music audio.okevryuri
             $ ts_y_carterseven_readpoem = True
@@ -1817,7 +1826,7 @@ label cartersevenpoemsblya:
             y 2q "П-правда, позже мне показалось, что в моём стихотворении всё не так, и... переписала его..."
             y 2d "Но зато теперь стих чист, опрятен, и его можно показывать другим!"
             show yuri 1c at t11
-            if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem == True:
+            if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem:
                 "Ну, хоть один человек догадался, что не обязательно предоставлять мне стихи до конца встречи клуба, и что это терпит до завтрашней встречи."
                 "Правда, Сайори что-то говорила про то, что она переписывала стих по памяти... Но это другое."
             m "Ну так... покажешь?"
@@ -1825,7 +1834,7 @@ label cartersevenpoemsblya:
             y "Конечно!"
             show yuri 3c at t11
             "Юри достаёт записную книжку со своим стихотворением."
-            if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem == True:
+            if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem:
                 "Из всех трёх её книжка выглядит самой красивой, хотя и не могу не отметить, что очень уж она своеобразная."
             else:
                 "Красивая, хотя и... очень своеобразная."
@@ -1855,7 +1864,7 @@ label cartersevenpoemsblya:
             y 2v "В-видно, твоё стихотворение - уже далеко не первое..."
             y 2zi "Какой у тебя писательский опыт?"
             show yuri 2s at t11
-            if ts_n_carterseven_readpoem == True:
+            if ts_n_carterseven_readpoem:
                 "Юри повторяет тот же вопрос, что и Нацуки."
                 "Что же, буду давать такой же ответ."
             m "Н-ну... Небольшой..."
@@ -1877,10 +1886,10 @@ label cartersevenpoemsblya:
             em "И кто за это в ответе?"
             "«А про кого этот стих, напомните-ка?»"
             em "Ну так отчитывают тебя, а не меня!"
-            if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem == False:
+            if not ts_s_carterseven_readpoem and ts_n_carterseven_readpoem:
                 "Но зато я в итоге оказалась права - Юри действительно самая опытная в плане писательских навыков."
             m "С-спасибо, Юри, за конструктивную критику..."
-            if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem == True:
+            if ts_s_carterseven_readpoem and ts_n_carterseven_readpoem:
                 "Хоть кто-то действительно понял суть этого мероприятия..."
             show yuri 1zi at f11
             y "Всегда пожалуйста."
@@ -1946,7 +1955,7 @@ label cartersevenpoemsblya:
             y 2zi "Т-тогда... я пойду дальше?"
             stop music fadeout 4
             show yuri 2s at t11
-            if ts_n_carterseven_readpoem and ts_s_carterseven_readpoem == True:
+            if ts_n_carterseven_readpoem and ts_s_carterseven_readpoem:
                 m "Так мы же уже закончили..."
                 show yuri 2q at f11
                 y "Д-да, в-верно, п-прости..."

@@ -312,3 +312,4 @@ define audio.okevrnat1 = "<loop 4.444>mod_assets/source/audio/ost/orig/5_ghost.o
 define audio.okevrmon = "<loop 4.444>mod_assets/source/audio/ost/orig/5_monika.ogg"
 define audio.t5_all = "<loop 4.444>mod_assets/source/audio/ost/orig/5_all.ogg"
 define audio.t5_yn = "<loop 4.444>mod_assets/source/audio/ost/orig/5_yn.ogg"
+define audio.t5_yrec_pizdec = "<loop 9.938>mod_assets/source/audio/ost/orig/5_yuri2.ogg"

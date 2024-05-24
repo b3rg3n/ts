@@ -2133,72 +2133,390 @@ image minami 4bzf = ConditionSwitch(
 "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "2bl.webp", (0, 0), ts_momika_pt + "2br.webp", (0, 0), ts_momika_pt + "zf.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
 True,im.Composite((960,960), (0,0), ts_momika_pt + "2bl.webp", (0, 0), ts_momika_pt + "2br.webp", (0, 0), ts_momika_pt + "zf.webp") )
 
+image minami 1a = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "a.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "a.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "a.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "a.webp") )
 
-image minami 1a = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "a.webp")
-image minami 1b = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "b.webp")
-image minami 1c = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "c.webp")
-image minami 1d = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "d.webp")
-image minami 1e = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "e.webp")
-image minami 1f = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "f.webp")
-image minami 1g = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "g.webp")
-image minami 1h = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "h.webp")
-image minami 1i = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "i.webp")
-image minami 1j = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "j.webp")
-image minami 1k = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "k.webp")
-image minami 1l = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "l.webp")
-image minami 1m = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "m.webp")
-image minami 1n = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "n.webp")
-image minami 1o = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "o.webp")
-image minami 1p = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "p.webp")
-image minami 1q = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "q.webp")
-image minami 1r = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "r.webp")
-image minami 1s = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "s.webp")
-image minami 1t = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "t.webp")
-image minami 1u = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "u.webp")
-image minami 1v = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "v.webp")
-image minami 1w = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "w.webp")
-image minami 1x = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "x.webp")
-image minami 1y = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "y.webp")
-image minami 1z = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "z.webp")
-image minami 1za = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "za.webp")
-image minami 1zb = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zb.webp")
-image minami 1zc = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zc.webp")
-image minami 1zd = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zd.webp")
-image minami 1ze = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "ze.webp")
-image minami 1zf = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zf.webp")
+image minami 1b = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "b.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "b.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "b.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "b.webp") )
 
-image minami 2a = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "a.webp")
-image minami 2b = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "b.webp")
-image minami 2c = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "c.webp")
-image minami 2d = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "d.webp")
-image minami 2e = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "e.webp")
-image minami 2f = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "f.webp")
-image minami 2g = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "g.webp")
-image minami 2h = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "h.webp")
-image minami 2i = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "i.webp")
-image minami 2j = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "j.webp")
-image minami 2k = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "k.webp")
-image minami 2l = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "l.webp")
-image minami 2m = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "m.webp")
-image minami 2n = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "n.webp")
-image minami 2o = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "o.webp")
-image minami 2p = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "p.webp")
-image minami 2q = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "q.webp")
-image minami 2r = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "r.webp")
-image minami 2s = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "s.webp")
-image minami 2t = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "t.webp")
-image minami 2u = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "u.webp")
-image minami 2v = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "v.webp")
-image minami 2w = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "w.webp")
-image minami 2x = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "x.webp")
-image minami 2y = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "y.webp")
-image minami 2z = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "z.webp")
-image minami 2za = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "za.webp")
-image minami 2zb = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zb.webp")
-image minami 2zc = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zc.webp")
-image minami 2zd = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zd.webp")
-image minami 2ze = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "ze.webp")
-image minami 2zf = im.Composite((960, 960), (0, 0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zf.webp")
+image minami 1c = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "c.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "c.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "c.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "c.webp") )
+
+image minami 1d = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "d.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "d.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "d.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "d.webp") )
+
+image minami 1e = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "e.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "e.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "e.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "e.webp") )
+
+image minami 1f = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "f.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "f.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "f.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "f.webp") )
+
+image minami 1g = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "g.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "g.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "g.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "g.webp") )
+
+image minami 1h = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "h.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "h.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "h.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "h.webp") )
+
+image minami 1i = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "i.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "i.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "i.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "i.webp") )
+
+image minami 1j = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "j.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "j.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "j.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "j.webp") )
+
+image minami 1k = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "k.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "k.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "k.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "k.webp") )
+
+image minami 1l = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "l.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "l.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "l.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "l.webp") )
+
+image minami 1m = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "m.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "m.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "m.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "m.webp") )
+
+image minami 1n = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "n.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "n.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "n.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "n.webp") )
+
+image minami 1o = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "o.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "o.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "o.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "o.webp") )
+
+image minami 1p = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "p.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "p.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "p.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "p.webp") )
+
+image minami 1q = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "q.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "q.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "q.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "q.webp") )
+
+image minami 1r = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "r.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "r.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "r.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "r.webp") )
+
+image minami 1s = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "s.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "s.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "s.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "s.webp") )
+
+image minami 1t = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "t.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "t.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "t.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "t.webp") )
+
+image minami 1u = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "u.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "u.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "u.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "u.webp") )
+
+image minami 1v = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "v.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "v.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "v.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "v.webp") )
+
+image minami 1w = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "w.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "w.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "w.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "w.webp") )
+
+image minami 1x = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "x.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "x.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "x.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "x.webp") )
+
+image minami 1y = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "y.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "y.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "y.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "y.webp") )
+
+image minami 1z = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "z.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "z.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "z.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "z.webp") )
+
+image minami 1za = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "za.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "za.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "za.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "za.webp") )
+
+image minami 1zb = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zb.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zb.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zb.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zb.webp") )
+
+image minami 1zc = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zc.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zc.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zc.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zc.webp") )
+
+image minami 1zd = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zd.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zd.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zd.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zd.webp") )
+
+image minami 1ze = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "ze.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "ze.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "ze.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "ze.webp") )
+
+image minami 1zf = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zf.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zf.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zf.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "zf.webp") )
+
+image minami 2a = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "a.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "a.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "a.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "a.webp") )
+
+image minami 2b = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "b.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "b.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "b.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "b.webp") )
+
+image minami 2c = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "c.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "c.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "c.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "c.webp") )
+
+image minami 2d = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "d.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "d.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "d.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "d.webp") )
+
+image minami 2e = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "e.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "e.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "e.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "e.webp") )
+
+image minami 2f = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "f.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "f.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "f.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "f.webp") )
+
+image minami 2g = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "g.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "g.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "g.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "g.webp") )
+
+image minami 2h = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "h.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "h.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "h.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "h.webp") )
+
+image minami 2i = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "i.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "i.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "i.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "i.webp") )
+
+image minami 2j = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "j.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "j.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "j.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "j.webp") )
+
+image minami 2k = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "k.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "k.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "k.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "k.webp") )
+
+image minami 2l = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "l.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "l.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "l.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "l.webp") )
+
+image minami 2m = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "m.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "m.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "m.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "m.webp") )
+
+image minami 2n = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "n.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "n.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "n.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "n.webp") )
+
+image minami 2o = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "o.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "o.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "o.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "o.webp") )
+
+image minami 2p = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "p.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "p.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "p.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "p.webp") )
+
+image minami 2q = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "q.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "q.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "q.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "q.webp") )
+
+image minami 2r = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "r.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "r.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "r.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "r.webp") )
+
+image minami 2s = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "s.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "s.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "s.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "s.webp") )
+
+image minami 2t = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "t.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "t.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "t.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "t.webp") )
+
+image minami 2u = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "u.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "u.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "u.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "u.webp") )
+
+image minami 2v = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "v.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "v.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "v.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "v.webp") )
+
+image minami 2w = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "w.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "w.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "w.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "w.webp") )
+
+image minami 2x = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "x.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "x.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "x.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "x.webp") )
+
+image minami 2y = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "y.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "y.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "y.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "y.webp") )
+
+image minami 2z = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "z.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "z.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "z.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "z.webp") )
+
+image minami 2za = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "za.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "za.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "za.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "za.webp") )
+
+image minami 2zb = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zb.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zb.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zb.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zb.webp") )
+
+image minami 2zd = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zd.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zd.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zd.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zd.webp") )
+
+image minami 2zc = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zc.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zc.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zc.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zc.webp") )
+
+image minami 2ze = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "ze.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "ze.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "ze.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "ze.webp") )
+
+image minami 2zf = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zf.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zf.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zf.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1l.webp", (0, 0), ts_momika_pt + "2r.webp", (0, 0), ts_momika_pt + "zf.webp") )
+
 
 image minami 3a = im.Composite((960, 960), (0, 0), ts_momika_pt + "2l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "a.webp")
 image minami 3b = im.Composite((960, 960), (0, 0), ts_momika_pt + "2l.webp", (0, 0), ts_momika_pt + "1r.webp", (0, 0), ts_momika_pt + "b.webp")

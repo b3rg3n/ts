@@ -734,7 +734,11 @@ image momika 4q = im.Composite((960, 960), (0, 0), ts_bug_pt + "2l.webp", (0, 0)
 image momika 4r = im.Composite((960, 960), (0, 0), ts_bug_pt + "2l.webp", (0, 0), ts_bug_pt + "2r.webp", (0, 0), ts_bug_pt + "r.webp")
 
 ####ХИРОТО
-image hiroto 1a = im.Composite((960, 960), (0, 0), ts_hiroto_pt + "1l.webp", (0, 0), ts_hiroto_pt + "1r.webp", (0, 0), ts_hiroto_pt + "a.webp")
+image hiroto 1a = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hiroto_pt + "1l.webp",(0,0), ts_hiroto_pt + "1r.webp",(0,0), ts_hiroto_pt + "a.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hiroto_pt + "1l.webp",(0,0), ts_hiroto_pt + "1r.webp",(0,0), ts_hiroto_pt + "a.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hiroto_pt + "1l.webp",(0,0), ts_hiroto_pt + "1r.webp",(0,0), ts_hiroto_pt + "a.webp") )
+
 image hiroto 1a1 = im.Composite((960, 960), (0, 0), ts_hiroto_pt + "1l.webp", (0, 0), ts_hiroto_pt + "1r.webp", (0, 0), ts_hiroto_pt + "a1.webp")
 image hiroto 1a2 = im.Composite((960, 960), (0, 0), ts_hiroto_pt + "1l.webp", (0, 0), ts_hiroto_pt + "1r.webp", (0, 0), ts_hiroto_pt + "a2.webp")
 image hiroto 1b = im.Composite((960, 960), (0, 0), ts_hiroto_pt + "1l.webp", (0, 0), ts_hiroto_pt + "1r.webp", (0, 0), ts_hiroto_pt + "b.webp")

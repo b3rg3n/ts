@@ -7,13 +7,13 @@ label testing_label_blya:
         except AssertionError:
             pass
 
-    play music audio.t5_yrec_pizdec
+    show hiroto 1a at t11
     "1"
-    play music audio.t6o
+    $ persistent.sprite_time = "sunset"
     "2"
-    play music audio.t6s
+    $ persistent.sprite_time = "night"
     "3"
-    play music audio.t10y
+    $ persistent.sprite_time = "day"
     "4"
 
     "1212"

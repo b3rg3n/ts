@@ -718,34 +718,147 @@ image himari 1zzzza  = ConditionSwitch(
 True,im.Composite((960,960), (0,0), ts_himari_pt + "1.webp", (0, 0), ts_himari_pt + "zzzza.webp") )
 
 #####КАОРИ ЕБАТЬ
-image kaori 21a = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "a.webp")
-image kaori 21b = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "b.webp")
-image kaori 21c = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "c.webp")
-image kaori 21d = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "d.webp")
-image kaori 21e = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "e.webp")
-image kaori 21f = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "f.webp")
-image kaori 21g = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "g.webp")
-image kaori 21h = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "h.webp")
-image kaori 21i = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "i.webp")
-image kaori 21j = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "j.webp")
-image kaori 21k = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "k.webp")
-image kaori 21l = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "l.webp")
-image kaori 21m = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "m.webp")
-image kaori 21n = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "n.webp")
-image kaori 21o = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "o.webp")
-image kaori 21p = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "p.webp")
-image kaori 21q = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "q.webp")
-image kaori 21r = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "r.webp")
-image kaori 21s = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "s.webp")
-image kaori 21t = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "t.webp")
-image kaori 21u = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "u.webp")
-image kaori 21v = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "v.webp")
-image kaori 21w = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "w.webp")
-image kaori 21x = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "x.webp")
-image kaori 21y = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "y.webp")
-image kaori 21z = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "z.webp")
-image kaori 21za = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "za.webp")
-image kaori 21zb = im.Composite((960, 960), (0, 0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "zb.webp")
+image kaori 21a  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "a.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "a.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "a.webp") )
+
+image kaori 21b  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "b.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "b.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "b.webp") )
+
+image kaori 21c  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "c.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "c.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "c.webp") )
+
+image kaori 21d  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "d.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "d.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "d.webp") )
+
+image kaori 21e  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "e.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "e.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "e.webp") )
+
+image kaori 21f  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "f.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "f.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "f.webp") )
+
+image kaori 21g  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "g.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "g.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "g.webp") )
+
+image kaori 21h  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "h.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "h.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "h.webp") )
+
+image kaori 21i  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "i.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "i.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "i.webp") )
+
+image kaori 21j  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "j.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "j.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "j.webp") )
+
+image kaori 21k  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "k.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "k.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "k.webp") )
+
+image kaori 21l  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "l.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "l.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "l.webp") )
+
+image kaori 21m  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "m.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "m.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "m.webp") )
+
+image kaori 21n  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "n.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "n.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "n.webp") )
+
+image kaori 21o  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "o.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "o.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "o.webp") )
+
+image kaori 21p  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "p.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "p.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "p.webp") )
+
+image kaori 21q  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "q.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "q.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "q.webp") )
+
+image kaori 21r  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "r.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "r.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "r.webp") )
+
+image kaori 21s  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "s.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "s.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "s.webp") )
+
+image kaori 21t  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "t.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "t.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "t.webp") )
+
+image kaori 21u  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "u.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "u.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "u.webp") )
+
+image kaori 21v  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "v.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "v.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "v.webp") )
+
+image kaori 21w  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "w.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "w.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "w.webp") )
+
+image kaori 21x  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "x.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "x.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "x.webp") )
+
+image kaori 21y  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "y.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "y.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "y.webp") )
+
+image kaori 21z  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "z.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "z.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + ".webp") )
+
+image kaori 21za  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "za.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "za.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "za.webp") )
+
+image kaori 21zb  = ConditionSwitch(
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "zb.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "zb.webp"), im.matrix.tint(0.63, 0.78, 0.82) ),
+True,im.Composite((960,960), (0,0), ts_hime_pt + "1.webp", (0, 0), ts_hime_pt + "zb.webp") )
+
+
 
 image kaori 22a = im.Composite((960, 960), (0, 0), ts_hime_pt + "2.webp", (0, 0), ts_hime_pt + "a.webp")
 image kaori 22b = im.Composite((960, 960), (0, 0), ts_hime_pt + "2.webp", (0, 0), ts_hime_pt + "b.webp")

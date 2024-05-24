@@ -1492,7 +1492,7 @@ label cartersevenpoemsblya:
             s "Так что я уверена, что мой стих и рядом не будет стоять с твоим..."
             "Ну по оформлению так уж точно..."
             m "Конечно, давай."
-            if ts_y_carterseven_readpoem and ts_n_carterseven_readpoem == False:
+            if not ts_y_carterseven_readpoem and ts_n_carterseven_readpoem:
                 "В конце концов, я это всё мероприятие и придумала, и мне же теперь за мои хотелки и отдуваться..."
 
             show layer screens at ts_hidescreens

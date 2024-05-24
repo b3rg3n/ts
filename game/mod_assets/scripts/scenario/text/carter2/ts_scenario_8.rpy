@@ -47,7 +47,7 @@ label ts_scenario_8:
     show monika 2bc at t11
     m "Да без тебя знаю... Сегодня завтрак готовлю я."
     m "Но можно же полежать в кровати ещё... пять... минуточек?.."
-    if unluck6 == True:
+    if unluck6:
         show monika 3bi at f11
         em "Ты уже один раз полежала ещё пять минуточек. Рассказать тебе, чем это всё закончилось, или ты «и без меня знаешь»?"
         show monika 2bh at t11
@@ -266,10 +266,10 @@ label ts_scenario_8:
     play music ts_tg fadein 3
     "Пока суть да дело, уже и несколько минут прошло."
     "Я ещё раз проверяю время. Уже 8:05."
-    if unluck6 == True:
+    if unluck6:
         show monika 2d at aki_spawn
         em "Что-то ты рановато на этот раз."
-        if unluck4 == True:
+        if unluck4:
             em 3k "Устала опаздывать?"
             show monika 3j at t11
             m "Гр-р-р... Отстань, а?"
@@ -325,12 +325,12 @@ label ts_scenario_8:
     "А часы тем временем показывают уже 8:20."
     "Должно быть, разговор с Аки занял чуть больше времени, чем мне казалось."
     "Ну что же, сегодня все уроки исключительно физико-математические, поэтому все кабинеты расположены в ближнем крыле школы."
-    if unluck4 and unluck6 == True:
+    if unluck4 and unluck6:
         em "Ура-а-а, хоть раз не опоздаешь."
         "«А когда я вообще в школу опаздывала, не считая этих двух раз?»"
         em "...неважно..."
         "Не обращая внимания на Аки, я неторопливо добираюсь до кабинета."
-    elif unluck4 == True:
+    elif unluck4:
         em "Ну хотя бы в эту пятницу ты не опоздаешь."
         "«А когда я вообще опаздывала, не считая прошлой пятницы?»"
         em "...неважно..."
@@ -434,7 +434,7 @@ label ts_scenario_8:
     show layer screens at ts_showscreens
     "М-м-м..."
     "Кажется, на качестве самой еды такие перестановки также отразились. Я такого вкусного тортика не ела никогда в жизни, даже на свой собственный день рождения."
-    if unluck6 == False:
+    if not unluck6:
         em "Я тебе уже говорила, что ещё несколько приёмов пищи сладкого, и твоя толстая задница больше в дверной проём вмещаться не будет?"
         show layer screens at vpunch
         "«Отстань уже, а?»"
@@ -581,7 +581,7 @@ label ts_scenario_8:
     "Тем временем на улице уже слышны первые перестуки дождя."
     "Кап-кап-кап, кап-кап-кап... Я очень люблю дождь. Причём я одновременно люблю как просто наблюдать за ним за окном, так и гулять в сам дождь."
     "Ну, только если он не очень сильный, конечно, а то так и простудиться недалеко..."
-    if unluck6 == False:
+    if not unluck6:
         em "А следовательно, простужусь и я. А ты знаешь, на что готово твоё «больное подсознание»."
         "«Вообще-то, не знаю - я поэтому потом и передумала и любезно отказалась, хотя изначально приглашала тебя к себе в воду.»"
         em "Ой, ну и пожалуйста..."
@@ -741,7 +741,9 @@ label ts_scenario_8:
     $ ts_carter8_poem_sayori = False
     $ ts_carter8_poem_natsuki = False
     $ ts_carter8_poem_yuri = False
-
+    $ ts_carter8_poem_yuri_first = False
+    $ ts_carter8_poem_natsuki_first = False
+    $ ts_carter8_poem_sayori_first = False
     jump poemresponses2suka
 
 label poemresponses2suka:
@@ -753,7 +755,7 @@ label poemresponses2suka:
     if ts_carter8_poem_sayori and ts_carter8_poem_natsuki and ts_carter8_poem_yuri:
         jump ts_carter8_posle_poems_suka
 
-    if ts_carter8_poem_firstread == False:
+    if not ts_carter8_poem_firstread:
         $ menutext = "Кому я покажу стихотворение первой?"
     else:
         $ menutext = "Кому я покажу стихотворение следующей?"
@@ -766,6 +768,8 @@ label poemresponses2suka:
         "[menutext]"
         
         "Сайори" if not ts_carter8_poem_sayori:
+            if not ts_carter8_poem_yuri_first or ts_carter8_poem_natsuki_first:
+                $ ts_carter8_poem_sayori_first = True
             hide zatemnenie with dspr
             $ ts_carter8_poem_sayori = True
             if not ts_carter8_poem_firstread:
@@ -986,17 +990,19 @@ label poemresponses2suka:
                 s "Здорово!"
                 show sayori at cright with move
                 hide sayori
-                if ts_carter8_poem_yuri:
+                if ts_carter8_poem_yuri_first:
                     "После этих слов она быстро пошла обмениваться стихами с Юри."
-                elif ts_carter8_poem_natsuki:
+                elif ts_carter8_poem_natsuki_first:
                     "После этих слов она быстро пошла обмениваться стихами с Нацуки."
-                elif not ts_carter8_poem_yuri and ts_carter8_poem_natsuki:
+                elif not ts_carter8_poem_yuri_first and ts_carter8_poem_natsuki_first:
                     "После этих слов она быстро пошла обмениваться стихами с другой участницей."
                 "Да и мне тоже стоит не терять времени."
 
             jump poemresponses2suka
     
         "Нацуки" if not ts_carter8_poem_natsuki:
+            if not ts_carter8_poem_yuri_first or ts_carter8_poem_sayori_first:
+                $ ts_carter8_poem_natsuki_first = True
             hide zatemnenie with dspr
             $ ts_carter8_poem_natsuki = True
             if not ts_carter8_poem_firstread:
@@ -1109,10 +1115,10 @@ label poemresponses2suka:
 
             "Нацуки как-то слишком долго читает мою стену текста."
             "Хотя, это не удивительно."
-            if ts_carter8_poem_sayori:
+            if ts_carter8_poem_sayori_first:
                 "Сайори тоже его долго читала."
                 "Даже слишком долго..."
-            elif ts_carter8_poem_yuri:
+            elif ts_carter8_poem_yuri_first:
                 "Юри тоже его долго читала."
             elif ts_carter8_poem_sayori and ts_carter8_poem_yuri:
                 "Остальные девочки тоже его долго читали."
@@ -1200,7 +1206,7 @@ label poemresponses2suka:
             show natsuki 1k at f11
             n "Ну, я пойду тогда?"
             stop music fadeout 5
-            if ts_carter8_poem_sayori and ts_carter8_poem_yuri == True:
+            if ts_carter8_poem_sayori and ts_carter8_poem_yuri:
                 show natsuki 1za at t11
                 m "Подожди, я ещё одно небольшое объявление хочу сделать, и тогда уже все вместе пойдём."
                 show natsuki 1k at f11
@@ -1219,6 +1225,8 @@ label poemresponses2suka:
             jump poemresponses2suka
     
         "Юри" if not ts_carter8_poem_yuri:
+            if not ts_carter8_poem_natsuki_first or ts_carter8_poem_sayori_first:
+                $ ts_carter8_poem_yuri_first = True
             hide zatemnenie with dspr
             $ ts_carter8_poem_yuri = True
             if not ts_carter8_poem_firstread:

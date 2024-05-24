@@ -1057,7 +1057,7 @@ label poemresponses2suka:
             show natsuki 1n at t11
             m "Да-да, уже заканчиваю."
             show natsuki 1i at t11
-            n "Нацуки, у тебя что, одна тетрадка на все предметы?"
+            m "Нацуки, у тебя что, одна тетрадка на все предметы?"
             show natsuki 1s at t11
             "Теперь уже мешкается Нацуки."
             show natsuki 1t at f11

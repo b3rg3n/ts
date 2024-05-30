@@ -144,7 +144,7 @@ label splashscreen:
             _preferences.volumes['sfx'] = 1.0
             _preferences.volumes['voice'] = .65
     if persistent.skip_splash is True:
-        jump splashscreen3
+        return
     else:
         jump spashcreen1
 
@@ -183,22 +183,6 @@ label splashscreen2:
     with dissolve4
     $ renpy.pause(1, hard=True)
     $ persistent.skip_splash = True
-    jump splashscreen3
-
-label splashscreen3:
-    scene ts_anarchy with dissolve
-    pause 1
-    scene ts_anarchy1
-    pause 0.01
-    show screen ts_tears(20, 0.1, 0.1, 0, 40)
-    play sound s_kill_glitch1
-    pause 0.25
-    stop sound
-    hide screen ts_tears
-    scene ts_anarchy
-    pause 0.5
-    scene black
-    with dissolve
     return
 
 screen skitsoglasenblya:

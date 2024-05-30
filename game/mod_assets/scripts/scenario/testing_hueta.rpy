@@ -20,6 +20,12 @@ label testing_label_blya:
     #$ persistent.uncolorize = "lite"
 
     #$ persistent.uncolorize = "full"
+    scene black
+    pause 2
+    $ Chapter("Владлен, брат")
+    $ Chapter("С 24хчемтолетием тебя")
+    $ Chapter("Шоп хуй стоял и бабки были")
+    $ Chapter("Остальное не важно")
 
 ##############
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)

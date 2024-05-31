@@ -17,8 +17,9 @@ init:
     $ music_list_ts["Hallucinator - Mosh"] = ts_muzzon + "menu_ost/zastavka/ts_mosh.ogg"
     $ music_list_ts["Moe Era OST - Final Scene Soft"] = ts_muzzon + "menu_ost/zastavka/ts_soft.ogg"
     $ music_list_ts["wnuk2380 - Outofit"] = ts_muzzon + "menu_ost/zastavka/ts_wnuk.ogg"
-    $ music_list_ts["Mudasheep - One Way or Another"] = ts_muzzon + "menu_ost/zastavka/ts_bad_credits.ogg"
-    $ music_list_ts["Dead Before Down OST"] = ts_muzzon + "menu_ost/zastavka/ts_good_credits.ogg"
+    $ music_list_ts["Mudasheep - One Way or Another"] = ts_muzzon + "menu_ost/zastavka/ts_bad_credits1.ogg"
+    $ music_list_ts["Black Lakes - Spit on Paradise!"] = ts_muzzon + "menu_ost/zastavka/ts_bad_credits.ogg"
+    $ music_list_ts["Дайте Танк (!) - Лучшее"] = ts_muzzon + "menu_ost/zastavka/ts_good_credits.ogg"
     $ music_list_ts["Yabai The Maid - It Always Happens No Matter What"] = ts_muzzon + "menu_ost/zastavka/ts_new_zastavka_ost_suka.ogg"
 ###ORIG DOKI
     $ music_list_ts["Ohayou Sayori!"] = ts_muzzon + "orig/2.ogg"

@@ -1021,7 +1021,7 @@ label ts_scenario_6:
 
     window hide
     play sound fb
-    play sound2 ts_bad_credits fadein 2
+    play sound2 ts_bad_credits1 fadein 2
     scene ts_notebook_glitch at ts_coridor_glitch
     show black zorder 5 at ts_black_glitch
     show blackout_exh

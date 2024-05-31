@@ -38,17 +38,17 @@ label good_credits_ts_label:
     stop music fadeout 3
     scene black with ed_night_dis
 
-    play music ts_good_credits fadein 2
-    pause 2
+    play music ts_good_credits fadein 0.5
+    pause 0.5#2
 
     $ Chapter("True Story", time=3.25)
     $ Chapter("True Story", time=3.25)
 
-    $ Chapter("  Моя история\nподошла к концу", time=3.25)
-    $ Chapter("  Моя история\nподошла к концу", time=3.25)
+    $ Chapter("    Моя история\nподошла к концу", time=3.25)
+    $ Chapter("    Моя история\nподошла к концу", time=3.25)
 
-    $ Chapter("   Признавайся -\nтебе же понравилось", time=3.25)
-    $ Chapter("   Признавайся -\nтебе же понравилось", time=3.25)
+    $ Chapter("     Признавайся -\nтебе же понравилось", time=3.25)
+    $ Chapter("     Признавайся -\nтебе же понравилось", time=3.25)
 
     $ Chapter("Правда?", time=3.25)
 
@@ -127,7 +127,9 @@ label good_credits_ts_label:
     scene ts_sakura
     show zatemnenie_light
     show lepestki_krutyatsa
-    with ed_night_dis_faster
+    with ed_night_dis
+
+    pause 1.3
 
     show credits ts_credits:
         xalign 0.5
@@ -174,11 +176,11 @@ label bad_credits_ts_label:
     $ Chapter("True Story", time=3.25)
     $ Chapter("True Story", time=3.25)
 
-    $ Chapter("  Моя история\nподошла к концу", time=3.25)
-    $ Chapter("  Моя история\nподошла к концу", time=3.25)
+    $ Chapter("    Моя история\nподошла к концу", time=3.25)
+    $ Chapter("    Моя история\nподошла к концу", time=3.25)
 
-    $ Chapter("Тебя устроил исход?", time=3.25)
-    $ Chapter("Тебя устроил исход?", time=3.25)
+    $ Chapter("     Признавайся -\nтебе же понравилось", time=3.25)
+    $ Chapter("     Признавайся -\nтебе же понравилось", time=3.25)
 
     $ Chapter("Правда?", time=3.25)
 

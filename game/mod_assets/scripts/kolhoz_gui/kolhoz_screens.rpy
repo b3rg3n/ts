@@ -221,7 +221,7 @@ init -501 screen main_menu:
             activate_sound button_error
             hover_sound button_menu
 
-        textbutton translation_new["ts_menu_set8"] style "log_button" text_style "menu_buttons_suka" xalign 0.06 yalign 0.8 at ts_preferences_anim:
+        textbutton translation_new["ts_menu_set8"] style "log_button" text_style "menu_buttons_suka" xalign 0.065 yalign 0.8 at ts_preferences_anim:
             action NullAction()
             activate_sound button_error
             hover_sound button_menu

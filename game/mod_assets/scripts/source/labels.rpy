@@ -29,6 +29,8 @@ init:
     default persistent.badendmenuperedglitch = False
     default persistent.badendmenuskipglitch = False
 
+    default persistent.ingame_pizda = False
+
     $ text_pizda_nahui = glitchtext(24)
     $ badmenuglitchname = glitchtext(7)
     $ sost_glitch_hueta = glitchtext(6)

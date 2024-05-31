@@ -159,6 +159,7 @@ init -1003 python:
         "ts_menu_set16" : "На главную",
         "ts_menu_set17" : "Запомнить",
         "ts_menu_set18" : "Сходишь с ума уже",
+        "ts_menu_set19" : "ТЫ ДОЛЖЕН УМЕРЕТЬ",
 
         "ts_credits_ending1" : "Идея:",
         "ts_credits_ending2" : "Сценарий:",
@@ -294,6 +295,7 @@ init -1003 python:
         "ts_menu_set16" : "На главную",
         "ts_menu_set17" : "Запомнить",
         "ts_menu_set18" : "Сходишь с ума уже",
+        "ts_menu_set19" : "YOU WILL DIE",
 
         "ts_credits_ending1" : "Идея:",
         "ts_credits_ending2" : "Сценарий:",

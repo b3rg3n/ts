@@ -1,6 +1,13 @@
 # TRUE STORY ANIMATIONS
 # by @b3rg3n
 # Since 2024
+init python:
+    lep1 = SnowBlossom(ts_anim + 'particles/lep/lep_1.webp', start=3.0, count=20, border=50, xspeed=(50, 85), yspeed=(160, 215), fast=True)
+    lep2 = SnowBlossom(ts_anim + 'particles/lep/lep_2.webp', count=20, yspeed=(120, 165), start=3.0, border=50, xspeed=(75, 125), fast=True)
+    lep3 = SnowBlossom(ts_anim + 'particles/lep/lep_3.webp', start=3.0, count=20, border=50, xspeed=(50, 85), yspeed=(160, 215), fast=True)
+    lep4 = SnowBlossom(ts_anim + 'particles/lep/lep_4.webp', count=20, yspeed=(120, 165), start=3.0, border=50, xspeed=(75, 125), fast=True)
+    lep5 = SnowBlossom(ts_anim + 'particles/lep/lep_5.webp', count=20, yspeed=(120, 165), start=3.0, border=50, xspeed=(75, 125), fast=True)
+    renpy.image('lepestki_krutyatsa', LiveComposite((1280, 720), (0, 0), lep1, (0, 0), lep2, (0, 0), lep3, (0, 0), lep4, (0, 0), lep5))
 
 init:
 
@@ -868,160 +875,6 @@ init:
             yanchor 1.0
             linear 0.3 yanchor 0.0
             repeat
-
-###ЛЕПЕСТКИ
-
-    image lepestki:
-        choice:
-            ts_anim + "particles/lep/lep_1.webp"
-        choice:
-            ts_anim + "particles/lep/lep_2.webp"
-        choice:
-            ts_anim + "particles/lep/lep_3.webp"
-        choice:
-            ts_anim + "particles/lep/lep_4.webp"
-        choice:
-            ts_anim + "particles/lep/lep_5.webp"
-        xanchor 0.5 yanchor 0.5 rotate 0
-        parallel:
-            choice:
-                rotate 0
-                linear 5 rotate 360
-                repeat
-            choice:
-                rotate 0
-                linear 7 rotate -360
-                repeat
-            choice:
-                rotate 0
-                linear 9 rotate 360
-                repeat
-            choice:
-                rotate 0
-                linear 11 rotate -360
-                repeat
-            choice:
-                rotate 0
-                linear 13 rotate 360
-                repeat
-            choice:
-                rotate 0
-                linear 15 rotate -360
-                repeat
-
-    image ftf_moving_lepestki:
-        "lepestki"
-        parallel:
-            choice:
-                xpos -0.1 ypos 0.2
-            choice:
-                xpos -0.1 ypos 0.1
-            choice:
-                xpos -0.1 ypos 0.0
-            choice:
-                xpos 0.0 ypos -0.1
-            choice:
-                xpos 0.0 ypos -0.2
-            choice:
-                xpos 0.1 ypos -0.1
-            choice:
-                xpos 0.1 ypos -0.2
-            choice:
-                xpos 0.2 ypos -0.1
-            choice:
-                xpos 0.2 ypos -0.2
-            choice:
-                xpos 0.3 ypos -0.1
-            choice:
-                xpos 0.3 ypos -0.2
-        parallel:
-            choice:
-                easeout 10 xpos 0.5
-            choice:
-                easeout 10 xpos 0.6
-            choice:
-                easeout 10 xpos 0.7
-            choice:
-                easeout 10 xpos 0.8
-            choice:
-                easeout 10 xpos 0.9
-            choice:
-                easeout 10 xpos 1.0
-            choice:
-                easeout 10 xpos 1.1
-        parallel:
-            choice:
-                linear 7 ypos 1.1
-            choice:
-                linear 8 ypos 1.1
-            choice:
-                linear 9 ypos 1.1
-            choice:
-                linear 10 ypos 1.1
-            choice:
-                linear 10 ypos 1.1
-        repeat
-
-    image lepestki_krutyatsa:
-        contains:
-            "ftf_moving_lepestki"
-        contains:
-            pause 0.5
-            "ftf_moving_lepestki"
-        contains:
-            pause 1.0
-            "ftf_moving_lepestki"
-        contains:
-            pause 1.5
-            "ftf_moving_lepestki"
-        contains:
-            pause 2.0
-            "ftf_moving_lepestki"
-        contains:
-            pause 2.5
-            "ftf_moving_lepestki"
-        contains:
-            pause 3.0
-            "ftf_moving_lepestki"
-        contains:
-            pause 3.5
-            "ftf_moving_lepestki"
-        contains:
-            pause 4.0
-            "ftf_moving_lepestki"
-        contains:
-            pause 4.5
-            "ftf_moving_lepestki"
-        contains:
-            pause 5.0
-            "ftf_moving_lepestki"
-        contains:
-            pause 5.5
-            "ftf_moving_lepestki"
-        contains:
-            pause 6.0
-            "ftf_moving_lepestki"
-        contains:
-            pause 6.5
-            "ftf_moving_lepestki"
-        contains:
-            pause 7.0
-            "ftf_moving_lepestki"
-        contains:
-            pause 7.5
-            "ftf_moving_lepestki"
-        contains:
-            pause 8.0
-            "ftf_moving_lepestki"
-        contains:
-            pause 8.5
-            "ftf_moving_lepestki"
-        contains:
-            pause 9.0
-            "ftf_moving_lepestki"
-        contains:
-            pause 9.5
-            "ftf_moving_lepestki"
 
 ###ПЫЛЬ ИЗ ДОКИ
     image dust1:

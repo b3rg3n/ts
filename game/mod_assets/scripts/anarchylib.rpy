@@ -33,6 +33,8 @@ init -1199 python:
     ts_anim = ts_images + "anim/"
     ts_gui = ts_images + "gui/"
 
+    ts_mr = ts_gui + "music_room/art/"
+
     ts_natsuki_pt = ts_spr + "natsuki/"
     ts_bug_pt = ts_spr + "bug/"
     ts_elena_pt = ts_spr + "elena/"
@@ -95,11 +97,6 @@ init python:
     def stop_sound(): # ДОБАВЛЯЕМ НОВЫЕ КАНАЛЫ В СТОП ЗВУКИ (АНАЛОГИЧНО ВЫШЕ)
         for chnl in ("sound", "sound2", "sound3", "sound_loop", "sound_loop2", "sound_loop3", "ambience", "ambience2"):
             renpy.sound.stop(channel=chnl)
-
-    def get_pos(channel='music'): # ДОБАВЛЯЕМ ВЫЧЕТ ПОЗИЦИИ (ИСПОЛЬЗУЕТСЯ В ДОКИ МОДАХ ДЛЯ СИНХРОНА ХУЙНИ)
-        pos = renpy.music.get_pos(channel=channel)
-        if pos: return pos
-        return 0
 
 init python: # ОТДЕЛЬНЫЙ, Т.К. С ОСТАЛЬНЫМИ ЧЁТ НЕ ДЕФАЙНИТ БЛЯ
 # ФИЧА С ГЛИТЧТЕКСТОМ

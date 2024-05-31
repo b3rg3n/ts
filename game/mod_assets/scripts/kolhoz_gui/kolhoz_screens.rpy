@@ -238,7 +238,7 @@ init -501 screen main_menu:
             hover_sound button_menu
 
         textbutton translation_new["ts_menu_set11"] style "log_button" text_style "menu_buttons_suka" xalign 0.065 yalign 0.8 at ts_preferences_anim:
-            action ShowMenu('ts_credits_list_suka')
+            action ShowMenu('ts_dop_list_suka')
             activate_sound start_sound_suka
             hover_sound button_menu
 

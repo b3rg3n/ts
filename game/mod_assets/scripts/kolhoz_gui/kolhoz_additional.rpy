@@ -69,6 +69,31 @@ screen ts_set_end_shit_blya: #ПОЯСНЕНИЕ ХУЙНИ ТЕКСТ
     text translation_new["ts_intro_set1"] style "settings_link" size 50 text_align 0.5 yalign 0.465 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
     text translation_new["ts_intro_set2"] style "settings_link" size 50 text_align 0.5 yalign 0.545 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
+screen ts_dop_list_suka: # ЭКРАН ДОП ХУЙНИ СУКА
+    modal True tag menu
+    add ts_anim + "zatemnenie.webp"
+
+    text translation_new["ts_dop_set1"] style "settings_link" size 75 text_align 0.5 yalign 0.030 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+    textbutton translation_new["ts_dop_set2"] style "log_button" text_style "settings_link" yalign 0.2 xalign 0.5 at ts_preferences_anim:
+        activate_sound start_sound_suka
+        hover_sound button_menu
+        action ShowMenu('ts_credits_list_suka')
+
+    textbutton translation_new["ts_dop_set3"] style "log_button" text_style "settings_link" yalign 0.4 xalign 0.5 at ts_preferences_anim:
+        activate_sound start_sound_suka
+        hover_sound button_menu
+        action ShowMenu("music_room", mr=music_room)
+
+    textbutton translation_new["ts_dop_set4"] style "log_button" text_style "settings_link" yalign 0.6 xalign 0.5 at ts_preferences_anim:
+        activate_sound button_error
+        hover_sound button_menu
+        action NullAction()
+
+    textbutton translation_new["Back"] style "log_button" text_style "settings_link" yalign 0.8 xalign 0.5 at ts_preferences_anim:
+        activate_sound start_sound_suka
+        hover_sound button_menu
+        action Return()
 
 screen ts_credits_list_suka: # ЭКРАН РАЗРАБОВ СУКА
     modal True tag menu

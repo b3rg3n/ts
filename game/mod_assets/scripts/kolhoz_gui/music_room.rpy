@@ -52,9 +52,9 @@ define myconfig.UNLOCK_TRACKS_FOR_DEVELOPMENT = False
 ## to colorize the default music controls. You can change these if you want to
 ## use the provided images, or simply supply your own and remove the lines
 ## `at colorize_button` from the screen below.
-define MUSIC_ROOM_IDLE_COLOR = "#ff8335"
+define MUSIC_ROOM_IDLE_COLOR = "#ffffff"
 define MUSIC_ROOM_HOVER_COLOR = "#f93c3e"
-define MUSIC_ROOM_SELECTED_IDLE_COLOR = "#ff8335"
+define MUSIC_ROOM_SELECTED_IDLE_COLOR = "#ffffff"
 define MUSIC_ROOM_SELECTED_HOVER_COLOR = "#f93c3e"
 define MUSIC_ROOM_INSENSITIVE_COLOR = "#888"
 
@@ -316,7 +316,7 @@ style music_room_title:
     background None xalign 0.5 bottom_padding 10 #15
 style music_room_title_text:
     font cit_font#gui.name_text_font
-    size 33 color "#ff8335" xalign 0.5 #50
+    size 33 color "#ffffff" xalign 0.5 #50
 style music_room_hbox:
     spacing 33 xalign 0.5 yalign 1.0 #50
 style music_room_image_button:
@@ -324,7 +324,7 @@ style music_room_image_button:
 style music_room_bar:
     xsize 467 xalign 0.5 ysize 25 #700, 38
     right_bar "#21212d"
-    left_bar "#fc5f39"
+    left_bar "#ffffff"
 style music_room_pos:
     color "#fff" xalign 0.5 adjust_spacing False
 style music_room_duration:
@@ -345,7 +345,7 @@ style track_list_vbox:
     spacing 0
 style track_list_button:
     right_padding 30 #45
-    background Transform("#ff8335", ysize=2, yalign=1.0)
+    background Transform("#ffffff", ysize=2, yalign=1.0)
     hover_foreground "#fff1"
     ypadding 10 xfill True #15
 style track_list_hbox:
@@ -359,7 +359,7 @@ style track_list_text:
 style track_list_label:
     background None padding (2, 0)
 style track_list_label_text:
-    color "#f7f7ed" hover_color "#f93c3e" selected_color "#ff8335"
+    color "#f7f7ed" hover_color "#f93c3e" selected_color "#ffffff"
     insensitive_color "#666"
 style track_list_vscrollbar:
-    thumb "#fc5f39" base_bar "#292835"
+    thumb "#ffffff" base_bar "#292835"

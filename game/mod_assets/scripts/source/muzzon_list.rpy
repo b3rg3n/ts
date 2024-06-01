@@ -369,8 +369,8 @@ init python:
     )
 
     music_room.add(
-        name=_("ts_killyourself"),
-        artist="Неизвестен",
+        name=_("Lightwood"),
+        artist="Gek Kosni",
         path=ts_muzzon + "menu_ost/ts_killyourself.ogg",
         art=ts_mr + "hueta.webp"
     )
@@ -390,10 +390,10 @@ init python:
     )
 
     music_room.add(
-        name=_("pered_bad_menu_ost"),
-        artist="Неизвестен",
+        name=_("Snowfall"),
+        artist="Oneheart, reidenshi",
         path=ts_muzzon + "menu_ost/pered_bad_menu_ost.ogg",
-        art=ts_mr + "hueta.webp"
+        art=ts_mr + "sn.webp"
     )
 
     music_room.add(
@@ -421,7 +421,8 @@ init python:
         name=_("One Way or Another"),
         artist="Mudasheep",
         path=ts_muzzon + "menu_ost/zastavka/ts_bad_credits1.ogg",
-        art=ts_mr + "cof.webp"
+        art=ts_mr + "cof.webp",
+        unlock_condition="True"
     )
 
     music_room.add(
@@ -503,10 +504,10 @@ init:
 ###ИЗ МЕНЮ
     $ music_list_ts["MND - Polar Day"] = ts_muzzon + "menu_ost/ts_pd.ogg"
     $ music_list_ts["John Murphy - Ghosts"] = ts_muzzon + "menu_ost/bad_menu_ost.ogg"
-    $ music_list_ts["ts_killyourself"] = ts_muzzon + "menu_ost/ts_killyourself.ogg"
+    $ music_list_ts["Gek Kosni - Lightwood"] = ts_muzzon + "menu_ost/ts_killyourself.ogg"
     $ music_list_ts["Marco Beltrami - Wales"] = ts_muzzon + "menu_ost/ts_finalded.ogg"
     $ music_list_ts["Akira Yamaoka - Not Tomorrow"] = ts_muzzon + "menu_ost/good_menu_ost.ogg"
-    $ music_list_ts["pered_bad_menu_ost"] = ts_muzzon + "menu_ost/pered_bad_menu_ost.ogg"
+    $ music_list_ts["Oneheart, reidenshi - snowfall"] = ts_muzzon + "menu_ost/pered_bad_menu_ost.ogg"
 ###ИЗ ЗАСТАВОК
     $ music_list_ts["Kenton Gilchrist - Gritty down tempo rock"] = ts_muzzon + "menu_ost/zastavka/ts_mosh.ogg"
     $ music_list_ts["Moe Era OST - Final Scene Soft"] = ts_muzzon + "menu_ost/zastavka/ts_soft.ogg"

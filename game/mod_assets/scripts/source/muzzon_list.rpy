@@ -444,21 +444,21 @@ init python:
         name=_("Stellar"),
         artist="The Distorion",
         path=ts_muzzon + "ts_stellar.ogg",
-        art=ts_mr + "hueta.webp"
+        art=ts_mr + "ds.webp"
     )
 
     music_room.add(
         name=_("Thank God"),
         artist="The Distorion",
         path=ts_muzzon + "ts_tgod.ogg",
-        art=ts_mr + "hueta.webp"
+        art=ts_mr + "ds.webp"
     )
 
     music_room.add(
         name=_("Root of all Evil"),
         artist="The Distorion",
         path=ts_muzzon + "ts_roae.ogg",
-        art=ts_mr + "hueta.webp"
+        art=ts_mr + "ds.webp"
     )
 
     music_room.add(

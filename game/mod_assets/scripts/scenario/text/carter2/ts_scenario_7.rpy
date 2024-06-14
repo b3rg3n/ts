@@ -36,7 +36,6 @@ label ts_scenario_7:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    $ ts_sunset_time()
     play sound fb
     scene ts_gost_sunset
     show hiroto 1a at i31
@@ -50,7 +49,6 @@ label ts_scenario_7:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    $ ts_night_time()
     play sound fb
     scene ts_darkbed
     with flash
@@ -86,7 +84,7 @@ label ts_scenario_7:
             " {w=1.0}{nw}"
             show blink
             pause 2
-            $ ts_day_time()
+
             scene ts_bedroom
             show unblink
             show layer screens at ts_showscreens
@@ -341,7 +339,7 @@ label ts_scenario_7:
             play sound svet_on
             scene ts_bedroom
             with flash
-            $ ts_day_time()
+
             show layer screens at ts_showscreens
             "Как же ярко!"
             "Нужно было сказать маме, чтобы она привезла мне новую люстру, с регулируемой яркостью."

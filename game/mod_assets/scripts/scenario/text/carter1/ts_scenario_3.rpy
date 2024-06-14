@@ -1,13 +1,5 @@
 label ts_scenario_3:
 
-    python: # ОБНОВЛЯЕМ RPC
-        try:
-            rpc.update(state="Акт I | Глава III",details="Поиски. Нацуки",large_image="aonecthree",start=time.time())
-        except AssertionError:
-            pass
-
-    $ persistent.rpclabel = "3"
-
     $ persistent.carter2menu = False
     $ persistent.carter3menu = False
     $ persistent.badendmenuperedglitch = False

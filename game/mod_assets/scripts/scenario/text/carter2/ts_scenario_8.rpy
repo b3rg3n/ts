@@ -2168,10 +2168,17 @@ label ts_carter8_posle_poems_suka:
     m "ЧТО Я ДОЛЖНА УВИДЕТЬ?"
     em "Всё."
     em "А сейчас - спокойной ночи, правда."
+    stop music fadeout 5
     em "Это будет последняя твоя спокойная ночь..."
     em "Затишье уже закончилось. С завтрашнего дня начинается настоящая буря..."
     "Я не обращаю внимания на угрозы Аки и просто ложусь спать."
     "Завтра будет большой день."
     em "О-хо-хо, ещё какой!"
     m "Ну вот завтра и посмотрим..."
-    return
+    stop ambience fadeout 3
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    scene black with ed_night_dis
+    show layer screens at ts_null_transform
+    pause 2
+    jump ts_scenario_9

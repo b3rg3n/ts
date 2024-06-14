@@ -496,6 +496,21 @@ init python:
         art=ts_mr + "bm.webp"
     )
 
+    music_room.add(
+        name=_("i can't run anymore"),
+        artist="633397",
+        path=ts_muzzon + "ts_icra.ogg",
+        art=ts_mr + "gaysex.webp"
+    )
+
+    music_room.add(
+        name=_("Afterlife (interlude)"),
+        artist="Alx Beats",
+        path=ts_muzzon + "ts_afterlife.ogg",
+        art=ts_mr + "alx.webp"
+    )
+
+
 init:
 ###СПИСОК
     $ music_list_ts = {}
@@ -581,3 +596,5 @@ init:
     $ music_list_ts["The Distorion - Stellar"] = ts_muzzon + "ts_stellar.ogg"
     $ music_list_ts["The Distorion - Thank God"] = ts_muzzon + "ts_tgod.ogg"
     $ music_list_ts["The Distorion - Root of all Evil"] = ts_muzzon + "ts_roae.ogg"
+    $ music_list_ts["633397 - i can't run anymore"] = ts_muzzon + "ts_icra.ogg"
+    $ music_list_ts["Alx Beats - Afterlife (interlude)"] = ts_muzzon + "ts_afterlife.ogg"

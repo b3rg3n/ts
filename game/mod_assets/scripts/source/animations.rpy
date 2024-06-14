@@ -1098,3 +1098,79 @@ init:
         "ts_kitchen3"
         0.03 # Задержка
         repeat # Не убирать
+
+    image ts_sayori_bedroom_glitch_pizdets:
+        ts_bg + "glitch/sayori_bedroom1.webp"
+        0.03 # Задержка
+        ts_bg + "glitch/sayori_bedroom3.webp"
+        0.03 # Задержка
+        ts_bg + "glitch/sayori_bedroom2.webp"
+        0.03 # Задержка
+        ts_bg + "glitch/sayori_bedroom1.webp"
+        0.03 # Задержка
+        ts_bg + "glitch/sayori_bedroom3.webp"
+        0.03 # Задержка
+        repeat # Не убирать
+
+    image ts_residental_glitch_pizdets:
+        ts_bg + "glitch/residential1.webp"
+        0.03 # Задержка
+        ts_bg + "glitch/residential3.webp"
+        0.03 # Задержка
+        ts_bg + "glitch/residential2.webp"
+        0.03 # Задержка
+        ts_bg + "glitch/residential1.webp"
+        0.03 # Задержка
+        ts_bg + "glitch/residential3.webp"
+        0.03 # Задержка
+        repeat # Не убирать
+
+    image ts_sayori_zalagala_blyadina:
+        ts_sayori_pt + "glitch/3b1.webp"
+        0.03 # Задержка
+        ts_sayori_pt + "glitch/3b3.webp"
+        0.03 # Задержка
+        ts_sayori_pt + "glitch/3b2.webp"
+        0.03 # Задержка
+        ts_sayori_pt + "glitch/3b1.webp"
+        0.03 # Задержка
+        ts_sayori_pt + "glitch/3b3.webp"
+        0.03 # Задержка
+        repeat # Не убирать
+
+    image ts_natsuki_zalagala_blyadina:
+        ts_natsuki_pt + "glitch/ghost3_1.webp"
+        0.03 # Задержка
+        ts_natsuki_pt + "glitch/ghost3_3.webp"
+        0.03 # Задержка
+        ts_natsuki_pt + "glitch/ghost3_2.webp"
+        0.03 # Задержка
+        ts_natsuki_pt + "glitch/ghost3_1.webp"
+        0.03 # Задержка
+        ts_natsuki_pt + "glitch/ghost3_3.webp"
+        0.03 # Задержка
+        repeat # Не убирать
+
+    image ts_yuri_zalagala_blyadina:
+        ts_yuri_pt + "glitch/za.webp"
+        0.03 # Задержка
+        ts_yuri_pt + "glitch/zb.webp"
+        0.03 # Задержка
+        ts_yuri_pt + "glitch/zc.webp"
+        0.03 # Задержка
+        ts_yuri_pt + "glitch/zd.webp"
+        0.03 # Задержка
+        repeat # Не убирать
+
+    image ts_hiroto_zalagal:
+        ts_hiroto_pt + "glitch/b1.webp"
+        0.03 # Задержка
+        ts_hiroto_pt + "glitch/b3.webp"
+        0.03 # Задержка
+        ts_hiroto_pt + "glitch/b2.webp"
+        0.03 # Задержка
+        ts_hiroto_pt + "glitch/b1.webp"
+        0.03 # Задержка
+        ts_hiroto_pt + "glitch/b3.webp"
+        0.03 # Задержка
+        repeat # Не убирать

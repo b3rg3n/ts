@@ -15,6 +15,10 @@ label testing_label_blya:
 
     #$ persistent.uncolorize = "full"
     scene black
+    $ persistent.uncolorize = "none"
+    "ewfe"
+    scene ts_club with dreamyzoom
+    "fefke"
     $ persistent.ingame_pizda = False
     "офф"
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
@@ -38,6 +42,8 @@ label testing_label_blya:
     pause 2.5
 
     stop sound
+
+    $ persistent.ingame_pizda = False
 
     scene ts_club
     show natsuki 1a at i11

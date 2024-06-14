@@ -98,6 +98,11 @@ init python:
         for chnl in ("sound", "sound2", "sound3", "sound_loop", "sound_loop2", "sound_loop3", "ambience", "ambience2"):
             renpy.sound.stop(channel=chnl)
 
+    def get_pos(channel='music'): # ДОБАВЛЯЕМ ВЫЧЕТ ПОЗИЦИИ (ИСПОЛЬЗУЕТСЯ В ДОКИ МОДАХ ДЛЯ СИНХРОНА ХУЙНИ)
+        pos = renpy.music.get_pos(channel=channel)
+        if pos: return pos
+        return 0
+
 init python: # ОТДЕЛЬНЫЙ, Т.К. С ОСТАЛЬНЫМИ ЧЁТ НЕ ДЕФАЙНИТ БЛЯ
 # ФИЧА С ГЛИТЧТЕКСТОМ
 # ВЗЯТО ИЗ ОРИГА ДОКИ (@danslvato)

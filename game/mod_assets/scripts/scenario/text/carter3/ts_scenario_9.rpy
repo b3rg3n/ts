@@ -329,7 +329,7 @@ label ts_scenario_9:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     play sound pageflip
-    scene ts_entrance_day
+    scene ts_gost
     with wipeleft_scene
     show layer screens at ts_showscreens
     "Я поднимаюсь наверх."

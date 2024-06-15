@@ -15,9 +15,14 @@ label testing_label_blya:
 
     #$ persistent.uncolorize = "full"
     scene black
+    show ts_yrec_kill_nahui_suicide_blya at left
+    show ts_sayori_zalagala_chereshnya:
+        align (0.5, 0.15)
+    show ts_maloletka_pozvonok_sloman_nahui at right
     $ persistent.uncolorize = "none"
     "ewfe"
-    scene ts_club with dreamyzoom
+    scene ts_club
+
     "fefke"
     $ persistent.ingame_pizda = False
     "офф"

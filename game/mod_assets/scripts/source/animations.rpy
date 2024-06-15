@@ -1174,3 +1174,36 @@ init:
         ts_hiroto_pt + "glitch/b3.webp"
         0.03 # Задержка
         repeat # Не убирать
+
+    image ts_yrec_kill_nahui_suicide_blya:
+        ts_yuri_pt + "stab/glitch/1.webp"
+        0.3
+        parallel:
+            ts_yuri_pt + "stab/glitch/2.webp"
+            0.25
+            ts_yuri_pt + "stab/glitch/3.webp"
+            0.1
+            repeat
+
+    image ts_maloletka_pozvonok_sloman_nahui:
+        ts_natsuki_pt + "glitch/1.webp"
+        0.3
+        parallel:
+            ts_natsuki_pt + "glitch/2.webp"
+            0.1
+            ts_natsuki_pt + "glitch/3.webp"
+            0.05
+            repeat
+
+    image ts_sayori_zalagala_chereshnya:
+        ts_sayori_pt + "glitch/noface1.webp"
+        0.03 # Задержка
+        ts_sayori_pt + "glitch/noface1b.webp"
+        0.03 # Задержка
+        ts_sayori_pt + "glitch/noface2.webp"
+        0.03 # Задержка
+        ts_sayori_pt + "glitch/noface1.webp"
+        0.03 # Задержка
+        ts_sayori_pt + "glitch/noface1b.webp"
+        0.03 # Задержка
+        repeat # Не убирать

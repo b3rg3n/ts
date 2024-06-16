@@ -55,7 +55,7 @@ screen say(who, what):
                     action NullAction()
             else:
                 imagebutton:
-                    auto (ts_gui + "dialogue_box/big/fast_forward_%s.webp")
+                    auto (ts_gui + "dialogue_box/big/glitch/fast_forward_%s.webp")
                     xpos 1179
                     ypos 583
                     activate_sound button_error

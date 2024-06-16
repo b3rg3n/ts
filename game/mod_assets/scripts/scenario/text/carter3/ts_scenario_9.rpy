@@ -518,16 +518,21 @@ label ts_scenario_9:
     show layer master
     show layer screens
 
-    stop music fadeout 2
+    stop music
     "Кажется, меня сейчас стошнит..."
 
     window hide
-    play sound fb
-    scene ts_bathroom
-    with flash
+    scene ts_bedroom at ts_bg_into
+    pause 0.5
+    scene ts_bathroom at ts_bg_exodus
+    pause 0.5
+    show layer master at ts_blevota_anim
+    pause 1
 
     $ m_name = "Моника"
+    show layer screens at hpunch
     m "*ХУРГХ*"
+    show layer master at ts_blevota_exit_anim
     "Что это вообще такое было?"
     play music ts_icra fadein 1
     show monika 2bg at f11

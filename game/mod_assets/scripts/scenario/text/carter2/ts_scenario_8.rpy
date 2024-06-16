@@ -2176,6 +2176,7 @@ label ts_carter8_posle_poems_suka:
     em "О-хо-хо, ещё какой!"
     m "Ну вот завтра и посмотрим..."
     stop ambience fadeout 3
+    show blink
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     scene black with ed_night_dis

@@ -8,38 +8,38 @@ screen say(who, what):
     if (persistent.bazarbig):
         if (persistent.ingame_pizda):
             imagebutton:
-                auto (ts_gui + "dialogue_box/big/backward_%s.webp")
+                auto (ts_gui + "dialogue_box/big/glitch/backward_%s.webp")
                 xpos 25
                 ypos 583
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
-            add ts_gui + "dialogue_box/big/dialogue_box_large_pizda.webp":
+            add "ts_textbox_big_zalagal":
                 xpos 116
                 ypos 544
             imagebutton:
-                auto (ts_gui + "dialogue_box/big/hide_%s.webp")
+                auto (ts_gui + "dialogue_box/big/glitch/hide_%s.webp")
                 xpos 1008
                 ypos 554
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
             imagebutton:
-                auto (ts_gui + "dialogue_box/big/save_%s.webp")
+                auto (ts_gui + "dialogue_box/big/glitch/save_%s.webp")
                 xpos 1048
                 ypos 554
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
             imagebutton:
-                auto (ts_gui + "dialogue_box/big/menu_%s.webp")
+                auto (ts_gui + "dialogue_box/big/glitch/menu_%s.webp")
                 xpos 1087
                 ypos 554
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
             imagebutton:
-                auto (ts_gui + "dialogue_box/big/load_%s.webp")
+                auto (ts_gui + "dialogue_box/big/glitch/load_%s.webp")
                 xpos 1125
                 ypos 554
                 activate_sound button_error
@@ -47,7 +47,7 @@ screen say(who, what):
                 action NullAction()
             if not config.skipping:
                 imagebutton:
-                    auto (ts_gui + "dialogue_box/big/forward_%s.webp")
+                    auto (ts_gui + "dialogue_box/big/glitch/forward_%s.webp")
                     xpos 1179
                     ypos 583
                     activate_sound button_error

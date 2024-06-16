@@ -4,8 +4,16 @@
 
 init:
 
-    transform ts_blevota_anim:
+    transform ts_bg_into1:
         align (0.5, 0.5) zoom 1.0
+        ease 0.5 align (0.1, 0.5) zoom 1.2
+
+    transform ts_bg_exodus1:
+        align (0.1, 0.5) zoom 1.2
+        ease 0.5 align (0.5, 0.5)
+
+    transform ts_blevota_anim:
+        align (0.5, 0.5) zoom 1.2
         ease 1 align (0.5, 0.7) zoom 3.0
 
     transform ts_blevota_exit_anim:

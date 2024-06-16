@@ -522,16 +522,22 @@ label ts_scenario_9:
     "Кажется, меня сейчас стошнит..."
 
     window hide
-    scene ts_bedroom at ts_bg_into
+    play sound2 ts_running
+    show layer master at ts_bg_into1
+    pause 0.3
+    play sound door_break
+    pause 0.2
+    scene ts_bathroom
+    show layer master at ts_bg_exodus1
     pause 0.5
-    scene ts_bathroom at ts_bg_exodus
-    pause 0.5
+    stop sound2 fadeout 1
     show layer master at ts_blevota_anim
     pause 1
 
     $ m_name = "Моника"
     show layer screens at hpunch
-    m "*ХУРГХ*"
+    play sound3 ts_blevanula
+    pause 6
     show layer master at ts_blevota_exit_anim
     "Что это вообще такое было?"
     play music ts_icra fadein 1

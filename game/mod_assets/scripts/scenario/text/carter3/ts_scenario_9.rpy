@@ -612,7 +612,10 @@ label ts_scenario_9:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    scene ts_notebook with dissolve
+    scene ts_bedroom at ts_bg_into
+    pause 0.5
+    scene ts_notebook at ts_bg_exodus
+    pause 0.5
 
     show layer screens at ts_showscreens
 

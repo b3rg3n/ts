@@ -485,6 +485,8 @@ label ts_scenario_9:
     m "{b}ПОЧЕМУ АБСОЛЮТНО ВСЕ ДЕЛАЮТ ВИД, ЧТО ЭТОЙ НЕДЕЛИ КАК БУДТО БЫ И НЕ БЫЛО?{/b}"
     play music ts_roae
 
+    $ persistent.ingame_pizda = True
+
     show layer master at AnimatedAberate(25.0)
     show layer screens at Static(1.0)
 
@@ -514,6 +516,8 @@ label ts_scenario_9:
     em 1bi "[gtextsuka]{nw}"
     hide monika
     pause 5
+
+    $ persistent.ingame_pizda = False
 
     show layer master
     show layer screens

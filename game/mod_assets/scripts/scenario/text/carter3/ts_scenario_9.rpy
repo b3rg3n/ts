@@ -566,9 +566,12 @@ label ts_scenario_9:
     "Что это вообще такое было?"
     play music ts_icra fadein 1
     show monika 2bg at f11
+    with linearblurbolee
+    show layer screens at ts_showscreens
     em "Полегчало?"
     show monika 2bf at t11
     m "Ты..."
+    show layer screens at vpunch
     m "ЭТО ВСЁ ТЫ ВИНОВАТА!"
     show monika 1bp at f11
     em "А почему ты считаешь, что если случается что-то плохое, то это сразу обязательно я?"
@@ -673,6 +676,8 @@ label ts_scenario_9:
     
     "Написано вроде как слово в слово, даже мелочи вроде предлогов на месте, да и порядок слов тот же."
     show monika 2bk at f11
+    with linearblurbolee
+    show layer screens at ts_showscreens
     em "Надо же, как моя маленькая бездарность выросла! Идеально вспомнила стих, и мне даже напоминать ей не пришлось."
     show monika 2bj at t11
     m "Просто... заткнись."

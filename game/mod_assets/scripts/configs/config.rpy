@@ -9,6 +9,8 @@ define config.name = _("True Story")
 define gui.show_name = False
 define config.version = "1.1"
 
+define ts_version = "18.06.2024"
+
 define gui.about = _p("""
 """)
 

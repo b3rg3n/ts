@@ -16,8 +16,8 @@ define gui.show_name = False
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
-define config.enter_transition = ImageDissolve((ts_anim + "transit/blackpalm.webp"), 0.25, ramplen=256, reverse=True)
-define config.exit_transition = ImageDissolve((ts_anim + "transit/blackpalm.webp"), 0.3, ramplen=256)
+define config.enter_transition = cLinearBlur(0.5)
+define config.exit_transition = cLinearBlur(0.5)
 define config.intra_transition = ImageDissolve(ts_anim + "transit/wipeleft.webp", 0.5, ramplen=64)
 define config.after_load_transition = MultipleTransition([False, ImageDissolve(ts_anim + "transit/wipeleft.webp", 0.5, ramplen=64), Solid("#000"), Pause(0.25), Solid("#000"), ImageDissolve(ts_anim + "transit/wipeleft.webp", 0.5, ramplen=64), True])
 define config.end_game_transition = Fade(1.5, 1, 2)

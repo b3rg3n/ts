@@ -171,7 +171,7 @@ label ts_scenario_9:
     show ts_sayori_zalagala_blyadina at t32
     show ts_natsuki_zalagala_blyadina at t33
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
-#
+
     $ gtextsuka = glitchtext(8)
     $ gtextsuka1 = glitchtext(15)
     y "Я сказала [gtextsuka] сидеть на [gtextsuka1]!"
@@ -186,7 +186,7 @@ label ts_scenario_9:
     $ persistent.ingame_pizda = False
     scene ts_sayori_bedroom
     show sayori 4pi at t11
-#
+
     m "А-а-а... Д-да... П-п-п-понятно... В-в-вчера, д-да..."
     "Я нервно хихикаю."
     show sayori 2pb at t11
@@ -227,11 +227,8 @@ label ts_scenario_9:
     show m_rectstatic zorder 5
     show ts_sayori_zalagala_blyadina zorder 6 at Glitch(_fps=1000.)
 
-    #show sayori 2bc at f11
     s "Это же район, в котором когда-то жила Мира."
-    #show sayori 2bb at t11
     m "От-ткуда т-ты...{w=1}{nw}"
-    #show sayori 2bc at f11
     s "Наш дом находится в двух домах от их дома."
     s "Она умерла. Я видела её похороны."
     s "И мы все тоже умрём."
@@ -419,7 +416,7 @@ label ts_scenario_9:
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 
     show hiroto 2k at t11
-    m "{b}{font=[shl_font]}ПАПА, ПОЧЕМУ ВСЕ ВЕДУТ СЕБЯ ТАК, КАК БУДТО ПРОШЛОЙ НЕДЕЛИ НИКОГДА НЕ СУЩЕСТВОВАЛО?{/font}{/b}" #УРОДСКИМ ШРИФТОМ
+    m "{b}{font=[shl_font]}ПАПА, ПОЧЕМУ ВСЕ ВЕДУТ СЕБЯ ТАК, КАК БУДТО ПРОШЛОЙ НЕДЕЛИ НИКОГДА НЕ СУЩЕСТВОВАЛО?{/font}{/b}"
     show hiroto 2h at f11
     ts_ft "Ч-что значит «прошлой недели никогда не существовало»?"
     ts_ft 1y "Я что-то не припомню никаких таких провалов..."
@@ -506,7 +503,7 @@ label ts_scenario_9:
     $ persistent.ingame_pizda = True
 
     show layer master at AnimatedAberate(25.0)
-    show layer screens at Static(1.0)
+    show layer screens at ts_shake2(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 
     show monika 2bi at f11
     with memglitchstr
@@ -520,7 +517,10 @@ label ts_scenario_9:
     $ m_name = "[gtextsuka]"
     m "[gtextsuka]"
 
+    $ persistent.ingame_pizda = False
+
     show layer master at StillAberate(25.0)
+    show layer screens at StillAberate(25.0)
 
     python:
         currentpos = get_pos()

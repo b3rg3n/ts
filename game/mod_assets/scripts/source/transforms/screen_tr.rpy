@@ -60,6 +60,22 @@ transform ts_bg_zoom_e(z=1.0, zz=1.0, t=0.25, x=0.5, xx=0.5, y=0.5, yy=0.5, a=1.
 transform ts_null_transform:
     pause 0.1
 
+transform ts_shake2(t1=ts_null_transform, t2=ts_null_transform, t3=ts_null_transform, t4=ts_null_transform, t5=ts_null_transform, t6=ts_null_transform):
+    shader "MakeVisualNovels.AnimatedAberration"
+    u_aberrationAmount(25.0)
+    parallel:
+        t1
+    parallel:
+        t2
+    parallel:
+        t3
+    parallel:
+        t4
+    parallel:
+        t5
+    parallel:
+        t6
+
 transform ts_shake(t1=ts_null_transform, t2=ts_null_transform, t3=ts_null_transform, t4=ts_null_transform, t5=ts_null_transform, t6=ts_null_transform):
     parallel:
         t1

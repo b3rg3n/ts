@@ -300,27 +300,27 @@ init -501 screen game_menu_selector:
     add ts_gui + "ebanoemenu/ingame_menu.webp"
 
     if persistent.ingame_pizda == True:
-        textbutton translation_new["ts_menu_set19"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.3 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.3,0.0), ts_super_shake):
+        textbutton translation_new["ts_menu_set19"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.2 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.2,0.0), ts_super_shake):
             action NullAction()
             activate_sound button_error
             hover_sound button_menu
 
-        textbutton translation_new["ts_menu_set19"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.43 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.43,0.0), ts_super_shake):
+        textbutton translation_new["ts_menu_set19"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.35 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.35,0.0), ts_super_shake):
             action NullAction()
             activate_sound button_error
             hover_sound button_menu
 
-        textbutton translation_new["ts_menu_set19"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.56 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.56,0.0), ts_super_shake):
+        textbutton translation_new["ts_menu_set19"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.5 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake):
             action NullAction()
             activate_sound button_error
             hover_sound button_menu
 
-        textbutton translation_new["ts_menu_set19"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.69 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.69,0.0), ts_super_shake):
+        textbutton translation_new["ts_menu_set19"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.65 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.65,0.0), ts_super_shake):
             action NullAction()
             activate_sound button_error
             hover_sound button_menu
 
-        textbutton translation_new["ts_menu_set19"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.82 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.82,0.0), ts_super_shake):
+        textbutton translation_new["ts_menu_set19"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.8 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.8,0.0), ts_super_shake):
             action NullAction()
             activate_sound button_error
             hover_sound button_menu
@@ -328,30 +328,30 @@ init -501 screen game_menu_selector:
         text translation_new["ts_menu_set19"] + "{font=[cit_font]} {image=gametime}{/font}" style "ebanko_ingame" size 35 text_align 0.5 yalign 0.95 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.95,0.0), ts_super_shake)
 
         if not track_checker_blya == "empty":
-            text "{font=[cit_font]}{size=+25}[track_checker_blya]{/font}" xalign 0.5 yalign 0.1 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.1,0.0), ts_super_shake)
+            text "{font=[cit_font]}{size=+25}[track_checker_blya]{/font}" xalign 0.5 yalign 0.05 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.1,0.0), ts_super_shake)
 
     else:
-        textbutton translation_new["ts_menu_set16"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.3 at ts_preferences_anim:
+        textbutton translation_new["ts_menu_set16"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.2 at ts_preferences_anim:
             action MainMenu()
             activate_sound start_sound_suka
             hover_sound button_menu
 
-        textbutton translation_new["ts_menu_set17"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.43 at ts_preferences_anim:
+        textbutton translation_new["ts_menu_set17"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.35 at ts_preferences_anim:
             action ShowMenu('save')
             activate_sound start_sound_suka
             hover_sound button_menu
 
-        textbutton translation_new["ts_menu_set9"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.56 at ts_preferences_anim:
+        textbutton translation_new["ts_menu_set9"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.5 at ts_preferences_anim:
             action ShowMenu('load')
             activate_sound start_sound_suka
             hover_sound button_menu
 
-        textbutton translation_new["ts_menu_set10"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.69 at ts_preferences_anim:
+        textbutton translation_new["ts_menu_set10"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.65 at ts_preferences_anim:
             action ShowMenu('preferences')
             activate_sound start_sound_suka
             hover_sound button_menu
 
-        textbutton translation_new["ts_menu_set12"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.82 at ts_preferences_anim:
+        textbutton translation_new["ts_menu_set12"] style "log_button" text_style "ingame_buttons_suka" xalign 0.5 yalign 0.8 at ts_preferences_anim:
             action ShowMenu('quit')
             activate_sound start_sound_suka
             hover_sound button_menu
@@ -359,7 +359,7 @@ init -501 screen game_menu_selector:
         text translation_new["ts_menu_set18"] + "{font=[cit_font]} {image=gametime}{/font}" style "ebanko_ingame" size 35 text_align 0.5 yalign 0.95 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
         if not track_checker_blya == "empty":
-            text "{font=[cit_font]}{size=+25}[track_checker_blya]{/font}" xalign 0.5 yalign 0.1 at ts_preferences_anim
+            text "{font=[cit_font]}{size=+25}[track_checker_blya]{/font}" xalign 0.5 yalign 0.05 at ts_preferences_anim
 
 init -101 python:
 

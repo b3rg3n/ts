@@ -5,6 +5,12 @@
 
 label main_menu:
 
+    python: # ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state="В игре",details="Главное меню",large_image="logogovna",start=time.time())
+        except AssertionError:
+            pass
+
     stop sound fadeout 3
     stop music fadeout 3
     window hide
@@ -123,7 +129,12 @@ label splashscreen:
 
             persistent.lan_chosen = True
 
-    python: # УСТАНОВКА ГРОМКОСТИ И ПРОВЕРКА НА СПЛЕШ
+    python: # УСТАНОВКА ГРОМКОСТИ И ПРОВЕРКА НА СПЛЕШ | ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state="В игре",details="Просмотр заставки",large_image="logogovna",start=time.time())
+        except AssertionError:
+            pass
+
         if not persistent.set_volumes:
             
             persistent.set_volumes = True

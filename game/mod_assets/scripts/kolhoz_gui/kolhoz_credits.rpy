@@ -20,6 +20,14 @@ init:
 
 label good_credits_ts_label:
 
+    python: # ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state="Финал",details="Титры",large_image="credits",start=time.time())
+        except AssertionError:
+            pass
+
+    $ persistent.rpclabel = "999"
+
     $ persistent.badendmenuperedglitch = False
     $ persistent.badendmenuskipglitch = False
     $ persistent.badendmenu = False
@@ -144,6 +152,14 @@ label good_credits_ts_label:
 
 
 label bad_credits_ts_label:
+
+    python: # ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state="Финал",details="Титры",large_image="credits",start=time.time())
+        except AssertionError:
+            pass
+
+    $ persistent.rpclabel = "999"
 
     $ persistent.badendmenuperedglitch = True
     $ persistent.badendmenuskipglitch = False

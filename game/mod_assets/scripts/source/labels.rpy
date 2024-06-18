@@ -9,6 +9,9 @@ init:
     default persistent.music_widget_ts = False
     default persistent.vsyncebaniy = True
     default persistent.ts_mouse_anim_set = "0"
+    default persistent.set_volumes = False
+### RPC
+    default persistent.rpclabel = "228"
 ### МЕНЮШКИ
     default persistent.carter2menu = False
     default persistent.carter3menu = False

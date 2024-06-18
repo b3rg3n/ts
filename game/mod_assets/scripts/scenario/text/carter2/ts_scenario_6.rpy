@@ -1060,7 +1060,7 @@ label ts_scenario_6:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    scene ts_notebook with linearblurbolee:
+    scene ts_notebook with dissolve:
         blur 9.0
 
     show layer screens at ts_showscreens

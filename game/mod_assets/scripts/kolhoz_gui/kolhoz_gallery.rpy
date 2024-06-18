@@ -62,11 +62,11 @@ screen gallery:
 
     frame background ts_anim + "zatemnenie.webp":
         if gallery_mode == "cg":
-            textbutton translation_new["BG"] style "log_button" text_style "settings_link" xalign 0.5 yalign 0.92 action (SetVariable('gallery_mode', "bg"), SetVariable('page', 0), ShowMenu("gallery")) at ts_preferences_anim
+            textbutton translation_new["BG"] style "log_button" text_style "settings_link" xalign 0.5 yalign 0.92 activate_sound start_sound_suka hover_sound button_menu action (SetVariable('gallery_mode', "bg"), SetVariable('page', 0), ShowMenu("gallery")) at ts_preferences_anim
         elif gallery_mode == "bg":
-            textbutton translation_new["CG"] style "log_button" text_style "settings_link" xalign 0.5 yalign 0.92 action (SetVariable('gallery_mode', "cg"), SetVariable('page', 0), ShowMenu("gallery")) at ts_preferences_anim
+            textbutton translation_new["CG"] style "log_button" text_style "settings_link" xalign 0.5 yalign 0.92 activate_sound start_sound_suka hover_sound button_menu action (SetVariable('gallery_mode', "cg"), SetVariable('page', 0), ShowMenu("gallery")) at ts_preferences_anim
 
-        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 action Return() at ts_preferences_anim
+        textbutton translation_new["Back"] style "log_button" text_style "settings_link" xalign 0.015 yalign 0.92 activate_sound start_sound_suka hover_sound button_menu action Return() at ts_preferences_anim
 
         grid rows cols xpos 0.09 ypos 0.18:
             $ cg_displayed = 0
@@ -93,8 +93,8 @@ screen gallery:
                 null
 
         if page != 0:
-            imagebutton auto "mod_assets/source/images/gui/dialogue_box/backward_%s.webp" yalign 0.5 xalign 0.01 action (SetVariable('page', page-1), ShowMenu("gallery")) at ts_preferences_anim
-        imagebutton auto "mod_assets/source/images/gui/dialogue_box/forward_%s.webp" yalign 0.5 xalign 0.99 action (SetVariable('page', next_page), ShowMenu("gallery")) at ts_preferences_anim
+            imagebutton auto "mod_assets/source/images/gui/dialogue_box/backward_%s.webp" yalign 0.5 xalign 0.01 activate_sound start_sound_suka hover_sound button_menu action (SetVariable('page', page-1), ShowMenu("gallery")) at ts_preferences_anim
+        imagebutton auto "mod_assets/source/images/gui/dialogue_box/forward_%s.webp" yalign 0.5 xalign 0.99 activate_sound start_sound_suka hover_sound button_menu action (SetVariable('page', next_page), ShowMenu("gallery")) at ts_preferences_anim
 
         python:
             def abc(n,k):

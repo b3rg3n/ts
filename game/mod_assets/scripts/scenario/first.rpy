@@ -6,50 +6,50 @@ label start:
     python: #ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
         from time import localtime, strftime
         t = strftime("%H:%M:%S", localtime())
-        hour, min, sec = t.split(":")
+        hour, minutes, sec = t.split(":")
         hour = int(hour)
 
     if persistent.carter3menu == True: #МЕНЮШКА КАРТЕРА 3
         if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
             play sound br_glitch
-            show ts_menu_move_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            show ts_menu_move_anim as bg1 at Glitch(_fps=160, glitch_strength=1)
             pause 0.6
             stop sound
-            hide ts_menu_move_anim as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            hide ts_menu_move_anim as bg1 at Glitch(_fps=160, glitch_strength=1)
         elif True: #ДЕНЬ
             play sound br_glitch
-            show ts_menu_move_anim_three as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            show ts_menu_move_anim_three as bg1 at Glitch(_fps=160, glitch_strength=1)
             pause 0.6
             stop sound
-            hide ts_menu_move_anim_three as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            hide ts_menu_move_anim_three as bg1 at Glitch(_fps=160, glitch_strength=1)
 
     elif persistent.carter2menu == True: #МЕНЮШКА КАРТЕРА 2
         if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
             play sound br_glitch
-            show ts_menu_art_carter2_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            show ts_menu_art_carter2_night as bg1 at Glitch(_fps=160, glitch_strength=1)
             pause 0.6
             stop sound
-            hide ts_menu_art_carter2_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            hide ts_menu_art_carter2_night as bg1 at Glitch(_fps=160, glitch_strength=1)
         elif True: #ДЕНЬ
             play sound br_glitch
-            show ts_menu_art3_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            show ts_menu_art3_night as bg1 at Glitch(_fps=160, glitch_strength=1)
             pause 0.6
             stop sound
-            hide ts_menu_art3_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            hide ts_menu_art3_night as bg1 at Glitch(_fps=160, glitch_strength=1)
 
     else: #МЕНЮШКА КАРТЕРА 1
         if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
             play sound br_glitch
-            show ts_menu_vid_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            show ts_menu_vid_night as bg1 at Glitch(_fps=160, glitch_strength=1)
             pause 0.6
             stop sound
-            hide ts_menu_vid_night as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            hide ts_menu_vid_night as bg1 at Glitch(_fps=160, glitch_strength=1)
         elif True: #ДЕНЬ
             play sound br_glitch
-            show ts_menu_vid as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            show ts_menu_vid as bg1 at Glitch(_fps=160, glitch_strength=1)
             pause 0.6
             stop sound
-            hide ts_menu_vid as bg1 at br_glitches(_fps=160, glitch_strength=1)
+            hide ts_menu_vid as bg1 at Glitch(_fps=160, glitch_strength=1)
 
     stop sound fadeout 2
     stop music fadeout 2

@@ -1028,7 +1028,7 @@ label ts_scenario_7:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    scene ts_closet with dissolve2
+    scene ts_closet with linearblurbolee
 
     show layer screens at ts_showscreens
 

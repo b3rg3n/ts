@@ -1343,7 +1343,7 @@ label ts_scenario_4:
         blur 3.0
     stop music
     play sound br_glitch
-    show ts_club_blur as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    show ts_club_blur as bg1 at Glitch(_fps=160, glitch_strength=1)
     $ renpy.pause(0.4, hard=True)
     stop sound
 
@@ -1523,7 +1523,7 @@ label ts_scenario_4:
     pause 0.01
 
     play sound s_kill_glitch1
-    show s_kill_bg2 as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    show s_kill_bg2 as bg1 at Glitch(_fps=160, glitch_strength=1)
     $ renpy.pause(0.25, hard=True)
     stop sound
 
@@ -1551,7 +1551,7 @@ label ts_scenario_4:
     pause 1.5
 
     play sound s_kill_glitch1
-    show anarchy_glitch_logo as bg1 at br_glitches(_fps=160, glitch_strength=1) zorder 2
+    show anarchy_glitch_logo as bg1 at Glitch(_fps=160, glitch_strength=1) zorder 2
     $ renpy.pause(0.25, hard=True)
     stop sound
     hide anarchy_glitch_logo
@@ -1559,7 +1559,7 @@ label ts_scenario_4:
     pause 4.0
 
     play sound s_kill_glitch1
-    show anarchy_glitch_logo as bg1 at br_glitches(_fps=160, glitch_strength=1) zorder 2
+    show anarchy_glitch_logo as bg1 at Glitch(_fps=160, glitch_strength=1) zorder 2
     $ renpy.pause(0.25, hard=True)
     stop sound
     hide anarchy_glitch_logo

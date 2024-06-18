@@ -18,7 +18,7 @@ label main_menu:
     python: #ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
         from time import localtime, strftime
         t = strftime("%H:%M:%S", localtime())
-        hour, min, sec = t.split(":")
+        hour, minutes, sec = t.split(":")
         hour = int(hour)
 
     if persistent.badendmenu == True: #МЕНЮШКА ПОСЛЕ БЕД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
@@ -94,10 +94,10 @@ label glitch_main_menu_ending:
     $ persistent.badendmenuperedglitch = False
     $ persistent.badendmenuskipglitch = True
     play sound br_glitch
-    show ts_menu_move_anim_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    show ts_menu_move_anim_bad_end as bg1 at Glitch(_fps=160, glitch_strength=1)
     pause 0.6
     stop sound
-    hide ts_menu_move_anim_bad_end as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    hide ts_menu_move_anim_bad_end as bg1 at Glitch(_fps=160, glitch_strength=1)
     call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
 
 label splashscreen:

@@ -27,7 +27,7 @@ label testing_label_blya:
     show ts_maloletka_pozvonok_sloman_nahui at right
     $ persistent.uncolorize = "none"
     "ewfe"
-    scene ts_club
+    scene ts_club with memglitchbolee
 
     "fefke"
     $ persistent.ingame_pizda = False

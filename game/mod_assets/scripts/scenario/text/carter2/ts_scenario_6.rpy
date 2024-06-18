@@ -883,7 +883,6 @@ label ts_scenario_6:
     show sayori 2k at Glitch(_fps=1000., glitch_strength=.3)
     show natsuki 1n at Glitch(_fps=1000., glitch_strength=.3, color_range1="#0a00", color_range2="0f0")
 
-    #show ts_club as bg1 at br_glitches(_fps=160, glitch_strength=1)
     $ renpy.pause(1.1, hard=True)
     stop sound
 
@@ -1061,7 +1060,7 @@ label ts_scenario_6:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    scene ts_notebook with dissolve:
+    scene ts_notebook with linearblurbolee:
         blur 9.0
 
     show layer screens at ts_showscreens

@@ -42,14 +42,17 @@ label ts_scenario_9:
     s "Вставай давай, пьянь малолетняя!"
     m "Ну хорошо, хорошо!.."
     window hide
-    play sound fb
+    play sound ts_glitch2
     scene ts_sayori_bedroom
-    with flash
-
+    with memglitchbolee
+    stop sound
     show layer screens at ts_showscreens
     "Передо мной предстала..."
     play music ts_sd fadein 2
+    play sound ts_glitch5
     show sayori 4pi at t11
+    with memglitchbolee
+    stop sound
     "Та же Сайори."
     "В абсолютно той же пижаме.{w} В абсолютно той же комнате."
     "Странно..."
@@ -357,7 +360,11 @@ label ts_scenario_9:
 
     show layer screens at ts_showscreens
     "Как раз вовремя. В этот момент вернулся папа."
+    play sound ts_glitch3
     show hiroto 1a at t11
+    with memglitchbolee
+    stop sound
+
     m "Папа! Почему все ведут себя...{w=0.44}{nw}"
     "Однако прежде чем я успеваю рассказать хоть что-либо, он просто весело сказал."
 
@@ -493,12 +500,17 @@ label ts_scenario_9:
     m "{b}ПОЧЕМУ АБСОЛЮТНО ВСЕ ДЕЛАЮТ ВИД, ЧТО ЭТОЙ НЕДЕЛИ КАК БУДТО БЫ И НЕ БЫЛО?{/b}"
     play music ts_roae
 
+    play sound ts_glitch6
+    scene ts_bedroom
+
     $ persistent.ingame_pizda = True
 
     show layer master at AnimatedAberate(25.0)
     show layer screens at Static(1.0)
 
     show monika 2bi at f11
+    with memglitchstr
+    stop sound
     em "Потому что её на самом деле никогда и не было."
     em 4bd "Помнишь, как я сказала вчера, что сон заканчивается?"
     em 3bi "Так вот. Сон закончился."
@@ -633,7 +645,7 @@ label ts_scenario_9:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    scene ts_notebook with dissolve:
+    scene ts_notebook with linearblurbolee:
         blur 9.0
 
     show layer screens at ts_showscreens
@@ -655,7 +667,7 @@ label ts_scenario_9:
     hide screen poem
     hide poem_dismiss
 
-    scene ts_notebook with dissolve
+    scene ts_notebook with linearblurbolee
 
     show layer screens at ts_showscreens
     

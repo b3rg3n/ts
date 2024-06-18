@@ -521,7 +521,7 @@ label ts_scenario_0:
     window hide
     stop music
     play sound br_glitch
-    show ts_club2re as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    show ts_club2re as bg1 at Glitch(_fps=160, glitch_strength=1)
     $ renpy.pause(1.1, hard=True)
     stop sound
     scene black
@@ -591,7 +591,7 @@ label ts_scenario_0:
     $ Chapter("ПРИЯТНОГО ЧТЕНИЯ")
     stop music
     play sound br_glitch
-    show ts_house as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    show ts_house as bg1 at Glitch(_fps=160, glitch_strength=1)
     $ renpy.pause(1.1, hard=True)
     stop sound
 

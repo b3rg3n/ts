@@ -1204,7 +1204,7 @@ label ts_scenario_1:
     window hide
     stop music
     play sound br_glitch
-    show ts_bedroom as bg1 at br_glitches(_fps=160, glitch_strength=1)
+    show ts_bedroom as bg1 at Glitch(_fps=160, glitch_strength=1)
     $ renpy.pause(0.4, hard=True)
     stop sound
     scene black

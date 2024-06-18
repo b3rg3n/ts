@@ -86,9 +86,9 @@ screen ts_dop_list_suka: # ЭКРАН ДОП ХУЙНИ СУКА
         action ShowMenu("music_room", mr=music_room)
 
     textbutton translation_new["ts_dop_set4"] style "log_button" text_style "settings_link" yalign 0.6 xalign 0.5 at ts_preferences_anim:
-        activate_sound button_error
+        activate_sound start_sound_suka
         hover_sound button_menu
-        action NullAction()
+        action ShowMenu('gallery')#NullAction()
 
     textbutton translation_new["Back"] style "log_button" text_style "settings_link" yalign 0.8 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka

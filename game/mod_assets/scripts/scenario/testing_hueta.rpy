@@ -20,7 +20,17 @@ label testing_label_blya:
     #$ persistent.uncolorize = "lite"
 
     #$ persistent.uncolorize = "full"
-    scene black
+    scene ts_club
+    show yuri 2l at i31
+    show sayori 4s at i32
+    show natsuki 1y at i33
+    "Хуй"
+    window hide
+    show layer master at ZoomTransitionInto()
+    pause 0.5
+    scene ts_bathroom at ZoomTransitionExodus()
+    pause 1.2
+    "test"
     show ts_yrec_kill_nahui_suicide_blya at left
     show ts_sayori_zalagala_chereshnya:
         align (0.5, 0.15)

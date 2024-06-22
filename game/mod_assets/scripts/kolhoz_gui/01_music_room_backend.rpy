@@ -94,19 +94,19 @@ init python:
         if not duration:
             return
 
-        #new_t = max(value, 0)
-        #new_t = min(new_t, duration)
+        new_t = max(value, 0)
+        new_t = min(new_t, duration)
 
-        #file = "<from {} loop 0.0>{}".format(new_t, track)
+        file = "<from {} loop 0.0>{}".format(new_t, track)
 
-        #try:
-        #    musicroom.play(file)
-        #except:
-        #    renpy.music.play(file, channel=channel, loop=loop,
-        #        fadeout=fadeout, fadein=fadein)
-        #    if next_songs:
-        #        renpy.music.queue(next_songs, channel=channel, clear_queue=True,
-        #            loop=loop)
+        try:
+            musicroom.play(file)
+        except:
+            renpy.music.play(file, channel=channel, loop=loop,
+                fadeout=fadeout, fadein=fadein)
+            if next_songs:
+                renpy.music.queue(next_songs, channel=channel, clear_queue=True,
+                    loop=loop)
 
     class AudioAdjustmentValue(AudioPositionValue):
         """

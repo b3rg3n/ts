@@ -246,15 +246,15 @@ screen music_room(mr):
         ## you don't need.
         hbox:
             ################## Back 10 seconds button ##################
-            #imagebutton:
-            #    idle "back_10_button"
+            imagebutton:
+                idle "back_10_button"
                 ## This automatically colorizes the button. If you are supplying
                 ## your own images, you can remove any `at` ATL transforms to
                 ## these buttons.
-            #    at colorize_button()
-            #    action mr.AdjustTrackPos(-10)
-            #    activate_sound start_sound_suka
-            #    hover_sound button_menu
+                at colorize_button()
+                action mr.AdjustTrackPos(-10)
+                activate_sound start_sound_suka
+                hover_sound button_menu
             ################## Shuffle button ##################
             imagebutton:
                 idle "shuffle_button"
@@ -293,12 +293,12 @@ screen music_room(mr):
                 activate_sound start_sound_suka
                 hover_sound button_menu
             ################## Forward 10 seconds button ##################
-            #imagebutton:
-            #    idle "forward_10_button"
-            #    at colorize_button()
-            #    action mr.AdjustTrackPos(10)
-            #    activate_sound start_sound_suka
-            #    hover_sound button_menu
+            imagebutton:
+                idle "forward_10_button"
+                at colorize_button()
+                action mr.AdjustTrackPos(10)
+                activate_sound start_sound_suka
+                hover_sound button_menu
 
 ################################################################################
 ## Styles for Music Room 1

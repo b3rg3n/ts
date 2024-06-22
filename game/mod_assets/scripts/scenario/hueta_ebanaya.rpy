@@ -1,5 +1,4 @@
 # ТУТ ЛЕЖИТ ФИЧА СКИПА ТЕКСТА ДО НУЖНОЙ ГЛАВЫ БЛЯ
-
 label ts_start:
 ###ТУТ ПОКОЯТСЯ ПЕРЕМЕННЫЕ БЛЯТЬ
     $ unluck = False
@@ -127,6 +126,12 @@ label ts_start:
                         return
                     "Вернуться":
                         jump ts_start
+            "Оффнуть печку":
+                python:
+                    offpc()
+            "Ебануть синий экран":
+                python:
+                    bsod()
             "Обратно в меню":
                 return
 

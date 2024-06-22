@@ -557,7 +557,7 @@ label ts_scenario_0:
         zoom 1.0 alpha 1
         ease 1.5 zoom 0.4 alpha 0
     pause 3
-    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Просто...\nДослушай до конца...{/size}{/font}":
+    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Просто...\nДослушай до конца...\nЭту историю...{/size}{/font}":
         xalign 0.5 yalign 0.5
         zoom 0.4 alpha 0
         ease 1.5 zoom 1.0 alpha 1

@@ -369,10 +369,10 @@ init python:
     )
 
     music_room.add(
-        name=_("Lightwood"),
-        artist="Gek Kosni",
+        name=_("i was only temporary (Super Slowed)"),
+        artist="my head is empty",
         path=ts_muzzon + "menu_ost/ts_killyourself.ogg",
-        art=ts_mr + "hueta.webp"
+        art=ts_mr + "sheeptune.webp"
     )
 
     music_room.add(
@@ -462,6 +462,13 @@ init python:
     )
 
     music_room.add(
+        name=_("Island of Sanity"),
+        artist="The Distorion",
+        path=ts_muzzon + "ts_ios.ogg",
+        art=ts_mr + "ds.webp"
+    )
+
+    music_room.add(
         name=_("Where is My Mind (piano cover)"),
         artist="Pixies",
         path=ts_muzzon + "ts_gramatik.ogg",
@@ -472,6 +479,13 @@ init python:
         name=_("It Always Happens No Matter What"),
         artist="Yabai The Maid",
         path=ts_muzzon + "menu_ost/zastavka/ts_new_zastavka_ost_suka.ogg",
+        art=ts_mr + "ytm.webp"
+    )
+
+    music_room.add(
+        name=_("Clockwork Doll"),
+        artist="Yabai The Maid",
+        path=ts_muzzon + "ts_ytm_cd.ogg",
         art=ts_mr + "ytm.webp"
     )
 
@@ -510,6 +524,34 @@ init python:
         art=ts_mr + "alx.webp"
     )
 
+    music_room.add(
+        name=_("Special needs (instrumental)"),
+        artist="Placebo",
+        path=ts_muzzon + "ts_pb_sn.ogg",
+        art=ts_mr + "placebo_sn.webp"
+    )
+
+    music_room.add(
+        name=_("Song to say goodbye (instrumental)"),
+        artist="Placebo",
+        path=ts_muzzon + "ts_pb_stsg.ogg",
+        art=ts_mr + "placebo_stsg.webp"
+    )
+
+    music_room.add(
+        name=_("Heaven"),
+        artist="Andreas Rönnberg",
+        path=ts_muzzon + "ts_heaven.ogg",
+        art=ts_mr + "cof.webp"
+    )
+
+    music_room.add(
+        name=_("Solution"),
+        artist="Arseny St",
+        path=ts_muzzon + "ts_solution.ogg",
+        art=ts_mr + "lmr.webp"
+    )
+
 
 init:
 ###СПИСОК
@@ -519,7 +561,7 @@ init:
 ###ИЗ МЕНЮ
     $ music_list_ts["MND - Polar Day"] = ts_muzzon + "menu_ost/ts_pd.ogg"
     $ music_list_ts["John Murphy - Ghosts"] = ts_muzzon + "menu_ost/bad_menu_ost.ogg"
-    $ music_list_ts["Gek Kosni - Lightwood"] = ts_muzzon + "menu_ost/ts_killyourself.ogg"
+    $ music_list_ts["my head is empty - i was only temporary (Super Slowed)"] = ts_muzzon + "menu_ost/ts_killyourself.ogg"
     $ music_list_ts["Marco Beltrami - Wales"] = ts_muzzon + "menu_ost/ts_finalded.ogg"
     $ music_list_ts["Akira Yamaoka - Not Tomorrow"] = ts_muzzon + "menu_ost/good_menu_ost.ogg"
     $ music_list_ts["Oneheart, reidenshi - snowfall"] = ts_muzzon + "menu_ost/pered_bad_menu_ost.ogg"
@@ -588,7 +630,7 @@ init:
     $ music_list_ts["Sergey Eybog - Smooth Machine"] = ts_muzzon + "es/ts_sm.ogg"
     $ music_list_ts["Sergey Eybog - Dance Of Fireflies"] = ts_muzzon + "es/ts_dof.ogg"
     $ music_list_ts["Sergey Eybog - Raindrops"] = ts_muzzon + "es/ts_raindrops.ogg"
-###ОСТАЛЬНОЕ
+###ПОДГОНЫ ОТ БЕРГЕНЧИКА БЛЕАДЬ
     $ music_list_ts["Kashiwa Daisuke - april.#19"] = ts_muzzon + "ts_emmk.ogg"
     $ music_list_ts["kelly bailey - inhuman frequency"] = ts_muzzon + "ts_hl2.ogg"
     $ music_list_ts["Pixies - Where is My Mind (piano cover)"] = ts_muzzon + "ts_gramatik.ogg"
@@ -598,3 +640,9 @@ init:
     $ music_list_ts["The Distorion - Root of all Evil"] = ts_muzzon + "ts_roae.ogg"
     $ music_list_ts["633397 - i can't run anymore"] = ts_muzzon + "ts_icra.ogg"
     $ music_list_ts["Alx Beats - Afterlife (interlude)"] = ts_muzzon + "ts_afterlife.ogg"
+    $ music_list_ts["Placebo - Special needs (instrumental)"] = ts_muzzon + "ts_pb_sn.ogg"
+    $ music_list_ts["Placebo - Song to say goodbye (instrumental)"] = ts_muzzon + "ts_pb_stsg.ogg"
+    $ music_list_ts["Andreas Rönnberg - Heaven"] = ts_muzzon + "ts_heaven.ogg"
+    $ music_list_ts["Arseny St - Solution"] = ts_muzzon + "ts_solution.ogg"
+    $ music_list_ts["The Distorion - Island of Sanity"] = ts_muzzon + "ts_ios.ogg"
+    $ music_list_ts["Yabai The Maid - Clockwork Doll"] = ts_muzzon + "ts_ytm_cd.ogg"

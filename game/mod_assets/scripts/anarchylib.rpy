@@ -32,6 +32,7 @@ init -1199 python:
     ts_cg = ts_images + "cg/"
     ts_anim = ts_images + "anim/"
     ts_gui = ts_images + "gui/"
+    ts_gl_bg_path = ts_bg + "glitch/"
 
     ts_mr = ts_gui + "music_room/art/"
 

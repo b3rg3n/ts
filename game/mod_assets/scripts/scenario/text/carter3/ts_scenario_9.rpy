@@ -696,4 +696,9 @@ label ts_scenario_9:
     "Почему эта неделя повторяется точь в точь?"
     stop music fadeout 3
     "Слишком много всего... Как же я устала..."
-    return
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    scene black with ed_night_dis
+    pause 1
+    show layer screens at ts_null_transform
+    jump ts_scenario_10

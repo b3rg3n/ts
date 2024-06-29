@@ -65,7 +65,7 @@ screen say(who, what):
                 id "what"
                 xpos 129
                 ypos 576
-                xmaximum 1027
+                xmaximum 1010
                 size 27
                 line_spacing 1
             if who:
@@ -134,7 +134,7 @@ screen say(who, what):
                 id "what"
                 xpos 129
                 ypos 576
-                xmaximum 1027
+                xmaximum 1010
                 size 27
                 line_spacing 1
             if who:
@@ -204,7 +204,7 @@ screen say(who, what):
                 id "what"
                 xpos 129
                 ypos 609
-                xmaximum 1027
+                xmaximum 1010
                 size 23
                 line_spacing 1
             if who:
@@ -273,7 +273,7 @@ screen say(who, what):
                 id "what"
                 xpos 129
                 ypos 609
-                xmaximum 1027
+                xmaximum 1010
                 size 23
                 line_spacing 1
             if who:

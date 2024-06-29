@@ -73,6 +73,112 @@ init:
         pause 0.11
         repeat
 
+    image ts_kitchen_psyhodelic_pizdec_glitch: # УБИВАЕМ ЭПИЛЕПТИКОВ НАХУЙ))))0000)))
+        ts_gl_bg_path + 'ts_kitchen_g1.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g6.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g2.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g5.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g3.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g4.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g6.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g3.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g5.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g4.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g3.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g6.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g2.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_kitchen_g5.webp'
+        pause 0.05
+        repeat
+
+    image ts_hiroto_psyhodelic_pizdoc: # УБИВАЕМ ЭПИЛЕПТИКОВ НАХУЙ))))0000)))
+        ts_hiroto_pt + 'glitch/1l_g1.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g4.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g2.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g4.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g3.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g4.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g1.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g4.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g2.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g4.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g3.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g4.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g1.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g4.webp'
+        pause 0.05
+        repeat
+
+    image ts_hiroto_psyhodelic_pizdoc_eye: # ГЛАЗЁНКИ БЕГАЮТ
+        ts_hiroto_pt + 'glitch/2l_g1.webp'
+        pause 0.5
+        ts_hiroto_pt + 'glitch/2l_g3.webp'
+        pause 0.5
+        ts_hiroto_pt + 'glitch/2l_g2.webp'
+        pause 0.5
+        ts_hiroto_pt + 'glitch/2l_g4.webp'
+        pause 0.5
+        ts_hiroto_pt + 'glitch/2l_g2.webp'
+        pause 0.5
+        ts_hiroto_pt + 'glitch/2l_g5.webp'
+        pause 0.5
+        ts_hiroto_pt + 'glitch/2l_g3.webp'
+        pause 0.5
+        ts_hiroto_pt + 'glitch/2l_g1.webp'
+        pause 0.5
+        ts_hiroto_pt + 'glitch/2l_g2.webp'
+        pause 0.5
+        ts_hiroto_pt + 'glitch/2l_g4.webp'
+        pause 0.5
+        repeat
+
+    image ts_hiroto_psyhodelic_pizdoc_eblet: # ЕБАЛО КАРАНДАШОМ
+        ts_hiroto_pt + 'glitch/1r_g1.webp'
+        pause 0.25
+        ts_hiroto_pt + 'glitch/1r_g3.webp'
+        pause 0.25
+        ts_hiroto_pt + 'glitch/1r_g2.webp'
+        pause 0.25
+        ts_hiroto_pt + 'glitch/1r_g4.webp'
+        pause 0.25
+        ts_hiroto_pt + 'glitch/1r_g3.webp'
+        pause 0.25
+        ts_hiroto_pt + 'glitch/1r_g4.webp'
+        pause 0.25
+        ts_hiroto_pt + 'glitch/1r_g2.webp'
+        pause 0.25
+        ts_hiroto_pt + 'glitch/1r_g4.webp'
+        pause 0.25
+        ts_hiroto_pt + 'glitch/1r_g3.webp'
+        pause 0.25
+        repeat
+
     image vladick_pizdos: # ГЛИЧЁВЫЙ СЦЕНАРИСТ ЭТОЙ ХУЙНИ
         contains:
             choice:

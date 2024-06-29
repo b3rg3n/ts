@@ -114,6 +114,35 @@ transform i22:
 transform i11:
     tinstant(640)
 
+transform ip11:
+    tinstant(640)
+    align(0.5, 0.5)
+    ease 0.5 align(0.1, 0.5)
+    ease 0.5 align(0.3, 0.8)
+    ease 0.5 align(0.9, 0.1)
+    ease 0.5 align(0.6, 0.3)
+    repeat
+
+transform ipp11:
+    tinstant(640)
+    align(0.5, 0.5) zoom 1.0 rotate 0
+    ease 1.5 align(0.35, 0.4) zoom 2.0 rotate -60
+    parallel:
+        ease 0.5 align(0.37, 0.42) zoom 2.05 rotate -59
+        ease 0.5 align(0.35, 0.4) zoom 1.95 rotate -60
+        ease 0.5 align(0.33, 0.39) zoom 2.010 rotate -61
+        repeat
+
+transform ippp11:
+    tinstant(640)
+    align(0.5, 0.5) zoom 1.0 rotate 0
+    ease 0.8 align(0.5, 0.25) zoom 2.0
+    parallel:
+        ease 0.2 align(0.47, 0.22) zoom 2.05
+        ease 0.2 align(0.53, 0.27) zoom 1.95
+        ease 0.2 align(0.50, 0.25) zoom 2.010
+        repeat
+
 # ПОЗИЦИИ F
 
 transform f61:

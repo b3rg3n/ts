@@ -7,7 +7,7 @@ python early:
 
 define config.developer = True # РЕЖИМ РАЗРАБОТЧИКА БЕЗ СДК
 define config.version = "1.1"
-define ts_version = "18.06.2024"
+define ts_version = "9.07.2024"
 
 define config.name = _("True Story")
 define config.save_directory = "truestory"

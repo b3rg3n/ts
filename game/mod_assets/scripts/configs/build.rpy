@@ -19,17 +19,18 @@ init python:
     build.classify('game/renpy-ActionEditor3-master/**', None)
 
     build.archive("truestory", "all")
+    build.archive("scripts", "all")
 
     build.classify("game/**.jpg", "truestory")
     build.classify("game/**.jpeg", "truestory")
     build.classify("game/**.webp", "truestory")
     build.classify("game/**.png", "truestory")
 
-    build.classify("game/**.rpyc", "truestory")
-    build.classify("game/**.rpy", "truestory")
+    build.classify("game/**.rpyc", "scripts")
+    build.classify("game/**.rpy", "scripts")
 
-    build.classify("game/**.pyc", "truestory")
-    build.classify("game/**.py", "truestory")
+    build.classify("game/**.pyc", "scripts")
+    build.classify("game/**.py", "scripts")
 
     build.classify("game/**.wav", "truestory")
     build.classify("game/**.mp3", "truestory")

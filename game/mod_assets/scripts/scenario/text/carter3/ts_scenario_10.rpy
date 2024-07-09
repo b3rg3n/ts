@@ -764,12 +764,15 @@ label ts_scenario_10:
         ease 0.5 align(0.9, 0.5)
         repeat
 
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
     n "{font=[pizdec_font]}Что, даже не {fast}расчлените Монику и не принесёте её обрубки в жертву богам?{/font}"
 
     stop sound
     stop sound2
     $ persistent.ingame_pizda = False
 
+    show layer screens
     python:
         _preferences.volumes['sfx'] = .65
         _preferences.volumes['music'] = .45

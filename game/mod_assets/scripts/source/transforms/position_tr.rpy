@@ -69,6 +69,15 @@ transform t22:
 transform t11:
     tcommon(640)
 
+transform t111:
+    tinstant(640)
+    align(0.5, 0.5) rotate 0
+    ease 1 align(0.3, 0.5) rotate 90 #3
+
+transform t1111:
+    tinstant(640)
+    align(0.5, 0.5) zoom 1.0
+    ease 1.25 align(0.25, 0.2) zoom 3.0
 # ПОЗИЦИИ I
 
 transform i61:
@@ -277,7 +286,8 @@ transform h22:
     hop(880)
 transform h11:
     hop(640)
-
+transform h111:
+    hop(640)
 # ПОЗИЦИИ HF
 transform hf61:
     hopfocus(113)

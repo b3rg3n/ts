@@ -245,16 +245,34 @@ label ts_scenario_10:
     show hiroto 1b1 at t11
     "Ну хоть одна вселенская постоянная здесь присутстсует: вне зависимости от того, насколько плохой кошмар мне снится, папу всегда очень легко убедить."
     play music ts_solution fadein 2
-    #вайплефт на тот же бгшник, МУЗЯКА ИЗ РАЗРЯДА AWAKENING POWER/ALWAYS READY, НУ ТИПО БОДРАЯ И БЫСТРАЯ, ТОЛЬКО БОЛЕЕ... НЕ ЗНАЮ, КАК ЭТО СКАЗАТЬ, НУ КУРСЕД ЧТОЛЕ
-    show hiroto 1b1 at t11
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+    show hiroto 1b1 at i11
     "Я съедаю гречку, хлопья и кофе олимпийскими темпами и говорю папе:"
     m "Л-ладно, пап, д-до в-вечера!"
     show hiroto 2h at f11
     ts_ft "М-Моника, подожди!.."
     hide hiroto
     "Но я его уже не слушаю, а вместо этого так же быстро выбегаю на улицу."
-    stop music fadeout 2
-#вайплефт до дома Моники, потом на какую-то рандомную улицу (SEASIDE_ROAD, НАПРИМЕР БЛЯТЬ, ТЫ ТАК И НЕ ПРИХУЯРИЛ БГШНИК ИЗ СЕДЬМОЙ ГЛАВЫ, ХОТЯ Я ТЕБЯ ПРОСИЛ)
+    stop music fadeout 4
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_house
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_seaside_road_morning
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
     play music ts_ios fadein 2
     "Я убегаю подальше от этого проклятого дома. Хоть куда-нибудь, лишь бы не находиться в одном доме с ним."
     show monika 2i at f11
@@ -270,19 +288,32 @@ label ts_scenario_10:
     m "Значит, если это просто сон... я же могу ущипнуть себя, и сон закончится..."
     show monika 2g at f11
     em "Подо{w=0.2}{nw}"
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
     show monika 2f at t11
-    pause 4
-    #сфх того, как Моника себя пиздец как сильно щиплет, ну и соответствующий звук страдания
+    play sound mon_ahh
+    with vpunch
+    pause 1
+    show layer screens at ts_showscreens
     m "Видишь? Ты до сих пор здесь, а папа и все мои друзья до сих пор безумны и кровожадны. Значит, не сплю!"
     show monika 1p at f11
+    stop music fadeout 7
     em "Не спишь, ага, конечно..."
     em 2n "Просто... когда придёшь в школу, постарайся вести себя естественно."
     em 2p "Я понимаю, что поначалу это будет довольно сложно, но просто веди себя точно так же, как и на прошлой неделе..."
     show monika 1m at t11
     m "Ладно... уговорила..."
-    #диссолв на сцене блек, рассолв на бг класса
-    stop music
-    #сфх ебучих тикающих часов, в лучших традициях азиатских пыток, когда челу просто капают по капле на голову, пока он не ёбнется
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    play sound ts_glitch6
+    scene black with memglitchstr
+    stop sound
+    pause 1
+    play sound ts_glitch2
+    scene ts_class with memglitchstr
+    stop music fadeout 2
+    play ambience clock_stena
+    show layer screens at ts_showscreens
     "Мои подозрения в очередной раз подтвердились, когда я пришла в школу."
     "Одноклассники говорили на те же темы, что и в прошлый понедельник, а на уроке биологии учитель объяснял ту же тему, что и в прошлый раз."
     "Слово в слово."
@@ -290,30 +321,98 @@ label ts_scenario_10:
     "То же самое повторилось и на всех остальных уроках."
     "Если Аки всё-таки права, и неделя циклично повторяется один в один, то через пару таких циклов я сама могу провести все лекции на этой неделе."
     "Наконец, время выдвигаться в клуб."
-    #вайплефт на коридор (ШКОЛЫ ЕСЛИ ЧТО), потом на бг клуба
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    stop ambience
+    play sound pageflip
+    scene ts_corridor
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_club
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
     "Хм-м-м..."
     "В клуб я снова пришла первой."
     "Или?.."
     "Если неделя повторяется один в один, то..."
     "Я решаю проверить кладовку."
-    #вайплефт на кладовку
-    show natsuki 1s at t11
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_closet
+    show natsuki 1s at i11
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Точно. Нацуки опять пришла и зарылась в кладовой."
     "По-моему, она зарылась в кладовой, потому что она решила поискать {i}ту самую{/i} мангу."
     "Как же она там называлась? «Ванильные Дамы» или как-то так? Вроде да."
     "Я решаю слегка подшутить над ней."
     m "Тык."
-    #микроглич с Нацуки, ну чисто визуальный, без -ушей, ну крч как в ориге примерно
-    show natsuki scream at f11
-    n "А-А-А-А-А-А-А-А-А!" #УРОДСКИМ ШРИФТОМ ЕСЛИ ЧТО
+
+    show natsuki scream at hf11
+    show layer screens at vpunch
+    $ persistent.ingame_pizda = False
+    play sound stol_udar
+    n "{font=[pizdec_font]}А-А-А-А-А-А-А-А-А!{/font}"
+    show layer screens at ts_hidescreens_fast
+    " {w=0.1}{nw}"
     pause 1.3
+    show layer screens at ts_showscreens_fast
     n 1l "А, вот и ты, {w=0.05}{nw}"
-    #вот тут уже фулскейл глич, вот который ты прихуярил
+
+    $ persistent.ingame_pizda = True
+
+    python:
+        _preferences.volumes['sfx'] = 1.0
+        _preferences.volumes['music'] = .0
+
+    play sound2 ts_smeh_pizdec
+
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+    play sound ts_glitch_music8
+    scene ts_closet_glitches_balya:
+        align(0.5, 0.5) zoom 1.0
+        ease 0.1 align(0.2, 0.5) zoom 2.0
+        ease 0.1 align(0.8, 0.2) zoom 3.0
+        ease 0.1 align(0.3, 0.7) zoom 2.5
+        ease 0.1 align(0.4, 0.9) zoom 4.0
+        ease 0.1 align(0.5, 0.5) zoom 1.0
+        repeat
+    show ts_maloletka_pozvonok_sloman_nahui:
+        align(0.5, 0.5) zoom 1.0
+        ease 0.1 align(0.1, 0.2) zoom 2.0
+        parallel:
+            ease 0.02 align(0.8, 0.2) zoom 3.0
+            ease 0.02 align(0.4, 0.4) zoom 4.0
+            ease 0.02 align(0.9, 0.6) zoom 5.0
+            ease 0.02 align(0.8, 0.2) zoom 3.0
+            repeat
+
     $ gtextsuka = glitchtext(42)
     extend "[gtextsuka]"
-    #ЗАКАНЧИВАЕМ ГЛИЧЕНИЕ
+
+    stop sound2
+    stop sound
+
+    show layer screens
+
+    $ persistent.ingame_pizda = False
+
+    scene ts_closet
+
+    python:
+        _preferences.volumes['sfx'] = .65
+        _preferences.volumes['music'] = .45
+
     show natsuki 1j at t11
-    play music ts_ytm_cd fadein 2
+    play music ts_sh_true fadein 2
     m "А, да, п-привет, Нацуки..."
     m "П-похоже, что ты первая п-пришла..."
     show natsuki 1k at f11
@@ -324,11 +423,14 @@ label ts_scenario_10:
     show natsuki 1c at f11
     n "Я думала какую-то новую мангу почитать, ну, знаешь... "
     extend 2l "Чтобы прям {w=0.01}{nw}"
-    #микрогличёвый сфх какой-то прихуярь
+    play sound psy_fast_1
     extend "необычное!"
-    #глич с анимированным ртом, как в оригинале
-    n 2a "сетчатый канифас слепозрения по линии жизни Анат ректипетальностью безукоризненно предложил склеромаляцию заржавшему католикосу"
-    #заканчиваем анимированное ибейло
+    show natsuki 2a at t11
+    show natsuki mouth at t11
+    show n_moving_mouth
+    n "сетчатый канифас слепозрения по линии жизни Анат ректипетальностью безукоризненно предложил склеромаляцию заржавшему католикосу"
+    show natsuki 1a at t11
+    hide n_moving_mouth
     $ gtextsuka = glitchtext(15)
     n 2k "Честно говоря, я эту мангу уже когда-то начинала читать, ещё аж лет в [gtextsuka], но тогда она мне показалась слишком скучной."
     n 2l "Но теперь я заметно повзрослела, и, думаю, в этот раз я её осилю!"
@@ -354,23 +456,68 @@ label ts_scenario_10:
     "Увидев и услышав, что я «разделяю её увлечение мангой», не заставляя меня, Нацуки просияла."
     n 4z "Ура!"
     n 2l "Может, теперь-то я пойму её!"
-    #диссолв на n_cg1_base
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound psy_fast_3
+    scene n_cg1_bg
+    show n_cg1_base
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with memglitchbolee
+    stop sound
+    show layer screens at ts_showscreens
     n "Знаешь..."
     n "Как-то даже непривычно читать мангу... вместе с кем-то ещё."
-    #n_cg1_exp2
+
+    play sound psy_fast_1
+    scene n_cg1_bg
+    show n_cg1_base
+    show n_cg1_exp2
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with memglitch
+    stop sound
     n "Все мои друзья насмехаются надо мной из-за одного только названия!"
     n "А манга, вообще-то, может рассказывать истории не хуже классических произведений, которые все обожают!"
     "Пока что она повторяет всё слово в слово."
     "Но по классике, неожиданность может начаться в самый непредсказуемый момент."
     em "И не говори..."
     m "Э-э-э... да."
-    #n_cg1_exp1
+    play sound psy_fast_1
+    scene n_cg1_bg
+    show n_cg1_base
+    show n_cg1_exp1
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with memglitch
+    stop sound
     n "Ну вот видишь! Хоть кто-то со мной согласен!"
     m "Д-давай уже начнём..."
     "А то эта излишняя предсказуемость меня пугает. Когда же всё пойдёт к чертям?"
     em "Сама же говорила, в самый непредсказуемый момент!"
     "«Вот только твоих подколов мне не хватало...»"
-    #вайплефт на n_cg1_exp4
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene n_cg1_bg
+    show n_cg1_base
+    show n_cg1_exp4
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
     "Мы читаем мангу уже некоторое время."
     "...а точнее, читаю мангу уже одна только я."
     "Нацуки же просто... уснула."
@@ -378,22 +525,96 @@ label ts_scenario_10:
     "Кажется, она как-то упоминала, что её отец плохо её кормит?"
     "В любом случае, мне это очень не нравится..."
     m "Н-Нацуки..."
-    #n_cg1_exp5
+    play sound psy_fast_3
+    scene n_cg1_bg
+    show n_cg1_base
+    show n_cg1_exp5
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with memglitch
+    stop sound
     n "А, что такое?.."
+    $ persistent.ingame_pizda = False
     m "С добрым утром. Ты уже минут пятнадцать дремаешь."
     n "А... Да я просто {w=0.01}{nw}"
-    #ВОТ ЭТУ ГЛИЧЁВУЮ ХУЙНЮ ВЕРСИИ ЦГШКИ НАЦУКИ ВХУЯРЬ, НУ КАК ТЫ ДЕЛАЛ ГДЕ-ТО МЕСЯЦА ПОЛТОРА НАЗАД
-    $ gtextsuka = glitchtext(renpy.random.randint(24, 44)) #ТЕПЕРЬ ВРОДЕ ПРАВИЛЬНО РАНДИНТ ГЛИЧТЕКСТА ХУЙНУЛ
+
+    play sound ts_glitch_music10
+
+    scene nat_pizdos
+    show n_cg1b228
+
+    $ persistent.ingame_pizda = True
+
+    python:
+        _preferences.volumes['sfx'] = 1.0
+        _preferences.volumes['music'] = .0
+
+    play sound2 ts_smeh_pizdec
+
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+    $ gtextsuka = glitchtext(24)
     n "[gtextsuka]{w=0.33}{nw}"
-    n "[gtextsuka][gtextsuka]{w=0.33}{nw}"
+    $ gtextsuka = glitchtext(24)
+    $ gtextsuka1 = glitchtext(48)
+    n "[gtextsuka][gtextsuka1]{w=0.33}{nw}"
+    $ gtextsuka = glitchtext(36)
     n "[gtextsuka]{w=0.33}{nw}"
-    n "[gtextsuka][gtextsuka][gtextsuka][gtextsuka]{w=0.33}{nw}"
-    #n_cg1_exp5
+    $ gtextsuka = glitchtext(24)
+    $ gtextsuka1 = glitchtext(12)
+    $ gtextsuka2 = glitchtext(23)
+    $ gtextsuka3 = glitchtext(4)
+    n "[gtextsuka][gtextsuka1][gtextsuka2][gtextsuka3]{w=0.33}{nw}"
+
+    $ persistent.ingame_pizda = False
+    stop sound
+    stop sound2
+    show layer screens
+
+    python:
+        _preferences.volumes['sfx'] = .65
+        _preferences.volumes['music'] = .45
+
+    play sound psy_fast_3
+    scene n_cg1_bg
+    show n_cg1_base
+    show n_cg1_exp5
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with memglitch
+    stop sound
+
     pause 1.5
+    show layer screens at ts_showscreens_fast
     m "Ч-что?"
-    #n_cg1_exp2
+    play sound psy_fast_1
+    scene n_cg1_bg
+    show n_cg1_base
+    show n_cg1_exp2
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with memglitch
+    stop sound
     n "Ничего уже! Давай дальше читать."
-    #вайплефт на n_cg1_base
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene n_cg1_bg
+    show n_cg1_base
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
     "Мы продолжили читать."
     "Вкупе с тем, что я уже знаю, что произойдёт на этих страницах, я читаю более вдумчиво и внимательно."
     em "Ты что, и книжки свои в детстве по несколько раз перечитывала, чтобы хоть что-то понять?"
@@ -405,8 +626,21 @@ label ts_scenario_10:
     "Так что почти все детали уже стёрлись из её памяти."
     em "Точно так же, как «стёрлась её память обо всех событиях за всю неделю»?"
     "«Просто дай мне спокойно почитать!»"
-    #рассолв обратно на бг клуба
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound ts_glitch4
+    scene ts_club
+    show dust1
+    show dust2
+    show dust3
+    show dust4
     show natsuki 1k at f11
+    with memglitchbolee
+
+    show layer screens at ts_showscreens
+
     n "Ну, для первого раза достаточно."
     n 1l "Итак, что тебе понравилось? Кто тебе понравился?"
     show natsuki 1j at t11
@@ -414,6 +648,7 @@ label ts_scenario_10:
     m "Ну-у-у, понравилась общая рисовка и стиль повествования, а ещё мне понравилась..."
     "Как же её там зовут?"
     m "Минори."
+    stop music fadeout 7
     show natsuki 2l at f11
     n "Правда? Мне тоже больше всех Минори нравится!"
     n "Это потому, что она вся такая неуклюжая, да?"
@@ -424,87 +659,265 @@ label ts_scenario_10:
     n 2l "Именно! А ещё...{w=1}{nw}"
     "Нацуки, похоже, совсем меня не слышит."
     "Она слишком увлеклась мангой, а особенно тем, что хоть кто-то разделяет её увлечения, что она даже не слышит остальных."
-    #сфх стука в дверь и открытия двери
-    "Да и остальные уже пришли, поэтому диалога о возможном разрезе пространственно-временного континуума уже точно не будет."
-    #Гличики Сайры и Юрца прихуярь, а потом через секунды 2-3 уже нормальные спрайты
-    show yuri 1a at t31
-    show sayori 1a at t32
+    window hide
+    play sound stuk
+    with vpunch
+    pause 2
+    play sound door_open
+    pause 1
+    show yuri 1a at ln31
+    show sayori 1a at ln32
     show natsuki 1a at t33
-    #та же эвридей музыка, но чуть пошире (в прошлом акте был t5.all, ну а тут на свой вкус выбери)
+    pause 1.5
+    hide yuri
+    hide sayori
+    hide natsuki
+
+    python:
+        _preferences.volumes['sfx'] = 1.0
+        _preferences.volumes['music'] = .0
+
+    scene ts_club_glitch_pizdets
+
+    play sound psy_fast_2
+
+    show ts_yrec_kill_nahui_suicide_blya at left
+    show ts_sayori_zalagala_chereshnya:
+        align (0.5, 0.15)
+    show ts_maloletka_pozvonok_sloman_nahui at right
+
+    pause 2
+
+    stop sound
+
+    python:
+        _preferences.volumes['sfx'] = .65
+        _preferences.volumes['music'] = .45
+
+    scene ts_club
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+
+    show yuri 1a at i31
+    show sayori 1a at i32
+    show natsuki 1a at i33
+
+    "Да и остальные уже пришли, поэтому диалога о возможном разрезе пространственно-временного континуума уже точно не будет."
+
+    play music ts_holly_roller fadein 2
+
+    $ gtextsuka = glitchtext(6)
+    $ gtextsuka1 = glitchtext(3)
+    $ gtextsuka2 = glitchtext(7)
+
     show sayori 2x at f32
-    s 2x "Привет, [gtextsuka]! Привет, [gtextsuka]!"
-    s гличхуйня какая-то небольшая "[gtextsuka]"
+    s 2x "Привет, [gtextsuka]! Привет, [gtextsuka1]!"
+    play sound psy_fast_1
+    show layer screens at vpunch
+    s "[gtextsuka2]"
     show yuri 1b at f31
     show sayori 1a at t32
+    $ gtextsuka = glitchtext(5)
+    play sound psy_fast_3
+    show layer screens at vpunch
+
+    $ persistent.ingame_pizda = False
     y "Всем [gtextsuka]."
     show yuri 1a at t31
     show sayori 1a at t32
     show natsuki 2h at f33
     n "Что, даже не {w=0.01}{nw}"
-    #МАКСИМАЛЬНАЯ ГЛИЧХУЙНЯ
-    extend "Расчлените Монику и не принесёте её обрубки в жертву богам?" #и уродским шрифтом это заебень
-    #заканчиваем гличение
+
+    $ persistent.ingame_pizda = True
+
+    python:
+        _preferences.volumes['sfx'] = 1.0
+        _preferences.volumes['music'] = .0
+
+    scene ts_club_glitch_pizdets:
+        align(0.5, 0.5) zoom 1.0
+        ease 0.1 align(0.2, 0.5) zoom 2.0
+        ease 0.1 align(0.8, 0.2) zoom 3.0
+        ease 0.1 align(0.3, 0.7) zoom 2.5
+        ease 0.1 align(0.4, 0.9) zoom 4.0
+        ease 0.1 align(0.5, 0.5) zoom 1.0
+        repeat
+
+    play sound psy_fast_2
+    play sound2 ts_glitch_music3
+
+    show ts_yuri_zalagala_blyadina:
+        align(0.15, 0.35)
+        ease 0.5 align(0.9, 0.01)
+        ease 0.5 align(0.15, 0.35)
+        repeat
+    show ts_sayori_zalagala_chereshnya:
+        align(0.5, 0.15)
+        ease 0.5 align(0.1, 0.6)
+        ease 0.5 align(0.5, 0.15)
+        repeat
+    show ts_natsuki_zalagala_blyadina:
+        align(0.9, 0.5)
+        ease 0.5 align(0.3, 0.1)
+        ease 0.5 align(0.9, 0.5)
+        repeat
+
+    n "{font=[pizdec_font]}Что, даже не {fast}расчлените Монику и не принесёте её обрубки в жертву богам?{/font}"
+
+    stop sound
+    stop sound2
+    $ persistent.ingame_pizda = False
+
+    python:
+        _preferences.volumes['sfx'] = .65
+        _preferences.volumes['music'] = .45
+
+    scene ts_club
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+
+    show yuri 1a at i31
+    show sayori 1a at i32
+    show natsuki 1a at i33
+
     n 2w "Девочки, я в вас разочарована..."
     show sayori 3h at f32
     show natsuki 2x at t33
+    $ persistent.ingame_pizda = False
     s "Да брось, Нацуки!"
     s 2h "Монике и так стыдно за {w=0.01}{nw}"
-    #ГЛИЧХУЙНЯЯЯЯЯЯЯЯЯЯЯЯ БЛЯЯЯЯЯЯЯЯТЬ
+
+    $ persistent.ingame_pizda = True
+    scene ts_sayori_bedroom
+
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+
+    show s_kill_bg_zoom zorder 1
+    show s_kill_bg2_zoom zorder 1
+    show s_kill_zoom zorder 3
+    show s_kill2_zoom zorder 3
+    show s_kill as s_kill_zoom_trans zorder 3:
+        truecenter
+        alpha 0.5
+        zoom 2.0 xalign 0.5 yalign 0.05
+        pause 0.5
+        dizzy(1, 1.0)
+    show overlay aw_memory_back_1 zorder 4
+
     extend "то, что она хотела нас всех убить самыми изощрёнными способами и даже не раскаяться в содеянном, {w=0.01}{nw}"
     extend "а тут ещё ты накручиваешь её."
-    show sayori 2f at t32
+    show layer screens
+    $ persistent.ingame_pizda = False
+
+    scene ts_club
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+
+    show yuri 1a at i31
+    show sayori 2f at i32
+    show natsuki 2x at i33
+
     "Внешне я остаюсь спокойной и даже особо не нервничаю, хотя внутри мне хочется убежать из этого проклятого места."
     m "Д-да ладно, Сайори, я и н-не обижаюсь уже..."
-    show yuri at thide
-    hide yuri
-    show sayori at thide
-    hide sayori
-    show natsuki at thide
-    hide natsuki
+
+    scene ts_club with linearblurbolee
+
     em "А помнишь, как я в прошлый понедельник говорила о том, что накрутила бы её шею градусов на двести?"
     "«Теперь помню... И зачем только об этом вспомнила?»"
     em "Да брось, весело же будет! Если они пугают тебя, то ничего не мешает тебе напугать их!"
     "Я представляю это действие..."
-    #флешбечный фильтр
+    show layer screens at ts_hidescreens_fast
+    " {w=0.1}{nw}"
+    play sound fb
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     show natsuki 1za at t11
+    with flash
     pause 2
     show natsuki 2zb at t11
+    show layer screens at ts_showscreens_fast
     if persistent.cens_mode == True:
         m "Иди сюда, сучара."
     else:
         m "Иди сюда, мелкая."
+    show layer screens at ts_hidescreens_fast
+    " {w=0.1}{nw}"
     pause 1.3
-    show natsuki scream at h11
-    #НУ В ОБЩЕМ, ЗАХУЯРЬ ЧЁТА ТИПО АНИМКИ С ПРОВОРАЧИВАЮЩЕЙСЯ ШЕЕЙ, С СООТВЕТСТВУЮЩИМ ЗВУКОМ ХРУСТА ШЕИ И НЕЧЕЛОВЕЧЕСКИМ КРИКОМ
-    #ПОНИМАЮ, ЗАДАЧКА НЕ ИЗ ПРОСТЫХ, НО ТЫ ЖЕ СПРАВИШЬСЯ, ДА? ( ͡° ͜ʖ ͡°)
-    #ТЕМ БОЛЕЕ, НЕ ОБЯЗАТЕЛЬНО ПРОВОРАЧИВАТЬ ШЕЮ НА ВСЕ 200 ГРАДУСОВ, МОЖНО ПРОВЕРНУТЬ ПУСТЬ НА ПАРУ ГРАДУСОВ, ПОТОМУ ЧТО МОНИКА ВСЁ РАВНО СКАЖЕТ ТИПО "НЕТ БЛЯТЬ, НАХУЙ ЭТО ВСЁ"
-    #СНЕП БЕК ТУ РЕАЛИТИ
+    show natsuki screamnohead at h11
+    show natscreamhead at h111
+    pause 1
+    show natscreamhead at t111
+    play sound2 scream_normal
+    play sound bones_breaking
+    pause 1#3
+    stop sound2 fadeout 1
+    #hide natscreamhead
+    #hide natsuki screamnohead
+    show natscreamhead at ts_punch1()
+    show natsuki screamnohead at ts_punch()
+    pause 0.2
+    play sound sfx_body_bump
+    pause 1
+
+    play sound fb
+    scene ts_club
+    show dust1
+    show dust2
+    show dust3
+    show dust4
     show yuri 1a at t31
     show sayori 1a at t32
     show natsuki 1a at t33
+    with flash
+    show layer screens at ts_showscreens_fast
     "«Нет, это уже слишком!»"
     show yuri 2t at f31
     show sayori 2f at t32
     show natsuki 2o at t33
     stop music
+    play music ts_s_stuff fadein 1
     y "Моника? Ты опять {w=0.01}{nw}"
-    #ГЛИЧХУЙНЯ
-    #python:
-    #    currentpos = get_pos()
-    #    startpos = currentpos - 0.3
-    #    if startpos < 0: startpos = 0
-    #    track = "<from " + str(startpos) + " to " + str(currentpos) + #НАЗВАНИЕ ТРЕКА ЕБАНОГО
-    #    renpy.music.play(track, loop=True)
+    hide dust1
+    hide dust2
+    hide dust3
+    hide dust4
+    show layer master at StillAberate(25.0)
+    show layer screens at StillAberate(25.0)
+
+    python:
+        currentpos = get_pos()
+        startpos = currentpos - 0.2
+        if startpos < 0: startpos = 0
+        track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/ost/ts_s_stuff.ogg"
+        renpy.music.play(track, loop=True)
+
+    $ gtextsuka = glitchtext(123)
+    y "[gtextsuka]{nw}"
     $ gtextsuka = glitchtext(280)
     y "[gtextsuka]{nw}"
+    $ gtextsuka = glitchtext(221)
     y "[gtextsuka]{nw}"
-    y "[gtextsuka]{nw}"
-    #гличение заканчиваем
-    #play music #такую же музыку вруби, с той же позиции, с которой начиналось гличение, там это тоже как-то через куррентпоз делается, ну прихуярь крч
+    play sound psy_fast_1
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    show layer master
+    show layer screens
+    with memglitch
+    stop sound
+    play music ts_s_stuff fadein 2
     show yuri 2t at f31
     show sayori 2f at t32
     show natsuki 2o at t33
-    y "Моника? Ты опять[fast] отключилась..."
+    y "Моника? Ты опять{fast} отключилась..."
     show yuri 2zg at t31
     m "А... Да это ничего, просто..."
     "Спокойно... Это всё только в моей голове..."
@@ -534,7 +947,16 @@ label ts_scenario_10:
     m "И я подумала, а ведь писать стихи легче, чем кажется!"
     em "Проще*. Видимо, всё-таки не слышала..."
     m "Поэтому, вот вам и новая активность: напишите стих, чтобы к следующему собранию мы все смогли обсудить его друг с другом."
-    #гличение всех персов и бгшника на секунду-полторы, потом всё в норму приходит
+    show layer master at StillAberate(25.0)
+    show layer screens at StillAberate(25.0)
+    $ glitchhuetenblya = glitchtext(24)
+    python:
+        _preferences.volumes['music'] = 0.0
+    m "[glitchhuetenblya]{nw}"
+    python:
+        _preferences.volumes['music'] = .45
+    show layer master
+    show layer screens
     show yuri 4c at s31
     show sayori 1e at s32
     show natsuki 1u at s33
@@ -543,7 +965,7 @@ label ts_scenario_10:
     m "...и чтобы вы не подумали, что я вас как-то ущемляю - я сяду писать стихотворение вместе с вами!"
     m "Помните, в стихе не обязательно должна быть замудрённая рифма - её ведь вообще может не быть!"
     m "В конце концов, главное в стихе - не рифма. И даже не слог и не размер."
-    show yuri 1q at s11
+    show yuri 1q at s31
     "Последнее предложение я сказала, косясь на Юри. Судя по её выражению лица, она намёк поняла."
     m "Мне не нужно, чтобы вы с первого раза написали новый шедевр литературы. Просто пару четверостиший, или несколько строк, связанных одной темой."
     show yuri 1i at t31
@@ -562,21 +984,68 @@ label ts_scenario_10:
     n 2k "Ну давай попробуем написать стишки."
     show natsuki 2za at t33
     "Они отвечают точно так же, как и на прошлой неделе. С теми же словами, интонациями, даже паузами."
+    stop music fadeout 7
     "Если бы Аки не сказала мне заранее, что эта неделя циклично повторяется, я бы сама сказала, что у меня очень сильное чувство дежавю."
     "Честно говоря, внутри мне до сих пор страшно. Но внешне я остаюсь спокойной, даже какая-то имитация уверенности появилась."
     "Как будто это та же Моника, что и в прошлый понедельник."
     m "Тогда... пишем стихи!"
-    #диссолв на нотебук (обычный). Музыка написания стихов, ну +- такая же, как ты и в прошлый раз
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    play music ts_alx_ewbf fadein 1
+    scene ts_notebook with linearblurbolee
+    show layer screens at ts_showscreens
     "Так-так-так... что там у меня в прошлый раз было? Про дыру в стене?"
     show monika 2d at f11
     em "Да, что-то вроде того."
     show monika 2c at t11
     "Ну тогда приступаем. Главное, правильные знаки препинания проставить, потому что слова я помню довольно отчётливо."
-    #вайплефт на тот же обычный нотебук
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_notebook
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
     "Спустя пару минут стих уже почти написан."
     "Чтобы сделать вид, что я придумываю что-то новое, я наигранно прикусываю губу пару раз, томно вздыхаю и смотрю на других девочек."
-    #быстрый диссолв на клуб
-    #сначала yuri 1g, потом sayori 2o, потом natsuki 1s, всё по очереди, потом хайд девочек, и обратно на бг нотебука
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    scene ts_club
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with linearblurbolee
+    show yuri 1g at ln11
+    pause 0.75
+
+    pause 0.5
+
+    show yuri 1g at ron11
+    pause 0.75
+    hide yuri
+
+    show sayori 2o at ln11
+    pause 0.75
+
+    pause 0.5
+
+    show sayori 2o at ron11
+    pause 0.75
+    hide sayori
+
+    show natsuki 1s at ln11
+    pause 0.75
+
+    pause 0.5
+
+    show natsuki 1s at ron11
+    pause 0.75
+    hide natsuki
+    scene ts_notebook with linearblurbolee
+    show layer screens at ts_showscreens
+
     "Девочки тоже натужно пытаются выжать из себя хоть что-то."
     "Но их ручки тоже двигаются. Следовательно, первая часть плана уже выполнена."
     show monika 1p at f11
@@ -596,13 +1065,49 @@ label ts_scenario_10:
     "«Ладно, что-то я с тобой заговорилась, Сайори и Нацуки уже даже стих быстрее меня написали.»"
     "Я тоже дописываю и перечитываю стих."
 
-# poem_m21
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    scene ts_notebook with dissolve:
+        blur 9.0
+
+    show layer screens at ts_showscreens
+
+    if not persistent.first_poem:
+        $ persistent.first_poem = True
+        show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
+            xpos 1050 ypos 590
+
+    play sound pageflip
+
+    show screen poem(poem_m21)
+
+    pause
+
+    play sound pageflip
+    show layer screens at ts_hidescreens
+    pause 1.0
+    hide screen poem
+    hide poem_dismiss
+
+    scene ts_notebook with dissolve
+
+    show layer screens at ts_showscreens
         
     "Написано вроде как точно так же, как и в прошлый раз."
-    #диссолв на бг клуба
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    scene ts_club
+    show dust1
+    show dust2
+    show dust3
+    show dust4
     show yuri 2l at t31
     show sayori 4s at t32
     show natsuki 1y at t33
+    with linearblurbolee
+    show layer screens at ts_showscreens
     "Кажется, Юри ещё нужно будет минут пять, прежде чем она тоже закончит."
     m "Итак, ребята!"
     m "Юри ещё нужно немного времени на то, чтобы закончить стих."
@@ -612,29 +1117,86 @@ label ts_scenario_10:
     show yuri 2e at t31
     m "Вот и отлично."
     m "Так, ладно, время уже позднее, поделиться друг с другом на этом собрании мы не успеем... но всегда же есть следующее!"
+    $ persistent.ingame_pizda = False
     m "До завтра, девочки!"
-    #ГЛИЧЕНИЕ ХУЙНИ ЕБАНОЙ
+
+    python:
+        _preferences.volumes['sfx'] = 1.0
+        _preferences.volumes['music'] = .0
+
+    play sound2 ts_glitch_music4
+
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+    $ persistent.ingame_pizda = True
+    play sound crack
+    scene ts_club_glitch_pizdets
+    show ts_yrec_kill_nahui_suicide_blya at left
+    show ts_sayori_zalagala_blyadina at t32
+    show ts_maloletka_pozvonok_sloman_nahui at right
+
     $ gtextsuka = glitchtext(24)
     $ gtextsuka1 = glitchtext(96)
     $ m_name = gtextsuka
     m "[gtextsuka1]{nw}"
-    #И ЕЩЁ ЗВУКОВОЙ ГЛИЧ ДОБАВЬ, ТИПО ЕЙ ЭТО ОПЯТЬ ПОЧУДИЛОСЬ, ПОТОМУ ЧТО ПОСЛЕ НОУВЕЙТА ИДЁТ:
+
+    stop sound
+    stop sound2
+
+    show layer screens
+
+    $ persistent.ingame_pizda = False
+
+    play sound psy_fast_3
+    scene ts_club
     show yuri 3d at h31
     show sayori 4s at h32
     show natsuki 1y at h33
+    with memglitchbolee
+    stop sound
+    python:
+        _preferences.volumes['sfx'] = .65
+        _preferences.volumes['music'] = .45
     $ m_name = "Все вместе"
-    m "Пока, Моника![fast]"
-    #хайд сначала Сайры и Юры, потом идёт микропауза со строкой
+    m "Пока, Моника!{fast}"
+
+    stop music fadeout 7
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    play sound door_open
+    show yuri 3d at lon31
+    pause 1
+    hide yuri
+    show sayori 4s at lon32
+    pause 1
+    hide sayori
+    show layer screens at ts_showscreens_fast
     $ m_name = "Моника"
     m "Нацуки, подо-{w=0.15}{nw}"
-    #а потом уже хайд цундурки этой
+    show layer screens at ts_hidescreens_fast
+    " {w=0.1}{nw}"
+    play sound door_open
+    show natsuki 1y at lon33
+    pause 1
+    hide natsuki
+    show layer screens at ts_showscreens
     "Однако Нацуки уже испарилась в мгновение ока."
     "Я не знаю почему, но мне кажется, что именно Нацуки из них троих кажется мне наиболее здравомыслящей."
     "Наверное, это потому, что она единственная из всех троих, чей корень зла - это не она сама."
-    #микроглич с Аки, ну который g1 блять, ну который при первом появлении Моники в клубе в начале второго акта
-    #он вот вроде небольшой, но лично меня он напугал чуть ли не больше всего в ддлк
-    #ну а бля если в ориге я от него подприссал, то в твоём исполнении это прям капеееееец ваще
+    window hide
+    scene ts_club_glitch_pizdets
+    python:
+        _preferences.volumes['sfx'] = 1.0
+    play sound scream_pereponkam_pizda
+    show monika g1 at t1111
+    pause 1.25
+    stop sound
+    scene ts_club
+    python:
+        _preferences.volumes['sfx'] = .65
     show monika 2k at f11
+    show layer screens at ts_showscreens_fast
     em "Да как будто ты сама мисс Перфекционизм, и у тебя никаких таких проблем не существует!"
     show monika 2j at t11
     m "Я такого не говорила!"
@@ -654,16 +1216,43 @@ label ts_scenario_10:
     show monika 3a at t11
     m "Он такой же, как и всегда, а у меня просто воображение разыгралось, знаю, знаю, не гуди."
     m "Ладно уж, домой так домой."
-    #вайплефт на коридор, локеры, вход вечерний, улицу вечернюю (КОТОРАЯ В НАШЕМ МОДЕ ТИПОДЕФОЛТНАЯ УЛИЦА)
-    #каждый вайплефт с паузой секунды на 2
-    #музычку какую-то вечернюю поставь, ну типо Trapped in Dreams
+
+    play music ts_first_day_of_sun
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_corridor
+    with wipeleft_scene
+
+    pause 2
+
+    play sound pageflip
+    scene ts_l5
+    with wipeleft_scene
+
+    pause 2
+
+    play sound pageflip
+    scene ts_school_gate_evening
+    with wipeleft_scene
+
+    pause 2
+
+    play sound pageflip
+    scene ts_street_late
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
     "Несмотря на всю мою напускную уверенность, до дома я всё равно шла в час по чайной ложке."
     "Да, Аки убеждала меня, что с папой всё нормально, и это я просто сбрендила, и я ей вроде как даже поверила, но..."
     "Внутри меня до сих пор терзают сомнения."
     "А что, если это не моя шизофрения, а новая реальность?"
     show monika 1r at f11
+    with linearblur
     em "Да говорю же, не реальность это, а просто сон. Просто твои бредни."
-    if unluck_ball => 5: #НУ ТИПО ЛИБО 5, ЛИБО 6
+    if unluck_ball >= 5:
         em "Или, может, это просто твоя кома, твои отрывочные воспоминания одного и того же..."
     show monika 1r at t11
     m "Ну, возможно! Но я всё равно слегка побаиваюсь..."
@@ -694,22 +1283,72 @@ label ts_scenario_10:
     show monika 2e at t11
     m "Ладно уж..."
     "После этих слов я прибавила шаг, и через пару минут уже была у дома."
-    #вайплефт на вечерний дом Моники. Музыка продолжается до тех пор, пока она с батей не поговорит
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_house_monika_evening
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Ну, с Богом..."
     "Я медленно открываю дверь..."
-    #Если в ренпае можно сделать медленный вайплефт, то прихуярь медленный вайплефт. Если нет - то похуй, обычный вхуярь
-    #бг ночной прихожей без света, через 2 секунды свет включается с флешем
-    #Потом ещё через две секунды вайплефт на вечернюю прихожую
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_vhod_nolight
+    with wipeleft_scene_long
+
+    pause 2
+
+    play sound svet_on
+    scene ts_vhod_night
+    with flash
+
+    pause 2
+
+    play sound pageflip
+    scene ts_living_room_night
+    with wipeleft_scene
+
+
+    show layer screens at ts_showscreens
     m "Папа? Я дома..."
+    $ persistent.ingame_pizda = False
     "И как только я оборачиваюсь, я замечаю, что папа тоже только пришёл."
-    #ГЛИЧЕНИЕ НАЧИНАЕТСЯ
     stop music
-    show hiroto 1b at f11
+
+    play sound_loop ts_glitch_music6
+    $ persistent.ingame_pizda = True
+    python:
+        _preferences.volumes['sfx'] = 1.0
+    show ts_living_room_night zorder 4 at ts_coridor_glitch
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh zorder 5
+    show anim_exhausted zorder 5
+    show m_rectstatic zorder 5
+    show hiroto 1b zorder 6 at Glitch(_fps=1000.)
+
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
     $ gtextsuka = glitchtext(80)
     ts_ft "Здáрова [gtextsuka]. Как житие молодое{w=1.5}{nw}"
-    #ЗАКАНЧИВАЕМ
-    #вроде кстати в Ренпае можно удалять конкретные строки из истории. Вот эту строку выпили нахуй
-    #немножко эвридей музыка для тёмного времени суток. В прошлом акте силуэт ин сансет был, ну вхуярь что-то подобное
+
+    show layer screens
+
+    stop sound_loop
+    $ persistent.ingame_pizda = False
+    scene ts_living_room_night
+    python:
+        _preferences.volumes['sfx'] = 0.65
+        _history_list = []
+
+    play music ts_top_sound_blya fadein 2
+    show hiroto 1b at f11
     ts_ft "Привет, Моника. Как день прошёл?"
     show hiroto 1a at t11
     "Спокойно... Это всего лишь сон... Очень странный и очень больной, но это просто сон..."
@@ -754,32 +1393,90 @@ label ts_scenario_10:
     show hiroto 2g at f11
     ts_ft "Ну славненько тогда."
     show hiroto 1v at f11
+    $ persistent.ingame_pizda = False
     ts_ft "Та-а-ак... "
     extend 1b "Моника, ты будешь {w=0.01}{nw}"
-    #ГЛИЧЕНИЕ
-    extend "Жареные GLAZA всех твоих новых подруг?" #ЕСЛИ МОЖНО, ТО СЛОВО GLAZA ЗАЛГО ШРИФТОМ
-    show hiroto 1e at t11
+    play sound ts_glitch_music7
+    $ persistent.ingame_pizda = True
+    python:
+        _preferences.volumes['sfx'] = 1.0
+        _preferences.volumes['music'] = 0.0
+
+    show ts_living_room_night zorder 4 at ts_coridor_glitch
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh zorder 5
+    show anim_exhausted zorder 5
+    show m_rectstatic zorder 5
+    show hiroto 1b zorder 6 at Glitch(_fps=1000.)
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+    extend "Жареные Ģ̵͉͎͎̙̟͎̟̭͍͐̏̒́L̴̛̛̪̳̠͔͑̊͐̾̀͑̕͝Ḁ̵̧̞̲̳̖͎͓̳̣̩̓̽͌̒̔͋̄͊́͑̕̚͝ͅZ̶̡̢̧̢̪̥̦̣̲̠̳͎͖͍̪̖͚̚À̸̛̛̪̪̝͕̞̮̭̒͌͆͊̈̍̀͂̀̈͘̕͝ всех твоих новых подруг?"
+
+    show hiroto 1e zorder 6 at Glitch(_fps=1000.)
     m "Ч-что?"
-    #ЗАКОНЧИЛИ ГЛИЧЕНИЕ
+    show layer screens
+    scene ts_living_room_night
+    stop sound
+    $ persistent.ingame_pizda = False
+    python:
+        _preferences.volumes['sfx'] = 0.65
+        _preferences.volumes['music'] = 0.45
+
     show hiroto 1b at f11
+    stop music fadeout 5
     ts_ft "Я говорю, картошку жареную будешь?"
     show hiroto 1a at t11
     m "Д-да, конечно..."
-#    вайплефт на кухню
-    #похожую эвридей музяку поставь
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
+    with wipeleft_scene
+
+    play music ts_lmr_menu fadein 1
+
+    show layer screens at ts_showscreens
+
     "Спустя десять минут картошка уже начищена, порезана, пожарена и рассыпана по двум тарелкам."
     show hiroto 1b at f11
     ts_ft "Приятного аппетита, Моника."
     show hiroto 1a at t11
+    $ persistent.ingame_pizda = False
     m "Спасибо, пап. Взаимно."
-    #гличхуйня
+
+    play sound ts_glitch_music11
+    $ persistent.ingame_pizda = True
+    python:
+        _preferences.volumes['sfx'] = 1.0
+        _preferences.volumes['music'] = 0.0
+
+    show ts_kitchen zorder 4 at ts_coridor_glitch
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh zorder 5
+    show anim_exhausted zorder 5
+    show m_rectstatic zorder 5
+    show hiroto 1a zorder 6 at Glitch(_fps=1000.)
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
     ts_ft "Я надеюсь, ты умрёшь в страшных муках."
     ts_ft "Никто даже не заплачет на твоих похоронах."
     ts_ft "Если там вообще будет что хоронить."
-    #закончили
+
+    stop sound
+
+    $ persistent.ingame_pizda = False
+    python:
+        _preferences.volumes['sfx'] = .65
+        _preferences.volumes['music'] = .45
+    show layer screens
+
+    scene ts_kitchen
+    show hiroto 1a at i11
+
     "Я уже даже и бровью не веду."
     "Да, признаю, поначалу мне было очень страшно."
-    "Но сейчас это уже приелось." #ПРИЕЛОСЬ ЕЙ БЛЯТЬ. МЫХАЙЛО, РАЗГРУЖАЙ НОВЫЕ ГЛИЧИКИ
+    "Но сейчас это уже приелось."
     "После того, как мы съели примерно половину, папа наконец-то спрашивает."
     show hiroto 1b at f11
     ts_ft "Как там, кстати, в клубе дела?"
@@ -801,8 +1498,16 @@ label ts_scenario_10:
     extend 1g "Ладно, убедила."
     show hiroto 1f at t11
     m "Ну вот и поговорили."
-    #вайплефт на кухню
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
     show hiroto 1f at t11
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Закончив ужинать, я говорю папе."
     m "Ну так что там у тебя за отличные новости такие?"
     show hiroto 1c at f11
@@ -814,9 +1519,11 @@ label ts_scenario_10:
     show hiroto 1c at f11
     ts_ft "Ну так вот..."
     $ gtextsuka = glitchtext(24)
-    #микроглич визуальный вставь, типо GLAZAPOLZET как обычно, ну и можешь анимку кровотечения из глаз. ГЛАВНОЕ, ЧТО БЕЗ ЗВУКОВОГО СОПРОВОЖДЕНИЯ БЛЯТЬ, ЧИСТО ВИЗУАЛ
+    hide hiroto
+    show ts_hiroto_psyhodelic_pizdoc1 at t11
     ts_ft "Я сегодня звонил [gtextsuka]..."
-    #МИКРОГЛИЧ ЗАКАНЧИВАЕТСЯ ТАК ЖЕ БЫСТРО, КАК И НАЧАЛСЯ
+    hide ts_hiroto_psyhodelic_pizdoc1
+    show hiroto 1b at i11
     ts_ft 1b "В общем, можешь и сама её набрать, это именно она преподнесла нам такие хорошие новости."
     show hiroto 1a at t11
     "Я так и не поняла, кому именно он звонил, но из контекста могу догадаться, что звонил он моей маме."
@@ -826,8 +1533,11 @@ label ts_scenario_10:
     ts_ft "Ну, набирай."
     show hiroto 1a at t11
     "Я достаю телефон и..."
-    stop music
+    stop music fadeout 3
+    show layer screens at ts_hidescreens_fast
+    " {w=0.1}{nw}"
     pause 3
+    show layer screens at ts_showscreens_fast
     "Да не может этого быть..."
     "Я до этого момента особо телефоном не пользовалась, поэтому и не замечала..."
     "Но когда дело дошло до того, чтобы самой набирать кого-то, я буквально побледнела от ужаса."
@@ -845,99 +1555,113 @@ label ts_scenario_10:
         show hiroto 1e at t11
     elif unluck_ball == 0:
         "Кое-как дойдя до списка контактов, я очень удачно нашла контакт мамы с первого раза."
-    #сфх гудков
-    #ну бля короче такой же сплит, как и в 6 главе сделай, только вместо того, чтобы слева была матя, а справа батя, в этой главе наоборот сделай, типо батя слева, а матя справа, типо Моника думает "У МЕНЯ НЕХОРОШЕЕ ПРЕДЧУВСТВИЕ БЛЯТЬ"
-    show minami 1bzf at f41
-    show hiroto 1e at t44
-    $ ts_mt_name = "[gtextsuka]"
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    play sound mobila_gudok
+    pause 3
+    play sound psy_fast_1
+    scene black with memglitch
+    stop sound
+    pause 1
+
+    show ts_host_split_animated
+    show ts_kuh_split_animated
+
+    pause 0.99
+
+    show minami 1bzf at ln31
+    show hiroto 1b1 at rn33
+    pause 1
+    show n_cg1b1337
     $ gtextsuka1 = glitchtext(24)
+    $ ts_mt_name = "[gtextsuka]"
+    show layer screens at ts_showscreens
     $ ts_ft_name = "[gtextsuka1]"
-    #Короче заебашь правую половину сплита гличхуйнёй, секунды на полторы
+
+
     ts_mt "[gtextsuka]{w=1.5}{nw}"
-    #А потом нормально
-    $ ts_mt_name = "Мама Моники" #ЖЕЛАТЕЛЬНО КАЖДУЮ ОТДЕЛЬНУЮ БУКВУ ЕЩЁ ГЛИЧТЕКСТОМ ПРИХУЯРИТЬ, ТИПО НЕ "МАМА МОНИКИ", А "µ¶МÅ МºĦŇĶŅ", НУ ИЛИ ЧТО-ТО ТИПО
-    #МЫ-ТО КОНЕЧНО ЗНАЕМ И ПОМНИМ, ЧТО ЕЁ ЗОВУТ МИНАМИ, НО ЧЕЛЫ С ПАМЯТЬЮ ЗОЛОТОЙ РЫБКИ (А ЭТО ПРИМЕРНО 95% ВСЕГО ДДЛК-КАМУНИТИ) К ЭТОМУ МОМЕНТУ УЖЕ И ЗАБУДУТ, КАК ЖЕ ЕЁ БЛЯТЬ ЗОВУТ
-    #И УСЛОВНО ТОТ ЖЕ СКОРЯН ПОТРАТИТ ЕЩЁ СЕКУНД 20 НА ТО, ЧТОБЫ ВСПОМНИТЬ, КАК ЗОВУТ ПЕРСОНАЖА, КОТОРЫЙ ДО ЭТОГО ТОЛЬКО В ОДНОЙ СЦЕНЕ ЗА ВЕСЬ СЮЖЕТ БЫЛ
-    #ЕЩЁ ОДНА ХОРРОРНАЯ СУПЕР-МЕЛОЧЬ, КОГДА И САМА МОНИКА НЕ МОЖЕТ ВСПОМНИТЬ ИМЯ СВОЕЙ МАТИ, ТОЛЬКО ГОВОРЯ ПРО "НЕХОРОШЕЕ ПРЕДЧУВСТВИЕ" (НУ ТЫ ВРОДЕ УЖЕ ПОНЯЛ, ЧТО У САМОЙ МОНИКИ ТОЖЕ ПАМЯТЬ, КАК У ЗОЛОТОЙ РЫБКИ)
-    #А ЭТО, В СВОЮ ОЧЕРЕДЬ, ПЕРЕДАЁТСЯ И НА САМИХ ИГРОКОВ (МАЛОЛЕТНИХ ДАУНОВ С РЕДДИТА/ВК/ЕЩЁ ГДЕ-ЛИБО)
-    show minami 1bd at f41
-    #ещё одну эвридей музычку заебашь. В прошлом акте был "Вальс Сомнений", ну по настроению похожую меланхолично-вечернюю подбери, только уже чуть более трешовую
+    hide n_cg1b1337
+
+    $ ts_mt_name = "µ¶МÅ МºĦŇĶŅ"
+    show minami 1bd at f31
+    play music ts_icra fadein 2
     ts_mt "Алло?"
-    show minami 1bc at t41
+    show minami 1bc at f31
     "Спокойно... Всего лишь сон... Странный и страшный, но это всего лишь сон..."
     m "П-привет, мам..."
-    show minami 2bk at f41
+    show minami 2bk at f31
     ts_mt "Моника! Я так рада тебя слышать!"
-    show hiroto 1b at f44
+    show hiroto 1b at f33
     ts_ft "Привет ещё раз, дорогая."
-    show minami 1bzf at f41
-    show hiroto 1a at t44
+    show minami 1bzf at f31
+    show hiroto 1a at t33
     ts_mt "Привет, [gtextsuka]."
-    $ ts_ft_name = "Папа Моники" #ПО АНАЛОГИИ С МАТЕЙ
-    #тут уже посложнее, потому что батя, в отличие от мати, постоянно мелькает в сюжете, и внезапная смена имени с Хирото на дженерик "Папа Моники" какбэ нихуя и не даст...
-    #но это всё равно типохоррорэлемент, типо "ОЧЕНЬ БЛЯТЬ НЕХОРОШЕЕ ПРЕДЧУВСТВИЕ"
-    #Да и должно же присутствовать постоянство какое-то, типо "раз Минами назвали просто дженерик Мамой, то и Хирото должен быть дженерик Папой"
-    python: 
-        _set_sq(
-        "ts_mt",
-        0,
-        "minami 1bze",
-        0.80,
-        "minami 1ba"
-        )    
-    show minami sq at t41
-    show hiroto 1a at t44
-    #Я СПИЗДИЛ КУСОК КОДА ИЗ ХУДШЕГО МОДА ЭВЕР (КАЛОТРОН КОТОРЫЙ)
-    #ЕСЛИ ЭТА ХУЙНЯ НЕ БУДЕТ РАБОТАТЬ БЕЗ МРТ, ТО ТОГДА ПРОСТО
-    show minami 1bze at t41
+    $ ts_ft_name = "П̶̢̛̛̛̙͇͕͓̠̲̲͚͔̜͔̟̪̂̅̉̄͊̿͋́̀̚͝ͅͅа̸̧̧̨͍͎̼̲̱̫̟̼̺̱͚͙̤̻̓̇͊̓̈͌̾̄̏̚п̷̨̮̝̠̻̞̯̼̈́͒͑̑͂͘͜а̷͓̪̳̖̳͈̱͎͔̱͈̼̪̟͗͗̀̿̊́̈́̔͘͜ ̵̛̹̳̺̓̔̃̕̕͠ͅМ̴̧̖̘͐о̶̢̡͍̠̼̳͍͇̹̉̓̏̔̈̄̐̂͗͑̏̍̓͜͝͝н̸̥͂̽͊͂͒̈́̐̏̈́̾͝ӣ̶͉̉̆̓̌̓͂͛̾͝͝к̷̹̽͋и̷̺̺̃̔͌̀̉̀͠"
+    show layer screens at ts_hidescreens_fast
+    " {w=0.1}{nw}"
+
+    show minami 1bze at i31
     pause 0.44
-    show minami 1ba at t41
-    #НУ КОРОЧЕ Я ХУЙНЮ КАКУЮ-ТО НАПЛЁЛ, НУ РАЗБЕРИСЬ С ЭТИМ САМ КРЧ, НУ САМА СУТЬ, ЧТО У МАТИ НА ПОЛСЕКУНДЫ ИДУТ БЕШОНЫЕ GLAZAPOLZET, А ПОТОМ ВРОДЕ ВСЁ НОРМАЛЬНО
+    show minami 1ba at i31
+    pause 0.5  
+    show minami 1bq at t31
+    show hiroto 1a at t33
+
+    show layer screens at ts_showscreens_fast
     m "Мы тебя н-не разбудили?"
-    show minami 3bzf at f41
+    show minami 3bzf at f31
     ts_mt "Моника, {nw}"
     extend 2bb "будь смелее, ты с мамой всё-таки разговариваешь, а не с чужим человеком, которого впервые видишь!"
-    show minami 2bj at t41
+    show minami 2bj at t31
     m "Да, мам..."
-    show minami 3bn at f41
+    show minami 3bn at f31
     ts_mt "На самом деле, я уже готовилась ко сну, а тут вы."
     ts_mt 3bv "А в чём дело?"
-    show minami 3bu at t41
+    show minami 3bu at t31
     m "Папа сказал... сказал, что у тебя для меня... хорошие новости заготовлены..."
-    #show momika 3bl at f41
+    show minami 3bl at f31
     ts_mt "Ах да, совсем забыла! "
     extend 1br "С этой работой уже ничего не помню..."
     ts_mt 1bt "Так вот. Когда у тебя там фестиваль будет?"
-    show minami 1bze at t41
+    show layer screens at ts_hidescreens_fast
+    " {w=0.1}{nw}"
+    show minami 1bze at t31
     pause 0.44
-    show minami 1ba at t41
+    show minami 1ba at t31
+    show layer screens at ts_showscreens_fast
     "Я не хочу уже даже и слышать про этот фестиваль, потому что, кажется, что он уже никогда не наступит."
     em "Не переживай, {i}когда-нибудь{/i} наступит!"
     em "А вот доживёшь ли ты до него - это уже совсем другой вопрос..."
     m "..."
     m "{size=14}Через неделю...{/size}"
-    show minami 4bk at f41
+    show minami 4bk at f31
     ts_mt "Какое приятное совпадение!"
-    show minami 3bn at f41
+    show minami 3bn at f31
     ts_mt "Поскольку я закончила раньше положенного срока, запуск новой ракеты будет уже в [gtextsuka]."
     ts_mt 2bzf "Я переночую один последний раз, {w=0.05}{nw}"
     extend 2d "и в [gtextsuka1] у меня будет самолёт."
-    show minami 3bk at f41
+    show minami 3bk at f31
     ts_mt "К вечеру я уже буду дома, когда ты как раз вернёшься со своего фестиваля!"
-    show minami 3bj at t41
+    show minami 3bj at t31
     "Меня за эти три дня многое пугало, но сейчас я лишь задаюсь одним вопросом."
     "«Почему все говорят про фестиваль через неделю, но никто не говорит конкретные даты и дни недели?»"
     "Нет, я помню, что запуск маминой ракеты будет в субботу, в полночь понедельника у неё будет самолёт, и к вечеру она будет дома."
     "Но просто:"
-    #затемнение всей хуйни
-    stop music
-    centered "Почему?"
-    #И Аки чисто влезает поверх всей сцены (возможно, даже поверх текстбокса)
+    window hide
+    play sound nfy
+    show zatemnenie
+    python:
+        _preferences.volumes['music'] = 0.0
+
+    show layer screens at ts_showscreens
+    show screen c10_text_blya
+    pause
+    hide screen c10_text_blya
+
     show monika 2bd at f11
-    em "Говорю же, это просто сон." #НУ РЫЛИ БЛЯТЬ НЕ МОНИКА, А ЗОЛОТАЯ РЫБКА, ЗАБЫВАЕТ ТО, ЧТО ЭТО СОН, КАЖДЫЕ ПЯТЬ СЕКУНД
+    em "Говорю же, это просто сон."
     em 4bd "А во сне, среди прочего, происходит абсолютная путаница с датами. Да и с именами, как ты уже поняла, тоже странности происходят."
-    #НУ КСТАТИ ТРУ СТОРИ, КОГДА Я ВЫШЕЛ ИЗ КОМЫ, Я АБСОЛЮТНО И СОВЕРШЕННО ТОЧНО БЫЛ УВЕРЕН, ЧТО СЕГОДНЯ 15 ИЮНЯ, ХОТЯ ПО ФАКТУ БЫЛО ТОЛЬКО 27 МАЯ, ТО ЕСТЬ, ПОЧТИ ТРИ НЕДЕЛИ
-    #В КОМЕ ВРЕМЯ КАК-ТО ПО-ДРУГОМУ ОЩУЩАЕТСЯ, МОЛ, "СВЕТ ВЫКЛЮЧИЛИ, ЗАТЕМ ВКЛЮЧИЛИ, ВОТ И НОВЫЙ ДЕНЬ НАЧАЛСЯ", ХОТЯ ПО ФАКТУ ПРОШЛО ВСЕГО НЕСКОЛЬКО ЧАСОВ
+
     show monika 2bc at t11
     "«Но на прошлой же неделе такого не было!»"
     show monika 2bi at f11
@@ -954,45 +1678,78 @@ label ts_scenario_10:
     em 1bn "Кстати, до тебя там мама всё докричаться не может, ответь ей уже, пожалуйста..."
     hide monika
     "«Что?!»"
-    #хайд затемнения, всё возвращается в тот же момент, в котором ситуация и была перед строкой с "Почему так нахуй"
-    #ту же музыку включи С ТОЙ ЖЕ СУКА ПОЗИЦИИ, ток блять резко, без всяких фейдинов-хуинов, это чисто как остановка времени на поговорить с Шизой, а потом снеп бек ту реалити с того же места, на котором остановились
-    show minami 3bs at f41
-    show hiroto 2p at t44
-    ts_mt "Моника!" #какой-то скриншейк, сфх ssikanul и микроглич добавь
-    show minami 2bs at t41
-    show hiroto 2p at t44
+    hide zatemnenie with linearblur
+    python:
+        _preferences.volumes['music'] = .46
+    show minami 3bs at f31
+    show hiroto 2p at t33
+    play sound ssikanul
+    play sound2 psy_fast_1
+    show layer screens at vpunch
+    ts_mt "Моника!"
+    show minami 2bs at t31
+    show hiroto 2p at t33
     m "А? Что? Прости, мам, я что-то... задумалась..."
-    show minami 2bn at f41
-    show hiroto 1j at t44
+    show minami 2bn at f31
+    show hiroto 1j at t33
     ts_mt "Совсем ты себя не бережёшь..."
     ts_mt 3bk "Небось, тот самый фестиваль из тебя все соки выжал?"
-    show minami 3bj at t41
+    show minami 3bj at t31
     m "Э-э-э, да... Хорошо, что это всё {i}скоро закончится{/i}..."
     em "Да что всё я-то?"
     "«Да как будто ты не знаешь...»"
-    show minami 1bzf at f41
+    show minami 1bzf at f31
     ts_mt "Ладно, Моника, {nw}"
     extend 1bt "рада была тебя услышать, но, видимо, ты устала за сегодня даже больше, чем я."
     ts_mt 2bn "Передай телефончик папе, я ещё ему хочу кое-что сказать. А ты иди отдыхай."
-    show minami 2bm at t41
+    show minami 2bm at t31
+    $ persistent.ingame_pizda = False
     m "Хорошо, мам. Спокойной ночи."
-    #гличхуйня
-    show minami 3bzf at f41
+    python:
+        _preferences.volumes['music'] = 0.0
+        _preferences.volumes['sfx'] = 1.0
+    $ persistent.ingame_pizda = True
+    play sound scream_pereponkam_pizda
+    show n_cg1b1337
+    show minami 3bzf at t31
     ts_mt "Я надеюсь, ты умрёшь самой насильственной смертью в самых страшных муках{w=1.5}{nw}"
-    #вот эту строку из истории удали
-    #закончилась
-    show minami 3bk at f41
-    ts_mt "Спокойной ночи, солнышко. Люблю тебя.[fast]"
-    show minami 3bj at t41
+    stop sound
+    $ persistent.ingame_pizda = False
+    hide n_cg1b1337
+    python:
+        _preferences.volumes['music'] = .45
+        _preferences.volumes['sfx'] = .65
+        _history_list = []
+
+    show minami 3bk at f31
+    ts_mt "Спокойной ночи, солнышко. Люблю тебя.{fast}"
+    show minami 3bj at t31
     m "Я... тоже тебя люблю..."
-    #хайд сплита, хайд минами
+
+    $ ts_ft_name = "Папа"
+
+    play sound ts_glitch2
+    scene ts_kitchen
+    with memglitchbolee
+    stop sound
+    stop music fadeout 4
+
     show hiroto 1c at f11
     ts_ft "{size=-6}Можешь идти, я тебе потом телефон занесу.{/size}"
     show hiroto 1e at t11
     "Как будто от него какая-то практическая польза будет..."
     show hiroto 1c at f11
     ts_ft "Так вот, [gtextsuka]..."
-#вайплефт до ночной спальни
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_darkbed
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     play music ts_ios fadein 2
     "Как же я устала..."
     "Вроде время ещё раннее, даже для меня, но этот день выдался настолько насыщенным, что у меня уже просто нет никаких сил, чтобы делать хоть что-то."
@@ -1006,18 +1763,17 @@ label ts_scenario_10:
     show monika 1bg at f11
     em "..."
     em "Ну а{w=0.5}{nw}"
-#сцене блек
+    show blink
     "Однако я уже провалилась в сон."
     "В прошлый {b}вторник{/b} я проснулась в половине пятого утра..."
     if unluck6 == True:
         "...а затем всё равно опоздала в школу..."
     else:
         "...но даже несмотря на то, что я выспалась, я доспала ещё примерно час..."
+    stop music fadeout 5
+    scene black
     "Но сегодняшний день был гораздо более тяжёлым и изматывающим."
     "И я в любом случае проснусь не раньше того времени, в котором я просыпаюсь обычно."
     "Однако додумать мысль до конца я уже не успела."
     "Спустя пару секунд, как я закрыла глаза, я уже провалилась в сон."
-#ФИНАЛ ПЕРВОГО ДНЯ В ЭТОЙ ЕБУЧЕЙ ГЛАВЕ. А ТАКИХ ДНЕЙ В ЭТОЙ ЕБУЧЕЙ ГЛАВЕ БУДЕТ ЕЩЁ МИНИМУМ ДВА (И СКОРЕЕ ВСЕГО, МАКСИМУМ ТОЖЕ, ПОТОМУ ЧТО Я ЕБАЛ В РОТ ПЕРЕПИСЫВАТЬ ЕЩЁ И ВЕСЬ ВТОРНИК)
-
-
-#НАЧАЛО СРЕДЫ
+    return

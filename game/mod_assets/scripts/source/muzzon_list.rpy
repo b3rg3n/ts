@@ -390,6 +390,13 @@ init python:
     )
 
     music_room.add(
+        name=_("True"),
+        artist="Akira Yamaoka",
+        path=ts_muzzon + "ts_sh_true.ogg",
+        art=ts_mr + "sh.webp"
+    )
+
+    music_room.add(
         name=_("Snowfall"),
         artist="Oneheart, reidenshi",
         path=ts_muzzon + "menu_ost/pered_bad_menu_ost.ogg",
@@ -552,11 +559,45 @@ init python:
         art=ts_mr + "lmr.webp"
     )
 
+    music_room.add(
+        name=_("Bridge over stars"),
+        artist="Keiko Matsui",
+        path=ts_muzzon + "ts_s_stuff.ogg",
+        art=ts_mr + "strange.webp"
+    )
+
+    music_room.add(
+        name=_("Everything Would Be Fine"),
+        artist="Alx Beats",
+        path=ts_muzzon + "ts_alx_ewbf.ogg",
+        art=ts_mr + "alxbeatsblya.webp"
+    )
+
+    music_room.add(
+        name=_("First Day Of Sun"),
+        artist="God Is An Astronaut",
+        path=ts_muzzon + "ts_first_day_of_sun.ogg",
+        art=ts_mr + "firstday.webp"
+    )
+
+    music_room.add(
+        name=_("Takotsubo"),
+        artist="Maybeshewill",
+        path=ts_muzzon + "ts_top_sound_blya.ogg",
+        art=ts_mr + "mshew.webp"
+    )
+
+    music_room.add(
+        name=_("Summertime"),
+        artist="RedMountain",
+        path=ts_muzzon + "ts_lmr_menu.ogg",
+        art=ts_mr + "lmr.webp"
+    )
+
 
 init:
 ###СПИСОК
     $ music_list_ts = {}
-    $ music_list_ts[" - "] = ts_muzzon + ".ogg"
 ###МУЗОНЫ
 ###ИЗ МЕНЮ
     $ music_list_ts["MND - Polar Day"] = ts_muzzon + "menu_ost/ts_pd.ogg"
@@ -630,19 +671,28 @@ init:
     $ music_list_ts["Sergey Eybog - Smooth Machine"] = ts_muzzon + "es/ts_sm.ogg"
     $ music_list_ts["Sergey Eybog - Dance Of Fireflies"] = ts_muzzon + "es/ts_dof.ogg"
     $ music_list_ts["Sergey Eybog - Raindrops"] = ts_muzzon + "es/ts_raindrops.ogg"
+###САУНД ОТ ВЛАДИКА БЛЕАТЬ
+    $ music_list_ts["The Distorion - Island of Sanity"] = ts_muzzon + "ts_ios.ogg"
+    $ music_list_ts["The Distorion - Stellar"] = ts_muzzon + "ts_stellar.ogg"
+    $ music_list_ts["The Distorion - Thank God"] = ts_muzzon + "ts_tgod.ogg"
+    $ music_list_ts["The Distorion - Root of all Evil"] = ts_muzzon + "ts_roae.ogg"
 ###ПОДГОНЫ ОТ БЕРГЕНЧИКА БЛЕАДЬ
     $ music_list_ts["Kashiwa Daisuke - april.#19"] = ts_muzzon + "ts_emmk.ogg"
     $ music_list_ts["kelly bailey - inhuman frequency"] = ts_muzzon + "ts_hl2.ogg"
     $ music_list_ts["Pixies - Where is My Mind (piano cover)"] = ts_muzzon + "ts_gramatik.ogg"
     $ music_list_ts["Joel Nielsen - Black Mesa Theme"] = ts_muzzon + "ts_mk.ogg"
-    $ music_list_ts["The Distorion - Stellar"] = ts_muzzon + "ts_stellar.ogg"
-    $ music_list_ts["The Distorion - Thank God"] = ts_muzzon + "ts_tgod.ogg"
-    $ music_list_ts["The Distorion - Root of all Evil"] = ts_muzzon + "ts_roae.ogg"
     $ music_list_ts["633397 - i can't run anymore"] = ts_muzzon + "ts_icra.ogg"
     $ music_list_ts["Alx Beats - Afterlife (interlude)"] = ts_muzzon + "ts_afterlife.ogg"
     $ music_list_ts["Placebo - Special needs (instrumental)"] = ts_muzzon + "ts_pb_sn.ogg"
     $ music_list_ts["Placebo - Song to say goodbye (instrumental)"] = ts_muzzon + "ts_pb_stsg.ogg"
     $ music_list_ts["Andreas Rönnberg - Heaven"] = ts_muzzon + "ts_heaven.ogg"
     $ music_list_ts["Arseny St - Solution"] = ts_muzzon + "ts_solution.ogg"
-    $ music_list_ts["The Distorion - Island of Sanity"] = ts_muzzon + "ts_ios.ogg"
     $ music_list_ts["Yabai The Maid - Clockwork Doll"] = ts_muzzon + "ts_ytm_cd.ogg"
+    $ music_list_ts["Akira Yamaoka - True"] = ts_muzzon + "ts_sh_true.ogg"
+    $ music_list_ts["Awolnation - Holy Roller (Instrumental)"] = ts_muzzon + "ts_holly_roller.ogg"
+    $ music_list_ts["Keiko Matsui - Bridge over stars"] = ts_muzzon + "ts_s_stuff.ogg"
+    $ music_list_ts["Alx Beats - Everything Would Be Fine"] = ts_muzzon + "ts_alx_ewbf.ogg"
+    $ music_list_ts["God Is An Astronaut - First Day Of Sun"] = ts_muzzon + "ts_first_day_of_sun.ogg"
+    $ music_list_ts["Maybeshewill - Takotsubo"] = ts_muzzon + "ts_top_sound_blya.ogg"
+    $ music_list_ts["RedMountain - Summertime"] = ts_muzzon + "ts_lmr_menu.ogg"
+

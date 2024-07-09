@@ -9,6 +9,9 @@
 screen alko_text1:
     text "{size=+15}{font=[sc_font]}Это...{/font}{/size}" yalign 0.5 xalign 0.5
 
+screen c10_text_blya:
+    text "{size=+15}{font=[sc_font]}Почему?{/font}{/size}" yalign 0.5 xalign 0.5
+
 screen alko_text2:
     text "{size=+15}{font=[ink_font]}...что...{/font}{/size}" yalign 0.5 xalign 0.5
 

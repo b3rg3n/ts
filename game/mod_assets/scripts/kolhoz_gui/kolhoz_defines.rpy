@@ -39,7 +39,7 @@ init -4 python:
         layout.DELETE_SAVE = "Точно хочешь забыть?"
         layout.OVERWRITE_SAVE = "Точно хочешь перезапомнить?"
         layout.LOADING = "Если вспомнишь - забудешь всё то, что видел после.\nУверен?"
-        layout.QUIT = "Так скоро тикаешь?"
+        layout.QUIT = "Ты сбегаешь?"
         layout.MAIN_MENU = "Вернуться на главную?\nЗабудешь всё, что видел."
         layout.END_REPLAY = "Остановить повтор?"
         layout.SLOW_SKIP = "Промотать всё?"

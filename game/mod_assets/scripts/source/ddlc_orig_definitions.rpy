@@ -150,6 +150,11 @@ image n_cg1_exp5:
 
 image n_cg1b = LiveComposite((1280,720), (0,0), ts_cg + "n_cg1b.webp", (882,325), "n_rects1", (732,400), "n_rects2", (850,475), "n_rects3")
 
+image n_cg1b228 = LiveComposite((1280,720), (882,325), "n_rects1", (732,400), "n_rects2", (850,475), "n_rects3")
+
+image n_cg1b1337 = LiveComposite((1280,720), (145,100), "n_rects1", (220,100), "n_rects2", (185,170), "n_rects3")
+
+
 image n_rects1:
     RectCluster(Solid("#000"), 12, 30, 30).sm
     pos (899, 350)

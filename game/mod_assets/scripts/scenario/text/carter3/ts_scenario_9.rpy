@@ -159,7 +159,7 @@ label ts_scenario_9:
         _preferences.volumes['sfx'] = 1.0
         _preferences.volumes['music'] = .0
 
-    play sound2 pizdec_sound
+    play sound2 ts_glitch_music9
 
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 

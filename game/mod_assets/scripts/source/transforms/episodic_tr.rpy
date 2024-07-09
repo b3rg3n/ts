@@ -4,6 +4,15 @@
 
 init:
 
+    transform ts_tryaska_lutaya_kak_u_gundosa:
+        align(0.5, 0.5) zoom 1.0
+        ease 0.5 align(0.2, 0,8) zoom 1.5
+        ease 0.5 align(0.8, 0,2) zoom 2.0
+        ease 0.5 align(0.2, 0,5) zoom 2.5
+        ease 0.5 align(0.5, 0,6) zoom 3.5
+        ease 0.5 align(0.5, 0,5) zoom 1.0
+        repeat
+
     transform ts_pizdec_tr:
         align(0.5, 0.5) zoom 1.0
         ease 0.5 align(0.5, 0,8) zoom 1.5
@@ -62,6 +71,7 @@ init:
         ease t xpos x2
 
     transform ts_punch(x=0,y=0): # ts_punch(-0.22) или ts_punch()
+        tinstant(640)
         anchor (0.5, 0.5)
         pos (0.5+x, 0.5+y)
         rotate 0
@@ -69,6 +79,16 @@ init:
             ease 0.4 pos (0.75+x, 1.33+y)
         parallel:
             ease 0.5 rotate 90
+
+    transform ts_punch1(x=0,y=0): # ts_punch(-0.22) или ts_punch()
+        tinstant(640)
+        anchor (0.5, 0.5)
+        pos (0.5+x, 0.5+y)
+        rotate 90
+        parallel:
+            ease 0.4 pos (0.75+x, 1.33+y)
+        parallel:
+            ease 0.5 rotate 180
 
 ### АНИМАЦИИ НЕ ДЛЯ СПРАЙТОВ БЛЯ
     transform ts_alkonersha:

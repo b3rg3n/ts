@@ -2,6 +2,14 @@
 # by @b3rg3n & @superrage
 # Since 2024
 
+transform ts_hidescreens_fast:
+    xpos 0.0 ypos 0.0 alpha 1.0 subpixel True
+    ease 0.1 xpos 0.0 ypos 0.2 alpha 0.0
+
+transform ts_showscreens_fast:
+    ypos 0.2 alpha 0.0 subpixel True
+    ease 0.1 ypos 0.0 alpha 1.0
+
 transform ts_hidescreens:
     xpos 0.0 ypos 0.0 alpha 1.0 subpixel True
     ease 1.0 xpos 0.0 ypos 0.2 alpha 0.0

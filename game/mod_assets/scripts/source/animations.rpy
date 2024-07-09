@@ -104,6 +104,37 @@ init:
         pause 0.05
         repeat
 
+    image ts_closet_glitches_balya: # УБИВАЕМ ЭПИЛЕПТИКОВ НАХУЙ))))0000)))
+        ts_gl_bg_path + 'ts_closet_g1.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g2.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g3.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g1.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g2.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g2.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g3.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g2.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g1.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g3.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g1.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g3.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g2.webp'
+        pause 0.05
+        ts_gl_bg_path + 'ts_closet_g1.webp'
+        pause 0.05
+        repeat
+
     image ts_hiroto_psyhodelic_pizdoc: # УБИВАЕМ ЭПИЛЕПТИКОВ НАХУЙ))))0000)))
         ts_hiroto_pt + 'glitch/1l_g1.webp'
         pause 0.05
@@ -132,6 +163,37 @@ init:
         ts_hiroto_pt + 'glitch/1l_g1.webp'
         pause 0.05
         ts_hiroto_pt + 'glitch/1l_g4.webp'
+        pause 0.05
+        repeat
+
+    image ts_hiroto_psyhodelic_pizdoc1: # УБИВАЕМ ЭПИЛЕПТИКОВ НАХУЙ))))0000)))
+        ts_hiroto_pt + 'glitch/1l_g1.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g44.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g2.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g44.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g3.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g44.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g1.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g44.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g2.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g44.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g3.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g44.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g1.webp'
+        pause 0.05
+        ts_hiroto_pt + 'glitch/1l_g44.webp'
         pause 0.05
         repeat
 
@@ -178,6 +240,7 @@ init:
         ts_hiroto_pt + 'glitch/1r_g3.webp'
         pause 0.25
         repeat
+
 
     image vladick_pizdos: # ГЛИЧЁВЫЙ СЦЕНАРИСТ ЭТОЙ ХУЙНИ
         contains:
@@ -1096,10 +1159,36 @@ init:
         Solid("#000"), Pause(0.25),
         Solid("#000"), ImageDissolve(ts_anim + "transit/wipeleft.webp", 0.5, ramplen=64),
         True])
-
+    define wipeleft_scene_long = MultipleTransition([
+        False, ImageDissolve(ts_anim + "transit/wipeleft.webp", 1.0, ramplen=64),
+        Solid("#000"), Pause(0.5),
+        Solid("#000"), ImageDissolve(ts_anim + "transit/wipeleft.webp", 1.0, ramplen=64),
+        True])
 # TRUE STORY SPLIT IMAGES
     image ts_hotel_split = ts_bg + "split/hotel_split.webp"
     image ts_gost_split = ts_bg + "split/gost_split.webp"
+
+    image ts_hotel_split1 = ts_bg + "split/ts_hostel_sleva.webp"
+    image ts_kuh_split = ts_bg + "split/ts_kuh_sprava.webp"
+
+    image ts_host_split_animated: # pause 0.99
+        default subpixel True 
+        parallel:
+            Null(1280.0, 720.0)
+            'ts_hotel_split1'
+        parallel:
+            ypos 1.5 alpha 0.0
+            linear 0.99 ypos 1.0 alpha 1.0
+
+    image ts_kuh_split_animated: # pause 0.99
+        default subpixel True 
+        parallel:
+            Null(1280.0, 720.0)
+            'ts_kuh_split'
+        parallel:
+            ypos 0.5 alpha 0.0
+            linear 0.99 ypos 1.0 alpha 1.0
+
 
     image ts_gost_split_animated: # pause 0.99
         default subpixel True 

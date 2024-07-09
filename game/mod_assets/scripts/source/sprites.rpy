@@ -5160,14 +5160,14 @@ image yuri dragon:
     "yuri 3"
 
 ####НАЦУКИ
-image natsuki mouth = LiveComposite((960, 960), (0, 0), ts_natsuki_pt + "0.webp", (390, 340), "n_rects_mouth", (480, 334), "n_rects_mouth")
+image natsuki mouth = LiveComposite((960, 960), (0, 0), ts_natsuki_pt + "1l.webp", (0, 0), ts_natsuki_pt + "2r.webp", (0, 0), ts_natsuki_pt + "0.webp", (390, 340), "n_rects_mouth", (480, 334), "n_rects_mouth")
 
 image n_rects_mouth:
     RectCluster(Solid("#000"), 4, 15, 5).sm
     size (20, 25)
 
 image n_moving_mouth:
-    "images/natsuki/mouth.webp"
+    ts_natsuki_pt + "mouth.webp"
     pos (615, 305)
     xanchor 0.5 yanchor 0.5
     parallel:
@@ -5248,6 +5248,10 @@ image natsuki glitch1:
     "natsuki 4e"
 
 image natsuki scream = im.Composite((960, 960), (0, 0), ts_natsuki_pt + "1l.webp", (0, 0), ts_natsuki_pt + "1r.webp", (0, 0), ts_natsuki_pt + "scream.webp")
+
+image natsuki screamnohead = im.Composite((960, 960), (0, 0), ts_natsuki_pt + "1l1.webp", (0, 0), ts_natsuki_pt + "1r.webp")
+image natscreamhead = im.Composite((960, 960), (0, 0), ts_natsuki_pt + "scream1.webp")
+
 image natsuki vomit = ts_natsuki_pt + "vomit.webp"
 
 image n_blackeyes = "images/natsuki/blackeyes.webp"

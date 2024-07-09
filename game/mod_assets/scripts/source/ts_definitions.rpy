@@ -66,6 +66,11 @@ init:
 
 ###БГ
 
+    image ts_seaside_road_morning = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_seaside_road_morning.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_seaside_road_morning.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_seaside_road_morning.webp") )
+
     image ts_light_off_corridor = ConditionSwitch(
     "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_light_off_corridor.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
     "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_light_off_corridor.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),

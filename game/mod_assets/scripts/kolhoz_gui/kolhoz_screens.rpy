@@ -257,9 +257,9 @@ init -501 screen main_menu:
             text translation_new["ts_menu_set15"] style "settings_link" size 35 text_align 0.5 yalign 0.995 xalign 0.990 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
     else:
         if _preferences.language == "english":
-            text "{size=+25}{font=[cit_font]}Mod build from [ts_version]{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
+            text "{size=+25}{font=[cit_font]}Mod build from [ts_version] | ver. [config.version]{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
         else:
-            text "{size=+25}{font=[cit_font]}Сборка мода от [ts_version]{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
+            text "{size=+25}{font=[cit_font]}Сборка мода от [ts_version] | ver. [config.version]{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
             #RenPy ver. [renpy.version_only] |
 
     if persistent.badendmenuperedglitch:

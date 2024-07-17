@@ -22,15 +22,15 @@ init python:
     ]
 
     gallery_bg = [
-    "ts_astreet", "ts_bathroom", "ts_club", "ts_bedroom", "ts_cafeteria-rain", "ts_city_day",
-    "ts_closet", "ts_class", "ts_club2re", "ts_corridor", "ts_corridorrev", "ts_courtyard-rain",
+    "ts_bathroom", "ts_club", "ts_bedroom", "ts_city_day",
+    "ts_closet", "ts_class", "ts_club2re", "ts_corridor", "ts_corridorrev",
     "ts_darkbed", "ts_entrance_day", "ts_entrance_night", "ts_entrance_nolight", "ts_gost",
-    "ts_gost_night", "ts_gost_sunset", "ts_gym_n", "ts_hotel", "ts_house", "ts_house_monika_evening",
-    "ts_house2_night", "ts_jstreet", "ts_kitchen", "ts_l5", "ts_l5old", "ts_light_off_corridor",
-    "ts_living_room_day", "ts_living_room_late", "ts_living_room_late_night", "ts_living_room_night",
-    "ts_music_club", "ts_pianoend", "ts_residential", "ts_sakura", "ts_sayori_bedroom", "ts_school_bathroom",
+    "ts_gost_night", "ts_gost_sunset", "ts_house", "ts_house_monika_evening",
+    "ts_kitchen", "ts_l5", "ts_l5old", "ts_light_off_corridor",
+    "ts_living_room_late", "ts_living_room_night",
+    "ts_pianoend", "ts_residential", "ts_sakura", "ts_sayori_bedroom", "ts_school_bathroom",
     "ts_school_bathroom1", "ts_school_bathroom2", "ts_school_courtyard_day", "ts_school_gate_day",
-    "ts_school_gate_evening", "ts_stairs", "ts_stairsre", "ts_street_late", "ts_street1", "ts_street7"
+    "ts_school_gate_evening", "ts_stairs", "ts_stairsre", "ts_street_late"
     ]
 
 init 101 python:

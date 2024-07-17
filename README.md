@@ -1,6 +1,6 @@
 ![poster](https://github.com/b3rg3n/ts/assets/124900745/99c0df04-b0fa-40e7-818d-38c97ad62d4e)
 # Разработчики:
-1. BERGEN (Визуал, код, тестирование) - [Reddit](https://www.reddit.com/user/iamnineoneone/) | [VK](https://vk.com/b3rg3n) | [Discord](https://discordapp.com/users/703550867181273109/) 
+1. BERGEN (Визуал, код, тестирование) - [Telegram](https://t.me/b3rg3n/)
 2. Maddie, The Mad (Сценарий, редактура, перевод) - [Reddit](https://www.reddit.com/user/Neljas/) | [VK](https://vk.com/maddiethemad) | [Discord](https://discordapp.com/users/159377940268843008/)
 
 # Наши ресурсы:

@@ -782,7 +782,7 @@ label ts_scenario_5:
 
     nvl clear
 
-    show layer screens at ts_showscreens
+    show layer screens at ts_showscreens_nvl
 
     nvlbazar "{font=[ts_nvl_font2]}Водить я, соответственно, тоже не умею от слова совсем."
     nvlbazar "{font=[ts_nvl_font2]}Нет, конечно, папа давал мне порулить пару раз в детстве, когда я ещё совсем маленькая была..."
@@ -795,7 +795,7 @@ label ts_scenario_5:
     nvlbazar "{font=[ts_nvl_font2]}Но просто... как только я сажусь в машину, я паникую и совершенно не знаю, что мне делать."
     nvlbazar "{font=[ts_nvl_font2]}Поэтому я и наотрез отказываюсь водить и даже учиться водить. Пусть другие этому учатся. Не я."
 
-    show layer screens at ts_hidescreens
+    show layer screens at ts_hidescreens_nvl
     nvlbazar " {w=1.0}{nw}"
 
     nvl clear
@@ -1440,7 +1440,7 @@ label ts_scenario_5:
 
             play music ts_afterword
 
-            show layer screens at ts_showscreens
+            show layer screens at ts_showscreens_nvl
 
             nvl clear
             nvlbazar "{font=[ts_nvl_font2]}В конце концов, это же всего лишь игра."
@@ -1450,7 +1450,7 @@ label ts_scenario_5:
             nvlbazar "{font=[ts_nvl_font2]}И как бы ты ни старалась, победить соперника никак не получается."
             nvlbazar "{font=[ts_nvl_font2]}Поэтому можно лишь с достоинством принять поражение, принять это, и жить дальше."
 
-            show layer screens at ts_hidescreens
+            show layer screens at ts_hidescreens_nvl
             nvlbazar " {w=1.0}{nw}"
 
             nvl clear

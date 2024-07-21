@@ -122,7 +122,7 @@ label ts_scenario_3:
 
     nvl clear
 
-    show layer screens at ts_showscreens
+    show layer screens at ts_showscreens_nvl
 
     nvlbazar "{font=[ts_nvl_font2]}Наверное, я должна была познакомить вас с моим папой ещё гораздо раньше."
     nvlbazar "{font=[ts_nvl_font2]}Но так уж получилось, что знакомлю я вас с ним только сейчас."
@@ -149,7 +149,7 @@ label ts_scenario_3:
     show monika 1a at thide
     hide minami
     hide monika
-    show layer screens at ts_hidescreens
+    show layer screens at ts_hidescreens_nvl
     nvlbazar " {w=1.0}{nw}"
     nvl clear
 
@@ -166,7 +166,7 @@ label ts_scenario_3:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show layer screens at ts_showscreens
+    show layer screens at ts_showscreens_nvl
     nvlbazar "{font=[ts_nvl_font2]}Я - вегетарианка."
     nvlbazar "{font=[ts_nvl_font2]}Несколько лет назад, ещё в пик моего юношеского максимализма, я как-то просмотрела пару документалок про животноводство."
     nvlbazar "{font=[ts_nvl_font2]}И знаете, то, с какой жестокостью и бездушностью фермеры закалывают беззащитных хрюшек и курочек, просто повергло меня в шок."
@@ -183,7 +183,7 @@ label ts_scenario_3:
     nvlbazar "{font=[ts_nvl_font2]}Но обещаю, что когда стану взрослой, откажусь и от этого."
     nvlbazar "{font=[ts_nvl_font2]}Но не сейчас."
 
-    show layer screens at ts_hidescreens
+    show layer screens at ts_hidescreens_nvl
     nvlbazar " {w=1.0}{nw}"
 
     nvl clear

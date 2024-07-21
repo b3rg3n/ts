@@ -20,6 +20,21 @@ label testing_label_blya:
     #$ persistent.uncolorize = "lite"
 
     #$ persistent.uncolorize = "full"
+
+    python:
+        import plyer
+
+        plyer.notification.notify( message='Кампуктер скоро перезагрузится...',
+            app_name='True Story',
+            #app_icon='sample.jpg',
+            title='Вешайся', )
+
+    "Всё, пизда"
+
+    $ stream_list = ["obs32.exe", "obs64.exe", "obs.exe", "xsplit.core.exe", "livehime.exe", "pandatool.exe", "yymixer.exe", "douyutool.exe", "huomaotool.exe"]
+    if not list(set(process_list).intersection(stream_list)):
+        m "хуй"
+
     scene ts_club
     show yuri 2l at i31
     show sayori 4s at i32

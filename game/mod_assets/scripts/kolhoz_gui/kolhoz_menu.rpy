@@ -102,6 +102,14 @@ label glitch_main_menu_ending:
 
 label splashscreen:
 
+    python:
+        process_list = []
+        if renpy.windows:
+            try:
+                process_list = subprocess.check_output("wmic process get Description", shell=True).lower().replace("\r", "").replace(" ", "").split("\n")
+            except:
+                pass
+
     if not persistent.lan_chosen:
 
         scene black

@@ -118,6 +118,7 @@ init python: # ОТДЕЛЬНЫЙ, Т.К. С ОСТАЛЬНЫМИ ЧЁТ НЕ Д
 
 init:
 # ДЕФОЛТНЫЕ ЗНАЧЕНИЯ ПЕРЕМЕННЫХ ДЛЯ ОБЕСЦЕВЕТА И ВРЕМЕНИ СПРАЙТА
+    default you_real_time_suka = 0
     default persistent.sprite_time = 'day'
     default persistent.uncolorize = 'none'
 #ГОПАЕМ ЮЗЕРНАЙМ

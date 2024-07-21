@@ -4,19 +4,27 @@
 
 transform ts_hidescreens_fast:
     xpos 0.0 ypos 0.0 alpha 1.0 subpixel True
-    ease 0.1 xpos 0.0 ypos 0.2 alpha 0.0
+    ease 0.1 xpos 1.0 ypos 0.5 alpha 0.0
 
 transform ts_showscreens_fast:
-    ypos 0.2 alpha 0.0 subpixel True
-    ease 0.1 ypos 0.0 alpha 1.0
+    xpos -1.0 ypos 0.5 alpha 0.0 subpixel True
+    ease 0.1 xpos 0.0 ypos 0.0 alpha 1.0
 
 transform ts_hidescreens:
     xpos 0.0 ypos 0.0 alpha 1.0 subpixel True
-    ease 1.0 xpos 0.0 ypos 0.2 alpha 0.0
+    ease 1.0 xpos 1.0 ypos 0.5 alpha 0.0
 
 transform ts_showscreens:
+    xpos -1.0 ypos 0.5 alpha 0.0 subpixel True
+    ease 1.0 xpos 0.0 ypos 0.0 alpha 1.0
+
+transform ts_showscreens_nvl:
     ypos 0.2 alpha 0.0 subpixel True
     ease 1.0 ypos 0.0 alpha 1.0
+
+transform ts_hidescreens_nvl:
+    xpos 0.0 ypos 0.0 alpha 1.0 subpixel True
+    ease 1.0 xpos 0.0 ypos 0.2 alpha 0.0
 
 transform ts_hide_credits_videosos:
     xpos 0.2 ypos 0.4 alpha 1.0 subpixel True
@@ -218,12 +226,6 @@ transform ts_coridor_glitch:
         0.49
         xoffset 0
         repeat
-
-transform ts_choice_anim: # АНИМАЦИЯ МЕНЮ ВЫБОРА
-    on hover:
-        easein 0.1 yoffset -2
-    on idle:
-        easein 0.1 yoffset 2
 
 transform ts_preferences_anim: # АНИМАЦИЯ МЕНЮ НАСТРОЕК
     zoom 0.4 alpha 0

@@ -861,7 +861,7 @@ label ts_scenario_7:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
     play music ts_rem
-    show layer screens at ts_showscreens
+    show layer screens at ts_showscreens_nvl
     nvl clear
     nvlbazar "Если биологию я не люблю просто как предмет (ну не понимаю я её!), то с историей у меня дела не сложились именно из-за высокомерного и просто мразотного учителя."
     nvlbazar "В пятом классе, когда нам только ввели историю, у нас был очень хороший учитель."
@@ -890,7 +890,7 @@ label ts_scenario_7:
     nvlbazar "Нет, к нам в этом году пришёл ещё один учитель истории, однако она была молодой, да и практиковала преподавание в основном в младших классах."
     nvlbazar "А нам приходилось терпеть эту мразь ещё один год."
     nvl clear
-    show layer screens at ts_hidescreens
+    show layer screens at ts_hidescreens_nvl
     nvlbazar " {w=1.0}{nw}"
     stop music fadeout 2
     show layer screens at ts_showscreens

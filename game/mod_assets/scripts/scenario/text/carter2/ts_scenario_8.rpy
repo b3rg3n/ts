@@ -2013,7 +2013,7 @@ label ts_carter8_posle_poems_suka:
     " {w=1.0}{nw}"
     show layer master at ts_blur_ahuenno1
     with dissolve2
-    show layer screens at ts_showscreens
+    show layer screens at ts_showscreens_nvl
     play music ts_rem fadein 2
     nvl clear
     nvlbazar "{font=[prologue_font]}У нас вообще семья довольно... взрослая и понимающая. Нет такого, чтобы родители готовили то, что я совсем есть не буду, да и накладываем мы каждый себе сам, ровно столько, сколько мы можем съесть."
@@ -2026,7 +2026,7 @@ label ts_carter8_posle_poems_suka:
     nvlbazar "{font=[prologue_font]}Хотя, если бы и брала, родители каждого родителя живут очень далеко от нас, да и приезжают они к нам довольно редко, поэтому можно сказать, что воспитали меня лишь мама с папой."
     nvlbazar "{font=[prologue_font]}Но даже несмотря на то, что они редко к нам приезжают, в детстве я очень часто каталась к ним на лето, а иногда и на зимние каникулы."
     nvlbazar "{font=[prologue_font]}Хорошее время было, беззаботное. До всех этих клубов, стресса и всего сопутствующего."
-    show layer screens at ts_hidescreens
+    show layer screens at ts_hidescreens_nvl
     nvlbazar " {w=1.0}{nw}"
     show layer master
     with dissolve2

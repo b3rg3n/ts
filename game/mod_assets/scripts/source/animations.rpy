@@ -11,6 +11,16 @@ init python:
 
 init:
 
+    image ts_club_medlenno_glutch:
+        'ts_class' with dissolve2
+        pause 0.5
+        'ts_club_g1' with dissolve2
+        pause 0.01
+        'ts_club_g2' with dissolve2
+        pause 0.01
+        'ts_club_g3' with dissolve2
+        pause 0.01
+
     image mon_piano_glitch_anim: # ПЕРЕД ГУД КОНЦОВКОЙ МЕНЮ АНИМАЦИЯ
         'mon_piano'
         pause 2.1

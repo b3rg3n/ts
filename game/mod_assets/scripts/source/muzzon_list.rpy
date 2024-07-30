@@ -75,6 +75,20 @@ init python:
     )
 
     music_room.add(
+        name=_("Outskirts Of The World"),
+        artist="Between August And December",
+        path=ts_muzzon + "ts_ootw.ogg",
+        art=ts_mr + "esd.webp"
+    )
+
+    music_room.add(
+        name=_("Degrade"),
+        artist="Between August And December",
+        path=ts_muzzon + "ts_while.ogg",
+        art=ts_mr + "esd.webp"
+    )
+
+    music_room.add(
         name=_("Confession"),
         artist="Sergey Eybog",
         path=ts_muzzon + "es/ts_conf.ogg",
@@ -594,6 +608,41 @@ init python:
         art=ts_mr + "lmr.webp"
     )
 
+    music_room.add(
+        name=_("Sail (instrumental)"),
+        artist="AWOLNATION",
+        path=ts_muzzon + "ts_sail.ogg",
+        art=ts_mr + "sail.webp"
+    )
+
+    music_room.add(
+        name=_("Alterecho"),
+        artist="we.own.the.sky",
+        path=ts_muzzon + "ts_alt.ogg",
+        art=ts_mr + "alterecho.webp"
+    )
+
+    music_room.add(
+        name=_("Аниме девочки"),
+        artist="pod_metro",
+        path=ts_muzzon + "ts_podmetro.ogg",
+        art=ts_mr + "hueta.webp"
+    )
+
+    music_room.add(
+        name=_("Sea Level"),
+        artist="Yxung Atlas",
+        path=ts_muzzon + "ts_sealevel.ogg",
+        art=ts_mr + "hueta.webp"
+    )
+
+    music_room.add(
+        name=_("The Other Side"),
+        artist="Bxmmusic",
+        path=ts_muzzon + "ts_tos.ogg",
+        art=ts_mr + "cof.webp"
+    )
+
 
 init:
 ###СПИСОК
@@ -695,4 +744,10 @@ init:
     $ music_list_ts["God Is An Astronaut - First Day Of Sun"] = ts_muzzon + "ts_first_day_of_sun.ogg"
     $ music_list_ts["Maybeshewill - Takotsubo"] = ts_muzzon + "ts_top_sound_blya.ogg"
     $ music_list_ts["RedMountain - Summertime"] = ts_muzzon + "ts_lmr_menu.ogg"
-
+    $ music_list_ts["AWOLNATION - Sail (instrumental)"] = ts_muzzon + "ts_sail.ogg"
+    $ music_list_ts["we.own.the.sky - Alterecho"] = ts_muzzon + "ts_alt.ogg"
+    $ music_list_ts["pod_metro - Аниме девочки"] = ts_muzzon + "ts_podmetro.ogg"
+    $ music_list_ts["Yxung Atlas - Sea Level"] = ts_muzzon + "ts_sealevel.ogg"
+    $ music_list_ts["Between August and December - Outskirts Of The World"] = ts_muzzon + "ts_ootw.ogg"
+    $ music_list_ts["Between August and December - Degrade"] = ts_muzzon + "ts_while.ogg"
+    $ music_list_ts["Bxmmusic - The Other Side"] = ts_muzzon + "ts_tos.ogg"

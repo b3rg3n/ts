@@ -1779,4 +1779,7 @@ label ts_scenario_10:
     "И я в любом случае проснусь не раньше того времени, в котором я просыпаюсь обычно."
     "Однако додумать мысль до конца я уже не успела."
     "Спустя пару секунд, как я закрыла глаза, я уже провалилась в сон."
-    return
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    show layer screens at ts_null_transform
+    jump ts_scenario_11

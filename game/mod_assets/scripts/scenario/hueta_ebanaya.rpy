@@ -966,12 +966,20 @@ label ts_chapter_ten_changes:
     with flash
     pause 2
 
-    show screen scenario_start_change_chapter_one1
-    pause 1
-    hide screen scenario_start_change_chapter_one1 with dissolve2
-    pause 2
+    menu:
+        "Первая часть":
+            show screen scenario_start_change_chapter_one1
+            pause 1
+            hide screen scenario_start_change_chapter_one1 with dissolve2
+            pause 2
+            jump ts_scenario_10
+        "Вторая часть":
+            show screen scenario_start_change_chapter_one1
+            pause 1
+            hide screen scenario_start_change_chapter_one1 with dissolve2
+            pause 2
+            jump ts_scenario_11
 
-    jump ts_scenario_10
 
 screen scenario_start_change_chapter_one: # ВАРНИНГ ХУЙНИ
     text translation_new["ts_govno_text10"] style "ebanko_ingame" size 75 text_align 0.5 yalign 0.5 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim

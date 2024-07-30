@@ -26,6 +26,10 @@ init:
     image mon_piano_glitch2 = ts_images + "intro/menu/mon_piano_glitch2.webp"
     image mon_piano_glitch3 = ts_images + "intro/menu/mon_piano_glitch3.webp"
 
+    image ts_club_g1 = ts_images + "bg/glitch/ts_class_g1.webp"
+    image ts_club_g2 = ts_images + "bg/glitch/ts_class_g2.webp"
+    image ts_club_g3 = ts_images + "bg/glitch/ts_class_g3.webp"
+
     image mon_piano_another = ts_images + "intro/menu/mon_piano_another.webp"
     image mon_piano_another_glitch = ts_images + "intro/menu/mon_piano_another_glitch.webp"
     image mon_piano_another_glitch1 = ts_images + "intro/menu/mon_piano_another_glitch1.webp"

@@ -1081,11 +1081,12 @@ label ts_scenario_11:
     show monika 1p at f11
     stop music fadeout 2
     em "Л-ладно, потом поговорим..."
+
     hide monika
     with linearblur
+    show layer screens at ts_showscreens_fast
     show sayori glitch at ln21
     show natsuki glitch1 at ln22
-    
     $ gtextsuka = glitchtext(24)
     $ gtextsuka1 = glitchtext(44)
     $ m_name = "[gtextsuka]"

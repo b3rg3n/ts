@@ -1085,6 +1085,7 @@ label ts_scenario_11:
     with linearblur
     show sayori glitch at ln21
     show natsuki glitch1 at ln22
+    
     $ gtextsuka = glitchtext(24)
     $ gtextsuka1 = glitchtext(44)
     $ m_name = "[gtextsuka]"

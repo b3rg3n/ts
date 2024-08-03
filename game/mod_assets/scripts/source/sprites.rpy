@@ -5029,6 +5029,27 @@ image monika g1:
     xoffset 0 yoffset 0 zoom 1.00
     "monika 3"
 
+image monika g1loop:
+    ts_monika_pt + "g1.webp"
+    xoffset 35 yoffset 55
+    parallel:
+        zoom 1.00
+        linear 0.10 zoom 1.03
+        repeat
+    parallel:
+        xoffset 35
+        0.20
+        xoffset 0
+        0.05
+        xoffset -10
+        0.05
+        xoffset 0
+        0.05
+        xoffset -80
+        0.05
+        repeat
+
+
 image monika g2:
     block:
         choice:

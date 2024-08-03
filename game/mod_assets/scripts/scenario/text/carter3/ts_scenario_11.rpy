@@ -345,7 +345,7 @@ label ts_scenario_11:
         track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/ost/ts_glitch_music10.ogg"
         renpy.sound.play(track, loop=True)
 
-    show monika g1 at i11
+    show monika g1loop at i11
     ts_ft "[gtextsuka][gtextsuka]"
     stop sound
     python:
@@ -443,10 +443,11 @@ label ts_scenario_11:
     em 4b "У тебя будет {nw}"
     hide monika
     play sound slender
-    show monika g1 at i11
+    show monika g1loop at i11
     extend "лучшее стихотворение на свете!{nw}"
     window hide
     pause 1.5
+    stop sound
     show monika 4a at t11
     show layer screens at ts_showscreens_fast
     m "...что?"

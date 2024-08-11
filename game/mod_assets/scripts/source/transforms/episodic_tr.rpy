@@ -4,6 +4,10 @@
 
 init:
 
+    transform ts_blur_transform_suka(x, y, z):
+        blur x
+        ease y blur z
+
     transform ts_tryaska_lutaya_kak_u_gundosa:
         align(0.5, 0.5) zoom 1.0
         ease 0.5 align(0.2, 0,8) zoom 1.5
@@ -57,13 +61,36 @@ init:
         ease 0.5 xzoom 1.0 yzoom 1.0
 
     transform ts_walking:
-        align (0.5, 0.5)
-        zoom 1.01
-        ease 0.5 xalign 0.35 yalign 0.65
-        ease 0.5 xalign 0.50 yalign 0.50
-        ease 0.5 xalign 0.65 yalign 0.65
-        ease 0.5 xalign 0.50 yalign 0.50
-        repeat
+        align (0.5, 0.5) zoom 1.0
+        ease 1.0 zoom 1.5
+
+    transform ts_walking1:
+        align (0.5, 0.5) zoom 1.5
+        ease 1.0 zoom 2.0
+
+    transform ts_walking2:
+        align (0.5, 0.5) zoom 2.0
+        ease 1.0 zoom 2.5
+
+    transform ts_walking3:
+        align (0.5, 0.5) zoom 2.5
+        ease 1.0 zoom 3.0
+
+    transform ts_walking4:
+        align (0.5, 0.5) zoom 3.0
+        ease 1.0 zoom 3.5
+
+    transform ts_walking5:
+        align (0.5, 0.5) zoom 3.5
+        ease 1.0 zoom 4.0
+
+    transform ts_walking6:
+        align (0.5, 0.5) zoom 4.0
+        ease 1.0 zoom 4.5
+
+    transform ts_walking7:
+        align (0.5, 0.5) zoom 4.5
+        ease 1.0 zoom 5.0
 
     transform ts_move(t=2,x1=-0.5,x2=0.5):
         anchor (0.5, 0.5)

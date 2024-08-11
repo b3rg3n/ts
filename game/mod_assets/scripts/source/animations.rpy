@@ -11,6 +11,63 @@ init python:
 
 init:
 
+    image ts_psihuet1:
+        ts_anim + "psih/psih1.webp" with dissolve
+        pause .6
+        ts_anim + "psih/psih2.webp" with dissolve
+        pause .6
+        repeat
+
+    image ts_psihuet2:
+        ts_anim + "psih/psih1.webp" with dissolve
+        pause .6
+        ts_anim + "psih/psih2.webp" with dissolve
+        pause .6
+        ts_anim + "psih/psih3.webp" with dissolve
+        pause .6
+        repeat
+
+    image ts_psihuet3:
+        ts_anim + "psih/psih1.webp" with dissolve
+        pause .3
+        ts_anim + "psih/psih2.webp" with dissolve
+        pause .3
+        ts_anim + "psih/psih3.webp" with dissolve
+        pause .3
+        ts_anim + "psih/psih4.webp" with dissolve
+        pause .3
+        repeat
+
+    image ts_emergency_room_anim: #ЭФФЕКТ ТЕЛЕКА С ПОЛОСОЙ
+        ts_anim + 'emergency/er_aa1.webp'
+        pause 0.05
+        ts_anim + 'emergency/er_aa2.webp'
+        pause 0.05
+        ts_anim + 'emergency/er_aa3.webp'
+        pause 0.05
+        ts_anim + 'emergency/er_aa4.webp'
+        pause 0.05
+        ts_anim + 'emergency/er_aa5.webp'
+        pause 0.1
+        ts_anim + 'emergency/er_aa6.webp'
+        pause 0.9
+        repeat
+
+    image ts_emergency_room_anim4: #ЭФФЕКТ ТЕЛЕКА С ПОЛОСОЙ БЫСТРЕЕ БЛЯТЬ
+        ts_anim + 'emergency/er_aa1.webp'
+        pause 0.05
+        ts_anim + 'emergency/er_aa2.webp'
+        pause 0.05
+        ts_anim + 'emergency/er_aa3.webp'
+        pause 0.05
+        ts_anim + 'emergency/er_aa4.webp'
+        pause 0.05
+        ts_anim + 'emergency/er_aa5.webp'
+        pause 0.1
+        ts_anim + 'emergency/er_aa6.webp'
+        pause 0.4
+        repeat
+
     image ts_club_medlenno_glutch:
         'ts_class' with dissolve2
         pause 0.5
@@ -1174,6 +1231,11 @@ init:
         Solid("#000"), Pause(0.5),
         Solid("#000"), ImageDissolve(ts_anim + "transit/wipeleft.webp", 1.0, ramplen=64),
         True])
+    define wipeleft_scene_fast = MultipleTransition([
+        False, ImageDissolve(ts_anim + "transit/wipeleft.webp", 0.25, ramplen=64),
+        Solid("#000"), Pause(0.05),
+        Solid("#000"), ImageDissolve(ts_anim + "transit/wipeleft.webp", 0.25, ramplen=64),
+        True])
 # TRUE STORY SPLIT IMAGES
     image ts_hotel_split = ts_bg + "split/hotel_split.webp"
     image ts_gost_split = ts_bg + "split/gost_split.webp"
@@ -1247,6 +1309,33 @@ init:
     image chess17 = ts_images + "minigame/chess/17.png"
     image chess18 = ts_images + "minigame/chess/18.png"
     image chess19 = ts_images + "minigame/chess/19.png"
+
+    image atc3_chess1 = ts_images + "minigame/chess/act3_1.webp"
+    image atc3_chess2 = ts_images + "minigame/chess/act3_2.webp"
+    image atc3_chess3 = ts_images + "minigame/chess/act3_3.webp"
+    image atc3_chess4 = ts_images + "minigame/chess/act3_4.webp"
+    image atc3_chess5 = ts_images + "minigame/chess/act3_5.webp"
+    image atc3_chess6 = ts_images + "minigame/chess/act3_6.webp"
+    image atc3_chess7 = ts_images + "minigame/chess/act3_7.webp"
+    image atc3_chess8 = ts_images + "minigame/chess/act3_8.webp"
+    image atc3_chess9 = ts_images + "minigame/chess/act3_9.webp"
+    image atc3_chess10 = ts_images + "minigame/chess/act3_10.webp"
+    image atc3_chess11 = ts_images + "minigame/chess/act3_11.webp"
+    image atc3_chess12 = ts_images + "minigame/chess/act3_12.webp"
+    image atc3_chess13 = ts_images + "minigame/chess/act3_13.webp"
+    image atc3_chess14 = ts_images + "minigame/chess/act3_14.webp"
+    image atc3_chess15 = ts_images + "minigame/chess/act3_15.webp"
+    image atc3_chess16 = ts_images + "minigame/chess/act3_16.webp"
+    image atc3_chess17 = ts_images + "minigame/chess/act3_17.webp"
+    image atc3_chess18 = ts_images + "minigame/chess/act3_18.webp"
+    image atc3_chess19 = ts_images + "minigame/chess/act3_19.webp"
+    image atc3_chess20 = ts_images + "minigame/chess/act3_20.webp"
+    image atc3_chess21 = ts_images + "minigame/chess/act3_21.webp"
+    image atc3_chess22 = ts_images + "minigame/chess/act3_22.webp"
+    image atc3_chess23 = ts_images + "minigame/chess/act3_23.webp"
+    image atc3_chess24 = ts_images + "minigame/chess/act3_24.webp"
+    image atc3_chess25 = ts_images + "minigame/chess/act3_25.webp"
+    image atc3_chess26 = ts_images + "minigame/chess/act3_26.webp"
 
 # TRUE STORY GLITCH STUFF
 # by @b3rg3n
@@ -1427,3 +1516,7 @@ init:
         ts_gui + "dialogue_box/big/glitch/pizda6.webp"
         0.03 # Задержка
         repeat # Не убирать
+
+init -1 python:
+    ts_paint = ImageDissolve(ts_anim + "transit/ts_paint.webp", 1.5)
+    ts_pixel = ImageDissolve(ts_anim + "transit/ts_pixel.webp", 1.0, alpha = True)

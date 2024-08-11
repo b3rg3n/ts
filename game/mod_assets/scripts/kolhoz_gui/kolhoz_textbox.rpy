@@ -286,3 +286,29 @@ screen say(who, what):
 
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
+
+screen dialog(message, ok_action):
+
+    modal True
+    zorder 200
+    style_prefix "confirm"
+    add "mod_assets/source/images/gui/confirm.png"
+
+    frame:
+
+        vbox:
+            xalign 1.0
+            yalign 1.0
+            spacing 30
+
+            label _(message):
+                style "confirm_prompt"
+                xalign 0.5
+
+            hbox:
+                xalign 0.5
+                spacing 100
+
+                textbutton _("OK") activate_sound start_sound_suka hover_sound button_menu action ok_action
+
+style confirm_prompt is gui_prompt

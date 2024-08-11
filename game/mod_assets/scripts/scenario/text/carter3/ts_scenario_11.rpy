@@ -1102,26 +1102,54 @@ label ts_scenario_11:
     "Сейчас мне даже не страшно ни снаружи, ни изнутри."
     "Наверное, за несколько дней я уже привыкла к подобному, что сейчас это даже не особо пугает меня."
     "Хотя иногда пугает всё равно. Вроде первого появления Юри в клубе за сегодня."
+    $ persistent.ingame_pizda = False
     "Я больше боюсь того, чтобы чернила на моей ручке не отсохли окончательно, чем {i}вот этого{/i}."
-    #гличик, ну такой, нормальный по пиздецу
-    show yuri 1j at f31
-    show sayori 2a at t32
-    show natsuki 1x at t33
+
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+    $ persistent.ingame_pizda = True
+    python:
+        _preferences.volumes['music'] = 0.0
+        _preferences.volumes['sfx'] = 1.0
+    play sound_loop ts_glitch_music12
+    play sound2 ts_smeh_pizdec
+
+    scene ts_club_glitch_pizdets
+    show ts_yrec_kill_nahui_suicide_blya at left
+    show ts_sayori_zalagala_chereshnya:
+        align (0.9, 0.15)
+    show ts_maloletka_pozvonok_sloman_nahui
+
+
     $ y_name = "[gtextsuka]"
     if persistent.cens_mode == True:
         y "Ну здарова, ебантяйки малолетние. Чё, Нацуки, как по житухе вообще, батя тебя сегодня не сильно пиздил?"
     else:
         y "Ну здарова, малолетки. Чё, Нацуки, как по житухе вообще, батя тебя сегодня не сильно бил?"
     y "Сколько он тебе дал сегодня, копейки три? Остальное, как обычно, будешь собирать под торговым автоматом?"
-    show yuri 1i at t31
-    show sayori 2a at t32
-    show natsuki 1y at t33
+
     $ n_name = "[gtextsuka1]"
     n "И те не хворать, Юрец."
-    #Нацуки с белоснежным ибейлом, GLAZAMI, кровякой и анимированным ртом
+    hide ts_maloletka_pozvonok_sloman_nahui
+    show natsuki ghost at i32
+    show natsuki mouth at i32
+    show n_moving_mouth
+
     n "Да знаешь, вроде всё нормуль у нас с батей. А ты вот сколько порезалась за эту неделю?"
     n "На руке-то хоть одно здоровое место осталось, или прям всю руку искромсала?"
-    #заканчиваем
+
+    stop sound_loop
+    stop sound2
+
+    scene ts_club
+
+    show layer screens
+
+    $ persistent.ingame_pizda = False
+    python:
+        _preferences.volumes['music'] = .45
+        _preferences.volumes['sfx'] = .65
+
     show yuri 1j at f31
     show sayori 2a at t32
     show natsuki 1j at t33
@@ -1141,13 +1169,22 @@ label ts_scenario_11:
     "И знают ли они о депрессии Сайори?"
     "Или это всё только в моей голове, и девочки просто говорят то, что хотела бы сказать я?"
     em "Скорее всего, последнее. Это же сон, помнишь?"
-    if unluck_ball => 5:
+    if unluck_ball >= 5:
         em "Или кома... До конца не понятно."
     "«Без тебя знаю...»"
-    #вайплефт на тот же бг
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_club
     show yuri 1a at t31
     show sayori 1a at t32
     show natsuki 1a at t33
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Ладно, переходим к делам насущным."
     "Пока мы тут прохлаждаемся, возможно, ещё половина оставшихся букв отсохла."
     "Сама-то я стих помню, и могу по памяти воспроизвести пропущенные буквы, если не все, то хотя бы большинство."
@@ -1167,47 +1204,75 @@ label ts_scenario_11:
     show yuri 2j at t31
     show sayori 3x at t32
     show natsuki 2d at t33
+    stop ambience fadeout 3
+    play sound nfy
+    $ renpy.notify("Настоятельно рекомендую здесь сохранится.")
     "Девочки дружно загалдели."
     show yuri 1i at t31
     show sayori 2a at t32
     show natsuki 1a at t33
     m "Н-ну, тогда... начинаем..."
-#вайплефт на сцену с поемреспонсом
 
-#Я ДОЛГО ДУМАЛ, КАК ЖЕ ЭТО ВСЁ СООБРАЗИТЬ, И ПОХОДУ ПРИДУМАЛ САМЫЙ КАК МНЕ КАЖЕТСЯ ПРИЕМЛЕМЫЙ ВАРИАНТ
-#КОРОЧЕ, САБЖ СЛЕДУЮЩИЙ. ЭТО ОБЫЧНЫЙ ПОЕМРЕСПОНС, НО С НЮАНСОМ: КОГДА МОНИКА ВЫБИРАЕТ САЙРУ, ВТОРОЙ ПАРОЙ СООТВЕТСТВЕННО ОСТАЮТСЯ ЮРИ С НАЦУКИ, И ПОСЛЕ ОБОЮДНЫХ ЗАКУСЫВАНИЙ ПОЕМРЕСПОНС РЕЗКО ПРЕКРАЩАЕТСЯ
-#ЕСЛИ МОНИКА ОБМЕНЯЛАСЬ СТИХАМИ С САЙРОЙ ПОСЛЕДНЕЙ, ТО АКИ СКАЖЕТ МОЛ "КАКАЯ ТЫ БЛЯТЬ БЕЗДАРНОСТЬ", А МОНИКА ЕЙ В ОТВЕТ "ДА ЧЁ ТЫ, НОРМ ВСЁ. НУ ТИП ДА, ПОВЗДОРИЛИ, НУ БЛЯ С КЕМ НЕ БЫВАЕТ"
-#ЕСЛИ МОНИКА ОБМЕНЯЛАСЬ СТИХАМИ С САЙРОЙ *НЕ* ПОСЛЕДНЕЙ, ТО БУДЕТ ФЛАГ АНЛАКА, ТИПО МОНИКА САМА СКАЖЕТ МОЛ "КАКАЯ Я ХУЁВАЯ БЕЗДАРНОСТЬ, ВСЕГО ВТОРОЙ ОБМЕН СТИХАМИ, А У МЕНЯ УЖЕ КЛУБ РАЗВАЛИВАЕТСЯ БЛЯТЬ"
-#Я НЕ ЗНАЮ, КАК ЭТО В КОДЕ ОТОБРАЗИТЬ, ЗАТО У МЕНЯ ЕСТЬ СПЕЦИАЛЬНО ОБУЧЕННЫЙ ЭТОМУ ЧЕЛОВЕК - НУ ТЫ ЖЕ СПРАВИШЬСЯ, ДА?)
+    $ c11poemsreadfirst = False
+    $ c11yurecchecknul = False
+    $ c11sayourichecknul = False
+    $ c11natsukichecknul = False
 
-    if poemsread == 0:
+    $ poemsread = 0
+
+    jump poemresponsesuka_loop
+
+label poemresponsesuka_loop:
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_club
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+
+
+    if not c11poemsreadfirst:
         $ menutextsuka = "Кому я покажу стихотворение первой?"
     else:
         $ menutextsuka = "Кому я покажу стихотворение следующей?"
 
 
-
+    show zatemnenie_light with dspr
     menu:
         "[menutextsuka]"
             
-        "Сайори":
-            if poemsread == 0:
+        "Сайори" if not c11sayourichecknul:
+            hide zatemnenie_light with dspr
+            if not c11poemsreadfirst:
                 "Начну-ка я лучше с Сайори."
-            #вайплефт на бг клуба
+                $ c11poemsreadfirst = True
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
+
+            play sound pageflip
+            scene ts_club
             show sayori 1d at t11
+            with wipeleft_scene
+
+            show layer screens at ts_showscreens
             m "Привет, Сайори."
             show sayori 1zc at f11
             s "Привет, Моника."
             s 2x "Ну что, готова показать стихотворение?"
             show sayori 2a at t11
-            #с охуевшим блюром
             if poemsread > 0:
+                show layer master at ts_blur_transform_suka(0, 2, 9)
                 "Хотя это предложение кажется совершенно обыденным и безобидным, я чувствую, как она, да и остальные тоже, просто надо мной насмехаются."
                 "Ну, то есть... Это же я ко всем подхожу первая с этим вопросом, как будто мне больше всех надо."
                 "Хотя... мне ведь на самом деле больше всех надо... От успеха этой авантюры так-то будущее клуба зависит!"
                 em "А зависит ли? Ты же уже вроде и сама поняла, что до фестиваля в этом сне ты не доживёшь. И во всех остальных тоже."
                 em "Цикл заканчивается в пятницу, за три дня до фестиваля. А затем мы откатываемся обратно на субботу прошлой недели."
-            #блюр резко заканчивается, сфх ssikanul
+            show layer master
+            play sound ssikanul
             show sayori 3j at f11
             s "Моника, ты вообще меня слышишь?!"
             show sayori 1i at t11
@@ -1223,26 +1288,50 @@ label ts_scenario_11:
             show sayori 2b at t11
             m "Д-да, конечно, только сразу предупрежу, что{w=0.5}{nw}"
             show sayori 3j at f11
-            s "Дай-ка сюда." #со скриншейком
+            show layer screens at vpunch
+            $ persistent.ingame_pizda = False
+            s "Дай-ка сюда."
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
             show sayori 3b at f11
+            stop music fadeout 5
             pause 5
+            play music ts_gone fadein 5
+            $ persistent.ingame_pizda = True
+
             show sayori 3o at f11 with dissolve_cg
-            #и потом ещё медленно появляются GLAZA, кровь из GLAZ, ну в общем, как умеешь
-            #ТОЛЬКО МЕДЛЕННО БЛЯТЬ ПОЯВЛЯЮТСЯ, В ТЕЧЕНИЕ ГДЕ-ТО ПЯТИ СЕКУНД
-            #НУ И ПАРАЛЛЕЛЬНО С ЭТИМ БГШНИК И ВСЁ ОСТАЛЬНОЕ ТОЖЕ МЕДЛЕННО НАЧИНАЕТ ОПИЗДЕЦЕВАТЬ
-            #У САЙРЫ ИЗ ГЛИЧИКОВ ЕСТЬ РАЗВЕ ЧТО NOFACE И NOFACE1, НУ ПРИХУЯРЬ ИХ, ТОЛЬКО АНИМКУ КАКУЮ-ТО ПРИХУЯРЬ, LOOP TRUE ИЛИ КАК ТЫ ТАМ БЛЯТЬ ЭТО ДЕЛАЕШЬ
+            scene ts_club_glitch_pizdets
+            show sayori 3o at f11
+            show ts_glaza
+            with Dissolve(4)
+
+            show ts_sayori_zalagala_chereshnya:
+                align(0.5, 0.05)
+            show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+
             s "Так я же его помню."
-            "ОНА {b}ПОМНИТ{/b}?" #СО СКРИНШЕЙКОМ ЭТИМ ЕБУЧИМ
+            "ОНА {b}ПОМНИТ{/b}?" with vpunch
             "Она, по сути, видит стих впервые."
             "А на этой неделе у меня в этом стихе ещё и половина букв отсохла."
             "Она его даже понимать не должна, не то, что помнить!"
             "Но внешне я остаюсь спокойной."
             m "А-ха-ха... Р-разве?"
-            #И ПОТОМ БЛЯ ГЛИЧ РЕЗКО ЗАКАНЧИВАЕТСЯ
+
+            stop music
+
+            scene ts_club
+            show layer screens
+            $ persistent.ingame_pizda = False
+
             show sayori 4r at f11
             s "Да! Ты же хотела сделать что-то вроде продолжения стихотворение, как оно там называлось..."
             show sayori 4r at t11
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
             pause 0.4
+            play music ts_first_day_of_sun fadein 2
+            show layer screens at ts_showscreens_fast
             show sayori 2o at t11
             "Вот теперь я узнаю самую обычную Сайори - у неё феноменальная память на бесполезные факты, но как только дело доходит до каких-то реальных знаний, она мешкается."
             "Вот и сейчас, ей требуется несколько секунд на то, чтобы вспомнить название моего предыдущего стиха."
@@ -1254,13 +1343,41 @@ label ts_scenario_11:
             s "А теперь, хочешь прочесть моё?"
             show sayori 3a at t11
             m "К-конечно..."
-            show sayori 4r at f11
+            show sayori 4r at t11
             s "Отлично! Держи!"
-            #poem_act3_s
 
-            $ s_poemread = True
+
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
+
+            scene ts_club:
+                blur 9.0
+            show sayori 4r at i11:
+                blur 9.0
+            with dissolve
+
+            show layer screens at ts_showscreens
+
+
+            play sound pageflip
+
+            show screen poem(poem_act3_s)
+
+            pause
+
+            play sound pageflip
+            show layer screens at ts_hidescreens
+            pause 1.0
+            hide screen poem
+
+            scene ts_club
+            show sayori 4q at i11
+            with dissolve
+
+            show layer screens at ts_showscreens
+
+            $ c11sayourichecknul = True
             $ poemsread += 1
-            show sayori 4q at t11
             "Ха. Это что-то новенькое..."
             "А точнее, совсем новое. Я вообще этого стиха не помню!"
             if poemsread == 1:
@@ -1310,12 +1427,24 @@ label ts_scenario_11:
             pause 0.7
             show sayori 2i at t11
             "Я бы хотела ещё что-то возразить, но спорить с таким взглядом Сайори я всё же не решилась."
+            show sayori 2i at cright with move
             hide sayori
+            stop music fadeout 5
             "Ну да и ладно, у меня же не одна только Сайори в клубе."
             "Кстати, о птичках - а как там у Юри и Нацуки дела обстоят?"
-            #вайплефт на клуб
+
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
+
+            play sound pageflip
+            scene ts_club
             show yuri 1i at t21
             show natsuki 2r at t22
+            with wipeleft_scene
+
+            show layer screens at ts_showscreens
+
+
             "Юри и Нацуки только что прочли стихи друг друга."
             "На лице Юри самодовольная ухмылка. Нацуки же просто свирепо смотрит на неё."
             show natsuki 2q at f22
@@ -1338,10 +1467,19 @@ label ts_scenario_11:
             show natsuki 1s at t22
             "Ой-ой, у меня {b}очень{/b} плохое предчувствие..."
             show yuri 1l at t21
+            $ persistent.ingame_pizda = False
             "Юри пренебрежительно бросает стих обратно на парту и продолжает."
-            #НАЧИНАЕТСЯ ПОСТЕПЕННЫЙ ПИЗДЕЦ. ТОЛЬКО ПОСТЕПЕННЫЙ БЛЯТЬ, П О С Т Е П Е Н Н Ы Й
+
+            $ persistent.ingame_pizda = True
+            show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+
+            play music ts_glitch_music11 fadein 2
             show yuri 3r at f21
-            y "Что слышала, швабра мелкая!"
+            show ts_psihuet1 zorder 3:
+                alpha 0.5
+            show layer master at heartbeat2(1)
+            y "Что слышала, швабра мелкая!" with vpunch
             y 2k "Для особо глухих повторяю ещё раз: твой стих - это примитивная херня."
             y 2y4 "Была бы моя воля, я бы скормила этот стих собакам, и их отходы всё равно бы представляли бóльшую ценность, чем это убожество."
             show yuri 2m at t21
@@ -1355,7 +1493,9 @@ label ts_scenario_11:
             show natsuki 2p at f22
             n "Да как ты вообще смеешь?!"
             n "Сама-то не лучше, написала абсолютно бессвязный высокопарный бред и выдала это за стихотворение!"
-            #ПИЗДЕЦ СТАНОВИТСЯ ВСЁ ОТЧЁТЛИВЕЕ
+            hide ts_psihuet1
+            show ts_psihuet2 zorder 3
+            show layer master at heartbeat2(2)
             n 1e "Юри, скажи честно, сколько новых шрамов на тебе появилось, пока ты писала эту хрень?"
             show yuri 2y6 at f21
             show natsuki 2f at t22
@@ -1391,39 +1531,55 @@ label ts_scenario_11:
                 show yuri 2y4 at t21
                 show natsuki 2zb at t22
                 y "А с тобой я ещё не закончила."
-                #ВОТ ЭТОТ ГЛИЧЭФФЕКТ ИЗ ОРИГИНАЛА ПРИХУЯРЬ, ГДЕ НА ЧЁРНОМ ФОНЕ ПРОСТО ГОЛОВА ЮРЫ ЧАСТИЧНО КРУТИТСЯ, ZA-ZB-ZC-ZD ЦИКЛ КОРОЧЕ
-                #НУ КОТОРАЯ БЛЯТЬ "НИКТО НЕ ЗАПЛАЧЕТ, ЕСЛИ ОНА ПОКОНЧИТ С СОБОЙ"
-                #НА КАЖДОЙ ПОСЛЕДУЮЩЕЙ СТРОКЕ ЮРЕЦ ВСЁ БЛИЖЕ, А ИГРЕ ВСЁ БОЛЬШЕ ХУЁВО
+                scene black
+                show y_glitch_head:
+                    align(0.5, 0.5)
+                show layer master at ts_walking
                 y "Сколько копеек в месяц тебе даёт папа?"
+                show layer master at ts_walking1
                 y "Сколько раз в неделю он тебя кормит?"
+                show layer master at ts_walking2
                 y "Когда он в последний раз тебя вообще кормил?"
+                show layer master at ts_walking3
                 y "Или ты, как обычно, пойдёшь клянчить мелочь или собирать монетки под торговыми автоматами в школе?"
+                show layer master at ts_walking4
                 "Юри рыскает по карманам и находит несколько монеток."
+                show layer master at ts_walking5
                 y "Вот. На воду без газа должно хватить."
+                show layer master at ts_walking6
                 y "Сколько, кстати, синяков под твоим телом, которые мы не должны видеть?"
+                show layer master at ts_walking7
                 y "С десяток? Или больше?"
-                #заканчиваем хуйню, потому что Нацуки расплачется и ливнёт с позором
+                stop music fadeout 2
+                scene ts_club
                 show yuri 2y4 at t21
-                show natsuki 12b at t22
+                show natsuki 12b at h22
                 pause 0.3
-                show natsuki 12d at t22
+                show natsuki 12d at h22
                 pause 0.3
-                show natsuki 12f at t22
+                show natsuki 12f at h22
                 pause 0.5
                 show natsuki at lhide
+                play sound door_break
                 hide natsuki
                 jump poemend_abrupt
             elif poemsread == 3:
-                #пиздец прекращается ОЧЕНЬ ТАК БЛЯТЬ РЕЗКО
+                $ persistent.ingame_pizda = False
+                show layer screens
+                show layer master
+                stop music
+                stop sound
+                scene ts_club
+
                 show sayori 4p at f31
                 show yuri 2y2 at h32
-                show natsuki 2scream at h33
+                show natsuki scream at h33
                 s "Так, всё, довольно!"
                 show sayori 3i at t31
                 show yuri 2y2 at t32
-                show natsuki 2scream at t33
+                show natsuki scream at t33
                 "И тут внезапно прибегает Сайори."
-                #МУЗЫКА ТАКАЯ, ГРУСТНЕНЬКАЯ, ТИПО I DON'T BLAME YOU
+                play music ts_tos fadein 2
                 show sayori 3j at f31
                 show yuri 2o at t32
                 show natsuki 2u at t33
@@ -1477,6 +1633,7 @@ label ts_scenario_11:
                 s "Вот так-то лучше."
                 s 2v "Мне просто... очень больно видеть, как мои друзья ссорятся..."
                 s 2zc "Но ведь хорошо то, что хорошо заканчивается, так ведь?"
+                stop music fadeout 4
                 show sayori 2t at t31
                 show yuri 2zi at t32
                 show natsuki 2y at t33
@@ -1486,11 +1643,21 @@ label ts_scenario_11:
                 "Ой, точно..."
                 jump poemend_normal
 
-        "Нацуки" if not s_poemread:
-            if poemsread == 0:
-                "Пожалуй, начну с Нацуки."
-            #вайплефт на клуб
+        "Нацуки" if not c11natsukichecknul:
+            if not c11poemsreadfirst:
+                "Начну-ка я лучше с Нацуки."
+                $ c11poemsreadfirst = True
+
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
+
+            play sound pageflip
+            scene ts_club
             show natsuki 1a at t11
+            with wipeleft_scene
+
+            show layer screens at ts_showscreens
+
             m "П-привет ещё раз, Нацуки..."
             show natsuki 1c at f11
             n "Да вроде виделись уже."
@@ -1506,21 +1673,32 @@ label ts_scenario_11:
             "Я хотела повторить с ней диалог с прошлой недели, но, кажется, Нацуки сейчас слишком раздражена, чтобы ходить вокруг да около."
             em "Да что ты говоришь? Прямо-таки мисс Догадливость!"
             em "Сама же её разозлила, и теперь искренне не понимаешь, почему же так, а не иначе!"
+            stop music fadeout 4
             m "Ладно-ладно... вот...{w=1}{nw}"
             show natsuki 1e at f11
             n "Дай сюда."
             show natsuki 1f at t11
             "Нет, серьёзно, что с ней не так?"
             em "А ты сама-то не догадалась ещё?"
+            $ persistent.ingame_pizda = False
             em "Или у тебя, как и всегда, память золотой рыбки, и ты уже забыла то, о чём думала буквально три секунды назад?"
-            pause 6
-            #ВО ВРЕМЯ ПАУЗЫ ИГРЕ ВСЁ БОЛЬШЕ ХУЁВО СТАНОВИТСЯ, ДИСТОРТЕД БГШКА, СПРАЙТИК, ГЛИЧИКИ ТАМ ВСЯКИЕ, НУ ТАК КОРОЧЕ, НОРМАЛЬНО, НО БЕЗ ПЕРЕГИБА
-            #ПЕРЕГИБЫ УЖЕ В ПОЕМРЕСПОНСЕ САЙРЫ БЫЛИ, ВОТ ЭТО САМАЯ БОЛЬШАЯ ГЛИЧХУЙНЯ ЗА ВЕСЬ ПОЕМРЕСПОНС
+            play music ts_glitch_music12 fadein 6
+            scene ts_club_glitch_pizdets with Dissolve(6)
+            show layer master at heartbeat2(1)
+
+
+            $ persistent.ingame_pizda = True
+            show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
             show natsuki ghost1 at f11
             n "Это что-то новенькое..."
             n ghost2 "Хотя, оно не сильно-то от прошлого твоего стиха отличается, да?"
             m "В с-смысле? О ч-чём ты говоришь?"
-            #гличхуйня прям супер резко прекращается
+            $ persistent.ingame_pizda = False
+            stop music
+            show layer screens
+            show layer master
+            scene ts_club
             show natsuki 1k at f11
             n "Ну, ты же на прошлое собрание очень похожий стих писала, тоже про какой-то шум, какофонию и прочее подобное."
             show natsuki 1za at t11
@@ -1530,6 +1708,7 @@ label ts_scenario_11:
             show natsuki 2i at t11
             m "Н-ничего! Давай-ка я лучше твой стих прочту!"
             show natsuki 1h at f11
+            play music ts_first_day_of_sun fadein 2
             n "Какая-то ты очень подозрительная с начала недели..."
             n "Ничего не хочешь нового рассказать?"
             show natsuki 1g at t11
@@ -1543,12 +1722,39 @@ label ts_scenario_11:
             n "Ладно, заговорилась я с тобой. Короче, смотри и учись, как пишут настоящие мастера слога!"
             show natsuki 1y at t11
             "Ну-ну..."
-            #poem_act3_n
+
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
+
+            scene ts_club:
+                blur 9.0
+            show natsuki 1y at i11:
+                blur 9.0
+            with dissolve
+
+            show layer screens at ts_showscreens
 
 
-            $ n_poemread = True
+            play sound pageflip
+
+            show screen poem(poem_act3_n)
+
+            pause
+
+            play sound pageflip
+            show layer screens at ts_hidescreens
+            pause 1.0
+            hide screen poem
+
+            scene ts_club
+            show natsuki 1z at i11
+            with dissolve
+
+            show layer screens at ts_showscreens
+
+            $ c11natsukichecknul = True
             $ poemsread += 1
-            show natsuki 1z at t11
+
             "Ха. Это тоже что-то новенькое."
             "Хотя нет... совсем новое! Я этого никогда ранее в жизни не читала!"
             em "Я читала."
@@ -1580,13 +1786,15 @@ label ts_scenario_11:
             show natsuki 1c at f11
             n "Вот и поговорили."
             n "А теперь отдай стихотворение."
-            if not s_poemread or y_poemread:
+            if not c11sayourichecknul or c11yurecchecknul:
                 n 1k "Мне его ещё другим показывать надо."
             show natsuki 1za at t11
             m "Да, конечно..."
             show natsuki 1s at t11
+            show layer master at ts_razebal
+            play sound ts_bumaga_sound
             pause 0.8
-            #можно ещё какой-то сфх силой отобранной тетрадки прихуярить
+            show natsuki 1s at cright with move
             hide natsuki
             "В мгновение ока Нацуки забирает у меня тетрадь со стихом и тут же испаряется."
             "Нет, серьёзно, что с ней не так?"
@@ -1594,20 +1802,32 @@ label ts_scenario_11:
                 "Впрочем, мне и самой другим свой стих показать надо..."
             elif poemsread == 3:
                 "Впрочем, у меня и у самой дела не менее важные есть..."
-            #вайплефт на клубешник
+
             jump poemresponsesuka_loop
 
-        "Юри" if not s_poemread:
-            if poemsread == 0:
+        "Юри" if not c11yurecchecknul:
+            if not c11poemsreadfirst:
                 "Думаю, в этот раз начну с Юри."
-            #вайплефт на клубешник
+                $ c11poemsreadfirst = True
+
+
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
+
+            play sound pageflip
+            scene ts_club
             show yuri 1i at t11
+            with wipeleft_scene
+
+            show layer screens at ts_showscreens
+
+
             m "Здравствуй, Юри."
             show yuri 1f at f11
             y "Привет, Моника."
             y 1b "Ты написала стих?"
             show yuri 1a at t11
-            if n_poemread == True:
+            if c11natsukichecknul == True:
                 "Я не знаю, сговаривались ли они заранее, чтобы сразу затопить меня, но мне это не нравится..."
             m "Да, написала..."
             m "Ты, как я вижу, тоже стих принесла..."
@@ -1615,14 +1835,23 @@ label ts_scenario_11:
             "Только теперь надписи на ней стали ещё более неразборчивыми, чем в прошлый раз."
             "Очередная мелочь кошмара, который я называю повторением этой недели, или же?.."
             "Ладно, неважно."
+            stop music fadeout 4
             show yuri 1b at f11
             y "Ты не против, если я сначала твоё стихотворение прочту?"
             show yuri 1a at t11
             m "Не против, конечно..."
+            $ persistent.ingame_pizda = False
             "Мне даже интересно будет узнать, что ты вычленишь из той отрывистой писанины, которые ещё не отсохли..."
-            pause 6
-            #НУ КОРОЧЕ БЛЯТЬ ТА ЖЕ ХУЙНЯ, ЧТО И С НАЦУКИ, ТОЛЬКО ВМЕСТО ГОСТОВ У НАС БУДУТ РЕАЛЬНЫЕ GLAZA, НУ КОРОЧЕ ПРИДУМАЙ ЧТО-НИБУДЬ
-            #ТОЛЬКО ОПЯТЬ ЖЕ, ГЛИЧИ НОРМАЛЬНЫЕ ТАКИЕ, НО БЕЗ ПЕРЕГИБА
+            play music ts_glitch_music10 fadein 6
+            scene ts_club_glitch_pizdets
+            show yuri 1a at i11
+            show ts_glaza_yrec
+            with Dissolve(6)
+
+            show layer master at heartbeat2(1)
+            $ persistent.ingame_pizda = True
+            show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
             y "Хм..."
             y "Я уже видела... нечто очень похожее..."
             if poemsread > 0:
@@ -1630,11 +1859,19 @@ label ts_scenario_11:
                 "Какие-то двусмысленные намёки..."
                 "Ты помнишь стих, который я писала на прошлой неделе, или всё-таки нет?!"
             m "Р-разве?"
-            #гличение резко прекращается
+
+            $ persistent.ingame_pizda = False
+
+            show layer master
+            show layer screens
+
+            stop music
+            scene ts_club
             show yuri 1f at f11
             y "Ну да. Ты же и на прошлое собрание писала стих на похожую тематику."
             y 1b "Я даже думала, что ты хотела развить тему про Дыру в стене, и поэтому написала что-то вроде продолжения."
             y 4a "..."
+            play music ts_first_day_of_sun fadein 2
             show yuri 3n at h11
             y "Прости, если я поспешила с выводами..."
             show yuri 2o at f11
@@ -1659,12 +1896,39 @@ label ts_scenario_11:
             y "Н-ну тоже верно, да..."
             show yuri 1i at t11
             "Я беру стихотворение Юри и начинаю читать."
-                
-                   #poem_act3_y  
 
-            $ y_poemread = True
+            show layer screens at ts_hidescreens
+            " {w=1.0}{nw}"
+
+            scene ts_club:
+                blur 9.0
+            show yuri 1i at i11:
+                blur 9.0
+            with dissolve
+
+            show layer screens at ts_showscreens
+
+
+            play sound pageflip
+
+            show screen poem(poem_act3_y)
+
+            pause
+
+            play sound pageflip
+            show layer screens at ts_hidescreens
+            pause 1.0
+            hide screen poem
+
+            scene ts_club
+            show yuri 1i at i11
+            with dissolve
+
+            show layer screens at ts_showscreens
+
+            $ c11yurecchecknul = True
             $ poemsread += 1
-            if n_poemread:
+            if c11natsukichecknul:
                 "Где-то я это уже видела..."
                 "Не сам стих, разумеется, а в общем, где все девочки, по сути, написали совершенно новые стихи, которые вроде как и в соответствующем стиле написаны, но всё равно им как будто не свойственны."
                 "И кстати говоря..."
@@ -1707,12 +1971,17 @@ label ts_scenario_11:
             m "А это было до или после того, как?..{w=1}{nw}"
             show yuri 2k at f11
             y "После. Намного после."
-            #микроглич
+            play sound psy_fast_1
+            show yuri 1l at i11
+            with memglitch
+            stop sound
             y 1l "И знаешь, спустя некоторое время я таки дала отпор этим хулиганам."
             y 1j "И после этого случая меня они перестали трогать от слова совсем, а за глаза говорят, что я не совсем в своём уме."
             y "Ну да и пусть. То, что обо мне говорят за глаза, меня не касается."
-            #заканчивается
-            show yuri 1i at t11
+            play sound psy_fast_2
+            show yuri 1i at i11
+            with memglitch
+            stop sound
             "Да-а-а, Юри хоть и тихая девочка, но иногда она может устроить некоторым самым отъявленным хулиганам... весёлую жизнь."
             "Да и в принципе я уже опытным путём выяснила, что в Юри живут как минимум две совершенно разные личности. А то и больше."
             m "Л-ладно, Юри, спасибо, что поделилась со мной этим, но... что-то мы Сайори и Нацуки задерживаем, тебе не кажется?"
@@ -1726,19 +1995,26 @@ label ts_scenario_11:
             y "Тогда, до скорого!"
             show yuri 1c at t11
             m "Да, Юри, ещё увидимся..."
+            show yuri 1c at cright with move
             hide yuri
             "На этом наши пути с Юри временно разошлись."
             if poemsread < 3:
                 jump poemresponsesuka_loop
             
 label poemend_abrupt:
+    $ persistent.ingame_pizda = False
+    show layer screens
     $ unluck7 = True
+    $ unluck_ball += 1
     show yuri 2y6 at t11
-    #play music descent to madness
-    #НУ НАКОНЕЦ-ТО БЛЯТЬ ПОД САМЫЙ КОНЕЦ ГЛАВЫ ПРИГОДИЛАСЬ МУЗЯКА, КОТОРАЯ ИЗНАЧАЛЬНО ПИСАЛАСЬ КАК ГЛАВНАЯ ТЕМКА ВСЕЙ ГЛАВЫ МММММММ КАК СВОЕВРЕМЕННО
+    play music ts_dtm fadein 2
+
     y "..."
     m "Сегодня мы на обмен стихами вообще не настроены..."
     m "Просто... уходи..."
+    play sound door_break
+    show yuri 2y6 at cright with move
+    hide yuri
     "Да, это просто сон. Да, в субботу всё опять заново. Но я всё равно не могу видеть, как Юри разогнала всех остальных."
     em "А что же ты тогда просто смотрела, как Юри всех разгоняет?"
     em "Что же ты не вмешалась? Чего же ты сама не закончила спор?"
@@ -1749,38 +2025,126 @@ label poemend_abrupt:
     em "Эгоистичная. Двуличная. Мразь."
     "Не желая больше терпеть упрёков Аки, я просто ухожу домой в слезах."
     em "От меня всё равно не скроешься!"
-    #БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ
-    #НА 100 ПРОЦЕНТОВ ВХУЯРЬ, И ЖЕЛАТЕЛЬНО ЕЩЁ БАССБУСТА НАКРУТИ, ЧТОБЫ АЖ МИНУС УШИ БЫЛИ
-    #МУЗЫКА КСТАТИ ПРОДОЛЖАЕТСЯ, ШОБ ВООБЩЕ КРОВЬ ИЗ УШЕЙ ОТ ЭТОЙ КОМБИНАЦИИ ПОЛИЛАСЬ, НУ СООТВЕТСТВУЮЩЕ НАЗВАНИЮ, СПУСК В БЕЗУМИЕ
-    #ВАЙПЛЕФТЫ ПОБЫСТРЕЕ: КОРИДОР, ЛОКЕРЫ, ДВОР, ВХОД В ШКОЛУ, УЛИЦА, ДОМ, ПРИХОЖАЯ, СПАЛЬНЯ, ВСЁ С ЭФФЕКТОМ БЕГА. НА БГШКЕ ДОМА МОНИКИ МОЖНО ОДЫШКУ ВХУЯРИТЬ
+    python:
+        _preferences.volumes['music'] = 1.0
+        _preferences.volumes['sfx'] = 1.0
+    play sound_loop ts_bzdr_distortion
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound door_break
+    scene ts_corridor at ts_razebal
+    pause 0.35
+    play sound2 ts_running
+    scene ts_corridor at ts_running_fast
+    pause 0.5
+    play sound pageflip
+    scene ts_l5 at ts_running_fast
+    with wipeleft_scene_fast
+    play sound pageflip
+    scene ts_school_courtyard_day at ts_running_fast
+    with wipeleft_scene_fast
+
+    play sound pageflip
+    scene ts_school_gate_evening at ts_running_fast
+    with wipeleft_scene_fast
+    play sound2 ts_running
+    play sound pageflip
+    scene ts_street_late at ts_running_fast
+    with wipeleft_scene_fast
+
+    play sound pageflip
+    scene ts_house_monika_evening at ts_running_fast
+    with wipeleft_scene_fast
+    stop sound2
+    play sound door_break
+    scene ts_vhod_night at ts_razebal
+    pause 0.4
+
+
+    play sound2 ts_othodos_ot_bega fadein 1
+    play sound pageflip
+    scene ts_bedroom
+    show layer master at ts_ustal_suka
+    with wipeleft_scene_fast
+
+    show layer screens at ts_showscreens
+
     show monika 1h at t11
     "Я бегу так быстро, как только могу, только чтобы Аки побыстрее заткнулась."
     "Через пять минут я уже прибежала домой."
+    stop sound2 fadeout 1
+    show layer master
+    scene ts_bedroom
     show monika 2i at f11
     em "Ты действительно думаешь, что если ты прибежишь домой, то скроешься от меня?"
     em "Если да, то я тебя разочарую."
+    $ persistent.ingame_pizda = False
     em 2r "*Кхе-кхе*"
     em 5c "{cps=*0.8}{b}БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ{/b}{/cps}{nw}"
-    #С КАЖДОЙ НОВОЙ СТРОКОЙ ИГРЕ ВСЁ БОЛЬШЕ ХУЁВО
-    #можно даже эффект заеденной пластинки вставить
-    #И ЕЩЁ ПРЯМ СУПЕР ГЛИЧИ ВСТАВЬ КАКИЕ-ТО, ТИПО ВСЕ ГЛИЧИ КАЖДОГО ДОКИЧА, БАТИ, МАТИ, ДА КОРОЧЕ ВСЕХ БЛЯТЬ
-    #МОЖНО ПО ОЧЕРЕДИ, МОЖНО РАНДОМНО, ГЛАВНОЕ ШОБ ПОЗАБОРИСТЕЕ БЫЛИ ГЛИЧИ. НЕ СКРИМАКИ, А ИМЕННО ПРЯМ ШОБ ИГРА (ПОЧТИ) ПЕРЕСТАЛА ОТВЕЧАТЬ
+
+    $ persistent.ingame_pizda = True
+    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+    stop sound_loop
+
     python:
         currentpos = get_pos()
-        startpos = currentpos - 0.
+        startpos = currentpos - 0.2
         if startpos < 0: startpos = 0
-        track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/ts_dtm.ogg"
+        track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/oski/ts_bzdr_distortion.ogg"
         renpy.music.play(track, loop=True)
+
     em "{cps=*0.8}{b}БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ{/b}{/cps}{nw}"
+    scene ts_kitchen_glitch_pizdets
+    show ts_hiroto_zalagal
+    show black zorder 5 at ts_black_glitch
+
     em "{cps=*0.8}{b}БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ{/b}{/cps}{nw}"
+    scene ts_sayori_bedroom_glitch_pizdets
+    show ts_natsuki_zalagala_blyadina
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh zorder 5
+
     em "{cps=*0.8}{b}БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ{/b}{/cps}{nw}"
+    scene ts_l5_glitch_pizdets
+    show ts_yuri_zalagala_blyadina
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh zorder 5
+    show anim_exhausted zorder 5
+
     em "{cps=*0.8}{b}БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ{/b}{/cps}{nw}"
+    scene ts_closet_glitches_balya
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh zorder 5
+    show anim_exhausted zorder 5
+    show m_rectstatic zorder 5
+    show ts_hiroto_psyhodelic_pizdoc_eye zorder 6 at ipp11
     em "{cps=*0.8}{b}БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ{/b}{/cps}{nw}"
+    scene ts_residental_glitch_pizdets
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh zorder 5
+    show anim_exhausted zorder 5
+    show m_rectstatic zorder 5
+    show ts_sayori_zalagala_blyadina at Glitch(_fps=1000.)
+    show ts_psihuet2 zorder 6
     em "{cps=*0.8}{b}БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ{/b}{/cps}{nw}"
+    scene ts_kitchen_psyhodelic_pizdec_glitch
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh zorder 5
+    show anim_exhausted zorder 5
+    show m_rectstatic zorder 5
+    show ts_hiroto_zalagal at Glitch(_fps=1000.)
+    show ts_psihuet3 zorder 6
     em "{cps=*0.8}{b}БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ{/b}{/cps}{nw}"
-    #БЕЗДАРНОСТЬ ЗАКАНЧИВАЕТСЯ, НО МУЗЫКА НЕ ЗАКАНЧИВАЕТСЯ, ОНА ДО САМОГО КОНЦА ГЛАВЫ БУДЕТ
+
+    play music ts_dtm fadein 5
+    scene ts_bedroom
     show monika 5c at t11
-    m "А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А{nw}" #УРОДСКИМ ШРИФТОМ
+    play sound scream_pereponkam_pizda
+    m "{font=[shl_font]}А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А{/font}{nw}"
+    stop sound fadeout 2
     "Первобытный крик постепенно переходит в бесконтрольное рыдание."
     "Что, что я могла ещё сделать?"
     "Аки права. Я действительно бездарность."
@@ -1821,9 +2185,15 @@ label poemend_abrupt:
     show monika 2a at t11
     m "Х-х-х..."
     m "Ладно, чего уж там, напишу стих ручкой без чернил. Если надавливать посильнее, то хотя бы след от ручки останется..."
-    #диссолв на гличёвый нотебук (ну прям бля очень гличёвый, потому что игре оч хуёво, ну и нотебуку тоже хуёво)
-    #можно с этой строки уже поставить кастомное напоминание типо "ВЫКЛЮЧАЙ КУДАХТЕР ЩАС СГОРИТ ВСЁ"
-    #и чтоб каждую новую строку напоминалка обновлялась желательно
+    window hide
+    play sound psy_fast_2
+    scene ts_notebook_glitch at ts_coridor_glitch
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh
+    show anim_exhausted
+    show m_rectstatic zorder 0
+    with memglitchstr
+    stop sound
     show monika 1c at t11
     "Однако на ум не приходит ни слова, за которое можно зацепиться."
     show monika 2d at f11
@@ -1838,13 +2208,92 @@ label poemend_abrupt:
     "Конечно, показывать его хоть кому-то крайне нежелательно... особенно Юри."
     "Однако я выговорилась, а это всё, что важно."
     "Я победно перечитываю стихотворение."
-    #И ТУТ ВНЕЗАПНО ПОЯВЛЯЕТСЯ СУПЕР ГЛИЧЁВАЯ ХУЕТЕНЬ, ПРЯМ ВОТ САМЫЙ БОЛЬШОЙ ГЛИЧ ЗА ВСЮ ИГРУ
-    #МОЖЕШЬ БЛЯТЬ СДЕЛАТЬ ЭТО КАК УГОДНО, ТУТ ВСЁ ЗАВИСИТ ТОЛЬКО ОТ ТВОЕЙ ФАНТАЗИИ
-    #НО ПАРУ СТРОК ТРЕЙСБЕКА/ФОРС РЕБУТА ВИНДЫ ПО ТИПУ "ФАЙЛ ХУЙ НЕ НАЙДЕН, ФАЙЛ ПИЗДА НЕ НАЙДЕН, ФАЙЛ СУХОДРОЧ ТОЖЕ НЕ НАЙДЕН, НИХУЯ НЕ НАЙДЕНО КРЧ, ИГРА ЛОМАЕТСЯ, ПЕРЕНОСИМСЯ НА БЛИЖАЙШУЮ НОРМАЛЬНУЮ СТРОКУ В НОВОЙ ГЛАВЕ" - ЭТО ДА
-    #СПАСИБО ПОЖАЛУЙСТА
+    scene black
+    show layer master
+    show layer screens
+    window hide
+    $ persistent.ingame_pizda = False
+    $ renpy.block_rollback()
+    python:
+        currentpos = get_pos()
+        startpos = currentpos - 0.2
+        if startpos < 0: startpos = 0
+        track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/ost/ts_dtm.ogg"
+        renpy.music.play(track, loop=True)
+
+    show exception_bg zorder 2
+    show fake_exception zorder 2:
+        xpos 0.1 ypos 0.05
+    show fake_exception3 zorder 2:
+        xpos 0.1 ypos 0.15
+    show layer master at heartbeat2(1)
+    $ renpy.block_rollback()
+    pause
+    hide fake_exception3
+
+    scene ts_nebo_fon_bgshka_suka
+    show fake_exception4 zorder 2:
+        xpos 0.1 ypos 0.15
+    show layer master at heartbeat2(2)
+    $ renpy.block_rollback()
+    pause
+    hide fake_exception4
+    scene ts_club_glitch_pizdets
+    show fake_exception5 zorder 2:
+        xpos 0.1 ypos 0.15
+    show layer master at heartbeat2(3)
+    $ renpy.block_rollback()
+    pause
+    hide fake_exception5
+    scene ts_kitchen_glitch_pizdets
+    show fake_exception6 zorder 2:
+        xpos 0.1 ypos 0.15
+    show layer master at heartbeat2(4)
+    $ renpy.block_rollback()
+    pause
+    hide fake_exception6
+    scene black
+    show exception_bg zorder 2
+    show fake_exception7 zorder 2:
+        xpos 0.1 ypos 0.15
+    show layer master at heartbeat2(5)
+    $ renpy.block_rollback()
+    pause
+    stop music
+    show layer master
+    play sound winerrorsound
+    show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+    $ renpy.block_rollback()
+    pause
+    hide screen dialog
+    play sound winerrorsound
+    show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
+    $ renpy.block_rollback()
+    pause
+    hide screen dialog
+    $ renpy.block_rollback()
+    scene black
+    pause 0.5
+
+    if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+        play sound br_glitch
+        show ts_menu_move_anim as bg1 at Glitch(_fps=160, glitch_strength=1)
+        pause 0.6
+        stop sound
+        hide ts_menu_move_anim as bg1 at Glitch(_fps=160, glitch_strength=1)
+    elif True: #ДЕНЬ
+        play sound br_glitch
+        show ts_menu_move_anim_three as bg1 at Glitch(_fps=160, glitch_strength=1)
+        pause 0.6
+        stop sound
+        hide ts_menu_move_anim_three as bg1 at Glitch(_fps=160, glitch_strength=1)
+
+    jump ts_scenario_12
+
+    #$ renpy.full_restart(transition=None, label="splashscreen")
 
 label poemend_normal:
-    play music tension and release
+    play music ts_tar fadein 3
     show yuri 2o at t31
     show sayori 4k at t32
     show natsuki 2u at t33
@@ -1869,30 +2318,81 @@ label poemend_normal:
     show natsuki 2t at t33
     "Девочки как-то разрозненно попрощались и ушли каждая своей дорогой."
     "Пойду и я."
-    #ВАЙПЛЕФТЫ КОРИДОР, ЛОКЕРЫ, ДВОР, ВХОД В ШКОЛУ, УЛИЦА, ДОМ. НА ДОМЕ ПОКА ОСТАНАВЛИВАЕМСЯ
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_corridor
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_l5
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_school_courtyard_day
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_school_gate_evening
+    with wipeleft_scene
+
+
+    play sound pageflip
+    scene ts_street_late
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_house_monika_evening
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+
     "Поскольку всё прошло как-то очень быстро, то папа, скорее всего, ещё на работе."
-    #вайплефт на прихожую
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_vhod_night
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+
     m "Папа? Я дома!"
     "Однако ответа не было."
     "На часы не было никакого смысла смотреть, однако через несколько секунд папа так и не подошёл."
     "Видимо, всё-таки ещё рано для него."
     "Не обращая внимания на надоедливую Аки, которой не терпится в очередной раз сказать мне, что я бездарность, я направляюсь к себе, чтобы переодеться."
-    #вайплефт на спальню
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_bedroom
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Так..."
     "Чтобы Аки снова не капала мне на мозги, лучше написать стихотворение сразу же, не откладывая это всё на потом."
     "А то иначе всё может получиться, как в прошлый раз."
     show monika 2bd at f11
+    with linearblur
     em "То, что ты не откладываешь стих на потом - это, конечно, похвально."
     em "Но вот у меня вопрос: а ты новую ручку купила?"
     show monika 2bc at t11
     m "А мне и не нужно её покупать."
     "Поскольку папы ещё нет, я перехожу на обычный голос."
     m "У меня и так всё есть."
-    #сфх открытия выдвижного ящика
+    play sound ts_yashik_open
     "Я демонстративно открываю выдвижной ящик стола и показываю Аки ещё пять нетронутых ручек."
     show monika 1bn at f11
     em "Ладно, убедила..."
-    #ещё один сфх такой же
+    play sound ts_yashik_close
     show monika 1bm at t11
     "Я с ухмылкой закрываю ящик."
     show monika 2bd at f11
@@ -1902,8 +2402,20 @@ label poemend_normal:
     show monika 2bi at f11
     em "Я бы, конечно, с этим поспорила... ну да не суть..."
     show monika 2bc at t11
-    #диссолв на нотебук (ОБЫЧНЫЙ, ЗЕЛЁНЫЙ)
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    hide monika
+    with linearblur
+    scene ts_bedroom at ts_bg_into
+    pause 0.5
+    scene ts_notebook at ts_bg_exodus
+    pause 0.5
+
+    show layer screens at ts_showscreens
+
     show monika 2bc at t11
+    with linearblur
     "Так... Стих, стих, стих..."
     "Надо стих бы написать..."
     "..."
@@ -1913,11 +2425,18 @@ label poemend_normal:
     em "Не у тебя одной сегодня полная каша в голове..."
     show monika 1bq at t11
     m "Как скажешь..."
-    #диссолв на гличёвый нотебук (прям бля оч гличёвый, потому что скоро будет СЮРПРАЙЗ БЛЯТЬ)
-    #можно с этой строки уже поставить кастомное напоминание типо "ВЫКЛЮЧАЙ КУДАХТЕР ЩАС СГОРИТ ВСЁ"
-    #и чтоб каждую новую строку напоминалка обновлялась желательно
+    window hide
+    play sound psy_fast_2
+    scene ts_notebook_glitch at ts_coridor_glitch
+    show black zorder 5 at ts_black_glitch
+    show blackout_exh
+    show anim_exhausted
+    show m_rectstatic zorder 0
+    with memglitchstr
+    stop sound
     "Да что же это такое? Я уже минут двадцать пытаюсь написать хоть одно слово, но по итогу передо мной до сих пор остаётся только чистый лист бумаги!"
     show monika 2bd at f11
+    with linearblur
     em "Слу-у-у-у-ушай... А может, тебе как раз про сегодняшние события в клубе написать?"
     show monika 2ba at t11
     m "Да какие это события, это скорее эмоции..."
@@ -1928,7 +2447,7 @@ label poemend_normal:
     m "..."
     show monika 2bn at f11
     em "Ладно, не об этом сейчас..."
-    em 3b "Но вот об этих эмоциях и о том, как Сайори спасла представление, стих и напиши!"
+    em 2ba "Но вот об этих эмоциях и о том, как Сайори спасла представление, стих и напиши!"
     show monika 2ba at t11
     "Я думаю."
     m "Знаешь... а неплохая идея."
@@ -1943,10 +2462,70 @@ label poemend_normal:
     "Боюсь только представить, какова будет её реакция на стихотворение, напрямую посвящённое ей."
     "Однако я выговорилась, а это всё, что важно."
     "Я победно перечитываю стихотворение."
-    #И ТУТ ВНЕЗАПНО ПОЯВЛЯЕТСЯ СУПЕР ГЛИЧЁВАЯ ХУЕТЕНЬ, ПРЯМ ВОТ САМЫЙ БОЛЬШОЙ ГЛИЧ ЗА ВСЮ ИГРУ
-    #МОЖЕШЬ БЛЯТЬ СДЕЛАТЬ ЭТО КАК УГОДНО, ТУТ ВСЁ ЗАВИСИТ ТОЛЬКО ОТ ТВОЕЙ ФАНТАЗИИ
-    #НО ПАРУ СТРОК ТРЕЙСБЕКА/ФОРС РЕБУТА ВИНДЫ ПО ТИПУ "ФАЙЛ ХУЙ НЕ НАЙДЕН, ФАЙЛ ПИЗДА НЕ НАЙДЕН, ФАЙЛ СУХОДРОЧ ТОЖЕ НЕ НАЙДЕН, НИХУЯ НЕ НАЙДЕНО КРЧ, ИГРА ЛОМАЕТСЯ, ПЕРЕНОСИМСЯ НА БЛИЖАЙШУЮ НОРМАЛЬНУЮ СТРОКУ В НОВОЙ ГЛАВЕ" - ЭТО ДА
-    #СПАСИБО ПОЖАЛУЙСТА
-            
-            
-    #ВСЁ, ГЕЙМ ОВЕР БЛЯТЬ, УВИДИМСЯ В 11 ГЛАВЕ ЕБАТЬ
+
+    scene black
+    show layer master
+    show layer screens
+    window hide
+    $ persistent.ingame_pizda = False
+    $ renpy.block_rollback()
+    python:
+        currentpos = get_pos()
+        startpos = currentpos - 0.2
+        if startpos < 0: startpos = 0
+        track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/ost/ts_tar.ogg"
+        renpy.music.play(track, loop=True)
+
+    show exception_bg zorder 2
+    show fake_exception zorder 2:
+        xpos 0.1 ypos 0.05
+    show fake_exception3 zorder 2:
+        xpos 0.1 ypos 0.15
+    $ renpy.block_rollback()
+    pause
+    hide fake_exception3
+
+    scene ts_kitchen_glitch_pizdets
+    show fake_exception6 zorder 2:
+        xpos 0.1 ypos 0.15
+
+    $ renpy.block_rollback()
+    pause
+    hide fake_exception6
+    scene black
+    show exception_bg zorder 2
+    show fake_exception7 zorder 2:
+        xpos 0.1 ypos 0.15
+
+    $ renpy.block_rollback()
+    pause
+    stop music
+    show layer master
+    play sound winerrorsound
+    show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+    $ renpy.block_rollback()
+    pause
+    hide screen dialog
+    play sound winerrorsound
+    show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
+    $ renpy.block_rollback()
+    pause
+    hide screen dialog
+    $ renpy.block_rollback()
+    scene black
+    pause 0.5
+
+    if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
+        play sound br_glitch
+        show ts_menu_move_anim as bg1 at Glitch(_fps=160, glitch_strength=1)
+        pause 0.6
+        stop sound
+        hide ts_menu_move_anim as bg1 at Glitch(_fps=160, glitch_strength=1)
+    elif True: #ДЕНЬ
+        play sound br_glitch
+        show ts_menu_move_anim_three as bg1 at Glitch(_fps=160, glitch_strength=1)
+        pause 0.6
+        stop sound
+        hide ts_menu_move_anim_three as bg1 at Glitch(_fps=160, glitch_strength=1)
+
+    jump ts_scenario_12

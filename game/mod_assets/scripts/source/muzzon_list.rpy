@@ -490,6 +490,20 @@ init python:
     )
 
     music_room.add(
+        name=_("Descent to Madness"),
+        artist="The Distorion",
+        path=ts_muzzon + "ts_dtm.ogg",
+        art=ts_mr + "ds.webp"
+    )
+
+    music_room.add(
+        name=_("Tension and Release"),
+        artist="The Distorion",
+        path=ts_muzzon + "ts_tar.ogg",
+        art=ts_mr + "ds.webp"
+    )
+
+    music_room.add(
         name=_("Where is My Mind (piano cover)"),
         artist="Pixies",
         path=ts_muzzon + "ts_gramatik.ogg",
@@ -643,6 +657,35 @@ init python:
         art=ts_mr + "cof.webp"
     )
 
+    music_room.add(
+        name=_("Chainsaw Reaction"),
+        artist="Mudasheep",
+        path=ts_muzzon + "ts_cr_cof.ogg",
+        art=ts_mr + "cof.webp"
+    )
+
+    music_room.add(
+        name=_("Brandon"),
+        artist="Bxmmusic",
+        path=ts_muzzon + "ts_brandon.ogg",
+        art=ts_mr + "cof.webp"
+    )
+
+    music_room.add(
+        name=_("Gone"),
+        artist="Mos Elian",
+        path=ts_muzzon + "ts_gone_full.ogg",
+        art=ts_mr + "gone.webp",
+        unlock_condition="True"
+    )
+
+    music_room.add(
+        name=_("Calamity"),
+        artist="Yakui The Maid",
+        path=ts_muzzon + "ts_ytm_c.ogg",
+        art=ts_mr + "ytm_c.webp"
+    )
+
 
 init:
 ###СПИСОК
@@ -725,6 +768,8 @@ init:
     $ music_list_ts["The Distorion - Stellar"] = ts_muzzon + "ts_stellar.ogg"
     $ music_list_ts["The Distorion - Thank God"] = ts_muzzon + "ts_tgod.ogg"
     $ music_list_ts["The Distorion - Root of all Evil"] = ts_muzzon + "ts_roae.ogg"
+    $ music_list_ts["The Distorion - Descent to Madness"] = ts_muzzon + "ts_dtm.ogg"
+    $ music_list_ts["The Distorion - Tension and Release"] = ts_muzzon + "ts_tar.ogg"
 ###ПОДГОНЫ ОТ БЕРГЕНЧИКА БЛЕАДЬ
     $ music_list_ts["Kashiwa Daisuke - april.#19"] = ts_muzzon + "ts_emmk.ogg"
     $ music_list_ts["kelly bailey - inhuman frequency"] = ts_muzzon + "ts_hl2.ogg"
@@ -751,3 +796,8 @@ init:
     $ music_list_ts["Between August and December - Outskirts Of The World"] = ts_muzzon + "ts_ootw.ogg"
     $ music_list_ts["Between August and December - Degrade"] = ts_muzzon + "ts_while.ogg"
     $ music_list_ts["Bxmmusic - The Other Side"] = ts_muzzon + "ts_tos.ogg"
+    $ music_list_ts["Mudasheep - Chainsaw Reaction"] = ts_muzzon + "ts_cr_cof.ogg"
+    $ music_list_ts["Bxmmusic - Brandon"] = ts_muzzon + "ts_brandon.ogg"
+    $ music_list_ts["Mos Elian - Gone"] = ts_muzzon + "ts_gone.ogg"
+    $ music_list_ts["Yakui The Maid - Calamity"] = ts_muzzon + "ts_ytm_c.ogg"
+

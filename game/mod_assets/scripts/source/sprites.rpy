@@ -6317,13 +6317,13 @@ image monika g2:
 
 ####ЮРЕЦ
 image y_glitch_head:
-    "images/yuri/za.webp"
+    ts_yuri_pt + "za.webp"
     0.15
-    "images/yuri/zb.webp"
+    ts_yuri_pt + "zb.webp"
     0.15
-    "images/yuri/zc.webp"
+    ts_yuri_pt + "zc.webp"
     0.15
-    "images/yuri/zd.webp"
+    ts_yuri_pt + "zd.webp"
     0.15
     repeat
 
@@ -6428,6 +6428,10 @@ image yuri dragon:
 
 ####НАЦУКИ
 image natsuki mouth = LiveComposite((960, 960), (0, 0), ts_natsuki_pt + "1l.webp", (0, 0), ts_natsuki_pt + "2r.webp", (0, 0), ts_natsuki_pt + "0.webp", (390, 340), "n_rects_mouth", (480, 334), "n_rects_mouth")
+
+image ts_glaza_yrec = LiveComposite((960, 960), (403, 390), "n_rects_mouth", (470, 389), "n_rects_mouth")
+image ts_glaza = LiveComposite((960, 960), (420, 420), "n_rects_mouth", (500, 414), "n_rects_mouth")
+
 
 image n_rects_mouth:
     RectCluster(Solid("#000"), 4, 15, 5).sm

@@ -7,6 +7,7 @@ init:
     image ts_anarchy = Image(ts_images + "anarchy/anarchisty.webp")
     image ts_anarchy1 = Image(ts_images + "anarchy/anarchisty11.webp")
 
+    define ts_lap = ImageDissolve(ts_anim + "transit/ts_lap.webp", 2.0)
 
     image ts_intro_1 = ts_images + "intro/intro1.webp"
     image ts_intro_2 = ts_images + "intro/intro2.webp"
@@ -69,6 +70,11 @@ init:
     image ts_credits_bergen_4 = ts_images + "credits/ts_credits_bergen_4.webp"
 
 ###БГ
+
+    image ts_emergency_room = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_emergency_room.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_emergency_room.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_emergency_room.webp") )
 
     image ts_seaside_road_morning = ConditionSwitch(
     "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_seaside_road_morning.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),

@@ -10,6 +10,12 @@ image fake_exception = Text("Произошла ошибка.", size=40, style="
 image fake_exception2 = Text("File \"mod_assets/scripts/scenario/ts_scenario4.rpy\", line 1576\nSee traceback.txt for details.", size=20, style="_default")
 image white = "#ffffff"
 
+image fake_exception3 = Text("File \"mod_assets/scripts/scenario/ts_scenario11.rpy\", line 2224\nЯ же вроде всё починил... Попробуй нажать клавишу действия...", size=20, style="_default")
+image fake_exception4 = Text("File \"mod_assets/source/audio/ost/ts_dtm.ogg\", time 0:44\nСнова эррор... Да в чём проблема-то?", size=20, style="_default")
+image fake_exception5 = Text("File \"mod_assets/source/images/bg/ts_bedroom.webp\", file corrupted\nИ это тоже упало...", size=20, style="_default")
+image fake_exception6 = Text("File \"mod_assets/source/videosos/jm.webm\", VP8 crahsed\nОно всё ещё не работает?.", size=20, style="_default")
+image fake_exception7 = Text("File \"game/truestory.rpa\", archive corrupted\nТут я бессилен, увы.", size=20, style="_default")
+
 image monika_scare = ts_cg + "monika/monika_scare.webp"
 image splash_glitch1:
     "mod_assets/source/images/pizda/splash-glitch.webp"

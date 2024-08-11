@@ -15,26 +15,44 @@ label testing_label_blya:
 
     #$ persistent.sprite_time = "night"
 
-    #$ persistent.uncolorize = "none"
+    $ persistent.uncolorize = "none"
 
     #$ persistent.uncolorize = "lite"
 
     #$ persistent.uncolorize = "full"
 
-    python:
-        import plyer
+    scene ts_emergency_room
+    show ts_emergency_room_anim
+    "Стандарт"
+    hide ts_emergency_room_anim
+    show ts_emergency_room_anim4
+    "Быстрее"
 
-        plyer.notification.notify( message='Кампуктер скоро перезагрузится...',
-            app_name='True Story',
+    #python:
+    #    import plyer
+
+    #    plyer.notification.notify( message='Кампуктер скоро перезагрузится...',
+    #        app_name='True Story',
             #app_icon='sample.jpg',
-            title='Вешайся', )
+    #        title='Вешайся', )
 
     "Всё, пизда"
 
-    $ stream_list = ["obs32.exe", "obs64.exe", "obs.exe", "xsplit.core.exe", "livehime.exe", "pandatool.exe", "yymixer.exe", "douyutool.exe", "huomaotool.exe"]
-    if not list(set(process_list).intersection(stream_list)):
-        m "хуй"
+    show sayori 3o at f11
+    show ts_glaza
 
+    "23"
+
+    "щас крашнет"
+    #$ winerrorsuka()
+    "ну?"
+
+    show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Попробуйте ещё раз.", ok_action=Return())
+
+
+
+    "а этот"
+    hide screen dialog
     scene ts_club
     show yuri 2l at i31
     show sayori 4s at i32

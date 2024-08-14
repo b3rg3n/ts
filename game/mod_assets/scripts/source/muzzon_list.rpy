@@ -447,6 +447,27 @@ init python:
     )
 
     music_room.add(
+        name=_("Anxiety"),
+        artist="Andreas Rönnberg",
+        path=ts_muzzon + "menu_ost/zastavka/ts_anxiety.ogg",
+        art=ts_mr + "cof.webp"
+    )
+
+    music_room.add(
+        name=_("Train Station"),
+        artist="Andreas Rönnberg",
+        path=ts_muzzon + "menu_ost/zastavka/ts_train_station.ogg",
+        art=ts_mr + "cof.webp"
+    )
+
+    music_room.add(
+        name=_("Never"),
+        artist="Andreas Rönnberg",
+        path=ts_muzzon + "menu_ost/zastavka/ts_never.ogg",
+        art=ts_mr + "cof.webp"
+    )
+
+    music_room.add(
         name=_("Spit on Paradise!"),
         artist="Black Lakes",
         path=ts_muzzon + "menu_ost/zastavka/ts_bad_credits.ogg",
@@ -500,6 +521,13 @@ init python:
         name=_("Tension and Release"),
         artist="The Distorion",
         path=ts_muzzon + "ts_tar.ogg",
+        art=ts_mr + "ds.webp"
+    )
+
+    music_room.add(
+        name=_("Into The Abyss"),
+        artist="The Distorion",
+        path=ts_muzzon + "ts_ita.ogg",
         art=ts_mr + "ds.webp"
     )
 
@@ -584,6 +612,13 @@ init python:
         name=_("Solution"),
         artist="Arseny St",
         path=ts_muzzon + "ts_solution.ogg",
+        art=ts_mr + "lmr.webp"
+    )
+
+    music_room.add(
+        name=_("You Need a Bit of Fresh Air"),
+        artist="RedMountain",
+        path=ts_muzzon + "ts_fresh_air.ogg",
         art=ts_mr + "lmr.webp"
     )
 
@@ -686,6 +721,41 @@ init python:
         art=ts_mr + "ytm_c.webp"
     )
 
+    music_room.add(
+        name=_("Beta Menu Theme"),
+        artist="Crysis 3 OST",
+        path=ts_muzzon + "ts_crysis_beta.ogg",
+        art=ts_mr + "crysis.webp"
+    )
+
+    music_room.add(
+        name=_("Epilogue Theme"),
+        artist="Crysis 3 OST",
+        path=ts_muzzon + "ts_crysis_epilogue.ogg",
+        art=ts_mr + "crysis.webp"
+    )
+
+    music_room.add(
+        name=_("He Films The Clouds Pt. 2"),
+        artist="Maybeshewill",
+        path=ts_muzzon + "ts_hftc.ogg",
+        art=ts_mr + "mshew.webp",
+        unlock_condition="True"
+    )
+
+    music_room.add(
+        name=_("All Is Violent, All Is Bright"),
+        artist="God Is An Astronaut",
+        path=ts_muzzon + "ts_aiv.ogg",
+        art=ts_mr + "aiv.webp"
+    )
+
+    music_room.add(
+        name=_("Without You"),
+        artist="TRVTH",
+        path=ts_muzzon + "ts_truth.ogg",
+        art=ts_mr + "truth.webp"
+    )
 
 init:
 ###СПИСОК
@@ -770,6 +840,9 @@ init:
     $ music_list_ts["The Distorion - Root of all Evil"] = ts_muzzon + "ts_roae.ogg"
     $ music_list_ts["The Distorion - Descent to Madness"] = ts_muzzon + "ts_dtm.ogg"
     $ music_list_ts["The Distorion - Tension and Release"] = ts_muzzon + "ts_tar.ogg"
+    $ music_list_ts["The Distorion - Into The Abyss"] = ts_muzzon + "ts_ita.ogg"
+    $ music_list_ts["The Distorion - Even More of the Same"] = ts_muzzon + "ts_emots.ogg"
+    $ music_list_ts["The Distorion - More of the Same"] = ts_muzzon + "ts_mots.ogg"
 ###ПОДГОНЫ ОТ БЕРГЕНЧИКА БЛЕАДЬ
     $ music_list_ts["Kashiwa Daisuke - april.#19"] = ts_muzzon + "ts_emmk.ogg"
     $ music_list_ts["kelly bailey - inhuman frequency"] = ts_muzzon + "ts_hl2.ogg"
@@ -800,4 +873,15 @@ init:
     $ music_list_ts["Bxmmusic - Brandon"] = ts_muzzon + "ts_brandon.ogg"
     $ music_list_ts["Mos Elian - Gone"] = ts_muzzon + "ts_gone.ogg"
     $ music_list_ts["Yakui The Maid - Calamity"] = ts_muzzon + "ts_ytm_c.ogg"
-
+    $ music_list_ts["Crysis 3 OST - Beta Menu Theme"] = ts_muzzon + "ts_crysis_beta.ogg"
+    $ music_list_ts["Crysis 3 OST - Epilogue Theme"] = ts_muzzon + "ts_crysis_epilogue.ogg"
+    $ music_list_ts["God Is An Astronaut - All Is Violent, All Is Bright"] = ts_muzzon + "ts_aiv.ogg"
+    $ music_list_ts["Maybeshewill - He Films The Clouds Pt. 2"] = ts_muzzon + "ts_hftc.ogg"
+    $ music_list_ts["Maybeshewill - He Films The Clouds Pt. 2 "] = ts_muzzon + "ts_hftc1.ogg"
+    $ music_list_ts["Maybeshewill - He Films The Clouds Pt. 2  "] = ts_muzzon + "ts_hftc2.ogg"
+    $ music_list_ts["Maybeshewill - He Films The Clouds Pt. 2  "] = ts_muzzon + "ts_hftc3.ogg"
+    $ music_list_ts["TRVTH - Without You"] = ts_muzzon + "ts_truth.ogg"
+    $ music_list_ts["RedMountain - You Need a Bit of Fresh Air"] = ts_muzzon + "ts_fresh_air.ogg"
+    $ music_list_ts["Andreas Rönnberg - Anxiety"] = ts_muzzon + "ts_anxiety.ogg"
+    $ music_list_ts["Andreas Rönnberg - Never"] = ts_muzzon + "ts_never.ogg"
+    $ music_list_ts["Andreas Rönnberg - Train Station"] = ts_muzzon + "ts_train_station.ogg"

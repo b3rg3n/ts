@@ -1,11 +1,47 @@
-#ЭЛЬ ГРАНД ФИНАЛЕ ЕБАТЬ, ОСТАЛИСЬ ТОЛЬКО КОНЦОВКИ
-#НАПИШУ СНАЧАЛА ПЛОХУЮ, ПОТОМУ ЧТО А) ОНА У МЕНЯ ЕЩЁ В ПАМЯТИ ПОСВЕЖЕЕ; Б) ПОКА БУДУ ПИСАТЬ ХОРОШУЮ, ХУДОЖНИЦА НАРИСУЕТ ОХУЕННУЮ ЦГШЕЧКУ ДЛЯ ПЛОХОЙ, ШОБ ОПТИМИЗАЦИЯ БЫЛА; В) ОНА БЛЯТЬ ПРОСТО КОРОЧЕ
-#Я СНАЧАЛА ДУМАЛ, ЧТО МОЛ ЗАЕБЕНЮ-КА Я ОБЕ КОНЦОВКИ В ОДИН ФАЙЛ ДВУМЯ РАЗНЫМИ ЛЕЙБЛАМИ, НО ПОТОМ ОТКАЗАЛСЯ ОТ ЭТОЙ ИДЕИ
-#ЭНИВЕЙ, КОНЦИВКА НАЗЫВАЕТСЯ "В БЕЗДНУ"
-
 label ts_bad_ending_blya:
-#медленный диссолв на бг реанимации
-#сфх монитора с пульсом, где-то с интервалом в 0.9-1 секунду
+
+    python: # ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state="Эпилог",details="В бездну",large_image="aonecthree",start=time.time())
+        except AssertionError:
+            pass
+
+    $ persistent.rpclabel = "11"
+
+    $ persistent.carter2menu = False
+    $ persistent.carter3menu = False
+    $ persistent.badendmenuperedglitch = False
+    $ persistent.badendmenuskipglitch = False
+    $ persistent.badendmenu = False
+    $ persistent.goodendmenu = False
+    $ persistent.peredbadendmenu = True
+    $ persistent.peredgoodendmenu = False
+
+    $ save_name = "В бездну"
+
+    scene black
+
+    pause 2
+
+    play sound chp3
+    $ Chapter("Эпилог")
+    $ Chapter("Эпилог")
+    $ Chapter("Плохая концовка")
+    $ Chapter("Плохая концовка")
+    $ Chapter("В бездну")
+    stop sound fadeout 7
+    $ Chapter("В бездну")
+
+    pause 2
+
+    $ persistent.uncolorize = "none"
+
+    play music ts_crysis_beta fadein 4
+    play sound_loop kardio_normal fadein 4
+    scene ts_emergency_room
+    show ts_emergency_room_anim
+    with Dissolve(4)
+    show layer screens at ts_showscreens
     "..."
     "Я жадно глотаю воздух."
     "Ч-ч-что это? Г-г-где я вообще?"
@@ -23,10 +59,15 @@ label ts_bad_ending_blya:
     doc "О, вы наконец-то очнулись. Это очень хорошо."
     doc "Добрый день. Меня зовут доктор Майкл Берген, я заведующий нейротравматологическим отделением."
     doc "Вы пробыли в коме четыре с небольшим года."
-    #пульс резко подскакивает до где-то 0.4 интервала
-    m "Четыре {b}ГОДА?{/b}" #со скриншейком
+    hide ts_emergency_room_anim
+    show ts_emergency_room_anim4
+    play sound_loop kardio_fastest
+    show layer screens at vpunch
+    m "Четыре {b}ГОДА?{/b}"
     "А как же папа? Мама? Все мои друзья?.."
-#обратно до нормального состояния
+    hide ts_emergency_room_anim4
+    show ts_emergency_room_anim
+    play sound_loop kardio_normal
     doc "Тише-тише... Я знаю, что это сложно, но пожалуйста, не нервничайте. Вам нужны тишина и покой."
     m "Папа? Мама? Друзья?{w=0.8}{nw}"
     doc "Понимаю, у вас накопилось много вопросов за всё это время, но позвольте вопросы сначала буду задавать я."
@@ -60,10 +101,26 @@ label ts_bad_ending_blya:
     "И как только он ушёл, я вспомнила о том, что этот гад так и не рассказал мне, что произошло со всеми моими родными и близкими!"
     "Хотя, может, он и сам не знает..."
     "Аки, а ты как?.."
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    stop music fadeout 4
+
     pause 4
+    show layer screens at ts_showscreens_fast
     "Аки?"
-#диссолв на сцене блек и рассолв на другую палату, только уже общую
-    #play music into the abyss
+    stop sound_loop fadeout 2
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    scene black with ts_paint
+    pause 1
+    scene ts_hospital_room
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with ts_paint
+    play music ts_ita fadein 2
+    show layer screens at ts_showscreens
     "Я уже две недели в палате отделения нейротравматологии."
     "Соседи по палате, конечно, замечательные, но к им всем хотя бы иногда приходят родные и близкие."
     "Ко мне же за все эти две недели не пришёл вообще никто..."
@@ -75,7 +132,17 @@ label ts_bad_ending_blya:
     "Я сразу же настроилась на худшее, что они либо обо мне просто забыли, либо они все умерли."
     "Естественно, об этом я тоже спрашивала у доктора, но тот лишь отмахнулся, сказав «это уже ваши личные дела, я в них не лезу»."
     "И каждый раз, когда приходил кто-то из родных или близких одного из моих соседей по палате, я лишь зарывалась лицом в подушку и тихо скулила..."
-#диссолв/рассолв на бг коридора
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    scene black with ts_paint
+    pause 1
+    scene ts_hospital_corridor
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with ts_paint
+    show layer screens at ts_showscreens
     "Спустя месяц внешне я стала достаточно самостоятельной, чтобы наконец-то выписаться из этого ада."
     "Как странно, я только выбралась из одной Недели Сурка, чтобы попасть в ещё один День Сурка."
     "Может, это просто ещё один слой сна? Если я убью себя в этом слое, проснусь ли я в реальности? Или я проснусь в ещё одном слое более высокого уровня?"
@@ -84,7 +151,16 @@ label ts_bad_ending_blya:
     "В какой-то мере я уже привыкла к ней, потому что это единственный человек, который не забывал всё происходившее за эту неделю."
     "И по иронии судьбы, это единственный человек, которого я считала настоящим, даже несмотря на то, что это фактически просто моё подсознание."
     "Собрав все эпикризы, я направляюсь обратно в приёмное отделение."
-#вайплефт на приёмное отделение
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_waiting_room
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     m "Девушка, здравствуйте..."
     misc "Добрый день, Моника. На выписку?"
     m "Да, и побыстрее, если можно. Ещё минута в этом аду, и я с собой что-нибудь сделаю..."
@@ -93,29 +169,90 @@ label ts_bad_ending_blya:
     m "Но в остальном - это даже хуже, чем в моих снах..."
     "Медсестра не заметила мою язвительную ремарку и продолжила как ни в чём ни бывало."
     misc "Да, питание здесь просто замечательное!"
+    stop music fadeout 3
     misc "В общем, вот, ваш эпикриз. Не болейте больше!"
     m "Я уж постараюсь... До свидания."
     misc "Всего доброго!"
     "Да пошла ты..."
-#диссолв на сцене блек, рассолв на дом Моники
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    scene black with ts_paint
+    pause 1
+    scene ts_house
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with ts_paint
+    show layer screens at ts_showscreens
+
+    play music ts_aiv
     "Дом... милый дом..."
     "Правда, с учётом последних событий, и с учётом того, как я очень долго «жила в отеле», он уже не такой-то и милый..."
     "Но это {b}мой{/b} дом."
     "Я нерешительно открываю дверь."
-#вайплефт на прихожую дневную
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_entrance_day
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     m "Мама? Папа?"
     m "Ау-у-у-у, вы дома?"
     m "Я пришла. Наконец-то..."
     "Тишина в ответ."
     "Странно... Хотя я уже ничему в своей жизни не удивляюсь..."
-#вайплефт на кухню, сначала ночную, потом обычную (ну я кидал как-то бгшник, ну на всяк кину ещё раз)
+    window hide
+
+    play sound2 pageflip
+    scene ts_kitchen_night
+    with pushleft
+
+    pause 0.5
+
+    play sound svet_on
+
+    scene ts_kitchen
+    with flash
+
+    show layer screens at ts_showscreens
+
     "Я включаю свет и странно оглядываюсь."
     "Какой сегодня вообще день? Какой сейчас вообще {b}год{/b}?"
     "Однако моё внимание привлекли не даты, а записка на столе."
     "Даже как-то странно, что я не заметила её, как только включила свет."
     "Она висела прямо на холодильнике под магнитиком, который мама привезла из одной из командировок. Сама записка, как ни странно, тоже от мамы. По крайней мере, я узнаю её почерк."
 
-    #poem_farewell
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    scene ts_kitchen:
+        blur 9.0
+    with dissolve
+
+    show layer screens at ts_showscreens
+
+    play sound pageflip
+
+    show screen poem(poem_farewell)
+
+    pause
+
+    play sound pageflip
+    show layer screens at ts_hidescreens
+    pause 1.0
+    hide screen poem
+
+
+    scene ts_kitchen
+    with dissolve
+
+    show layer screens at ts_showscreens
     
     "С каждым новым предложением я всё больше начинаю слезиться."
     "Папа... Папочка мой дорогой..."
@@ -123,24 +260,69 @@ label ts_bad_ending_blya:
     "Если бы не это чёртово вино Юри и моё неугомонное желание выпить побольше спиртного, этого бы никогда и не произошло..."
     "А мама... Надеюсь, ей там будет лучше... куда бы она там ни отправилась..."
     "Остаток вечера я провожу со слезами на глазах, на щеках, по всей кухне. Я продолжаю рыдать, пока наконец не засыпаю."
-#диссолв на сцене блек, а потом рассолв на... школу ебать
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    scene black with ts_paint
+    pause 1
+    scene ts_school_gate_day
+    show dust1
+    show dust2
+    show dust3
+    show dust4
+    with ts_paint
+    show layer screens at ts_showscreens
     "И зачем я вообще пришла в школу?"
     "...ах да, я же технически так её и не закончила."
     "Надеюсь, за четыре года все учителя ещё не забыли, что была вообще такая Ида Моника, местная звезда школы, которая клубы меняла как перчатки..."
     "Вздохнув, я направляюсь внутрь."
-#вайплефт на двор, локеры, лестницу, коридор
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_school_courtyard_day
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_l5
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_corridor
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Хотя многие учителя за это и поменялись, директор Раддан остался."
     "Спрошу у него за девочек из клуба, и, если это вообще возможно, слёзно попрошусь доучиться жалкие полгода."
     "А то что это такое, мне уже двадцать три почти, а у меня даже общего среднего образования нет..."
-#сплит на коридор/кабинет директора
-#сфх стука в дверь
+
+    stop music fadeout 5
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    scene black with ts_paint
+    pause 1
+
+
+    show ts_cor_split_animated
+    show ts_of_split_animated
+    pause 0.99
+
+    show layer screens at ts_showscreens
+    play sound stuk
     show daisuke 1ba at t44
     m "Извините... можно?"
     show daisuke 2bc at f44
     $ misc_name = "Директор"
     misc "А, мисс Ида! Сколько лет, сколько зим... Проходите, конечно."
-#довоз полноценного бгшника кабинета директора
+
+    play music ts_hftc1 fadein 3
+    play sound door_open
+    scene ts_office
     show daisuke 2bf at f11
+    with wipeleft
     misc "Слышал о вашем горе... Но сейчас всё хорошо, вы выздоровели?"
     show daisuke 2bh at t11
     "«Если ты слышал о моём горе, почему же ты за четыре года так ни разу ко мне и не пришёл? И даже врач не говорил, что был какой-то мужчина...»"
@@ -169,26 +351,56 @@ label ts_bad_ending_blya:
     misc "После вашей... травмы исполняющим обязанности президента клуба была назначена мисс Аме."
     misc 1bf "Однако, естественно, лишившись президента клуба за неделю до фестиваля, и не набрав даже минимум в четыре человека, клуб попросту расформировали."
     misc "Помимо этого, у мисс Аме была клиническая депрессия, о которой мы..."
-#переходик на ч/б черешню из конца первого акта
+
+    play sound fb
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    show s_kill_bg_zoom_cb zorder 1
+    show s_kill_bg2_zoom_cb zorder 1
+    show s_kill_zoom_cb zorder 3
+    show s_kill2_zoom_cb zorder 3
+    show s_kill_cb as s_kill_zoom_trans zorder 3:
+        truecenter
+        alpha 0.5
+        zoom 2.0 xalign 0.5 yalign 0.05
+        pause 0.5
+        dizzy(1, 1.0)
+    with flash
+    show layer screens at ts_showscreens_fast
     misc "Узнали слишком поздно..."
     misc "Прямо в день фестиваля её нашли повешенной у себя же дома. Мы ничего не смогли сделать..."
-#переходик на ч/б рэзню из конца первого акта
+    show layer screens at ts_hidescreens_fast
+    " {w=0.1}{nw}"
+    scene ts_yrec_trup_end
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    with ts_paint
+    show layer screens at ts_showscreens_fast
     misc "Что касается мисс Касанэ, то она не выдержала, по сути, двух из трёх людей, которых она считала друзьями."
     misc "И через две недели её нашли в кабинете уже бывшего клуба со вспоротым животом."
-#переходик на ч/б шею из конца первого акта
+    show layer screens at ts_hidescreens_fast
+    " {w=0.1}{nw}"
+    scene ts_nat_trup_end
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    with ts_paint
+    show layer screens at ts_showscreens_fast
     misc "Что же до мисс Яторо..."
     misc "Помимо того, что она потеряла всех своих друзей за буквально несколько недель, над ней, как оказалось, издевались её друзья и даже её собственный отец..."
     m "И ей настолько надоело то, что её никто не воспринимает всерьёз, что однажды она подумала: «А зачем это всё нужно?», и свернула себе шею. Тоже насмерть."
     "Последние слова я уже договариваю за него. Это ровно то, что рассказывала мне Аки ещё тогда, в тот самый первый цикл много месяцев назад."
-#снеп бек ту реалити
+    play sound fb
+    scene ts_office
     show daisuke 2bh at t11
+    with flash
+    show layer screens at ts_showscreens_fast
     "После этой фразы я падаю навзрыд."
     "Все мои друзья, все мои близкие... Все, кем я когда-либо дорожила, либо мертвы, либо находятся на другом конце земного шара." #плоскоземельщики сосать
     show daisuke 2bf at f11
     misc "Я сожалею о вашей утрате... Но это жизнь, все рано или поздно умирают..."
     show daisuke 2bh at t11
     "Я тем временем просто продолжаю рыдать."
-    pause 6
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    pause 5
+    show layer screens at ts_showscreens
     "Лишь спустя пятнадцать минут я хоть как-то успокаиваюсь и говорю хотя бы членораздельно."
     m "Ладно... спасибо вам большое, господин Раддан... Теперь-то я точно знаю..."
     show daisuke 2bf at f11
@@ -204,12 +416,21 @@ label ts_bad_ending_blya:
     m "Ах да. Спасибо, что напомнили."
     "Я залпом осушиваю всю чашку и ещё раз пытаюсь попрощаться с ним. На этот раз уже окончательно и навсегда."
     m "До встречи, господин Раддан."
+    stop music fadeout 2
     show daisuke 1be at f11
     misc "Д-до свидания..."
     show daisuke 1bh at t11
     "Надеюсь, крыша не заперта..."
-#вайплефт на крышу хуйни
-    #play music meet me there #ТОЛЬКО ВЕРСИЯ С ДИСТОРШЕН ГЕТАРОЙ, ШОБ ЭМОЦИОНАЛЬНЕЕ БЫЛО
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play music ts_hftc2 fadein 2
+    play sound pageflip
+    scene ts_roof
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Какая же я неудачница..."
     "Из-за одной моей авантюры... Из-за одной моей оплошности..."
     "Все мои друзья... мертвы..."
@@ -218,29 +439,43 @@ label ts_bad_ending_blya:
     "Хотя что я вообще говорю? Ни один ветер не сможет успокоить все мои утраты..."
     show sayori 1a at t51:
         alpha 0.4
+    with linearblur
+    show layer screens at ts_showscreens_fast
     "Сайори..."
     show yuri 1a at t52:
         alpha 0.4
+    with linearblur
+    show layer screens at ts_showscreens_fast
     "Юри..."
     show natsuki 1a at t53:
         alpha 0.4
+    with linearblur
+    show layer screens at ts_showscreens_fast
     "Нацуки..."
     show hiroto 1a at t54:
         alpha 0.4
+    with linearblur
+    show layer screens at ts_showscreens_fast
     "Папа..."
     show minami 1a at t55:
         alpha 0.4
+    with linearblur
+    show layer screens at ts_showscreens_fast
     "Даже мама..."
     hide sayori
     hide yuri
     hide natsuki
     hide hiroto
     hide minami
-    with wipeleft
+    with linearblur
+    show layer screens at ts_showscreens
     "Никого из них больше нет..."
     "А всё это... из-за меня..."
     "Я снова начинаю плакать."
-    pause 6.5
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    pause 5.5
+    show layer screens at ts_showscreens
     "Закончив рыдать как маленькая девочка, я решительно встаю."
     "И направляюсь... к краю крыши."
     "Ух, высоко-то как!"
@@ -257,10 +492,21 @@ label ts_bad_ending_blya:
     em "Да говорю же, не надо, разобьёшься ведь насмерть!"
     m "Знаешь, {b}Аки{/b}... А я говорю, что надо."
     em "Нет, стой, подожди!{w=0.5}{nw}"
+    window hide
+    play music ts_hftc3
+    show layer master at ts_roof_beg
+    play sound ts_running
+    pause 2.5
+    stop sound
+    play sound2 ts_zabor_crash
+    pause 0.5
+    stop sound2
+    scene black
 #прихуярь тот же эффект, который ты на сцене с пьянкой делал
 #ну и тут будет цгшка. Моника падает с высоты с максимально расслабленным и похустическим выражением лица, с полуоткрытыми глазами, как будто она под травой
 #Волосы ебать естественно развеваются по ветру (ну доп эффекты ты ещё прихуяришь)
 #возможны даже мешки под глазами от того, что она по сути два дня без устали рыдает
+    show layer screens at ts_showscreens
     "Секунды, что я лечу вниз, кажутся часами. Но мне уже всё равно."
     "Литературный клуб снова соберётся вместе. Мы с папой тоже будем вместе..."
     "Да и с мамой мы рано или поздно встретимся..."
@@ -268,3 +514,14 @@ label ts_bad_ending_blya:
 #НУ И ВТОРАЯ ЦГШКА, КАК МОНИКА ЛЕЖИТ В ЛУЖЕ КРОВИ С ПЕРЕЁБАННЫМ ВООБЩЕ БЛЯТЬ ВСЕМ, УЖЕ БЛЯ И ГЛАЗА ЗАТУХАЮТ, НО ОНА БЛЯ ВСЁ РАВНО ЛЕЖИТ ДОВОЛЬНАЯ, НУ КАК ЮРИ В ПЕРВОЙ ЦГШКЕ ВЫХОДНЫХ
     "Ведь реальность - это просто ещё один слой."
     "Даром что я в новом слое не возвышаюсь над всем, а падаю. Прямо в бездну." #О, О, О, ЭТО ШТО, СЕМЬ ДЭ ЭЛ РЭФЭРЫНС??7? НУ ТИП ПОНЕЛ ДА, КОНЦИВКА НАЗЫВАЕТСЯ "В БЕЗДНУ", ПОСЛЕДНИЕ СЛОВА - ЭТО "ПРЯМО В БЕЗДНУ", НУ И ТАЙТЛ ТРЕК - ЭТО INTO THE ABYSS ("В БЕЗДНУ")
+    brg "Так как цгшек ещё нэмае, оставлю пока так, похуй."
+    brg "Будут цг - будет ебейшая режиссура в стиле интерстеллара, нах."
+    brg "Ну а пока - тестим бэд титры, ёпта."
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    show layer screens
+    window hide
+
+    jump bad_credits_ts_label

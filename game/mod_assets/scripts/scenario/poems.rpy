@@ -329,7 +329,7 @@ init python:
 """
     )
 
-    poem_m22f = Poem(
+    poem_m22fuck = Poem(
     author = "monika",
     title = "Спаси меня",
     text = """\

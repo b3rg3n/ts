@@ -798,7 +798,7 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22f)
+    show screen poem(poem_m22fuck)
 
     pause
 
@@ -1206,7 +1206,7 @@ label ts_scenario_11:
     show natsuki 2d at t33
     stop ambience fadeout 3
     play sound nfy
-    $ renpy.notify("Настоятельно рекомендую здесь сохранится.")
+    $ renpy.notify("Настоятельно рекомендую здесь сохраниться.")
     "Девочки дружно загалдели."
     show yuri 1i at t31
     show sayori 2a at t32

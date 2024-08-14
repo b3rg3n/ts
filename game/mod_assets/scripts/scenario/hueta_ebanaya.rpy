@@ -216,10 +216,32 @@ screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
         hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
         action Jump("ts_chapter_12_changes")
 
+    text translation_new["ts_govno_text228"] style "settings_link" size 75 text_align 0.5 yalign 0.8 xalign 0.5 color "#FF0000" antialias True kerning 2 at ts_preferences_anim
+
+    textbutton translation_new["ts_govno_text229"] style "log_button" text_style "change_chapter_suka" yalign 0.9 xalign 0.25 at ts_preferences_anim:
+        activate_sound start_sound_suka
+        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        action Jump("ts_chapter_good_end_changes")
+
+    textbutton translation_new["ts_govno_text230"] style "log_button" text_style "change_chapter_suka" yalign 0.9 xalign 0.75 at ts_preferences_anim:
+        activate_sound start_sound_suka
+        hovered Play("menu_zvuk", "mod_assets/source/audio/sfx/gui/button_menu.ogg")
+        action Jump("ts_chapter_bad_end_changes")
+
 label ts_chapter_prologue_changes:
     scene black with dissolve2
     pause 2
     jump ts_scenario_0
+
+label ts_chapter_good_end_changes:
+    scene black with dissolve2
+    pause 2
+    jump ts_good_ending_blya
+
+label ts_chapter_bad_end_changes:
+    scene black with dissolve2
+    pause 2
+    jump ts_bad_ending_blya
 
 label ts_chapter_one_changes:
     scene black with dissolve2

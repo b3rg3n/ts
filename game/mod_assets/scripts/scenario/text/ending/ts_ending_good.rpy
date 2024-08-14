@@ -1,23 +1,72 @@
-#НУ И ХЭППИ-ЭНД НАПОСЛЕДОК, УРУРУ, МИМИМИ, МАМА ПАПА ФЕСТИВАЛЬ И ВСЁ ОСТАЛЬНОЕ
-#Я КАКБЭ ТЕЗИСНО ЗНАЮ, ЧЁ БЫ НАПИСАТЬ, НО ЧТОБ ПРЯМ РАСПИСЫВАТЬ ВСЁ - НУ ЭТО БЛЯ УЖЕ ВЫШЕ МОИХ СИЛ
-#А КОНЦИВКА КСТАТИ БУДЕТ НАЗЫВАТЬСЯ "ВСЕГО ЛИШЬ СОН..."
-#КАК ЖЕ Я БЛЯТЬ УЖЕ ЗАЕБАЛСЯ ЭТО ВСЁ ПИСАТЬ КСТАТИ
-
 label ts_good_ending_blya:
-#МЕДЛЕННЫЙ ДИССОЛВ НА СПАЛЬНЮ МОНИКИ
-#сфх вибровызова в каждой новой строке
+
+    python: # ОБНОВЛЯЕМ RPC
+        try:
+            rpc.update(state="Эпилог",details="Всего лишь сон...",large_image="aonectwo",start=time.time())
+        except AssertionError:
+            pass
+
+    $ persistent.rpclabel = "12"
+
+    $ persistent.carter2menu = False
+    $ persistent.carter3menu = False
+    $ persistent.badendmenuperedglitch = False
+    $ persistent.badendmenuskipglitch = False
+    $ persistent.badendmenu = False
+    $ persistent.goodendmenu = False
+    $ persistent.peredbadendmenu = False
+    $ persistent.peredgoodendmenu = True
+
+    $ save_name = "Всего лишь сон..."
+
+    scene black
+
+    pause 2
+
+    play sound chp3
+    $ Chapter("Эпилог")
+    $ Chapter("Эпилог")
+    $ Chapter("Хорошая концовка")
+    $ Chapter("Хорошая концовка")
+    $ Chapter("Всего лишь сон...")
+    stop sound fadeout 7
+    $ Chapter("Всего лишь сон...")
+
+    pause 2
+
+    $ persistent.uncolorize = "none"
+
+    play ambience vibration_rintone fadein 5
+    scene ts_bedroom
+    with Dissolve(4)
+    show layer screens at ts_showscreens
+
     "На этот раз я просыпаюсь... не в спальне Сайори, а у себя."
     "Это что получается, я... выбралась?"
     "Я выбралась... Я выбралась! У меня получилось!"
     "Получилось получилось получилось!"
     "Это всё был только сон!"
     "Только вот чёртов телефон не перестаёт звонить..."
+    stop ambience
+    play sound ts_pda
     "Я отвечаю на звонок."
-#сплит клабрума и спальни Моники
-    show sayori 3i at t41
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    scene black with ts_paint
+    pause 1
+
+    show ts_bed_split_animated
+    show ts_club_split_animated
+    pause 0.99
+
+    show layer screens at ts_showscreens
+
+    show sayori 3i at ln41
     m "А... Алло, да?"
     show sayori 4p at f41
-    #play music always ready
+    play music ts_ar
     s "Моника, где ты шляешься?! Фестиваль начнётся через полчаса, а тебя до сих пор нет!" #с тряской (причина тряски кстати?)
     s 4j "Мы уже всё приготовили, Нацуки кексов напекла, Юри уже наполнила клубную комнату атмосферой, я тоже всё сделала. Одну только тебя ждём!"
     show sayori 4i at t41
@@ -31,21 +80,43 @@ label ts_good_ending_blya:
     m "Неважно уже..."
     m "В общем, скоро буду. И не начинайте там без меня!"
     show sayori 2l at f41
+    stop music fadeout 3
     s "Да мы и так без тебя не начнём..."
     show sayori 2y at t41
     m "Ну и отлично. Всё, давай, до встречи."
-    #обратно на полноценный бгшник спальни Моники
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    scene ts_bedroom with ts_paint
+
+    show layer screens at ts_showscreens
     play music okevrmon
     "Значит, полчаса до фестиваля..."
     "А как же тогда они всю неделю без меня были?.."
     "Хотя, знаете, это значения не имеет."
-#вайплефт на ванную
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_bathroom
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Быстрыми темпами я умываюсь и чищу зубы."
     "Я так сильно жду этого фестиваля, который, казалось, не наступит уже никогда, что я даже не обращаю внимания на ледяную воду и не менее ледяной привкус зубной пасты."
     "Наскоро умывшись, я спускаюсь на кухню."
     "Это было уже так давно, что уже даже особо и не помню, кто там сегодня готовит. Кажется, папа?"
-#вайплефт на кухню
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
     show hiroto 1a at t11
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "И да, действительно, когда я спускаюсь, меня уже встречает приятный запах гречки, яичницы с беконом и хлопьев."
     show hiroto 1b at f11
     ts_ft "Привет, Мо-{w=1}{nw}"
@@ -78,18 +149,38 @@ label ts_good_ending_blya:
     "Я быстро уплетаю гречку, даже особо не жуя, такими же быстрыми темпами ем хлопья, а затем залпом выпиваю кофе."
     "На весь завтрак у меня уходит не больше пяти минут."
     "Даже на разговоры времени нет, фестиваль важнее. Особенно столь многострадальный..."
-#вайплефт на кухню
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
     show hiroto 1f at t11
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
     "Переодевшись, я говорю папе:"
     m "Ладно, пап, до скорого, а то девочки уже, наверное, меня все заждались..."
     show hiroto 1g at f11
+    stop music fadeout 3
     ts_ft "Хорошо, Моника, увидимся в школе!"
     show hiroto 1f at t11
     m "Х-хорошо, пап. Люблю тебя..."
     show hiroto 1g at f11
     ts_ft "И я тебя люблю, солнце."
-#вайплефт на дом Моники, затем на улицу
-    #play music trapped in dreams
+
+    play music ts_fresh_air fadein 3
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_house
+    with wipeleft_scene
+
+    play sound pageflip
+    scene ts_street
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
     "Мне до сих пор не верится, что это всё на самом деле происходит..."
     "Все девочки в клубе, папа тоже придёт в школу, фестиваль уже начнётся через считанные минуты!.."
     "...правда, есть один человек, по которому я скучаю."
@@ -99,20 +190,49 @@ label ts_good_ending_blya:
     "В какой-то мере я уже привыкла к ней, потому что это единственный человек, который не забывал всё происходившее за эту неделю."
     "И по иронии судьбы, это единственный человек, которого я считала настоящим, даже несмотря на то, что это фактически просто моё подсознание..."
     "Пока я размышляла об этом, я и сама не заметила, как дошла до школы."
-#диссолв на школу
-#сфх вибровызова
+
+    play ambience vibration_rintone fadein 3
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    scene ts_school_gate_day
+    with ts_paint
+
+    show layer screens at ts_showscreens
+
     "Опять Сайори..."
     "Я перехожу на бег, при этом не снимая трубку."
-#вайплефт на коридор. вибровызовы не прекращаются кстати
-#сфх одышки. Ну такой, небольшой
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound2 ts_running
+
+    scene ts_school_gate_day at ts_running_fast
+
+    pause 2
+    stop sound2 fadeout 1
+    play sound pageflip
+    play sound3 ts_othodos_ot_bega fadein 2
+    scene ts_corridor at ts_ustal_suka
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Спустя где-то секунд сорок я уже у двери клуба."
     "Хорошо, что я в своё время занималась хоть каким-то спортом! Бег хотя бы на такие короткие дистанции не оставил после себя неизгладимых последствий..."
     "Я вваливаюсь в дверь."
-#резкий переходик на бг клуба
-    #play music t3
+    window hide
+    stop ambience
+    stop sound2
+    stop sound3
+    play sound door_break
+    scene ts_club
     show yuri 2r at t31
     show sayori 3i at t32
     show natsuki 1h at f33
+    show layer master at ts_razebal
+    show layer screens at ts_showscreens_fast
     n "Явилась не запылилась!"
     show yuri 2r at t31
     show sayori 4j at f32
@@ -181,26 +301,36 @@ label ts_good_ending_blya:
     show sayori 3r at f32
     show natsuki 2z at f33
     m "Ну конечно!"
+    stop music fadeout 3
     show yuri 2c at t31
     show sayori 3q at t32
     show natsuki 2z at t33
     m "Отлично..."
     "Со всеми этими циклами и повторениями я уже и забыла, какие стихи каждая из них написала..."
     "Главное хотя бы свой собственный не забыть..."
-    stop music
-#вайплефт на тот же бг
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_club
     show yuri 2o at t31
     show sayori 3k at t32
     show natsuki 2u at t33
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "С момента начала фестиваля прошло по меньшей мере пятнадцать минут."
     "Девочки в который раз перечитывали свои стихи, и с каждым разом надежда на то, что их услышит хоть кто-нибудь, становилась всё ниже и ниже."
     "Даже папа не пришёл... А ведь он обещал..."
     m "Л-ладно, девочки..."
     "Все угрюмо закивали."
-#сфх стука в дверь
+    play sound stuk
     show yuri 3n at h31
     show sayori 3m at h32
     show natsuki 2p at h33
+    show layer screens at vpunch
     "Как тут в дверь резко постучали. От такого дёрнулись все, даже я."
     $ misc_name = "Ученик"
     misc "И-извините, {b}это{/b} комната с кексами?"
@@ -215,7 +345,7 @@ label ts_good_ending_blya:
     show sayori 3l at t32
     show natsuki 2s at t33
     "Первой взяла себя в руки я."
-    #play music t3
+    play music audio.t3 fadein 2
     m "Э-э-э... да, добро пожаловать в Литературный клуб, меня зовут Ида Моника, а это Касанэ Юри, Аме Сайори и Яторо Нацуки." #НАШ МУЖИК КАСАНЬЕ, НАША СЛОНИХА ЕС ЧО
     show yuri 1u at t31
     show sayori 3y at t32
@@ -223,25 +353,38 @@ label ts_good_ending_blya:
     "Остальные девочки робко поприветствовали новоприбывшего ученика."
     misc "Сейчас, я быстренько сообщу всем."
     misc "{size=+10}ЭЙ, ВСЕ СЮДА! ЛИТЕРАТУРНЫЙ КЛУБ ЗДЕСЬ!{/size}"
+    stop music fadeout 3
     "На крик этого ученика пришли ещё где-то с десяток учеников."
     "Однако папы до сих пор не было видно..."
-    #вайплефт на тот же бг
-    #play music t8
+
+    play music audio.t8 fadein 3
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_club
     show yuri 1u at t31
     show sayori 3y at t32
     show natsuki 2t at t33
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
     "Как и ожидалось, пара учеников просто взяли кекс и ушли искать другие клубы, но большинство всё же остались здесь."
     show yuri 1j at t31
     show sayori 3c at t32
     show natsuki 1k at t33
     "Девочки приветствовали новичков, рассказывали им о жизни клуба и прочих мелочах."
     "Я же просто... мечтательно закрыла глаза."
-    #сцене блек
+    show blink
+    stop music fadeout 4
     "«Ну что, Аки, ты проиграла. Фестиваль случился, никто не умер - всё же хорошо...»"
     "Но мне ожидаемо никто не ответил..."
     "А жаль..."
-#обратно на бг клуба
-    #play music t5.all
+    hide blink
+    show unblink
+    play music t5_all fadein 2
     show hiroto 1b at t41
     show yuri 2zi at t42
     show sayori 3zc at t43
@@ -261,11 +404,13 @@ label ts_good_ending_blya:
     show yuri 2s at t42
     show sayori 3d at t43
     show natsuki 2a at t44
+    show layer master at ts_obnimashki_good_finalle
     "Я снова обнимаю его."
     show hiroto 1g at f41
     show yuri 2s at t42
     show sayori 3d at t43
     show natsuki 2a at t44
+    show layer master at ts_obnimashki_good_finalle1
     ts_ft "Еле вас нашёл... Если бы не крики одного ученика, то я бы в принципе не смог вас найти..."
     show hiroto 1f at t41
     show yuri 2zi at f42
@@ -276,6 +421,7 @@ label ts_good_ending_blya:
     show yuri 2s at t42
     show sayori 3d at t43
     show natsuki 2a at t44
+    stop music fadeout 3
     m "Да. Мистер Ида Хирото. Добрейшей души человек."
     stop music
     show hiroto 1j at t41
@@ -288,7 +434,7 @@ label ts_good_ending_blya:
     show sayori 3e at t43
     show natsuki 2a at t44
     "..."
-    play music t5.all
+    play music t5_all fadein 2
     m "Я просто вся в маму пошла..."
     show hiroto 1f at t41
     show yuri 2zi at f42
@@ -304,6 +450,7 @@ label ts_good_ending_blya:
     show yuri 2s at t42
     show sayori 3d at t43
     show natsuki 2a at t44
+    stop music fadeout 3
     ts_ft "Я десять минут назад ей звонил - она говорит, что не успела на утренний рейс, поэтому на самом фестивале её не будет."
     ts_ft "Но она говорит, что будет в городе в школе как только, так сразу."
     show hiroto 1a at t41
@@ -312,11 +459,21 @@ label ts_good_ending_blya:
     show natsuki 2a at t44
     m "Ох, ну здорово."
     "К чёрту уже этот фестиваль - поскорее бы уже с мамой увидеться..."
-#вайплефт на клуб
-    #play music t8
+    play music audio.t8 fadein 2
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_club
     show yuri 2d at t31
     show sayori 3r at t32
     show natsuki 2z at t33
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+
     "Ну, могло быть и хуже; но могло быть и лучше."
     "После того, как мы все прочитали стихи, по большей части мы все просто веселились."
     "В клуб к нам так никто и не записался. Жалко, конечно, но это и не удивительно."
@@ -326,7 +483,7 @@ label ts_good_ending_blya:
     "А это всё, что важно..."
     "После того, как ушёл последний посетитель, я обращаюсь к девочкам."
     m "Итак, девчата!"
-    stop music
+    stop music fadeout 3
     show yuri 1e at t31
     show sayori 2b at t32
     show natsuki 1za at t33
@@ -346,7 +503,7 @@ label ts_good_ending_blya:
     show yuri 1e at t31
     show sayori 2b at t32
     show natsuki 1za at t33
-    #play music confession
+    play music ts_conf
     m "Ну-у-у... Я же выстраивала клуб на перспективу, надеясь, что после фестиваля появятся и парни, и девушки."
     m "Однако фестиваль уже прошёл, а к нам так никто и не прибавился..."
     show yuri 1u at t31
@@ -359,18 +516,28 @@ label ts_good_ending_blya:
     show sayori 3l at t32
     show natsuki 2t at t33
     "Все девочки смущённо засмеялись."
-    stop music
+    stop music fadeout 3
     m "В общем, ладно! Ребята мы или девчата - надо бы после фестиваля всё убрать, чтобы к следующему собранию было всё как обычно, без фантиков и прочего мусора."
     show yuri 2h at f31
     show sayori 3h at f32
     show natsuki 2q at f33
     $ m_name = "Девчата"
     m "Да, Моника..."
-#вайплефт на тот же бг
-    #play music afterword
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_club
     show yuri 2j at t31
     show sayori 3l at t32
     show natsuki 2t at t33
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+
+    play music ts_afterword fadein 2
+
     "Спустя примерно двадцать минут от мусора не осталось и следа."
     $ m_name = "Моника"
     m "Ну, собственно... Пора на этом и заканчивать наше мероприятие..."
@@ -385,20 +552,34 @@ label ts_good_ending_blya:
     show sayori 3a at t32
     show natsuki 2j at t33
     m "До завтра, девочки."
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    play sound door_open
+    show yuri 2a at cright with move
+    hide yuri
+    show sayori 3a at cright with move
+    hide sayori
+    show natsuki 2j at cright with move
+    hide natsuki
+    show layer screens at ts_showscreens
     "Все уходят."
     "Ну, наверное, пойду и я..."
-#сфх стука в дверь
+    play sound stuk
     "Однако как только я встаю, чтобы направиться к выходу, как тут раздаётся ещё один стук в дверь."
     "И кого там только принесло?! Спектакль уже давно окончен!"
     "Дверь открывается и тот, кого «принесло», повергает меня в очень приятный шок."
+    stop music fadeout 3
     show minami 2n at f11
     ts_mt "Извините, а это Литературный клуб?"
     show minami 2j at t11
     m "Мама!"
     ts_mt "Доченька моя!"
-#тут будет цгшка
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+    scene black with ts_paint#тут будет цгшка
+    show layer screens at ts_showscreens
 #cm smile/ce ida, om smile/ce moni
-    #play music ybs
+    play music ts_never fadein 2
     m "Мамочка, я так по тебе скучала!"
 #om smile/ce ida, cm smile/ce moni
     ts_mt "Я тоже по тебе очень скучала..."
@@ -414,13 +595,23 @@ label ts_good_ending_blya:
     m "Так а как ты вообще узнала, в какой именно кабинет тебе подходить?"
 #om smile/ce ida, cm/oe moni
     ts_mt "Так мне папа номер кабинета сбросил сообщением. Сказал мол «я блуждал долго, но с горем пополам добрался до пункта назначения - не повторяй моих ошибок»."
+    stop music fadeout 3
 #cm/oe ida, om/oe moni
     m "Понятно..."
 #cm/oe ida, om smile/oe moni
     m "Ну, я очень рада, что ты вовремя приехала."
     m "Пойдём, мне ещё столько всего рассказать тебе надо!.."
-#диссолв на сцене блек, рассолв на кухню
-    #play music mdl
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    scene black with ts_paint
+    pause 1
+    scene ts_kitchen with ts_paint
+
+    show layer screens at ts_showscreens
+
+    play music ts_anxiety fadein 2
     show minami 2ba at t11
     "Всю дорогу от школы до дома я всё рассказывала и рассказывала маме все детали и подробности последних полутора месяцев."
     "Как я нашла Сайори."
@@ -446,11 +637,21 @@ label ts_good_ending_blya:
     ts_mt "И то, и другое."
     show minami 3bk at t11
     "Мы обе посмеялись над этим."
-#вайплефт на кухню, сфх открытия двери
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
     show minami 1ba at t11
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+    play sound door_open
+
     "Время идёт, а мы всё так же весело и непринуждённо разговариваем, как тут на кухню входит и папа."
     show minami 1ba at t21
-    show hiroto 2b at f22
+    show hiroto 2b at ln22
     ts_ft "Тук-тук-тук, я дома!"
     show minami 2bk at f21
     show hiroto 2a at t22
@@ -460,7 +661,10 @@ label ts_good_ending_blya:
     ts_ft "Привет, дорогая."
     show minami 2bj at t21
     show hiroto 2f at t42
+    show layer screens at ts_hidescreens_fast
+    " {w=0.1}{nw}"
     pause 0.08
+    show layer screens at ts_showscreens_fast
     show minami 2bj at t21
     show hiroto 2f at t22
     m "Привет, пап."
@@ -476,13 +680,22 @@ label ts_good_ending_blya:
     ts_mt 3bv "Кстати, а который час вообще?"
     show minami 3bu at t21
     show hiroto 1c at f22
+    stop music fadeout 3
     ts_ft "Ну, если я уже с работы пришёл, то где-то не раньше шести вечера."
     show minami 3bw at h21
     show hiroto 1e at t22
     ts_mt "Ой!"
     ts_mt 2bt "Н-не переживайте, сейчас что-нибудь на скорую руку приготовлю!"
-#диссолв/рассолв на тот же бгшник
-    #play music sweet darkness
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    scene black with ts_paint
+    pause 1
+    scene ts_kitchen with ts_paint
+
+    show layer screens at ts_showscreens
+
+    play music ts_train_station fadein 2
     show minami 2bm at t21
     show hiroto 1a at t22
     "Всё-таки мама - это прирождённая кухарка."
@@ -515,22 +728,36 @@ label ts_good_ending_blya:
     show hiroto 1f at t11
     $ m_name = "Моника"
     "После этих слов мама пошла к себе в спальню, оставляя нас с папой наедине."
-#вайплефт на тот же бг
-    #play music what do you think of me
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_kitchen
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
     "Остаток вечера мы проводим молча. Все слишком истощены, особенно я."
     "Доев картошку, я как бы невзначай говорю папе, что я тоже устала, и что я тоже пойду отдыхать."
     show hiroto 1g at f11
     ts_ft "Хорошо, Моника, спокойной ночи."
     ts_ft "Я ещё немного телевизор посмотрю, и тоже к вам присоединюсь."
     show hiroto 1f at t11
+    stop music fadeout 4
     m "Спокойной ночи, пап. Люблю тебя."
     show hiroto 1g at f11
     ts_ft "Я тоже тебя люблю, золотце."
     show hiroto at lhide
     hide hiroto
     "А затем каждый отправился по своим делам: папа - смотреть телевизор, а я - отдыхать."
-#вайплефт на спальню Моники
-    #play music memories piano
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    play sound pageflip
+    scene ts_bedroom
+    with wipeleft_scene
+
+    show layer screens at ts_showscreens
+    play music ts_afterlife fadein 1
     "Эх, какой всё-таки хороший день!"
     "Фестиваль состоялся, все девочки живы-здоровы, мама приехала... не день, а сплошное счастье."
     "И пусть после фестиваля в наш клуб так никто и не записался..."
@@ -539,7 +766,32 @@ label ts_good_ending_blya:
     "При более детальном обзоре я понимаю, что записка эта написана... моим почерком."
     "Что-то я не помню того, как я эту записку писала..."
     "Заинтересованная, я начинаю её читать."
-    #poem_farewell_aki
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    scene ts_bedroom:
+        blur 9.0
+    with dissolve
+
+    show layer screens at ts_showscreens
+
+    play sound pageflip
+
+    show screen poem(poem_farewell_aki)
+
+    pause
+
+    play sound pageflip
+    show layer screens at ts_hidescreens
+    pause 1.0
+    hide screen poem
+
+
+    scene ts_bedroom
+    with dissolve
+
+    show layer screens at ts_showscreens
 
     "Ах ты... козявка..."
     "Это что, она всё подстраивала?"
@@ -547,8 +799,19 @@ label ts_good_ending_blya:
     "И что это за жирный намёк, что «тебе был дан второй шанс»?"
     "Слишком сложно для понимания..."
     "Ладно, я слишком уставшая и слишком счастливая, чтобы рассуждать на эту тему..."
-#сфх выключателя, ну и спальня Моники уже ночная
+
+    play sound svet_on
+    scene ts_darkbed
+
     "Я выключаю свет, раздеваюсь и ложусь в кровать."
     "Сегодня был такой замечательный день. А дальше будет только лучше..."
     "А кошмарный сон - это ведь всего лишь сон..."
     "Так ведь?"
+
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
+    show layer screens
+    window hide
+
+    jump good_credits_ts_label

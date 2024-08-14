@@ -39,6 +39,10 @@ init:
 
     image mon_piano_start = ts_cg + "mon_piano_start.webp"
 
+    image yrec_sdoh_nahui = ts_cg + "1a.webp"
+
+    image ts_knife_suicide = ts_anim + "ts_knife_suicide.webp"
+
     image yurec_pizdec1 = ts_cg + "yurec_pizdec1.webp"
     image yurec_pizdec2 = ts_cg + "yurec_pizdec2.webp"
     image yurec_pizdec3 = ts_cg + "yurec_pizdec3.webp"
@@ -57,6 +61,8 @@ init:
 
     image natsuki_pizdec5 = LiveComposite((1280,720), (0,0), ts_cg + "pustota.webp", (882,325), "n_rects1", (732,400), "n_rects2", (850,475), "n_rects3")
 
+    image ts_yrec_trup_end = ts_cg + "brg_kolhoz_blya/1a.webp"
+    image ts_nat_trup_end = ts_cg + "brg_kolhoz_blya/n_cg2_bg.webp"
 
 ###CREDITS
     image ts_credits_mad_1 = ts_images + "credits/ts_credits_mad_1.webp"
@@ -71,11 +77,57 @@ init:
 
 ###БГ
 
+
+    image ts_sayori_house = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_sayori_house.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_sayori_house.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_sayori_house.webp") )
+
+    image ts_sky_fon = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_sky_fon.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_sky_fon.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_sky_fon.webp") )
+
+    image ts_hotel_rec = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_hotel_rec.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_hotel_rec.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_hotel_rec.webp") )
+
+    image ts_office = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_office.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_office.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_office.webp") )
+
+    image ts_roof = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_roof.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_roof.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_roof.webp") )
+
+    image ts_kitchen_night = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_kitchen_night.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_kitchen_night.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_kitchen_night.webp") )
+
+    image ts_waiting_room = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_waiting_room.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_waiting_room.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_waiting_room.webp") )
+
+    image ts_hospital_corridor = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_hospital_corridor.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_hospital_corridor.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_hospital_corridor.webp") )
+
+    image ts_hospital_room = ConditionSwitch(
+    "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_hospital_room.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
+    "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_hospital_room.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
+    True,im.Composite((1280,720), (0,0), ts_bg + "ts_hospital_room.webp") )
+
     image ts_emergency_room = ConditionSwitch(
     "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_emergency_room.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
     "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_emergency_room.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),
     True,im.Composite((1280,720), (0,0), ts_bg + "ts_emergency_room.webp") )
-
+#
     image ts_seaside_road_morning = ConditionSwitch(
     "persistent.uncolorize=='lite'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_seaside_road_morning.webp"), im.matrix.saturation(.5, desat = (0.2126, 0.7152, 0.0722)) ),
     "persistent.uncolorize=='full'",im.MatrixColor( im.Composite((1280,720), (0,0), ts_bg + "ts_seaside_road_morning.webp"), im.matrix.saturation(.2, desat = (0.2126, 0.7152, 0.0722)) ),

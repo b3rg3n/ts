@@ -4,6 +4,55 @@
 
 init:
 
+    transform ts_obnimashki_good_finalle1:
+        align (0.1, 0.4) zoom 3.0
+        ease 1 align (0.5, 0.5) zoom 1.0
+
+    transform ts_obnimashki_good_finalle:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.1, 0.4) zoom 3.0
+
+    transform ts_padenie_s_krishi_suka:
+        align (0.5, 0.5) zoom 4.0
+        ease 4 align (0.5, 0.5) zoom 1.0
+
+    transform ts_padenie_ebalon_vniz_suka:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.5, 0.9) zoom 4.0
+
+    transform ts_trans_povesilas_mon_maloletka_konchennaya:
+        align (0.5, 0.5) zoom 1.0
+        parallel:
+            ease 0.5 align (0.9, 0.3) zoom 1.5
+            ease 0.5 align (0.1, 0.7) zoom 1.5
+            repeat
+
+    transform ts_glazkam_pizda_anim:
+        align (0.5, 0.5) zoom 1.0
+        ease 0.35 align (0.5, 0.3) zoom 1.5
+        ease 0.35 align (0.5, 0.5) zoom 1.0
+
+    transform ts_knife_pizda_anim:
+        align (0.5, 0.5) zoom 1.0
+        ease 0.35 align (0.5, 0.8) zoom 1.5
+        ease 0.35 align (0.5, 0.5) zoom 1.0
+
+    transform ts_shluha_melkaya:
+        align (0.5, 0.5) zoom 1.0 rotate 0
+        parallel:
+            ease 2.0 align (0.3, 0.5) zoom 1.6 rotate -3
+            ease 1.5 align (0.4, 0.4) zoom 1.5 rotate 2
+            ease 1.5 align (0.5, 0.5) zoom 1.6 rotate -1
+            ease 2.0 align (0.6, 0.4) zoom 1.5 rotate 3
+            ease 1.5 align (0.6, 0.5) zoom 1.6 rotate -2
+            ease 2.0 align (0.5, 0.5) zoom 1.5 rotate 2
+            repeat
+
+    transform ts_roof_beg:
+        align (0.5, 0.5) zoom 1.0
+        ease 2.5 align (0.5, 0.5) zoom 4.0
+        ease 0.5 align (0.5, 0.1) zoom 4.0
+
     transform ts_blur_transform_suka(x, y, z):
         blur x
         ease y blur z
@@ -116,6 +165,12 @@ init:
             ease 0.4 pos (0.75+x, 1.33+y)
         parallel:
             ease 0.5 rotate 180
+
+    transform ts_punch2: # ts_punch(-0.22) или ts_punch()
+        tinstant(240)
+        yoffset 300
+        parallel:
+            ease 0.8 rotate -180 align(0.3, -2.0)
 
 ### АНИМАЦИИ НЕ ДЛЯ СПРАЙТОВ БЛЯ
     transform ts_alkonersha:

@@ -11,6 +11,26 @@ init python:
 
 init:
 
+    image ts_bloodanim:
+        ts_anim + "blood/bloodanim1.webp"
+        pause 0.1
+        ts_anim + "blood/bloodanim2.webp"
+        pause 0.1
+        ts_anim + "blood/bloodanim3.webp"
+        pause 0.1
+        ts_anim + "blood/bloodanim4.webp"
+        pause 0.1
+        ts_anim + "blood/bloodanim5.webp"
+        
+    image ts_altbloodanim:
+        ts_anim + "blood/altbloodanim1.webp"
+        pause 0.1
+        ts_anim + "blood/altbloodanim2.webp"
+        pause 0.1
+        ts_anim + "blood/altbloodanim3.webp"
+        pause 0.1
+        ts_anim + "blood/altbloodanim4.webp"
+
     image ts_psihuet1:
         ts_anim + "psih/psih1.webp" with dissolve
         pause .6
@@ -563,6 +583,60 @@ init:
         ts_images + "anarchy/anarchisty2.webp"
         pause 0.1
         repeat
+
+###ВЕШАЕМСЯ НАХУЙ
+
+    image ts_blinking:
+        contains:
+            "unblink"
+            pos (0,-720)
+            ease 0.5 xalign 0 yalign 0
+        contains:
+            "blink"
+            pos (0,720)
+            ease 0.5 xalign 0 yalign 0
+        pause 0.25
+        contains:
+            "unblink"
+            xalign 0 yalign 0
+            ease 0.5 pos (0,-720)
+        contains:
+            "blink"
+            xalign 0 yalign 0
+            ease 0.5 pos (0,720)
+
+    image ts_mon_povesilas:
+        contains:
+            'ts_closet'
+            subpixel True
+            anchor (0.5, 0.5)
+            pos (0.5, 0.5)
+            ease 1 zoom 1 rotate 0
+            ease 0.5 zoom 1.85 rotate 30
+            ease 0.9 zoom 1.45 rotate -15
+            ease 0.75 zoom 1.3 rotate 10
+            ease 1 zoom 2 rotate -25
+            ease 0.5 zoom 1.5 rotate 20
+            repeat
+        contains:
+            'black'
+            ease 1 alpha 0
+            ease 1.35 alpha 0.75
+            ease 1.05 alpha 0
+            ease 0.5 alpha 1
+            ease 0.85 alpha 0.35
+            ease 0.75 alpha 0.65
+            repeat
+        contains:
+            pause 3
+            'ts_blinking'
+            pause 5
+            'ts_blinking'
+            pause 2.25
+            'ts_blinking'
+            pause 4
+            'ts_blinking'
+            repeat
 
 ###АНИМАЦИЯ КОШМАРА МОНИКИ В КОНЦЕ 4 ГЛАВЫ 1 АКТА НАХ
     image vse_pizda_monike:
@@ -1243,13 +1317,55 @@ init:
     image ts_hotel_split1 = ts_bg + "split/ts_hostel_sleva.webp"
     image ts_kuh_split = ts_bg + "split/ts_kuh_sprava.webp"
 
-    image ts_host_split_animated: # pause 0.99
+    image ts_cor_split = ts_bg + "split/ts_corridor_split.webp"
+    image ts_of_split = ts_bg + "split/ts_office_split.webp"
+
+    image ts_bed_split = ts_bg + "split/ts_bedroom_split.webp"
+    image ts_club_split = ts_bg + "split/ts_class_split.webp"
+
+    image ts_bed_split_animated: # pause 0.99
         default subpixel True 
         parallel:
             Null(1280.0, 720.0)
-            'ts_hotel_split1'
+            'ts_bed_split'
         parallel:
             ypos 1.5 alpha 0.0
+            linear 0.99 ypos 1.0 alpha 1.0
+
+    image ts_club_split_animated: # pause 0.99
+        default subpixel True 
+        parallel:
+            Null(1280.0, 720.0)
+            'ts_club_split'
+        parallel:
+            ypos 0.5 alpha 0.0
+            linear 0.99 ypos 1.0 alpha 1.0
+
+    image ts_cor_split_animated: # pause 0.99
+        default subpixel True 
+        parallel:
+            Null(1280.0, 720.0)
+            'ts_cor_split'
+        parallel:
+            ypos 1.5 alpha 0.0
+            linear 0.99 ypos 1.0 alpha 1.0
+
+    image ts_kuh_split_animated: # pause 0.99
+        default subpixel True 
+        parallel:
+            Null(1280.0, 720.0)
+            'ts_kuh_split'
+        parallel:
+            ypos 0.5 alpha 0.0
+            linear 0.99 ypos 1.0 alpha 1.0
+
+    image ts_of_split_animated: # pause 0.99
+        default subpixel True 
+        parallel:
+            Null(1280.0, 720.0)
+            'ts_of_split'
+        parallel:
+            ypos 0.5 alpha 0.0
             linear 0.99 ypos 1.0 alpha 1.0
 
     image ts_kuh_split_animated: # pause 0.99

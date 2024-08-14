@@ -1,5 +1,9 @@
 # ХУЕТА ДЛЯ ТЕСТОВ
 label testing_label_blya:
+    scene black
+    show sayori 4z at t11
+    "хуй"
+    jump ts_bad_ending_blya
 
     python: # ОБНОВЛЯЕМ RPC
         try:

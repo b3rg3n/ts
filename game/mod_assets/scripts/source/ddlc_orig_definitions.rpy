@@ -230,6 +230,16 @@ image s_kill_bg_zoom:
         xalign 0.2 yalign 0.3 zoom 2.0
     dizzy(0.25, 1.0)
 
+image s_kill_bg_zoom_cb:
+    contains:
+        "s_kill_bg_cb"
+        xalign 0.2 yalign 0.3 zoom 2.0
+    dizzy(0.25, 1.0)
+
+image s_kill_bg_cb:
+    subpixel True
+    ts_cg + "s_kill_bg_cb.webp"
+
 transform dizzy(m, t, subpixel=True):
     subpixel subpixel
     parallel:
@@ -276,6 +286,29 @@ image s_kill_bg2_zoom:
         linear 0.25 alpha 0.2
         repeat
 
+image s_kill_bg2_zoom_cb:
+    contains:
+        "s_kill_bg2_cb"
+        xalign 0.2 yalign 0.3 zoom 2.0
+    parallel:
+        dizzy(0.25, 1.0)
+    parallel:
+        alpha 0.2
+        linear 0.25 alpha 0.2
+        linear 0.25 alpha 0.25
+        linear 0.25 alpha 0.2
+        linear 0.25 alpha 0.3
+        linear 0.25 alpha 0.25
+        linear 0.25 alpha 0.35
+        linear 0.25 alpha 0.3
+        linear 0.25 alpha 0.35
+        linear 0.25 alpha 0.2
+        repeat
+
+image s_kill_bg2_cb:
+    subpixel True
+    ts_cg + "s_kill_bg2_cb.webp"
+
 image s_kill2_zoom:
     contains:
         "s_kill2"
@@ -295,6 +328,41 @@ image s_kill2_zoom:
         linear 0.25 alpha 0.6
         linear 0.25 alpha 0.4
         repeat
+
+image s_kill2_zoom_cb:
+    contains:
+        "s_kill2_cb"
+        truecenter
+        zoom 2.0 xalign 0.5 yalign 0.05
+    parallel:
+        dizzy(1, 1.0)
+    parallel:
+        alpha 0.3
+        linear 0.25 alpha 0.3
+        linear 0.25 alpha 0.4
+        linear 0.25 alpha 0.3
+        linear 0.25 alpha 0.5
+        linear 0.25 alpha 0.4
+        linear 0.25 alpha 0.6
+        linear 0.25 alpha 0.5
+        linear 0.25 alpha 0.6
+        linear 0.25 alpha 0.4
+        repeat
+
+image s_kill_zoom_cb:
+    contains:
+        "s_kill_cb"
+        truecenter
+        zoom 2.0 xalign 0.5 yalign 0.05
+    dizzy(1, 1.0)
+
+image s_kill_cb:
+    subpixel True
+    ts_cg + "s_kill_cb.webp"
+
+image s_kill2_cb:
+    subpixel True
+    ts_cg + "s_kill2_cb.webp"
 
 # DDLC ORIGINAL MUSIC DEFINES
 # by @dansalvato

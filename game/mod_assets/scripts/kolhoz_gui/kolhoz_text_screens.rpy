@@ -185,8 +185,10 @@ init -1003 python:
         "ts_govno_text8" : "Акт второй:",
         "ts_govno_text9" : "Акт третий:",
         "ts_govno_text10" : "Сделай нужные выборы.",
-        "ts_govno_text11" : "Направляемся в нужное место."
-
+        "ts_govno_text11" : "Направляемся в нужное место.",
+        "ts_govno_text228" : "Концовки",
+        "ts_govno_text229"  : "Хорошая",
+        "ts_govno_text230" : "Плохая"
 }
 
     translation_en = {
@@ -321,6 +323,8 @@ init -1003 python:
         "ts_govno_text8" : "Акт второй:",
         "ts_govno_text9" : "Акт третий:",
         "ts_govno_text10" : "Сделай нужные выборы.",
-        "ts_govno_text11" : "Направляемся в нужное место."
-
+        "ts_govno_text11" : "Направляемся в нужное место.",
+        "ts_govno_text228" : "Концовки",
+        "ts_govno_text229"  : "Хорошая",
+        "ts_govno_text230" : "Плохая"
 }

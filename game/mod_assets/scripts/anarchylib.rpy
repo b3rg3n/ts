@@ -47,6 +47,8 @@ init -1199 python:
     ts_monika_pt = ts_spr + "monika/"
     ts_yuri_pt = ts_spr + "yuri/"
     ts_sayori_pt = ts_spr + "sayori/"
+    ts_daisuke_pt = ts_spr + "daisuke/"
+    ts_harumi_pt = ts_spr + "harumi/"
 
     ts_videosos = ts_source + "videosos/"
     ts_telek = ts_videosos + "bg/telek/"

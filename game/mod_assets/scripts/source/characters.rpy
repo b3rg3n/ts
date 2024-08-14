@@ -22,6 +22,8 @@ init:
     define k = DynamicCharacter('k_name', image='kuninobu', what_prefix='"', what_suffix='"')
     define misc = DynamicCharacter('misc_name', image='harumi', what_prefix='"', what_suffix='"')
     define ts_director = DynamicCharacter('ts_director_name', image='daisuke', what_prefix='"', what_suffix='"')
+    define doc = DynamicCharacter('doc_name', what_prefix='"', what_suffix='"')
+
 
 ###NVL ПАЦАНТРЕ
     define nvlbazar = Character (u' ', kind=nvl, color = "#dd9933", what_color="FFFFFF",)
@@ -42,6 +44,7 @@ init:
         $ k_name = "Mira"
         $ misc_name = "Administrator"
         $ ts_director_name = "Director"
+        $ doc_name = "Dr. Bergen"
     else:
         $ teacher_name = "Учитель"
         $ ts_ft_name = "Папа"
@@ -57,6 +60,7 @@ init:
         $ k_name = "Мира"
         $ misc_name = "Администратор"
         $ ts_director_name = "Директор"
+        $ doc_name = "Д-р Берген"
 
     $ unk_name = "???"
     $ em_name = glitchtext(12)

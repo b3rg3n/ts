@@ -127,12 +127,12 @@ label ts_start:
                         return
                     "Вернуться":
                         jump ts_start
-            "Оффнуть печку":
-                python:
-                    offpc()
-            "Ебануть синий экран":
-                python:
-                    bsod()
+            #"Оффнуть печку":
+            #    python:
+            #        offpc()
+            #"Ебануть синий экран":
+            #    python:
+            #        bsod()
             "Обратно в меню":
                 return
 

@@ -1,7 +1,7 @@
 # TRUE STORY GLITCH STUFF
 # by @b3rg3n
 # Since 2024
-
+init:
 #BG's
     image ts_l51 = ts_bg + "glitch/l51.webp"
     image ts_l52 = ts_bg + "glitch/l52.webp"

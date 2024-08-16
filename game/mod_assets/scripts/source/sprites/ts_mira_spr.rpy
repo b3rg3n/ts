@@ -1,9 +1,3 @@
-# TRUE STORY SPRITES
-# ALL RIGHTS RESERVED
-# ЕСЛИ БЛЯ ВОПРОСЫ ЕСТЬ - ПИШИ БЕРГЕНЧИКУ - ОН УКАЖЕТ АВТОРСТВО
-# TEAM ANARCHY (c)
-# SINCE 2024
-
 ###МИРА ЕБАТЬ
 image kuninobu 1a = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/mira/1l.webp", (0, 0), "mod_assets/source/images/spr/mira/1r.webp", (0, 0), "mod_assets/source/images/spr/mira/a.webp")
 image kuninobu 1b = im.Composite((960, 960), (0, 0), "mod_assets/source/images/spr/mira/1l.webp", (0, 0), "mod_assets/source/images/spr/mira/1r.webp", (0, 0), "mod_assets/source/images/spr/mira/b.webp")

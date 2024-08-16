@@ -1,10 +1,19 @@
 # ХУЕТА ДЛЯ ТЕСТОВ
 label testing_label_blya:
-    scene black
-    show sayori 4z at t11
-    "хуй"
-    jump ts_bad_ending_blya
+    scene ts_club
+    $ persistent.sprite_time = "day"
+    show sayori 4z at t41
+    show yuri 4f at t42
+    show monika 1f at t43
+    show natsuki 2e at t44
+    "day"
 
+    $ persistent.sprite_time = "cloudly"
+    "cloudly"
+    $ persistent.sprite_time = "sunset"
+    "sunset"
+    $ persistent.sprite_time = "night"
+    "night"
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state=glitchtext(12),details="Снова что-то мутит",large_image="logogovna",start=time.time())

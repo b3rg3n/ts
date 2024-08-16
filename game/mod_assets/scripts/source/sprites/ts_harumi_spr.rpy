@@ -1,8 +1,3 @@
-# TRUE STORY SPRITES
-# ALL RIGHTS RESERVED
-# ЕСЛИ БЛЯ ВОПРОСЫ ЕСТЬ - ПИШИ БЕРГЕНЧИКУ - ОН УКАЖЕТ АВТОРСТВО
-# TEAM ANARCHY (c)
-# SINCE 2024
 
 ###ХАР(ПТЬФУ)УМИ
 image harumi 1a = im.Composite((960, 960), (0, 0), ts_harumi_pt + "1.webp", (0, 0), ts_harumi_pt + "a.webp")

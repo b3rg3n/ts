@@ -1,4 +1,5 @@
 #DR BAG
+
 image momika 1 = ConditionSwitch(
 "persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_bug_pt + "1l.webp", (0, 0), ts_bug_pt + "1r.webp", (0, 0), ts_bug_pt + "a.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
 "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_bug_pt + "1l.webp", (0, 0), ts_bug_pt + "1r.webp", (0, 0), ts_bug_pt + "a.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),

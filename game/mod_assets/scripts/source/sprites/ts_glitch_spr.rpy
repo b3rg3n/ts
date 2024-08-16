@@ -1,5 +1,5 @@
-
 ####ГЛИТЧИ БЛЯ ИЗ ОРИГА
+
 ####МОНИКА
 image monika g1:
     ts_monika_pt + "g1.webp"

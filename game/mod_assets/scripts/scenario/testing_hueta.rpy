@@ -5,7 +5,7 @@ label testing_label_blya:
     show sayori 4z at t41
     show yuri 4f at t42
     show monika 1f at t43
-    show natsuki 2e at t44
+    show natsuki 1e at t44
     "day"
 
     $ persistent.sprite_time = "cloudly"

@@ -17,34 +17,7 @@ screen say(who, what):
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
-            imagebutton:
-                auto (ts_gui + "dialogue_box/big/glitch/hide_%s.webp")
-                xpos 1008
-                ypos 554
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action NullAction()
-            imagebutton:
-                auto (ts_gui + "dialogue_box/big/glitch/save_%s.webp")
-                xpos 1048
-                ypos 554
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action NullAction()
-            imagebutton:
-                auto (ts_gui + "dialogue_box/big/glitch/menu_%s.webp")
-                xpos 1087
-                ypos 554
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action NullAction()
-            imagebutton:
-                auto (ts_gui + "dialogue_box/big/glitch/load_%s.webp")
-                xpos 1125
-                ypos 554
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action NullAction()
+
             if not config.skipping:
                 imagebutton:
                     auto (ts_gui + "dialogue_box/big/glitch/forward_%s.webp")
@@ -64,14 +37,14 @@ screen say(who, what):
             text what:
                 id "what"
                 xpos 129
-                ypos 576
-                xmaximum 1010
+                ypos 586
+                xmaximum 1040
                 size 27
                 line_spacing 1
             if who:
                 text who:
                     id "who"
-                    xpos 129
+
                     ypos 562
                     size 27
                     line_spacing 1
@@ -86,34 +59,7 @@ screen say(who, what):
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action ShowMenu("help")
-            imagebutton:
-                auto (ts_gui + "dialogue_box/big/hide_%s.webp")
-                xpos 1008
-                ypos 554
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action HideInterface()
-            imagebutton:
-                auto (ts_gui + "dialogue_box/big/save_%s.webp")
-                xpos 1048
-                ypos 554
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action ShowMenu('save')
-            imagebutton:
-                auto (ts_gui + "dialogue_box/big/menu_%s.webp")
-                xpos 1087
-                ypos 554
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action ShowMenu('preferences')
-            imagebutton:
-                auto (ts_gui + "dialogue_box/big/load_%s.webp")
-                xpos 1125
-                ypos 554
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action ShowMenu('load')
+
             if not config.skipping:
                 imagebutton:
                     auto (ts_gui + "dialogue_box/big/forward_%s.webp")
@@ -133,14 +79,14 @@ screen say(who, what):
             text what:
                 id "what"
                 xpos 129
-                ypos 576
-                xmaximum 1010
+                ypos 586
+                xmaximum 1040
                 size 27
                 line_spacing 1
             if who:
                 text who:
                     id "who"
-                    xpos 129
+                    #xpos 129
                     ypos 562
                     size 27
                     line_spacing 1
@@ -156,34 +102,7 @@ screen say(who, what):
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
-            imagebutton:
-                auto (ts_gui + "dialogue_box/glitch/hide_%s.webp")
-                xpos 1008
-                ypos 584
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action NullAction()
-            imagebutton:
-                auto (ts_gui + "dialogue_box/glitch/save_%s.webp")
-                xpos 1048
-                ypos 584
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action NullAction()
-            imagebutton:
-                auto (ts_gui + "dialogue_box/glitch/menu_%s.webp")
-                xpos 1087
-                ypos 584
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action NullAction()
-            imagebutton:
-                auto (ts_gui + "dialogue_box/glitch/load_%s.webp")
-                xpos 1125
-                ypos 584
-                activate_sound button_error
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action NullAction()
+
             if not config.skipping:
                 imagebutton:
                     auto (ts_gui + "dialogue_box/glitch/forward_%s.webp")
@@ -203,14 +122,14 @@ screen say(who, what):
             text what:
                 id "what"
                 xpos 129
-                ypos 609
-                xmaximum 1010
+                ypos 619
+                xmaximum 1040
                 size 23
                 line_spacing 1
             if who:
                 text who:
                     id "who"
-                    xpos 129
+
                     ypos 595
                     size 23
                     line_spacing 1
@@ -225,34 +144,7 @@ screen say(who, what):
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action ShowMenu("help")
-            imagebutton:
-                auto (ts_gui + "dialogue_box/hide_%s.webp")
-                xpos 1008
-                ypos 584
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action HideInterface()
-            imagebutton:
-                auto (ts_gui + "dialogue_box/save_%s.webp")
-                xpos 1048
-                ypos 584
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action ShowMenu('save')
-            imagebutton:
-                auto (ts_gui + "dialogue_box/menu_%s.webp")
-                xpos 1087
-                ypos 584
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action ShowMenu('preferences')
-            imagebutton:
-                auto (ts_gui + "dialogue_box/load_%s.webp")
-                xpos 1125
-                ypos 584
-                activate_sound start_sound_suka
-                hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
-                action ShowMenu('load')
+
             if not config.skipping:
                 imagebutton:
                     auto (ts_gui + "dialogue_box/forward_%s.webp")
@@ -272,14 +164,14 @@ screen say(who, what):
             text what:
                 id "what"
                 xpos 129
-                ypos 609
-                xmaximum 1010
+                ypos 619
+                xmaximum 1040
                 size 23
                 line_spacing 1
             if who:
                 text who:
                     id "who"
-                    xpos 129
+
                     ypos 595
                     size 23
                     line_spacing 1

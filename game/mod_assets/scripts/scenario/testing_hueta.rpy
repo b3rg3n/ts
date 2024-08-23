@@ -7,7 +7,7 @@ label testing_label_blya:
         except AssertionError:
             pass
 
-    scene ts_club
+    scene white
     $ persistent.sprite_time = "day"
     show sayori 4z at t41
     show yuri 4f at t42
@@ -22,13 +22,6 @@ label testing_label_blya:
     $ persistent.sprite_time = "night"
     "night"
 
-    #$ persistent.sprite_time = "day"
-
-    #$ persistent.sprite_time = "clodly"
-
-    #$ persistent.sprite_time = "sunset"
-
-    #$ persistent.sprite_time = "night"
 
     $ persistent.uncolorize = "none"
 

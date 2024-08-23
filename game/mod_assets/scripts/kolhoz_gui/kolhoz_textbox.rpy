@@ -7,6 +7,9 @@ screen say(who, what):
 
     if (persistent.bazarbig):
         if (persistent.ingame_pizda):
+            add "ts_textbox_big_zalagal":
+                xpos -5
+                ypos 544
             imagebutton:
                 auto (ts_gui + "dialogue_box/big/glitch/backward_%s.webp")
                 xpos 25
@@ -14,9 +17,6 @@ screen say(who, what):
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
-            add "ts_textbox_big_zalagal":
-                xpos 116
-                ypos 544
             imagebutton:
                 auto (ts_gui + "dialogue_box/big/glitch/hide_%s.webp")
                 xpos 1008
@@ -76,6 +76,9 @@ screen say(who, what):
                     size 27
                     line_spacing 1
         else:
+            add ts_gui + "dialogue_box/big/dialogue_box_large.webp":
+                xpos -5
+                ypos 544
             imagebutton:
                 auto (ts_gui + "dialogue_box/big/backward_%s.webp")
                 xpos 25
@@ -83,9 +86,6 @@ screen say(who, what):
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action ShowMenu("help")
-            add ts_gui + "dialogue_box/big/dialogue_box_large.webp":
-                xpos 116
-                ypos 544
             imagebutton:
                 auto (ts_gui + "dialogue_box/big/hide_%s.webp")
                 xpos 1008
@@ -146,39 +146,39 @@ screen say(who, what):
                     line_spacing 1
     else:
         if (persistent.ingame_pizda):
+            add "ts_textbox_big_zalagal_min":
+                xpos -5
+                ypos 577
             imagebutton:
-                auto (ts_gui + "dialogue_box/backward_%s.webp")
+                auto (ts_gui + "dialogue_box/glitch/backward_%s.webp")
                 xpos 25
                 ypos 616
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
-            add ts_gui + "dialogue_box/dialogue_box_large_pizda.webp":
-                xpos 116
-                ypos 577
             imagebutton:
-                auto (ts_gui + "dialogue_box/hide_%s.webp")
+                auto (ts_gui + "dialogue_box/glitch/hide_%s.webp")
                 xpos 1008
                 ypos 584
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
             imagebutton:
-                auto (ts_gui + "dialogue_box/save_%s.webp")
+                auto (ts_gui + "dialogue_box/glitch/save_%s.webp")
                 xpos 1048
                 ypos 584
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
             imagebutton:
-                auto (ts_gui + "dialogue_box/menu_%s.webp")
+                auto (ts_gui + "dialogue_box/glitch/menu_%s.webp")
                 xpos 1087
                 ypos 584
                 activate_sound button_error
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action NullAction()
             imagebutton:
-                auto (ts_gui + "dialogue_box/load_%s.webp")
+                auto (ts_gui + "dialogue_box/glitch/load_%s.webp")
                 xpos 1125
                 ypos 584
                 activate_sound button_error
@@ -186,7 +186,7 @@ screen say(who, what):
                 action NullAction()
             if not config.skipping:
                 imagebutton:
-                    auto (ts_gui + "dialogue_box/forward_%s.webp")
+                    auto (ts_gui + "dialogue_box/glitch/forward_%s.webp")
                     xpos 1179
                     ypos 616
                     activate_sound button_error
@@ -194,7 +194,7 @@ screen say(who, what):
                     action NullAction()
             else:
                 imagebutton:
-                    auto (ts_gui + "dialogue_box/fast_forward_%s.webp")
+                    auto (ts_gui + "dialogue_box/glitch/fast_forward_%s.webp")
                     xpos 1179
                     ypos 616
                     activate_sound button_error
@@ -215,6 +215,9 @@ screen say(who, what):
                     size 23
                     line_spacing 1
         else:
+            add ts_gui + "dialogue_box/dialogue_box_large.webp":
+                xpos -5
+                ypos 577
             imagebutton:
                 auto (ts_gui + "dialogue_box/backward_%s.webp")
                 xpos 25
@@ -222,9 +225,6 @@ screen say(who, what):
                 activate_sound start_sound_suka
                 hovered Play("menu_zvuk", ts_sfx + "gui/button_menu.ogg")
                 action ShowMenu("help")
-            add ts_gui + "dialogue_box/dialogue_box_large.webp":
-                xpos 116
-                ypos 577
             imagebutton:
                 auto (ts_gui + "dialogue_box/hide_%s.webp")
                 xpos 1008

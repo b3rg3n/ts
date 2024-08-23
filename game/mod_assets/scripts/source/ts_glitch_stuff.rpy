@@ -177,3 +177,18 @@ init:
         ts_gui + "dialogue_box/big/glitch/pizda6.webp"
         0.03 # Задержка
         repeat # Не убирать
+
+    image ts_textbox_big_zalagal_min:
+        ts_gui + "dialogue_box/glitch/pizda1.webp"
+        0.03 # Задержка
+        ts_gui + "dialogue_box/glitch/pizda2.webp"
+        0.03 # Задержка
+        ts_gui + "dialogue_box/glitch/pizda3.webp"
+        0.03 # Задержка
+        ts_gui + "dialogue_box/glitch/pizda4.webp"
+        0.03 # Задержка
+        ts_gui + "dialogue_box/glitch/pizda5.webp"
+        0.03 # Задержка
+        ts_gui + "dialogue_box/glitch/pizda6.webp"
+        0.03 # Задержка
+        repeat # Не убирать

@@ -10,7 +10,7 @@ define config.version = "1.1"
 define ts_version = "22.08.2024"
 
 define config.name = _("True Story")
-define config.save_directory = "truestory"
+define config.save_directory = None
 define build.name = "truestory"
 define gui.show_name = False
 define config.has_sound = True

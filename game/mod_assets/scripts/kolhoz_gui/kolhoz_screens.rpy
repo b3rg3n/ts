@@ -257,9 +257,9 @@ init -501 screen main_menu:
             text translation_new["ts_menu_set15"] style "settings_link" size 35 text_align 0.5 yalign 0.995 xalign 0.990 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
     else:
         if _preferences.language == "english":
-            text "{size=+25}{font=[cit_font]}Mod build from [ts_version] | ver. [config.version]{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
+            text "{size=+25}{font=[cit_font]}Build [config.version] from [ts_version]{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
         else:
-            text "{size=+25}{font=[cit_font]}Сборка мода от [ts_version] | ver. [config.version]{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
+            text "{size=+25}{font=[cit_font]}Сборка [config.version] от [ts_version]{/font}{/size}" yalign 0.995 xalign 0.990 at ts_preferences_anim
             #RenPy ver. [renpy.version_only] |
 
     if persistent.badendmenuperedglitch:
@@ -559,7 +559,7 @@ init -501 screen choice(items):
     style_prefix "choice"
 
     modal True
-    frame background Frame('mod_assets/source/images/gui/ec_nightmare.webp', 0, 0) xfill True yalign 0.5 bottom_padding 33 top_padding 33:
+    frame background Frame('mod_assets/source/images/gui/choice_box.png', 0, 0) xfill True yalign 0.5 bottom_padding 33 top_padding 33:
         $ l = len(items)
         grid 1 l:
             xalign 0.5
@@ -570,7 +570,7 @@ init -501 screen choice(items):
                         action action
                         activate_sound start_sound_suka
                         hover_sound button_menu
-                        text caption font 'mod_assets/source/fonts/captureit.ttf' size 50 hover_size 55 at ts_preferences_anim
+                        text caption font 'mod_assets/source/fonts/captureit.ttf' size 40 hover_size 45 at ts_preferences_anim
                         xalign 0.5
 
 
@@ -1218,7 +1218,8 @@ init -502 screen help():
 
     style_prefix "history" tag menu
 
-    window background Frame(ts_gui + "choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.01 bottom_padding 0.1 top_padding 0.1:
+    #window background Frame(ts_gui + "choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.01 bottom_padding 0.1 top_padding 0.1:
+    window background ts_gui + "history_frame.png" xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.01 bottom_padding 0.1 top_padding 0.1:
 
         has viewport id "history":
             draggable True
@@ -1241,7 +1242,7 @@ init -502 screen help():
                         if "color" in h.who_args:
                             color h.who_args["color"]
 
-                textbutton h.what text_style "normal_day" text_size history_text_size action RollbackToIdentifier(h.rollback_identifier) xpos xposition xmaximum xmax text_hover_color "#40e138" at ts_preferences_anim
+                textbutton h.what text_style "normal_day" text_size history_text_size action RollbackToIdentifier(h.rollback_identifier) xpos xposition xmaximum xmax text_hover_color "#40e138" at ts_preferences_anim_lite
 
 
 init -2 style history_window is empty
@@ -1288,7 +1289,10 @@ init -502 screen nvl(dialogue, items=None):
 
     $ timeofday = persistent.timeofday
 
-    window background Frame(ts_gui + "choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.05 bottom_padding 0.2 top_padding 0.1:
+    #window background Frame(ts_gui + "choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.05 bottom_padding 0.2 top_padding 0.1:
+
+    window background ts_gui + "nvl_frame.png":
+
         style "nvl_window"
 
         has vbox

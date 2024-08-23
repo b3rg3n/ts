@@ -3,20 +3,28 @@
 # Since 2024
 
 transform ts_hidescreens_fast:
+    #xpos 0.0 ypos 0.0 alpha 1.0 subpixel True
+    #ease 0.1 xpos 1.0 ypos 0.5 alpha 0.0
     xpos 0.0 ypos 0.0 alpha 1.0 subpixel True
-    ease 0.1 xpos 1.0 ypos 0.5 alpha 0.0
+    ease 0.1 xpos 0.0 ypos 0.2 alpha 0.0
 
 transform ts_showscreens_fast:
-    xpos -1.0 ypos 0.5 alpha 0.0 subpixel True
-    ease 0.1 xpos 0.0 ypos 0.0 alpha 1.0
+    #xpos -1.0 ypos 0.5 alpha 0.0 subpixel True
+    #ease 0.1 xpos 0.0 ypos 0.0 alpha 1.0
+    ypos 0.2 alpha 0.0 subpixel True
+    ease 0.1 ypos 0.0 alpha 1.0
 
 transform ts_hidescreens:
+    #xpos 0.0 ypos 0.0 alpha 1.0 subpixel True
+    #ease 1.0 xpos 1.0 ypos 0.5 alpha 0.0
     xpos 0.0 ypos 0.0 alpha 1.0 subpixel True
-    ease 1.0 xpos 1.0 ypos 0.5 alpha 0.0
+    ease 1.0 xpos 0.0 ypos 0.2 alpha 0.0
 
 transform ts_showscreens:
-    xpos -1.0 ypos 0.5 alpha 0.0 subpixel True
-    ease 1.0 xpos 0.0 ypos 0.0 alpha 1.0
+    #xpos -1.0 ypos 0.5 alpha 0.0 subpixel True
+    #ease 1.0 xpos 0.0 ypos 0.0 alpha 1.0
+    ypos 0.2 alpha 0.0 subpixel True
+    ease 1.0 ypos 0.0 alpha 1.0
 
 transform ts_showscreens_nvl:
     ypos 0.2 alpha 0.0 subpixel True
@@ -230,6 +238,12 @@ transform ts_coridor_glitch:
 transform ts_preferences_anim: # АНИМАЦИЯ МЕНЮ НАСТРОЕК
     zoom 0.4 alpha 0
     ease 0.5 zoom 1.0 alpha 1
+    on hover:
+        easein 0.1 yoffset -2
+    on idle:
+        easein 0.1 yoffset 2
+
+transform ts_preferences_anim_lite: # АНИМАЦИЯ МЕНЮ НАСТРОЕК БЕЗ СПАВНА ИЗ ВОЗДУХА
     on hover:
         easein 0.1 yoffset -2
     on idle:

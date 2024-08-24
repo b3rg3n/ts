@@ -570,7 +570,7 @@ init -501 screen choice(items):
                         action action
                         activate_sound start_sound_suka
                         hover_sound button_menu
-                        text caption font 'mod_assets/source/fonts/captureit.ttf' size 40 hover_size 45 at ts_preferences_anim
+                        text caption font 'mod_assets/source/fonts/light.ttf' size 35 hover_size 40 at ts_preferences_anim
                         xalign 0.5
 
 

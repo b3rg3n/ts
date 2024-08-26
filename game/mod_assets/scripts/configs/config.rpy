@@ -9,6 +9,8 @@ define config.developer = True # РЕЖИМ РАЗРАБОТЧИКА БЕЗ СД
 define config.version = "1.1"
 define ts_version = "22.08.2024"
 
+define config.default_textshader = "zoom"
+
 define config.name = _("True Story")
 define config.save_directory = None
 define build.name = "truestory"

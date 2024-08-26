@@ -1291,7 +1291,7 @@ init -502 screen nvl(dialogue, items=None):
 
     #window background Frame(ts_gui + "choice_box.png",50,50) xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.05 bottom_padding 0.2 top_padding 0.1:
 
-    window background ts_gui + "nvl_frame.png":
+    window background ts_gui + "nvl_frame.png" xfill True yfill True yalign 0.01 left_padding 0.01 right_padding 0.03:
 
         style "nvl_window"
 

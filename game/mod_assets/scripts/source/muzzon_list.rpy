@@ -383,8 +383,8 @@ init python:
     )
 
     music_room.add(
-        name=_("i was only temporary (Super Slowed)"),
-        artist="my head is empty",
+        name=_("Main Theme"),
+        artist="Darkest Time",
         path=ts_muzzon + "menu_ost/ts_killyourself.ogg",
         art=ts_mr + "sheeptune.webp"
     )
@@ -411,10 +411,10 @@ init python:
     )
 
     music_room.add(
-        name=_("Snowfall"),
-        artist="Oneheart, reidenshi",
+        name=_("Theme for Overt"),
+        artist="Mikko Tarmia",
         path=ts_muzzon + "menu_ost/pered_bad_menu_ost.ogg",
-        art=ts_mr + "sn.webp"
+        art=ts_mr + "hueta.webp"
     )
 
     music_room.add(
@@ -764,10 +764,10 @@ init:
 ###ИЗ МЕНЮ
     $ music_list_ts["MND - Polar Day"] = ts_muzzon + "menu_ost/ts_pd.ogg"
     $ music_list_ts["John Murphy - Ghosts"] = ts_muzzon + "menu_ost/bad_menu_ost.ogg"
-    $ music_list_ts["my head is empty - i was only temporary (Super Slowed)"] = ts_muzzon + "menu_ost/ts_killyourself.ogg"
+    $ music_list_ts["Darkest Time - Main Theme"] = ts_muzzon + "menu_ost/ts_killyourself.ogg"
     $ music_list_ts["Marco Beltrami - Wales"] = ts_muzzon + "menu_ost/ts_finalded.ogg"
     $ music_list_ts["Akira Yamaoka - Not Tomorrow"] = ts_muzzon + "menu_ost/good_menu_ost.ogg"
-    $ music_list_ts["Oneheart, reidenshi - snowfall"] = ts_muzzon + "menu_ost/pered_bad_menu_ost.ogg"
+    $ music_list_ts["Mikko Tarmia - Theme for Overt"] = ts_muzzon + "menu_ost/pered_bad_menu_ost.ogg"
 ###ИЗ ЗАСТАВОК
     $ music_list_ts["Kenton Gilchrist - Gritty down tempo rock"] = ts_muzzon + "menu_ost/zastavka/ts_mosh.ogg"
     $ music_list_ts["Moe Era OST - Final Scene Soft"] = ts_muzzon + "menu_ost/zastavka/ts_soft.ogg"

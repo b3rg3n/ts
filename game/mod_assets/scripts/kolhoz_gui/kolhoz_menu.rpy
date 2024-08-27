@@ -24,12 +24,7 @@ label main_menu:
     if persistent.badendmenu == True: #МЕНЮШКА ПОСЛЕ БЕД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
         play music ts_killyourself fadein 5
         scene black
-        if persistent.badendbg == "1":
-            show ts_menu_move_anim_bad_end
-        elif persistent.badendbg == "2":
-            show ts_menu_move_anim_bad_end1
-        else:
-            show ts_menu_move_anim_bad_end2
+        show ts_menu_move_anim_bad_end
         show zatemnenie_light
 
     elif persistent.goodendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
@@ -38,12 +33,12 @@ label main_menu:
         show zatemnenie_light
         show layer master at VHS(0.83, 0.83, 0.77, 1.0)
 
-    elif persistent.peredgoodendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
+    elif persistent.peredgoodendmenu == True: #МЕНЮШКА ПЕРЕД ГУД КОНЦОВКОЙ(ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
         play music ts_gramatik fadein 5
         scene mon_piano_glitch_anim at ts_ustal_suka
         show zatemnenie_light
 
-    elif persistent.peredbadendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
+    elif persistent.peredbadendmenu == True: #МЕНЮШКА ПЕРЕД БЭД КОНЦОВКОЙ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
         play music pered_bad_menu_ost fadein 5
         scene mon_piano_another_glitch_anim at ts_ustal_suka
         show zatemnenie_light

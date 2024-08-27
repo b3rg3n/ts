@@ -19,7 +19,6 @@ init:
     default persistent.peredgoodendmenu = False
     default persistent.badendmenu = False
     default persistent.goodendmenu = False
-    default persistent.badendbg = "1"
 ### ПЕРЕМЕННЫЕ СКИПИНГА
     default persistent.firstmenushka = True
     default persistent.zastavka_skip = False

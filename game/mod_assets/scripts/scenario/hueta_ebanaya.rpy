@@ -105,16 +105,7 @@ label ts_start:
                         $ persistent.goodendmenu = False
                         $ persistent.peredbadendmenu = False
                         $ persistent.peredgoodendmenu = False
-                        menu:
-                            "1 фон":
-                                $ persistent.badendbg = "1"
-                                return
-                            "2 фон":
-                                $ persistent.badendbg = "2"
-                                return
-                            "3 фон":
-                                $ persistent.badendbg = "0"
-                                return
+                        return
                     "После хорошей концовки":
                         $ persistent.badendmenuperedglitch = False
                         $ persistent.badendmenuskipglitch = False

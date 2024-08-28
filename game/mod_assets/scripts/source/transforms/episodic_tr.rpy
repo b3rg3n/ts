@@ -4,6 +4,110 @@
 
 init:
 
+    transform ts_havchik_gotovka_end:
+        align (0.75, 0.5) zoom 2.5
+        ease 1 align (0.5, 0.5) zoom 1.0
+
+    transform ts_havchik_gotovka:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.75, 0.5) zoom 2.5
+
+    transform ts_havchik_search:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.6, 0.3) zoom 2.0
+        ease 3 align (0.9, 0.3) zoom 2.0
+
+    transform ts_havchik_search_end:
+        align (0.9, 0.3) zoom 2.0
+        ease 1 align (0.5, 0.5) zoom 1.0
+
+    transform ts_osmotr_loki_epta_sralnik:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.6, 0.3) zoom 2.0
+        ease 3 align (0.9, 0.1) zoom 2.0
+        ease 1 align (0.5, 0.5) zoom 1.0
+
+    transform ts_club_leave_anim:
+        align (0.5, 0.5) zoom 1.0
+        ease 1.0 align (0.1, 0.5) zoom 2.0
+
+    transform ts_clean_eblet:
+        align (0.5, 0.5) zoom 1.0
+        ease 2 align (0.5, 0.65) zoom 3.0
+        ease 0.25 align (0.55, 0.7) zoom 3.0
+        ease 0.25 align (0.5, 0.65) zoom 3.0
+        ease 1 align (0.5, 0.65) zoom 3.0
+        ease 0.2 align (0.5, 0.7) zoom 3.0
+        ease 0.2 align (0.5, 0.6) zoom 3.0
+        ease 0.2 align (0.5, 0.65) zoom 3.0
+        ease 1 align (0.5, 0.65) zoom 3.0
+        ease 0.25 align (0.55, 0.7) zoom 3.0
+        ease 0.25 align (0.5, 0.65) zoom 3.0
+        ease 2 align (0.5, 0.5) zoom 1.0
+
+    transform ts_vstavai_shashlik:
+        align (0.9, 0.8) zoom 3.0
+        ease 2 align (0.9, 0.8) zoom 3.0
+        ease 1.0 align (0.7, 0.7) zoom 3.0
+        ease 0.25 align (0.7, 0.75) zoom 3.0
+        ease 0.25 align (0.7, 0.7) zoom 3.0
+        ease 3 align (0.5, 0.5) zoom 1.0
+
+    transform ts_vstavai_shashlik1:
+        align (0.9, 0.8) zoom 3.0
+        ease 2 align (0.9, 0.8) zoom 3.0
+        ease 1.0 align (0.7, 0.7) zoom 3.0
+        ease 3 align (0.5, 0.5) zoom 1.0
+
+    transform ts_padenie_na_bed:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.9, 0.8) zoom 3.0
+        ease 0.25 align (0.9, 0.7) zoom 3.0
+        ease 0.25 align (0.9, 0.8) zoom 3.0
+        ease 0.25 align (0.9, 0.75) zoom 3.0
+        ease 0.25 align (0.9, 0.8) zoom 3.0
+
+    transform ts_club_vhod:
+        align (0.5, 0.5) zoom 1
+        ease 1.2 align (0.3, 0.4) zoom 1.5
+
+    transform ts_osmotr_loki_epta:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.1, 0.3) zoom 2.0
+        ease 6 align (0.9, 0.1) zoom 2.0
+        ease 1 align (0.5, 0.5) zoom 1.0
+
+    transform ts_obnimashki_center_finalle1:
+        align (0.5, 0.4) zoom 3.0
+        ease 1 align (0.5, 0.5) zoom 1.0
+
+    transform ts_obnimashki_center_finalle:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.5, 0.4) zoom 3.0
+
+    transform ts_osmotr_tipa_levocentr:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.2, 0.1) zoom 2.0
+        ease 3 align (0.2, 0.9) zoom 2.0
+        ease 1 align (0.2, 0.5) zoom 1.0
+
+    transform ts_osmotr_tipa_center:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.5, 0.1) zoom 2.0
+        ease 3 align (0.5, 0.9) zoom 2.0
+        ease 1 align (0.5, 0.5) zoom 1.0
+
+    transform ts_osmotr_tipa_sleva:
+        align (0.5, 0.5) zoom 1.0
+        ease 1.5 align (0.1, 0.5) zoom 2.0
+        ease 1.5 align (0.5, 0.5) zoom 1.0
+
+    transform ts_ebalo_k_osmotru:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.1, 0.3) zoom 2.0
+        ease 4 align (0.9, 0.3) zoom 2.0
+        ease 1 align (0.5, 0.5) zoom 1.0
+
     transform ts_obnimashki_good_finalle1:
         align (0.1, 0.4) zoom 3.0
         ease 1 align (0.5, 0.5) zoom 1.0

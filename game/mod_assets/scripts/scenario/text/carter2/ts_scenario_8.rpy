@@ -367,7 +367,7 @@ label ts_scenario_8:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     stop ambience fadeout 3
-    play sound pageflip
+    play sound door_open
     scene ts_corridor:
         align (0.5, 0.5) zoom 1
         ease 1.2 align (0.3, 0.4) zoom 1.5

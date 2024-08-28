@@ -2,12 +2,88 @@
 # by @b3rg3n
 # Since 2024
 init python:
+    import math
+
+    class TSGreenParticles(object):
+        
+        def __init__(self):
+            
+            self.sm = SpriteManager(update=self.update)
+            
+            self.glows = [ ]
+            self.rd = ts_anim + 'particles/green_part.webp'
+            
+            d = Transform(self.rd, zoom=0.25)
+            for i in range(0, 50):
+                self.add(d, renpy.random.randint(20, 40))
+            
+            d = Transform(self.rd, zoom=0.5)
+            for i in range(0, 50):
+                self.add(d, renpy.random.randint(45, 60))
+        
+        def add(self, d, speed):
+            s = self.sm.create(d)
+            
+            start = renpy.random.randint(0, 1080)
+            s.x = renpy.random.randint(0, 1920)
+            
+            self.glows.append((s, start, speed))
+        
+        def update(self, st):
+            for s, start, speed in self.glows:
+                s.y = (start - speed/2 * st) % 1080 - 20
+                s.x = s.x + math.sin(s.y/speed*2)
+            
+            return 0
+    renpy.image("ts_green_part", TSGreenParticles().sm)
+
+    class TSYellowParticles(object):
+        
+        def __init__(self):
+            
+            self.sm = SpriteManager(update=self.update)
+            
+            self.glows = [ ]
+            self.rd = ts_anim + 'particles/yellow_part.webp'
+            
+            d = Transform(self.rd, zoom=0.25)
+            for i in range(0, 50):
+                self.add(d, renpy.random.randint(20, 40))
+            
+            d = Transform(self.rd, zoom=0.5)
+            for i in range(0, 50):
+                self.add(d, renpy.random.randint(45, 60))
+        
+        def add(self, d, speed):
+            s = self.sm.create(d)
+            
+            start = renpy.random.randint(0, 1080)
+            s.x = renpy.random.randint(0, 1920)
+            
+            self.glows.append((s, start, speed))
+        
+        def update(self, st):
+            for s, start, speed in self.glows:
+                s.y = (start - speed/2 * st) % 1080 - 20
+                s.x = s.x + math.sin(s.y/speed*2)
+            
+            return 0
+    renpy.image("ts_yel_part", TSYellowParticles().sm)
+
     lep1 = SnowBlossom(ts_anim + 'particles/lep/lep_1.webp', start=3.0, count=20, border=50, xspeed=(50, 85), yspeed=(160, 215), fast=True)
     lep2 = SnowBlossom(ts_anim + 'particles/lep/lep_2.webp', count=20, yspeed=(120, 165), start=3.0, border=50, xspeed=(75, 125), fast=True)
     lep3 = SnowBlossom(ts_anim + 'particles/lep/lep_3.webp', start=3.0, count=20, border=50, xspeed=(50, 85), yspeed=(160, 215), fast=True)
     lep4 = SnowBlossom(ts_anim + 'particles/lep/lep_4.webp', count=20, yspeed=(120, 165), start=3.0, border=50, xspeed=(75, 125), fast=True)
     lep5 = SnowBlossom(ts_anim + 'particles/lep/lep_5.webp', count=20, yspeed=(120, 165), start=3.0, border=50, xspeed=(75, 125), fast=True)
     renpy.image('lepestki_krutyatsa', LiveComposite((1280, 720), (0, 0), lep1, (0, 0), lep2, (0, 0), lep3, (0, 0), lep4, (0, 0), lep5))
+
+    lep11 = SnowBlossom(ts_anim + 'particles/lep1/lep_1.webp', start=3.0, count=20, border=50, xspeed=(50, 85), yspeed=(160, 215), fast=True)
+    lep21 = SnowBlossom(ts_anim + 'particles/lep1/lep_2.webp', count=20, yspeed=(120, 165), start=3.0, border=50, xspeed=(75, 125), fast=True)
+    lep31 = SnowBlossom(ts_anim + 'particles/lep1/lep_3.webp', start=3.0, count=20, border=50, xspeed=(50, 85), yspeed=(160, 215), fast=True)
+    lep41 = SnowBlossom(ts_anim + 'particles/lep1/lep_4.webp', count=20, yspeed=(120, 165), start=3.0, border=50, xspeed=(75, 125), fast=True)
+    lep51 = SnowBlossom(ts_anim + 'particles/lep1/lep_5.webp', count=20, yspeed=(120, 165), start=3.0, border=50, xspeed=(75, 125), fast=True)
+    renpy.image('lepestki_autumn', LiveComposite((1280, 720), (0, 0), lep11, (0, 0), lep21, (0, 0), lep31, (0, 0), lep41, (0, 0), lep51))
+
 
 init:
 

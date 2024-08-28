@@ -104,6 +104,7 @@ label ts_scenario_1:
     show natsuki 1 at ln33:
         alpha 0.5
 
+    show layer master at ts_ebalo_k_osmotru
     show layer screens at ts_showscreens
 
     "Я общаюсь с ними, делюсь с ними сокровенным, задаю домашние задания на следующие встречи клуба..."
@@ -159,7 +160,7 @@ label ts_scenario_1:
 
     window hide
     play sound stuk
-    with vpunch
+    show layer master at ts_osmotr_tipa_sleva
     pause 1.5
     play sound door_open
 
@@ -419,6 +420,7 @@ label ts_scenario_1:
     "Подавленной стала выглядеть как я, так и Сайори."
     "Но если я уже почти всю жизнь так живу, и научилась справляться, то насчёт Сайори я не знаю."
     "Первые несколько дней она была неестественно счастливой и активной, но сегодня..."
+    show layer master at ts_osmotr_tipa_center
     "Сегодня она выглядит так, как будто ей сказали, что она завтра умрёт, и ничего с этим поделать нельзя."
     "Я не большой знаток психических заболеваний, но, судя по всему, у неё маниакально-депрессивное расстройство."
     m "Сайори?.."
@@ -467,6 +469,8 @@ label ts_scenario_1:
     show sayori 1w at h11
 
     play music ts_mk fadein 3
+
+    play sound door_open
 
     show sayori 1w at fleft with move
     hide sayori
@@ -620,18 +624,12 @@ label ts_scenario_1:
     
     m "Но я чувствую, что литература – это моё призвание. А если ты зашла в эту дверь и до сих пор от меня не сбежала – то это и твоё призвание тоже."
 
-    show layer screens at ts_hidescreens
-    " {w=1.0}{nw}"
-
-    play sound pageflip
-    scene black
-    with wipeleft_scene
-
-    show layer screens at ts_showscreens
+    show layer master at ts_obnimashki_center_finalle
 
     "Я обнимаю Сайори."
 
     m "И не нужно расстраиваться из-за того, что что-то не получается."
+    show blink
     m "Если что-то не получается, нужно просто лучше стараться."
     m "И если нас в клубе до сих пор двое, то это лишь значит, что мы просто недостаточно делаем для его развития."
     s "Но мы же...{nw}"
@@ -653,10 +651,10 @@ label ts_scenario_1:
     pause 1
     hide screen chp_text_22
 
-    play sound pageflip
-    scene ts_corridor
+    hide blink
     show sayori 1zc at t11
-    with wipeleft_scene
+    show unblink
+    show layer master at ts_obnimashki_center_finalle1
 
     show layer screens at ts_showscreens
 
@@ -739,7 +737,7 @@ label ts_scenario_1:
 
     play sound door_break
     stop music fadeout 4
-    show sayori 2m zorder 2 at t11
+    show sayori 2m zorder 2 at ln11
 
     s "Моника!" with vpunch
     extend " Моника!" with vpunch
@@ -850,8 +848,11 @@ label ts_scenario_1:
 
     play sound pageflip
     scene ts_street_late
+    #show lepestki_autumn
+    show ts_yel_part
     with wipeleft_scene
 
+    show layer master at ts_osmotr_loki_epta
     show layer screens at ts_showscreens
 
     "Ненавижу ходить в школу в октябре. А ноябрь-декабрь – это и вовсе пиши пропало."
@@ -1189,6 +1190,8 @@ label ts_scenario_1:
     ts_ft "Спокойной ночи, пап. Люблю тебя."
     ts_ft 1g "Я тоже тебя люблю."
 
+    play sound door_open
+
     show hiroto at cright with move
     hide hiroto
 
@@ -1200,6 +1203,10 @@ label ts_scenario_1:
     play sound pageflip
     scene ts_darkbed
     with wipeleft_scene
+
+    show layer master at ts_padenie_na_bed
+    pause 1
+    play sound ts_bed_squeak
 
     show layer screens at ts_showscreens
 

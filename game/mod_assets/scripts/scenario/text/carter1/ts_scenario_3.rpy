@@ -32,14 +32,23 @@ label ts_scenario_3:
     $ Chapter("Поиски. Нацуки")
     stop sound fadeout 7
     $ Chapter("Поиски. Нацуки")
-    play sound ts_alarm
+
     play music ts_gramatik fadein 2
+
+    play sound ts_alarm fadein 2
+
+    pause 2
+
     scene ts_bedroom
     show unblink
+    show layer master at ts_vstavai_shashlik
+    pause 3
+    play sound svet_on
+    pause 1.5
 
     show layer screens at ts_showscreens
 
-    "Часы показывают ровно семь утра."
+    #"Часы показывают ровно семь утра."
     stop sound fadeout 3
     "Новую неделю я начала... с незнания, что мне делать дальше."
     "Неделю назад к нам пришла новая девушка, Юри."
@@ -56,7 +65,7 @@ label ts_scenario_3:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    #show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 
     "Меня напугала её мания навредить себе."
     "Юри тогда сказала, что это потому что она чувствует себя ничтожеством и внутренний голос твердил ей перейти от слов к делу."
@@ -82,6 +91,19 @@ label ts_scenario_3:
     play sound pageflip
     scene ts_bathroom
     with wipeleft_scene
+
+    show layer master at ts_clean_eblet
+    pause 2
+    play sound open_water_sink
+    pause 0.5
+    stop sound
+    play sound_loop water_sink_stream
+    pause 1
+    play sound water_splash
+    pause 1.6
+    stop sound_loop
+    play sound close_water_sink
+    pause 0.5
 
     show layer screens at ts_showscreens
 
@@ -112,17 +134,18 @@ label ts_scenario_3:
     " {w=1.0}{nw}"
 
     show hiroto 1a at f11
-    show vignette zorder 10:
-        alpha 0.75
-        parallel:
-            0.36
-            alpha 0.75
-            repeat
-        parallel:
-            0.49
-            alpha 0.7
-            repeat
-    show layer master at heartbeat
+    #show vignette zorder 10:
+    #    alpha 0.75
+    #    parallel:
+    #        0.36
+    #        alpha 0.75
+    #        repeat
+    #    parallel:
+    #        0.49
+    #        alpha 0.7
+    #        repeat
+    #show layer master at heartbeat
+    show layer master at ts_osmotr_tipa_center
 
     nvl clear
 
@@ -144,7 +167,7 @@ label ts_scenario_3:
     hide hiroto
     show minami 1a at t21
     show monika 1a at t22
-
+    show layer master at ts_osmotr_tipa_levocentr
     nvlbazar "{font=[ts_nvl_font2]}Так вот, я как две капли воды похожа на свою маму."
     nvlbazar "{font=[ts_nvl_font2]}Не зря же существует... не знаю, поверье, поговорка, присказка..."
     nvlbazar "{font=[ts_nvl_font2]}В общем, «если хочешь посмотреть на девушку лет эдак через двадцать, посмотри сначала на её маму»."
@@ -384,9 +407,10 @@ label ts_scenario_3:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    play music ts_mdl
+    play music ts_mdl fadein 1
     play sound pageflip
     scene ts_street
+    show ts_green_part
     with wipeleft_scene
 
     show layer screens at ts_showscreens
@@ -448,6 +472,7 @@ label ts_scenario_3:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
+    play sound2 zvonok fadein 2
     play sound pageflip
     scene ts_class
     with wipeleft_scene
@@ -455,9 +480,11 @@ label ts_scenario_3:
     show layer screens at ts_showscreens
 
     "Наконец-то, перемена..."
+    stop sound2 fadeout 3
     "После второго урока перемена побольше, чтобы все успели перекусить, потому что день предстоит долгий..."
     "А если ещё и кому-то в клубы надо, то покушать просто необходимо."
     "Но сегодня мне что-то не хочется."
+    stop music fadeout 3
     "Даже с учётом того, что у меня ещё Литературный клуб, и приду я поздно, папа, по всей видимости, насыпал хлопьев от души, так что я до сих пор не проголодалась."
     "Поэтому вместо того, чтобы обедать, я просто выхожу в коридор и отдыхаю."
 
@@ -477,6 +504,9 @@ label ts_scenario_3:
     show himari 1a at t31
     show natsuki 1a at t32
     show elena a at t33
+    with linearblur
+
+    show layer master at ts_ebalo_k_osmotru
 
     "Передо мной стоят три девушки. По всей видимости, подружки."
     "Но что-то здесь не так... Совсем не так."
@@ -584,7 +614,9 @@ label ts_scenario_3:
     show himari 1y at t21
     show elena b2 at t22
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    #show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+    show layer screens at vpunch
 
     m "КУДА.{w=0.44} ОНА.{w=0.44} ПОБЕЖАЛА?"
     
@@ -681,6 +713,7 @@ label ts_scenario_3:
     show natsuki 1s at t11
 
     "Кажется, её подруги упоминали, что она постоянно доказывает, что манга – это литература?"
+    show layer master at ts_osmotr_tipa_center
     "Да она сама как будто со страниц манги сошла!"
     "Нет, я, конечно, ни одну мангу за всю жизнь так и не прочла, но мне кажется, что примерно так персонажи в манге и выглядят."
 
@@ -741,7 +774,7 @@ label ts_scenario_3:
     show overlay aw_memory_back_1 with dspr
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    #show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 
     "И куда только пропала вся моя уверенность и весь мой пафос?"
     "Куда делось «я хочу, чтобы в моём клубе не было слова 'неправильно'»?"
@@ -914,9 +947,11 @@ label ts_scenario_3:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    play sound pageflip
-    scene ts_club
-    with wipeleft_scene
+    play sound door_open
+    show layer master at ts_club_vhod
+    pause 1.2
+    scene ts_club at ts_bg_exodus
+    pause 0.5
 
     play music ts_mdl
 
@@ -935,7 +970,7 @@ label ts_scenario_3:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    #show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 
     "Меня напугала её мания навредить себе."
     "Юри тогда сказала, что это потому что она чувствует себя ничтожеством, и внутренний голос твердил ей перейти от слов к делу."
@@ -983,7 +1018,7 @@ label ts_scenario_3:
 
     if unluck2 == True:
 
-        show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+        #show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
     
         show layer screens at ts_showscreens
 
@@ -1429,32 +1464,48 @@ label ts_scenario_3:
     window hide
     scene ts_club
     show overlay aw_memory_back_1
-    show layer master at heartbeat
+    #show layer master at heartbeat
     with flash
 
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    #show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 
 
     show zatemnenie with dspr
 
+    show layer screens at ts_showscreens
+
     show screen chp_text_1
     pause
+    show layer screens at ts_hidescreens
+    pause 1
     hide screen chp_text_1
+    show layer screens at ts_showscreens
     show screen chp_text_2
     pause
+    show layer screens at ts_hidescreens
+    pause 1
     hide screen chp_text_2
+    show layer screens at ts_showscreens
     show screen chp_text_3
     pause
+    show layer screens at ts_hidescreens
+    pause 1
     hide screen chp_text_3
+    show layer screens at ts_showscreens
     show screen chp_text_4
     pause
+    show layer screens at ts_hidescreens
+    pause 1
     hide screen chp_text_4
 
     hide zatemnenie with dspr
 
     show sayori 1q at t31:
         alpha 0.5
+    with linearblurbolee
+
+    show layer screens at ts_showscreens
 
     "Сайори..."
 
@@ -1463,15 +1514,23 @@ label ts_scenario_3:
 
     "И её психическое расстройство..."
 
-    window hide
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
     show zatemnenie with dspr
+    show layer screens at ts_showscreens
     show screen chp_text_5
     pause
+    show layer screens at ts_hidescreens
+    pause 1
     hide screen chp_text_5
     hide zatemnenie with dspr
 
     show yuri 1c at t32:
         alpha 0.5
+    with linearblurbolee
+
+    show layer screens at ts_showscreens
 
     "Юри..."
 
@@ -1480,15 +1539,23 @@ label ts_scenario_3:
 
     "Её самовред и отсутствие друзей..."
 
-    window hide
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
     show zatemnenie with dspr
+    show layer screens at ts_showscreens
     show screen chp_text_5
     pause
+    show layer screens at ts_hidescreens
+    pause 1
     hide screen chp_text_5
     hide zatemnenie with dspr
 
     show natsuki 1z at t33:
         alpha 0.5
+    with linearblurbolee
+
+    show layer screens at ts_showscreens
 
     "Нацуки..."
 
@@ -1497,10 +1564,15 @@ label ts_scenario_3:
 
     "И её проблемы с друзьями, и особенно с отцом..."
 
-    window hide
+    show layer screens at ts_hidescreens
+    " {w=1.0}{nw}"
+
     show zatemnenie with dspr
+    show layer screens at ts_showscreens
     show screen chp_text_5
     pause
+    show layer screens at ts_hidescreens
+    pause 1
     hide screen chp_text_5
     hide zatemnenie with dspr
 
@@ -1508,14 +1580,20 @@ label ts_scenario_3:
 
     if persistent.cens_mode == True:
         show zatemnenie with dspr
+        show layer screens at ts_showscreens
         show screen chp_text_6
         pause
+        show layer screens at ts_hidescreens
+        pause 1
         hide screen chp_text_6
         hide zatemnenie with dspr
     else:
         show zatemnenie with dspr
+        show layer screens at ts_showscreens
         show screen chp_text_7
         pause
+        show layer screens at ts_hidescreens
+        pause 1
         hide screen chp_text_7
         hide zatemnenie with dspr
 
@@ -1554,10 +1632,14 @@ label ts_scenario_3:
     show natsuki 2k at t11
     with wipeleft_scene
 
+    $ persistent.sprite_time = "day"
+
     play sound pageflip
     scene ts_l5
     show natsuki 2k at t11
     with wipeleft_scene
+
+    $ persistent.sprite_time = "sunset"
 
     play sound pageflip
     scene ts_school_gate_evening
@@ -1584,6 +1666,7 @@ label ts_scenario_3:
     hide natsuki
 
     "На этом наши пути разошлись."
+    $ persistent.sprite_time = "sunset"
     "Как же я устала..."
 
     show layer screens at ts_hidescreens
@@ -1596,6 +1679,8 @@ label ts_scenario_3:
     play music ts_dreams
 
     show layer screens at ts_showscreens
+
+    $ persistent.sprite_time = "day"
 
     "Я так сильно запуталась в мыслях, что сама не поняла, как дошла до дома."
     "Мышечная память?"
@@ -1700,6 +1785,7 @@ label ts_scenario_3:
     show layer screens at ts_showscreens
 
     "Отбросив от себя все негативные мысли, я думаю о том, что папа хотел бы на ужин, но и чтобы я тоже покушала."
+    show layer master at ts_havchik_search
     "Та-а-ак, посмотрим..."
 
     play music audio.t4
@@ -1708,6 +1794,7 @@ label ts_scenario_3:
     "Рис мы только недавно ели, яичницу папа ел на завтрак, бакалея просто не подходит в качестве полноценного ужина."
     "Так что... на ужин у нас картошка."
     "Правда, есть один нюанс, что её нужно почистить, но на один раз на два человека чистить нужно не особо много."
+    show layer master at ts_havchik_search_end
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
@@ -1780,8 +1867,11 @@ label ts_scenario_3:
         "Потратив добрые десять минут на поиски этой сковородки, я в итоге её нашла."
         "Жарка и то займёт меньше, чем поиски."
         "Вот теперь я точно начинаю готовить кушанье."
+        show layer master at ts_havchik_gotovka
+        play ambience zharim_sashlik fadein 2
         "Я старательно размешиваю импровизированный ужин, а затем сажусь немного отдохнуть."
 
+        stop ambience fadeout 4
         stop music fadeout 4
 
         show layer screens at ts_hidescreens
@@ -1821,6 +1911,8 @@ label ts_scenario_3:
         scene ts_kitchen
         with wipeleft_scene
 
+        show layer master at ts_havchik_gotovka
+
         show layer screens at ts_showscreens
 
         "Однако вместо картошки от неё остались одни только угольки."
@@ -1850,6 +1942,8 @@ label ts_scenario_3:
 
         stop music fadeout 7
 
+        show layer master at ts_havchik_gotovka_end
+
         "Так или иначе, от ужина ничего не осталось."
         "Разочарованно вздохнув, я просто стала дожидаться папу, чтобы что-то приготовил уже он."
         "А я ведь с утра ничего не ела..."
@@ -1864,10 +1958,12 @@ label ts_scenario_3:
         pause 2
 
     else:
+        show layer master at ts_havchik_gotovka
         "Я решаю сварить картошку. Это хоть и чуть дольше, но зато более безопасно."
+        play ambience water_pizdec_kakaya_goryachaya fadein 2
         "Разрезав эти жалкие шесть картофелин на кубики, чтобы они быстрее сварились, я начинаю куховарить."
         "Вариться картошка будет всё равно дольше, чем жариться, так что я решаю немного вздремнуть."
-
+        stop ambience fadeout 2
         show layer screens at ts_hidescreens
         " {w=1.0}{nw}"
 
@@ -1900,6 +1996,10 @@ label ts_scenario_3:
         scene ts_kitchen
         with wipeleft_scene
 
+        play ambience water_pizdec_kakaya_goryachaya fadein 2
+
+        show layer master at ts_havchik_gotovka
+
         show layer screens at ts_showscreens
 
         stop music fadeout 7
@@ -1908,6 +2008,8 @@ label ts_scenario_3:
         "Как раз закипела, как раз приобрела достаточно мягкую консистенцию, чтобы её нельзя было называть сырой."
         "И поскольку гарнир уже, по сути, готов, теперь нужно будет придумать что-то для разнообразия, чтобы это можно было называть полноценным ужином."
         "Лёгкий овощной салатик из огурчиков и помидорчиков вполне для этого подойдёт."
+
+        stop ambience fadeout 3
 
         show layer screens at ts_hidescreens
         " {w=1.0}{nw}"
@@ -1939,8 +2041,16 @@ label ts_scenario_3:
     " {w=1.0}{nw}"
 
     play sound2 pageflip
+    scene black
+    with wipeleft_scene
+
+    pause 1
+
     scene ts_darkbed
-    with poplil_pacan
+    show unblink
+
+    show layer master at ts_vstavai_shashlik1
+    pause 3
 
     show layer screens at ts_showscreens
 
@@ -2028,10 +2138,14 @@ label ts_scenario_3:
         show hiroto 2q at cright with move
         hide hiroto
 
+        play ambience zharim_sashlik fadein 2
+
         ts_ft "Моника, тебе сколько яиц разбивать?"
         m "Трёх яиц хватит."
 
         "Папа молча кивает и отсчитывает ровно семь яиц."
+
+        stop ambience fadeout 3
 
         show layer screens at ts_hidescreens
         " {w=1.0}{nw}"
@@ -2132,6 +2246,8 @@ label ts_scenario_3:
     show hiroto at cright with move
     hide hiroto
 
+    show layer master at ts_havchik_gotovka
+
     "Кофе на ночь, кстати, он тоже принципиально не пьёт. Хотя с сердцем у него особых проблем нет."
     "Если они вообще есть..."
     "Поэтому на всякий случай мы рядом с кофе всегда храним пачку чёрного чая с бергамотом."
@@ -2139,11 +2255,17 @@ label ts_scenario_3:
     "Ну, а я от кофе не откажусь. Всё равно уже режим угробила. Как говорится, помирать, так с музыкой."
     "Я заливаю воды побольше и ставлю чайник кипятиться."
 
+    show layer master at ts_havchik_gotovka_end
+
     stop music fadeout 5
+
+    play ambience chainik_kipit fadein 2
 
     "Кстати, кажется, Юри говорила, что она принесёт свой чайный сервиз и свой любимый чай?"
     "Кто знает, может, один из видов чая Юри понравится папе даже больше пресловутого бергамота?"
     "Мысленно усмехнувшись, я жду, пока чайник закипит."
+
+    stop ambience fadeout 3
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
@@ -2151,13 +2273,14 @@ label ts_scenario_3:
     play sound2 pageflip
     scene ts_kitchen
     with wipeleft_scene
-
+    play sound chainik_svistit
     play music audio.t8
 
     show layer screens at ts_showscreens
 
     "Наконец, чайник закипел, и я завариваю чай со всё тем же бергамотом для папы и растворимый кофе для себя."
     "Ни я, ни папа не пьём чай или кофе с сахаром."
+    stop sound fadeout 2
     "Сахар у нас используется в основном для того, чтобы мама что-нибудь испекла."
     "И то, печёт мама у нас довольно редко."
     "А когда она уезжает, то мы и вовсе оставляем тот же объём сахара, что и до отъезда."
@@ -2349,7 +2472,9 @@ label ts_scenario_3:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    scene black with dspr
+    show layer master at ts_obnimashki_center_finalle
+    pause 1
+    show blink
 
     show layer screens at ts_showscreens
 
@@ -2358,9 +2483,10 @@ label ts_scenario_3:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    scene ts_living_room_telek_sudba_night
     show hiroto 1f at t11
-    with dspr
+    hide blink
+    show unblink
+    show layer master at ts_obnimashki_center_finalle1
 
     show layer screens at ts_showscreens
 
@@ -2397,6 +2523,10 @@ label ts_scenario_3:
 
     play music ts_rem
 
+    show layer master at ts_padenie_na_bed
+    pause 1
+    play sound ts_bed_squeak
+
     show layer screens at ts_showscreens
 
     "Я даже не заметила, как дошла до своей комнаты и разделась."
@@ -2411,6 +2541,7 @@ label ts_scenario_3:
     "«Правда, у этого человека тоже всё не совсем гладко...»"
     "«Но, во-первых, я с этой 'неровностью' тоже сталкивалась, так что примерно знаю, как надо действовать.»"
     "«А во-вторых...»"
+    show blink
     "Додумать я не успела."
     "Сонный мир победил. Морфей оказался сильней."
 

@@ -77,13 +77,20 @@ label ts_scenario_2:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    play sound ts_alarm
+    play sound ts_alarm fadein 2
+
+    pause 2
+
     scene ts_bedroom
     show unblink
+    show layer master at ts_vstavai_shashlik
+    pause 3
+    play sound svet_on
+    pause 1.5
 
     show layer screens at ts_showscreens
 
-    "Часы показывают ровно семь утра."
+    #"Часы показывают ровно семь утра."
     "До занятий ещё полтора часа, я успеваю умыться, почистить зубы, позавтракать, неспешным шагом дойти до школы, и всё равно у меня будет ещё время."
 
     show layer screens at ts_hidescreens
@@ -92,6 +99,19 @@ label ts_scenario_2:
     play sound pageflip
     scene ts_bathroom
     with wipeleft_scene
+
+    show layer master at ts_clean_eblet
+    pause 2
+    play sound open_water_sink
+    pause 0.5
+    stop sound
+    play sound_loop water_sink_stream
+    pause 1
+    play sound water_splash
+    pause 1.6
+    stop sound_loop
+    play sound close_water_sink
+    pause 0.5
 
     show layer screens at ts_showscreens
 
@@ -184,9 +204,10 @@ label ts_scenario_2:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    play music ts_mdl
+    play music ts_mdl fadein 2
     play sound pageflip
     scene ts_street
+    show ts_green_part
     with wipeleft_scene
 
     show layer screens at ts_showscreens
@@ -239,9 +260,11 @@ label ts_scenario_2:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    play sound pageflip
-    scene ts_club
-    with wipeleft_scene
+    play sound door_open
+    show layer master at ts_club_vhod
+    pause 1.2
+    scene ts_club at ts_bg_exodus
+    pause 0.5
 
     show layer screens at ts_showscreens
 
@@ -296,7 +319,7 @@ label ts_scenario_2:
     m "Я почти два месяца изо всех сил добивалась того, чтобы в этом клубе было больше народу, а они, видите ли, и знать не знают о таком клубе?!"
 
     scene ts_club
-    show sayori 1m at f11
+    show sayori 1m at i11
     pause 0.1
     show sayori 1u at t11
 
@@ -397,6 +420,7 @@ label ts_scenario_2:
     "Каждую минуту, каждую секунду, каждое мгновение..."
     "Я чувствую себя виноватой."
 
+    stop music fadeout 4
     show sayori 1f at s11
     m "Ну что, Сайори, давай-ка сегодня закончим пораньше. Сегодня мы вообще на литературу и разговоры не настроены."
     m "Давай уже завтра."
@@ -409,12 +433,13 @@ label ts_scenario_2:
 
     show yuri 1q at ln21
     show sayori 1n at t22
-    play music audio.okevryuri
+    play music audio.okevryuri fadein 2
 
     y "И-извините, а это Литературный клуб?"
 
     "Робко спросила Юри."
     "То, что я слышала из запыханных рассказов Сайори, я теперь увидела воочию."
+    show layer master at ts_osmotr_tipa_levocentr
     "Девушка. Ростом чуть выше меня. С волосами цвета лаванды примерно до пояса и такого же цвета глазами."
     "И, э-э-э... с «формами» пообъёмнее, чем мои."
     "Нет, конечно, мои «формы» тоже не из самых маленьких, но..."
@@ -508,16 +533,19 @@ label ts_scenario_2:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show layer screens at ts_showscreens
-
     show yuri 1 at t21
     show sayori 1 at t22
+    with linearblurbolee
+
+    show layer screens at ts_showscreens
+
+    stop music fadeout 3
 
     "Довольная собой и всем миром, я объявляю:"
 
     m "Итак, девочки, собрание окончено! Завтра жду вас обеих в это же время."
 
-    play music ts_rem
+    play music ts_rem fadein 2
 
     y 3n "О-обеих?"
     m "Ну... да? А что, что-то не так?"
@@ -587,10 +615,10 @@ label ts_scenario_2:
     " {w=1.0}{nw}"
 
     play sound pageflip
-    scene black with ed_night_dis
     scene ts_club
+    with wipeleft_scene
 
-    play music audio.t3
+    play music audio.t3 fadein 1
 
     show layer screens at ts_showscreens
 
@@ -619,6 +647,7 @@ label ts_scenario_2:
 
     show yuri 1e at t21
     show sayori 1 at t22
+    with linearblurbolee
 
     m "Итак, ребята!"
 
@@ -645,6 +674,7 @@ label ts_scenario_2:
     m "Что, что-то не так?.."
     y "Нет, просто..."
     y 4d "И-и-извините, я на минутку!.."
+    play sound door_break
     show yuri at cright with move
     hide yuri
     "Затем она пулей выносится из класса."
@@ -663,9 +693,10 @@ label ts_scenario_2:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    play sound pageflip
-    scene ts_corridor
-    with wipeleft_scene
+    show layer master at ts_club_leave_anim
+    pause 1
+    play sound door_break
+    scene ts_corridor at ts_razebal
 
     show layer screens at ts_showscreens
 
@@ -741,6 +772,8 @@ label ts_scenario_2:
 
 
     show layer screens at ts_showscreens
+
+    show layer master at ts_osmotr_loki_epta_sralnik
 
     "Как только я вхожу в уборную, я замечаю, что нахожусь здесь не одна."
 
@@ -1104,6 +1137,11 @@ label ts_scenario_2:
 
     "Я быстро выбегаю из уборной. Юри, не теряя времени, выбегает вслед за мной."
 
+    scene ts_corridor:
+        align (0.5, 0.5) zoom 1
+        ease 0.6 align (0.3, 0.4) zoom 2.0
+    pause 0.6
+
     play sound door_break
     stop music
     
@@ -1160,6 +1198,8 @@ label ts_scenario_2:
     "Хотя, может, это и не депрессия вовсе? Точно не знаю..."
     "Но для своего удобства я буду называть проблемы Сайори именно депрессией."
     "И пока она не предъявила новые обвинения, я быстро решаю перевести тему на саму Сайори."
+
+    stop music fadeout 3
 
     m "Ну а ты, Сайори, чем занималась, пока нас не было?"
     s 2l "Да я-э-э-э..."

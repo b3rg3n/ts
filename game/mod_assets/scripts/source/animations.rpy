@@ -1347,6 +1347,14 @@ init:
             ypos 0.5 alpha 0.0
             linear 0.99 ypos 1.0 alpha 1.0
 
+    image ts_host_split_animated: # pause 0.99
+        default subpixel True 
+        parallel:
+            Null(1280.0, 720.0)
+            'ts_hotel_split1'
+        parallel:
+            ypos 1.5 alpha 0.0
+            linear 0.99 ypos 1.0 alpha 1.0
 
     image ts_gost_split_animated: # pause 0.99
         default subpixel True 

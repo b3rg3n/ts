@@ -1,5 +1,7 @@
 label ts_scenario_4:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт I | Глава IV",details="Всё же хорошо?",large_image="aonecfour",start=time.time())
@@ -7,6 +9,8 @@ label ts_scenario_4:
             pass
 
     $ persistent.rpclabel = "4"
+    $ persistent.uncolorize = "none"
+    $ persistent.sprite_time = "day"
 
     $ persistent.carter2menu = False
     $ persistent.carter3menu = False
@@ -241,7 +245,7 @@ label ts_scenario_4:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show zatemnenie with dspr
+
 
     show layer screens at ts_null_transform
 
@@ -252,7 +256,7 @@ label ts_scenario_4:
             $ unluck4 = True
             $ unluck_ball += 1
 
-    hide zatemnenie with dspr
+
 
     show layer screens at ts_showscreens
 
@@ -263,13 +267,12 @@ label ts_scenario_4:
         show layer screens at ts_hidescreens
         " {w=1.0}{nw}"
 
-        show zatemnenie with dspr
 
         show layer screens at ts_null_transform
 
         menu:
             "Посмотреть телевизор":
-                hide zatemnenie with dspr
+
                 $ unluck4_telek = True
 
                 show layer screens at ts_showscreens
@@ -306,7 +309,7 @@ label ts_scenario_4:
                 "Кстати, который час?"
 
             "Почитать":
-                hide zatemnenie with dspr
+
                 $ unluck4_reading = True
 
                 show layer screens at ts_showscreens
@@ -343,7 +346,7 @@ label ts_scenario_4:
                 "Когда я прочла уже почти сто страниц, я наконец-то решаю посмотреть на время."
 
             "Покашеварить":
-                hide zatemnenie with dspr
+
                 $ unluck4_cooking = True
 
                 show layer screens at ts_showscreens
@@ -1709,6 +1712,8 @@ label ts_scenario_4:
 
 
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+
+    $ persistent.sprite_time = "night"
 
     "Мне снились... Странные сны. И страшные сны тоже."
     "Неужели... Неужели это я с ними сделала?"

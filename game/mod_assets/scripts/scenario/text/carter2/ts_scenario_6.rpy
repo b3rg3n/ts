@@ -1,5 +1,7 @@
 label ts_scenario_6:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт II | Глава II",details="Новые начинания",large_image="atwoctwo",start=time.time())
@@ -7,7 +9,8 @@ label ts_scenario_6:
             pass
 
     $ persistent.rpclabel = "6"
-
+    $ persistent.uncolorize = "none"
+    $ persistent.sprite_time = "day"
     $ persistent.carter2menu = True
     $ persistent.carter3menu = False
     $ persistent.badendmenuperedglitch = False
@@ -1223,12 +1226,16 @@ label ts_scenario_6:
 
     show layer screens at ts_showscreens
 
+    $ persistent.sprite_time = "day"
+
     em "Моника..."
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     play music ts_iwtp fadein 3
+
+    $ persistent.sprite_time = "sunset"
 
     play sound pageflip
     scene ts_street_late
@@ -1743,6 +1750,7 @@ label ts_scenario_6:
     show hiroto 1e at t31
 
     m "Хорошо."
+    $ persistent.sprite_time = "sunset"
     "Папа остался разговаривать с мамой. Я же после этих слов направилась к себе."
 
     show layer screens at ts_hidescreens
@@ -1751,6 +1759,8 @@ label ts_scenario_6:
     play sound pageflip
     scene ts_gost_sunset
     with wipeleft_scene
+
+    $ persistent.sprite_time = "night"
 
     play music ts_faceless fadein 3
 

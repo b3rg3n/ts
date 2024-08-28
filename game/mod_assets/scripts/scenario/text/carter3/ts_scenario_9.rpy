@@ -1,5 +1,7 @@
 label ts_scenario_9:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт III | Глава I",details="С возвращением... Снова?",large_image="atwocfour",start=time.time())
@@ -7,7 +9,7 @@ label ts_scenario_9:
             pass
 
     $ persistent.rpclabel = "9"
-
+    $ persistent.sprite_time = "day"
     $ persistent.carter2menu = False
     $ persistent.carter3menu = True
     $ persistent.badendmenuperedglitch = False

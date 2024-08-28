@@ -1,5 +1,7 @@
 label ts_bad_ending_blya:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Эпилог",details="В бездну",large_image="aonecthree",start=time.time())

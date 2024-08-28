@@ -1,5 +1,7 @@
 label ts_scenario_10:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт III | Глава II",details="Спуск в безумие",large_image="atwocthree",start=time.time())
@@ -1218,6 +1220,7 @@ label ts_scenario_10:
     em 3b "Говорю же, он—{w=0.2}{nw}"
     show monika 3a at t11
     m "Он такой же, как и всегда, а у меня просто воображение разыгралось, знаю, знаю, не гуди."
+    $ persistent.sprite_time = "day"
     m "Ладно уж, домой так домой."
 
     play music ts_first_day_of_sun
@@ -1246,6 +1249,8 @@ label ts_scenario_10:
     play sound pageflip
     scene ts_street_late
     with wipeleft_scene
+
+    $ persistent.sprite_time = "sunset"
 
     show layer screens at ts_showscreens
     "Несмотря на всю мою напускную уверенность, до дома я всё равно шла в час по чайной ложке."
@@ -1297,6 +1302,7 @@ label ts_scenario_10:
     show layer screens at ts_showscreens
 
     "Ну, с Богом..."
+    $ persistent.sprite_time = "sunset"
     "Я медленно открываю дверь..."
 
     show layer screens at ts_hidescreens
@@ -1320,6 +1326,7 @@ label ts_scenario_10:
 
 
     show layer screens at ts_showscreens
+    $ persistent.sprite_time = "day"
     m "Папа? Я дома..."
     $ persistent.ingame_pizda = False
     "И как только я оборачиваюсь, я замечаю, что папа тоже только пришёл."
@@ -1742,6 +1749,7 @@ label ts_scenario_10:
     show hiroto 1e at t11
     "Как будто от него какая-то практическая польза будет..."
     show hiroto 1c at f11
+    $ persistent.sprite_time = "day"
     ts_ft "Так вот, [gtextsuka]..."
 
     show layer screens at ts_hidescreens
@@ -1754,6 +1762,7 @@ label ts_scenario_10:
     show layer screens at ts_showscreens
 
     play music ts_ios fadein 2
+    $ persistent.sprite_time = "night"
     "Как же я устала..."
     "Вроде время ещё раннее, даже для меня, но этот день выдался настолько насыщенным, что у меня уже просто нет никаких сил, чтобы делать хоть что-то."
     "У меня есть силы разве что на то, чтобы дойти до кровати, раздеться и увалиться намертво."

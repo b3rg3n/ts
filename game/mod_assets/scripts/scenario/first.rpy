@@ -60,6 +60,7 @@ label start:
     else:
         play music ts_wnuk fadein 2
         scene ts_razrab_menu
+        show zatemnenie_light
         with dissolve2
         show screen ts_start_shit_blya
         $ renpy.pause(3, hard=True)
@@ -104,6 +105,10 @@ label ts_intro_settings3:
             jump ts_intro_settings4
 
 label ts_intro_settings4:
+    show screen ts_control_help_suka
+    $ renpy.pause(hard=True)
+    hide screen ts_control_help_suka with dspr
+    pause 1
     show screen ts_set_end_shit_blya
     $ renpy.pause(3, hard=True)
     stop music fadeout 3

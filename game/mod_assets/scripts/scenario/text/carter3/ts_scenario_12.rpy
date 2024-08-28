@@ -1,5 +1,7 @@
 label ts_scenario_12:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт III | Глава III",details="Порочный круг",large_image="aonecthree",start=time.time())
@@ -7,7 +9,7 @@ label ts_scenario_12:
             pass
 
     $ persistent.rpclabel = "10"
-
+    $ persistent.sprite_time = "day"
     $ persistent.carter2menu = False
     $ persistent.carter3menu = True
     $ persistent.badendmenuperedglitch = False
@@ -725,10 +727,12 @@ label ts_scenario_12:
     show monika 2bp at f41
     em "Ладно, наверное, ты тоже иногда бываешь права..."
     show monika 2bm at t41
+    $ persistent.sprite_time = "day"
     m "Ну вот видишь, хорошо то, что хорошо заканчивается."
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
+    $ persistent.sprite_time = "cloudly"
     play ambience rain_int fadein 3
     play sound chasiki fadein 1
     scene ts_club_rain_shader
@@ -739,7 +743,7 @@ label ts_scenario_12:
     with ts_lap
     stop sound fadeout 1
     show layer screens at ts_showscreens
-    
+
     play sound nfy
     $ renpy.notify("Цикл третий")
 
@@ -916,13 +920,15 @@ label ts_scenario_12:
     m "А я, пожалуй, пойду. Время уже позднее, а мы и так уже засиделись."
     m "И да, насчёт этого..."
     "Я показываю на уже начавшую разлагаться Юри."
+    $ persistent.sprite_time = "cloudly"
     m "Ах да, насчёт этого...{fast} Тоже не переживай. Всё восстановится.{w=2} Во всех смыслах этого слова."
-
+    stop ambience fadeout 3
     play music ts_cr_cof
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
+    $ persistent.sprite_time = "day"
     play sound chasiki fadein 1
     scene ts_hotel_rec
     with ts_lap

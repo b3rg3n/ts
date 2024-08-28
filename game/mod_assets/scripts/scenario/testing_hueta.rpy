@@ -7,6 +7,9 @@ label testing_label_blya:
         except AssertionError:
             pass
 
+    scene black
+
+
     scene white
     $ persistent.sprite_time = "day"
     show sayori 4z at t41

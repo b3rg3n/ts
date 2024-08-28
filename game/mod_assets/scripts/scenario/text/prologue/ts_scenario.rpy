@@ -1,5 +1,7 @@
 label ts_scenario_0:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт I | Пролог",details="Предыстория",large_image="prologue",start=time.time())
@@ -8,6 +10,7 @@ label ts_scenario_0:
 
     $ persistent.rpclabel = "0"
 
+    $ persistent.sprite_time = "day"
     $ persistent.carter2menu = False
     $ persistent.carter3menu = False
     $ persistent.badendmenuperedglitch = False

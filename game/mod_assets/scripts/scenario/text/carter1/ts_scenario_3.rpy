@@ -1,5 +1,7 @@
 label ts_scenario_3:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт I | Глава III",details="Поиски. Нацуки",large_image="aonecthree",start=time.time())
@@ -7,6 +9,8 @@ label ts_scenario_3:
             pass
 
     $ persistent.rpclabel = "3"
+    $ persistent.uncolorize = "none"
+    $ persistent.sprite_time = "day"
 
     $ persistent.carter2menu = False
     $ persistent.carter3menu = False
@@ -259,14 +263,14 @@ label ts_scenario_3:
     y 3s "Скажи мне."
     y "Ты принимаешь моё признание?"
     m "Э-э-э..."
-    show zatemnenie with dspr
+
     menu:
         "...Да?":
             pass
         "...Нет?":
             pass
 
-    hide zatemnenie with dspr
+
     stop music
     stop ambience
     scene ts_club
@@ -968,14 +972,14 @@ label ts_scenario_3:
     "..."
     "Хотя нет, ничерта мне легче не стало! У нас что, один туалет на всю школу?!"
 
-    show zatemnenie with dspr
+
     menu:
         "Искать дальше":
             $ unluck2 = True
             $ unluck_ball += 1
         "Успокоиться и вернуться":
             pass
-    hide zatemnenie with dspr
+
 
     if unluck2 == True:
 
@@ -1720,7 +1724,7 @@ label ts_scenario_3:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show zatemnenie with dspr
+
 
     show layer screens at ts_null_transform
 
@@ -1731,7 +1735,7 @@ label ts_scenario_3:
         "Сварить":
             pass
 
-    hide zatemnenie with dspr
+
 
     show layer screens at ts_showscreens
 
@@ -2268,6 +2272,8 @@ label ts_scenario_3:
 
     show hiroto 1d at h11
 
+    $ persistent.sprite_time = "day"
+
     m "Тогда я с тобой пойду!"
 
     show layer screens at ts_hidescreens
@@ -2277,6 +2283,8 @@ label ts_scenario_3:
     play sound pageflip
     scene ts_living_room_telek_sudba_night
     with wipeleft_scene
+
+
 
     play music audio.t9
 
@@ -2298,6 +2306,7 @@ label ts_scenario_3:
 
     n 12f "Но... Папа считает, что я, хоть и уже слишком взрослая для чтения манги... ещё недостаточно взрослая и самостоятельная, чтобы самой вправе что-то решать."
     n 12c "И ведь с ним не поспоришь даже! Он же папа, он же взрослый, умный, а я что?"
+    $ persistent.sprite_time = "day"
     n 12f "Всего лишь маленькая девочка..."
 
     play sound fb
@@ -2306,6 +2315,8 @@ label ts_scenario_3:
     with flash
 
     show layer screens at ts_showscreens
+
+    $ persistent.sprite_time = "cloudly"
 
     "..."
     "Нет... У меня с моим отцом всё будет иначе!"

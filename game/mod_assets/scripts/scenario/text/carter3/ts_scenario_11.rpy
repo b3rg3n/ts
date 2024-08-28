@@ -1,9 +1,9 @@
-#НАЧАЛО СРЕДЫ ЕБАТЬ КОЛОТИТЬ
-#медленный рассолв на дневную спальню Моники (вся среда ещё с первым ступенем серости, я напомню)
 label ts_scenario_11:
 
-    $ persistent.rpclabel = "9"
+    $ renpy.block_rollback()
 
+    $ persistent.rpclabel = "9"
+    $ persistent.sprite_time = "day"
     $ persistent.carter2menu = False
     $ persistent.carter3menu = True
     $ persistent.badendmenuperedglitch = False
@@ -1239,12 +1239,10 @@ label poemresponsesuka_loop:
         $ menutextsuka = "Кому я покажу стихотворение следующей?"
 
 
-    show zatemnenie_light with dspr
     menu:
         "[menutextsuka]"
             
         "Сайори" if not c11sayourichecknul:
-            hide zatemnenie_light with dspr
             if not c11poemsreadfirst:
                 "Начну-ка я лучше с Сайори."
                 $ c11poemsreadfirst = True
@@ -2268,7 +2266,7 @@ label poemend_abrupt:
     pause
     hide screen dialog
     play sound winerrorsound
-    show screen confirm("truestory.exe\n\nПерезапускаем?", yes_action=Return(), no_action=Quit())
+    show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
     $ renpy.block_rollback()
     pause
     hide screen dialog
@@ -2508,7 +2506,7 @@ label poemend_normal:
     pause
     hide screen dialog
     play sound winerrorsound
-    show screen confirm("truestory.exe\n\nПерезапускаем?", yes_action=Return(), no_action=Quit())
+    show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
     $ renpy.block_rollback()
     pause
     hide screen dialog

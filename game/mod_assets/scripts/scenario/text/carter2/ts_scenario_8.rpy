@@ -1,5 +1,7 @@
 label ts_scenario_8:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт II | Глава IV",details="Затишье перед бурей",large_image="atwocfour",start=time.time())
@@ -7,7 +9,8 @@ label ts_scenario_8:
             pass
 
     $ persistent.rpclabel = "8"
-
+    $ persistent.uncolorize = "none"
+    $ persistent.sprite_time = "day"
     $ persistent.carter2menu = True
     $ persistent.carter3menu = False
     $ persistent.badendmenuperedglitch = False
@@ -377,6 +380,8 @@ label ts_scenario_8:
     "Сегодня на уроке у нас новая тема: комбинаторика."
     "И вот из всей школьной программы лишь комбинаторику я понимаю не очень хорошо."
     "Впрочем, это же новая тема, мы все в равных условиях..."
+
+    $ persistent.uncolorize = "none"
     "Что же, начнём этот день!"
 
     show layer screens at ts_hidescreens
@@ -384,6 +389,7 @@ label ts_scenario_8:
 
     show blink
     pause 2
+
     $ persistent.uncolorize = "lite"
     hide blink
     show unblink
@@ -585,6 +591,7 @@ label ts_scenario_8:
         em "Ой, ну и пожалуйста..."
     "Бр-р-р..."
     "Ладно, дождь дождём, но у меня же ещё и клуб впереди..."
+    $ persistent.sprite_time = "day"
     "Осталось только надеяться, что Сайори уговорила Юри и Нацуки..."
 
     stop music fadeout 3
@@ -609,6 +616,8 @@ label ts_scenario_8:
     show unblink
 
     show layer screens at ts_showscreens
+
+    $ persistent.sprite_time = "cloudly"
 
     "Я снова пришла в клуб первой."
 
@@ -758,8 +767,6 @@ label poemresponses2suka:
     else:
         $ menutext = "Кому я покажу стихотворение следующей?"
 
-    show zatemnenie with dspr
-
     play music audio.t5 fadein 2
 
     menu:
@@ -768,7 +775,7 @@ label poemresponses2suka:
         "Сайори" if not ts_carter8_poem_sayori:
             if not ts_carter8_poem_yuri_first or ts_carter8_poem_natsuki_first:
                 $ ts_carter8_poem_sayori_first = True
-            hide zatemnenie with dspr
+
             $ ts_carter8_poem_sayori = True
             if not ts_carter8_poem_firstread:
                 show layer screens at ts_showscreens
@@ -1001,7 +1008,7 @@ label poemresponses2suka:
         "Нацуки" if not ts_carter8_poem_natsuki:
             if not ts_carter8_poem_yuri_first or ts_carter8_poem_sayori_first:
                 $ ts_carter8_poem_natsuki_first = True
-            hide zatemnenie with dspr
+
             $ ts_carter8_poem_natsuki = True
             if not ts_carter8_poem_firstread:
                 show layer screens at ts_showscreens
@@ -1228,7 +1235,7 @@ label poemresponses2suka:
         "Юри" if not ts_carter8_poem_yuri:
             if not ts_carter8_poem_natsuki_first or ts_carter8_poem_sayori_first:
                 $ ts_carter8_poem_yuri_first = True
-            hide zatemnenie with dspr
+
             $ ts_carter8_poem_yuri = True
             if not ts_carter8_poem_firstread:
                 show layer screens at ts_showscreens
@@ -1907,13 +1914,14 @@ label ts_carter8_posle_poems_suka:
     with wipeleft_scene
 
     show layer screens at ts_showscreens
-
     "Фух."
     if unluck6:
         "Понемногу я уже начинаю привыкать к забегам на средние дистанции, и пока я бежала до дома, не сильно и устала."
+        $ persistent.sprite_time = "cloudly"
         "Правда, как только я подхожу к дому и вхожу в него, то буквально вваливаюсь из последних сил."
     else:
         "Видимо, желание не намокнуть было сильнее усталости, поэтому пока я бежала до дома, не сильно и устала."
+        $ persistent.sprite_time = "cloudly"
         "Правда, к моменту, когда до дома оставалось вот буквально пара шагов, адреналин кончился, и я буквально вваливаюсь из последних сил."
 
     stop ambience fadeout 1
@@ -1940,6 +1948,8 @@ label ts_carter8_posle_poems_suka:
     with wipeleft_scene
 
     show layer screens at ts_showscreens
+
+    $ persistent.sprite_time = "day"
 
     m "Папа!.. Я пришла..."
     "Поскольку у папы ненормированный рабочий день, но нормированная 40-часовая рабочая неделя, в пятницу папа уходит с работы пораньше где-то на полтора часа."

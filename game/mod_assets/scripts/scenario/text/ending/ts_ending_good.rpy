@@ -1,5 +1,7 @@
 label ts_good_ending_blya:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Эпилог",details="Всего лишь сон...",large_image="aonectwo",start=time.time())
@@ -39,7 +41,7 @@ label ts_good_ending_blya:
     with Dissolve(4)
     show layer screens at ts_showscreens
 
-    $ persistent.spritetime = "day"
+    $ persistent.sprite_time = "day"
     "На этот раз я просыпаюсь... не в спальне Сайори, а у себя."
     "Это что получается, я... выбралась?"
     "Я выбралась... Я выбралась! У меня получилось!"

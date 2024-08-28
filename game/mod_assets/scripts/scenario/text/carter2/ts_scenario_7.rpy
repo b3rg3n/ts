@@ -1,5 +1,7 @@
 label ts_scenario_7:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт II | Глава III",details="Проба пера",large_image="atwocthree",start=time.time())
@@ -7,7 +9,8 @@ label ts_scenario_7:
             pass
 
     $ persistent.rpclabel = "7"
-
+    $ persistent.uncolorize = "none"
+    $ persistent.sprite_time = "day"
     $ persistent.carter2menu = True
     $ persistent.carter3menu = False
     $ persistent.badendmenuperedglitch = False
@@ -73,13 +76,11 @@ label ts_scenario_7:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show zatemnenie with dspr
 
     show layer screens at ts_null_transform
 
     menu:
         "Лечь спать дальше":
-            hide zatemnenie with dspr
             show layer screens at ts_showscreens
             $ unluck6 = True
             $ unluck_ball += 1
@@ -337,8 +338,6 @@ label ts_scenario_7:
             teacher "Что, даже не скажете ничего? Ни «извините за опоздание», вообще ничего?"
             m "Извините... за опоздание..."
         "Встать пораньше":
-            hide zatemnenie with dspr
-
             show layer screens at ts_showscreens
 
             "Из карикатурных ангела и демона на плечах победил первый."
@@ -1404,14 +1403,12 @@ label cartersevenpoemsblya:
     else:
         $ carterseven_vibor_text_suka = "Кому я покажу стихотворение следующей?"
 
-    show zatemnenie_light with dspr
     menu:
         "[carterseven_vibor_text_suka]"
         "Сайори" if not ts_s_carterseven_readpoem:
             if not ts_y_first_carterseven_readpoem or ts_n_first_carterseven_readpoem:
                 $ ts_s_first_carterseven_readpoem = True
             play music audio.okevrsay
-            hide zatemnenie_light with dspr
             $ ts_s_carterseven_readpoem = True
             if not ts_first_carterseven_readpoem:
                 show layer screens at ts_showscreens
@@ -1579,7 +1576,7 @@ label cartersevenpoemsblya:
         "Нацуки" if not ts_n_carterseven_readpoem:
             if not ts_y_first_carterseven_readpoem or ts_s_first_carterseven_readpoem:
                 $ ts_n_first_carterseven_readpoem = True
-            hide zatemnenie_light with dspr
+
             play music audio.okevrnat
             $ ts_n_carterseven_readpoem = True
             if not ts_first_carterseven_readpoem:
@@ -1776,7 +1773,7 @@ label cartersevenpoemsblya:
         "Юри" if not ts_y_carterseven_readpoem:
             if not ts_n_first_carterseven_readpoem or ts_s_first_carterseven_readpoem:
                 $ ts_y_first_carterseven_readpoem = True
-            hide zatemnenie_light with dspr
+
             play music audio.okevryuri
             $ ts_y_carterseven_readpoem = True
             if not ts_first_carterseven_readpoem:
@@ -2111,7 +2108,9 @@ label ts_carterseven_poem_finally:
     show layer screens at ts_showscreens
 
     "Наконец-то... домой..."
+    $ persistent.sprite_time = "day"
     "Наконец-то тишина..."
+    $ persistent.sprite_time = "sunset"
     play music ts_ar
     show monika 2l at aki_spawn
     em "И не мечтай!"
@@ -2250,6 +2249,7 @@ label ts_carterseven_poem_finally:
     show hiroto 1t at f11
     ts_ft "Да-да, ты иди, я догоню..."
     show hiroto 1s at t11
+    $ persistent.sprite_time = "sunset"
     "Я разочарованно вздыхаю и иду обратно на кухню."
 
     show layer screens at ts_hidescreens
@@ -2258,6 +2258,7 @@ label ts_carterseven_poem_finally:
     play sound pageflip
     scene ts_kitchen
     with wipeleft_scene
+    $ persistent.sprite_time = "day"
 
     show layer screens at ts_showscreens
 
@@ -2383,6 +2384,10 @@ label ts_carterseven_poem_finally:
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
+
+    show monika at aki_uhod
+
+    pause 1
 
     play sound svet_on
     scene ts_darkbed

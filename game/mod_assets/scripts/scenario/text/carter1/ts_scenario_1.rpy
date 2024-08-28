@@ -1,5 +1,7 @@
 label ts_scenario_1:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт I | Глава I",details="Поиски. Сайори",large_image="aonecone",start=time.time())
@@ -7,7 +9,8 @@ label ts_scenario_1:
             pass
 
     $ persistent.rpclabel = "1"
-
+    $ persistent.uncolorize = "none"
+    $ persistent.sprite_time = "day"
     $ persistent.carter2menu = False
     $ persistent.carter3menu = False
     $ persistent.badendmenuperedglitch = False
@@ -1133,6 +1136,7 @@ label ts_scenario_1:
     m "В комнате нечего делать, а если и есть что-то, то это слишком сложно для моего уставшего мозга."
     m "Поэтому я лучше проведу вечер с тобой, бездумно пялясь в телевизор."
     ts_ft "Ну-у-у, хорошо, как скажешь..."
+    $ persistent.sprite_time = "day"
     m "Вот и здорово!"
 
     show layer screens at ts_hidescreens
@@ -1141,6 +1145,8 @@ label ts_scenario_1:
     play sound pageflip
     scene ts_living_room_telek_sudba_night
     with wipeleft_scene
+
+    $ persistent.sprite_time = "cloudly"
 
     show layer screens at ts_showscreens
 
@@ -1161,6 +1167,7 @@ label ts_scenario_1:
     show hiroto 1f at t11
 
     "Каждый раз, когда мы заканчиваем вечер подобным образом, папа говорит одно и то же. Слово в слово."
+    $ persistent.sprite_time = "cloudly"
     "Впрочем, я не раздражаюсь. Я и сама жаворонок."
 
     show layer screens at ts_hidescreens
@@ -1169,6 +1176,8 @@ label ts_scenario_1:
     play sound pageflip
     scene ts_gost_night
     with wipeleft_scene
+
+    $ persistent.sprite_time = "night"
 
     show layer screens at ts_showscreens
 

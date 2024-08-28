@@ -569,6 +569,13 @@ image yuri 1y7 = ConditionSwitch(
 "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "1l.webp",(0,0), ts_yuri_pt + "1r.webp",(0,0), ts_yuri_pt + "y7.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
 True,im.Composite((960,960), (0,0), ts_yuri_pt + "1l.webp",(0,0), ts_yuri_pt + "1r.webp",(0,0), ts_yuri_pt + "y7.webp") )
 
+image yuri 1x = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "1l.webp",(0,0), ts_yuri_pt + "1r.webp",(0,0), ts_yuri_pt + "x.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "1l.webp", (0, 0), ts_yuri_pt + "1r.webp", (0, 0), ts_yuri_pt + "x.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "1l.webp",(0,0), ts_yuri_pt + "1r.webp",(0,0), ts_yuri_pt + "x.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_yuri_pt + "1l.webp",(0,0), ts_yuri_pt + "1r.webp",(0,0), ts_yuri_pt + "x.webp") )
+
+
 image yuri 2a = ConditionSwitch(
 "persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "1l.webp",(0,0), ts_yuri_pt + "2r.webp",(0,0), ts_yuri_pt + "a.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
 "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "1l.webp", (0, 0), ts_yuri_pt + "2r.webp", (0, 0), ts_yuri_pt + "a.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),

@@ -1,5 +1,7 @@
 label ts_scenario_2:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт I | Глава II",details="Поиски. Юри",large_image="aonectwo",start=time.time())
@@ -7,6 +9,8 @@ label ts_scenario_2:
             pass
 
     $ persistent.rpclabel = "2"
+    $ persistent.uncolorize = "none"
+    $ persistent.sprite_time = "day"
 
     $ persistent.carter2menu = False
     $ persistent.carter3menu = False
@@ -672,8 +676,6 @@ label ts_scenario_2:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show zatemnenie with dspr
-
     show layer screens at ts_null_transform
 
     menu:
@@ -683,7 +685,6 @@ label ts_scenario_2:
         "Идти вперёд":
             pass
 
-    hide zatemnenie with dspr
     show layer screens at ts_showscreens
 
     if unluck == True:

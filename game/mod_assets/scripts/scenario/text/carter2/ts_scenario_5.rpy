@@ -1,5 +1,7 @@
 label ts_scenario_5:
 
+    $ renpy.block_rollback()
+
     python: # ОБНОВЛЯЕМ RPC
         try:
             rpc.update(state="Акт II | Глава I",details="С возвращением, Моника!",large_image="atwocone",start=time.time())
@@ -7,6 +9,8 @@ label ts_scenario_5:
             pass
 
     $ persistent.rpclabel = "5"
+    $ persistent.uncolorize = "none"
+    $ persistent.sprite_time = "day"
 
     $ persistent.carter2menu = True
     $ persistent.carter3menu = False
@@ -632,13 +636,13 @@ label ts_scenario_5:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show zatemnenie with dspr
+
 
     show layer screens at ts_null_transform
 
     menu:
         "Сказать правду":
-            hide zatemnenie with dspr
+
             stop music fadeout 2
             pause 2
             show layer screens at ts_showscreens
@@ -675,7 +679,7 @@ label ts_scenario_5:
         "Соврать":
             $ unluck5 = True
             $ unluck_ball += 1
-            hide zatemnenie with dspr
+
             show layer screens at ts_showscreens
             "Я решаю соврать. Как будто в первый раз."
             show hiroto 1e at t11
@@ -818,15 +822,13 @@ label ts_scenario_5:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    show zatemnenie with dspr
+
 
     show layer screens at ts_null_transform
 
     menu:
         "Играть в шахматы":
             $ act2_chess = True
-
-            hide zatemnenie with dspr
 
             show layer screens at ts_showscreens
 
@@ -930,13 +932,11 @@ label ts_scenario_5:
 
             show layer screens at ts_null_transform
 
-            show zatemnenie with dspr
 
             menu:
                 "А ты вообще кто такая?":
                     pass
 
-            hide zatemnenie with dspr
 
             show layer screens at ts_showscreens
 
@@ -954,20 +954,17 @@ label ts_scenario_5:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
 
-            show zatemnenie with dspr
 
             show layer screens at ts_null_transform
 
             menu:
                 "Да":
-                    hide zatemnenie with dspr
                     show layer screens at ts_showscreens
                     show momika 3b at f11
                     cm "Вот и здорово!"
                     show momika 2r at f11
                     cm "Мне же меньше работы..."
                 "Нет":
-                    hide zatemnenie with dspr
                     show layer screens at ts_showscreens
                     show momika 1n at f11
                     cm "Ну... не беда..."
@@ -984,13 +981,11 @@ label ts_scenario_5:
                     show layer screens at ts_hidescreens
                     " {w=1.0}{nw}"
 
-                    show zatemnenie with dspr
 
                     show layer screens at ts_null_transform
 
                     menu:
                         "Да":
-                            hide zatemnenie with dspr
                             show layer screens at ts_showscreens
                             $ chess_tutor = True
                             show momika 4k at f11
@@ -998,7 +993,6 @@ label ts_scenario_5:
                             show momika 2b at f11
                             cm 2b "В процессе игры я буду объяснять, как ходят фигуры, и заодно объясню самые базовые принципы игры."
                         "Нет":
-                            hide zatemnenie with dspr
                             show layer screens at ts_showscreens
                             show momika 1p at t11
                             cm "Ну, как знаешь... "
@@ -1648,16 +1642,15 @@ label ts_scenario_5:
     m "Знаешь, что!.."
 
     "В пылу я пытаюсь ударить её, но затем резко охлаждаюсь."
+    $ persistent.sprite_time = "day"
     "С другой стороны, а {i}что{/i} она должна знать? Она же не чужой человек. Она, по сути, и есть я."
     
-    show layer screens at ts_hidescreens
-    " {w=1.0}{nw}"
-    play sound2 pageflip
+
+    $ persistent.sprite_time = "night"
+
+    play sound2 svet_on
     scene ts_darkbed
     show monika 1po at i11
-    with wipeleft_scene
-
-    show layer screens at ts_showscreens
 
     "Ладно. Что-то я на самом деле устала..."
     em 1pn "Да и я что-то тоже..."

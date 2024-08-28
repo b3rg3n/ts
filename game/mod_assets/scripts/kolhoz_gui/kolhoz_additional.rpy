@@ -173,3 +173,19 @@ screen ts_muzzon_info:
         text translation_new["ts_muzzon_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
     else:
         text translation_new["ts_muzzon_info2"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+screen ts_control_help_suka:
+    if renpy.android:
+        text translation_new["ts_ctr_help1"] style "settings_link" size 50 text_align 0.5 yalign 0.400 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+        text translation_new["ts_ctr_help2"] style "settings_link" size 50 text_align 0.5 yalign 0.475 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+        text translation_new["ts_ctr_help3"] style "settings_link" size 50 text_align 0.5 yalign 0.550 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+        text translation_new["ts_ctr_help4"] style "settings_link" size 50 text_align 0.5 yalign 0.625 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    else:
+        text translation_new["ts_ctr_help5"] style "settings_link" size 40 text_align 0.5 yalign 0.400 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+        text translation_new["ts_ctr_help6"] style "settings_link" size 40 text_align 0.5 yalign 0.475 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+        text translation_new["ts_ctr_help7"] style "settings_link" size 40 text_align 0.5 yalign 0.550 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+        text translation_new["ts_ctr_help8"] style "settings_link" size 40 text_align 0.5 yalign 0.625 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    textbutton translation_new["ts_understand"] style "log_button" text_style "settings_link" yalign 0.8 xalign 0.5 at ts_preferences_anim:
+        activate_sound start_sound_suka
+        hover_sound button_menu
+        action Return()

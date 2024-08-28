@@ -28,6 +28,7 @@ define config.window_hide_transition = Dissolve(.2)
 define config.window = "auto"
 default preferences.text_cps = 50
 default preferences.afm_time = 15
+default preferences.gl_powersave = False
 define config.window_icon = ts_images + "gui/window_icon.png"
 define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'front' ]
 

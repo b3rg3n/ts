@@ -2261,12 +2261,21 @@ label poemend_abrupt:
     stop music
     show layer master
     play sound winerrorsound
-    show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+
+    if renpy.android:
+        show screen dialog("ru.bergen.truestory.apk\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+    else:
+        show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+
+
     $ renpy.block_rollback()
     pause
     hide screen dialog
     play sound winerrorsound
-    show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
+    if renpy.android:
+        show screen dialog("ru.bergen.truestory.apk\n\nПерезапускаем?", ok_action=Return())
+    else:
+        show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
     $ renpy.block_rollback()
     pause
     hide screen dialog
@@ -2501,12 +2510,19 @@ label poemend_normal:
     stop music
     show layer master
     play sound winerrorsound
-    show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+    if renpy.android:
+        show screen dialog("ru.bergen.truestory.apk\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+    else:
+        show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+
     $ renpy.block_rollback()
     pause
     hide screen dialog
     play sound winerrorsound
-    show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
+    if renpy.android:
+        show screen dialog("ru.bergen.truestory.apk\n\nПерезапускаем?", ok_action=Return())
+    else:
+        show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
     $ renpy.block_rollback()
     pause
     hide screen dialog

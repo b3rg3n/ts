@@ -735,7 +735,11 @@ label ts_scenario_12:
     $ persistent.sprite_time = "cloudly"
     play ambience rain_int fadein 3
     play sound chasiki fadein 1
-    scene ts_club_rain_shader
+    if renpy.android:
+        scene ts_club_rain_vedro
+        show ts_rain
+    else:
+        scene ts_club_rain_shader
     show ts_club_rain_ovr
     show yuri 1g at t31
     show sayori 2y at t32
@@ -840,7 +844,11 @@ label ts_scenario_12:
 
     $ persistent.ingame_pizda = False
 
-    scene ts_club_rain_shader
+    if renpy.android:
+        scene ts_club_rain_vedro
+        show ts_rain
+    else:
+        scene ts_club_rain_shader
     show ts_club_rain_ovr
     show sayori 2k at i32
     show natsuki 1z at i33

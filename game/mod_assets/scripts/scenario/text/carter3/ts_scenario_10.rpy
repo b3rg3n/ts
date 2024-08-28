@@ -894,8 +894,9 @@ label ts_scenario_10:
     hide dust2
     hide dust3
     hide dust4
-    show layer master at StillAberate(25.0)
-    show layer screens at StillAberate(25.0)
+    if not renpy.android:
+        show layer master at StillAberate(25.0)
+        show layer screens at StillAberate(25.0)
 
     python:
         currentpos = get_pos()
@@ -952,8 +953,9 @@ label ts_scenario_10:
     m "И я подумала: а ведь писать стихи легче, чем кажется!"
     em "Проще. Видимо, всё-таки не слышала..."
     m "Поэтому, вот вам и новая активность: напишите стих, чтобы к следующему собранию мы все смогли обсудить его друг с другом."
-    show layer master at StillAberate(25.0)
-    show layer screens at StillAberate(25.0)
+    if not renpy.android:
+        show layer master at StillAberate(25.0)
+        show layer screens at StillAberate(25.0)
     $ glitchhuetenblya = glitchtext(24)
     python:
         _preferences.volumes['music'] = 0.0

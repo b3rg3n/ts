@@ -80,6 +80,14 @@ init:
 
 ###ШЕЙДЕРЫ
 
+    image ts_residential_rain_vedro = ts_bg + "ovr/residential_rain_vedro.webp"
+    image ts_class_rain_vedro = ts_bg + "ovr/class_rain_vedro.webp"
+    image ts_living_room_rain_vedro = ts_bg + "ovr/living_room_rain_vedro.webp"
+    image ts_club_rain_vedro = ts_bg + "ovr/club_rain_vedro.webp"
+    image ts_club_rain1_vedro = ts_bg + "ovr/club_rain1_vedro.webp"
+    image ts_corridor_rain_vedro = ts_bg + "ovr/corridor_rain.webp"
+    image ts_corridor_rain1_vedro = ts_bg + "ovr/corridor_rain1.webp"
+
     image ts_class_rain = ts_bg + "ovr/class_rain.webp"
     image ts_living_room_rain = ts_bg + "ovr/living_room_rain.webp"
     image ts_club_rain = ts_bg + "ovr/club_rain.webp"

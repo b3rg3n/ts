@@ -575,7 +575,11 @@ label ts_scenario_8:
     play ambience rain_int fadein 2
     play music ts_raindrops fadein 2
     pause 1
-    scene ts_class_rain_shader
+    if renpy.android:
+        scene ts_class_rain_vedro
+        show ts_rain
+    else:
+        scene ts_class_rain_shader
     show ts_class_rain_ovr
     show unblink
     pause 1
@@ -602,7 +606,11 @@ label ts_scenario_8:
     show blink
     pause 1.5
 
-    scene ts_corridor_rain_shader
+    if renpy.android:
+        scene ts_corridor_rain_vedro
+        show ts_rain
+    else:
+        scene ts_corridor_rain_shader
     show ts_corridor_rain_ovr
     show unblink
 
@@ -611,7 +619,11 @@ label ts_scenario_8:
     show blink
     pause 1.5
 
-    scene ts_club_rain_shader
+    if renpy.android:
+        scene ts_club_rain_vedro
+        show ts_rain
+    else:
+        scene ts_club_rain_shader
     show ts_club_rain_ovr
     show unblink
 
@@ -738,7 +750,11 @@ label ts_scenario_8:
     show blink
     pause 1.5
 
-    scene ts_club_rain_shader
+    if renpy.android:
+        scene ts_club_rain_vedro
+        show ts_rain
+    else:
+        scene ts_club_rain_shader
     show ts_club_rain_ovr
     show unblink
 
@@ -789,7 +805,11 @@ label poemresponses2suka:
             show blink
             pause 1.5
 
-            scene ts_club_rain_shader
+            if renpy.android:
+                scene ts_club_rain_vedro
+                show ts_rain
+            else:
+                scene ts_club_rain_shader
             show ts_club_rain_ovr
             show sayori 1a at i11
             show unblink
@@ -1022,7 +1042,11 @@ label poemresponses2suka:
             show blink
             pause 1.5
 
-            scene ts_club_rain_shader
+            if renpy.android:
+                scene ts_club_rain_vedro
+                show ts_rain
+            else:
+                scene ts_club_rain_shader
             show ts_club_rain_ovr
             show natsuki 1a at i11
             show unblink
@@ -1248,7 +1272,11 @@ label poemresponses2suka:
             show blink
             pause 1.5
 
-            scene ts_club_rain_shader
+            if renpy.android:
+                scene ts_club_rain_vedro
+                show ts_rain
+            else:
+                scene ts_club_rain_shader
             show ts_club_rain_ovr
             show yuri 1c at i11
             show unblink
@@ -1410,7 +1438,11 @@ label poemresponses2suka:
 label ts_carter8_posle_poems_suka:
     show blink
     pause 1.5
-    scene ts_club_rain_shader1
+    if renpy.android:
+        scene ts_club_rain1_vedro
+        show ts_rain
+    else:
+        scene ts_club_rain_shader1
     show ts_club_rain_ovr1
     show yuri 1e at i31
     show sayori 1b at i32
@@ -1736,7 +1768,11 @@ label ts_carter8_posle_poems_suka:
     show blink
     pause 1.5
 
-    scene ts_club_rain_shader1
+    if renpy.android:
+        scene ts_club_rain1_vedro
+        show ts_rain
+    else:
+        scene ts_club_rain_shader1
     show ts_club_rain_ovr1
     show yuri 1a at i31
     show sayori 1a at i32
@@ -1803,7 +1839,11 @@ label ts_carter8_posle_poems_suka:
     " {w=1.0}{nw}"
     show blink
     pause 1.5
-    scene ts_club_rain_shader1
+    if renpy.android:
+        scene ts_club_rain1_vedro
+        show ts_rain
+    else:
+        scene ts_club_rain_shader1
     show ts_club_rain_ovr1
     show yuri 1a at i31
     show sayori 1a at i32
@@ -1853,7 +1893,11 @@ label ts_carter8_posle_poems_suka:
     " {w=1.0}{nw}"
 
     play sound pageflip
-    scene ts_corridor_rain_shader1
+    if renpy.android:
+        scene ts_corridor_rain1_vedro
+        show ts_rain
+    else:
+        scene ts_corridor_rain_shader1
     show ts_corridor_rain_ovr1
     with wipeleft_scene
 
@@ -2078,7 +2122,11 @@ label ts_carter8_posle_poems_suka:
     show blink
     pause 1.5
 
-    scene ts_living_room_rain_shader
+    if renpy.android:
+        scene ts_living_room_rain_vedro
+        show ts_rain
+    else:
+        scene ts_living_room_rain_shader
     show ts_living_room_rain_ovr
     show unblink
 
@@ -2124,24 +2172,28 @@ label ts_carter8_posle_poems_suka:
     em 2bn "Ну, не совсем правильно."
     show monika 2bm at t11
     m "Я повторяю свой вопрос: что ты вообще имеешь в виду?"
-    show layer master at Static(0.1)
-    show layer screens at Static(0.1)
+    if not renpy.android:
+        show layer master at Static(0.1)
+        show layer screens at Static(0.1)
     show monika 2bi at f11
     em "Я, видимо, переоценила твои умственные способности."
     em 4bi "Ты спишь. Всё происходящее за эту неделю – это всё не было реальностью. Это было лишь твоё воображение."
     em "Всё, включая похмелье и утро у Сайори."
     if act2_chess:
         em "Включая партию в шахматы с папой."
-    show layer master at Static(0.3)
-    show layer screens at Static(0.3)
+    if not renpy.android:
+        show layer master at Static(0.3)
+        show layer screens at Static(0.3)
     em "Написание своего первого стиха спустя несколько лет застоя, чтение манги с Нацуки, обмен стихами, подготовка к фестивалю..."
     em "Всё происходящее за эту неделю с того момента, как ты проснулась в субботу с дикого бодуна, и вплоть до того, как ты уснёшь сегодня..."
-    show layer master at Static(0.5)
-    show layer screens at Static(0.5)
+    if not renpy.android:
+        show layer master at Static(0.5)
+        show layer screens at Static(0.5)
     em "Было просто сном. Больной фантазией одной девочки, которой захотелось друзей и уважения."
     em 3bd "Поэтому-то ты разговариваешь с моей {i}телесной формой{/i} только эту неделю. Потому что всё остальное время ты просто отмахивалась от меня, как от назойливых мух."
-    show layer master at Static(0.7)
-    show layer screens at Static(0.7)
+    if not renpy.android:
+        show layer master at Static(0.7)
+        show layer screens at Static(0.7)
     em 4bi "Потому что я ненастоящая. Просто плод твоего воображения."
     hide monika
     show layer master
@@ -2154,7 +2206,11 @@ label ts_carter8_posle_poems_suka:
     show blink
     pause 1.5
 
-    scene ts_residential_rain_shader
+    if renpy.android:
+        scene ts_residential_rain_vedro
+        show ts_rain
+    else:
+        scene ts_residential_rain_shader
     show unblink
 
     show layer screens at ts_showscreens

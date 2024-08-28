@@ -21,6 +21,25 @@ label ts_scenario_9:
 
     $ save_name = "С возвращением... Снова?"
 
+    play sound winerrorsound
+    if renpy.android:
+        show screen dialog("ru.bergen.truestory.apk\n\nЕсли вы страдаете от эпилепсии, настоятельно рекомендуется завершить прохождение мода.", ok_action=Return())
+    else:
+        show screen dialog("truestory.exe\n\nЕсли вы страдаете от эпилепсии, настоятельно рекомендуется завершить прохождение мода.", ok_action=Return())
+    $ renpy.block_rollback()
+    pause
+    hide screen dialog
+    play sound winerrorsound
+
+    if renpy.android:
+        show screen dialog("ru.bergen.truestory.apk\n\nДважды я не предупреждаю.", ok_action=Return())
+    else:
+        show screen dialog("truestory.exe\n\nДважды я не предупреждаю.", ok_action=Return())
+    pause
+    hide screen dialog
+
+    $ renpy.block_rollback()
+
     play sound chp
     $ Chapter("АКТ ТРЕТИЙ")
     $ Chapter("АКТ ТРЕТИЙ")
@@ -504,7 +523,8 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = True
 
-    show layer master at AnimatedAberate(25.0)
+    if not renpy.android:
+        show layer master at AnimatedAberate(25.0)
     show layer screens at ts_shake2(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
 
     show monika 2bi at f11
@@ -521,8 +541,9 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    show layer master at StillAberate(25.0)
-    show layer screens at StillAberate(25.0)
+    if not renpy.android:
+        show layer master at StillAberate(25.0)
+        show layer screens at StillAberate(25.0)
 
     python:
         currentpos = get_pos()

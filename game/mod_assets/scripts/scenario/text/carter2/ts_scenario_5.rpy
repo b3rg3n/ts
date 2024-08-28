@@ -47,7 +47,8 @@ label ts_scenario_5:
     play sound fb
     scene ts_sayori_bedroom
     show sayori 4pi at t11
-    show layer master at AnimatedAberate(20.0)
+    if not renpy.android:
+        show layer master at AnimatedAberate(20.0)
     with flash
 
     show layer screens at ts_showscreens
@@ -1660,7 +1661,7 @@ label ts_scenario_5:
     m "Ты что, и мои мысли читать будешь?"
     em 3pi "Я же твоё подсознание, забыла уже опять?"
     em "Я, по сути, и есть твои мысли."
-    em 3pm "Может, немного извращённые... "
+    em 3pn "Может, немного извращённые... "
     extend 1pi "Но это {i}твои{/i} мысли."
 
     show monika 1ph at t11

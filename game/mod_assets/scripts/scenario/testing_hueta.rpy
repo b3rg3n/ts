@@ -15,6 +15,17 @@ label testing_label_blya:
     show natsuki 1e at t44
     "day"
 
+    show screen poem(poem_peacedets)
+    pause
+    show screen poem(poem_y2)
+    pause
+    show screen poem(poem_su)
+    pause
+    show screen poem(poem_n2)
+
+
+
+
     $ persistent.sprite_time = "cloudly"
     "cloudly"
     $ persistent.sprite_time = "sunset"

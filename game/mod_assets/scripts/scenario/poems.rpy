@@ -802,12 +802,14 @@ style yuri_text:
     size 28
     color "#000"
     outlines []
+    textshader None
 
 style yuri_text_2:
     font "mod_assets/source/fonts/poemdreest/y2.ttf"
     size 26
     color "#000"
     outlines []
+    textshader None
 
 style yuri_text_3:
     font "mod_assets/source/fonts/poemdreest/y3.ttf"
@@ -815,6 +817,7 @@ style yuri_text_3:
     color "#000"
     outlines []
     justify True
+    textshader None
 
 style natsuki_text:
     font "mod_assets/source/fonts/poemdreest/n1.ttf"
@@ -822,46 +825,25 @@ style natsuki_text:
     color "#000"
     outlines []
     line_leading 1
+    textshader None
 
 style sayori_text:
     font "mod_assets/source/fonts/poemdreest/s1.ttf"
     size 22
     color "#000"
     outlines []
+    textshader None
 
 style monika_text:
     font "mod_assets/source/fonts/poemdreest/m1.ttf"
     size 22
     color "#000"
     outlines []
+    textshader None
 
 style lemaman_text:
     font "mod_assets/source/fonts/poemdreest/maki.ttf"
-    size 25
+    size 22
     color "#000"
     outlines []
-
-
-label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, where=i11, paper=None):
-    if poem == None:
-        return
-    play sound pageflip
-    window hide
-    if paper:
-        show screen poem(poem, paper=paper)
-    else:
-        show screen poem(poem)
-    if not persistent.first_poem:
-        $ persistent.first_poem = True
-        show expression "mod_assets/source/images/gui/poem_dismiss.webp" as poem_dismiss:
-            xpos 1050 ypos 590
-    with Dissolve(1)
-    $ pause()
-    if img:
-        $ renpy.hide(poem.author)
-        $ renpy.show(img, at_list=[where])
-    hide screen poem
-    hide poem_dismiss
-    with Dissolve(.5)
-    window auto
-    return
+    textshader None

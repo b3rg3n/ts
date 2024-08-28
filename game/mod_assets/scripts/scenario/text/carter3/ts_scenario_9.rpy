@@ -524,7 +524,7 @@ label ts_scenario_9:
 
     python:
         currentpos = get_pos()
-        startpos = currentpos – 0.2
+        startpos = currentpos - 0.2
         if startpos < 0: startpos = 0
         track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/ost/ts_roae.ogg"
         renpy.music.play(track, loop=True)

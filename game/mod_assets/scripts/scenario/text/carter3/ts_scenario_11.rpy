@@ -305,7 +305,7 @@ label ts_scenario_11:
 
     python:
         currentpos = get_pos()
-        startpos = currentpos – 0.2
+        startpos = currentpos - 0.2
         if startpos < 0: startpos = 0
         track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/ost/ts_glitch_music9.ogg"
         renpy.sound.play(track, loop=True)
@@ -340,7 +340,7 @@ label ts_scenario_11:
 
     python:
         currentpos = get_pos()
-        startpos = currentpos – 0.2
+        startpos = currentpos - 0.2
         if startpos < 0: startpos = 0
         track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/ost/ts_glitch_music10.ogg"
         renpy.sound.play(track, loop=True)
@@ -2092,7 +2092,7 @@ label poemend_abrupt:
 
     python:
         currentpos = get_pos()
-        startpos = currentpos – 0.2
+        startpos = currentpos - 0.2
         if startpos < 0: startpos = 0
         track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/oski/ts_bzdr_distortion.ogg"
         renpy.music.play(track, loop=True)
@@ -2217,7 +2217,7 @@ label poemend_abrupt:
     $ renpy.block_rollback()
     python:
         currentpos = get_pos()
-        startpos = currentpos – 0.2
+        startpos = currentpos - 0.2
         if startpos < 0: startpos = 0
         track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/ost/ts_dtm.ogg"
         renpy.music.play(track, loop=True)
@@ -2472,7 +2472,7 @@ label poemend_normal:
     $ renpy.block_rollback()
     python:
         currentpos = get_pos()
-        startpos = currentpos – 0.2
+        startpos = currentpos - 0.2
         if startpos < 0: startpos = 0
         track = "<from " + str(startpos) + " to " + str(currentpos) + ">mod_assets/source/audio/ost/ts_tar.ogg"
         renpy.music.play(track, loop=True)

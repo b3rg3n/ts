@@ -9,7 +9,7 @@ label ts_scenario_0:
             pass
 
     $ persistent.rpclabel = "0"
-
+    $ persistent.uncolorize = "none"
     $ persistent.sprite_time = "day"
     $ persistent.carter2menu = False
     $ persistent.carter3menu = False
@@ -137,6 +137,7 @@ label ts_scenario_0:
     show kuninobu 1ba at t11
     nvlbazar "{font=[prologue_font]}Сначала у меня была одна подружка. Звали её Мира."
     show kuninobu 2bb at t11
+    $ persistent.sprite_time = "cloudly"
     nvlbazar "{font=[prologue_font]}Наши семьи дружили. Как и мы сами, собственно."
 
     show layer screens at ts_hidescreens_nvl
@@ -154,7 +155,7 @@ label ts_scenario_0:
     with wipeleft_scene
 
     show layer screens at ts_showscreens_nvl
-    
+    $ persistent.sprite_time = "day"
     show kuninobu 2bv at t11
     nvlbazar "{font=[prologue_font]}Мы постоянно ходили друг к другу в гости, где постоянно играли друг с другом."
     show kuninobu 2bz at t11

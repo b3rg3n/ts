@@ -32,10 +32,16 @@ label ts_scenario_4:
     stop sound fadeout 7
     $ Chapter("Всё же хорошо?")
 
-    play sound2 ts_alarm
+    play sound ts_alarm fadein 2
+
+    pause 2
+
     scene ts_bedroom
     show unblink
-    pause 1
+    show layer master at ts_vstavai_shashlik
+    pause 3
+    play sound svet_on
+    pause 1.5
 
     show layer screens at ts_showscreens
 
@@ -43,7 +49,7 @@ label ts_scenario_4:
 
     stop sound2 fadeout 3
 
-    "Часы, как обычно, показывают семь утра. Самое время, чтобы основательно подготовиться к предстоящему дню."
+    "Самое время, чтобы основательно подготовиться к предстоящему дню."
 
     play music okevrmon fadein 2
 
@@ -103,6 +109,19 @@ label ts_scenario_4:
     play sound2 pageflip
     scene ts_bathroom
     with wipeleft_scene
+
+    show layer master at ts_clean_eblet
+    pause 2
+    play sound open_water_sink
+    pause 0.5
+    stop sound
+    play sound_loop water_sink_stream
+    pause 1
+    play sound water_splash
+    pause 1.6
+    stop sound_loop
+    play sound close_water_sink
+    pause 0.5
 
     show layer screens at ts_showscreens
 
@@ -291,6 +310,8 @@ label ts_scenario_4:
 
                 "Мне... не сказать, чтобы сильно повезло, но и не сказать, чтобы сильно {i}не{/i} повезло."
 
+                show layer master at ts_prosmotr_teleka
+
                 "Мультиков, которые я обожала в детстве, в пятницу не показывали, но зато показывали фильм «Ирония судьбы». И, знаете, мне понравилось."
 
                 show layer screens at ts_hidescreens
@@ -352,6 +373,7 @@ label ts_scenario_4:
                 show layer screens at ts_showscreens
 
                 "Тарелка с рисовой кашей так и осталась нетронутой."
+                show layer master at ts_havchik_gotovka
                 if unluck3 == True:
                     "Несмотря на недавний позор с картошкой, я всё равно решаюсь что-нибудь приготовить."
                     "Что-нибудь попроще, повкуснее, и при этом не особо затратное по времени."
@@ -449,6 +471,7 @@ label ts_scenario_4:
 
     play sound2 pageflip
     scene ts_street
+    show ts_green_part
     with wipeleft_scene
 
     play music ts_tg

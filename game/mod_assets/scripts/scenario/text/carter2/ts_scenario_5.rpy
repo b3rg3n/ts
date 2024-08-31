@@ -493,6 +493,7 @@ label ts_scenario_5:
 
     play sound2 pageflip
     scene ts_street
+    show ts_green_part
     with wipeleft_scene
 
     play music ts_mdl
@@ -537,6 +538,7 @@ label ts_scenario_5:
 
     play sound2 pageflip
     scene ts_street
+    show ts_green_part
     show monika 1ba at i11
     with wipeleft_scene
 

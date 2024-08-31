@@ -16,6 +16,7 @@ label testing_label_blya:
     show yuri 4f at t42
     show monika 1f at t43
     show natsuki 1e at t44
+    show layer master at ts_trns_chromAbber
     "day"
 
     show screen poem(poem_peacedets)

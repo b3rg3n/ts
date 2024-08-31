@@ -261,6 +261,7 @@ label ts_scenario_8:
 
     play sound pageflip
     scene ts_street
+    show ts_green_part
     with wipeleft_scene
 
     show layer screens at ts_showscreens
@@ -312,6 +313,7 @@ label ts_scenario_8:
     " {w=1.0}{nw}"
 
     scene ts_street at ts_bg_into
+    show ts_green_part
     pause 0.5
     scene ts_school_gate_day at ts_bg_exodus
     pause 0.5

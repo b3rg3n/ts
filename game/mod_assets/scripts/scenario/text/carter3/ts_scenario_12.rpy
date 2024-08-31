@@ -77,7 +77,14 @@ label ts_scenario_12:
     s 2pc "Только тихо, родители ещё спят..."
     s 3pm "А хотя подожди!"
     extend 2px " Хочешь, я с тобой пройдусь? "
-    play sound s_kill_glitch1 #микрогличик добавь, прям ну совсем милипиздрический
+    if not renpy.android:
+        window hide
+        show layer master at ts_trns_dream
+        play sound ts_glitch5
+        pause 1
+        show layer master
+        stop sound
+        show layer screens at ts_showscreens_fast
     extend "Мне всё равно в магазин также надо, как раз по пути!"
     show sayori 2pa at t11
     m "А... д-да нет, у меня дом в другой стороне находится..."

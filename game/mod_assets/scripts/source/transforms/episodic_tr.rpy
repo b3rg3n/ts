@@ -4,6 +4,10 @@
 
 init:
 
+    transform ts_prosmotr_teleka:
+        align (0.5, 0.5) zoom 1.0
+        ease 2 align (0.65, 0.6) zoom 2.0
+
     transform ts_havchik_gotovka_end:
         align (0.75, 0.5) zoom 2.5
         ease 1 align (0.5, 0.5) zoom 1.0

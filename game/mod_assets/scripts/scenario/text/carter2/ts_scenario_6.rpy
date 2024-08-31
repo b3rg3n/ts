@@ -384,6 +384,7 @@ label ts_scenario_6:
 
     play sound pageflip
     scene ts_street
+    show ts_green_part
     with wipeleft_scene
 
     play music ts_iwtp fadein 3
@@ -1239,6 +1240,7 @@ label ts_scenario_6:
 
     play sound pageflip
     scene ts_street_late
+    show ts_yel_part
     with wipeleft_scene
 
     show monika 5c at rn11

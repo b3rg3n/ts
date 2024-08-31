@@ -217,6 +217,7 @@ label ts_scenario_7:
             play sound pageflip
             play sound3 ts_othodos_ot_bega fadein 2
             scene ts_street at ts_ustal_suka
+            show ts_green_part
             with wipeleft_scene
 
             show layer screens at ts_showscreens
@@ -241,6 +242,7 @@ label ts_scenario_7:
 
             play sound pageflip
             scene ts_street
+            show ts_green_part
             with wipeleft_scene
 
             show layer screens at ts_showscreens
@@ -715,6 +717,7 @@ label ts_scenario_7:
 
             play sound pageflip
             scene ts_street
+            show ts_green_part
             with wipeleft_scene
 
             show layer screens at ts_showscreens
@@ -2103,6 +2106,7 @@ label ts_carterseven_poem_finally:
 
     play sound pageflip
     scene ts_street_late
+    show ts_yel_part
     with wipeleft_scene
 
     show layer screens at ts_showscreens
@@ -2145,6 +2149,7 @@ label ts_carterseven_poem_finally:
     play sound_loop ts_running
 
     scene ts_street_late at ts_running_fast
+    show ts_yel_part
     show monika 4k at i11
 
     if unluck6 == True:

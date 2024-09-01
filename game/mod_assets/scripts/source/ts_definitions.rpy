@@ -50,6 +50,17 @@ init:
     image yurec_pizdec8 = ts_cg + "yurec_pizdec8.webp"
     image yurec_pizdec9 = ts_cg + "yurec_pizdec9.webp"
 
+    image ts_mon_maman_1 = ts_cg + "ts_mon_maman_1.webp"
+    image ts_mon_maman_2 = ts_cg + "ts_mon_maman_2.webp"
+    image ts_mon_maman_3 = ts_cg + "ts_mon_maman_3.webp"
+    image ts_mon_maman_4 = ts_cg + "ts_mon_maman_4.webp"
+    image ts_mon_maman_5 = ts_cg + "ts_mon_maman_5.webp"
+    image ts_mon_maman_6 = ts_cg + "ts_mon_maman_6.webp"
+    image ts_mon_maman_7 = ts_cg + "ts_mon_maman_7.webp"
+    image ts_mon_maman_8 = ts_cg + "ts_mon_maman_8.webp"
+    image ts_mon_maman_9 = ts_cg + "ts_mon_maman_9.webp"
+
+
 ###GLITCH
     image natsuki_pizdec = ts_cg + "glitch_kolhoz/natsuki_pizdec.webp"
     image natsuki_pizdec1 = ts_cg + "glitch_kolhoz/natsuki_pizdec1.webp"

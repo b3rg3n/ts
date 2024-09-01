@@ -4,7 +4,7 @@ label ts_scenario_7:
 
     python: # ОБНОВЛЯЕМ RPC
         try:
-            rpc.update(state="Акт II | Глава III",details="Проба пера",large_image="atwocthree",start=time.time())
+            rpc.update(state="Акт II | Глава III",details="Пробы пера",large_image="atwocthree",start=time.time())
         except AssertionError:
             pass
 
@@ -27,9 +27,9 @@ label ts_scenario_7:
     $ Chapter("АКТ ВТОРОЙ")
     $ Chapter("Глава третья")
     $ Chapter("Глава третья")
-    $ Chapter("Проба пера")
+    $ Chapter("Пробы пера")
     stop sound fadeout 7
-    $ Chapter("Проба пера")
+    $ Chapter("Пробы пера")
 
     play music audio.t6s fadein 4
     scene ts_darkbed
@@ -542,7 +542,7 @@ label ts_scenario_7:
             "Ох... Какой же диван неудобный!"
             stop sound fadeout 3
             "Но зато хотя бы проснулась вовремя."
-            "Хотя, с другой стороны, а я вообще спала?"
+            "С другой стороны, а я вообще спала?"
             "Всё время ворочалась, и уснуть я так и не смогла."
             "Но как минимум слегка отдохнула."
             "Часы показывают 6:40. Теперь самое время готовить завтрак."
@@ -695,7 +695,7 @@ label ts_scenario_7:
             show hiroto 1a at t11
             m "Ты, главное, на работу не опоздай."
             if unluck4 == True:
-                "А не как некоторые..."
+                em "А не как некоторые..."
             stop music fadeout 5
             show hiroto 1g at f11
             ts_ft "Не переживай, солнце, не опоздаю."
@@ -716,7 +716,7 @@ label ts_scenario_7:
             with wipeleft_scene
 
             play sound pageflip
-            scene ts_street
+            scene ts_seaside_road_morning
             show ts_green_part
             with wipeleft_scene
 
@@ -735,7 +735,7 @@ label ts_scenario_7:
             " {w=1.0}{nw}"
 
             play sound pageflip
-            scene ts_seaside_road_morning
+            scene ts_street
             with wipeleft_scene
 
             show layer screens at ts_showscreens
@@ -950,7 +950,7 @@ label ts_scenario_7:
     "У нас есть анимешный клуб? Впервые слышу о таком."
     "Впрочем, ни манга, ни аниме мне не интересны, и я могу почитать мангу лишь в компании Нацуки. Да и то, недолго."
     show himari 1zzf at f21
-    pod1 "В любом случае, наша малютка растёт. Вчера она пошла в Литературный клуб, а через неделю начнёт избавляться от этого ребячества."
+    pod1 "В любом случае, наша малютка растёт. Вчера она пошла в Литературный клуб, а завтра уже начнёт избавляться от этого ребячества."
     show himari 1zze at t21
     show elena f1 at f22
     pod2 "Да. А когда Литературный клуб воспитает из неё настоящую писательницу, а не мангаку позорную, мы самые первые купим её книженцию!"
@@ -984,7 +984,7 @@ label ts_scenario_7:
     show monika 2n at f11
     em "И главное, так уверенно говорит, что у неё никаких проблем нет..."
     show monika 4b at f11
-    em "Как говорил классик: «Не верю!»."
+    em "Как говорил классик: «Не верю!»"
     show monika 2j at t11
     m "Ты, кажется, со мной не разговаривала?"
     show monika 2i at f11
@@ -1102,7 +1102,7 @@ label ts_scenario_7:
     python:
         _preferences.volumes['voice'] = .30
 
-    m "*неразборчивые звуки, которые ближе всего можно описать звуком «Ха-а-а-а-а-а-А-А-А-а-а-А-а-А-А-а»*"
+    m "Ха-а-а-а-а-а-А-А-А-а-а-А-а-А-А-а!!!"
     m "Ты можешь прерваться...{w=0.44} ХОТЬ НА ПЯТЬ МИНУТ?!"
     show monika 4b at hf11
 
@@ -1306,7 +1306,7 @@ label ts_scenario_7:
     s "Да это так, на перспективу... Кексики-то у тебя действительно получаются превосходные."
     show sayori 2l at t32
     show natsuki 2t at f33
-    n "А, ну раз так, то да..."
+    n "А, ну это да..."
     show yuri 1t at f31
     show sayori 2l at t32
     show natsuki 2t at t33
@@ -1601,7 +1601,7 @@ label cartersevenpoemsblya:
             n "Привет! Ну что, начнём?"
             show natsuki 1j at t11
             "Иногда прямота Нацуки до сих пор меня поражает."
-            "Она не из тех людей, которые всё ходят вокруг да около вместо того, чтобы переходить сразу к делу."
+            "Она не из тех людей, которые всё ходят вокруг да около, она переходит сразу к делу."
             "Каюсь, даже я иногда топчусь на месте вместо того, чтобы говорить по существу и двигаться дальше по разговору."
             m "Ну а ради чего мы ещё здесь собрались?"
             show natsuki 2l at f11
@@ -2153,9 +2153,9 @@ label ts_carterseven_poem_finally:
     show monika 4k at i11
 
     if unluck6 == True:
-        "Я бегу со школы до дома ещё быстрее, чем утром, только чтобы эта падла унялась."
+        "Я бегу со школы до дома ещё быстрее, чем утром, только чтобы она унялась."
     else:
-        "Я бегу со школы до дома так быстро, как только могу, только чтобы эта падла унялась."
+        "Я бегу со школы до дома так быстро, как только могу, только чтобы она унялась."
 
     python:
         _preferences.volumes['voice'] = 1.0

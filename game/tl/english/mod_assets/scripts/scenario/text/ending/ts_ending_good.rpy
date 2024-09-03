@@ -1724,3 +1724,17 @@ translate english ts_good_ending_blya_e319ceed:
     # "А кошмарный сон – это ведь всего лишь сон..."
     ""
 
+# TODO: Translation updated at 2024-09-04 00:40
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:152
+translate english ts_good_ending_blya_736837c2:
+
+    # "Меня даже не волнуют мелочи вроде: «А сколько же вообще длился этот сон, если все ведут себя, как будто ничего из ряда вон выходящего не произошло?»"
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:247
+translate english ts_good_ending_blya_a9c5ebdc:
+
+    # n "Явилась, не запылилась!"
+    n ""
+

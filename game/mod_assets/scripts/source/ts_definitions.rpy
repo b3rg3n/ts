@@ -91,6 +91,10 @@ init:
     image ts_credits_fedya_3 = ts_images + "credits/ts_credits_fedya_3.webp"
     image ts_credits_fedya_4 = ts_images + "credits/ts_credits_fedya_4.webp"
 
+    image ts_credits_cg_1 = ts_images + "credits/ts_credits_cg_1.webp"
+    image ts_credits_cg_2 = ts_images + "credits/ts_credits_cg_2.webp"
+    image ts_credits_cg_3 = ts_images + "credits/ts_credits_cg_3.webp"
+    image ts_credits_cg_4 = ts_images + "credits/ts_credits_cg_4.webp"
 
 ###ЛОГО ХУЙНИ
     image ts_logo = "mod_assets/source/images/gui/ts_logo.webp"

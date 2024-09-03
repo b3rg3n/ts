@@ -109,7 +109,8 @@ label good_credits_ts_label:
     show layer screens at ts_showscreens
 
     show ts_credits_fedya_1 at ts_show_credits_videosos_fedya
-    
+    show ts_credits_cg_1 at ts_show_credits_videosos_cg
+
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
 
@@ -118,6 +119,7 @@ label good_credits_ts_label:
     show layer screens at ts_hidescreens
 
     show ts_credits_fedya_1 at ts_hide_credits_videosos_fedya
+    show ts_credits_cg_1 at ts_hide_credits_videosos_cg
 
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
@@ -254,7 +256,10 @@ label bad_credits_ts_label:
     show fedya_pizdos:
         xpos 0.125 ypos 0.01 alpha 0.0 subpixel True
         ease 1.0 xpos 0.125 ypos 0.2 alpha 1.0
-    
+    show dreestunyashka_pizdos:
+        xpos 0.668 ypos 0.01 alpha 0.0 subpixel True
+        ease 1.0 xpos 0.668 ypos 0.2 alpha 1.0
+
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
 
@@ -265,7 +270,10 @@ label bad_credits_ts_label:
     show fedya_pizdos:
         xpos 0.125 ypos 0.2 alpha 1.0 subpixel True
         ease 1.0 xpos 0.125 ypos 0.01 alpha 0.0
-    
+    show dreestunyashka_pizdos:
+        xpos 0.668 ypos 0.2 alpha 1.0 subpixel True
+        ease 1.0 xpos 0.668 ypos 0.01 alpha 0.0    
+
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
 

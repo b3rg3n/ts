@@ -618,6 +618,78 @@ init:
             pause 0.05
             repeat
 
+    image dreestunyashka_pizdos: # ГЛИЧЁВЫЙ ХУДОЖНИК ЭТОЙ ХУЙНИ
+        contains:
+            choice:
+                "ts_credits_cg_1"
+            choice:
+                "ts_credits_cg_2"
+            choice:
+                "ts_credits_cg_4"
+            choice:
+                "ts_credits_cg_3"
+            choice:
+                "ts_credits_cg_4"
+            choice:
+                "ts_credits_cg_3"
+            choice:
+                "ts_credits_cg_2"
+            choice:
+                "ts_credits_cg_3"
+            choice:
+                "ts_credits_cg_2"
+            choice:
+                "ts_credits_cg_4"
+            pause 0.05
+            repeat
+        contains:
+            choice:
+                "ts_credits_cg_1"
+            choice:
+                "ts_credits_cg_3"
+            choice:
+                "ts_credits_cg_2"
+            choice:
+                "ts_credits_cg_4"
+            choice:
+                "ts_credits_cg_3"
+            choice:
+                "ts_credits_cg_1"
+            choice:
+                "ts_credits_cg_2"
+            choice:
+                "ts_credits_cg_3"
+            choice:
+                "ts_credits_cg_4"
+            choice:
+                "ts_credits_cg_2"
+            pause 0.05
+            repeat
+        contains:
+            choice:
+                "ts_credits_cg_1"
+            choice:
+                "ts_credits_cg_2"
+            choice:
+                "ts_credits_cg_3"
+            choice:
+                "ts_credits_cg_2"
+            choice:
+                "ts_credits_cg_1"
+            choice:
+                "ts_credits_cg_3"
+            choice:
+                "ts_credits_cg_4"
+            choice:
+                "ts_credits_cg_2"
+            choice:
+                "ts_credits_cg_3"
+            choice:
+                "ts_credits_cg_4"
+            pause 0.05
+            repeat
+
+
     image nat_pizdos: # ГЛИЧЁВАЯ ЛЮБИТЕЛЬНИЦА МАНГИ БЛЕАТЬ
         contains:
             choice:

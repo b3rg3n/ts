@@ -12,6 +12,7 @@ label testing_label_blya:
     show layer screens at ts_showscreens
 
     show ts_credits_fedya_1 at ts_show_credits_videosos_fedya
+    show ts_credits_cg_1 at ts_show_credits_videosos_cg
 
     #show screen ts_good_credits_scr_1
     #show screen ts_good_credits_scr_11

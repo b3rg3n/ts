@@ -40,6 +40,8 @@ label ts_bad_ending_blya:
     play sound_loop kardio_normal fadein 4
     scene ts_emergency_room
     show ts_emergency_room_anim
+    show ts_prosnulas_ot_ahuya
+    show layer master at blur_drunk_blya_low
     with Dissolve(4)
     show layer screens at ts_showscreens
     "..."
@@ -48,6 +50,7 @@ label ts_bad_ending_blya:
     "Это... н-не комната Сайори..."
     "Судя по мониторам, я в какой-то больнице."
     "Тело ослаблено и всё обмякло."
+    show layer master at ts_alkonersha
     "Я рефлекторно пытаюсь встать, но, к моему удивлению, у меня не получается."
     "На шум прибежало несколько людей в разного цвета халатах. Я так понимаю, это медсёстры и санитары."
     $ misc_name = "Медсестра"

@@ -156,6 +156,20 @@ label ts_scenario_7:
             scene ts_bathroom
             with wipeleft_scene
 
+
+            show layer master at ts_clean_eblet
+            pause 2
+            play sound open_water_sink
+            pause 0.5
+            stop sound
+            play sound_loop water_sink_stream
+            pause 1
+            play sound water_splash
+            pause 1.6
+            stop sound_loop
+            play sound close_water_sink
+            pause 0.5
+
             show layer screens at ts_showscreens
 
             "Я и обычно умываюсь довольно быстро, но когда я на грани опоздания, то умываюсь я просто молниеносно."
@@ -375,6 +389,11 @@ label ts_scenario_7:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
 
+            show layer master at ts_svinka_kupaetsya
+            pause 2
+
+            show layer master at ts_svinka_kupaetsya_kran_open
+
             play sound open_water_sink
             pause 1.3
             stop sound
@@ -385,9 +404,8 @@ label ts_scenario_7:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
 
-            play sound pageflip
-            scene ts_bathroom
-            with wipeleft_scene
+            show layer master at ts_svinka_kupaetsya_cumback
+            pause 2
 
             show layer screens at ts_showscreens
 
@@ -399,6 +417,7 @@ label ts_scenario_7:
                 "Повезло, повезло. Папу я так и не разбудила."
             "А ведь спальня родителей прямо по соседству с ванной..."
             "...не спрашивайте о причудах моего дома. Какой есть."
+            show layer master at ts_svinka_kupaetsya
             "Как только я пробую воду в ванной руками, я тут же отшатываюсь."
             m "Какая же ты горячая!"
             "Я и так купаюсь в воде, которую родители называют кипятком."
@@ -409,6 +428,7 @@ label ts_scenario_7:
             " {w=1.0}{nw}"
 
             stop ambience
+            show layer master at ts_svinka_kupaetsya_kran_open
             play sound close_water_sink
             pause 1
 
@@ -419,10 +439,13 @@ label ts_scenario_7:
             "Только после того, как вода достигает приемлемой для меня температуры, я наконец залезаю в ванную."
             "Да, в ногах слегка покалывает от ещё горячей воды, но это быстро пройдёт."
             "Я сажусь."
+            play sound woda
+            show layer master at ts_svinka_kupaetsya_uapala_v_vannuyu_sooqa
             play ambience amb_bathroom fadein 4
             "Хм. Пока я садилась, даже... и не горячо уже было?"
             play music ts_est
-            show monika 2bk at rn11
+            show layer master at ts_svinka_kupaetsya_cumback2
+            show monika 2bk at t11
             em "А через пятнадцать минут ты уже вылезешь с мыслями, что вода уже холодная."
             em "Интересно, как твои родители держат такую расточительную бездарность, которая набирает полную ванную, чтобы через пятнадцать минут уже вылезти?"
             show monika 3bb at f11
@@ -463,7 +486,8 @@ label ts_scenario_7:
             " {w=1.0}{nw}"
 
             play sound pageflip
-            scene ts_bathroom
+            scene ts_bathroom:
+                align (0.1, 0.85) zoom 3.0
             with wipeleft_scene
 
             show layer screens at ts_showscreens
@@ -477,6 +501,9 @@ label ts_scenario_7:
             m "Вообще-то, тебя нет."
             em "..."
             "Впервые за несколько дней мне удалось заткнуть Аки, а не наоборот."
+            scene ts_bathroom:
+                align (0.1, 0.85) zoom 3.0
+                ease 2 align (0.5, 0.5) zoom 1.0
             "Вытеревшись и одевшись, я спускаюсь на кухню."
 
             show layer screens at ts_hidescreens
@@ -498,6 +525,7 @@ label ts_scenario_7:
             "Вчера я не успела придумать, что же мне приготовить на завтрак. Но зато сегодня у меня есть всё время во вселенной!"
             "Да, сегодня, по идее, готовит папа. Но я посчитаю это как компенсацию за то, что я ничего не приготовила на завтрак в субботу."
             play music ts_dof
+            show layer master at ts_havchik_gotovka
             "Та-а-ак, посмотрим..."
             "Может, макароны? Но с чем?.."
             em "Можно и просто макароны сахаром засыпать, как раз будет приемлемый завтрак и для папы, и для беспомощной бездарности вроде тебя."
@@ -561,9 +589,20 @@ label ts_scenario_7:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
 
+            show layer master at ts_kuh_kran_open
+            pause 2
+
+            show layer master at ts_kuh_kran_open1
             play sound open_water_sink
             pause 1.3
+            show layer master at ts_kuh_kran_open1
             play sound close_water_sink
+            pause 1
+
+            show layer master at ts_kuh_kran_open2
+            pause 2
+
+            show layer master at ts_havchik_gotovka
             pause 1
 
             show layer screens at ts_showscreens
@@ -717,7 +756,6 @@ label ts_scenario_7:
 
             play sound pageflip
             scene ts_seaside_road_morning
-            show ts_green_part
             with wipeleft_scene
 
             show layer screens at ts_showscreens
@@ -736,6 +774,7 @@ label ts_scenario_7:
 
             play sound pageflip
             scene ts_street
+            show ts_green_part
             with wipeleft_scene
 
             show layer screens at ts_showscreens
@@ -769,7 +808,7 @@ label ts_scenario_7:
             " {w=1.0}{nw}"
 
             play sound pageflip
-            scene ts_school_gate
+            scene ts_school_gate_day
             with wipeleft_scene
 
             show layer screens at ts_showscreens

@@ -1200,3 +1200,139 @@ translate english ts_scenario_0_76b2fe88_18:
     # nvl clear
     nvl clear
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:50
+translate english ts_scenario_0_65ffab78:
+
+    # nvlbazar "{font=[prologue_font]}Что во мне такого «одарённого»? В ранние годы я этого не понимала. Но,\nкак говорится: «Кто я такая, чтобы спорить со взрослыми?»"
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:51
+translate english ts_scenario_0_7fe21dbb:
+
+    # nvlbazar "{font=[prologue_font]}«Маленькая ещё»... «Не доросла ещё»... «Подрастёшь – поймёшь»... Продолжать можно до бесконечности..."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:116
+translate english ts_scenario_0_314e691b:
+
+    # ts_ft 1b "Тогда попрощайся с этой школой."
+    ts_ft 1b ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:133
+translate english ts_scenario_0_bf40c9f6:
+
+    # nvlbazar "{font=[prologue_font]}Нет, гением я себя назвать не могу, пусть даже и оценки были лучше, чем у большинства детей моего возраста."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:134
+translate english ts_scenario_0_9701f949:
+
+    # nvlbazar "{font=[prologue_font]}Но помимо чтения, таблицы умножения и прочего, такого важного в начальной школе и такого бесполезного во всём остальном..."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:141
+translate english ts_scenario_0_5f412b61:
+
+    # nvlbazar "{font=[prologue_font]}Наши семьи дружили. Как и мы сами, собственно."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:167
+translate english ts_scenario_0_59b634b1:
+
+    # nvlbazar "{font=[prologue_font]}Поэтому ни о какой дружбе между нами не могло быть и речи. Уважать друг друга – да. Дружить – нет, спасибо."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:232
+translate english ts_scenario_0_c51ce2ce:
+
+    # nvlbazar "{font=[prologue_font]}Вы меня, конечно, спросите: «Что, только мама? Папа к тебе не хорошо относился?»"
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:306
+translate english ts_scenario_0_e75531fd:
+
+    # nvlbazar "{font=[prologue_font]}И хорошо, если он ограничивался тем, что я, по его мнению, «чёртова двоечница»."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:313
+translate english ts_scenario_0_9b62df50:
+
+    # nvlbazar "{font=[prologue_font]}Но когда дело касалось учёбы, и когда я в их глазах была не идеальной девочкой, это был разнос."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:326
+translate english ts_scenario_0_377aeac0:
+
+    # nvlbazar "{font=[prologue_font]}Я в детстве довольно много читала, поэтому учителя подумали, что логичным было бы отправить меня именно в Книжный клуб."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:345
+translate english ts_scenario_0_37453593:
+
+    # nvlbazar "{font=[prologue_font]}Однако я всё равно довольно успешно справлялась. Я даже была вице-президентом клуба."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:400
+translate english ts_scenario_0_829458c3:
+
+    # nvlbazar "{font=[prologue_font]}Но... Помните, как я говорила, что я – невообразимая лентяйка?"
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:437
+translate english ts_scenario_0_0314fffa:
+
+    # nvlbazar "{font=[prologue_font]}Может, он и предвзят, а может, так всё на самом деле и было, это уже было неважно."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:439
+translate english ts_scenario_0_572c1064:
+
+    # nvlbazar "{font=[prologue_font]}Опять же, звёзд с неба я не хватала, я так ни разу ничего и не выиграла, но это был весёлый и интересный опыт."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:446
+translate english ts_scenario_0_cab55c79:
+
+    # nvl clear
+    # nvlbazar "{font=[prologue_font]}Да, с годами я начала обыгрывать папу, всех его друзей, всех моих немногочисленных друзей, просто знакомых и незнакомых людей..."
+    nvl clear
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:455
+translate english ts_scenario_0_d9523ce4:
+
+    # nvlbazar "{font=[prologue_font]}А я что? Всего лишь какая-то маленькая лентяйка, которая, хоть Бог и наделил её талантами, все их успешно закопала..."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:460
+translate english ts_scenario_0_63469a55:
+
+    # nvlbazar "{font=[prologue_font]}Однако внешность бывает очень обманчива. Сама я знаю, что хоть я и умею многое, но всё умею плохо."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:461
+translate english ts_scenario_0_b51d829e:
+
+    # nvlbazar "{font=[prologue_font]}Знаю, что я – лентяйка и вообще бездарность."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:462
+translate english ts_scenario_0_4353d8c2:
+
+    # nvlbazar "{font=[prologue_font]}Другим казалось, что я – мастер на все руки."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:498
+translate english ts_scenario_0_395b632d:
+
+    # nvlbazar "{font=[prologue_font]}И если мы раньше спорили буквально обо всём на свете, то затем мы только и спорили, что о бюджете да о подготовке к тому или иному мероприятию."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:503
+translate english ts_scenario_0_7c757336:
+
+    # nvlbazar "{font=[prologue_font]}Так что я просто попросила, чтобы меня сняли с должности, а затем сама ушла в закат, оставив эти интрижки для кого-то другого."
+    nvlbazar ""
+

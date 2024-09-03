@@ -4,6 +4,41 @@
 
 init:
 
+    transform ts_kuh_kran_open2:
+        align (0.35, 0.6) zoom 3.0
+        ease 2 align (0.5, 0.5) zoom 1.0
+
+    transform ts_kuh_kran_open:
+        align (0.5, 0.5) zoom 1.0
+        ease 2 align (0.35, 0.6) zoom 3.0
+
+    transform ts_kuh_kran_open1:
+        align (0.35, 0.6) zoom 3.0
+        ease 0.25 align (0.4, 0.65) zoom 3.0
+        ease 0.25 align (0.35, 0.6) zoom 3.0
+
+    transform ts_svinka_kupaetsya_uapala_v_vannuyu_sooqa:
+        align (0.1, 0.85) zoom 3.0
+        ease 0.25 align (0.1, 0.95) zoom 3.0
+        ease 0.25 align (0.1, 0.85) zoom 3.0
+
+    transform ts_svinka_kupaetsya_cumback2:
+        align (0.1, 0.85) zoom 3.0
+        ease 2 align (0.5, 0.25) zoom 2.0
+
+    transform ts_svinka_kupaetsya_cumback:
+        align (0.1, 0.85) zoom 3.0
+        ease 2 align (0.5, 0.5) zoom 1.0
+
+    transform ts_svinka_kupaetsya_kran_open:
+        align (0.1, 0.85) zoom 3.0
+        ease 0.25 align (0.15, 0.9) zoom 3.0
+        ease 0.25 align (0.1, 0.85) zoom 3.0
+
+    transform ts_svinka_kupaetsya:
+        align (0.5, 0.5) zoom 1.0
+        ease 2 align (0.1, 0.85) zoom 3.0
+
     transform ts_prosmotr_teleka:
         align (0.5, 0.5) zoom 1.0
         ease 2 align (0.65, 0.6) zoom 2.0
@@ -158,7 +193,7 @@ init:
 
     transform ts_roof_beg:
         align (0.5, 0.5) zoom 1.0
-        ease 2.5 align (0.5, 0.5) zoom 4.0
+        ease 2.5 align (0.5, 0.4) zoom 4.0
         ease 0.5 align (0.5, 0.1) zoom 4.0
 
     transform ts_blur_transform_suka(x, y, z):

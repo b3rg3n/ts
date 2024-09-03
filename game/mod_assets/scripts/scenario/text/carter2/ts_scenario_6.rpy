@@ -31,12 +31,21 @@ label ts_scenario_6:
     stop sound fadeout 7
     $ Chapter("Новые начинания")
 
-    play music audio.okevrmon fadein 4
+
+    play sound ts_alarm fadein 2
+
+    pause 2
+
     scene ts_bedroom
-    with ed_night_dis
-    pause 1
+    show unblink
+    show layer master at ts_vstavai_shashlik
+    pause 3
+    play sound svet_on
+    pause 1.5
 
     show layer screens at ts_showscreens
+
+    play music audio.okevrmon fadein 4
 
     "На часах обычные и привычные семь утра. А на календаре понедельник."
     "Нет, я не проснулась только что, и не спала все оставшиеся выходные."
@@ -57,6 +66,19 @@ label ts_scenario_6:
     play sound pageflip
     scene ts_bathroom
     with wipeleft_scene
+
+    show layer master at ts_clean_eblet
+    pause 2
+    play sound open_water_sink
+    pause 0.5
+    stop sound
+    play sound_loop water_sink_stream
+    pause 1
+    play sound water_splash
+    pause 1.6
+    stop sound_loop
+    play sound close_water_sink
+    pause 0.5
 
     show layer screens at ts_showscreens
 

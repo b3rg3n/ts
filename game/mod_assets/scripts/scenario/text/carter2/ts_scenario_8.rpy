@@ -31,17 +31,19 @@ label ts_scenario_8:
     stop sound fadeout 7
     $ Chapter("Затишье перед бурей")
 
+
+    play sound ts_alarm fadein 2
+
     pause 2
 
-    play sound2 ts_alarm fadein 2
-    pause 2
     scene ts_bedroom
     show unblink
-    pause 1
-    
-    show layer screens at ts_showscreens
+    show layer master at ts_vstavai_shashlik
+    pause 3
+    play sound svet_on
+    pause 1.5
 
-    stop sound2 fadeout 2
+    show layer screens at ts_showscreens
 
     "О-о-ох..."
     "Пятница..."
@@ -75,6 +77,20 @@ label ts_scenario_8:
     play sound pageflip
     scene ts_bathroom
     with wipeleft_scene
+
+
+    show layer master at ts_clean_eblet
+    pause 2
+    play sound open_water_sink
+    pause 0.5
+    stop sound
+    play sound_loop water_sink_stream
+    pause 1
+    play sound water_splash
+    pause 1.6
+    stop sound_loop
+    play sound close_water_sink
+    pause 0.5
 
     show layer screens at ts_showscreens
 

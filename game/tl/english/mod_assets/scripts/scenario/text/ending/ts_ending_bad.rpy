@@ -1266,3 +1266,113 @@ translate english ts_bad_ending_blya_c414ec17_13:
     # " {w=1.0}{nw}"
     ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:79
+translate english ts_bad_ending_blya_0944835b:
+
+    # doc "Я просто проверяю ваши знания и память. Сами понимаете, четыре года – это довольно длительный срок, а с вашей травмой вполне возможны некоторые провалы в памяти."
+    doc ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:87
+translate english ts_bad_ending_blya_adb79206:
+
+    # doc "Кстати, попробуйте пошевелить конечностями – всё нормально функционируют?"
+    doc ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:88
+translate english ts_bad_ending_blya_edf32fdb:
+
+    # "Я делаю всё, как сказал врач – вроде всё нормально."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:93
+translate english ts_bad_ending_blya_2b792c6a:
+
+    # doc "Ну да ладно, не будем о плохом – плохое уже было. Сейчас-то вы как себя чувствуете?"
+    doc ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:97
+translate english ts_bad_ending_blya_07b23ec9:
+
+    # doc "В общем, когда наркоз окончательно отойдёт, и вы сможете сами себя обслуживать – прошу в наше отделение."
+    doc ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:100
+translate english ts_bad_ending_blya_10717b7a:
+
+    # doc "Ну вот и славно. Если хотите – можете вздремнуть, если, конечно, вы за четыре года так и не отдохнули."
+    doc ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:101
+translate english ts_bad_ending_blya_fe14a3f0:
+
+    # m "Да... лучше вздремну..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:133
+translate english ts_bad_ending_blya_5fb44eb2:
+
+    # "Врач говорил про какого-то голубоглазого светловолосого мужчину – по всей видимости, это папа."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:136
+translate english ts_bad_ending_blya_61eabe32:
+
+    # "Естественно, об этом я тоже спрашивала у доктора, но тот лишь отмахнулся, сказав: «Это уже ваши личные дела, я в них не лезу»."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:150
+translate english ts_bad_ending_blya_2c1d88f6:
+
+    # "Как странно, я только выбралась из одной «Недели Сурка», чтобы попасть в ещё один."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:172
+translate english ts_bad_ending_blya_7cef1187:
+
+    # m "Но в остальном – это даже хуже, чем в моих снах..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:300
+translate english ts_bad_ending_blya_f74adef8:
+
+    # "Хотя многие учителя за это время и поменялись, директор Раддан остался."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:346
+translate english ts_bad_ending_blya_b05f2855:
+
+    # misc 2bf "А вы имена их не помните? А то за эти годы столько новых учеников, всех и не вспомнишь."
+    misc 2bf ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:494
+translate english ts_bad_ending_blya_91543ff6:
+
+    # m "А что вообще есть {i}реальность{/i}? Просто ещё один слой? Сама же говорила, что то, как я спала – это были просто очень детализированные сны."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:495
+translate english ts_bad_ending_blya_9babe53c:
+
+    # m "Что, если реальность на самом деле – это просто ещё один большой сон?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:519
+translate english ts_bad_ending_blya_21965201:
+
+    # "Ведь реальность – это просто ещё один слой."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:522
+translate english ts_bad_ending_blya_e9b8844e:
+
+    # brg "Будут цг – будет ебейшая режиссура в стиле интерстеллара, нах."
+    brg ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:523
+translate english ts_bad_ending_blya_35f783f0:
+
+    # brg "Ну а пока – тестим бэд титры, ёпта."
+    brg ""
+

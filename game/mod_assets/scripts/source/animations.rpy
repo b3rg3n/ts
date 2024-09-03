@@ -714,6 +714,16 @@ init:
             'ts_blinking'
             repeat
 
+    image ts_prosnulas_ot_ahuya:
+        contains:
+            'ts_blinking'
+            pause 5
+            'ts_blinking'
+            pause 2.25
+            'ts_blinking'
+            pause 4
+            'ts_blinking'
+
 ###АНИМАЦИЯ КОШМАРА МОНИКИ В КОНЦЕ 4 ГЛАВЫ 1 АКТА НАХ
     image vse_pizda_monike:
         ts_cg + "brg_kolhoz_blya/s1.png" with poplil_pacan1

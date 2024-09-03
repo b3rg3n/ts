@@ -76,11 +76,37 @@ image y_glitch_head:
     0.15
     repeat
 
-image yuri stab_1 = ts_yuri_pt + "stab/1.webp"
-image yuri stab_2 = ts_yuri_pt + "stab/2.webp"
-image yuri stab_3 = ts_yuri_pt + "stab/3.webp"
-image yuri stab_4 = ts_yuri_pt + "stab/4.webp"
-image yuri stab_5 = ts_yuri_pt + "stab/5.webp"
+image yuri stab_1 = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/1.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/1.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/1.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_yuri_pt + "stab/1.webp") )
+
+image yuri stab_2 = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/2.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/2.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/2.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_yuri_pt + "stab/2.webp") )
+
+image yuri stab_3 = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/3.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/3.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/3.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_yuri_pt + "stab/3.webp") )
+
+image yuri stab_4 = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/4.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/4.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/4.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_yuri_pt + "stab/4.webp") )
+
+image yuri stab_5 = ConditionSwitch(
+"persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/5.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
+"persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/5.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
+"persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_yuri_pt + "stab/5.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
+True,im.Composite((960,960), (0,0), ts_yuri_pt + "stab/5.webp") )
+
+
 image yuri stab_6 = LiveComposite((960,960), (0, 0), ts_yuri_pt + "stab/6-mask.webp", (0, 0), "yuri stab_6_eyes", (0, 0), ts_yuri_pt + "stab/6.webp")
 
 image yuri stab_6_eyes:

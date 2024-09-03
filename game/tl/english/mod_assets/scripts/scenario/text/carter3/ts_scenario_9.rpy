@@ -1164,3 +1164,59 @@ translate english ts_scenario_9_c414ec17_11:
     # " {w=1.0}{nw}"
     ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_9.rpy:94
+translate english ts_scenario_9_1c822ff9:
+
+    # s 2px "Забыла уже? Сегодня{w=0.4}{nw}"
+    s 2px ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_9.rpy:129
+translate english ts_scenario_9_2c6fffd6:
+
+    # s "Говорю же, сегодня{w=0.4}{nw}"
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_9.rpy:218
+translate english ts_scenario_9_a4ab099e:
+
+    # s 3px "Мне, кстати, в магазин также надо, так что нам даже по пути будет!"
+    s 3px ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_9.rpy:273
+translate english ts_scenario_9_dc734471:
+
+    # m "Г-г-г-где-то в-в-вон... там..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_9.rpy:291
+translate english ts_scenario_9_2bd1bd0a:
+
+    # "Я что, сплю? Потому что если да, то этот сон мне очень не нравится."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_9.rpy:424
+translate english ts_scenario_9_2ad68cba:
+
+    # "То на этот раз я просто застываю на месте, не в силах произнести не то что хотя бы слово – даже и звука произнести не могу!"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_9.rpy:457
+translate english ts_scenario_9_cec97038:
+
+    # ts_ft "Ну хорошо, хорошо. Сегодня{w=0.1}{nw}"
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_9.rpy:640
+translate english ts_scenario_9_a14c6451:
+
+    # em 2bb "Там было что-то про Солнце с другой стороны, которое символизирует мир, который скрыт ото всех, кроме нас самих, и, это, как это называется..."
+    em 2bb ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_9.rpy:711
+translate english ts_scenario_9_eb057aa8:
+
+    # em 2bd "Но насчёт поспать – с этим я согласна."
+    em 2bd ""
+

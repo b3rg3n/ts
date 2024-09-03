@@ -1242,3 +1242,19 @@ translate english strings:
     old "Self-voicing support is limited when using a touch screen."
     new ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+translate english strings:
+
+    # renpy/common/00translation.rpy:63
+    old "Translation identifier: [identifier]"
+    new ""
+
+    # renpy/common/00translation.rpy:84
+    old " translates [tl.filename]:[tl.linenumber]"
+    new ""
+
+    # renpy/common/00translation.rpy:101
+    old "\n{color=#fff}Copied to clipboard.{/color}"
+    new ""
+

@@ -5656,3 +5656,481 @@ translate english strings:
     old "Юри"
     new ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:73
+translate english ts_scenario_7_6e2a057b:
+
+    # "Ну и что прикажете делать? Спать я уже не сильно-то и хочу, но доспать лишние пару часов – это тоже важно."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:111
+translate english ts_scenario_7_2ca8097b:
+
+    # "Сегодня готовит папа. Но, судя по всему, он уже сам поел, уже собирается на работу, и единственное, что осталось – это разбудить непутёвую дочь..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:137
+translate english ts_scenario_7_7bd16a17:
+
+    # ts_ft "Только не задерживайся ещё сильнее!"
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:147
+translate english ts_scenario_7_dd00f4e9:
+
+    # "Сказала бы я это или нет – он уже в любом случае ушёл."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:178
+translate english ts_scenario_7_ce405375:
+
+    # em "Ты иногда забываешь, что самый большой закон подлости – это ты сама!"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:187
+translate english ts_scenario_7_c7bfcb24:
+
+    # m "В любом случае – {i}пожалуйста{/i}, не мешай. И так опаздываю, а если на разговорчики с тобой буду время тратить, то и подавно."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:202
+translate english ts_scenario_7_151188b9:
+
+    # "Надо же. Кофе ещё не до конца остыл. Хотя бы не придётся выливать и греть новую чашку."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:203
+translate english ts_scenario_7_ad5355cc:
+
+    # "Я олимпийскими темпами съедаю хлопья, осушаю всю чашку кофе в три глотка и выбегаю на улицу, предварительно не забыв закрыть дверь на ключ."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:204
+translate english ts_scenario_7_10910036:
+
+    # "У нас хоть район и благополучный, но если вся семья весь день отсутствует, а дверь останется открытой, то кто знает, какие козни наши соседи или проходимцы могут построить."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:240
+translate english ts_scenario_7_d6d864f4:
+
+    # "А все эти сказки о «спортивной Монике» – это действительно всего лишь сказки."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:245
+translate english ts_scenario_7_3e1cfe80:
+
+    # m "Всё. Дальше иду пешком. Марафонить – это совсем не моё..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:252
+translate english ts_scenario_7_eeab59be:
+
+    # "Единственное, к чему я прислушиваюсь – это к желанию пить. Да побольше, ПОБОЛЬШЕ."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:385
+translate english ts_scenario_7_7d5b3014:
+
+    # "Но одно дело – быстренько принять душ перед сном, и совсем другое – искупаться в ванной. С чувством, с толком, с расстановкой."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:386
+translate english ts_scenario_7_4db7a99e:
+
+    # "Времени у меня более чем достаточно – до начала уроков почти четыре часа."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:440
+translate english ts_scenario_7_54d5be3a:
+
+    # "Да, в ногах слегка покалывает от ещё горячей воды, но это быстро пройдёт."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:459
+translate english ts_scenario_7_62bff39e:
+
+    # m "Чего? В смысле, {b}его{/b}?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:498
+translate english ts_scenario_7_00c2c127:
+
+    # "Но, справедливости ради, папины я не трогала. А мама всё равно среди прочих гостинцев привезёт новые бутыли шампуня, поэтому никто и не заметит."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:521
+translate english ts_scenario_7_83c936d1:
+
+    # "Хотя нет, пробежка сразу после ванной – даже в ноябре это с большой долей вероятности будет означать, что после этого мне понадобится ещё одна ванная."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:526
+translate english ts_scenario_7_d803cdde:
+
+    # "Да, сегодня, по идее, готовит папа. Но я посчитаю это как компенсацию за то, что я ничего не приготовила на завтрак в субботу."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:538
+translate english ts_scenario_7_b39372d0:
+
+    # m "Ну а насчёт макарон с сахаром и бутербродов для папы – идея здравая."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:573
+translate english ts_scenario_7_59880c7c:
+
+    # "С другой стороны, а я вообще спала?"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:612
+translate english ts_scenario_7_da2dcebf:
+
+    # "Парочки должно быть достаточно. А даже если и нет – что он, сам добавку не сделает? Не маленький уже."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:613
+translate english ts_scenario_7_78b14fe2:
+
+    # "Усмехнувшись сама себе, я продолжаю готовить кушанье."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:635
+translate english ts_scenario_7_f8c27db7:
+
+    # "Спагетти будут вариться некоторое время. Я же тем временем ставлю полный чайник на две чашки кофе."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:689
+translate english ts_scenario_7_b9775ee1:
+
+    # ts_ft "Обмен стихами – это очень щепетильная тема. Не каждый может показать то, что он пишет для себя, даже если вы все в клубе уже перезнакомились."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:737
+translate english ts_scenario_7_83063859:
+
+    # em "А не как некоторые..."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:764
+translate english ts_scenario_7_b5dfc9b9:
+
+    # "Ну что же, сказано – сделано. Теперь главное – не разгуливать слишком долго."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:912
+translate english ts_scenario_7_81c2fc90:
+
+    # nvlbazar "Сказать про него, что он мразь – это означает не сказать ничего."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:918
+translate english ts_scenario_7_93807eaf:
+
+    # nvlbazar "Его методика преподавания – просто выписывать основные факты, параллельно применяя всякие интересные анаграммы и прочие удобства для преподавания – по итогу дала свои плоды."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:931
+translate english ts_scenario_7_78a1ad32:
+
+    # nvl clear
+    # nvlbazar "Нет, к нам в школу в этом году пришёл ещё один учитель истории, однако это была молодая девушка, да и практиковала преподавание в основном в младших классах."
+    nvl clear
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:956
+translate english ts_scenario_7_de231167:
+
+    # "Поэтому я вместо дополнительного перекуса просто выхожу в коридор подышать свежим воздухом."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:981
+translate english ts_scenario_7_a0611417:
+
+    # pod1 "Небось, и там всем будет доказывать, что манга – это литература..."
+    pod1 ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:984
+translate english ts_scenario_7_069dc28b:
+
+    # "По крайней мере, некоторая часть манги, которую она читает, содержит истории не хуже классических литературных произведений."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:992
+translate english ts_scenario_7_ea87920b:
+
+    # pod1 "В любом случае, наша малютка растёт. Вчера она пошла в Литературный клуб, а завтра уже начнёт избавляться от этого ребячества."
+    pod1 ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1019
+translate english ts_scenario_7_93045a91:
+
+    # m "Моя ситуация – это худой мир. А её ситуация – это добрая война."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1026
+translate english ts_scenario_7_da53bf1d:
+
+    # em "Как говорил классик: «Не верю!»"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1053
+translate english ts_scenario_7_4ae204be:
+
+    # "...ладно, плохие мысли о никудышной системе образования долой – у меня же ещё клуб впереди."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1144
+translate english ts_scenario_7_da077a03:
+
+    # m "Ха-а-а-а-а-а-А-А-А-а-а-А-а-А-А-а!!!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1145
+translate english ts_scenario_7_1e6bd616:
+
+    # m "Ты можешь прерваться...{w=0.44} ХОТЬ НА ПЯТЬ МИНУТ?!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1151
+translate english ts_scenario_7_0b3f2f94:
+
+    # em "Нет, не могу! Бездарность, бездарность, бездарность, бездарность, бездарность, безд{nw}"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1168
+translate english ts_scenario_7_ee190f97:
+
+    # em "бездарность, бездарность{w=1}{nw}"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1179
+translate english ts_scenario_7_817a1554:
+
+    # em "ность, бездарность, бездар{w=1}{nw}"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1190
+translate english ts_scenario_7_8edac56b:
+
+    # em "сть бездарность, бездарность, безда{nw}{nw}"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1201
+translate english ts_scenario_7_8a32bca5:
+
+    # em "ность, бездарность, бездарность, безд{w=1}{nw}"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1254
+translate english ts_scenario_7_d77d69da:
+
+    # m "Я не против. Иди поговори с ним – четырёх человек достаточно, но пятый участник лишним никогда не будет."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1280
+translate english ts_scenario_7_20d28bb4:
+
+    # "Я думала, что после такой долгой паузы намечается какая-то курьёзная история, связанная с ними двумя."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1348
+translate english ts_scenario_7_43067274:
+
+    # n "А, ну это да..."
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1401
+translate english ts_scenario_7_8b3abcbc:
+
+    # s 4h "Я ведь точно такая же его подруга, как и он – мой друг!"
+    s 4h ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1403
+translate english ts_scenario_7_41908e8e:
+
+    # m "Ну вот. А раз ты его бы поддержала, а он тебя – нет, то тогда какой он тебе друг вообще?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1600
+translate english cartersevenpoemsblya_b09e6125:
+
+    # s 4x "Просто обмен стихами – это такой увлекательный процесс, что я бы ещё с кем-нибудь поменялась!"
+    s 4x ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1643
+translate english cartersevenpoemsblya_9b69dd08:
+
+    # "Она не из тех людей, которые всё ходят вокруг да около, она переходит сразу к делу."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1656
+translate english cartersevenpoemsblya_3517b617:
+
+    # "Всё же это мероприятие было каким-то спонтанным – не удивительно, что она написала немного."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1669
+translate english cartersevenpoemsblya_2eb852cf:
+
+    # n 2d "В конце концов, он прав. А ещё, главное – не обложка, а что внутри этой книжицы!"
+    n 2d ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1761
+translate english cartersevenpoemsblya_e1674c9c:
+
+    # m "Ты когда-нибудь слышала такую фразу, что «краткость – сестра таланта»?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1773
+translate english cartersevenpoemsblya_83bef7e2:
+
+    # n "Спасибо, Моника! Ты самая лучшая подруга, о которой я могла только мечтать!"
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1825
+translate english cartersevenpoemsblya_fe4f8d47:
+
+    # "В любом случае, начать лучше с неё, чтобы, когда дело дойдёт до остальных, мне было уже не так обидно за мои бездарные писательские навыки."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1841
+translate english cartersevenpoemsblya_1df70496:
+
+    # m "Не поверишь – со стихом."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1871
+translate english cartersevenpoemsblya_a9a9ca83:
+
+    # "По всей обложке располагались какие-то символы, которые вроде и кажутся знакомыми, но разобрать я их никак не могу."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1894
+translate english cartersevenpoemsblya_88b433c3:
+
+    # y 2v "В-видно, твоё стихотворение – уже далеко не первое..."
+    y 2v ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1908
+translate english cartersevenpoemsblya_30c5e9fc:
+
+    # y 2j "Примерное настроение твоего стихотворения – полнейший хаос и беспредел, и главная героиня стихотворения пытается перекричать этот хаос."
+    y 2j ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1913
+translate english cartersevenpoemsblya_40e07eaf:
+
+    # y 1j "А, и у тебя в некоторых местах рифма на глаголы, что... не совсем приемлемо в стихах. Да, это можно, но это слишком просто – кажется, что над последними строками ты совсем не заморачивалась."
+    y 1j ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1920
+translate english cartersevenpoemsblya_9d509c4a:
+
+    # "Но зато я в итоге оказалась права – Юри действительно самая опытная в плане писательских навыков."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1969
+translate english cartersevenpoemsblya_a7f06d79:
+
+    # "Я не эксперт в настроениях стихотворений, но по-моему, её стих – это чуть ли не противоположность хаоса."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:1980
+translate english cartersevenpoemsblya_902c4e1f:
+
+    # "Зато как только мы уходим с литературных отношений и возвращаемся в житейские, Юри как будто снова подменили – она начинает заикаться и извиняться за всё."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2056
+translate english ts_carterseven_poem_finally_52424a86:
+
+    # m "Да ладно вам, девочки! Вы же уже написали один стих, дальше будет гораздо проще!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2106
+translate english ts_carterseven_poem_finally_d73a0f8f:
+
+    # m "А сейчас – до завтра!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2168
+translate english ts_carterseven_poem_finally_97eddc94:
+
+    # em 4k "Бездарность, бездарность, бездарность, бездарность, бездарность, бездарность, безда{nw}"
+    em 4k ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2183
+translate english ts_carterseven_poem_finally_57651791:
+
+    # em "арность, бездарность, бездарность, бездарность, безд{nw}"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2195
+translate english ts_carterseven_poem_finally_284b2ba4:
+
+    # "Я бегу со школы до дома ещё быстрее, чем утром, только чтобы она унялась."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2197
+translate english ts_carterseven_poem_finally_915558a6:
+
+    # "Я бегу со школы до дома так быстро, как только могу, только чтобы она унялась."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2273
+translate english ts_carterseven_poem_finally_01a16ed7:
+
+    # "Ах, ну конечно – папа уже с головой окунулся в очередную политическую передачу, в которой я совершенно ничего не понимаю..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2287
+translate english ts_carterseven_poem_finally_f386cb34:
+
+    # m "Пап, может, на кухню лучше пойдём? Там нас {i}никто не будет отвлекать{/i}."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2331
+translate english ts_carterseven_poem_finally_56531c4b:
+
+    # ts_ft 1c "Максимум, что у тебя получится – так это испортить самой себе настроение из-за того, что у тебя ничего не получается, потому что все рифмы кажутся какими-то натянутыми и натужными, ну и так далее."
+    ts_ft 1c ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2339
+translate english ts_carterseven_poem_finally_8d55f467:
+
+    # ts_ft 1c "Однако это не отменяет мною вышесказанное, что стихосложение – это процесс творческий: ты либо хочешь писать, либо не хочешь. Здесь нет слова «надо»."
+    ts_ft 1c ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2368
+translate english ts_carterseven_poem_finally_e4a9c710:
+
+    # m "Пап, я вегетарианка, а не веган. Веганство – это отказ и от всех продуктов, которые животные производят: яйца, молочка, ну и так далее."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2399
+translate english ts_carterseven_poem_finally_7490678c:
+
+    # "После этого каждый пошёл своей дорогой: папа – в гостиную, а я – в свою комнату."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2422
+translate english ts_carterseven_poem_finally_42be2591:
+
+    # em "Пораньше – это как сегодня?"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2424
+translate english ts_carterseven_poem_finally_2fa904ab:
+
+    # m "А может, и как сегодня! В любом случае – стих я напишу. А теперь дай мне отдохнуть. Я в конце концов заслужила."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_7.rpy:2444
+translate english ts_carterseven_poem_finally_b6e7e651:
+
+    # "Но с другой стороны, я и вчера уснула и проснулась рано, плюс сегодня был напряжённый день, так что как минимум отдохнуть – это скорее не прихоть, а необходимость."
+    ""
+

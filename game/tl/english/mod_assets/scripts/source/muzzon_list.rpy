@@ -430,3 +430,15 @@ translate english strings:
     old "Without You"
     new ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+translate english strings:
+
+    # game/mod_assets/scripts/source/muzzon_list.rpy:385
+    old "Main Theme"
+    new ""
+
+    # game/mod_assets/scripts/source/muzzon_list.rpy:413
+    old "Theme for Overt"
+    new ""
+

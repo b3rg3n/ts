@@ -5178,3 +5178,469 @@ translate english strings:
     old "[menutext]"
     new ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:49
+translate english ts_scenario_8_6c9e1e28:
+
+    # "Пятница..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:54
+translate english ts_scenario_8_d9cfedfa:
+
+    # m "Да без тебя знаю... сегодня завтрак готовлю я."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:157
+translate english ts_scenario_8_90dbbc28:
+
+    # ts_ft "Что на завтрак?"
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:165
+translate english ts_scenario_8_cf8f108f:
+
+    # m "В крайнем случае, в столовой поем."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:167
+translate english ts_scenario_8_05bb588b:
+
+    # ts_ft "Моника, ты уже не первый раз говоришь, что если ты за завтраком не наешься, то в столовой поешь, только вот я сомневаюсь, что ты в столовую вообще ходишь..."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:190
+translate english ts_scenario_8_81714b9b:
+
+    # "Спустя некоторое время завтрак уже был готов и разложен по двум тарелкам."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:191
+translate english ts_scenario_8_867b3cfb:
+
+    # "Некоторое время мы просто молча едим, как вдруг папа внезапно произносит:"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:201
+translate english ts_scenario_8_59feab06:
+
+    # ts_ft 2h "Ты уверена, что не хочешь одеться потеплее?"
+    ts_ft 2h ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:256
+translate english ts_scenario_8_019720e1:
+
+    # "Может, синоптики просто ошиблись? Они же, в конце концов, тоже люди, им тоже свойственно ошибаться."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:257
+translate english ts_scenario_8_c8304f29:
+
+    # "Пожав плечами, я с улыбкой пошла... А, нет, никуда я не пошла – я же зонтик забыла!"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:268
+translate english ts_scenario_8_5b010975:
+
+    # ts_ft "{size=+3}Так он на вешалке, рядом с остальными зонтиками.{/size}"
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:269
+translate english ts_scenario_8_905062d8:
+
+    # m "{size=+3}Спасибо.{/size}"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:342
+translate english ts_scenario_8_c9f2ce38:
+
+    # "«Моника, зачем ты постоянно смотришь на часы, если время особо и не изменилось?» – спросите вы. А я вам отвечу: просто привычка."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:384
+translate english ts_scenario_8_ea66e3b1:
+
+    # "Не то чтобы мне было не всё равно – я уже привыкла к своего рода нелюдимости..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:418
+translate english ts_scenario_8_c9aeb36d:
+
+    # "После алгебры понемногу начинают сгущаться тучи."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:426
+translate english ts_scenario_8_7c6a2bf3:
+
+    # "Да и это не то чтобы мне самой это было нужно – поесть мне всё-таки необходимо, потому что сегодня хлопьями я совершенно не наелась."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:441
+translate english ts_scenario_8_a26f36f3:
+
+    # "Не зря же говорят, что «всё лучшее – детям», вот хотя бы один раз администрация школы постаралась на славу, чтобы хотя бы есть было приятнее."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:442
+translate english ts_scenario_8_a8674e6e:
+
+    # "Самое главное, чтобы сама еда была настолько же вкусной, как и интерьер столовой – красивым."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:443
+translate english ts_scenario_8_b7b4d19e:
+
+    # "Собравшись с силами, я встаю в очередь."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:468
+translate english ts_scenario_8_ba20a790:
+
+    # "Следующим этапом обязательно должен стать разгон всех этих бездарных учителей гуманитарных наук, а на их место должны прийти действительно хорошие."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:533
+translate english ts_scenario_8_0122c474:
+
+    # "Нацуки же в свою очередь говорит, что Юри как будто словарь проглотила, и теперь каждое её ик{b}а{/b}ние образует случайное слово, которое вообще не к месту."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:534
+translate english ts_scenario_8_8178e0ce:
+
+    # "А что она говорит по поводу почерка Юри... Один из самых безобидных её упрёков заключается в том, что Юри будет поступать в медицинский университет, а потому заранее готовится к этому."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:536
+translate english ts_scenario_8_34a7da4b:
+
+    # "Впрочем, неважно. Главное, что нам всем обмен стихами нравится, а то, что кто-то упрекает за спиной кого-то другого – это уже дело десятое."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:548
+translate english ts_scenario_8_13e3b7d4:
+
+    # m "Какая вообще разница, три человека это будут или пара десятков человек?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:558
+translate english ts_scenario_8_2a57f1f0:
+
+    # m "Сайори, ты же очень открытый человек, ты Юри с Нацуки уже считаешь своими друзьями..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:564
+translate english ts_scenario_8_b0f91520:
+
+    # m "Теперь самое главное: убедить и Юри с Нацуки, чтобы мы все были заодно..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:571
+translate english ts_scenario_8_8e9fc793:
+
+    # "Пока разговаривали, мы уже давно доели и просто говорили о клубе."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:609
+translate english ts_scenario_8_ee849fc3:
+
+    # "Кап-кап-кап, кап-кап-кап... Я очень люблю дождь. Причём я одновременно люблю как просто наблюдать за ним за окном, так и гулять под самим дождём."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:613
+translate english ts_scenario_8_dd521fa9:
+
+    # "«Вообще-то, не знаю – я поэтому потом и передумала и любезно отказалась, хотя изначально приглашала тебя к себе в воду.»"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:697
+translate english ts_scenario_8_0999427c:
+
+    # m "Н-Нацуки, Дискуссионный клуб – это место для оттачивания навыков ораторского искусства, и в особенности для тех, кто этим раньше никогда не занимался."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:703
+translate english ts_scenario_8_02580688:
+
+    # m "{size=+6}Поэтому-то я и создала новый клуб с нуля, потому что я не боюсь ответственности, а наоборот, иду навстречу к ней.{/size}"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:719
+translate english ts_scenario_8_200bc76f:
+
+    # m "Кстати, об обмене стихами – все ведь написали стихи?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:875
+translate english poemresponses2suka_dd6cccdf:
+
+    # "Впрочем, это же моя подруга Сайори – она хоть человек и открытый, но за то время, что я её знаю, она не из таких, кто будет трепаться языком по поводу и без."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:901
+translate english poemresponses2suka_d5b085fe:
+
+    # "...или нет, не совсем уловила. Но посыл всё равно ясен – более качественные стихи примерно и означает более качественное оформление этого самого стихотворения."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1002
+translate english poemresponses2suka_586c62da:
+
+    # m "Но это не значит, что кто-то пишет лучше, а кто-то – хуже. Они обе пишут одинаково хорошо."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1043
+translate english poemresponses2suka_4c80a31b:
+
+    # "Да и мне тоже не стоит терять времени."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1116
+translate english poemresponses2suka_f06e6f8b:
+
+    # "Да, во вторник она сама говорила мне, что книгу по обложке не судят, и главное – не обложка книги, а что внутри этой самой книги, но..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1117
+translate english poemresponses2suka_4c18bfc3:
+
+    # "Подростковый период – это, по сути, то время, в котором очень хочется похвастаться всем, чем только можно."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1120
+translate english poemresponses2suka_7223e4b4:
+
+    # "Однако Нацуки хвастаться было просто нечем. По крайней мере, на первый взгляд."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1121
+translate english poemresponses2suka_2213abc1:
+
+    # "А потому неудивительно, что когда она достаёт свои дешёвые тетрадки, её одноклассники с тетрадями покрасивее просто стыдят её."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1123
+translate english poemresponses2suka_f7b5c656:
+
+    # "Довольно красивые на первый взгляд. Но на второй взгляд – это подростковое трактование многих экзистенциальных проблем."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1129
+translate english poemresponses2suka_6e6bc76a:
+
+    # m "А давай... Давай я тебе тетрадки куплю..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1240
+translate english poemresponses2suka_7f69c0a2:
+
+    # n "С первой же строки – и сразу к делу!"
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1245
+translate english poemresponses2suka_94a4fa4d:
+
+    # "Она тоже очень сильно продвинулась в стихосложении за эти несколько дней."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1247
+translate english poemresponses2suka_517e81d0:
+
+    # "Она очень сильно продвинулась в стихосложении за эти несколько дней."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1254
+translate english poemresponses2suka_bf90b867:
+
+    # "«А ты не забыла, что ты – это часть меня, поэтому любая твоя реплика становится моей?»"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1314
+translate english poemresponses2suka_a996ea7d:
+
+    # y 2b "Да и другие девочки, которые до этого ни одного стихотворения не написали, за эту неделю продвинулись в стихосложении."
+    y 2b ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1425
+translate english poemresponses2suka_4b249aeb:
+
+    # "Так вот, это оказалось наглой ложью. За эту неделю она меня невероятно выбесила. А впереди ещё весь вечер, выходные и фестиваль..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1479
+translate english ts_carter8_posle_poems_suka_9f1d4cc6:
+
+    # m "Теперь самое время... заняться подготовкой к фестивалю..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1492
+translate english ts_carter8_posle_poems_suka_21886c71:
+
+    # "Я смотрю на Юри, но она как будто избегает моего взгляда."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1493
+translate english ts_carter8_posle_poems_suka_616fefbf:
+
+    # "Да что же это такое?! Я ведь сюда не ругать её пришла, а просто обсудить, кто что будет готовить для фестиваля."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1494
+translate english ts_carter8_posle_poems_suka_5e4bcb91:
+
+    # "Что же, ладно... Придётся надавить самой. И только пусть попробует возразить, что эта работа ей не подходит!"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1514
+translate english ts_carter8_posle_poems_suka_a93c79f1:
+
+    # m "Ты могла бы красиво написать всякие красивые слова, это же {i}литературное{/i} мероприятие, в конце-то концов. А литература без слов – это как, я не знаю, музыка без нот."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1517
+translate english ts_carter8_posle_poems_suka_6fc0572a:
+
+    # m "Да и к тому же, подобрать соответствующую атмосферу – это дело очень скрупулёзное."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1541
+translate english ts_carter8_posle_poems_suka_1cb5fa38:
+
+    # "Я вообще забыла, что она всё это время была с нами. С того момента, как мы закончили обмен стихами, она не произнесла ни слова."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1584
+translate english ts_carter8_posle_poems_suka_21ec03c3:
+
+    # s 3h "Иначе какой тогда во всех этих приготовлениях смысл, если самое главное – мы сами – не готово от слова совсем?"
+    s 3h ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1588
+translate english ts_carter8_posle_poems_suka_1c13535e:
+
+    # m "Девочки, выберите по одному стихотворению, которое у вас получилось лучше всего. То стихотворение каждая из вас и будет читать на фестивале."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1646
+translate english ts_carter8_posle_poems_suka_86626d45:
+
+    # s "Ладно! Тоже возьму стихотворение, которое я написала на собрание в среду."
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1687
+translate english ts_carter8_posle_poems_suka_4a4de064:
+
+    # s "А ты сама-то как думаешь? Естественно, стоит. Мы можем наделать сколько угодно декораций, напечь миллион кексов, но если мы сами не будем читать стихи, то всё пойдёт коту под хвост!"
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1736
+translate english ts_carter8_posle_poems_suka_9fd9abdd:
+
+    # "Я не обратила внимания на ремарку Юри, хотя и поняла намёк: ножи, резать, соблазн, возбуждение – намёк прямее некуда."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1737
+translate english ts_carter8_posle_poems_suka_1946b6af:
+
+    # "Впрочем, Сайори и Нацуки не знают того, что знаю я. Ну да ладно, это для их же блага."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1838
+translate english ts_carter8_posle_poems_suka_4bf43129:
+
+    # em "А возможностей у тебя не то чтобы и сильно много..."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1847
+translate english ts_carter8_posle_poems_suka_fd4f22d2:
+
+    # s "Да, вот так-то лучше..."
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1877
+translate english ts_carter8_posle_poems_suka_5af38e23:
+
+    # m "Тогда... на такой положительной ноте я официально объявляю последнее собрание клуба перед фестивалем оконченным!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1954
+translate english ts_carter8_posle_poems_suka_ce4d6cbc:
+
+    # "Кстати, о нём – зонтик тут тоже не особый помощник, поскольку, помимо сильного дождя, сегодня ещё и сильный ветер, и капли всё равно будут падать на меня."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:1984
+translate english ts_carter8_posle_poems_suka_e97b2ecc:
+
+    # "Правда, как только я подхожу к дому и вхожу в него, то буквально вваливаюсь из последних сил."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2019
+translate english ts_carter8_posle_poems_suka_57e619e4:
+
+    # "Но даже если бы это была не пятница, а любой другой рабочий день, я знаю, что пришла слишком поздно, чтобы прийти домой первой."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2037
+translate english ts_carter8_posle_poems_suka_ca44738e:
+
+    # ts_ft "Понятно... Как в клубе дела?"
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2052
+translate english ts_carter8_posle_poems_suka_93a18daa:
+
+    # m "Пап, впереди два выходных дня, а фестиваль уже в понедельник – отгул тебе никто не подпишет."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2092
+translate english ts_carter8_posle_poems_suka_cb6af100:
+
+    # nvlbazar "{font=[prologue_font]}Нет такого, чтобы папа наложил мне больше положенного, а я как маленькая девочка дулась, наотрез отказываясь от того, что мне было насыпано."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2093
+translate english ts_carter8_posle_poems_suka_0f93880a:
+
+    # nvlbazar "{font=[prologue_font]}...ладно, каюсь, в детстве было несколько раз, и иногда до сих пор происходит, если это опять какая-то рисовая каша. Но поскольку мы все втроём уже взрослые, то таких казусов обычно не происходит."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2097
+translate english ts_carter8_posle_poems_suka_3eae58c1:
+
+    # nvl clear
+    # nvlbazar "{font=[prologue_font]}Хотя, если бы и брала, родители и мамы, и папы живут очень далеко от нас, да и приезжают они к нам довольно редко, поэтому можно сказать, что воспитали меня лишь мама с папой."
+    nvl clear
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2185
+translate english ts_carter8_posle_poems_suka_462db19b:
+
+    # em "Пришла пора поговорить с тобой начистоту."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2190
+translate english ts_carter8_posle_poems_suka_05d0d84f:
+
+    # em 3bi "Я надеюсь, что даже такая бездарность, как ты, за неделю успела понять, что разговор со своим «подсознанием» – это..."
+    em 3bi ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2199
+translate english ts_carter8_posle_poems_suka_9d8eb18c:
+
+    # em 4bi "Ты спишь. Всё происходящее за эту неделю – это всё не было реальностью. Это было лишь твоё воображение."
+    em 4bi ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2207
+translate english ts_carter8_posle_poems_suka_48feec3c:
+
+    # em "Всё происходящее за эту неделю с того момента, как ты проснулась в субботу с дикого похмелья, и вплоть до того, как ты уснёшь сегодня..."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_8.rpy:2261
+translate english ts_carter8_posle_poems_suka_3f48060d:
+
+    # em "А сейчас – спокойной ночи, правда."
+    em ""
+

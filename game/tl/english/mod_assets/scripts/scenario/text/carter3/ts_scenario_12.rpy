@@ -3384,3 +3384,203 @@ translate english strings:
     old "Нет, я хочу учиться и дальше."
     new ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:71
+translate english ts_scenario_12_a2506e16:
+
+    # m "Да ничего... просто с похмелья вспомнилось, ради чего это всё затевалось, хе-хе..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:73
+translate english ts_scenario_12_b21e3ba5:
+
+    # m "Ну... Всё? Я протрезвела, сейчас уже всё нормально – можно я теперь домой уже пойду? Папа там уже наверняка заждался, все больницы и морги обзвонил..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:88
+translate english ts_scenario_12_874cab53:
+
+    # extend "Мне всё равно в магазин также надо, как раз по пути!"
+    extend ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:98
+translate english ts_scenario_12_64f7a36b:
+
+    # "После этих слов мы разошлись каждая своей дорогой: Сайори – в магазин, а я... думать."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:133
+translate english ts_scenario_12_9b9a4f53:
+
+    # m "Да... Но всё равно, как будто мама Миры вот-вот скажет: «А Мира на тренировке задерживается, но если хочешь, проходи»."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:136
+translate english ts_scenario_12_87728e86:
+
+    # em "Да, да, было всё здорово и классно у вас, но потом у вас всё перестало быть здорово и классно – пойдём отсюда, тебе всё равно никто не ответит, а так ты просто и дальше будешь стоять и тупить."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:212
+translate english ts_scenario_12_6d9f4cf0:
+
+    # m "Умеешь. Как ты там сама много раз говорила? «Я – это твоё подсознание, я буквально часть тебя»?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:214
+translate english ts_scenario_12_dedd7fd0:
+
+    # em "То, что я – это часть тебя, не обязательно означает, что эта часть тебя так же хорошо играет в шахматы..."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:221
+translate english ts_scenario_12_063ea51e:
+
+    # m "Ну, не попробуешь – не узнаешь, верно?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:235
+translate english ts_scenario_12_fd3f988f:
+
+    # "Я молча заканчиваю расставлять фигуры. Игра началась."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:260
+translate english ts_scenario_12_fad12a6b:
+
+    # cm "А я, как и в прошлый раз, буду помогать тебе осваивать основы!"
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:276
+translate english ts_scenario_12_c3912830:
+
+    # cm 1n "Главное – {b}решать{/b} эти задачки, а не как Моника..."
+    cm 1n ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:317
+translate english ts_scenario_12_ccc98b1f:
+
+    # cm "Открытые – это дебюты, которые начинаются с ходов 1. е4 е5. Полуоткрытые – это дебюты, в которых белые ходят е4, но чёрные не отвечают им е5, вместо этого играя другой ход."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:323
+translate english ts_scenario_12_02a4df83:
+
+    # cm "А поскольку в моде не было и не будет ни одной игры в закрытых дебютах, мы тоже будем считать, что все дебюты, которые начинаются не с хода 1. е4 – закрытые."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:368
+translate english ts_scenario_12_c4952fab:
+
+    # "Старая добрая «Французская защита». Конечно, всю теорию я не помню, но первые пару ходов я знаю, как дважды два."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:395
+translate english ts_scenario_12_9d56fb98:
+
+    # m "А даже если и спросят – я этот стих уже наизусть помню, поэтому за пару минут вечером напишу, а девочкам скажу, что стих дома, и что я {i}обязательно{/i} принесу его на следующее собрание."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:447
+translate english ts_scenario_12_0a40aa00:
+
+    # cm "Рокировка – это специальный ход короля и одной из ладей, который, по сути, ломает все правила шахмат."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:464
+translate english ts_scenario_12_ca4932bf:
+
+    # "Аки, в свою очередь, выводит второго коня."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:506
+translate english ts_scenario_12_f6638dea:
+
+    # "Нет, есть ещё второй слон, однако это будет означать потерю темпа – Аки сделает рокировку первой, и фактически чёрными играть уже буду я."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:535
+translate english ts_scenario_12_cb6d8e31:
+
+    # cm "Кстати, существует два типа рокировок: короткая и длинная. Короткая делается на королевском фланге, а длинная – на ферзевом."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:634
+translate english ts_scenario_12_77d12952:
+
+    # "Это и не удивительно... Я уже так удивлялась за прошедшие две недели, что внезапное умение Аки играть в шахматы – это наименьшее из всех зол."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:648
+translate english ts_scenario_12_dbac86d8:
+
+    # "Однако когда у тебя в эндшпиле целой ладьи не хватает вдобавок к лишней пешке – это уже чересчур."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:651
+translate english ts_scenario_12_21186b3e:
+
+    # "Ну то есть, да, у меня лишняя ладья – как с этой лишней ладьёй выиграть теперь?"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:679
+translate english ts_scenario_12_e1196fe7:
+
+    # "А затем я ставлю ладью на вторую горизонталь, чтобы на следующем ходу обе ладьи были на одной вертикали."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:781
+translate english ts_scenario_12_d763f20c:
+
+    # m "Нацуки, ты можешь—{w=0.8}{nw}"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:799
+translate english ts_scenario_12_7e967ed5:
+
+    # m "Ну и на десерт – Юри."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:924
+translate english ts_scenario_12_b7b750d7:
+
+    # m "Что, если я скажу тебе, что всё происходящее – нереально, и что я это всё уже в третий раз вижу?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:925
+translate english ts_scenario_12_835c7702:
+
+    # m "Нет, конечно, конкретно это я тоже вижу впервые, но в целом – да, одна и та же неделя повторяется уже три раза..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:1327
+translate english ts_scenario_12_edda2132:
+
+    # "Пару раз я даже отрезала грудь Юри и примеряла её на себя – теперь-то будет знать..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:1390
+translate english ts_scenario_12_3313e5db:
+
+    # "Но если это способ выбраться из этой кошмарной «Недели Сурка», то я просто должна."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:1747
+translate english ts_scenario_12_314d2ade:
+
+    # k 2s1 "Так ты же спишь. Всё это – не по-настоящему."
+    k 2s1 ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:1748
+translate english ts_scenario_12_7d552d70:
+
+    # k 1p "Нет, то, что я умерла – это так и было, я умерла на самом деле..."
+    k 1p ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:1749
+translate english ts_scenario_12_4a382b84:
+
+    # k 2f "Но этот наш разговор, который у нас только что был – этого на самом деле никогда не было."
+    k 2f ""
+

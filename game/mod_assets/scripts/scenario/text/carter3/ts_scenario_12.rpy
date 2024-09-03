@@ -1313,23 +1313,8 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
     
 
-    #scene vse_pizda_monike:
-        #anchor (0.5, 0.5)
-        #pos (0.5, 0.5)
-        #zoom 2.5
-        #ease 5.0 xpos 0.66 ypos 0.44 rotate 44
-        #ease 5.0 xpos 0.7 ypos 1.0 zoom 3 rotate -22
-        #ease 5.0 xpos 0.5 ypos 0.0 zoom 2.5 rotate 0
-        #ease 5.0 xpos 0.8 ypos 0.75 rotate 22
-        #ease 0.66 zoom 4
-        #ease 1.0 zoom 2.5
-        #ease 5.0 xpos 0.5 ypos 0.5 rotate 0
-        #repeat
-    #show noise:
-        #alpha 0.25
-    #with ts_paint
-    
-    #ЛУЧШЕ БЫ ГЛИЧЁВУЮ ТИПОАНИМКУ ПРИХУЯРИЛ, ГДЕ МОНИКА ЗА РОЯЛЕМ СИДИТ, А В ЭТОЙ, НУ КАК ЕГО ТАМ БЛЯТЬ, НУ ХУЙНЕ КОРОЧЕ, ИХ БЕЗДЫХАННЫЕ ТЕЛА ЛЕЖАТ. ЕСТЕСТВЕННО, СО ВСЕМИ ГЛИЧЁВЫМИ ВАРИАЦИЯМИ БЛЯТЬ
+    scene mon_piano_another_glitch_anim at ts_ustal_suka
+    with ed_night_dis
 
     show layer screens at ts_showscreens
 
@@ -1577,7 +1562,7 @@ label ts_scenario_12:
     $ gtextsuka3 = glitchtext(4)
     n "[gtextsuka][gtextsuka1][gtextsuka2][gtextsuka3]{w=0.33}{nw}"
 
-    play sound2 ts_smeh_pizdec
+    play sound2 ts_flashback
     scene ts_kitchen_psyhodelic_pizdec_glitch:
         align(0.5, 0.5) zoom 1.0
         ease 0.1 align(0.2, 0.5) zoom 2.0

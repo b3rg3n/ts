@@ -4388,3 +4388,375 @@ translate english strings:
     old "...Нет?"
     new ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:71
+translate english ts_scenario_3_6a2b3be8:
+
+    # "Юри тогда сказала, что это потому что она чувствует себя ничтожеством и внутренний голос твердил ей перейти от слов к делу."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:127
+translate english ts_scenario_3_d0911896:
+
+    # "Хотя папа – это всё-таки не мама, он всё равно готовит куда лучше меня."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:154
+translate english ts_scenario_3_a7a182c6:
+
+    # nvlbazar "{font=[ts_nvl_font2]}Наверное, я должна была познакомить вас с моим папой гораздо раньше."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:162
+translate english ts_scenario_3_c8f70f68:
+
+    # nvl clear
+    # nvlbazar "{font=[ts_nvl_font2]}Понимаете, генетика – это такая штука, в которой для создания человека нужны два других человека, не меньше. Но и не больше."
+    nvl clear
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:197
+translate english ts_scenario_3_555f2e59:
+
+    # nvlbazar "{font=[ts_nvl_font2]}Я – вегетарианка."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:205
+translate english ts_scenario_3_691aca92:
+
+    # nvl clear
+    # nvlbazar "{font=[ts_nvl_font2]}Обычное мясо, ветчина, бекон – на это всё я говорю своё категоричное фи."
+    nvl clear
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:257
+translate english ts_scenario_3_3f2bae33:
+
+    # "Но, как говорится, меньше знаешь – крепче спишь. А, соответственно, больше знаешь – спишь меньше.{w} Если вообще спишь."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:345
+translate english ts_scenario_3_ac06cd4b:
+
+    # "Дальше, что бы я ни ответила, Юри убивает себя ножом. Дважды в живот, и ещё один раз – в грудь."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:379
+translate english ts_scenario_3_e8901fa5:
+
+    # extend " Что-то не так?"
+    extend ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:405
+translate english ts_scenario_3_38b4c4e4:
+
+    # "Я попрощалась с папой, после чего каждый пошёл своей дорогой."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:516
+translate english ts_scenario_3_d60702dc:
+
+    # pod1 1w "Ну что, Нацуки? Опять будешь доказывать всем, что манга – это литература?"
+    pod1 1w ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:549
+translate english ts_scenario_3_3e3e9682:
+
+    # n 4e "Нет, не кажется! Манга – это такая же литература, как и обычная художественная!"
+    n 4e ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:555
+translate english ts_scenario_3_3f3de0c6:
+
+    # pod2 "Нацуки, ну ты же сама сказала, что художественная литература и манга – это, ну, не совсем одно и то же..."
+    pod2 ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:560
+translate english ts_scenario_3_1bc617ff:
+
+    # pod1 "Она права, Нацуки. Манга – это такие же комиксы, как и обычные, только читаются справа налево."
+    pod1 ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:577
+translate english ts_scenario_3_08e4013e:
+
+    # n 2w "А {i}я{/i} говорю {i}вам{/i}, что манга – это литература, и только попробуйте убедить меня в обратном!"
+    n 2w ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:581
+translate english ts_scenario_3_e4f158b8:
+
+    # n "Но скажу сразу – у вас не получится!"
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:590
+translate english ts_scenario_3_b0aeb95d:
+
+    # pod2 b "Да уже поздно... Ты видела, как она убежала? На таких-то коротеньких ножках набрать такую скорость – это надо постараться."
+    pod2 b ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:612
+translate english ts_scenario_3_1e618c1d:
+
+    # pod1 "Ой, здравствуй, Моника, как ваше ниче—{nw}"
+    pod1 ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:715
+translate english ts_scenario_3_57bbd7ad:
+
+    # "Кажется, её подруги упоминали, что она постоянно доказывает, что манга – это литература?"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:726
+translate english ts_scenario_3_da7fcce6:
+
+    # "Зато вот кобылами – ещё как."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:753
+translate english ts_scenario_3_616d6d68:
+
+    # m "Ну, ты в разговоре со своими подругами упоминала, что ты постоянно доказываешь всем, что манга – это литература."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:770
+translate english ts_scenario_3_1565c35f:
+
+    # m "В общем, я недавно открыла Литературный клуб, нас там уже трое, если хочешь, тоже приходи{w=1.7}{nw}"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:862
+translate english ts_scenario_3_d4b8f198:
+
+    # n "Значит, ты тоже считаешь, что манга – это литература?"
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:875
+translate english ts_scenario_3_5e3a07f3:
+
+    # n 1l "В общем, скажи остальным, что я там буду!"
+    n 1l ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:902
+translate english ts_scenario_3_b23256a1:
+
+    # "После самого тяжкого – химии и биологии – остальная часть дня прошла гораздо быстрее."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:916
+translate english ts_scenario_3_c152d6e4:
+
+    # "Только я вышла из класса, как меня кто-то позвал."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:941
+translate english ts_scenario_3_5d851968:
+
+    # m "А на будущее – мы собираемся каждый день вот в {i}этом{/i} кабинете."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1125
+translate english ts_scenario_3_ca2b0a62:
+
+    # "Успокоившись, я выхожу из туалета и направляюсь обратно в клуб."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1277
+translate english ts_scenario_3_21883004:
+
+    # "Администратор же ответил, что, помимо президента, в клубе должен быть ещё как минимум и вице-президент, на случай, если президент заболел, или что похуже."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1288
+translate english ts_scenario_3_c6d973ab:
+
+    # "Я в первую очередь подумывала сделать вице-президентом Юри: она умная, красивая, начитанная, мастер книжного дела..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1324
+translate english ts_scenario_3_70918179:
+
+    # m "А ты что хотела, открыть клуб – это на самом деле очень долгий с точки зрения бюрократии процесс."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1330
+translate english ts_scenario_3_b9b7766b:
+
+    # m "Так, вот тут подпись поставить... Уже поставила, можно считать клуб открытым для всех желающих!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1351
+translate english ts_scenario_3_643f4c87:
+
+    # "Литература – это моё призвание, моя страсть. И я ни за какие коврижки не променяю литературу и этот клуб на что-либо ещё."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1394
+translate english ts_scenario_3_d1c53d48:
+
+    # "По всей видимости, пока, как выразилась Нацуки, я шлялась, она открыто заявила, что ужастики не любит."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1396
+translate english ts_scenario_3_1a738c08:
+
+    # "По всей видимости, пока меня не было, она открыто заявила, что ужастики не любит."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1407
+translate english ts_scenario_3_b8afcfd1:
+
+    # "Юри обычно не врёт, особенно если дело касается её любимого занятия – книжек и чтения."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1435
+translate english ts_scenario_3_15d997db:
+
+    # "Но оказалось, что Нацуки сильнее этого, поэтому пока держится ровно, хотя в голосе уже слышатся резкие нотки, как будто она заплачет в любую секунду."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1439
+translate english ts_scenario_3_317c63b6:
+
+    # n "Папа говорит, что манга – это так по-детски и по-глупому."
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1445
+translate english ts_scenario_3_18e45fc8:
+
+    # n "Хочу – буду читать мангу. Хочу – не буду читать мангу. Я вправе делать что угодно!"
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1687
+translate english ts_scenario_3_7c6daf06:
+
+    # "И пока я дошла до дома, уже и почти стемнело."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1689
+translate english ts_scenario_3_7e99240a:
+
+    # "А с учётом того, сколько времени заняло оформление всех бумаг с «разговором по душам» с Нацуки, всё становится на свои места."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1831
+translate english ts_scenario_3_b1843c22:
+
+    # "Разрезав эти жалкие шесть картофелин на ломтики и подлив немного масла, я начинаю готовить кушанье."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:1869
+translate english ts_scenario_3_2e5b02a4:
+
+    # "Вот теперь я точно начинаю готовить кушанье."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2007
+translate english ts_scenario_3_1e3eb5ff:
+
+    # "Слава Богу, картошка ещё не сварилась."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2063
+translate english ts_scenario_3_983cc22c:
+
+    # "А с учётом такого вечернего сна, да ещё и такого рваного, уснуть в привычное для себя время уже не получится."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2243
+translate english ts_scenario_3_3235ac55:
+
+    # "Кофе на ночь он принципиально не пьёт. Хотя с сердцем у него особых проблем нет."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2274
+translate english ts_scenario_3_9c7c1534:
+
+    # "Ни я, ни папа не пьём чай или кофе с сахаром."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2278
+translate english ts_scenario_3_252af0ef:
+
+    # "А когда она уезжает, то мы и вовсе оставляем почти тот же объём сахара, что и до отъезда."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2280
+translate english ts_scenario_3_c6fdba56:
+
+    # "Ну либо я могу сварить ту же гречку с сахаром, чтобы она просто не была такой сухой..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2281
+translate english ts_scenario_3_7e5b2278:
+
+    # "А так – только чистый чай или чистый кофе."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2343
+translate english ts_scenario_3_9ebde227:
+
+    # ts_ft 1c "«Ещё одну девочку»? Это что получается, у вас в клубе четыре человека, и все четверо – девушки?"
+    ts_ft 1c ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2346
+translate english ts_scenario_3_ab86ba8f:
+
+    # ts_ft 2g "Но неужели литература – это настолько девчачье занятие?"
+    ts_ft 2g ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2352
+translate english ts_scenario_3_4b69e6e0:
+
+    # m "Нет, литература – это такая вещь, для которой совершенно неважно, какого ты пола."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2353
+translate english ts_scenario_3_8e5d9d8e:
+
+    # m "Но просто три человека, которых я... нашла... они все по воле случая оказались девочками."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2409
+translate english ts_scenario_3_1ccf162f:
+
+    # "Мы сидим молча и просто наблюдаем за приключениями в Ленинграде..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2461
+translate english ts_scenario_3_d7239512:
+
+    # "Однако, увидев мой максимально хмурый и суровый взгляд, папа быстро собрался с силами и продолжил."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2466
+translate english ts_scenario_3_c414ec17_53:
+
+    # " {w=1.0}{nw}"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2477
+translate english ts_scenario_3_c414ec17_54:
+
+    # " {w=1.0}{nw}"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2490
+translate english ts_scenario_3_fce6ec16:
+
+    # ts_ft 2c "Ну, я-то собираюсь, потому что устал очень. А вот насчёт тебя я не знаю. Ты, во-первых, дремала, во-вторых, кофе на ночь—{nw}"
+    ts_ft 2c ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2496
+translate english ts_scenario_3_3d369ff1:
+
+    # m "Тем более, если честно, я тоже невероятно устала, а вечерний сон и кофе на вечер были лишь компенсацией за такое напряжение."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:2511
+translate english ts_scenario_3_c414ec17_55:
+
+    # " {w=1.0}{nw}"
+    ""
+

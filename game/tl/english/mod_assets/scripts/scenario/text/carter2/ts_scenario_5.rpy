@@ -3214,3 +3214,385 @@ translate english strings:
     old "А ты вообще кто такая?"
     new ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:180
+translate english ts_scenario_5_84be3506:
+
+    # m "{font=[pizdec_font]}{size=+20}КАК ТЫ ПОВЕСИЛАСЬ В ТОЙ ЖЕ ПИЖАМЕ, ЧТО НА ТЕБЕ НАДЕТА СЕЙЧАС!{/size}"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:244
+translate english ts_scenario_5_0dd0f3e3:
+
+    # "Однако Юри и Сайори – два {i}совершенно{/i} разных человека."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:253
+translate english ts_scenario_5_3c5b5d71:
+
+    # s "Ведь сон – он на то и сон, что в реальности этого не случится."
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:257
+translate english ts_scenario_5_3b4a4587:
+
+    # "Только я хотела было возразить, однако, уловив хмурый взгляд Сайори, заговорить я не решилась."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:266
+translate english ts_scenario_5_4c701790:
+
+    # s "Сон – это просто сон. А реальность – это просто реальность."
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:365
+translate english ts_scenario_5_6ea33955:
+
+    # s "Ладно, думаю, переоденусь."
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:386
+translate english ts_scenario_5_943bbbd2:
+
+    # s 2bx "Я ещё в магазин пойду. Ты со мной?"
+    s 2bx ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:456
+translate english ts_scenario_5_7c84d4ab:
+
+    # m "Пойдёт."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:506
+translate english ts_scenario_5_8f6d3668:
+
+    # em 2d "Когда поблизости никого, мы можем спокойно поговорить."
+    em 2d ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:507
+translate english ts_scenario_5_9b64de15:
+
+    # em 3l "Только не забывай, что другие меня не видят, и если кто-то даже издали сможет разглядеть тебя, для других ты покажешься как минимум странной."
+    em 3l ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:508
+translate english ts_scenario_5_fcec8196:
+
+    # em 1n "А как максимум – выпишут направление в жёлтый дом."
+    em 1n ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:513
+translate english ts_scenario_5_0a99d7c8:
+
+    # em 2k "А ты забыла уже? Я же подсознание твоё."
+    em 2k ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:519
+translate english ts_scenario_5_ba38287a:
+
+    # em 4b "Ну, во-первых, я же буквально часть тебя, поэтому логично, что я как минимум буду похожа на тебя саму."
+    em 4b ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:526
+translate english ts_scenario_5_59e0bb52:
+
+    # em 3n "А впрочем, неважно уже..."
+    em 3n ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:544
+translate english ts_scenario_5_52674bb8:
+
+    # em 4b "Просто называй меня Моника. Ну или если официально, то [em_name]."
+    em 4b ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:545
+translate english ts_scenario_5_4d97d0b4:
+
+    # em 2n "Хотя, у тебя, скорее всего, просто язык сломается так меня называть..."
+    em 2n ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:546
+translate english ts_scenario_5_86c46734:
+
+    # em 2b "Поэтому лучше Моника. Да и проще. А ещё проще – называй меня Аки."
+    em 2b ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:550
+translate english ts_scenario_5_a39d5f0b:
+
+    # em 1i "Ну..."
+    em 1i ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:551
+translate english ts_scenario_5_6e5f36ba:
+
+    # em 5a "Впрочем, сама скоро поймёшь. На следующей неделе."
+    em 5a ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:607
+translate english ts_scenario_5_24a720e5:
+
+    # "И как раз в этот момент папа возвращается из гаража. Даже подозрительно чистый для того, у кого сломалась машина."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:620
+translate english ts_scenario_5_71bb0398:
+
+    # "От сказанного я аж потеряла дар речи. Всё, что из меня получилось выдавить – это запинающимся голосом сказать:"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:624
+translate english ts_scenario_5_9c4599f5:
+
+    # "Кажется, что учёба – это {b}единственное{/b}, что его волнует!"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:666
+translate english ts_scenario_5_863b18ab:
+
+    # m "Например, как Юри и Сайори тащили меня...{w=0.44} а точнее, мою «тушку», как выразилась сама Сайори...{w=0.44} со школы до самого её дома."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:667
+translate english ts_scenario_5_90940403:
+
+    # m "Хорошо хоть её дом недалеко от школы находится, иначе я даже не знаю, как бы две девочки дотащили полумёртвую пятидесятикилограммовую меня..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:687
+translate english ts_scenario_5_4b2e3b58:
+
+    # m "Потом, э-э, мы все вчетвером пошли домой к Сайори, к нашему новому вице-президенту, и было у нас{w=0.2}...{w=0.2} что-то вроде вечера для девочек."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:705
+translate english ts_scenario_5_c8f7cbb2:
+
+    # ts_ft 2z1 "Но затем я подумал, что лучше учиться на своих собственных ошибках, поэтому просто прошёл мимо."
+    ts_ft 2z1 ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:709
+translate english ts_scenario_5_7b58babb:
+
+    # ts_ft 2q "А нагло врать прямо мне в лицо – это не подло?"
+    ts_ft 2q ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:716
+translate english ts_scenario_5_df22354d:
+
+    # ts_ft "Но всё равно, врать, тем более, так нагло – это плохо."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:770
+translate english ts_scenario_5_ac2f3658:
+
+    # ts_ft "Я всё-таки знаю, что ты не одна была, а с девочками."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:774
+translate english ts_scenario_5_c4e18efd:
+
+    # ts_ft 1c "Поэтому я позавтракал, умылся, а затем вспомнил о машине, ну и начал с ней возиться."
+    ts_ft 1c ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:776
+translate english ts_scenario_5_64f62203:
+
+    # ts_ft 1h "А новая машина – это такие траты..."
+    ts_ft 1h ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:777
+translate english ts_scenario_5_dde66149:
+
+    # ts_ft 2b "Но всё оказалось гораздо проще – там просто несколько контактов отошло."
+    ts_ft 2b ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:797
+translate english ts_scenario_5_15f9fd48:
+
+    # nvlbazar "{font=[ts_nvl_font2]}Но чтобы водить самой – это уж извольте."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:798
+translate english ts_scenario_5_fa767bf6:
+
+    # nvlbazar "{font=[ts_nvl_font2]}Родители много раз спрашивали меня на тему того, чтобы я начала водить машину, но я им отвечала, что «буду важной, буду богатой – будет у меня свой водитель, который и будет водить вместо меня. А мне самой это не нужно.»"
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:800
+translate english ts_scenario_5_a2fc220d:
+
+    # nvl clear
+    # nvlbazar "{font=[ts_nvl_font2]}И дело даже не в том, что я не знаю правил. Наоборот, если бы я сдавала экзамен по вождению, я бы сдала его с первого раза. Максимум, со второго."
+    nvl clear
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:834
+translate english ts_scenario_5_796a5839:
+
+    # m "Или... Пап, давай в шахматы сыграем?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:867
+translate english ts_scenario_5_7f310f9d:
+
+    # "А то, знаете, вот вроде лежит себе вещь, никого не трогает, а как только она тебе понадобится, так её и нет."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:976
+translate english ts_scenario_5_ce593046:
+
+    # cm "Так что если ты надеешься, что после мода на Доки-Доки ты будешь играть сильнее мастеров этой игры – просто... перестань."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1075
+translate english ts_scenario_5_ac98e049:
+
+    # cm "Ферзь – это очень сильная фигура. Она может ходить и по горизонтали, и по вертикали, и по диагонали."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1100
+translate english ts_scenario_5_c8618ad1:
+
+    # "Однако шахматы – это пошаговая игра, здесь нет такого, чтобы сделать два хода одним цветом подряд."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1130
+translate english ts_scenario_5_f32a8ccf:
+
+    # cm "Кстати, о конях. Конь – это самая непредсказуемая фигура в шахматах."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1135
+translate english ts_scenario_5_251f4133:
+
+    # cm "Например, на этом ходу Моника походила конём с клетки g1 на клетку f3: по сути, она сходила на две клетки по вертикали g, перепрыгивая пешку, а затем допрыгнула на соседнюю вертикаль f."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1164
+translate english ts_scenario_5_2b4b3fe9:
+
+    # cm "Слоны, наряду с конями – это лёгкие фигуры. Ферзь и ладьи, напротив, считаются тяжёлыми фигурами."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1168
+translate english ts_scenario_5_5a94219c:
+
+    # cm "Впрочем, играть со слонами или с конями – это сугубо дело вкуса каждого. Иной раз какой-то мастер может легко победить среднего игрока."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1169
+translate english ts_scenario_5_83c8f001:
+
+    # cm "Даже несмотря на то, что у мастера два коня, а у среднего игрока – два слона, и номинально у среднячка фигуры лучше, чем у мастера."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1204
+translate english ts_scenario_5_d271de7c:
+
+    # cm "Шахматы – это не шашки. Бить фигуры здесь вовсе необязательно, если видишь ход получше."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1213
+translate english ts_scenario_5_e5507615:
+
+    # "Однако я не ведусь на этот дешёвый фокус и вместо этого вывожу слона, объявляя шах."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1228
+translate english ts_scenario_5_914919ec:
+
+    # cm "Цель игры – объявить шах и мат королю. Мат – это когда у короля нет ни одной свободной клетки, куда он мог бы наступить, чтобы его впоследствии не побили."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1272
+translate english ts_scenario_5_01133fad:
+
+    # "Впрочем, он особо и не нужен – папа ходит достаточно быстро, ну а я с детства привыкла уже долго не засиживаться на одном месте."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1288
+translate english ts_scenario_5_14f6ebde:
+
+    # cm "Миттельшпиль – это обычно самая сложная часть игры, в которой фигур ещё слишком много, а дебютной подготовки уже больше нет, так что игроки, что называется, в открытом море."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1319
+translate english ts_scenario_5_eaa68c93:
+
+    # cm "Хотя ходят пешки по прямой, бьют они фигуры соперника на одну клетку по диагонали."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1384
+translate english ts_scenario_5_c736aea6:
+
+    # cm "Ладьи – это тугие и {b}прямолинейные{/b} фигуры. Ходят они, соответственно, только по вертикали или по горизонтали на любое количество клеток."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1411
+translate english ts_scenario_5_da1afa0b:
+
+    # cm "Вилка – это ситуация в шахматах, где одна твоя фигура атакует сразу несколько фигур соперника."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1413
+translate english ts_scenario_5_8528c914:
+
+    # cm "Лучше всего в вилках показывают себя кони. Это, кстати, возвращаясь к моему монологу об условной игре между мастером с двумя конями и среднячком с двумя слонами."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1415
+translate english ts_scenario_5_c7d387b3:
+
+    # cm "Но все фигуры могут сделать вилку! Даже пешка и даже король – то, что они ходят только на одну клетку, не означает, что вилку этими фигурами сделать нельзя."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1467
+translate english ts_scenario_5_8f5ca46c:
+
+    # m "Да... к тому же, я вчера не в мягкой постели спала, а на полу."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1477
+translate english ts_scenario_5_1ee54bc8:
+
+    # "После этого я отправилась к себе, а папа ушёл смотреть телевизор. Там показывают какую-то очередную политическую передачу. Или новости. Честно, я их не различаю..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1508
+translate english ts_scenario_5_9c80c161:
+
+    # em 2bl "А ты так и будешь забывать о том, что я тебе говорила час назад?"
+    em 2bl ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1559
+translate english ts_scenario_5_bf0a09a2:
+
+    # "Я пытаюсь огрызнуться в ответ, но затем внезапно понимаю, что моё подсознание так-то верно глаголит."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1589
+translate english ts_scenario_5_ab2ff965:
+
+    # "Спустя где-то минут десять кропотливой работы я сотворила следующее:"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1634
+translate english ts_scenario_5_09930f28:
+
+    # m "А раскопки – ну, знаешь фразу «копаться в себе»?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1664
+translate english ts_scenario_5_0687b6e4:
+
+    # em 3pn "Может, немного извращённые... "
+    em 3pn ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1678
+translate english ts_scenario_5_cd299c8f:
+
+    # em 3pb "Ну а насчёт того, чтобы поспать – это идея здравая."
+    em 3pb ""
+

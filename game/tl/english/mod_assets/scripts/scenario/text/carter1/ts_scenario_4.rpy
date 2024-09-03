@@ -3138,3 +3138,257 @@ translate english ts_scenario_4_12ce0de9:
     # "Все же было так хорошо..."
     ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:52
+translate english ts_scenario_4_d669e949:
+
+    # "Самое время, чтобы основательно подготовиться к предстоящему дню."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:59
+translate english ts_scenario_4_75ab74b9:
+
+    # "Наш клуб – это скорее четыре подружки, у которых из общего только литература."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:69
+translate english ts_scenario_4_4193dc6e:
+
+    # "В общем, Литературный клуб – это отличное место, чтобы отвлечься..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:77
+translate english ts_scenario_4_b77aa0de:
+
+    # "Зато как представать к награде – так это генералы самые первые!"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:80
+translate english ts_scenario_4_bd14a8fa:
+
+    # "Ведь когда я была президентом Дискуссионного клуба, я тоже активно занималась всяким разным..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:81
+translate english ts_scenario_4_59a33cc7:
+
+    # "Готовила темы для следующих дискуссий, была своеобразным медиатором спора, и так далее."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:83
+translate english ts_scenario_4_e3c3cf6f:
+
+    # "Так почему я не делаю ничего из этого {i}сейчас{/i}, особенно когда я сама же говорила, что литература – это моё призвание?"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:162
+translate english ts_scenario_4_fb7daae4:
+
+    # ts_ft "Ладно, садись давай. На завтрак каждому из нас полагаются рисовая каша и кукурузные хлопья с кофе."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:207
+translate english ts_scenario_4_b97a5a66:
+
+    # "Пока мы завтракаем (а если точнее, то он завтракает, а я пытаюсь перебиться одними хлопьями), папа спрашивает."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:351
+translate english ts_scenario_4_e23cfc42:
+
+    # "У меня в спальне есть довольно много произведений из классической литературы, но ещё есть несколько книг в жанре фэнтези."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:386
+translate english ts_scenario_4_1fc9332a:
+
+    # "Я только недавно говорила о том, что могу приготовить гречку с сахаром – и вот, пожалуйста."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:397
+translate english ts_scenario_4_37b9dbd5:
+
+    # "После того, как гречка сварилась, я высыпаю всё на тарелку, добавляю масла, немного сахара, и наконец пробую её."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:403
+translate english ts_scenario_4_f909878c:
+
+    # "Я и в целом ем не особо быстро, но гречка – это совсем иное."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:431
+translate english ts_scenario_4_ef1c5046:
+
+    # "А первые два урока в пятницу были как раз моими любимыми – первые два урока были алгеброй."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:434
+translate english ts_scenario_4_78f97e6d:
+
+    # "Мне нравятся все эти формулы, как и тот факт, что в классе я была лучшей, да и до сих пор остаюсь."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:435
+translate english ts_scenario_4_d44dd8cd:
+
+    # "Алгебра – это моё всё. Геометрия же мне нравится примерно так же, как и всем остальным – никак."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:438
+translate english ts_scenario_4_eee09a5c:
+
+    # "А полностью пропустить школу тоже не получится – у нас же сегодня после уроков собрание клуба, с кексиками и чаем..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:561
+translate english ts_scenario_4_1568e0f0:
+
+    # "Он язвительно сделал акцент на слове «пунктуальная»."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:584
+translate english ts_scenario_4_1ff67108:
+
+    # "Хоть и следующие три урока были геометрией, а ещё два – физикой, с ними я в гораздо более тёплых отношениях, чем с той же биологией."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:589
+translate english ts_scenario_4_38ca75c5:
+
+    # "Сегодня я даже не перекусила в столовой."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:590
+translate english ts_scenario_4_898a0d5a:
+
+    # "Гречка – это не только одно из моих любимых блюд, но она ещё и питательная, ко всему прочему."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:595
+translate english ts_scenario_4_84c0720e:
+
+    # "Так что, как минимум, до собрания клуба я не проголодаюсь. А после этого будут кексы..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:693
+translate english ts_scenario_4_366f81e4:
+
+    # m "Э-э-э... Триста двадцать два кубических сантиметра?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:703
+translate english ts_scenario_4_aa2d4e50:
+
+    # teacher "Если вам так хочется поспать – спите лучше в своей кровати, а не на моём уроке."
+    teacher ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:793
+translate english ts_scenario_4_65d59781:
+
+    # n "Да и к тому же, таскаться с полным подносом кексов – это задача не из лёгких."
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:803
+translate english ts_scenario_4_51a861f2:
+
+    # m "Остальные ещё не пришли."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:869
+translate english ts_scenario_4_29a22060:
+
+    # s "Простите-извините, я опоздала, да, извините за опоздание {w=1}{nw}"
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:904
+translate english ts_scenario_4_d09d8d61:
+
+    # "Слишком хорошо для новичка. Но для профессионала, каким, как оказалось, и является Нацуки – самое то."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:908
+translate english ts_scenario_4_c68c8cf7:
+
+    # "Сайори зря времени не теряет, и пока остальные только надкусывают кекс, она уже его полностью съела."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:918
+translate english ts_scenario_4_d727825b:
+
+    # n "А-ха-ха, ну, знаешь... Человек – это такое существо, которому главное – это не сдохнуть. А для этого он пойдёт на немыслимое."
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1095
+translate english ts_scenario_4_9a0bcbf7:
+
+    # "Поскольку это наш первый опыт с алкоголем (кроме разве что Юри, хотя не уверена), мы изначально решили попробовать по чуть-чуть."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1221
+translate english ts_scenario_4_ca18e3c5:
+
+    # "Это означает, что нам с Юри достанется {i}ещё больше!{/i}"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1354
+translate english ts_scenario_4_4e96ac78:
+
+    # m "Нет, хочу пить, и буду пить! В конце концов, тварь ли я дрожащая или право имею?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1386
+translate english ts_scenario_4_82af0785:
+
+    # "Юри сдалась и налила мне полную чашку, причём сама налила себе совсем чуть-чуть, как бы говоря мне: «я тебя предупреждала»."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1394
+translate english ts_scenario_4_4b067889:
+
+    # "Третий тост не объявил никто. Сайори и Нацуки с самого начала перестали пить, а у нас с Юри уже были тосты."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1418
+translate english ts_scenario_4_a3015dbd:
+
+    # s 5c "Да! Мы хотели провести культурное чаепитие, а не попойку для одного человека!"
+    s 5c ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1464
+translate english ts_scenario_4_f0c5d565:
+
+    # "Я имею в виду, через... это, как же оно называется... похмелье, да..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1465
+translate english ts_scenario_4_d1beb9a4:
+
+    # "Или это ещё не похмелье, и худшее только впереди?.."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1468
+translate english ts_scenario_4_ed641cb0:
+
+    # "Я пытаюсь встать, но, естественно, у меня не получается."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1485
+translate english ts_scenario_4_dda4dbbe:
+
+    # m "{cps=*0.44}Поэтому я сама лутше как-то...{/cps}"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1766
+translate english ts_scenario_4_d0fe1138:
+
+    # em "Я – [em_name], твоё...{w=0.44} Подсознание,{w=0.44} твоя интуиция... Называй это как хочешь.{w=1}"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_4.rpy:1771
+translate english ts_scenario_4_68cffe15:
+
+    # em "Но, да – {w=0.5}каждую из них убила именно ты." with vpunch
+    em "" with vpunch
+

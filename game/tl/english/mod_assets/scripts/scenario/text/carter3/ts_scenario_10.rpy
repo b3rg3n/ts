@@ -3114,3 +3114,215 @@ translate english ts_scenario_10_c414ec17_25:
     # " {w=1.0}{nw}"
     ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:55
+translate english ts_scenario_10_2a8b48cd:
+
+    # "В любом случае, мы оба сделали вид, что это были самые обычные выходные."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:95
+translate english ts_scenario_10_820edca4:
+
+    # m "Но!..{w=0.44} Ладно, ладно, умываюсь уже..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:219
+translate english ts_scenario_10_20cb9974:
+
+    # m "Н-ну, я п-поставила гречку в-вариться, а затем будут х-хлопья с молоком и кофе..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:222
+translate english ts_scenario_10_4d97a19c:
+
+    # ts_ft "О, гречка – это замечательно."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:316
+translate english ts_scenario_10_3a4556f0:
+
+    # em 2i "Я тебе в тысячный раз повторяю: всё происходившее с тобой за эти десять дней – это просто сон. Три из них – это просто кошмарный сон."
+    em 2i ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:452
+translate english ts_scenario_10_1b7f3f8a:
+
+    # "Впрочем, мне же лучше – меньше вопросов о том, всё ли со мной нормально, и что со мной не так."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:461
+translate english ts_scenario_10_64d07413:
+
+    # n "Сетчатый канифас слепозрения по линии жизни Анат ректипетальностью безукоризненно предложил склеромаляцию заржавшему католикосу."
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:472
+translate english ts_scenario_10_a2b8e4ee:
+
+    # "Видя мою задумчивость, Нацуки тут же решает перейти в атаку."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:554
+translate english ts_scenario_10_4b6e268c:
+
+    # "Видимо, она настолько восторгалась моей самоотдачей, что я сама предложила почитать мангу, открыть мангу и прочее по мелочи, что не выдержала и просто уснула от радости и восторга."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:654
+translate english ts_scenario_10_b025811d:
+
+    # "Впрочем, сколько лет уже прошло с того, как она, по её словам, в последний раз читала это произведение? Лет восемь? Деcять?"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:688
+translate english ts_scenario_10_154fc746:
+
+    # m "Нацуки, позв—{w=0.05}{nw}"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:981
+translate english ts_scenario_10_f3a84b66:
+
+    # m "И я подумала: а ведь писать стихи легче, чем кажется!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:982
+translate english ts_scenario_10_8e564c87:
+
+    # em "Проще. Видимо, всё-таки не слышала..."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1000
+translate english ts_scenario_10_ffbb0dbb:
+
+    # m "...и чтобы вы не подумали, что я вас как-то ущемляю – я сяду писать стихотворение вместе с вами!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1001
+translate english ts_scenario_10_9e06fe50:
+
+    # m "Помните, в стихе не обязательно должна быть замудрённая рифма – её ведь вообще может не быть!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1002
+translate english ts_scenario_10_36643a95:
+
+    # m "В конце концов, главное в стихе – не рифма. И даже не слог и не размер."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1005
+translate english ts_scenario_10_645ea6d5:
+
+    # m "Мне не нужно, чтобы вы с первого раза написали новый шедевр литературы. Просто пару четверостиший или несколько строк, связанных одной темой."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1154
+translate english ts_scenario_10_41c498ce:
+
+    # m "Так, ладно, время уже позднее, поделиться друг с другом стихами на этом собрании мы не успеем... но всегда же есть следующее!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1211
+translate english ts_scenario_10_0093827c:
+
+    # m "Нацуки, подо—{w=0.15}{nw}"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1221
+translate english ts_scenario_10_6703e909:
+
+    # "Наверное, это потому, что она единственная из всех троих, чей корень зла – это не она сама."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1250
+translate english ts_scenario_10_3c31969a:
+
+    # em 3b "Говорю же, он—{w=0.2}{nw}"
+    em 3b ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1287
+translate english ts_scenario_10_06c2dd62:
+
+    # "Да, Аки убеждала меня, что с папой всё нормально, и это я просто сбрендила. Я ей вроде как даже поверила, но..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1288
+translate english ts_scenario_10_a68192bf:
+
+    # "...внутри меня до сих пор терзают сомнения."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1299
+translate english ts_scenario_10_b419f7fa:
+
+    # em 3d "Вот до этой субботы – какими они вообще были?"
+    em 3d ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1302
+translate english ts_scenario_10_db34ae8a:
+
+    # m "Но вообще – ну, они заботливые, любящие, понимающие, поддерживающие меня во всех начинаниях..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1314
+translate english ts_scenario_10_4298ed7d:
+
+    # em 2b "А если он хоть притронется к тебе – всегда же можно просто проснуться и забыть это всё, как страшный сон. Который, по сути, страшным сном и является."
+    em 2b ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1319
+translate english ts_scenario_10_c19e86a2:
+
+    # em 2b "Перестань так бояться папу. Как говорится, обещать – не значит жениться."
+    em 2b ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1406
+translate english ts_scenario_10_d2c6e424:
+
+    # "Но с какой-то стороны, папа-таки обратил внимание на моё странное поведение сегодня утром."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1453
+translate english ts_scenario_10_44ae0181:
+
+    # extend "жареные Ģ̵͉͎͎̙̟͎̟̭͍͐̏̒́L̴̛̛̪̳̠͔͑̊͐̾̀͑̕͝Ḁ̵̧̞̲̳̖͎͓̳̣̩̓̽͌̒̔͋̄͊́͑̕̚͝ͅZ̶̡̢̧̢̪̥̦̣̲̠̳͎͖͍̪̖͚̚À̸̛̛̪̪̝͕̞̮̭̒͌͆͊̈̍̀͂̀̈͘̕͝ всех твоих новых подруг?"
+    extend ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1529
+translate english ts_scenario_10_420e5ba9:
+
+    # ts_ft 1h "Моника, написание стихов – это процесс творческий. А творческий процесс – это в первую очередь вдохновение, которое может как прийти, так и нет."
+    ts_ft 1h ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1530
+translate english ts_scenario_10_4198e34f:
+
+    # ts_ft 1c "То, что сегодня все справились – это хорошо. Но завтра могут справиться не все. А ещё через пару дней вдохновения может не найтись вообще ни у кого."
+    ts_ft 1c ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1674
+translate english ts_scenario_10_bfae5dab:
+
+    # em "А вот доживёшь ли ты до него – это уже совсем другой вопрос..."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1709
+translate english ts_scenario_10_8f82568b:
+
+    # em 2bd "А на этой неделе тебе снится уже другой сон. А на следующей неделе – третий сон."
+    em 2bd ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1711
+translate english ts_scenario_10_9bebe57c:
+
+    # em 3bi "Каждый цикл – это новый сон, который ничего общего с предыдущим не имеет."
+    em 3bi ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1803
+translate english ts_scenario_10_8f6248a0:
+
+    # m "Стих написан? Написан. Ошибок нет? Вроде как нет – я его несколько раз перечитывала, и ни одной ошибки не заметила."
+    m ""
+

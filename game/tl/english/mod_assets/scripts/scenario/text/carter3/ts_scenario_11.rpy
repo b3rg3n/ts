@@ -4828,3 +4828,257 @@ translate english strings:
     old "[menutextsuka]"
     new ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:45
+translate english ts_scenario_11_2e91c837:
+
+    # "Кажется, сегодня снова готовлю я? Хотя, не то чтобы это ещё было важно..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:82
+translate english ts_scenario_11_ba60753d:
+
+    # em "И что, даже не пожалуешься в очередной раз, как тебе неприятно умываться холодной водой, даже несмотря на то, что умываешься именно холодной водой с самого детства?"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:177
+translate english ts_scenario_11_7b506dcb:
+
+    # "Я отсчитываю три ломтика хлеба и начинаю нарезать папе бутерброды."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:178
+translate english ts_scenario_11_00444871:
+
+    # "И конечно же, по закону подлости на хлебе слишком много места, чтобы положить два кусочка колбасы, но слишком мало, чтобы положить три."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:179
+translate english ts_scenario_11_14356814:
+
+    # "Впрочем, как говорила Сайори: «Лучше перебдеть, чем недобдеть»."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:216
+translate english ts_scenario_11_a8f47189:
+
+    # "Я поворачиваюсь к кастрюле и осознаю, что Аки так-то права."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:231
+translate english ts_scenario_11_39cb89f8:
+
+    # "А как максимум – сожгли бы на костре..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:242
+translate english ts_scenario_11_3839b92b:
+
+    # "Хлопья с молоком – это самое простое и требующее меньше всего усилий, если для этого вообще какие-то усилия нужно прилагать."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:270
+translate english ts_scenario_11_b142dcba:
+
+    # "...ну или он просто не сразу спустился. Что тоже не лишено смысла – дом-то у нас явно не из маленьких."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:345
+translate english ts_scenario_11_5d120381:
+
+    # "...Ах да. Время здесь теперь течёт своим чередом, оно мне неподвластно."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:353
+translate english ts_scenario_11_c3351915:
+
+    # m "А достаточно – это сколько конкретно, если не секрет?"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:355
+translate english ts_scenario_11_d88ce727:
+
+    # ts_ft "Не секрет, да. Ещё {w=0.01}{nw}"
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:515
+translate english ts_scenario_11_9bf71091:
+
+    # "Поскольку в коридоре почти никого и никакой учитель не подходит ко мне с вопросом, почему я не на уроке, то это означает, что я пришла пораньше."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:526
+translate english ts_scenario_11_5d6958ba:
+
+    # m "Да шучу я – надо же хоть как-то обстановку разрядить."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:683
+translate english ts_scenario_11_3c8c0d1e:
+
+    # "Ну, единственный способ «перекричать шум» в письменном виде – это писать сами слова побольше, покрупнее."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:804
+translate english ts_scenario_11_81410022:
+
+    # em "Так, ладно... Чисто логически – у тебя есть подлежащее с соответствующими атрибутами..."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:850
+translate english ts_scenario_11_193a5c67:
+
+    # "Во-первых, потому что я всё ещё зла на Аки, а во-вторых, у меня и без того несколько строк большими буквами написано: одной больше, одной меньше – какая разница?"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:968
+translate english ts_scenario_11_ff4997ab:
+
+    # "Сказать, что он удивился – это не сказать ничего."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:997
+translate english ts_scenario_11_3682442f:
+
+    # nvlbazar "Просто снисходительно говорю: «Ладно уж, было и было...»."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1035
+translate english ts_scenario_11_9e295587:
+
+    # "Но новую ручку я так и не купила."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1055
+translate english ts_scenario_11_c22810ed:
+
+    # "Видимо, упоминание фестиваля – это какое-то стоп-слово, потому что каждый раз, как на вопрос, всё ли со мной нормально, я отвечаю, что это просто всё из-за фестиваля, все волшебным образом от меня отстают."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1057
+translate english ts_scenario_11_fa54ff1e:
+
+    # "Я думала, что Юри продолжит допытывать меня, потому что технически, переживания о фестивале и страх перед тем, что я увидела пару минут назад – это немного разные вещи."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1078
+translate english ts_scenario_11_3954566b:
+
+    # em "А ты не думаешь, что то, что ты разговариваешь со своим подсознанием – это уже как минимум не нормально?"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1102
+translate english ts_scenario_11_c2d1a4c6:
+
+    # "Кажется, что выражение «остального мира для неё как будто не существует» – это ни разу не преувеличение..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1221
+translate english ts_scenario_11_7bd38116:
+
+    # "Поэтому всё, что у меня получается выдавить – это:"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1352
+translate english poemresponsesuka_loop_56f58069:
+
+    # s "Да! Ты же хотела сделать что-то вроде продолжения стихотворения, как оно там называлось..."
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1360
+translate english poemresponsesuka_loop_eac4f1cf:
+
+    # "Вот теперь я узнаю самую обычную Сайори – у неё феноменальная память на бесполезные факты, но как только дело доходит до каких-то реальных знаний, она мешкается."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1428
+translate english poemresponsesuka_loop_662ed15f:
+
+    # s "{size=-6}А ещё... мне в этом стихе очень близка его главная героиня. Как будто она – это и есть я...{/size}"
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1459
+translate english poemresponsesuka_loop_37a4e5e6:
+
+    # "Кстати, о птичках – а как там у Юри и Нацуки дела обстоят?"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1508
+translate english poemresponsesuka_loop_765e8866:
+
+    # y 2k "Для особо глухих повторяю ещё раз: твой стих – это примитивная херня."
+    y 2k ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1625
+translate english poemresponsesuka_loop_2b756459:
+
+    # s "Но, в любом случае, стиль стилем, а переходить на личности – это очень плохо!"
+    s ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1634
+translate english poemresponsesuka_loop_67bac6bf:
+
+    # "Юри и Нацуки – это понятно, они наговорили друг другу очень много лишнего, и им не хотелось извиняться первыми..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1807
+translate english poemresponsesuka_loop_48ffa940:
+
+    # em "Не самая догадливая – это ещё очень мягко говоря!"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1867
+translate english poemresponsesuka_loop_e1b5b1c3:
+
+    # "Мне даже интересно будет узнать, что ты вычленишь из той отрывистой писанины, которая ещё не отсохла..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1962
+translate english poemresponsesuka_loop_771a3882:
+
+    # "Единственное из «не её стиля» – это излишняя рифмованность..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1987
+translate english poemresponsesuka_loop_d596aba0:
+
+    # extend 2r "«Да, я на дне морском. Я королева морского царства! А вы все просто кучка бездарей»."
+    extend 2r ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:2177
+translate english poemend_abrupt_634789d7:
+
+    # em "Бездарность, эгоистка и лицемерка – вот ты кто, а не президент клуба!"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:2202
+translate english poemend_abrupt_47bae9aa:
+
+    # em "А вот и скажу – ты сама."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:2347
+translate english poemend_normal_ffb8e043:
+
+    # m "А сейчас – собрание окончено. Жду вас всех завтра."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:2417
+translate english poemend_normal_ce04041f:
+
+    # em "То, что ты не откладываешь стих на потом – это, конечно, похвально."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:2433
+translate english poemend_normal_cc5aa77b:
+
+    # m "Этого я ещё не знаю... Но, как говорится, аппетит приходит во время еды – вот и вдохновение ко мне придёт в процессе написания."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:2488
+translate english poemend_normal_92601846:
+
+    # em "В общем, идею я тебе дала, а как именно ты распишешь – это уже дело твоё."
+    em ""
+

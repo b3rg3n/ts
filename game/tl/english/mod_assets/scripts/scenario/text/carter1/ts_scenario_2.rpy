@@ -2526,3 +2526,137 @@ translate english ts_scenario_2_c414ec17_34:
     # " {w=1.0}{nw}"
     ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:53
+translate english ts_scenario_2_6cddf34f:
+
+    # "Единственное, чего мне хочется – это узнать её хотя бы чуточку лучше..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:62
+translate english ts_scenario_2_95bc9d84:
+
+    # "Впрочем, в каждой шутке есть доля шутки, а всё остальное – правда."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:118
+translate english ts_scenario_2_9ff69330:
+
+    # "Холодная вода и не менее холодное послевкусие зубной пасты подарили мне заряд бодрости на весь день."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:119
+translate english ts_scenario_2_98ee329d:
+
+    # "Папа всегда говорит, что нужно умываться именно холодной водой – так взбодришься быстрее."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:137
+translate english ts_scenario_2_fdeeed8f:
+
+    # "Помимо того, что он мне просто нравится, это ещё и дополнительный заряд бодрости, сразу на целый день."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:151
+translate english ts_scenario_2_46327d5a:
+
+    # "И знаете... Хоть это и правда, но всё равно немного обидно."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:293
+translate english ts_scenario_2_f185c8bd:
+
+    # m "Так, давай-ка по порядку и {cps=15}помедленнее...{/cps}"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:327
+translate english ts_scenario_2_b500b118:
+
+    # m "Ладно, всё, хорошо, спокойствие, только спокойствие..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:559
+translate english ts_scenario_2_72ed5a8f:
+
+    # s 2k "..."
+    s 2k ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:567
+translate english ts_scenario_2_300ff3f8:
+
+    # y 2k "С-сейчас я перечитываю «Маленького Принца» за авторством..."
+    y 2k ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:569
+translate english ts_scenario_2_c624f321:
+
+    # "Дальше я уже не слушаю. Экзюпери. Я её как-то читала в детстве, и мы даже проходили «Принца» на уроках мировой литературы."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:634
+translate english ts_scenario_2_ab6ca220:
+
+    # "Но как только дело доходит до реальных взаимоотношений с реальными людьми, она теряется, заикается, и единственное, чего ей хочется – это быть не здесь."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:659
+translate english ts_scenario_2_2354af2a:
+
+    # m "Поскольку сегодня пятница, и мы только вчера закончили обсуждать нашу первую книгу, сегодняшний день я объявляю свободным!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:688
+translate english ts_scenario_2_c8ad0c65:
+
+    # m "Сайори, жди здесь – ты за главную. Я пойду пока поищу её."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:734
+translate english ts_scenario_2_13a994d1:
+
+    # "Вернее, случилось не то чтобы плохое... просто неловкое."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:831
+translate english ts_scenario_2_2e8c656d:
+
+    # "Все слова поддержки и утешения буквально покинули мой разум, поэтому я просто не нахожу, что сказать."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:841
+translate english ts_scenario_2_a735957b:
+
+    # "Не хочешь по-хорошему, будет..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:869
+translate english ts_scenario_2_53ea354d:
+
+    # "И когда уже хотела сдаться, я пересилила себя и попыталась запрыгнуть один последний раз."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:904
+translate english ts_scenario_2_d6b03bdf:
+
+    # "Увидев меня, Юри ахает, быстро закатывает рукав обратно и продолжает рыдать."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:1095
+translate english ts_scenario_2_1ef1ef19:
+
+    # m "А если тебя кто-нибудь когда-нибудь оскорбит – приди ко мне."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:1192
+translate english ts_scenario_2_1daca4a0:
+
+    # m "Я помогала ей разобраться с тампоном."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:1221
+translate english ts_scenario_2_f38e4536:
+
+    # "Впрочем, такое количество секретов на таком начальном этапе – это не совсем хорошо..."
+    ""
+

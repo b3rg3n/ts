@@ -1608,3 +1608,119 @@ translate english ts_good_ending_blya_c414ec17_20:
     # " {w=1.0}{nw}"
     ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:79
+translate english ts_good_ending_blya_f7b06cee:
+
+    # "Слёзы счастья выступают на глазах сами собой."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:133
+translate english ts_good_ending_blya_5c994bd0:
+
+    # ts_ft "Привет, Мо—{w=1}{nw}"
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:152
+translate english ts_good_ending_blya_b15e4d7f:
+
+    # "Меня даже не волнуют мелочи вроде: «А сколько же вообще длился этот сон, если все ведут себя, как будто ничего из ряда вон выходящего не произошло?»."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:272
+translate english ts_good_ending_blya_c382c051:
+
+    # m "А хотя, знаете... Неважно. Ведь сон – это просто сон..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:289
+translate english ts_good_ending_blya_771df109:
+
+    # "Я хотела сказать, зачем они меня вообще сюда гнали, но быстро собралась с силами и вместо этого лишь уверенно отвечаю:"
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:293
+translate english ts_good_ending_blya_f87a763b:
+
+    # m "О, насчёт этого не переживайте – один человек {b}точно{/b} придёт. Это мой папа."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:294
+translate english ts_good_ending_blya_8e22840c:
+
+    # m "А даже если никто больше не придёт – мы всё равно проделали работу. А главное – не результат, а сам процесс и веселье, которое вы от этого получаете."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:337
+translate english ts_good_ending_blya_706df0a7:
+
+    # "Девочки в который раз перечитывали свои стихи, и с каждым разом надежда на то, что их услышит хоть кто-нибудь, становилась всё менее и менее яркой."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:392
+translate english ts_good_ending_blya_9ea6b74c:
+
+    # "«Ну что, Аки, ты проиграла. Фестиваль случился, никто не умер – всё же хорошо...»"
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:464
+translate english ts_good_ending_blya_2598c537:
+
+    # ts_ft "Я десять минут назад ей звонил – она говорит, что не успела на утренний рейс, поэтому на самом фестивале её не будет."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:471
+translate english ts_good_ending_blya_66f3c0f1:
+
+    # "К чёрту уже этот фестиваль – поскорее бы уже с мамой увидеться..."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:492
+translate english ts_good_ending_blya_d0e8acb2:
+
+    # "Конечно, папа слегка расстроился, что к нам так и не вступил никто из новичков, но лично я уже привыкла к трём девочкам, и не особо уже хочу добирать ещё кого-то."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:518
+translate english ts_good_ending_blya_d6df1149:
+
+    # m "Однако фестиваль уже прошёл, а у нас так никто и не прибавился..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:530
+translate english ts_good_ending_blya_4a85099c:
+
+    # m "В общем, ладно! Ребята мы или девчата – надо бы после фестиваля всё убрать, чтобы к следующему собранию было всё как обычно, без фантиков и прочего мусора."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:608
+translate english ts_good_ending_blya_491699af:
+
+    # ts_mt "Так мне папа номер кабинета сбросил сообщением. Потом сказал, мол, «я блуждал долго, но с горем пополам добрался до пункта назначения – не повторяй моих ошибок»."
+    ts_mt ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:637
+translate english ts_good_ending_blya_3bd3c81f:
+
+    # "Да, кстати, об этом... По идее, целая неделя ведь прошла – почему за неделю никто так и не удосужился спросить, где же я?"
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:713
+translate english ts_good_ending_blya_51ed5ff6:
+
+    # "Всё-таки мама – это прирождённая кухарка."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:763
+translate english ts_good_ending_blya_2845b1e7:
+
+    # "А затем каждый отправился по своим делам: папа – смотреть телевизор, а я – отдыхать."
+    ""
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:820
+translate english ts_good_ending_blya_e319ceed:
+
+    # "А кошмарный сон – это ведь всего лишь сон..."
+    ""
+

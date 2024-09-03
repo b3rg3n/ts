@@ -16,9 +16,20 @@ label ts_scenario_11:
     $ persistent.uncolorize = "lite"
 
     play music ts_roae fadein 2
+
+    play sound ts_alarm fadein 2
+
+    pause 2
+
     scene ts_bedroom
     show unblink
+    show layer master at ts_vstavai_shashlik
+    pause 3
+    play sound svet_on
+    pause 1.5
+
     show layer screens at ts_showscreens
+
     "Наступает среда."
     "...по крайней мере, я чувствую, что сегодня среда."
     "Аки же вроде говорила, что во сне происходит путаница с конкретными датами и днями недели."
@@ -49,6 +60,19 @@ label ts_scenario_11:
     play sound pageflip
     scene ts_bathroom
     with wipeleft_scene
+
+    show layer master at ts_clean_eblet
+    pause 2
+    play sound open_water_sink
+    pause 0.5
+    stop sound
+    play sound_loop water_sink_stream
+    pause 1
+    play sound water_splash
+    pause 1.6
+    stop sound_loop
+    play sound close_water_sink
+    pause 0.5
 
     show layer screens at ts_showscreens
 

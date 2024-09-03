@@ -3336,3 +3336,269 @@ translate english ts_scenario_6_c414ec17_33:
     # " {w=1.0}{nw}"
     ""
 
+# TODO: Translation updated at 2024-09-03 21:04
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:57
+translate english ts_scenario_6_77e5dd5c:
+
+    # "В воскресенье, когда уже всё вернулось к привычному ритму жизни, папа приготовил завтрак, который снова был скорее рассчитан на него одного."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:94
+translate english ts_scenario_6_141bac93:
+
+    # "Или, скорее, не то чтобы сдружились, но, по крайней мере, стали ладить лучше."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:99
+translate english ts_scenario_6_a232917d:
+
+    # em "Я тебе уже кучу раз говорил... говорила... говорило... что я – это и есть ты."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:133
+translate english ts_scenario_6_28b16131:
+
+    # "Чёрт. Самое сложное в готовке – это выбрать, что именно ты будешь готовить."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:141
+translate english ts_scenario_6_3e62fb85:
+
+    # m "А что тогда?!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:158
+translate english ts_scenario_6_396656f4:
+
+    # "Но тёплое молоко я не любила и не люблю до сих пор. Даже с вышеупомянутым кофе."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:175
+translate english ts_scenario_6_7b6b8660:
+
+    # ts_ft 1c "Знаешь... Хлопья с молоком – это, конечно, вкусно, но это не самая питательная пища."
+    ts_ft 1c ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:180
+translate english ts_scenario_6_9bd6bec5:
+
+    # m "Пап, да я и так это всё умею... Я просто не успела сообразить что-то на сегодняшний завтрак."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:185
+translate english ts_scenario_6_b0706e68:
+
+    # "Я хотела возразить ему, что, скорее всего, в университете будет что-то вроде столовой, в которой профессионалы своего дела за сдельную плату организуют всё тебе по высшему разряду, но не стала."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:245
+translate english ts_scenario_6_c77cbe3d:
+
+    # ts_ft "Идти пешком или на общественном транспорте в разные концы города – задача не из самых лёгких."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:260
+translate english ts_scenario_6_6c8c47ba:
+
+    # "Папа у меня – обычный рядовой госслужащий. Знаете, не из тех, чтобы жить в десяти квартирах, записанных на всех его родственников, но на жизнь мы всё равно не жалуемся."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:269
+translate english ts_scenario_6_fd733734:
+
+    # "Он как-то несколько раз, ещё давно, говорил мне нечто вроде: «У меня есть твоя мама, у меня есть ты, у меня есть работа, а сколько на ней платят – это уже дело десятое»."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:379
+translate english ts_scenario_6_cc4f973f:
+
+    # "Часы тем временем показывают уже восемь."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:394
+translate english ts_scenario_6_09a730ad:
+
+    # "Видно, что он уже не обижается, и списал недавнюю выходку на рудименты моего переходного периода."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:497
+translate english ts_scenario_6_6ede992b:
+
+    # em "Просто зови меня Аки. Не сильно сложнее, чем «эта», всего три буквы, два слога, и даже отдалённо похоже на твоё же имя."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:517
+translate english ts_scenario_6_6aec747f:
+
+    # "«Ладно, {i}Аки{/i}. Теперь довольна?!»"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:519
+translate english ts_scenario_6_f4a8657a:
+
+    # em "Всё, не буду тебе мешать – с биологией ты и так не особо ладишь, а я не хочу, чтобы ты ещё больше ненавидела её."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:538
+translate english ts_scenario_6_e2acb1df:
+
+    # "Аки не особо тревожила, что тоже не может не радовать."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:570
+translate english ts_scenario_6_b4d9f0e4:
+
+    # em "Прогресс налицо! К вечеру ты перед всеми своими {i}друзьяшками{/i} опозоришься!"
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:571
+translate english ts_scenario_6_ed596514:
+
+    # "Она сказала «друзьяшками» каким-то чрезмерно язвительным и насмешливым тоном."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:619
+translate english ts_scenario_6_c9fd4729:
+
+    # "Однако, учитывая общее настроение, не думаю, что в этих пятидесяти страницах была какая-то сверхнеожиданная развязка, которая в корне меняет сюжет всей книги."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:682
+translate english ts_scenario_6_02129b84:
+
+    # n "Ну, мы читать будем или нет?"
+    n ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:727
+translate english ts_scenario_6_e63db628:
+
+    # m "Ну, э-э-э... Да, в целом, сам стиль повествования... неплох..."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:766
+translate english ts_scenario_6_8f685622:
+
+    # "Договорить Нацуки не успела – в этот момент в комнату входят Сайори и Юри."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:787
+translate english ts_scenario_6_281d0bf6:
+
+    # s 2h "Монике и так стыдно за произошедшее, а тут ещё и ты накручиваешь..."
+    s 2h ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:842
+translate english ts_scenario_6_a69339be:
+
+    # m "Как вы уже знаете, каждый год в ноябре в школе проводится фестиваль клубов."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:880
+translate english ts_scenario_6_fb6a747d:
+
+    # m "В стихе не обязательно должна быть замудрённая рифма – её ведь вообще может не быть!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:881
+translate english ts_scenario_6_ca782728:
+
+    # m "В конце концов, главное в стихе – не рифма. Гораздо более важен сам слог и размер."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:882
+translate english ts_scenario_6_fcd00786:
+
+    # m "И чтобы вы не чувствовали, что я вас как-то ущемляю или что-то подобное – я сяду писать стихотворение вместе с вами!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:886
+translate english ts_scenario_6_d890c269:
+
+    # y "М-Моника!.."
+    y ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:918
+translate english ts_scenario_6_e6540bf9:
+
+    # m "А литература – это не просто какие-то книги!.."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:923
+translate english ts_scenario_6_14724866:
+
+    # m "Стишки, рассказики, дневники всякого рода, другая проза, да даже не совсем литературные виды искусств, как пьеса – перед тем, как актёры её играют, сценарист сначала её пишет."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:924
+translate english ts_scenario_6_10292ac6:
+
+    # m "И вот всё это – это тоже литература."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1000
+translate english ts_scenario_6_7500251f:
+
+    # "Однако после творческого порыва в субботу сегодня мне на ум не приходит ни строчки, ни даже хорошего слова, чтобы я могла от чего-то оттолкнуться."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1114
+translate english ts_scenario_6_929d47fa:
+
+    # "Однако у меня есть что-то вроде традиции: писать стихи за один присест, а затем не редактировать их вообще."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1164
+translate english ts_scenario_6_9e2b093f:
+
+    # m "А сейчас – собрание окончено. Всем спасибо, все свободны!"
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1227
+translate english ts_scenario_6_80e3bc32:
+
+    # em "Погоди!.."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1308
+translate english ts_scenario_6_3ce9ec7f:
+
+    # em "А ты проверь."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1323
+translate english ts_scenario_6_574d79d2:
+
+    # em "Может, ты вообще в коме находишься, а ущипнуть себя – это своего рода проверка на то, спишь ты или нет."
+    em ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1327
+translate english ts_scenario_6_1f936756:
+
+    # m "Нет. Сайори же сказала, что сон – это сон, а реальность – это реальность, и ей я доверяю."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1516
+translate english ts_scenario_6_0f6b5ac7:
+
+    # "После того, как мы съели пару кусков, папа наконец спрашивает."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1542
+translate english ts_scenario_6_729c198b:
+
+    # ts_ft 1c "Но я скорее говорил на тему того, что писать что-то своё – это творческий процесс."
+    ts_ft 1c ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1543
+translate english ts_scenario_6_388efd2d:
+
+    # ts_ft "А творческий процесс – это в первую очередь вдохновение. А оно может как прийти, так и нет."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter2/ts_scenario_6.rpy:1569
+translate english ts_scenario_6_c9f375d6:
+
+    # "Но с другой стороны, вполне логично, что темы были довольно сложными – всё в соответствии с его высшим образованием, которое тоже не из самых лёгких."
+    ""
+

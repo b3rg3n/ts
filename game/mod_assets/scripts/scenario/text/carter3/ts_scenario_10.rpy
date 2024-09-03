@@ -30,17 +30,22 @@ label ts_scenario_10:
     stop sound fadeout 7
     $ Chapter("Спуск в безумие")
 
-    pause 2
-
-    show layer screens at ts_showscreens
-
     $ persistent.uncolorize = "lite"
+
+    play music ts_pb_sn fadein 2
+    play sound ts_alarm fadein 2
+
+    pause 2
 
     scene ts_bedroom
     show unblink
+    show layer master at ts_vstavai_shashlik
+    pause 3
+    play sound svet_on
+    pause 1.5
 
-    play sound ts_alarm fadein 2
-    play music ts_pb_sn fadein 2
+    show layer screens at ts_showscreens
+
     "Ух-х-х..."
     "На часах до боли привычные семь утра."
     stop sound fadeout 2
@@ -55,6 +60,20 @@ label ts_scenario_10:
     play sound pageflip
     scene ts_bathroom
     with wipeleft_scene
+
+
+    show layer master at ts_clean_eblet
+    pause 2
+    play sound open_water_sink
+    pause 0.5
+    stop sound
+    play sound_loop water_sink_stream
+    pause 1
+    play sound water_splash
+    pause 1.6
+    stop sound_loop
+    play sound close_water_sink
+    pause 0.5
 
     show layer screens at ts_showscreens
     "Нет, серьёзно, почему так? Почему никто ничего не помнит?"
@@ -215,7 +234,16 @@ label ts_scenario_10:
     show blackout_exh zorder 5
     show anim_exhausted zorder 5
     show m_rectstatic zorder 5
-    show ts_hiroto_psyhodelic_pizdoc_eblet zorder 6 at ippp11
+    #show ts_hiroto_psyhodelic_pizdoc_eblet zorder 6 at ippp11
+    show ts_hiroto_psyhodelic_pizdoc_eblet zorder 6:
+        align(0.5, 0.5) zoom 1.0
+        ease 0.1 align(0.1, 0.2) zoom 2.0
+        parallel:
+            ease 0.02 align(0.8, 0.2) zoom 3.0
+            ease 0.02 align(0.4, 0.4) zoom 4.0
+            ease 0.02 align(0.9, 0.6) zoom 5.0
+            ease 0.02 align(0.8, 0.2) zoom 3.0
+            repeat
 
     ts_ft "К гарниру в виде гречки хорошо бы подошли твои фаршированные глазные яблоки."
     ts_ft "Можно ещё твои запечёные уши, но это так, для следующего раза."

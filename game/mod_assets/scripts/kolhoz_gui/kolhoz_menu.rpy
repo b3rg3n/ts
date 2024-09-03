@@ -97,13 +97,8 @@ label glitch_main_menu_ending:
 
 label splashscreen:
 
-    python:
-        process_list = []
-        if renpy.windows:
-            try:
-                process_list = subprocess.check_output("wmic process get Description", shell=True).lower().replace("\r", "").replace(" ", "").split("\n")
-            except:
-                pass
+    if player == "kravc" or "iamnineoneone":
+        $ config.developer = True # РЕЖИМ РАЗРАБОТЧИКА БЕЗ СДК
 
     if not persistent.lan_chosen:
 

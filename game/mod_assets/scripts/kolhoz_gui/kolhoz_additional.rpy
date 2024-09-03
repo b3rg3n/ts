@@ -158,12 +158,29 @@ screen ts_ds_credit_info:
     text translation_new["ts_crd_scr6"] style "settings_link" size 50 text_align 0.5 yalign 0.920 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
     text translation_new["ts_crd_scr7"] style "settings_link" size 50 text_align 0.5 yalign 0.980 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
+screen ts_font_info:
+    text translation_new["ts_font_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+screen ts_lang_info:
+    text translation_new["ts_lang_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.83 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_powersave_info:
     text translation_new["ts_powersave_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_tearing_info:
     text translation_new["ts_tearing_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+screen ts_rpc_info_sooqa:
+    text translation_new["ts_dicord_rpc_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+screen ts_window_info:
+    text translation_new["ts_window_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+
+screen ts_skip_info:
+    if renpy.android or renpy.ios:
+        text translation_new["ts_skip_info11"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.88 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    else:
+        text translation_new["ts_skip_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.88 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_anticens_info:
     text translation_new["ts_anticens_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim

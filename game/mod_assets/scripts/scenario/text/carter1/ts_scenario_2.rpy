@@ -3,10 +3,7 @@ label ts_scenario_2:
     $ renpy.block_rollback()
 
     python: # ОБНОВЛЯЕМ RPC
-        try:
-            rpc.update(state="Акт I | Глава II",details="Поиски. Юри",large_image="aonectwo",start=time.time())
-        except AssertionError:
-            pass
+        ts_rpc_carter2()
 
     $ persistent.rpclabel = "2"
     $ persistent.uncolorize = "none"

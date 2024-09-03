@@ -6,10 +6,7 @@
 label main_menu:
 
     python: # ОБНОВЛЯЕМ RPC
-        try:
-            rpc.update(state="В игре",details="Главное меню",large_image="logogovna",start=time.time())
-        except AssertionError:
-            pass
+        ts_rpc_main_menu()
 
     stop sound fadeout 3
     stop music fadeout 3
@@ -128,10 +125,7 @@ label splashscreen:
             persistent.lan_chosen = True
 
     python: # УСТАНОВКА ГРОМКОСТИ И ПРОВЕРКА НА СПЛЕШ | ОБНОВЛЯЕМ RPC
-        try:
-            rpc.update(state="В игре",details="Просмотр заставки",large_image="logogovna",start=time.time())
-        except AssertionError:
-            pass
+        ts_rpc_splash()
 
         if not persistent.set_volumes:
             
@@ -181,6 +175,51 @@ label splashscreen2:
     $ renpy.pause(1, hard=True)
     $ persistent.skip_splash = True
     return
+
+label after_load: # ВОСКРЕШЕНИЕ RPC ПРИ ЗАГРУЗКЕ
+    if persistent.rpclabel == "0":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter0()
+    elif persistent.rpclabel == "1":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter1()
+    elif persistent.rpclabel == "2":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter2()
+    elif persistent.rpclabel == "3":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter3()
+    elif persistent.rpclabel == "4":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter4()
+    elif persistent.rpclabel == "5":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter5()
+    elif persistent.rpclabel == "6":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter6()
+    elif persistent.rpclabel == "7":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter7()
+    elif persistent.rpclabel == "8":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter8()
+    elif persistent.rpclabel == "9":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter9()
+    elif persistent.rpclabel == "10":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter10()
+    elif persistent.rpclabel == "11":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter11()
+    elif persistent.rpclabel == "12":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_carter12()
+    elif persistent.rpclabel == "999":
+            python: # ОБНОВЛЯЕМ RPC
+                ts_rpc_credits()
+
 
 screen skitsoglasenblya:
 

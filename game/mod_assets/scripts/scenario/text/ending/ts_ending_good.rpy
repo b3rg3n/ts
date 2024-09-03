@@ -3,12 +3,9 @@ label ts_good_ending_blya:
     $ renpy.block_rollback()
 
     python: # ОБНОВЛЯЕМ RPC
-        try:
-            rpc.update(state="Эпилог",details="Всего лишь сон...",large_image="aonectwo",start=time.time())
-        except AssertionError:
-            pass
+        ts_rpc_carter13()
 
-    $ persistent.rpclabel = "12"
+    $ persistent.rpclabel = "13"
 
     $ persistent.carter2menu = False
     $ persistent.carter3menu = False

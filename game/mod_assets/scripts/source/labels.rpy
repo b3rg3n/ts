@@ -10,6 +10,8 @@ init:
     default persistent.vsyncebaniy = True
     default persistent.ts_mouse_anim_set = "0"
     default persistent.set_volumes = False
+    default persistent.lan_chosen = False
+    default persistent.rpc_mode = True
 ### RPC
     default persistent.rpclabel = "228"
 ### МЕНЮШКИ

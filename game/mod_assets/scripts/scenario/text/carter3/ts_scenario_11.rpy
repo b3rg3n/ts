@@ -2,7 +2,10 @@ label ts_scenario_11:
 
     $ renpy.block_rollback()
 
-    $ persistent.rpclabel = "9"
+    python: # ОБНОВЛЯЕМ RPC
+        ts_rpc_carter10()
+
+    $ persistent.rpclabel = "10"
     $ persistent.sprite_time = "day"
     $ persistent.carter2menu = False
     $ persistent.carter3menu = True

@@ -2,10 +2,7 @@
 label testing_label_blya:
 
     python: # ОБНОВЛЯЕМ RPC
-        try:
-            rpc.update(state=glitchtext(12),details="Снова что-то мутит",large_image="logogovna",start=time.time())
-        except AssertionError:
-            pass
+        ts_rpc_development()
 
     scene black
 

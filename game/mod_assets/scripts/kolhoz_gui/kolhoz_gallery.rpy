@@ -17,9 +17,10 @@ init python:
     cells = rows * cols
 
     gallery_cg = [
-    "ts_mon_maman_1", "ts_mon_maman_2", "ts_mon_maman_3", "ts_mon_maman_4", "ts_mon_maman_5",
-    "ts_mon_maman_6", "ts_mon_maman_7", "ts_mon_maman_8", "ts_mon_maman_9", 
-    "yurec_pizdec1", "yurec_pizdec2", "yurec_pizdec3", "yurec_pizdec4", "yurec_pizdec5", "yurec_pizdec6",
+    "ts_mon_maman_2", "ts_mon_maman_3", "ts_mon_maman_4",
+    "ts_mon_maman_5", "ts_mon_maman_6", "ts_mon_maman_8",
+    "yurec_pizdec1", "yurec_pizdec2", "yurec_pizdec3",
+    "yurec_pizdec4", "yurec_pizdec5", "yurec_pizdec6",
     "yurec_pizdec8", "yurec_pizdec9"
     ]
 

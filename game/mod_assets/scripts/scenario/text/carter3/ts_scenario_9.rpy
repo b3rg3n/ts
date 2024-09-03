@@ -3,10 +3,7 @@ label ts_scenario_9:
     $ renpy.block_rollback()
 
     python: # ОБНОВЛЯЕМ RPC
-        try:
-            rpc.update(state="Акт III | Глава I",details="С возвращением... Снова?",large_image="atwocfour",start=time.time())
-        except AssertionError:
-            pass
+        ts_rpc_carter9()
 
     $ persistent.rpclabel = "9"
     $ persistent.sprite_time = "day"

@@ -408,7 +408,7 @@ init:
     image vladick_pizdos: # ГЛИЧЁВЫЙ СЦЕНАРИСТ ЭТОЙ ХУЙНИ
         contains:
             choice:
-                "ts_credits_mad_1"
+                "ts_credits_mad_5"
             choice:
                 "ts_credits_mad_2"
             choice:
@@ -431,7 +431,7 @@ init:
             repeat
         contains:
             choice:
-                "ts_credits_mad_1"
+                "ts_credits_mad_5"
             choice:
                 "ts_credits_mad_3"
             choice:
@@ -447,14 +447,14 @@ init:
             choice:
                 "ts_credits_mad_3"
             choice:
-                "ts_credits_mad_4"
+                "ts_credits_mad_5"
             choice:
                 "ts_credits_mad_2"
             pause 0.05
             repeat
         contains:
             choice:
-                "ts_credits_mad_1"
+                "ts_credits_mad_5"
             choice:
                 "ts_credits_mad_2"
             choice:
@@ -466,7 +466,7 @@ init:
             choice:
                 "ts_credits_mad_3"
             choice:
-                "ts_credits_mad_4"
+                "ts_credits_mad_5"
             choice:
                 "ts_credits_mad_2"
             choice:
@@ -479,7 +479,7 @@ init:
     image bergencheek_pizdos: # ГЛИЧЁВЫЙ КОДЕР ЭТОЙ ХУЙНИ
         contains:
             choice:
-                "ts_credits_bergen_1"
+                "ts_credits_bergen_5"
             choice:
                 "ts_credits_bergen_2"
             choice:
@@ -487,7 +487,7 @@ init:
             choice:
                 "ts_credits_bergen_3"
             choice:
-                "ts_credits_bergen_4"
+                "ts_credits_bergen_5"
             choice:
                 "ts_credits_bergen_3"
             choice:
@@ -502,7 +502,7 @@ init:
             repeat
         contains:
             choice:
-                "ts_credits_bergen_1"
+                "ts_credits_bergen_5"
             choice:
                 "ts_credits_bergen_3"
             choice:
@@ -512,7 +512,7 @@ init:
             choice:
                 "ts_credits_bergen_3"
             choice:
-                "ts_credits_bergen_4"
+                "ts_credits_bergen_5"
             choice:
                 "ts_credits_bergen_2"
             choice:
@@ -525,7 +525,7 @@ init:
             repeat
         contains:
             choice:
-                "ts_credits_bergen_1"
+                "ts_credits_bergen_5"
             choice:
                 "ts_credits_bergen_2"
             choice:
@@ -537,13 +537,84 @@ init:
             choice:
                 "ts_credits_bergen_3"
             choice:
-                "ts_credits_bergen_4"
+                "ts_credits_bergen_5"
             choice:
                 "ts_credits_bergen_2"
             choice:
                 "ts_credits_bergen_3"
             choice:
                 "ts_credits_bergen_4"
+            pause 0.05
+            repeat
+
+    image fedya_pizdos: # ГЛИЧЁВЫЙ РЕДАКТОР ЭТОЙ ХУЙНИ
+        contains:
+            choice:
+                "ts_credits_fedya_1"
+            choice:
+                "ts_credits_fedya_2"
+            choice:
+                "ts_credits_fedya_4"
+            choice:
+                "ts_credits_fedya_3"
+            choice:
+                "ts_credits_fedya_4"
+            choice:
+                "ts_credits_fedya_3"
+            choice:
+                "ts_credits_fedya_2"
+            choice:
+                "ts_credits_fedya_3"
+            choice:
+                "ts_credits_fedya_2"
+            choice:
+                "ts_credits_fedya_4"
+            pause 0.05
+            repeat
+        contains:
+            choice:
+                "ts_credits_fedya_1"
+            choice:
+                "ts_credits_fedya_3"
+            choice:
+                "ts_credits_fedya_2"
+            choice:
+                "ts_credits_fedya_4"
+            choice:
+                "ts_credits_fedya_3"
+            choice:
+                "ts_credits_fedya_1"
+            choice:
+                "ts_credits_fedya_2"
+            choice:
+                "ts_credits_fedya_3"
+            choice:
+                "ts_credits_fedya_4"
+            choice:
+                "ts_credits_fedya_2"
+            pause 0.05
+            repeat
+        contains:
+            choice:
+                "ts_credits_fedya_1"
+            choice:
+                "ts_credits_fedya_2"
+            choice:
+                "ts_credits_fedya_3"
+            choice:
+                "ts_credits_fedya_2"
+            choice:
+                "ts_credits_fedya_1"
+            choice:
+                "ts_credits_fedya_3"
+            choice:
+                "ts_credits_fedya_4"
+            choice:
+                "ts_credits_fedya_2"
+            choice:
+                "ts_credits_fedya_3"
+            choice:
+                "ts_credits_fedya_4"
             pause 0.05
             repeat
 

@@ -16,7 +16,7 @@ init:
 
     image credits = ParameterizedText(style = "credits", size = 50)
 
-    define ts_credits = "Спасибо, что прошли полную версию мода!\n\nНадеемся, что мод оставил вам лишь приятные впечатления!\n\n\n\nВ моде использовались следующие BG:\nbedroom, class, club (club_skill), corridor,\nstreet, house, kitchen, residential - Team Salvato\nmusic_club - Team Salvato/Serenity Forge\nschool_gate (day/evening), school_courtyard - Kimagure After\ngost (day), vhod (day/night/nolight),\nliving_room (day/late/night) - Nuxill#7870\ngym_n, lockers_n - Vanishing Point\ndarkbed - Alex#9077\nstairs - Kimagure After; edited by Nuxill#7870\nbathroom - Uncle Mugen\nclub2re - Wheatley#3103; edited by MalukahMaker#2907, TheMelodyofGaming#7515\n\nAll BG's polished by BERGEN\n\nСпрайты:\nExtended OC sprites - originally from Absolution Chapter One by BaryonGod\nКаори - Hime Sprites by Daikaju Fanboy/BlackRabbitArtworks\nПодруги Нацуки - Himari Sprites by Prox#9492; Elena Sprites by ItzTuna/Elenathebullimom\nХирото (папа Моники) - StormBlazed76\nМама Моники - originally Dr. Bug from Dimensions by chiffmonkey\n\nКомпозиторы:\nDan Salvato\nSergey Eybog\nBetween August and December\n\nВ моде также использовалась следующая музыка:\nHallucinator - Mosh\nPixies - Where is My Mind (piano cover)\nJurrivh - Suicide Note\nMoe Era OST - Final Scene Soft\n\nЗвуки:\nDDLC SFX\nEverlasting Summer SFX\nSeven Summer Days SFX\nfreesound.org\n\nЕсли ваша работа была использована\nв моде, но ваше авторство\nне было указано -\nсвяжитесь с разработчиками.\nМы исправим это досадное недоразумение.\n\nКонец демо версии.\n\nЗа новостями\nпо дальнейшей разработке\nследите в нашем\n{a=https://discord.com/invite/8B3eKkU37q}Discord канале{/a}\nи\n{a=https://vk.com/teamanarkhisty}группе в вк{/a}.\n\nПродолжение следует...\n\n\n\n\n\n\n"
+    define ts_credits = "Спасибо, что прошли полную версию мода!\n\nНадеемся, что мод оставил вам лишь приятные впечатления!\n\n\n\nФоновые изображения:\n\nTeam Salvato/Serenity Forge\nKimagure After\nNuxill\nUncle Mugen\nVanishingPoint\nи другие...\n\n\nСпрайты:\n\nOriginal DDLC Cast - Team Salvato\nExtended OC sprites - originally from Absolution by BaryonGod\nMonika Pajamas Sprite - SovietSpartan\nSayori Pajamas Sprite - WretchedTeam\nМира - Kuninobu Spritepack by certified cabbage, AjTheFunky\nКаори - Hime Spritepack by BlackRabbitArtworks\nХирото (папа Моники) - StormBlazed76\nМинами (мама Моники) - Mrs. Ida spritepack by kutaba_ree, SYwaves, Donkyhotay (originally appeared in Doki Doki Club Meetings by KrazyCaley)\nАдминистратор Сайка - originally Within's Monika's mom by u/BassPon3, StormBlazed76\nДиректор Раддан - originally Within's Monika's dad by u/BassPon3, StormBlazed76\nМагнолия Карлсен - originally Dr. Bug from Dimensions by chiffmonkey\n\n\nКомпозиторы:\n\nDan Salvato\nSergey Eybog\nBetween August and December\nThe Distorion\n\n\nВсе треки можно послушать в музыкальной комнате.\nТам же указаны точные названия.\n\n\nЗа код и способы реализации респектую лично:\n\nrmcj0\nSuperRage\nsalotor\ndreamtale\nNai@MakeVisualNovels\nFeniks\n\n\nЗаходите на наш \n{a=https://discord.com/invite/8B3eKkU37q}Discord сервер{/a},\n{a=https://vk.com/teamanarkhisty}группу в ВК{/a}\nи на наш {a=https://boosty.to/team_anarkhisty}Boosty{/a}.\n\n\n\n\nКонец.\n\n\n\n\n\n\n"
 
 label good_credits_ts_label:
 
@@ -108,7 +108,7 @@ label good_credits_ts_label:
 
     show layer screens at ts_showscreens
 
-    show ts_credits_bergen_1 at ts_show_credits_videosos
+    show ts_credits_fedya_1 at ts_show_credits_videosos_fedya
     
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
@@ -117,8 +117,8 @@ label good_credits_ts_label:
 
     show layer screens at ts_hidescreens
 
-    show ts_credits_bergen_1 at ts_hide_credits_videosos
-    
+    show ts_credits_fedya_1 at ts_hide_credits_videosos_fedya
+
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
 
@@ -135,7 +135,7 @@ label good_credits_ts_label:
         xalign 0.5
         ypos 1.05
         linear 100.0 ypos -6.28
-    $ renpy.pause (110, hard=True)
+    $ renpy.pause (75, hard=True)
 
     stop music fadeout 3
 
@@ -251,9 +251,9 @@ label bad_credits_ts_label:
 
     show layer screens at ts_showscreens
 
-    show bergencheek_pizdos:
-        xpos 0.2 ypos 0.2 alpha 0.0 subpixel True
-        ease 1.0 xpos 0.2 ypos 0.4 alpha 1.0
+    show fedya_pizdos:
+        xpos 0.125 ypos 0.01 alpha 0.0 subpixel True
+        ease 1.0 xpos 0.125 ypos 0.2 alpha 1.0
     
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
@@ -262,9 +262,9 @@ label bad_credits_ts_label:
 
     show layer screens at ts_hidescreens
 
-    show bergencheek_pizdos:
-        xpos 0.2 ypos 0.4 alpha 1.0 subpixel True
-        ease 1.0 xpos 0.2 ypos 0.2 alpha 0.0
+    show fedya_pizdos:
+        xpos 0.125 ypos 0.2 alpha 1.0 subpixel True
+        ease 1.0 xpos 0.125 ypos 0.01 alpha 0.0
     
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
@@ -297,7 +297,7 @@ label bad_credits_ts_label:
         xalign 0.5
         ypos 1.05
         linear 100.0 ypos -6.28
-    $ renpy.pause (110, hard=True)
+    $ renpy.pause (75, hard=True)
 
     stop music fadeout 3
 
@@ -313,10 +313,10 @@ label bad_credits_ts_label:
     return
 
 screen ts_good_credits_scr_1:
-    text translation_new["ts_credits_ending1"] style "credits_moda" size 75 text_align 0.5 yalign 0.5 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_credits_ending1"] style "credits_moda" size 75 text_align 0.5 yalign 0.5 xalign 0.65 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_good_credits_scr_11:
-    text translation_new["ts_crd_mishlent"] style "credits_moda" size 75 text_align 0.5 yalign 0.65 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_crd_mishlent"] style "credits_moda" size 75 text_align 0.5 yalign 0.65 xalign 0.6 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_good_credits_scr_2:
     text translation_new["ts_credits_ending2"] style "credits_moda" size 75 text_align 0.5 yalign 0.5 xalign 0.65 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
@@ -325,7 +325,9 @@ screen ts_good_credits_scr_22:
     text translation_new["ts_crd_vladick"] style "credits_moda" size 75 text_align 0.5 yalign 0.65 xalign 0.7 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_good_credits_scr_3:
-    text translation_new["ts_credits_ending3"] style "credits_moda" size 75 text_align 0.5 yalign 0.5 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_credits_ending3"] style "credits_moda" size 75 text_align 0.5 yalign 0.7 xalign 0.15 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_credits_ending4"] style "credits_moda" size 75 text_align 0.5 yalign 0.7 xalign 0.85 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_good_credits_scr_33:
-    text translation_new["ts_crd_mishlent"] style "credits_moda" size 75 text_align 0.5 yalign 0.65 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_crd_fedya"] style "credits_moda" size 75 text_align 0.5 yalign 0.85 xalign 0.165 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    text translation_new["ts_crd_cgshki"] style "credits_moda" size 75 text_align 0.5 yalign 0.85 xalign 0.92 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim

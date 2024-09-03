@@ -9,6 +9,18 @@ label testing_label_blya:
 
     scene black
 
+    show layer screens at ts_showscreens
+
+    show ts_credits_fedya_1 at ts_show_credits_videosos_fedya
+
+    #show screen ts_good_credits_scr_1
+    #show screen ts_good_credits_scr_11
+
+    show screen ts_good_credits_scr_3
+    show screen ts_good_credits_scr_33
+
+    pause
+
     scene white
     $ persistent.sprite_time = "day"
     show sayori 4z at t41

@@ -171,9 +171,12 @@ init -1003 python:
         "ts_menu_mus1" : "Сейчас ничего не играет",
         "ts_menu_mus2" : "Список треков",
 
-        "ts_credits_ending1" : "Идея:",
+        "ts_credits_ending1" : "Идея, визуал, код:",
         "ts_credits_ending2" : "Сценарий:",
-        "ts_credits_ending3" : "Визуал:",
+        "ts_credits_ending3" : "Редактура:",
+        "ts_credits_ending4" : "Иллюстрации:",
+        "ts_crd_fedya" : "fedor02",
+        "ts_crd_cgshki" : "BayramovaRovshana",
 
         "ts_govno_text1" : "Начнём сначала? Или выберешь главу?",
         "ts_govno_text2" : "Начать с пролога",

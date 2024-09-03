@@ -78,11 +78,18 @@ init:
     image ts_credits_mad_2 = ts_images + "credits/ts_credits_mad_2.webp"
     image ts_credits_mad_3 = ts_images + "credits/ts_credits_mad_3.webp"
     image ts_credits_mad_4 = ts_images + "credits/ts_credits_mad_4.webp"
+    image ts_credits_mad_5 = ts_images + "credits/ts_credits_mad_5.webp"
 
     image ts_credits_bergen_1 = ts_images + "credits/ts_credits_bergen_1.webp"
     image ts_credits_bergen_2 = ts_images + "credits/ts_credits_bergen_2.webp"
     image ts_credits_bergen_3 = ts_images + "credits/ts_credits_bergen_3.webp"
     image ts_credits_bergen_4 = ts_images + "credits/ts_credits_bergen_4.webp"
+    image ts_credits_bergen_5 = ts_images + "credits/ts_credits_bergen_5.webp"
+
+    image ts_credits_fedya_1 = ts_images + "credits/ts_credits_fedya_1.webp"
+    image ts_credits_fedya_2 = ts_images + "credits/ts_credits_fedya_2.webp"
+    image ts_credits_fedya_3 = ts_images + "credits/ts_credits_fedya_3.webp"
+    image ts_credits_fedya_4 = ts_images + "credits/ts_credits_fedya_4.webp"
 
 
 ###ЛОГО ХУЙНИ

@@ -244,7 +244,7 @@ label ts_good_ending_blya:
     show natsuki 1h at f33
     show layer master at ts_razebal
     show layer screens at ts_showscreens_fast
-    n "Явилась не запылилась!"
+    n "Явилась, не запылилась!"
     show yuri 2r at t31
     show sayori 4j at f32
     show natsuki 1i at t33

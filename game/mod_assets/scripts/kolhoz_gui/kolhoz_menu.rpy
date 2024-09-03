@@ -137,6 +137,15 @@ label splashscreen:
     if persistent.skip_splash is True:
         return
     else:
+        python:
+            try:
+                rpc.connect() # ПОДКЛЮЧЕНИЕ К ДС
+            except DiscordNotFound:
+                pass
+            except ConnectionRefusedError:
+                pass
+            ts_rpc_main_menu()
+        $ persistent.rpc_mode = True
         jump spashcreen1
 
 label spashcreen1:

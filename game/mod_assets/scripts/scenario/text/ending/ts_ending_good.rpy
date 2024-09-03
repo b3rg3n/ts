@@ -587,30 +587,30 @@ label ts_good_ending_blya:
     ts_mt "Доченька моя!"
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    scene black with ts_paint#тут будет цгшка
+    scene ts_mon_maman_3
     show layer screens at ts_showscreens
-#cm smile/ce ida, om smile/ce moni
     play music ts_never fadein 2
     m "Мамочка, я так по тебе скучала!"
-#om smile/ce ida, cm smile/ce moni
+    scene ts_mon_maman_2
     ts_mt "Я тоже по тебе очень скучала..."
-#cm/ce ida, om smile/oe moni
+    scene ts_mon_maman_8
     m "Как добралась вообще, нормально?"
-#om/oe ida, cm/ce moni
+    scene ts_mon_maman_5
     ts_mt "Ну я же ещё в школе тебя увидела, а не дома, поэтому, как ты можешь понять, нормально."
     ts_mt "Как только я вышла из аэропорта, ко мне сразу же кинулись несколько таксистов с предложением подвезти до дома."
-#om smile/oe ida, cm/oe moni
+    scene ts_mon_maman_4
     ts_mt "Я выбрала одного понравившегося и сказала, что везти меня нужно не до дома, а до школы."
     ts_mt "Он очень странно на меня посмотрел, но желание исполнил. И вот, сорок минут в пути, и я уже здесь."
-#cm smile/oe ida, om/oe moni
+    scene ts_mon_maman_6
     m "Так а как ты вообще узнала, в какой именно кабинет тебе подходить?"
-#om smile/ce ida, cm/oe moni
+    scene ts_mon_maman_5
     ts_mt "Так мне папа номер кабинета сбросил сообщением. Потом сказал, мол, «я блуждал долго, но с горем пополам добрался до пункта назначения – не повторяй моих ошибок»."
     stop music fadeout 3
-#cm/oe ida, om/oe moni
+    scene ts_mon_maman_6
     m "Понятно..."
-#cm/oe ida, om smile/oe moni
+    scene ts_mon_maman_8
     m "Ну, я очень рада, что ты вовремя приехала."
+    scene ts_mon_maman_3
     m "Пойдём, мне ещё столько всего рассказать тебе надо!.."
 
     show layer screens at ts_hidescreens

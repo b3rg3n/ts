@@ -1376,3 +1376,11 @@ translate english ts_bad_ending_blya_35f783f0:
     # brg "Ну а пока – тестим бэд титры, ёпта."
     brg ""
 
+# TODO: Translation updated at 2024-09-04 14:43
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:85
+translate english ts_bad_ending_blya_306e18e1:
+
+    # doc "Кстати, попробуйте пошевелить конечностями – все нормально функционируют?"
+    doc ""
+

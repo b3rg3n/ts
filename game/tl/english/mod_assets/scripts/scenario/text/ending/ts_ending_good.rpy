@@ -1738,3 +1738,11 @@ translate english ts_good_ending_blya_a9c5ebdc:
     # n "Явилась, не запылилась!"
     n ""
 
+# TODO: Translation updated at 2024-09-04 14:43
+
+# game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:731
+translate english ts_good_ending_blya_a8513aa4:
+
+    # ts_mt "Спокойной ночи, ребят!"
+    ts_mt ""
+

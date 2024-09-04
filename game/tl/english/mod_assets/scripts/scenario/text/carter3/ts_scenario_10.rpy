@@ -3326,3 +3326,59 @@ translate english ts_scenario_10_8f6248a0:
     # m "Стих написан? Написан. Ошибок нет? Вроде как нет – я его несколько раз перечитывала, и ни одной ошибки не заметила."
     m ""
 
+# TODO: Translation updated at 2024-09-04 14:43
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1654
+translate english ts_scenario_10_fd5a14dc:
+
+    # extend "будь смелее, ты с мамой всё-таки разговариваешь, а не с чужим человеком, которого впервые видишь!"
+    extend ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1660
+translate english ts_scenario_10_eeb1f4b6:
+
+    # ts_mt "А в чём дело?"
+    ts_mt ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1666
+translate english ts_scenario_10_5136c5c0:
+
+    # extend "С этой работой уже ничего не помню..."
+    extend ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1668
+translate english ts_scenario_10_387ff37a:
+
+    # ts_mt "Так вот. Когда у тебя там фестиваль будет?"
+    ts_mt ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1685
+translate english ts_scenario_10_cdc93644:
+
+    # ts_mt "Я переночую один последний раз, {w=0.05}{nw}"
+    ts_mt ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1687
+translate english ts_scenario_10_265e331f:
+
+    # extend "и в [gtextsuka1] у меня будет самолёт."
+    extend ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1742
+translate english ts_scenario_10_31f1d48d:
+
+    # ts_mt "Небось, тот самый фестиваль из тебя все соки выжал?"
+    ts_mt ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1750
+translate english ts_scenario_10_bb29bafc:
+
+    # extend "рада была тебя услышать, но, видимо, ты устала за сегодня даже больше, чем я."
+    extend ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_10.rpy:1752
+translate english ts_scenario_10_09e9a4dd:
+
+    # ts_mt "Передай телефончик папе, я ещё ему хочу кое-что сказать. А ты иди отдыхай."
+    ts_mt ""
+

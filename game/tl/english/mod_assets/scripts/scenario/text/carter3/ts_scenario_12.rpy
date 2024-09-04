@@ -3584,3 +3584,101 @@ translate english ts_scenario_12_4a382b84:
     # k 2f "Но этот наш разговор, который у нас только что был – этого на самом деле никогда не было."
     k 2f ""
 
+# TODO: Translation updated at 2024-09-04 14:43
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:216
+translate english ts_scenario_12_b89d3422:
+
+    # em 2bp "Но просто... я никогда раньше не умела играть в шахматы... И я не уверена, что я из тех частей твоего мозга, которая ответственна за умение играть в шахматы..."
+    em 2bp ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:221
+translate english ts_scenario_12_88939ad6:
+
+    # em 2bi "Ладно. Сыграем. Но только одну партию."
+    em 2bi ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:249
+translate english ts_scenario_12_1e2dea0a:
+
+    # cm "Привет ещё раз!"
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:251
+translate english ts_scenario_12_e63b4d43:
+
+    # cm "Давно не виделись, не так ли? Уже много времени прошло, ты уже даже и забыл, наверное, что я вообще-то тоже есть в этом моде."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:258
+translate english ts_scenario_12_fcd1b1a1:
+
+    # cm "Или какой там акт вообще сценарист сейчас пишет..."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:260
+translate english ts_scenario_12_cd52b68d:
+
+    # cm "В общем, неважно! Сейчас будет сцена с шахматами между Моникой и Аки, и я обещаю, что за всё это время не будет ни одного скримера."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:263
+translate english ts_scenario_12_1bdca130:
+
+    # cm "Или ты уже не хочешь, чтобы я тебе помогала?"
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:274
+translate english ts_scenario_12_b9fcc804:
+
+    # cm "Только прими к сведению, что я рассказала б{u}{b}о{/u}{/b}льшую часть из того, что я хотела, ещё в прошлый раз, поэтому на этот раз новых знаний будет поменьше."
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:276
+translate english ts_scenario_12_d76454cb:
+
+    # cm "В любом случае, если игра тебе понравится, ничего не мешает тебе попрактиковаться и без меня!"
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:278
+translate english ts_scenario_12_d9d5726e:
+
+    # cm "Будь то игра с друзьями, в местном шахматном клубе, по сети, или даже со своей шизофренией, как Моника!"
+    cm ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:948
+translate english ts_scenario_12_a24d1b07:
+
+    # m "И да, насчёт этого...{fast} Тоже не переживай. Всё восстановится.{w=2} Во всех смыслах этого слова."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:1193
+translate english ts_scenario_12_6508e746:
+
+    # "Но а как ещё мне развлекаться, если я за три с лишним месяца одного и того же уже все легальные способы веселья перепробовала?"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:1496
+translate english ts_scenario_12_f9823a32:
+
+    # em 2n "Возможно, я знаю {i}самую малость{/i} больше..."
+    em 2n ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:1692
+translate english ts_scenario_12_7d6d0ebc:
+
+    # extend 2pl "Только потише, а то родители спят ещё..."
+    extend 2pl ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:1714
+translate english ts_scenario_12_c414ec17_45:
+
+    # " {w=1.0}{nw}"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_12.rpy:1751
+translate english ts_scenario_12_a47551fd:
+
+    # k "Да сейчас уже и не вспомню..."
+    k ""
+

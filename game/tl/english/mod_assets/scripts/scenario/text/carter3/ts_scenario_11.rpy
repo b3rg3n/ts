@@ -5082,3 +5082,17 @@ translate english poemend_normal_92601846:
     # em "В общем, идею я тебе дала, а как именно ты распишешь – это уже дело твоё."
     em ""
 
+# TODO: Translation updated at 2024-09-04 14:43
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:996
+translate english ts_scenario_11_aa24dfb4:
+
+    # nvlbazar "Как-то раз, ещё тогда, на одной перемене я написала максимально крупно:\n{size=+30}4 x 4 = 16{/size}."
+    nvlbazar ""
+
+# game/mod_assets/scripts/scenario/text/carter3/ts_scenario_11.rpy:1001
+translate english ts_scenario_11_91138575:
+
+    # nvlbazar "Просто снисходительно говорю: «Ладно уж, было и было...»"
+    nvlbazar ""
+

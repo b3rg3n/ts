@@ -4,53 +4,53 @@ translate english strings:
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:967
     old "Назад"
-    new ""
+    new "Back"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:968
     old "История"
-    new ""
+    new "History"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:969
     old "Пропуск"
-    new ""
+    new "Skip"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:970
     old "Авто"
-    new ""
+    new "Auto"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:971
     old "Запомнить"
-    new ""
+    new "Save"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:972
     old "Крутилки"
-    new ""
+    new "Settings"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1001
     old "Узнать правду"
-    new ""
+    new "Start"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1009
     old "Вспомнить"
-    new ""
+    new "Load"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1015
     old "Завершить повтор"
-    new ""
+    new "Stop replay"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1019
     old "Главное меню"
-    new ""
+    new "Main menu"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1021
     old "Об игре"
-    new ""
+    new "About game"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1023
     old "Съебаться"
-    new ""
+    new "Leave"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1139
     old "Вернуться"
-    new ""
+    new "Back"
 

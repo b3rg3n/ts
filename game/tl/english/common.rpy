@@ -1104,149 +1104,149 @@ translate english strings:
 
     # renpy/common/00gltest.rpy:192
     old "Tearing"
-    new ""
+    new "Tearing"
 
     # renpy/common/00gltest.rpy:208
     old "Changes will take effect the next time this program is run."
-    new ""
+    new "Changes will take effect the next time this program is run."
 
     # renpy/common/00gltest.rpy:215
     old "Quit"
-    new ""
+    new "Quit"
 
     # renpy/common/00gltest.rpy:244
     old "Performance Warning"
-    new ""
+    new "Performance Warning"
 
     # renpy/common/00gltest.rpy:249
     old "This computer is using software rendering."
-    new ""
+    new "This computer is using software rendering."
 
     # renpy/common/00gltest.rpy:251
     old "This game requires use of GL2 that can't be initialised."
-    new ""
+    new "This game requires use of GL2 that can't be initialised."
 
     # renpy/common/00gltest.rpy:253
     old "This computer has a problem displaying graphics: [problem]."
-    new ""
+    new "This computer has a problem displaying graphics: [problem]."
 
     # renpy/common/00gltest.rpy:257
     old "Its graphics drivers may be out of date or not operating correctly. This can lead to slow or incorrect graphics display."
-    new ""
+    new "Its graphics drivers may be out of date or not operating correctly. This can lead to slow or incorrect graphics display."
 
     # renpy/common/00gltest.rpy:261
     old "The {a=edit:1:log.txt}log.txt{/a} file may contain information to help you determine what is wrong with your computer."
-    new ""
+    new "The {a=edit:1:log.txt}log.txt{/a} file may contain information to help you determine what is wrong with your computer."
 
     # renpy/common/00gltest.rpy:266
     old "More details on how to fix this can be found in the {a=[url]}documentation{/a}."
-    new ""
+    new "More details on how to fix this can be found in the {a=[url]}documentation{/a}."
 
     # renpy/common/00gltest.rpy:271
     old "Continue, Show this warning again"
-    new ""
+    new "Continue, Show this warning again"
 
     # renpy/common/00gltest.rpy:275
     old "Continue, Don't show warning again"
-    new ""
+    new "Continue, Don't show warning again"
 
     # renpy/common/00gltest.rpy:283
     old "Change render options"
-    new ""
+    new "Change render options"
 
     # renpy/common/00gamepad.rpy:33
     old "Select Gamepad to Calibrate"
-    new ""
+    new "Select Gamepad to Calibrate"
 
     # renpy/common/00gamepad.rpy:36
     old "No Gamepads Available"
-    new ""
+    new "No Gamepads Available"
 
     # renpy/common/00gamepad.rpy:56
     old "Calibrating [name] ([i]/[total])"
-    new ""
+    new "Calibrating [name] ([i]/[total])"
 
     # renpy/common/00gamepad.rpy:60
     old "Press or move the '[control!s]' [kind]."
-    new ""
+    new "Press or move the '[control!s]' [kind]."
 
     # renpy/common/00gamepad.rpy:70
     old "Skip (A)"
-    new ""
+    new "Skip (A)"
 
     # renpy/common/00gamepad.rpy:73
     old "Back (B)"
-    new ""
+    new "Back (B)"
 
     # renpy/common/_errorhandling.rpym:677
     old "Open"
-    new ""
+    new "Open"
 
     # renpy/common/_errorhandling.rpym:679
     old "Opens the traceback.txt file in a text editor."
-    new ""
+    new "Opens the traceback.txt file in a text editor."
 
     # renpy/common/_errorhandling.rpym:681
     old "Copy BBCode"
-    new ""
+    new "Copy BBCode"
 
     # renpy/common/_errorhandling.rpym:683
     old "Copies the traceback.txt file to the clipboard as BBcode for forums like https://lemmasoft.renai.us/."
-    new ""
+    new "Copies the traceback.txt file to the clipboard as BBcode for forums like https://lemmasoft.renai.us/."
 
     # renpy/common/_errorhandling.rpym:685
     old "Copy Markdown"
-    new ""
+    new "Copy Markdown"
 
     # renpy/common/_errorhandling.rpym:687
     old "Copies the traceback.txt file to the clipboard as Markdown for Discord."
-    new ""
+    new "Copies the traceback.txt file to the clipboard as Markdown for Discord."
 
     # renpy/common/_errorhandling.rpym:719
     old "An exception has occurred."
-    new ""
+    new "An exception has occurred."
 
     # renpy/common/_errorhandling.rpym:742
     old "Rollback"
-    new ""
+    new "Rollback"
 
     # renpy/common/_errorhandling.rpym:744
     old "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
-    new ""
+    new "Attempts a roll back to a prior time, allowing you to save or choose a different choice."
 
     # renpy/common/_errorhandling.rpym:747
     old "Ignore"
-    new ""
+    new "Ignore"
 
     # renpy/common/_errorhandling.rpym:751
     old "Ignores the exception, allowing you to continue."
-    new ""
+    new "Ignores the exception, allowing you to continue."
 
     # renpy/common/_errorhandling.rpym:753
     old "Ignores the exception, allowing you to continue. This often leads to additional errors."
-    new ""
+    new "Ignores the exception, allowing you to continue. This often leads to additional errors."
 
     # renpy/common/_errorhandling.rpym:757
     old "Reload"
-    new ""
+    new "Reload"
 
     # renpy/common/_errorhandling.rpym:759
     old "Reloads the game from disk, saving and restoring game state if possible."
-    new ""
+    new "Reloads the game from disk, saving and restoring game state if possible."
 
     # renpy/common/_errorhandling.rpym:762
     old "Console"
-    new ""
+    new "Console"
 
     # renpy/common/_errorhandling.rpym:764
     old "Opens a console to allow debugging the problem."
-    new ""
+    new "Opens a console to allow debugging the problem."
 
     # renpy/common/_errorhandling.rpym:777
     old "Quits the game."
-    new ""
+    new "Quits the game."
 
     # renpy/common/_errorhandling.rpym:799
     old "Parsing the script failed."
-    new ""
+    new "Parsing the script failed."
 

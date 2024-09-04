@@ -4,5 +4,5 @@ translate english strings:
 
     # game/mod_assets/scripts/configs/config.rpy:14
     old "True Story"
-    new ""
+    new "True Story"
 

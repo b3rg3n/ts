@@ -4,5 +4,5 @@ translate english strings:
 
     # game/mod_assets/scripts/hueta/keymap.rpy:89
     old "Saved screenshot as \n%s."
-    new ""
+    new "Saved screenshot as \n%s."
 

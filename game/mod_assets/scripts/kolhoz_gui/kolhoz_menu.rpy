@@ -140,6 +140,20 @@ label splashscreen:
             _preferences.volumes['sfx'] = 1.0
             _preferences.volumes['voice'] = .65
     if persistent.skip_splash is True:
+        scene black
+        show ts_anarchy
+        with Dissolve(2)
+        pause 0.5
+        hide ts_anarchy
+        play sound psy_fast_3
+        show anarchy_glitch_logo
+        pause 0.8
+        stop sound
+        hide anarchy_glitch_logo
+        show ts_anarchy
+        pause 0.5
+        scene black
+        with Dissolve(2)
         return
     else:
         python:
@@ -151,6 +165,20 @@ label splashscreen:
                 pass
             ts_rpc_main_menu()
         $ persistent.rpc_mode = True
+        scene black
+        show ts_anarchy
+        with Dissolve(2)
+        pause 0.5
+        hide ts_anarchy
+        play sound psy_fast_3
+        show anarchy_glitch_logo
+        pause 0.8
+        stop sound
+        hide anarchy_glitch_logo
+        show ts_anarchy
+        pause 0.5
+        scene black
+        with Dissolve(2)
         jump spashcreen1
 
 label spashcreen1:

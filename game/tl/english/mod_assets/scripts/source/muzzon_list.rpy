@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2024-08-19 10:52
+﻿# TODO: Translation updated at 2024-09-04 20:05
 
 translate english strings:
 
@@ -219,7 +219,7 @@ translate english strings:
     new ""
 
     # game/mod_assets/scripts/source/muzzon_list.rpy:385
-    old "i was only temporary (Super Slowed)"
+    old "Main Theme"
     new ""
 
     # game/mod_assets/scripts/source/muzzon_list.rpy:392
@@ -235,7 +235,7 @@ translate english strings:
     new ""
 
     # game/mod_assets/scripts/source/muzzon_list.rpy:413
-    old "Snowfall"
+    old "Theme for Overt"
     new ""
 
     # game/mod_assets/scripts/source/muzzon_list.rpy:420
@@ -428,17 +428,5 @@ translate english strings:
 
     # game/mod_assets/scripts/source/muzzon_list.rpy:753
     old "Without You"
-    new ""
-
-# TODO: Translation updated at 2024-09-03 21:04
-
-translate english strings:
-
-    # game/mod_assets/scripts/source/muzzon_list.rpy:385
-    old "Main Theme"
-    new ""
-
-    # game/mod_assets/scripts/source/muzzon_list.rpy:413
-    old "Theme for Overt"
     new ""
 

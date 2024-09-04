@@ -1,36 +1,36 @@
-﻿# TODO: Translation updated at 2024-08-19 10:52
+﻿# TODO: Translation updated at 2024-09-04 20:05
 
-# game/mod_assets/scripts/scenario/first.rpy:79
+# game/mod_assets/scripts/scenario/first.rpy:80
 translate english ts_intro_settings2_efc0b6c3:
 
     # brg "Тебя устраивает такой размер шрифта?{w} Или же..."
     brg ""
 
-# game/mod_assets/scripts/scenario/first.rpy:81
+# game/mod_assets/scripts/scenario/first.rpy:82
 translate english ts_intro_settings2_c414ec17:
 
     # " {w=1.0}{nw}"
     ""
 
-# game/mod_assets/scripts/scenario/first.rpy:89
+# game/mod_assets/scripts/scenario/first.rpy:90
 translate english ts_intro_settings3_f2d4c1de:
 
     # brg "А теперь?{w} Или ещё разок поменяем?"
     brg ""
 
-# game/mod_assets/scripts/scenario/first.rpy:91
+# game/mod_assets/scripts/scenario/first.rpy:92
 translate english ts_intro_settings3_c414ec17:
 
     # " {w=1.0}{nw}"
     ""
 
-# game/mod_assets/scripts/scenario/first.rpy:100
+# game/mod_assets/scripts/scenario/first.rpy:101
 translate english ts_intro_settings3_558784fa:
 
     # brg "Хорошо."
     brg ""
 
-# game/mod_assets/scripts/scenario/first.rpy:102
+# game/mod_assets/scripts/scenario/first.rpy:103
 translate english ts_intro_settings3_c414ec17_1:
 
     # " {w=1.0}{nw}"
@@ -38,11 +38,11 @@ translate english ts_intro_settings3_c414ec17_1:
 
 translate english strings:
 
-    # game/mod_assets/scripts/scenario/first.rpy:93
+    # game/mod_assets/scripts/scenario/first.rpy:94
     old "Поменяем"
     new ""
 
-    # game/mod_assets/scripts/scenario/first.rpy:93
+    # game/mod_assets/scripts/scenario/first.rpy:94
     old "Оставь этот"
     new ""
 

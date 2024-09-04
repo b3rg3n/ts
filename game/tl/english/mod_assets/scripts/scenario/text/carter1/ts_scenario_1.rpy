@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2024-08-19 10:52
+﻿# TODO: Translation updated at 2024-09-04 20:05
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:38
 translate english ts_scenario_1_c5bc76e9:
@@ -139,36 +139,30 @@ translate english ts_scenario_1_c414ec17_2:
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:88
-translate english ts_scenario_1_272c4b85:
-
-    # "Время идёт."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:89
 translate english ts_scenario_1_169873ec:
 
     # "До этого злополучного фестиваля осталось чуть больше месяца."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:90
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:89
 translate english ts_scenario_1_8a11b674:
 
     # "А время неумолимо идёт, и повернуть его вспять не получится ну никак, даже при всём желании."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:91
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:90
 translate english ts_scenario_1_5aae5a21:
 
     # "Я уже постепенно схожу с ума."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:92
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:91
 translate english ts_scenario_1_e9536c59:
 
     # "Я всё чаще замечаю, что общаюсь с несуществующими членами клуба."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:95
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:94
 translate english ts_scenario_1_c414ec17_3:
 
     # " {w=1.0}{nw}"
@@ -205,9 +199,9 @@ translate english ts_scenario_1_a02ffc2b:
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:118
-translate english ts_scenario_1_ee8068b0:
+translate english ts_scenario_1_0fcc93ee:
 
-    # "Каждую новую неделю администратор клубов приходит в клуб, видит, что так никто и не появился, даже несмотря на всю мою рекламу, разочарованно вздыхает и жестом показывает на часы."
+    # "Каждую новую неделю администратор клубов приходит в клуб, видит, что так никто и не появился, даже несмотря на всю мою «рекламу», разочарованно вздыхает и жестом показывает на часы."
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:120
@@ -277,15 +271,15 @@ translate english ts_scenario_1_23aecfb4:
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:150
-translate english ts_scenario_1_1d6c5981:
+translate english ts_scenario_1_c8604932:
 
-    # "Я опять одна-одинокая."
+    # "Я опять сижу в гордом одиночестве."
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:151
-translate english ts_scenario_1_c5617c62:
+translate english ts_scenario_1_5cfc5cd6:
 
-    # "Не то, чтобы мне это было совсем непривычно, но после шума и гомона Дискуссионного клуба Литературный клуб кажется каким-то особенно тихим."
+    # "Не то чтобы мне это было совсем непривычно, но после шума и гомона Дискуссионного клуба Литературный клуб кажется каким-то особенно тихим."
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:152
@@ -361,15 +355,15 @@ translate english ts_scenario_1_31776456:
     s ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:205
-translate english ts_scenario_1_6e22d98a:
+translate english ts_scenario_1_bba529dd:
 
-    # s "Э-э-э… А где остальные?"
+    # s "Э-э-э... А где остальные?"
     s ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:206
-translate english ts_scenario_1_c28943ef:
+translate english ts_scenario_1_8363b381:
 
-    # m "А остальных… пока ещё нет. Ты вообще первая, кто пришла. Я даже подумала, что зря я это всё затеяла..."
+    # m "А остальных... пока ещё нет. Ты вообще первая, кто пришла. Я даже подумала, что зря я это всё затеяла..."
     m ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:212
@@ -481,9 +475,9 @@ translate english ts_scenario_1_2b0eebe9:
     s ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:264
-translate english ts_scenario_1_42ec09c5:
+translate english ts_scenario_1_d52a6764:
 
-    # m "Ну, в этом-то и суть нашего собрания - придумать и другие способы привлечения новых участников!"
+    # m "Ну, в этом-то и суть нашего собрания – придумать и другие способы привлечения новых участников!"
     m ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:268
@@ -523,15 +517,15 @@ translate english ts_scenario_1_809dad0c:
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:284
-translate english ts_scenario_1_91287c34:
+translate english ts_scenario_1_241c342d:
 
-    # "Нарисовать плакат с зазыванием присоединиться к клубу."
+    # "Нарисовать плакат с призывом присоединиться к клубу."
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:285
-translate english ts_scenario_1_4b7f49bc:
+translate english ts_scenario_1_30c47508:
 
-    # "Хотя, скажу честно - я не знаю, как это отличается от тех же листовок."
+    # "Хотя, скажу честно – я не знаю, как это отличается от тех же листовок."
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:286
@@ -541,9 +535,9 @@ translate english ts_scenario_1_a111376b:
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:287
-translate english ts_scenario_1_13bef697:
+translate english ts_scenario_1_c7939bc7:
 
-    # "Ну да и пусть - эту идею всё равно предложила Сайори. Аргументировала она это тем, что большой плакат будет всё-таки красочнее, чем какие-то, маленькие бездушные и бесцветные листовки."
+    # "Ну да и пусть – эту идею всё равно предложила Сайори. Аргументировала она это тем, что большой плакат будет всё-таки красочнее, чем какие-то маленькие бездушные и бесцветные листовки."
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:288
@@ -655,15 +649,15 @@ translate english ts_scenario_1_1b222ddd:
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:351
-translate english ts_scenario_1_c062c4b8:
-
-    # "Конечно, что-то простенькое, вроде макарон, круп или хлопьев, я приготовить смогу... но не более того."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:352
 translate english ts_scenario_1_0bd91383:
 
     # "Это возвращаясь к тому, что я умею всё бесполезное, но не умею ничего полезного."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:352
+translate english ts_scenario_1_c062c4b8:
+
+    # "Конечно, что-то простенькое, вроде макарон, круп или хлопьев, я приготовить смогу... но не более того."
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:353
@@ -762,898 +756,892 @@ translate english ts_scenario_1_867f77cf:
     # "Первые несколько дней она была неестественно счастливой и активной, но сегодня..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:419
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:420
 translate english ts_scenario_1_318721bd:
 
     # "Сегодня она выглядит так, как будто ей сказали, что она завтра умрёт, и ничего с этим поделать нельзя."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:420
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:421
 translate english ts_scenario_1_2b29b8f1:
 
     # "Я не большой знаток психических заболеваний, но, судя по всему, у неё маниакально-депрессивное расстройство."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:421
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:422
 translate english ts_scenario_1_0ef7ce75:
 
     # m "Сайори?.."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:422
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:423
 translate english ts_scenario_1_35fdc687:
 
     # "Ответа нет."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:423
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:424
 translate english ts_scenario_1_a20cefa7:
 
     # "..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:424
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:425
 translate english ts_scenario_1_c705e6f1:
 
     # "...Нет, в этой атмосфере работать просто невыносимо!"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:430
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:431
 translate english ts_scenario_1_426630fa:
 
     # m "Сайори!"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:431
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:432
 translate english ts_scenario_1_83940f3d:
 
     # s "Да?"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:432
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:433
 translate english ts_scenario_1_0dd01a14:
 
     # m "Что-то не так? Только не ври мне, что всё нормально, потому что я же явно вижу, что что-то не так!"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:436
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:437
 translate english ts_scenario_1_a523db38:
 
     # s "Нет... Просто... Всё это сложно... Да ещё и серые тучки..."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:438
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:439
 translate english ts_scenario_1_12823b88:
 
     # m "Серые тучки?"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:442
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:443
 translate english ts_scenario_1_eb0d434d:
 
     # s "Да."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:446
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:447
 translate english ts_scenario_1_b1081033:
 
     # "Не удовлетворившись такой расплывчатой формулировкой, я решила повторить вопрос, но настойчивее."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:450
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:451
 translate english ts_scenario_1_354d9e45:
 
     # m "Сайори. Посмотри на меня."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:454
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:455
 translate english ts_scenario_1_903894dd:
 
     # "Сайори повинуется."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:456
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:457
 translate english ts_scenario_1_c0978672:
 
     # m "Что-то не так?"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:458
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:459
 translate english ts_scenario_1_5437b075:
 
     # "Я чеканю каждое слово, произнося их как будто отдельно."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:462
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:463
 translate english ts_scenario_1_005af12a:
 
     # "Вместо ответа Сайори снова начинает слезиться."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:471
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:474
 translate english ts_scenario_1_0303e0d0:
 
     # "А затем просто уходит из класса, всё ещё оставляя меня без ответа."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:473
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:476
 translate english ts_scenario_1_cb452fc9:
 
     # "Я тем временем остаюсь думать."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:474
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:477
 translate english ts_scenario_1_08c6f893:
 
     # "Может, зря я на неё накричала?"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:475
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:478
 translate english ts_scenario_1_5c6394ff:
 
     # "При депрессивных расстройствах люди обычно срываются даже по каким-то мелочам..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:476
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:479
 translate english ts_scenario_1_799b0cd2:
 
     # "Впрочем, я же к ней в голову не залезу."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:480
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:483
 translate english ts_scenario_1_4d8e0ee7:
 
     # "Прошло примерно пятнадцать минут."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:481
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:484
 translate english ts_scenario_1_20ffd2a0:
 
     # "Сайори так и не появилась. Я уже начинаю переживать."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:482
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:485
 translate english ts_scenario_1_85e3e40a:
 
     # "Что, если она уже..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:483
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:486
 translate english ts_scenario_1_91816e3d:
 
     # m "ГОСПОДИ, САЙОРИ!"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:484
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:487
 translate english ts_scenario_1_467d1b8e:
 
     # "Я выбегаю вслед за ней."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:488
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:491
 translate english ts_scenario_1_426630fa_1:
 
     # m "Сайори!"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:491
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:494
 translate english ts_scenario_1_c414ec17_12:
 
     # " {w=1.0}{nw}"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:499
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:502
 translate english ts_scenario_1_426630fa_2:
 
     # m "Сайори!"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:501
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:504
 translate english ts_scenario_1_245098e4:
 
     # "Всё это время она с пустым и безразличным выражением лица стоит в дальнем конце коридора, недалеко от туалетов."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:502
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:505
 translate english ts_scenario_1_40785185:
 
     # "Что же, уже радует."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:503
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:506
 translate english ts_scenario_1_c94a01cd:
 
     # "Я перехожу на гораздо более тихий голос, чтобы не спугнуть ни учителей, ни учеников, ни саму Сайори."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:505
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:508
 translate english ts_scenario_1_b479a2ae:
 
     # m "{size=-6}Сайори, я же отчётливо вижу, что что-то не так! Что вообще случилось?{/size}"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:506
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:509
 translate english ts_scenario_1_1c646b0d:
 
     # m "{size=-6}Ты же раньше была таким счастливым лучиком солнца!{/size}"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:507
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:510
 translate english ts_scenario_1_210bd4e2:
 
     # m "{size=-6}Тогда почему сегодня всё иначе?{/size}"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:511
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:514
 translate english ts_scenario_1_4673223c:
 
     # "Сайори наконец оборачивается в мою сторону. Её глаза блестят от плача."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:513
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:516
 translate english ts_scenario_1_e1554201_1:
 
     # s "..."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:514
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:517
 translate english ts_scenario_1_191f8331:
 
     # "Я понимаю, что она вся на нервах, и в любой момент сорвётся, но сейчас она ещё говорит тише обычного."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:518
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:521
 translate english ts_scenario_1_e5aa3771:
 
     # s "{size=-6}Что тебе непонятно в словосочетании «серые тучки»?{/size}"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:522
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:525
 translate english ts_scenario_1_18b3ba8c:
 
     # "Я не ожидала такого вопроса."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:523
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:526
 translate english ts_scenario_1_5e70792c:
 
     # "Сайори понимающе продолжает."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:527
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:530
 translate english ts_scenario_1_e78f8e83:
 
     # s "Видишь ли... То, какой ты видишь меня сегодня... На самом деле, я такой была всегда."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:531
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:534
 translate english ts_scenario_1_19cfaf01:
 
     # s "Каждое утро я просыпалась с мыслью: а зачем мне ходить в школу?"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:532
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:535
 translate english ts_scenario_1_4645614f:
 
     # s "Зачем мне учиться? Зачем мне есть? Зачем мне вообще вставать с кровати?"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:533
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:536
 translate english ts_scenario_1_720b3dbe:
 
     # s "Зачем мне вообще жить?"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:540
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:543
 translate english ts_scenario_1_2e5cf0e6:
 
     # s "Если можно просто умереть."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:541
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:544
 translate english ts_scenario_1_f1c2b61b:
 
     # s "Раз уж я такая бесполезная."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:545
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:548
 translate english ts_scenario_1_33c4fa45:
 
     # s "А затем я подумала, что раз уж я такая бесполезная, и если мне в любом случае будет плохо, то нужно, чтобы хотя бы другим было хорошо."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:549
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:552
 translate english ts_scenario_1_a6f4a47e:
 
     # s "Обычно я притворялась счастливой в кругу новых знакомых, чтобы они подумали, что я всегда такая, и что обидеть меня невозможно."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:553
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:556
 translate english ts_scenario_1_a53d3f73:
 
     # s "Так было и с тобой. С тобой я тоже изначально притворялась счастливой, чтобы тебе было лучше, чтобы в свою очередь было лучше и мне."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:557
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:560
 translate english ts_scenario_1_51ff93de:
 
     # s "Но затем, когда я увидела, насколько ты была разочарована по поводу того, что у твоего клуба ничего не получается, я и сама сбросила маску."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:561
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:564
 translate english ts_scenario_1_3b2c351f:
 
     # s "Теперь ты меня, скорее всего, выгонишь из клуба..."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:570
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:573
 translate english ts_scenario_1_96a5a52b:
 
     # m "Ну уж нет!"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:572
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:575
 translate english ts_scenario_1_9adfe850:
 
     # "Выпалила я, не подумав."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:575
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:578
 translate english ts_scenario_1_c414ec17_13:
 
     # " {w=1.0}{nw}"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:594
-translate english ts_scenario_1_0a5e5403:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:597
+translate english ts_scenario_1_9d062cd3:
 
-    # m "Я изначально хотела, чтобы Литературный клуб был местом, где не будет слова неправильно."
+    # m "Я изначально хотела, чтобы Литературный клуб был местом, где не будет слова «неправильно»."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:595
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:598
 translate english ts_scenario_1_3bf0958e:
 
     # m "И это касается не только всяких книжек и прочего... Но и людей тоже."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:596
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:599
 translate english ts_scenario_1_3f73b7c2:
 
     # m "Я не выгоняю людей только потому, что они какие-то дефектные."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:597
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:600
 translate english ts_scenario_1_6c377217:
 
     # m "И это одновременно справедливо как для физических увечий... Так и для психических."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:598
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:601
 translate english ts_scenario_1_0078c4a1:
 
     # m "И неважно, будь то нежелание жить, или если тебя бьют родители – в Литературном клубе рады всем."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:602
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:605
 translate english ts_scenario_1_0e586896:
 
     # m "И раз уж ты рассказала мне большой секрет, то будет справедливо, если и я расскажу."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:606
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:609
 translate english ts_scenario_1_d9ac51d2:
 
     # m "У меня тоже с самого детства были навязчивые мысли. Только немного другие."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:607
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:610
 translate english ts_scenario_1_817fa4fc:
 
     # m "Мне всегда казалось, что если у меня что-то не получается с первого раза, то внутренний голос как бы твердил мне, что оно и в принципе не получится."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:608
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:611
 translate english ts_scenario_1_1780ece0:
 
     # m "Я хоть и умею многое, но я всё умею плохо."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:609
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:612
 translate english ts_scenario_1_39b8af67:
 
     # m "Как я говорила себе, я мастерица на все руки... да вот только руки у меня из неправильного места растут."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:610
-translate english ts_scenario_1_f1b81ed4:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:613
+translate english ts_scenario_1_96af4df1:
 
-    # m "Мне всё быстро надоедает, мне очень быстро становится скучно. Меня саму это вымораживает, но сделать с этим я ничего не могу."
+    # m "Мне всё быстро надоедает, мне очень быстро становится скучно. Мне самой это всё уже изрядно надоело, но сделать с этим я ничего не могу."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:611
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:614
 translate english ts_scenario_1_fa18151b:
 
     # "Любой психиатр, посмотрев на меня, сказал бы, что у меня налицо все симптомы синдрома дефицита внимания."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:612
-translate english ts_scenario_1_f0296088:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:615
+translate english ts_scenario_1_0a3887a8:
 
-    # "И хотя в целом я с этим согласна, но приписывать себе лишние психические заболевания, которых может и не быть - это как минимум некрасиво."
+    # "И хотя в целом я с этим согласна, но приписывать себе лишние психические заболевания, которых может и не быть – это как минимум некрасиво."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:613
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:616
 translate english ts_scenario_1_ee583145:
 
     # "У меня просто навязчивые мысли. На этом можно и остановиться."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:614
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:617
 translate english ts_scenario_1_6a0ec44a:
 
     # m "Удивительно, что я так долго в Литературном клубе. Я бы уже вообще давно забросила эту затею и вернулась в любой другой клуб..."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:618
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:621
 translate english ts_scenario_1_2eccbf9c:
 
     # m "Но я чувствую, что литература – это моё призвание. А если ты зашла в эту дверь и до сих пор от меня не сбежала – то это и твоё призвание тоже."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:621
-translate english ts_scenario_1_c414ec17_14:
-
-    # " {w=1.0}{nw}"
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:629
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:625
 translate english ts_scenario_1_ce011582:
 
     # "Я обнимаю Сайори."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:631
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:627
 translate english ts_scenario_1_0483afe8:
 
     # m "И не нужно расстраиваться из-за того, что что-то не получается."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:632
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:629
 translate english ts_scenario_1_df8ccd2f:
 
     # m "Если что-то не получается, нужно просто лучше стараться."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:633
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:630
 translate english ts_scenario_1_6169206f:
 
     # m "И если нас в клубе до сих пор двое, то это лишь значит, что мы просто недостаточно делаем для его развития."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:634
-translate english ts_scenario_1_a86c910c:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:631
+translate english ts_scenario_1_dc6267dd:
 
-    # s "Но мы же... {nw}"
+    # s "Но мы же...{nw}"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:635
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:632
 translate english ts_scenario_1_6078ce55:
 
     # m "И так делаем всё возможное? Это то, что сказал бы слабак. Но я же не слабак. И ты не слабак. И ты, и я – очень сильные духом люди."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:636
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:633
 translate english ts_scenario_1_90b2eaa5:
 
     # m "А сильные духом люди не сдаются на полпути. Мы разовьём этот клуб."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:637
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:634
 translate english ts_scenario_1_5bad8438:
 
     # m "Обязательно."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:639
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:636
 translate english ts_scenario_1_669ba6e6:
 
     # "Сюрреалистичная сцена – вот вроде две относительно взрослые девушки, а плачем обе как маленькие девочки."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:642
-translate english ts_scenario_1_c414ec17_15:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:639
+translate english ts_scenario_1_c414ec17_14:
 
     # " {w=1.0}{nw}"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:660
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:657
 translate english ts_scenario_1_5c76a5fe:
 
     # "Наконец, Сайори отпускает меня из объятий и вытирает слёзы."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:666
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:663
 translate english ts_scenario_1_ac51057a:
 
     # s "Да! Мы обязательно разовьём этот клуб и покажем всему миру, чего мы стоим!"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:670
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:667
 translate english ts_scenario_1_58fa5ddb:
 
     # m "Обязательно, Сайори..."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:674
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:671
 translate english ts_scenario_1_677efd19:
 
     # "Сайори впервые за сегодняшнюю встречу искренне улыбается мне."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:675
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:672
 translate english ts_scenario_1_973489c4:
 
     # "Хотя, после сегодняшнего, я уже не знаю, насколько эта улыбка, да и сама она в целом, искренняя..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:679
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:676
 translate english ts_scenario_1_db1a91d4:
 
     # s "Тогда, до завтра?"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:683
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:680
 translate english ts_scenario_1_cb8e4352:
 
     # m "Но завтра же суббота..."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:687
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:684
 translate english ts_scenario_1_4cdbf060:
 
     # s "Ой, точно, я как-то и забыла..."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:691
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:688
 translate english ts_scenario_1_8b7f8751:
 
     # s "Тогда, до понедельника?"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:695
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:692
 translate english ts_scenario_1_92a4a732:
 
     # m "До понедельника."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:698
-translate english ts_scenario_1_c414ec17_16:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:695
+translate english ts_scenario_1_c414ec17_15:
 
     # " {w=1.0}{nw}"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:706
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:703
 translate english ts_scenario_1_b83ab0b3:
 
     # "Сайори вприпрыжку идёт по коридору по направлению к выходу."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:707
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:704
 translate english ts_scenario_1_78e70952:
 
     # "А я остаюсь думать, кто же на самом деле Сайори?"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:711
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:708
 translate english ts_scenario_1_232c92f1:
 
     # "Ласковый лучик солнца, который делает день всех остальных лучше?"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:712
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:709
 translate english ts_scenario_1_b8436929:
 
     # "Или же девочка с «серыми тучками»?"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:713
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:710
 translate english ts_scenario_1_935967fb:
 
     # "Что же, надеюсь, что эти «серые тучки» наконец рассеются, и наконец принесут нам обеим радугу..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:718
-translate english ts_scenario_1_c414ec17_17:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:715
+translate english ts_scenario_1_c414ec17_16:
 
     # " {w=1.0}{nw}"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:725
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:722
 translate english ts_scenario_1_0ee5a9bb:
 
     # "С момента нашего «разговора по душам» с Сайори прошла неделя."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:726
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:723
 translate english ts_scenario_1_0345a5c3:
 
     # "За это время мы особенно сдружились."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:727
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:724
 translate english ts_scenario_1_4d7e047f:
 
     # "Нет, мы не стали такими уж закадычными друзьями, как мы были с Мирой или с Каори..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:728
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:725
 translate english ts_scenario_1_8d6beb18:
 
     # "Но это всё равно можно назвать довольно крепкой дружбой."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:729
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:726
 translate english ts_scenario_1_c3982b39:
 
     # "Да, за всё это время в клуб к нам так никто и не пришёл, но..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:730
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:727
 translate english ts_scenario_1_f5a8c019:
 
     # "Честно говоря, это и не было нужно."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:731
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:728
 translate english ts_scenario_1_44775638:
 
     # "Нам и с Сайори было хорошо вместе."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:732
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:729
 translate english ts_scenario_1_eda9cd5b:
 
     # "Мы обсуждали книги, просто разговаривали часами напролёт, как самые настоящие подружки..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:733
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:730
 translate english ts_scenario_1_8b2dbcc9:
 
     # "А расходились мы с ней лишь из-за времени..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:734
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:731
 translate english ts_scenario_1_e622bc18:
 
     # "Чтобы на следующий день после школы снова собраться вместе и пообсуждать с ней что-то."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:735
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:732
 translate english ts_scenario_1_14067d4d:
 
     # "И только я начала замечать, что, может, и не нужен мне этот Литературный клуб вовсе, как вдруг однажды..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:741
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:738
 translate english ts_scenario_1_090a56c3:
 
     # s "Моника!" with vpunch
     s "" with vpunch
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:742
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:739
 translate english ts_scenario_1_de16d96d:
 
     # extend " Моника!" with vpunch
     extend "" with vpunch
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:743
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:740
 translate english ts_scenario_1_543c0647:
 
     # extend " Я нашла!" with vpunch
     extend "" with vpunch
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:744
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:741
 translate english ts_scenario_1_7704c676:
 
     # extend " Нашла!.." with vpunch
     extend "" with vpunch
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:746
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:743
 translate english ts_scenario_1_81aa72bb:
 
     # "Запыханная Сайори тяжело и прерывисто дышит."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:751
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:748
 translate english ts_scenario_1_5a8d497d:
 
     # m "Ну, во-первых, здравствуй, Сайори..."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:755
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:752
 translate english ts_scenario_1_cfd02ee4:
 
     # s "Да, привет..."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:759
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:756
 translate english ts_scenario_1_bb48f20d:
 
     # m "А во-вторых... Кого именно ты нашла?"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:763
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:760
 translate english ts_scenario_1_a13cb45b:
 
     # s "Что?.."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:767
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:764
 translate english ts_scenario_1_751ee339:
 
     # s "Ах да! Я нашла девочку в столовой!"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:768
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:765
 translate english ts_scenario_1_e5bef8bc:
 
     # m "Ну-у-у... и что?"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:772
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:769
 translate english ts_scenario_1_c5422b70:
 
     # s "Как что? Пока все обедали, она просто взяла чай и начала читать книжку!"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:776
-translate english ts_scenario_1_dc909bf1:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:773
+translate english ts_scenario_1_01f06f2c:
 
-    # "Это совершенно меняет дело."
+    # "Это в корне меняет дело."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:780
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:777
 translate english ts_scenario_1_feedcbc2:
 
     # m "Так, давай-ка по порядку."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:781
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:778
 translate english ts_scenario_1_4f22e4e8:
 
     # m "Как её зовут вообще?"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:785
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:782
 translate english ts_scenario_1_cf652dab:
 
     # s "А я, э-э-э..."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:791
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:788
 translate english ts_scenario_1_63512a32:
 
     # extend " Не знаю..."
     extend ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:793
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:790
 translate english ts_scenario_1_a11c2f8f:
 
     # "Типичная Сайори..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:797
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:794
 translate english ts_scenario_1_2d0da261:
 
     # s "Я увидела её в столовой, она читала какую-то книжку, я тут же убежала, и целый день с нетерпением ждала возможности рассказать всё тебе."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:801
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:798
 translate english ts_scenario_1_9b8d3c96:
 
     # m "Ладно, ладно, всё хорошо, Сайори, не переживай."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:802
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:799
 translate english ts_scenario_1_e742dc4f:
 
     # m "Может, она ходит в Книжный клуб, и мы просто не знаем об этом."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:803
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:800
 translate english ts_scenario_1_e1d7e01f:
 
     # m "Или у неё вообще нет клуба, и она уже ушла домой."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:807
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:804
 translate english ts_scenario_1_7e2c6804:
 
     # m "Но в любом случае, сегодня мы её уже не застанем."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:808
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:805
 translate english ts_scenario_1_dcb0818c:
 
     # m "А с учётом того, что сегодня пятница, то увидим мы её и вовсе не раньше понедельника."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:812
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:809
 translate english ts_scenario_1_452b5e1a:
 
     # "Сайори хмуро смотрит на меня."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:816
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:813
 translate english ts_scenario_1_fb91c92f:
 
     # "Да она сама виновата!"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:817
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:814
 translate english ts_scenario_1_038e1394:
 
     # "Хотя, если так подумать, то она делает для клуба хотя бы что-то, а не просто сидит на пятой точке ровно, как я."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:821
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:818
 translate english ts_scenario_1_ac68fb77:
 
     # s "Ла-а-а-адно..."
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:823
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:820
 translate english ts_scenario_1_7ff1c5c3:
 
     # "Но уже спустя мгновение хмурое выражение её лица меняется на такое же неестественно весёлое, которое я и видела, когда только познакомилась с ней."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:827
-translate english ts_scenario_1_5f80fd8b:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:824
+translate english ts_scenario_1_19f9b3cb:
 
-    # s "Тогда до понедельника!"
+    # s "Тогда, до понедельника!"
     s ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:831
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:828
 translate english ts_scenario_1_7fdeae28:
 
     # m "Да, до понедельника..."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:839
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:836
 translate english ts_scenario_1_b26ff703:
 
     # "Сайори уходит. Я же остаюсь ещё ненадолго, чтобы подумать о произошедшем."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:840
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:837
 translate english ts_scenario_1_89aa67af:
 
     # "Впрочем, думаю я недолго, потому что уже начинает темнеть."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:841
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:838
 translate english ts_scenario_1_39e6797f:
 
     # "Ладно. По дороге домой что-нибудь решу."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:844
-translate english ts_scenario_1_c414ec17_18:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:841
+translate english ts_scenario_1_c414ec17_17:
 
     # " {w=1.0}{nw}"
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:854
-translate english ts_scenario_1_52bb11c0:
+translate english ts_scenario_1_6138d229:
 
-    # "Ненавижу ходить в школу в октябре. А ноябрь-декабрь - это и вовсе пиши пропало."
+    # "Ненавижу ходить в школу в октябре. А ноябрь-декабрь – это и вовсе пиши пропало."
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:855
-translate english ts_scenario_1_0ef123c9:
+translate english ts_scenario_1_e4e25702:
 
-    # "Утром идёшь в школу по темноте, после уроков в четыре часа вечера идёшь домой по темноте..."
+    # "Утром идёшь в школу в темноте, после уроков в четыре часа вечера идёшь домой в темноте..."
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:856
@@ -1675,19 +1663,19 @@ translate english ts_scenario_1_8f845415:
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:861
-translate english ts_scenario_1_c414ec17_19:
+translate english ts_scenario_1_c414ec17_18:
 
     # " {w=1.0}{nw}"
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:869
-translate english ts_scenario_1_e7561942:
+translate english ts_scenario_1_a91a340f:
 
-    # "Пока я думала о том, как же плохо ходить в школу зимой, и как же хорошо ходить в школу весной, я сама не заметила, как уже дошла до дома."
+    # "Пока я думала о том, как же плохо ходить в школу зимой и как же хорошо ходить в школу весной, сама не заметила, как уже дошла до дома."
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:872
-translate english ts_scenario_1_c414ec17_20:
+translate english ts_scenario_1_c414ec17_19:
 
     # " {w=1.0}{nw}"
     ""
@@ -1699,9 +1687,9 @@ translate english ts_scenario_1_77cba824:
     m ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:884
-translate english ts_scenario_1_94cc4fc5:
+translate english ts_scenario_1_92b9cbcf:
 
-    # ts_ft "Добрый уже вечер, Моника. Как дела в школе?"
+    # ts_ft "Добрый вечер, Моника. Как дела в школе?"
     ts_ft ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:888
@@ -1981,9 +1969,9 @@ translate english ts_scenario_1_311b51a3:
     m ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1003
-translate english ts_scenario_1_aac84d15:
+translate english ts_scenario_1_154c35de:
 
-    # ts_ft "Да, извини."
+    # ts_ft "Ой, извини."
     ts_ft ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1005
@@ -2035,9 +2023,9 @@ translate english ts_scenario_1_46f05679:
     ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1018
-translate english ts_scenario_1_d44d1df9:
+translate english ts_scenario_1_449e0afd:
 
-    # ts_ft "Ладно, Моника, подруги - это всё, конечно, здорово, но друзьями могут быть и не только девочки..."
+    # ts_ft "Ладно, Моника, подруги – это всё, конечно, здорово, но друзьями могут быть и не только девочки..."
     ts_ft ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1019
@@ -2058,349 +2046,343 @@ translate english ts_scenario_1_dc739b40:
     # "Резким, но весёлым тоном, чтобы он не обиделся на меня, отвечаю я, не давая ему договорить."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1028
-translate english ts_scenario_1_3183280f:
-
-    # "Впрочем, что-то мне подсказывает, что он уже договорил."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1030
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1029
 translate english ts_scenario_1_1cce5adf:
 
     # m "Ты же знаешь, что с моей занятостью мне... не совсем до мальчиков..."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1034
-translate english ts_scenario_1_bce34b8b:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1033
+translate english ts_scenario_1_d15d4b94:
 
-    # ts_ft "Конечно, знаю. Но иногда влюблённость - это такая нелогичная зараза, что она не поддаётся никакому здравому объяснению."
+    # ts_ft "Конечно, знаю. Но иногда влюблённость – это такая нелогичная зараза, что она не поддаётся никакому здравому объяснению."
     ts_ft ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1038
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1037
 translate english ts_scenario_1_086c120e:
 
     # "Это уже далеко не первый раз, когда папа заговаривает со мной о потенциальных парнях."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1039
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1038
 translate english ts_scenario_1_0c15fda5:
 
     # "Он вообще даёт мне очень много дельных советов по тому или иному вопросу."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1040
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1039
 translate english ts_scenario_1_44ae220b:
 
     # "Когда мне было лет двенадцать, и у меня пошли первые месячные, папа проводил для меня импровизированные уроки полового воспитания."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1041
-translate english ts_scenario_1_51b22205:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1040
+translate english ts_scenario_1_3d54051a:
 
-    # "Папа - это, конечно, не мама, но мамы очень часто нет дома, поэтому бремя трудности подростковой жизни было возложено на папу."
+    # "Папа – это, конечно, не мама, но мамы очень часто нет дома, поэтому бремя трудности подростковой жизни было возложено на папу."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1042
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1041
 translate english ts_scenario_1_a035f3ea:
 
     # "И он даже хорошо старался."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1043
-translate english ts_scenario_1_397606d6:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1042
+translate english ts_scenario_1_681184c5:
 
-    # "Как для мужчины, который попросту не до конца знает обо {b}всех{/b} тонкостях, он был довольно хорош."
+    # "Для мужчины, который попросту не до конца знает обо {b}всех{/b} тонкостях, он был довольно хорош."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1044
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1043
 translate english ts_scenario_1_f163eda6:
 
     # "Хотя и было для него это всё, по сути, в новинку."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1045
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1044
 translate english ts_scenario_1_8f35c5fa:
 
     # "Нет, он, конечно, и без того знал это всё в общих чертах..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1046
-translate english ts_scenario_1_7c3ff743:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1045
+translate english ts_scenario_1_1c506130:
 
-    # "Но одно дело - просто знать в общих чертах, и совсем другое - подробно рассказывать своей дочери о том, что же делать, когда, условно, в тебя влюбился мальчик."
+    # "Но одно дело – просто знать в общих чертах, и совсем другое – подробно рассказывать своей дочери о том, что же делать, когда, условно, в тебя влюбился мальчик."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1047
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1046
 translate english ts_scenario_1_f6c27d76:
 
     # "Или как справляться с очередными месячными."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1048
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1047
 translate english ts_scenario_1_c2cc2b59:
 
     # "Или что делать, если они так и не начинаются..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1052
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1051
 translate english ts_scenario_1_4602f51d:
 
     # "А иногда он даже специально старается быть как можно ближе ко мне."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1054
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1053
 translate english ts_scenario_1_e797d1ef:
 
     # "Как-то раз, классе в девятом, я довольно сильно сломала ногу."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1055
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1054
 translate english ts_scenario_1_1e0fc9c1:
 
     # "Было больно и мучительно."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1056
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1055
 translate english ts_scenario_1_ce4e041a:
 
     # "Папа же, узнав об инциденте, так распереживался, что ударился затылком о неровный асфальт."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1058
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1057
 translate english ts_scenario_1_f4d51a11:
 
     # "И то ли это была случайность, то ли что-то ещё, но поселили его в ту же больницу, в то же отделение, в ту же палату, где лежала и я."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1059
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1058
 translate english ts_scenario_1_84bc83f9:
 
     # "Так что всё это время он был со мной рядом."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1060
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1059
 translate english ts_scenario_1_146d54bc:
 
     # "Интересно, как он отреагирует, когда я скажу ему, что отчаливаю в университет."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1061
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1060
 translate english ts_scenario_1_2c686e5e:
 
     # "Наверное, с инфарктом сляжет, не иначе."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1065
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1064
 translate english ts_scenario_1_14d8facd:
 
     # m "Я поняла, пап."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1069
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1068
 translate english ts_scenario_1_f6c332b1:
 
     # ts_ft "Ну, вот и славненько."
     ts_ft ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1071
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1070
 translate english ts_scenario_1_74e1b1be:
 
     # "Выглядело это скорее как допрос бедной Моники, чем «обычный разговор в пятницу вечером»."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1073
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1072
 translate english ts_scenario_1_bcc2db07:
 
     # ts_ft "Хочешь, в шахматы сыграем?"
     ts_ft ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1077
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1076
 translate english ts_scenario_1_8c6ebd9c:
 
     # m "Я что-то не хочу, пап, спасибо."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1081
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1080
 translate english ts_scenario_1_131e50bd:
 
     # ts_ft "Ну, как знаешь."
     ts_ft ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1086
-translate english ts_scenario_1_43178d1f:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1085
+translate english ts_scenario_1_5e0d7fa0:
 
-    # "После этих слов каждый отправился к себе: папа - в гостиную, я же отправилась наверх к себе."
+    # "После этих слов каждый отправился к себе: папа – в гостиную, я же отправилась наверх к себе."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1091
-translate english ts_scenario_1_c414ec17_21:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1090
+translate english ts_scenario_1_c414ec17_20:
 
     # " {w=1.0}{nw}"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1099
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1098
 translate english ts_scenario_1_5e3a70b3:
 
     # "У меня есть несколько вопросов касательно сегодняшних событий."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1100
-translate english ts_scenario_1_4e4dbfb2:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1099
+translate english ts_scenario_1_4a5697a8:
 
-    # "Но прежде всего - кто же эта таинственная девушка?"
+    # "Но прежде всего – кто же эта таинственная девушка?"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1101
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1100
 translate english ts_scenario_1_72630156:
 
     # "Ведь мы же даже имени её не знаем!"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1102
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1101
 translate english ts_scenario_1_cb90154d:
 
     # "Не говоря уже о том, в каком она классе учится и в каком клубе состоит. Если вообще состоит..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1103
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1102
 translate english ts_scenario_1_95b55231:
 
     # "Ну, мы знаем хотя бы об общей внешности..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1104
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1103
 translate english ts_scenario_1_50f2af39:
 
     # "Но учитывая то, что нашла её именно Сайори, я не удивлюсь, если к моменту, когда она начала рассказывать это мне, она о внешности уже напрочь всё забыла."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1105
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1104
 translate english ts_scenario_1_18bcc49d:
 
     # "Хорошо хоть не забыла рассказать об этом мне..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1106
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1105
 translate english ts_scenario_1_c818c61a:
 
     # "Проще иголку в стоге сена найти, чем отыскать её."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1107
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1106
 translate english ts_scenario_1_50573c90:
 
     # "Сайори сказала, что она читала книгу за обедом."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1108
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1107
 translate english ts_scenario_1_98830bdd:
 
     # "Может, нам удастся переманить её на свою сторону и стать частью Литературного клуба..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1109
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1108
 translate english ts_scenario_1_5572e5cf:
 
     # "А может, она вообще без клуба, а мы как раз с таким предложением."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1110
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1109
 translate english ts_scenario_1_efaca9ee:
 
     # "Да от такого предложения просто невозможно отказаться!"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1111
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1110
 translate english ts_scenario_1_a20cefa7_1:
 
     # "..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1112
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1111
 translate english ts_scenario_1_d08d70b4:
 
     # "Как же я устала за сегодняшний день..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1113
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1112
 translate english ts_scenario_1_45c6a162:
 
     # "Может, мне что-нибудь почитать?"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1114
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1113
 translate english ts_scenario_1_99290ef8:
 
     # "Я уже давно не брала никакую книжку в руки, но раз я президент {i}Литературного{/i} клуба, то совершенно логично, что я буду читать {i}литературу{/i}."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1115
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1114
 translate english ts_scenario_1_84191696:
 
     # "Хоть какую-то."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1116
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1115
 translate english ts_scenario_1_4fa9f865:
 
     # "Но все книги кажутся такими толстыми и скучными... В каждой книге не менее пятисот страниц текста!"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1117
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1116
 translate english ts_scenario_1_8c319469:
 
     # "Да и не {i}настолько{/i} у меня много книг..."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1118
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1117
 translate english ts_scenario_1_9a9a4af5:
 
     # "Нет, всё-таки я слишком устала, чтобы даже читать литературу, не говоря уже о том, чтобы самой написать что-то."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1119
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1118
 translate english ts_scenario_1_1446ba08:
 
     # "Вот будут выходные, будет новый день, будет новая пища, буду читать новые книжки."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1120
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1119
 translate english ts_scenario_1_067e58b3:
 
     # "Сейчас же, наверное, лучше стоит спуститься в гостиную и посмотреть телевизор вместе с папой."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1123
-translate english ts_scenario_1_c414ec17_22:
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1122
+translate english ts_scenario_1_c414ec17_21:
 
     # " {w=1.0}{nw}"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1131
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1130
 translate english ts_scenario_1_ed571116:
 
     # ts_ft "Моника, это ты?"
     ts_ft ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1132
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1131
 translate english ts_scenario_1_ce563fa1:
 
     # m "Ну а кто же ещё, пап?"
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1133
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1132
 translate english ts_scenario_1_8caa59f2:
 
     # m "В комнате нечего делать, а если и есть что-то, то это слишком сложно для моего уставшего мозга."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1134
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1133
 translate english ts_scenario_1_a03a8aeb:
 
     # m "Поэтому я лучше проведу вечер с тобой, бездумно пялясь в телевизор."
     m ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1135
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1134
 translate english ts_scenario_1_bdaff68d:
 
     # ts_ft "Ну-у-у, хорошо, как скажешь..."
@@ -2413,308 +2395,126 @@ translate english ts_scenario_1_bb9c2496:
     m ""
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1139
-translate english ts_scenario_1_c414ec17_23:
+translate english ts_scenario_1_c414ec17_22:
 
     # " {w=1.0}{nw}"
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1147
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1149
 translate english ts_scenario_1_3450a606:
 
     # "За просмотром ностальгического фильма на вечер время пролетело гораздо быстрее, чем ожидалось."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1149
-translate english ts_scenario_1_19644634:
-
-    # "Настолько, что уже начало одиннадцатого, хотя начали мы смотреть телевизор вот буквально пять минут назад."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1153
-translate english ts_scenario_1_33459e14:
-
-    # ts_ft "Моника, что-то поздно уже, ты спать не думаешь?"
-    ts_ft ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1155
-translate english ts_scenario_1_86472cd4:
-
-    # m "Я, кстати, тоже задаюсь этим вопросом, и этот же вопрос я хотела и тебе задать."
-    m ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1157
-translate english ts_scenario_1_9c387c88:
-
-    # ts_ft "Хех."
-    ts_ft ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1159
-translate english ts_scenario_1_e1013221:
-
-    # ts_ft "Да, поздновато уже. Хоть завтра и выходной, но всё равно нужно ложиться пораньше, чтобы побольше сделать в завтрашнем дне."
-    ts_ft ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1163
-translate english ts_scenario_1_4f995946:
-
-    # "Каждый раз, когда мы заканчиваем вечер подобным образом, папа говорит одно и то же. Слово в слово."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1164
-translate english ts_scenario_1_882ff47f:
-
-    # "Впрочем, я не раздражаюсь. Я и сама жаворонок."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1167
-translate english ts_scenario_1_c414ec17_24:
-
-    # " {w=1.0}{nw}"
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1177
-translate english ts_scenario_1_2f990fba:
-
-    # "Мы оба расходимся по своим спальням."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1178
-translate english ts_scenario_1_cd99dd92:
-
-    # ts_ft 1g "Спокойной ночи, Моника."
-    ts_ft 1g ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1180
-translate english ts_scenario_1_773c1f78:
-
-    # ts_ft "Спокойной ночи, пап. Люблю тебя."
-    ts_ft ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1181
-translate english ts_scenario_1_55460430:
-
-    # ts_ft 1g "Я тоже тебя люблю."
-    ts_ft 1g ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1186
-translate english ts_scenario_1_7371f7d4:
-
-    # "Каждый ушёл в свою спальню."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1189
-translate english ts_scenario_1_c414ec17_25:
-
-    # " {w=1.0}{nw}"
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1197
-translate english ts_scenario_1_bcfdf2d7:
-
-    # "Как только я разделась и легла, я ещё немного думаю перед сном."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1198
-translate english ts_scenario_1_1dd0e095:
-
-    # "Завтра будет день, завтра будет пища."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1199
-translate english ts_scenario_1_c5554b83:
-
-    # "А в понедельник мы обязательно спросим у этой девочки насчёт её желания присоединиться к Литературному клубу."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1200
-translate english ts_scenario_1_409ce626:
-
-    # "Как же её зовут?"
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1201
-translate english ts_scenario_1_3d2cbc3d:
-
-    # "Вот же Сайори бал-{nw}"
-    ""
-
-# TODO: Translation updated at 2024-09-03 21:04
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:121
-translate english ts_scenario_1_0fcc93ee:
-
-    # "Каждую новую неделю администратор клубов приходит в клуб, видит, что так никто и не появился, даже несмотря на всю мою «рекламу», разочарованно вздыхает и жестом показывает на часы."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:153
-translate english ts_scenario_1_c8604932:
-
-    # "Я опять сижу в гордом одиночестве."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:154
-translate english ts_scenario_1_5cfc5cd6:
-
-    # "Не то чтобы мне это было совсем непривычно, но после шума и гомона Дискуссионного клуба Литературный клуб кажется каким-то особенно тихим."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:208
-translate english ts_scenario_1_bba529dd:
-
-    # s "Э-э-э... А где остальные?"
-    s ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:209
-translate english ts_scenario_1_8363b381:
-
-    # m "А остальных... пока ещё нет. Ты вообще первая, кто пришла. Я даже подумала, что зря я это всё затеяла..."
-    m ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:267
-translate english ts_scenario_1_d52a6764:
-
-    # m "Ну, в этом-то и суть нашего собрания – придумать и другие способы привлечения новых участников!"
-    m ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:287
-translate english ts_scenario_1_241c342d:
-
-    # "Нарисовать плакат с призывом присоединиться к клубу."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:288
-translate english ts_scenario_1_30c47508:
-
-    # "Хотя, скажу честно – я не знаю, как это отличается от тех же листовок."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:290
-translate english ts_scenario_1_c7939bc7:
-
-    # "Ну да и пусть – эту идею всё равно предложила Сайори. Аргументировала она это тем, что большой плакат будет всё-таки красочнее, чем какие-то маленькие бездушные и бесцветные листовки."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:600
-translate english ts_scenario_1_9d062cd3:
-
-    # m "Я изначально хотела, чтобы Литературный клуб был местом, где не будет слова «неправильно»."
-    m ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:616
-translate english ts_scenario_1_96af4df1:
-
-    # m "Мне всё быстро надоедает, мне очень быстро становится скучно. Мне самой это всё уже изрядно надоело, но сделать с этим я ничего не могу."
-    m ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:618
-translate english ts_scenario_1_0a3887a8:
-
-    # "И хотя в целом я с этим согласна, но приписывать себе лишние психические заболевания, которых может и не быть – это как минимум некрасиво."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:634
-translate english ts_scenario_1_dc6267dd:
-
-    # s "Но мы же...{nw}"
-    s ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:776
-translate english ts_scenario_1_01f06f2c:
-
-    # "Это в корне меняет дело."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:827
-translate english ts_scenario_1_19f9b3cb:
-
-    # s "Тогда, до понедельника!"
-    s ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:857
-translate english ts_scenario_1_6138d229:
-
-    # "Ненавижу ходить в школу в октябре. А ноябрь-декабрь – это и вовсе пиши пропало."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:858
-translate english ts_scenario_1_e4e25702:
-
-    # "Утром идёшь в школу в темноте, после уроков в четыре часа вечера идёшь домой в темноте..."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:872
-translate english ts_scenario_1_a91a340f:
-
-    # "Пока я думала о том, как же плохо ходить в школу зимой и как же хорошо ходить в школу весной, сама не заметила, как уже дошла до дома."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:887
-translate english ts_scenario_1_92b9cbcf:
-
-    # ts_ft "Добрый вечер, Моника. Как дела в школе?"
-    ts_ft ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1006
-translate english ts_scenario_1_154c35de:
-
-    # ts_ft "Ой, извини."
-    ts_ft ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1021
-translate english ts_scenario_1_449e0afd:
-
-    # ts_ft "Ладно, Моника, подруги – это всё, конечно, здорово, но друзьями могут быть и не только девочки..."
-    ts_ft ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1036
-translate english ts_scenario_1_d15d4b94:
-
-    # ts_ft "Конечно, знаю. Но иногда влюблённость – это такая нелогичная зараза, что она не поддаётся никакому здравому объяснению."
-    ts_ft ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1043
-translate english ts_scenario_1_3d54051a:
-
-    # "Папа – это, конечно, не мама, но мамы очень часто нет дома, поэтому бремя трудности подростковой жизни было возложено на папу."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1045
-translate english ts_scenario_1_681184c5:
-
-    # "Для мужчины, который попросту не до конца знает обо {b}всех{/b} тонкостях, он был довольно хорош."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1048
-translate english ts_scenario_1_1c506130:
-
-    # "Но одно дело – просто знать в общих чертах, и совсем другое – подробно рассказывать своей дочери о том, что же делать, когда, условно, в тебя влюбился мальчик."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1088
-translate english ts_scenario_1_5e0d7fa0:
-
-    # "После этих слов каждый отправился к себе: папа – в гостиную, я же отправилась наверх к себе."
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1102
-translate english ts_scenario_1_4a5697a8:
-
-    # "Но прежде всего – кто же эта таинственная девушка?"
-    ""
-
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1154
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1151
 translate english ts_scenario_1_cd11c171:
 
     # "Настолько, что уже начало одиннадцатого, хотя начали мы смотреть телевизор буквально пять минут назад."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1212
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1155
+translate english ts_scenario_1_33459e14:
+
+    # ts_ft "Моника, что-то поздно уже, ты спать не думаешь?"
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1157
+translate english ts_scenario_1_86472cd4:
+
+    # m "Я, кстати, тоже задаюсь этим вопросом, и этот же вопрос я хотела и тебе задать."
+    m ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1159
+translate english ts_scenario_1_9c387c88:
+
+    # ts_ft "Хех."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1161
+translate english ts_scenario_1_e1013221:
+
+    # ts_ft "Да, поздновато уже. Хоть завтра и выходной, но всё равно нужно ложиться пораньше, чтобы побольше сделать в завтрашнем дне."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1165
+translate english ts_scenario_1_4f995946:
+
+    # "Каждый раз, когда мы заканчиваем вечер подобным образом, папа говорит одно и то же. Слово в слово."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1167
+translate english ts_scenario_1_882ff47f:
+
+    # "Впрочем, я не раздражаюсь. Я и сама жаворонок."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1170
+translate english ts_scenario_1_c414ec17_23:
+
+    # " {w=1.0}{nw}"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1182
+translate english ts_scenario_1_2f990fba:
+
+    # "Мы оба расходимся по своим спальням."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1183
+translate english ts_scenario_1_cd99dd92:
+
+    # ts_ft 1g "Спокойной ночи, Моника."
+    ts_ft 1g ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1185
+translate english ts_scenario_1_773c1f78:
+
+    # ts_ft "Спокойной ночи, пап. Люблю тебя."
+    ts_ft ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1186
+translate english ts_scenario_1_55460430:
+
+    # ts_ft 1g "Я тоже тебя люблю."
+    ts_ft 1g ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1193
+translate english ts_scenario_1_7371f7d4:
+
+    # "Каждый ушёл в свою спальню."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1196
+translate english ts_scenario_1_c414ec17_24:
+
+    # " {w=1.0}{nw}"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1208
+translate english ts_scenario_1_bcfdf2d7:
+
+    # "Как только я разделась и легла, я ещё немного думаю перед сном."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1209
 translate english ts_scenario_1_a78eeb91:
 
     # "Завтра будет день, завтра будет пища для размышлений."
     ""
 
-# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1215
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1210
+translate english ts_scenario_1_c5554b83:
+
+    # "А в понедельник мы обязательно спросим у этой девочки насчёт её желания присоединиться к Литературному клубу."
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1211
+translate english ts_scenario_1_409ce626:
+
+    # "Как же её зовут?"
+    ""
+
+# game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1212
 translate english ts_scenario_1_9f56b2a3:
 
     # "Вот же Сайори бал—{nw}"

@@ -94,9 +94,6 @@ label glitch_main_menu_ending:
 
 label splashscreen:
 
-    if player == "kravc" or "iamnineoneone":
-        $ config.developer = True # РЕЖИМ РАЗРАБОТЧИКА БЕЗ СДК
-
     if not persistent.lan_chosen:
 
         scene black
@@ -125,6 +122,14 @@ label splashscreen:
             persistent.lan_chosen = True
 
     python: # УСТАНОВКА ГРОМКОСТИ И ПРОВЕРКА НА СПЛЕШ | ОБНОВЛЯЕМ RPC
+
+        if not renpy.android and not config.developer: # ПРОВЕРКА НА НАЛИЧИЕ ИГРОВЫХ АРХИВОВ
+            for archive in ['audio','images','fonts']:
+                if archive not in config.archives:
+                    winerrorsuka()
+                    renpy.quit()
+
+
         ts_rpc_splash()
 
         if not persistent.set_volumes:

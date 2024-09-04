@@ -784,23 +784,23 @@ init:
 ###ЛАГАЮЩЕЕ ЛОГО, ЕБАТЬ
     image anarchy_glitch_logo:
         ts_images + "anarchy/anarchisty1.webp"
-        pause 0.1
+        pause 0.05
         ts_images + "anarchy/anarchisty3.webp"
-        pause 0.1
+        pause 0.05
         ts_images + "anarchy/anarchisty2.webp"
-        pause 0.1
+        pause 0.05
         ts_images + "anarchy/anarchisty3.webp"
-        pause 0.1
+        pause 0.05
         ts_images + "anarchy/anarchisty1.webp"
-        pause 0.1
+        pause 0.05
         ts_images + "anarchy/anarchisty2.webp"
-        pause 0.1
+        pause 0.05
         ts_images + "anarchy/anarchisty3.webp"
-        pause 0.1
+        pause 0.05
         ts_images + "anarchy/anarchisty1.webp"
-        pause 0.1
+        pause 0.05
         ts_images + "anarchy/anarchisty2.webp"
-        pause 0.1
+        pause 0.05
         repeat
 
 ###ВЕШАЕМСЯ НАХУЙ

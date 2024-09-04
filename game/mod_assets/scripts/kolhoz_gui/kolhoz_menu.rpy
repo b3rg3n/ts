@@ -145,7 +145,7 @@ label splashscreen:
         with Dissolve(2)
         pause 0.5
         hide ts_anarchy
-        play sound psy_fast_3
+        play sound slender1
         show anarchy_glitch_logo
         pause 0.8
         stop sound
@@ -170,7 +170,7 @@ label splashscreen:
         with Dissolve(2)
         pause 0.5
         hide ts_anarchy
-        play sound psy_fast_3
+        play sound slender1
         show anarchy_glitch_logo
         pause 0.8
         stop sound

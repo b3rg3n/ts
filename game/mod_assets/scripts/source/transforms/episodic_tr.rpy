@@ -4,6 +4,12 @@
 
 init:
 
+    transform ts_verevka_vzyal:
+        align (0.5, 0.5) zoom 1.0
+        ease 1 align (0.5, 0.3) zoom 3.0
+        ease 1 align (0.5, 0.3) zoom 3.0
+        ease 1 align (0.5, 0.5) zoom 1.0
+
     transform ts_kuh_kran_open2:
         align (0.35, 0.6) zoom 3.0
         ease 2 align (0.5, 0.5) zoom 1.0

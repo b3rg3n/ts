@@ -73,6 +73,7 @@ label ts_scenario_10:
     pause 0.5
 
     show layer screens at ts_showscreens
+
     "Нет, серьёзно, почему так? Почему никто ничего не помнит?"
     show monika 1bd at f11
     em "Я же тебе уже неоднократно говорила, что никто ничего не помнит, потому что этого в принципе никогда не происходило."
@@ -1628,6 +1629,7 @@ label ts_scenario_10:
     m "П-привет, мам..."
     show minami 2bk at f31
     ts_mt "Моника! Я так рада тебя слышать!"
+    show minami 2bj at t31
     show hiroto 1b at f33
     ts_ft "Привет ещё раз, дорогая."
     show minami 1bzf at f31
@@ -1646,20 +1648,24 @@ label ts_scenario_10:
 
     show layer screens at ts_showscreens_fast
     m "Мы тебя н-не разбудили?"
-    show minami 3bzf at f31
+    show minami 2bzf at f31
     ts_mt "Моника, {nw}"
-    extend 2bb "будь смелее, ты с мамой всё-таки разговариваешь, а не с чужим человеком, которого впервые видишь!"
+    show minami 2bb at f31
+    extend "будь смелее, ты с мамой всё-таки разговариваешь, а не с чужим человеком, которого впервые видишь!"
     show minami 2bj at t31
     m "Да, мам..."
     show minami 3bn at f31
     ts_mt "На самом деле, я уже готовилась ко сну, а тут вы."
-    ts_mt 3bv "А в чём дело?"
+    show minami 3bv
+    ts_mt "А в чём дело?"
     show minami 3bu at t31
     m "Папа сказал... сказал, что у тебя для меня... хорошие новости заготовлены..."
     show minami 3bl at f31
     ts_mt "Ах да, совсем забыла! "
-    extend 1br "С этой работой уже ничего не помню..."
-    ts_mt 1bt "Так вот. Когда у тебя там фестиваль будет?"
+    show minami 1br at f31
+    extend "С этой работой уже ничего не помню..."
+    show minami 1bt at f31
+    ts_mt "Так вот. Когда у тебя там фестиваль будет?"
     show layer screens at ts_hidescreens_fast
     " {w=0.1}{nw}"
     show minami 1bze at t31
@@ -1675,8 +1681,10 @@ label ts_scenario_10:
     ts_mt "Какое приятное совпадение!"
     show minami 3bn at f31
     ts_mt "Поскольку я закончила раньше положенного срока, запуск новой ракеты будет уже в [gtextsuka]."
-    ts_mt 2bzf "Я переночую один последний раз, {w=0.05}{nw}"
-    extend 2d "и в [gtextsuka1] у меня будет самолёт."
+    show minami 2bzf at f31
+    ts_mt "Я переночую один последний раз, {w=0.05}{nw}"
+    show minami 2bd at f31
+    extend "и в [gtextsuka1] у меня будет самолёт."
     show minami 3bk at f31
     ts_mt "К вечеру я уже буду дома, когда ты как раз вернёшься со своего фестиваля!"
     show minami 3bj at t31
@@ -1730,15 +1738,18 @@ label ts_scenario_10:
     show minami 2bn at f31
     show hiroto 1j at t33
     ts_mt "Совсем ты себя не бережёшь..."
-    ts_mt 3bk "Небось, тот самый фестиваль из тебя все соки выжал?"
+    show minami 3bk at f31
+    ts_mt "Небось, тот самый фестиваль из тебя все соки выжал?"
     show minami 3bj at t31
     m "Э-э-э, да... Хорошо, что это всё {i}скоро закончится{/i}..."
     em "Да что всё я-то?"
     "«Да как будто ты не знаешь...»"
     show minami 1bzf at f31
     ts_mt "Ладно, Моника, {nw}"
-    extend 1bt "рада была тебя услышать, но, видимо, ты устала за сегодня даже больше, чем я."
-    ts_mt 2bn "Передай телефончик папе, я ещё ему хочу кое-что сказать. А ты иди отдыхай."
+    show minami 1bt at f31
+    extend "рада была тебя услышать, но, видимо, ты устала за сегодня даже больше, чем я."
+    show minami 2bn at f31
+    ts_mt "Передай телефончик папе, я ещё ему хочу кое-что сказать. А ты иди отдыхай."
     show minami 2bm at t31
     $ persistent.ingame_pizda = False
     m "Хорошо, мам. Спокойной ночи."

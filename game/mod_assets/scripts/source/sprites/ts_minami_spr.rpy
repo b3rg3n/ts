@@ -189,7 +189,7 @@ image minami 1bzf = ConditionSwitch(
 "persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1bl.webp", (0, 0), ts_momika_pt + "1br.webp", (0, 0), ts_momika_pt + "zf.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),
 "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1bl.webp", (0, 0), ts_momika_pt + "1br.webp", (0, 0), ts_momika_pt + "zf.webp"), im.matrix.tint(0.94, 0.82, 1.0) ),
 "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1bl.webp", (0, 0), ts_momika_pt + "1br.webp", (0, 0), ts_momika_pt + "zf.webp"), im.matrix.tint(0.5, 0.5, 0.6) ),
-True,im.Composite((960,960), (0,0), ts_momika_pt + "1bl.webp", (0, 0), ts_momika_pt + "1br.webp", (0, 0), ts_momika_pt + "z.webp") )
+True,im.Composite((960,960), (0,0), ts_momika_pt + "1bl.webp", (0, 0), ts_momika_pt + "1br.webp", (0, 0), ts_momika_pt + "zf.webp") )
 
 image minami 2ba = ConditionSwitch(
 "persistent.sprite_time=='cloudly'",im.MatrixColor( im.Composite((960,960), (0,0), ts_momika_pt + "1bl.webp", (0, 0), ts_momika_pt + "2br.webp", (0, 0), ts_momika_pt + "a.webp"), im.matrix.tint(0.63, 0.78, 0.85) ),

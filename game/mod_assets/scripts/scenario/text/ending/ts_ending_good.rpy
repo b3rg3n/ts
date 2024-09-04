@@ -146,7 +146,7 @@ label ts_good_ending_blya:
     ts_ft 1b "Я, кстати, тоже на этом фестивале буду."
     show hiroto 1a at t11
     "Моему счастью просто нет предела."
-    "Меня даже не волнуют мелочи вроде: «А сколько же вообще длился этот сон, если все ведут себя, как будто ничего из ряда вон выходящего не произошло?»"
+    "Меня даже не волнуют мелочи вроде: «А сколько же вообще длился этот сон, если все ведут себя, как будто ничего из ряда вон выходящего не произошло?»."
     "Я просто... счастлива..."
     m "Ладно. Так, что у нас там на завтрак?"
     show hiroto 1b at f11
@@ -241,7 +241,7 @@ label ts_good_ending_blya:
     show natsuki 1h at f33
     show layer master at ts_razebal
     show layer screens at ts_showscreens_fast
-    n "Явилась, не запылилась!"
+    n "Явилась не запылилась!"
     show yuri 2r at t31
     show sayori 4j at f32
     show natsuki 1i at t33
@@ -581,10 +581,9 @@ label ts_good_ending_blya:
     show minami 2j at t11
     m "Мама!"
     show minami 1k at f11
-    ts_mt "Доченька моя!"
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    scene ts_mon_maman_3
+    scene ts_mon_maman_3 with ts_paint
     show layer screens at ts_showscreens
     play music ts_never fadein 2
     m "Мамочка, я так по тебе скучала!"
@@ -727,7 +726,9 @@ label ts_good_ending_blya:
     show minami 2bl at f21
     show hiroto 2f at t22
     ts_mt "Ну и замечательно..."
-    ts_mt 2bk "Спокойной ночи, ребят!"
+    show minami 2bk at f21
+    show hiroto 2f at t22
+    ts_mt "Спокойной ночи, ребят!"
     $ m_name = "Папа и Мони"
     show minami 2bj at t21
     show hiroto 2g at f22

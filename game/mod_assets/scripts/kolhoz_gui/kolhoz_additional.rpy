@@ -162,7 +162,10 @@ screen ts_font_info:
     text translation_new["ts_font_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_lang_info:
-    text translation_new["ts_lang_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.83 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    if _preferences.language == "english":
+        text translation_new["ts_lang_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.845 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    else:
+        text translation_new["ts_lang_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.83 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_powersave_info:
     text translation_new["ts_powersave_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
@@ -171,10 +174,16 @@ screen ts_tearing_info:
     text translation_new["ts_tearing_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_rpc_info_sooqa:
-    text translation_new["ts_dicord_rpc_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    if _preferences.language == "english":
+        text translation_new["ts_dicord_rpc_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.88 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    else:
+        text translation_new["ts_dicord_rpc_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_window_info:
-    text translation_new["ts_window_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    if _preferences.language == "english":
+        text translation_new["ts_window_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.88 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+    else:
+        text translation_new["ts_window_info1"] style "settings_link" size 30 text_align 0.5 yalign 0.7 xalign 0.93 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
 screen ts_skip_info:
     if renpy.android or renpy.ios:

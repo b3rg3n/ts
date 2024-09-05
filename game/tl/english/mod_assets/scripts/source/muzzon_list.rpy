@@ -272,7 +272,7 @@ translate english strings:
 
     # game/mod_assets/scripts/source/muzzon_list.rpy:477
     old "Лучшее"
-    new "Лучшее"
+    new "Best Of"
 
     # game/mod_assets/scripts/source/muzzon_list.rpy:485
     old "Stellar"
@@ -380,11 +380,11 @@ translate english strings:
 
     # game/mod_assets/scripts/source/muzzon_list.rpy:667
     old "Alterecho"
-    new "Alterecho"
+    new ""
 
     # game/mod_assets/scripts/source/muzzon_list.rpy:674
     old "Аниме девочки"
-    new "Аниме девочки"
+    new "Anime Girls"
 
     # game/mod_assets/scripts/source/muzzon_list.rpy:681
     old "Sea Level"

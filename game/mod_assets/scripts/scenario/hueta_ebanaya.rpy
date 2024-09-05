@@ -138,8 +138,10 @@ label ts_start:
 screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
 
     modal True tag ts_chng_two
-
-    text translation_new["ts_govno_text1"] style "settings_link" size 75 text_align 0.5 yalign 0.1 xalign 0.5 color "#FF0000" antialias True kerning 2 at ts_preferences_anim
+    if _preferences.language == "english":
+        text translation_new["ts_govno_text1"] style "settings_link" size 60 text_align 0.5 yalign 0.1 xalign 0.5 color "#FF0000" antialias True kerning 2 at ts_preferences_anim
+    else:
+        text translation_new["ts_govno_text1"] style "settings_link" size 75 text_align 0.5 yalign 0.1 xalign 0.5 color "#FF0000" antialias True kerning 2 at ts_preferences_anim
 
     textbutton translation_new["ts_govno_text2"] style "log_button" text_style "change_chapter_suka" yalign 0.2 xalign 0.5 at ts_preferences_anim:
         activate_sound start_sound_suka

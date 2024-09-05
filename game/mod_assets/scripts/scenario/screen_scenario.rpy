@@ -7,7 +7,10 @@
 # КАРОЧЕ - ХУЙ ПРОССЫШЬ, ЧЁ ТАМ НЕ ТАК НАХУЙ
 
 screen alko_text1:
-    text "{size=+15}{font=[sc_font]}Это...{/font}{/size}" yalign 0.5 xalign 0.5
+    if _preferences.language == "english":
+        text "{size=+15}{font=[sc_font]}That...{/font}{/size}" yalign 0.5 xalign 0.5
+    else:
+        text "{size=+15}{font=[sc_font]}Это...{/font}{/size}" yalign 0.5 xalign 0.5
 
 screen c10_text_blya:
     text "{size=+15}{font=[sc_font]}Почему?{/font}{/size}" yalign 0.5 xalign 0.5

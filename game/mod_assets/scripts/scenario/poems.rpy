@@ -1189,28 +1189,28 @@ And I'm gonna tell everyone."""
 
     poem_y3b_eng = Poem(
     author = "yuri",
-    title = "Призрак в тусклом свете. Часть 2",
+    title = "Ghost Under the Light pt. 2",
     text = """\
-Пряди моих волос злато отражают, в янтарном свете ниспадающем
-Купаясь.
-Сине-изумрудный свет мерцает вдалеке.
-Одинокая фигура показалась - силуэт, как призрака свечение.
-Сердце застучало. Силуэт всё ближе подходил ко мне.
-Зонт я распахнула, надеясь, тень - моё убежище.
-Но поздно спохватилась я.
-Вот он уже стоит под светом фонаря. Я ахнула, зонт уронила.
-Мерцает свет. Колотится в груди. Рука его поднялась.
+The tendrils of my hair illuminate beneath the amber glow.
+Bathing.
+In the distance, a blue-green light flickers.
+A lone figure crosses its path - a silhouette obstructing the eerie glow.
+My heart pounds. The silhouette grows. Closer. Closer.
+I open my umbrella, casting a shadow to shield me from visibility.
+But I am too late.
+He steps into the streetlight. I gasp and drop my umbrella.
+The light flickers. My heart pounds. He raises his arm.
 
-Время замерло, казалось.
+Time stops.
 
-Единственный движенья знак - янтарный свет, его рукою отражённый.
-Свет мерцает, бьётся сердце в унисон.
-Он дразнит меня за то, что отдалась эмоции запретной.
-Могли вы знать, что призрак также чувствует тепло?
-Я засмеялась, - понять попытки тщетны.
-В чём важность осознания того?
-Его рука в моей. Мерцанье прекратилось постепенно.
-Цвет сердца моего - янтарь, а синий изумруд - его."""
+The only indication of movement is the amber light flickering against his outstretched arm.
+The flickering light is in rhythm with the pounding of my heart.
+Teasing me for succumbing to this forbidden emotion.
+Have you ever heard of a ghost feeling warmth before?
+Giving up on understanding, I laugh.
+Understanding is overrated.
+I touch his hand. The flickering stops.
+Ghosts are blue-green. My heart is amber."""
     )
 
     poem_m2 = Poem(

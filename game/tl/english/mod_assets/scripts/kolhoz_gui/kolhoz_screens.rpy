@@ -24,11 +24,11 @@ translate english strings:
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:972
     old "Крутилки"
-    new "Settings"
+    new "Options"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1001
     old "Узнать правду"
-    new "Start"
+    new "Learn truth"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1009
     old "Вспомнить"
@@ -36,21 +36,21 @@ translate english strings:
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1015
     old "Завершить повтор"
-    new "Stop replay"
+    new "End Replay"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1019
     old "Главное меню"
-    new "Main menu"
+    new "Main Menu"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1021
     old "Об игре"
-    new "About game"
+    new "About"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1023
     old "Съебаться"
-    new "Leave"
+    new "Quit"
 
     # game/mod_assets/scripts/kolhoz_gui/kolhoz_screens.rpy:1139
     old "Вернуться"
-    new "Back"
+    new "Return"
 

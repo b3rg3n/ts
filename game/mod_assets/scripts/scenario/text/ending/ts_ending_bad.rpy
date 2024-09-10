@@ -257,7 +257,10 @@ label ts_bad_ending_blya:
 
     play sound pageflip
 
-    show screen poem(poem_farewell)
+    if _preferences.language == "english":
+        show screen poem(poem_farewell_eng)
+    else:
+        show screen poem(poem_farewell)
 
     pause
 

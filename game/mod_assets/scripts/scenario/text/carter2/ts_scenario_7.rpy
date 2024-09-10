@@ -1561,7 +1561,10 @@ label cartersevenpoemsblya:
 
             play sound pageflip
 
-            show screen poem(poem_s1)
+            if _preferences.language == "english":
+                show screen poem(poem_s1_eng)
+            else:
+                show screen poem(poem_s1)
 
             pause
 
@@ -1751,6 +1754,9 @@ label cartersevenpoemsblya:
 
             play sound pageflip
 
+            if _preferences.language == "english":
+                show screen poem(poem_n1_eng)
+            else:
             show screen poem(poem_n1)
 
             pause
@@ -1966,7 +1972,10 @@ label cartersevenpoemsblya:
 
             play sound pageflip
 
-            show screen poem(poem_y1)
+            if _preferences.language == "english":
+                show screen poem(poem_y1_eng)
+            else:
+                show screen poem(poem_y1)
 
             pause
 

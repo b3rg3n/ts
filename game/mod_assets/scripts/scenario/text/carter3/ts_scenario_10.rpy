@@ -1125,7 +1125,11 @@ label ts_scenario_10:
 
     play sound pageflip
 
-    show screen poem(poem_m21)
+    if _preferences.language == "english":
+        show screen poem(poem_m21_eng)
+    else:
+        show screen poem(poem_m21)
+
 
     pause
 

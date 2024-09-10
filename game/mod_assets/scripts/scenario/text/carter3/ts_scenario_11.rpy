@@ -558,8 +558,10 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22a)
-
+    if _preferences.language == "english":
+        show screen poem(poem_m22a_eng)
+    else:
+        show screen poem(poem_m22a)
     pause
 
     play sound pageflip
@@ -591,7 +593,10 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22b)
+    if _preferences.language == "english":
+        show screen poem(poem_m22b_eng)
+    else:
+        show screen poem(poem_m22b)
 
     pause
 
@@ -623,7 +628,10 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22c)
+    if _preferences.language == "english":
+        show screen poem(poem_m22c_eng)
+    else:
+        show screen poem(poem_m22c)
 
     pause
 
@@ -653,7 +661,10 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22d)
+    if _preferences.language == "english":
+        show screen poem(poem_m22d_eng)
+    else:
+        show screen poem(poem_m22d)
 
     pause
 
@@ -699,7 +710,10 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22e)
+    if _preferences.language == "english":
+        show screen poem(poem_m22e_eng)
+    else:
+        show screen poem(poem_m22e)
 
     pause
 
@@ -735,7 +749,10 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22f)
+    if _preferences.language == "english":
+        show screen poem(poem_m22f_eng)
+    else:
+        show screen poem(poem_m22f)
 
     pause
 
@@ -825,7 +842,10 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22fuck)
+    if _preferences.language == "english":
+        show screen poem(poem_m22fuck_eng)
+    else:
+        show screen poem(poem_m22fuck)
 
     pause
 
@@ -864,7 +884,10 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22g)
+    if _preferences.language == "english":
+        show screen poem(poem_m22g_eng)
+    else:
+        show screen poem(poem_m22g)
 
     pause
 
@@ -892,7 +915,10 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22h)
+    if _preferences.language == "english":
+        show screen poem(poem_m22h_eng)
+    else:
+        show screen poem(poem_m22h)
 
     pause
 
@@ -928,7 +954,10 @@ label ts_scenario_11:
 
     play sound pageflip
 
-    show screen poem(poem_m22i)
+    if _preferences.language == "english":
+        show screen poem(poem_m22i_eng)
+    else:
+        show screen poem(poem_m22i)
 
     pause
 
@@ -1405,7 +1434,10 @@ label poemresponsesuka_loop:
 
             play sound pageflip
 
-            show screen poem(poem_act3_s)
+            if _preferences.language == "english":
+                show screen poem(poem_act3_s_eng)
+            else:
+                show screen poem(poem_act3_s)
 
             pause
 
@@ -1782,7 +1814,10 @@ label poemresponsesuka_loop:
 
             play sound pageflip
 
-            show screen poem(poem_act3_n)
+            if _preferences.language == "english":
+                show screen poem(poem_act3_n_eng)
+            else:
+                show screen poem(poem_act3_n)
 
             pause
 
@@ -1954,7 +1989,10 @@ label poemresponsesuka_loop:
 
             play sound pageflip
 
-            show screen poem(poem_act3_y)
+            if _preferences.language == "english":
+                show screen poem(poem_act3_y_eng)
+            else:
+                show screen poem(poem_act3_y)
 
             pause
 

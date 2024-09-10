@@ -1757,7 +1757,7 @@ label cartersevenpoemsblya:
             if _preferences.language == "english":
                 show screen poem(poem_n1_eng)
             else:
-            show screen poem(poem_n1)
+                show screen poem(poem_n1)
 
             pause
 

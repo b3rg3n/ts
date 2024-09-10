@@ -1118,11 +1118,17 @@ label ts_scenario_11:
     show sayori 2x at f21
     show natsuki 1l at f22
     play music t5_all fadein 2
-    $ m_name = "Сай и Нац"
+    if _preferences.language == "english":
+        $ m_name = "Say & Nat"
+    else:
+        $ m_name = "Сай и Нац"
     m "Привет, Моника!"
     show sayori 2a at t21
     show natsuki 1j at t22
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     m "Привет, девочки." 
     "Я спокойно отвечаю им."
     "Сейчас мне даже не страшно ни снаружи, ни изнутри."
@@ -1179,12 +1185,18 @@ label ts_scenario_11:
     show yuri 1j at f31
     show sayori 2a at t32
     show natsuki 1j at t33
-    $ y_name = "Юри"
+    if _preferences.language == "english":
+        $ y_name = "Yuri"
+    else:
+        $ y_name = "Юри"
     y "Привет, девочки."
     show yuri 1i at t31
     show sayori 2a at t32
     show natsuki 1l at f33
-    $ n_name = "Нацуки"
+    if _preferences.language == "english":
+        $ n_name = "Natsuki"
+    else:
+        $ n_name = "Нацуки"
     n "Привет, Юри."
     show yuri 1i at t31
     show sayori 2a at t32
@@ -1231,8 +1243,6 @@ label ts_scenario_11:
     show sayori 3x at t32
     show natsuki 2d at t33
     stop ambience fadeout 3
-    play sound nfy
-    $ renpy.notify("Настоятельно рекомендуем здесь сохраниться.")
     "Девочки дружно загалдели."
     show yuri 1i at t31
     show sayori 2a at t32
@@ -1262,9 +1272,15 @@ label poemresponsesuka_loop:
 
 
     if not c11poemsreadfirst:
-        $ menutextsuka = "Кому я покажу стихотворение первой?"
+        if _preferences.language == "english":
+            $ menutextsuka = "Who should I show my poem to first?"
+        else:
+            $ menutextsuka = "Кому я покажу стихотворение первой?"
     else:
-        $ menutextsuka = "Кому я покажу стихотворение следующей?"
+        if _preferences.language == "english":
+            $ menutextsuka = "Who should I show my poem to next?"
+        else:
+            $ menutextsuka = "Кому я покажу стихотворение следующей?"
 
 
     menu:
@@ -2249,41 +2265,80 @@ label poemend_abrupt:
         renpy.music.play(track, loop=True)
 
     show exception_bg zorder 2
-    show fake_exception zorder 2:
-        xpos 0.1 ypos 0.05
-    show fake_exception3 zorder 2:
-        xpos 0.1 ypos 0.15
-    show layer master at heartbeat2(1)
-    $ renpy.block_rollback()
-    pause
-    hide fake_exception3
+    if _preferences.language == "english":
+        show fake_exception_eng zorder 2:
+            xpos 0.1 ypos 0.05
+        show fake_exception3_eng zorder 2:
+            xpos 0.1 ypos 0.15
+        show layer master at heartbeat2(1)
+        $ renpy.block_rollback()
+        pause
+        hide fake_exception3_eng
+    else:
+        show fake_exception zorder 2:
+            xpos 0.1 ypos 0.05
+        show fake_exception3 zorder 2:
+            xpos 0.1 ypos 0.15
+        show layer master at heartbeat2(1)
+        $ renpy.block_rollback()
+        pause
+        hide fake_exception3
 
     scene ts_nebo_fon_bgshka_suka
-    show fake_exception4 zorder 2:
-        xpos 0.1 ypos 0.15
-    show layer master at heartbeat2(2)
-    $ renpy.block_rollback()
-    pause
-    hide fake_exception4
+    if _preferences.language == "english":
+        show fake_exception4_eng zorder 2:
+            xpos 0.1 ypos 0.15
+        show layer master at heartbeat2(2)
+        $ renpy.block_rollback()
+        pause
+        hide fake_exception4_eng
+    else:
+        show fake_exception4 zorder 2:
+            xpos 0.1 ypos 0.15
+        show layer master at heartbeat2(2)
+        $ renpy.block_rollback()
+        pause
+        hide fake_exception4
     scene ts_club_glitch_pizdets
-    show fake_exception5 zorder 2:
-        xpos 0.1 ypos 0.15
-    show layer master at heartbeat2(3)
-    $ renpy.block_rollback()
-    pause
-    hide fake_exception5
+    if _preferences.language == "english":
+        show fake_exception5_eng zorder 2:
+            xpos 0.1 ypos 0.15
+        show layer master at heartbeat2(3)
+        $ renpy.block_rollback()
+        pause
+        hide fake_exception5_eng
+    else:    
+        show fake_exception5 zorder 2:
+            xpos 0.1 ypos 0.15
+        show layer master at heartbeat2(3)
+        $ renpy.block_rollback()
+        pause
+        hide fake_exception5
     scene ts_kitchen_glitch_pizdets
-    show fake_exception6 zorder 2:
-        xpos 0.1 ypos 0.15
-    show layer master at heartbeat2(4)
-    $ renpy.block_rollback()
-    pause
-    hide fake_exception6
+    if _preferences.language == "english":
+        show fake_exception6_eng zorder 2:
+            xpos 0.1 ypos 0.15
+        show layer master at heartbeat2(4)
+        $ renpy.block_rollback()
+        pause
+        hide fake_exception6_eng
+    else:
+        show fake_exception6 zorder 2:
+            xpos 0.1 ypos 0.15
+        show layer master at heartbeat2(4)
+        $ renpy.block_rollback()
+        pause
+        hide fake_exception6
     scene black
     show exception_bg zorder 2
-    show fake_exception7 zorder 2:
-        xpos 0.1 ypos 0.15
-    show layer master at heartbeat2(5)
+    if _preferences.language == "english":
+        show fake_exception7_eng zorder 2:
+            xpos 0.1 ypos 0.15
+        show layer master at heartbeat2(5)
+    else:
+        show fake_exception7 zorder 2:
+            xpos 0.1 ypos 0.15
+        show layer master at heartbeat2(5)
     $ renpy.block_rollback()
     pause
     stop music
@@ -2291,9 +2346,15 @@ label poemend_abrupt:
     play sound winerrorsound
 
     if renpy.android:
-        show screen dialog("ru.bergen.truestory.apk\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("ru.bergen.truestory.apk\n\nWhile running the script there was a critical error in game files. The game reboot is required. Let's stop on a still working script.", ok_action=Return())
+        else:
+            show screen dialog("ru.bergen.truestory.apk\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
     else:
-        show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("truestory.exe\n\nWhile running the script there was a critical error in game files. The game reboot is required. Let's stop on a still working script.", ok_action=Return())
+        else:
+            show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
 
 
     $ renpy.block_rollback()
@@ -2301,9 +2362,15 @@ label poemend_abrupt:
     hide screen dialog
     play sound winerrorsound
     if renpy.android:
-        show screen dialog("ru.bergen.truestory.apk\n\nПерезапускаем?", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("ru.bergen.truestory.apk\n\nReboot the game?", ok_action=Return())
+        else:
+            show screen dialog("ru.bergen.truestory.apk\n\nПерезапускаем?", ok_action=Return())
     else:
-        show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("truestory.exe\n\nReboot the game?", ok_action=Return())
+        else:
+            show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
     $ renpy.block_rollback()
     pause
     hide screen dialog
@@ -2539,18 +2606,30 @@ label poemend_normal:
     show layer master
     play sound winerrorsound
     if renpy.android:
-        show screen dialog("ru.bergen.truestory.apk\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("ru.bergen.truestory.apk\n\nWhile running the script there was a critical error in game files. The game reboot is required. Let's stop on a still working script.", ok_action=Return())
+        else:
+            show screen dialog("ru.bergen.truestory.apk\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
     else:
-        show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("truestory.exe\n\nWhile running the script there was a critical error in game files. The game reboot is required. Let's stop on a still working script.", ok_action=Return())
+        else:
+            show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
 
     $ renpy.block_rollback()
     pause
     hide screen dialog
     play sound winerrorsound
     if renpy.android:
-        show screen dialog("ru.bergen.truestory.apk\n\nПерезапускаем?", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("ru.bergen.truestory.apk\n\nReboot the game?", ok_action=Return())
+        else:
+            show screen dialog("ru.bergen.truestory.apk\n\nПерезапускаем?", ok_action=Return())
     else:
-        show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("truestory.exe\n\nReboot the game?", ok_action=Return())
+        else:
+            show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
     $ renpy.block_rollback()
     pause
     hide screen dialog

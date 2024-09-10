@@ -16,35 +16,59 @@ label ts_scenario_9:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "С возвращением... Снова?"
+    if _preferences.language == "english":
+        $ save_name = "Welcome back... again?"
+    else:
+        $ save_name = "С возвращением... Снова?"
 
     play sound winerrorsound
     if renpy.android:
-        show screen dialog("ru.bergen.truestory.apk\n\nЕсли вы страдаете от эпилепсии, настоятельно рекомендуется завершить прохождение мода.", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("ru.bergen.truestory.apk\n\nIf you suffer from epilepsy, it is highly recommended to turn off the mod right now.", ok_action=Return())
+        else:
+            show screen dialog("ru.bergen.truestory.apk\n\nЕсли вы страдаете от эпилепсии, настоятельно рекомендуется завершить прохождение мода.", ok_action=Return())
     else:
-        show screen dialog("truestory.exe\n\nЕсли вы страдаете от эпилепсии, настоятельно рекомендуется завершить прохождение мода.", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("truestory.exe\n\nIf you suffer from epilepsy, it is highly recommended to turn off the mod right now.", ok_action=Return())
+        else:
+            show screen dialog("truestory.exe\n\nЕсли вы страдаете от эпилепсии, настоятельно рекомендуется завершить прохождение мода.", ok_action=Return())
     $ renpy.block_rollback()
     pause
     hide screen dialog
     play sound winerrorsound
 
     if renpy.android:
-        show screen dialog("ru.bergen.truestory.apk\n\nДважды я не предупреждаю.", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("ru.bergen.truestory.apk\n\nI won't say it again.", ok_action=Return())
+        else:
+            show screen dialog("ru.bergen.truestory.apk\n\nДважды я не предупреждаю.", ok_action=Return())
     else:
-        show screen dialog("truestory.exe\n\nДважды я не предупреждаю.", ok_action=Return())
+        if _preferences.language == "english":
+            show screen dialog("truestory.exe\n\nI won't say it again.", ok_action=Return())
+        else:
+            show screen dialog("truestory.exe\n\nДважды я не предупреждаю.", ok_action=Return())
     pause
     hide screen dialog
 
     $ renpy.block_rollback()
 
     play sound chp
-    $ Chapter("АКТ ТРЕТИЙ")
-    $ Chapter("АКТ ТРЕТИЙ")
-    $ Chapter("Глава первая")
-    $ Chapter("Глава первая")
-    $ Chapter("С возвращением... Снова?")
-    stop sound fadeout 7
-    $ Chapter("С возвращением... Снова?")
+    if _preferences.language == "english":
+        $ Chapter("ACT THREE")
+        $ Chapter("ACT THREE")
+        $ Chapter("chapter one")
+        $ Chapter("chapter one")
+        $ Chapter("Welcome back... again?")
+        stop sound fadeout 7
+        $ Chapter("Welcome back... again?")
+    else:
+        $ Chapter("АКТ ТРЕТИЙ")
+        $ Chapter("АКТ ТРЕТИЙ")
+        $ Chapter("Глава первая")
+        $ Chapter("Глава первая")
+        $ Chapter("С возвращением... Снова?")
+        stop sound fadeout 7
+        $ Chapter("С возвращением... Снова?")
 
     pause 2
 
@@ -578,7 +602,10 @@ label ts_scenario_9:
     show layer master at ts_blevota_anim
     pause 1
 
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     show layer screens at hpunch
     play sound3 ts_blevanula
     pause 6

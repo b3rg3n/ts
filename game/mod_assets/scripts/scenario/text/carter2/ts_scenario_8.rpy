@@ -17,16 +17,28 @@ label ts_scenario_8:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "Затишье перед бурей"
+    if _preferences.language == "english":
+        $ save_name = "Calm before the storm"
+    else:
+        $ save_name = "Затишье перед бурей"
 
     play sound chp2
-    $ Chapter("АКТ ВТОРОЙ")
-    $ Chapter("АКТ ВТОРОЙ")
-    $ Chapter("Глава четвёртая")
-    $ Chapter("Глава четвёртая")
-    $ Chapter("Затишье перед бурей")
-    stop sound fadeout 7
-    $ Chapter("Затишье перед бурей")
+    if _preferences.language == "english":
+        $ Chapter("ACT TWO")
+        $ Chapter("ACT TWO")
+        $ Chapter("chapter four")
+        $ Chapter("chapter four")
+        $ Chapter("Calm before the storm")
+        stop sound fadeout 7
+        $ Chapter("Calm before the storm")
+    else:
+        $ Chapter("АКТ ВТОРОЙ")
+        $ Chapter("АКТ ВТОРОЙ")
+        $ Chapter("Глава четвёртая")
+        $ Chapter("Глава четвёртая")
+        $ Chapter("Затишье перед бурей")
+        stop sound fadeout 7
+        $ Chapter("Затишье перед бурей")
 
 
     play sound ts_alarm fadein 2
@@ -795,9 +807,15 @@ label poemresponses2suka:
         jump ts_carter8_posle_poems_suka
 
     if not ts_carter8_poem_firstread:
-        $ menutext = "Кому я покажу стихотворение первой?"
+        if _preferences.language == "english":
+            $ menutext = "Who should I show my poem to first?"
+        else:
+            $ menutext = "Кому я покажу стихотворение первой?"
     else:
-        $ menutext = "Кому я покажу стихотворение следующей?"
+        if _preferences.language == "english":
+            $ menutext = "Who should I show my poem to next?"
+        else:
+            $ menutext = "Кому я покажу стихотворение следующей?"
 
     play music audio.t5 fadein 2
 
@@ -1872,7 +1890,10 @@ label ts_carter8_posle_poems_suka:
     m "Давайте-ка все обменяемся контактами, чтобы я знала, когда и куда конкретно мне подходить."
     "Мы все обменялись контактами."
     m "Тогда... на такой положительной ноте я официально объявляю последнее собрание клуба перед фестивалем оконченным!"
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
     show yuri 2d at h31
     show sayori 3s at h32
     show natsuki 2z at h33
@@ -1880,17 +1901,26 @@ label ts_carter8_posle_poems_suka:
     m "Ура!"
     show yuri 2c at t31
     show sayori 3s at t32
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     m "У нас впереди ещё очень важные выходные, и за эти выходные мы должны показать, что у нас клуб, достойный того, чтобы в него вступить."
     m "Так, с Юри и Сайори я увижусь ещё завтра, а с Нацуки я увижусь в воскресенье."
     m "Но на сегодня я больше вас не задерживаю."
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
     show yuri 2d at h31
     show sayori 3s at h32
     show natsuki 2z at h33
     show layer screens at vpunch
     m "До скорого, Моника!"
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     stop music fadeout 3
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"

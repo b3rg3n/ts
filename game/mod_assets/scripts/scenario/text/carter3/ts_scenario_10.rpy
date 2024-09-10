@@ -16,16 +16,28 @@ label ts_scenario_10:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "Спуск в безумие"
+    if _preferences.language == "english":
+        $ save_name = "Descent to madness"
+    else:
+        $ save_name = "Спуск в безумие"
 
     play sound chp
-    $ Chapter("АКТ ТРЕТИЙ")
-    $ Chapter("АКТ ТРЕТИЙ")
-    $ Chapter("Глава вторая")
-    $ Chapter("Глава вторая")
-    $ Chapter("Спуск в безумие")
-    stop sound fadeout 7
-    $ Chapter("Спуск в безумие")
+    if _preferences.language == "english":
+        $ Chapter("ACT THREE")
+        $ Chapter("ACT THREE")
+        $ Chapter("chapter two")
+        $ Chapter("chapter two")
+        $ Chapter("Descent to madness")
+        stop sound fadeout 7
+        $ Chapter("Descent to madness")
+    else:
+        $ Chapter("АКТ ТРЕТИЙ")
+        $ Chapter("АКТ ТРЕТИЙ")
+        $ Chapter("Глава вторая")
+        $ Chapter("Глава вторая")
+        $ Chapter("Спуск в безумие")
+        stop sound fadeout 7
+        $ Chapter("Спуск в безумие")
 
     $ persistent.uncolorize = "lite"
 
@@ -1190,7 +1202,10 @@ label ts_scenario_10:
     python:
         _preferences.volumes['sfx'] = .65
         _preferences.volumes['music'] = .45
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
     m "Пока, Моника!{fast}"
 
     stop music fadeout 7
@@ -1205,7 +1220,10 @@ label ts_scenario_10:
     pause 1
     hide sayori
     show layer screens at ts_showscreens_fast
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     m "Нацуки, подо—{w=0.15}{nw}"
     show layer screens at ts_hidescreens_fast
     " {w=0.1}{nw}"
@@ -1774,7 +1792,10 @@ label ts_scenario_10:
     show minami 3bj at t31
     m "Я... тоже тебя люблю..."
 
-    $ ts_ft_name = "Папа"
+    if _preferences.language == "english":
+        $ ts_ft_name = "Dad"
+    else:
+        $ ts_ft_name = "Папа"
 
     play sound ts_glitch2
     scene ts_kitchen

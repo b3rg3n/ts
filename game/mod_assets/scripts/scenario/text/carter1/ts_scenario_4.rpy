@@ -18,16 +18,28 @@ label ts_scenario_4:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "Всё же хорошо?"
+    if _preferences.language == "english":
+        $ save_name = "Is all good?"
+    else:
+        $ save_name = "Всё же хорошо?"
 
     play sound chp1
-    $ Chapter("АКТ ПЕРВЫЙ")
-    $ Chapter("АКТ ПЕРВЫЙ")
-    $ Chapter("Глава четвёртая")
-    $ Chapter("Глава четвёртая")
-    $ Chapter("Всё же хорошо?")
-    stop sound fadeout 7
-    $ Chapter("Всё же хорошо?")
+    if _preferences.language == "english":
+        $ Chapter("ACT ONE")
+        $ Chapter("ACT ONE")
+        $ Chapter("chapter four")
+        $ Chapter("chapter four")
+        $ Chapter("Is all good?")
+        stop sound fadeout 7
+        $ Chapter("Is all good?")
+    else:
+        $ Chapter("АКТ ПЕРВЫЙ")
+        $ Chapter("АКТ ПЕРВЫЙ")
+        $ Chapter("Глава четвёртая")
+        $ Chapter("Глава четвёртая")
+        $ Chapter("Всё же хорошо?")
+        stop sound fadeout 7
+        $ Chapter("Всё же хорошо?")
 
     play sound ts_alarm fadein 2
 
@@ -660,7 +672,10 @@ label ts_scenario_4:
         "Скажем, я была не лучше, чем обычный ученик в данном классе."
         "Да, это была не биология, но с геометрией у меня отношения тоже относительно прохладные."
 
-        $ teacher_name = "Учитель"
+        if _preferences.language == "english":
+            $ teacher_name = "Teacher"
+        else:
+            $ teacher_name = "Учитель"
 
         teacher "Итак, тема сегодняшнего урока..."
 
@@ -1161,13 +1176,19 @@ label ts_scenario_4:
     show sayori 3s at h32
     show natsuki 2z at h33
 
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
 
     show layer screens at vpunch
 
     m "За литературу!"
 
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
 
     "Все делают по глотку..."
 
@@ -1307,13 +1328,19 @@ label ts_scenario_4:
     show sayori 4s at h32
     show natsuki 1z at h33
 
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
 
     show layer screens at vpunch
 
     m "За новое!"
 
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
 
     "Мы с Юри поднимаем чашки и чокаемся."
     "Но чтобы Сайори и Нацуки не чувствовали себя обделёнными, мы легонько чокаем их по лбу."
@@ -1602,8 +1629,12 @@ label ts_scenario_4:
     hide splash_glitch_n
     hide splash_glitch_y
     show exception_bg zorder 2
-    show fake_exception zorder 2:
-        xpos 0.1 ypos 0.05
+    if _preferences.language == "english":
+        show fake_exception_eng zorder 2:
+            xpos 0.1 ypos 0.05
+    else:
+        show fake_exception zorder 2:
+            xpos 0.1 ypos 0.05
     show fake_exception2 zorder 2:
         xpos 0.1 ypos 0.15
     pause 6.0

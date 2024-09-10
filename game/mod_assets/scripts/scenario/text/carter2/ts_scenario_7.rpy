@@ -17,16 +17,28 @@ label ts_scenario_7:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "Пробы пера"
+    if _preferences.language == "english":
+        $ save_name = "Feather expansion"
+    else:
+        $ save_name = "Пробы пера"
 
     play sound chp2
-    $ Chapter("АКТ ВТОРОЙ")
-    $ Chapter("АКТ ВТОРОЙ")
-    $ Chapter("Глава третья")
-    $ Chapter("Глава третья")
-    $ Chapter("Пробы пера")
-    stop sound fadeout 7
-    $ Chapter("Пробы пера")
+    if _preferences.language == "english":
+        $ Chapter("ACT TWO")
+        $ Chapter("ACT TWO")
+        $ Chapter("chapter three")
+        $ Chapter("chapter three")
+        $ Chapter("Feather expansion")
+        stop sound fadeout 7
+        $ Chapter("Feather expansion")
+    else:
+        $ Chapter("АКТ ВТОРОЙ")
+        $ Chapter("АКТ ВТОРОЙ")
+        $ Chapter("Глава третья")
+        $ Chapter("Глава третья")
+        $ Chapter("Пробы пера")
+        stop sound fadeout 7
+        $ Chapter("Пробы пера")
 
     play music audio.t6s fadein 4
     scene ts_darkbed
@@ -870,7 +882,10 @@ label ts_scenario_7:
 
             "Наконец, ученики мало-помалу начинают подтягиваться."
             if unluck4 == False:
-                $ stud_name = "Одноклассник"
+                if _preferences.language == "english":
+                    $ stud_name = "Classmate"
+                else:
+                    $ stud_name = "Одноклассник"
                 stud "Что, Моника, опять первая, как всегда?"
                 m "Ну... да."
                 stud "Я вот думаю, раз уж ты всегда самая первая на уроки приходишь... Неужели у тебя своего дома нет?"
@@ -1438,9 +1453,15 @@ label cartersevenpoemsblya:
     with wipeleft_scene
 
     if not ts_first_carterseven_readpoem:
-        $ carterseven_vibor_text_suka = "Кому я покажу стихотворение первой?"
+        if _preferences.language == "english":
+            $ carterseven_vibor_text_suka = "Who should I show my poem to first?"
+        else:
+            $ carterseven_vibor_text_suka = "Кому я покажу стихотворение первой?"
     else:
-        $ carterseven_vibor_text_suka = "Кому я покажу стихотворение следующей?"
+        if _preferences.language == "english":
+            $ carterseven_vibor_text_suka = "Who should I show my poem to next?"
+        else:
+            $ carterseven_vibor_text_suka = "Кому я покажу стихотворение следующей?"
 
     menu:
         "[carterseven_vibor_text_suka]"
@@ -2023,13 +2044,19 @@ label ts_carterseven_poem_finally:
     show yuri 2d at f31
     show sayori 3r at f32
     show natsuki 2y at f33
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
     show layer screens at vpunch
     m "Да!"
     show yuri 2c at t31
     show sayori 3q at t32
     show natsuki 2j at t33
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     m "Ну, как вам первая проба пера? Как вам первый обмен стихотворениями?"
     show sayori 4r at f32
     s "Замечательно! Я бы ещё раз с кем-нибудь поделилась!"
@@ -2046,10 +2073,16 @@ label ts_carterseven_poem_finally:
     show yuri 3n at h31
     show sayori 4m at h32
     show natsuki 2p at h33
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
     show layer screens at vpunch
     m "!!!"
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     m "Да ладно вам, девочки! Вы же уже написали один стих, дальше будет гораздо проще!"
     m "Да и к тому же, Сайори, не ты ли говорила о том, что ты бы с радостью поделилась стихом ещё раз?"
     m "Ну вот и флаг тебе в руки. Напиши ещё одно стихотворение, и потом можешь делиться с кем угодно."
@@ -2104,10 +2137,16 @@ label ts_carterseven_poem_finally:
     show yuri 1b at f31
     show sayori 1x at f32
     show natsuki 1l at f33
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
     show layer screens at vpunch
     m "До завтра, Моника!"
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     play sound door_open

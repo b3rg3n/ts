@@ -18,17 +18,29 @@ label ts_scenario_2:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "Поиски. Юри"
+    if _preferences.language == "english":
+        $ save_name = "Searching. Yuri"
+    else:
+        $ save_name = "Поиски. Юри"
 
     pause 2
     play sound chp1
-    $ Chapter("АКТ ПЕРВЫЙ")
-    $ Chapter("АКТ ПЕРВЫЙ")
-    $ Chapter("глава вторая")
-    $ Chapter("глава вторая")
-    $ Chapter("Поиски. Юри")
-    stop sound fadeout 7
-    $ Chapter("Поиски. Юри")
+    if _preferences.language == "english":
+        $ Chapter("ACT ONE")
+        $ Chapter("ACT ONE")
+        $ Chapter("chapter two")
+        $ Chapter("chapter two")
+        $ Chapter("Searching. Yuri")
+        stop sound fadeout 7
+        $ Chapter("Searching. Yuri")
+    else:
+        $ Chapter("АКТ ПЕРВЫЙ")
+        $ Chapter("АКТ ПЕРВЫЙ")
+        $ Chapter("глава вторая")
+        $ Chapter("глава вторая")
+        $ Chapter("Поиски. Юри")
+        stop sound fadeout 7
+        $ Chapter("Поиски. Юри")
     play music ts_gramatik
     scene ts_bedroom
     with ed_night_dis

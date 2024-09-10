@@ -17,16 +17,28 @@ label ts_scenario_6:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "Новые начинания"
+    if _preferences.language == "english":
+        $ save_name = "Broadening horizons"
+    else:
+        $ save_name = "Новые начинания"
 
     play sound chp2
-    $ Chapter("АКТ ВТОРОЙ")
-    $ Chapter("АКТ ВТОРОЙ")
-    $ Chapter("Глава вторая")
-    $ Chapter("Глава вторая")
-    $ Chapter("Новые начинания")
-    stop sound fadeout 7
-    $ Chapter("Новые начинания")
+    if _preferences.language == "english":
+        $ Chapter("ACT TWO")
+        $ Chapter("ACT TWO")
+        $ Chapter("chapter two")
+        $ Chapter("chapter two")
+        $ Chapter("Broadening horizons")
+        stop sound fadeout 7
+        $ Chapter("Broadening horizons")
+    else:
+        $ Chapter("АКТ ВТОРОЙ")
+        $ Chapter("АКТ ВТОРОЙ")
+        $ Chapter("Глава вторая")
+        $ Chapter("Глава вторая")
+        $ Chapter("Новые начинания")
+        stop sound fadeout 7
+        $ Chapter("Новые начинания")
 
 
     play sound ts_alarm fadein 2
@@ -1164,12 +1176,18 @@ label ts_scenario_6:
     show sayori 4s at h32
     show natsuki 1y at h33
 
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
 
     show layer screens at vpunch
     m "Пока, Моника!"
 
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
@@ -1639,7 +1657,10 @@ label ts_scenario_6:
     show minami 1bd at rn33
     show hiroto 1a at ln31
 
-    $ ts_mt_name = "Минами"
+    if _preferences.language == "english":
+        $ ts_mt_name = "Minami"
+    else:
+        $ ts_mt_name = "Минами"
 
     show layer screens at ts_showscreens
 
@@ -1728,9 +1749,15 @@ label ts_scenario_6:
     show minami 1bl at f33
     show hiroto 1b at f31
 
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
     m "А-ха-ха!"
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
 
     "К счастью, папа подыграл мне."
 

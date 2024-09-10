@@ -17,18 +17,28 @@ label ts_bad_ending_blya:
     $ persistent.peredbadendmenu = True
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "В бездну"
+    if _preferences.language == "english":
+        $ save_name = "Into the abyss"
+    else:
+        $ save_name = "В бездну"
 
     scene black
 
     pause 2
 
     play sound chp3
-    $ Chapter("Эпилог")
-    $ Chapter("Эпилог")
-    $ Chapter("В бездну")
-    stop sound fadeout 7
-    $ Chapter("В бездну")
+    if _preferences.language == "english":
+        $ Chapter("Epilogue")
+        $ Chapter("Epilogue")
+        $ Chapter("Into the abyss")
+        stop sound fadeout 7
+        $ Chapter("Into the abyss")
+    else:
+        $ Chapter("Эпилог")
+        $ Chapter("Эпилог")
+        $ Chapter("В бездну")
+        stop sound fadeout 7
+        $ Chapter("В бездну")
 
     pause 2
 
@@ -51,12 +61,18 @@ label ts_bad_ending_blya:
     show layer master at ts_alkonersha
     "Я рефлекторно пытаюсь встать, но, к моему удивлению, у меня не получается."
     "На шум прибежало несколько людей в разного цвета халатах. Я так понимаю, это медсёстры и санитары."
-    $ misc_name = "Медсестра"
+    if _preferences.language == "english":
+        $ misc_name = "Nurse"
+    else:
+        $ misc_name = "Медсестра"
     misc "Очнулась... Наконец-то!"
     misc "Я сейчас доктора позову, я быстро!"
     m "Л-ладно..."
     "Спустя несколько секунд медсестра возвращается обратно вместе с солидного вида мужчиной."
-    $ doc_name = "Д-р Берген"
+    if _preferences.language == "english":
+        $ doc_name = "Dr. Bergen"
+    else:
+        $ doc_name = "Д-р Берген"
     doc "О, вы наконец-то очнулись. Это очень хорошо."
     doc "Добрый день. Меня зовут доктор Майкл Берген, я заведующий нейрохирургическим отделением."
     doc "Вы пробыли в коме четыре с небольшим года."
@@ -317,7 +333,10 @@ label ts_bad_ending_blya:
     show daisuke 1ba at t44
     m "Извините... можно?"
     show daisuke 2bc at f44
-    $ misc_name = "Раддан"
+    if _preferences.language == "english":
+        $ misc_name = "Raddan"
+    else:
+        $ misc_name = "Раддан"
     misc "А, мисс Ида! Сколько лет, сколько зим... Проходите, конечно."
 
     play music ts_hftc1 fadein 3

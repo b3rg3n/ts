@@ -16,18 +16,28 @@ label ts_good_ending_blya:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = True
 
-    $ save_name = "Всего лишь сон..."
+    if _preferences.language == "english":
+        $ save_name = "Just a dream..."
+    else:
+        $ save_name = "Всего лишь сон..."
 
     scene black
 
     pause 2
 
     play sound chp3
-    $ Chapter("Эпилог")
-    $ Chapter("Эпилог")
-    $ Chapter("Всего лишь сон...")
-    stop sound fadeout 7
-    $ Chapter("Всего лишь сон...")
+    if _preferences.language == "english":
+        $ Chapter("Epilogue")
+        $ Chapter("Epilogue")
+        $ Chapter("Just a dream...")
+        stop sound fadeout 7
+        $ Chapter("Just a dream...")
+    else:
+        $ Chapter("Эпилог")
+        $ Chapter("Эпилог")
+        $ Chapter("Всего лишь сон...")
+        stop sound fadeout 7
+        $ Chapter("Всего лишь сон...")
 
     pause 2
 
@@ -304,7 +314,10 @@ label ts_good_ending_blya:
     show sayori 3r at t32
     show natsuki 2z at t33
     m "Кстати, а вы стихи-то написали? Потренировались хорошенько дома?"
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
     show yuri 2d at f31
     show sayori 3r at f32
     show natsuki 2z at f33
@@ -313,7 +326,10 @@ label ts_good_ending_blya:
     show yuri 2c at t31
     show sayori 3q at t32
     show natsuki 2z at t33
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     m "Отлично..."
     "Со всеми этими циклами и повторениями я уже и забыла, какие стихи каждая из них написала..."
     "Главное, хотя бы свой собственный не забыть..."
@@ -341,7 +357,10 @@ label ts_good_ending_blya:
     show natsuki 2p at h33
     show layer screens at vpunch
     "Как тут в дверь резко постучали. От такого дёрнулись все, даже я."
-    $ misc_name = "Ученик"
+    if _preferences.language == "english":
+        $ misc_name = "Student"
+    else:
+        $ misc_name = "Ученик"
     misc "И-извините, {b}это{/b} комната с кексами?"
     misc "У вас просто в объявлении указан не тот этаж..."
     show yuri 2f at t31
@@ -528,7 +547,10 @@ label ts_good_ending_blya:
     show yuri 2h at f31
     show sayori 3h at f32
     show natsuki 2q at f33
-    $ m_name = "Девчата"
+    if _preferences.language == "english":
+        $ m_name = "Gals"
+    else:
+        $ m_name = "Девчата"
     m "Да, Моника..."
 
     show layer screens at ts_hidescreens
@@ -546,15 +568,24 @@ label ts_good_ending_blya:
     play music ts_afterword fadein 2
 
     "Спустя примерно двадцать минут от мусора не осталось и следа."
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     m "Ну, собственно... Пора на этом и заканчивать наше мероприятие..."
     m "Жду вас всех завтра!"
-    $ m_name = "Девчата"
+    if _preferences.language == "english":
+        $ m_name = "Gals"
+    else:
+        $ m_name = "Девчата"
     show yuri 2b at f31
     show sayori 3x at f32
     show natsuki 2l at f33
     m "Пока, Моника!"
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     show yuri 2a at t31
     show sayori 3a at t32
     show natsuki 2j at t33
@@ -729,14 +760,20 @@ label ts_good_ending_blya:
     show minami 2bk at f21
     show hiroto 2f at t22
     ts_mt "Спокойной ночи, ребят!"
-    $ m_name = "Папа и Мони"
+    if _preferences.language == "english":
+        $ m_name = "Dad & Moni"
+    else:
+        $ m_name = "Папа и Мони"
     show minami 2bj at t21
     show hiroto 2g at f22
     m "Спокойной ночи!"
     show minami at lhide
     hide minami
     show hiroto 1f at t11
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
     "После этих слов мама пошла к себе в спальню, оставляя нас с папой наедине."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"

@@ -58,7 +58,7 @@ translate english ts_good_ending_blya_80f7fbaa:
 translate english ts_good_ending_blya_c2e0ad37:
 
     # s "Моника, где ты шляешься?! Фестиваль начнётся через полчаса, а тебя до сих пор нет!" with hpunch
-    s "MONIKA, WHERE THE HELL ARE YOU? The Festival begins in half an hour, and you're still missing!" with hpunch
+    s "MONIKA, WHERE THE HELL ARE YOU? The festival starts in half an hour, and you're still missing!" with hpunch
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:71
 translate english ts_good_ending_blya_3bc47d0d:
@@ -160,7 +160,7 @@ translate english ts_good_ending_blya_a33de495:
 translate english ts_good_ending_blya_13971b4e:
 
     # "Я так сильно жду этого фестиваля, который, казалось, не наступит уже никогда, что я даже не обращаю внимания на ледяную воду и не менее ледяной привкус зубной пасты."
-    "I've been waiting for this cursed festival that, seems like, will never happen, that I don't even pay attention to freezing cold water and taste of a toothpaste."
+    "I've been waiting for this cursed festival that seemed like it will never happen, that I don't even pay attention to freezing cold water and taste of a toothpaste."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:116
 translate english ts_good_ending_blya_46efa986:
@@ -226,7 +226,7 @@ translate english ts_good_ending_blya_45069a6a:
 translate english ts_good_ending_blya_17383906:
 
     # ts_ft 1z "Но мы с тобой всего одну ночь не виделись, с чего вдруг такие нежности?"
-    ts_ft 1z "But we only haven't seen each other since yesterday, since when you've been so tender?"
+    ts_ft 1z "But we only haven't seen each other since last night, since when you've been so tender?"
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:140
 translate english ts_good_ending_blya_cb8aba81:
@@ -274,7 +274,7 @@ translate english ts_good_ending_blya_b15e4d7f:
 translate english ts_good_ending_blya_3d38684b:
 
     # "Я просто... счастлива..."
-    "I'm just... happy"
+    "I'm just... happy."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:151
 translate english ts_good_ending_blya_d73172ac:
@@ -310,7 +310,7 @@ translate english ts_good_ending_blya_9a4429ff:
 translate english ts_good_ending_blya_a71633c4:
 
     # "На весь завтрак у меня уходит не больше пяти минут."
-    "Whole breakfast took me no more than five minutes"
+    "Whole breakfast took me no more than five minutes."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:159
 translate english ts_good_ending_blya_261843ff:
@@ -382,7 +382,7 @@ translate english ts_good_ending_blya_32dd3459:
 translate english ts_good_ending_blya_ce8eb544:
 
     # "Ну, как, «человек»... Аки."
-    "Or, well, not really a person... it's Aki"
+    "Or, well, not really a person... it's Aki."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:196
 translate english ts_good_ending_blya_542c361f:
@@ -430,7 +430,7 @@ translate english ts_good_ending_blya_091b9de8:
 translate english ts_good_ending_blya_8089f9e4:
 
     # "Я перехожу на бег, при этом не снимая трубку."
-    "I start running not answering the call"
+    "I start running not answering the call."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:215
 translate english ts_good_ending_blya_c414ec17_7:
@@ -454,7 +454,7 @@ translate english ts_good_ending_blya_28fd8355:
 translate english ts_good_ending_blya_4b5361fc:
 
     # "Я вваливаюсь в дверь."
-    "I rush at the door"
+    "I rush at the door."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:244
 translate english ts_good_ending_blya_5b08fc71:
@@ -496,7 +496,7 @@ translate english ts_good_ending_blya_74476ef4:
 translate english ts_good_ending_blya_f7f4f51c:
 
     # m "Просто, понимаете, мне приснилось кое-что страшное..."
-    m "It's just, you know, I had such a scary dream..."
+    m "It's just, you know, I had such scary dreams..."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:269
 translate english ts_good_ending_blya_c382c051:
@@ -532,7 +532,7 @@ translate english ts_good_ending_blya_d000cf01:
 translate english ts_good_ending_blya_33dc5062:
 
     # s 5b "Мы как-то... особо не заморачивались по поводу этого всего..."
-    s 5b "We uhhh... did not really overthink about that..."
+    s 5b "We uhhh... did not really overthink that..."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:281
 translate english ts_good_ending_blya_9ce76d4d:
@@ -586,7 +586,7 @@ translate english ts_good_ending_blya_677d6941:
 translate english ts_good_ending_blya_37ecd7de:
 
     # m "А теперь давайте уже побыстрее, до начала примерно пять минут осталось."
-    m "And now, let's be quick, we've got five minutes until the start of the festival."
+    m "And now, let's be quick, we've got five minutes until the festival begins."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:302
 translate english ts_good_ending_blya_5709b062:
@@ -664,7 +664,7 @@ translate english ts_good_ending_blya_c9f8f469:
 translate english ts_good_ending_blya_549b1aef:
 
     # "Как тут в дверь резко постучали. От такого дёрнулись все, даже я."
-    "And right at this moment there was a door knock. Everyone shook, including me."
+    "And right at this moment there was a door knock. Everyone was shook, including me."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:345
 translate english ts_good_ending_blya_5007d59f:
@@ -694,7 +694,7 @@ translate english ts_good_ending_blya_6d921181:
 translate english ts_good_ending_blya_b4d784aa:
 
     # m "Э-э-э... да, добро пожаловать в Литературный клуб, меня зовут Ида Моника, а это Касанэ Юри, Аме Сайори и Яторо Нацуки."
-    m "Uhhh... yeah, welcome to the Literature Club, my name is Ida Monika, and this is Kasane Yuri, Ame Sayori and Yatoro Natsuki."
+    m "Uhhh... yeah, welcome to the Literature Club, my name is Ida Monika, and those are Kasane Yuri, Ame Sayori and Yatoro Natsuki."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:360
 translate english ts_good_ending_blya_dc8a53b6:
@@ -718,7 +718,7 @@ translate english ts_good_ending_blya_f81aaba7:
 translate english ts_good_ending_blya_59282620:
 
     # "На крик этого ученика пришли ещё где-то с десяток учеников."
-    "After this student's shouting there were like a dozen of new ones."
+    "After this student's shouting about a dozen of new ones came here as well."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:365
 translate english ts_good_ending_blya_5a0ea5b4:
@@ -736,7 +736,7 @@ translate english ts_good_ending_blya_c414ec17_9:
 translate english ts_good_ending_blya_f4a05a48:
 
     # "Как и ожидалось, несколько учеников просто взяли кекс и ушли искать другие клубы, но большинство всё же остались здесь."
-    "As expected, some students just grabbed the cake and looked for other clubs, but majority stayed here."
+    "As expected, some students just grabbed the cake and went looking for other clubs, but majority stayed here."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:385
 translate english ts_good_ending_blya_694a59b3:
@@ -796,19 +796,19 @@ translate english ts_good_ending_blya_82811a33:
 translate english ts_good_ending_blya_0bdf2770:
 
     # ts_ft "Еле вас нашёл... Если бы не крики одного ученика, то я бы в принципе не смог вас найти..."
-    ts_ft "I almost didn't find you guys... If it wasn't for a student's shouting, I wouldn't find you at all."
+    ts_ft "I almost didn't find you guys... If it wasn't for this student's shouting, I wouldn't find you at all."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:426
 translate english ts_good_ending_blya_b0c08aef:
 
     # y "Моника, это, я так полагаю, твой отец?"
-    y "Monika, this is, I guess, your father?"
+    y "Monika, I guess this is your father?"
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:432
 translate english ts_good_ending_blya_f0926c9a:
 
     # m "Да. Мистер Ида Хирото. Добрейшей души человек."
-    m "Yes, Mr. Ida Hiroto. The kindest person I know."
+    m "Yes, Mr. Ida Hiroto. The kindest person I've ever known."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:438
 translate english ts_good_ending_blya_c167f358:
@@ -862,7 +862,7 @@ translate english ts_good_ending_blya_455f2241:
 translate english ts_good_ending_blya_66f3c0f1:
 
     # "К чёрту уже этот фестиваль – поскорее бы уже с мамой увидеться..."
-    "Screw the festival – I just wish I could see mom the sooner the better..."
+    "Screw the festival already – I just wish I could see mom the sooner the better..."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:472
 translate english ts_good_ending_blya_c414ec17_10:
@@ -874,7 +874,7 @@ translate english ts_good_ending_blya_c414ec17_10:
 translate english ts_good_ending_blya_e86b6788:
 
     # "Ну, могло быть и хуже; но могло быть и лучше."
-    "Well... Could be worse; could be better"
+    "Well... Could be worse; could be better."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:485
 translate english ts_good_ending_blya_cb3ee886:
@@ -898,7 +898,7 @@ translate english ts_good_ending_blya_f1d430af:
 translate english ts_good_ending_blya_41288859:
 
     # "Так что, наверное, это и к лучшему."
-    "So I guess it's even for the better"
+    "So I guess it's even for the better."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:489
 translate english ts_good_ending_blya_d0e8acb2:
@@ -1030,7 +1030,7 @@ translate english ts_good_ending_blya_98fc9f3c:
 translate english ts_good_ending_blya_422cdf3e:
 
     # m "До завтра, девочки."
-    m "Bye, girls."
+    m "Bye {b}gals{/b}."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:563
 translate english ts_good_ending_blya_c414ec17_12:
@@ -1066,7 +1066,7 @@ translate english ts_good_ending_blya_13c3db12:
 translate english ts_good_ending_blya_0dbe37c5:
 
     # "Дверь открывается и тот, кого «принесло», повергает меня в очень приятный шок."
-    "The door gently opens and the one who 'comes' very pleasantly shocked me."
+    "The door gently opens and the one who's 'coming' very pleasantly shocked me."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:580
 translate english ts_good_ending_blya_a8a76827:
@@ -1126,7 +1126,7 @@ translate english ts_good_ending_blya_251e9b0c:
 translate english ts_good_ending_blya_0bd971bb:
 
     # ts_mt "Он очень странно на меня посмотрел, но желание исполнил. И вот, сорок минут в пути, и я уже здесь."
-    ts_mt "He gave a very strange look, but still I got what I wanted. And so, forty minutes in the way and I'm already here"
+    ts_mt "He gave a very strange look, but still I got what I wanted. And so, forty minutes in the way and I'm already here."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:601
 translate english ts_good_ending_blya_47992308:
@@ -1204,7 +1204,7 @@ translate english ts_good_ending_blya_a06799fe:
 translate english ts_good_ending_blya_efc3780b:
 
     # "И даже про... {i}чаепитие{/i}."
-    "How there was a... {i}tea-party{/i}"
+    "How there was a... {i}tea-party{/i}."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:632
 translate english ts_good_ending_blya_e217e80a:
@@ -1216,7 +1216,7 @@ translate english ts_good_ending_blya_e217e80a:
 translate english ts_good_ending_blya_3bd3c81f:
 
     # "Да, кстати, об этом... По идее, целая неделя ведь прошла – почему за неделю никто так и не удосужился спросить, где же я?"
-    "And speaking of which... It's been a whole week – why does no one even bothered to ask where I am?"
+    "And speaking of which... It's been a whole week – why did no one even bother to ask where I was?"
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:634
 translate english ts_good_ending_blya_4b8051fe:
@@ -1270,7 +1270,7 @@ translate english ts_good_ending_blya_c414ec17_15:
 translate english ts_good_ending_blya_077c9b95:
 
     # "Время идёт, а мы всё так же весело и непринуждённо разговариваем, как тут на кухню входит и папа."
-    "Time passes, we were still talk in a fun and relaxed way as dad entered the kitchen."
+    "Time passes, we were still talking in a fun and relaxed way as dad entered the kitchen."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:662
 translate english ts_good_ending_blya_97dc3574:
@@ -1390,7 +1390,7 @@ translate english ts_good_ending_blya_25c892b4:
 translate english ts_good_ending_blya_f02fd32c:
 
     # ts_mt "Тарелки я уже с утра помою."
-    ts_mt "I'll wash the plates next morning."
+    ts_mt "I'll wash the plates tomorrow."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:724
 translate english ts_good_ending_blya_94b2047a_1:
@@ -1402,7 +1402,7 @@ translate english ts_good_ending_blya_94b2047a_1:
 translate english ts_good_ending_blya_b5d7c896:
 
     # m "Ну, ты иди отдыхай тогда, а мы поужинаем, и тоже уже начнём ко сну готовиться..."
-    m "Well, you go sleep, and we'll have a dinner and then we'll prepare to go sleep as well..."
+    m "Well, you go sleep, and we'll have a dinner and then we'll prepare to go to sleep as well..."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:728
 translate english ts_good_ending_blya_a76f8d74:
@@ -1438,7 +1438,7 @@ translate english ts_good_ending_blya_c414ec17_17:
 translate english ts_good_ending_blya_5298c2ac:
 
     # "Остаток вечера мы проводим молча. Все слишком истощены, особенно я."
-    "We were completely silent for the rest of the evening. Everyone is too exhausted, especially myself."
+    "We were completely silent for the rest of the evening. Everyone is too exhausted, especially me."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:750
 translate english ts_good_ending_blya_2bc5ff0f:
@@ -1510,13 +1510,13 @@ translate english ts_good_ending_blya_60ff4197:
 translate english ts_good_ending_blya_579358bd:
 
     # "Однако как только я собираюсь выключать свет и раздеваться, я замечаю записку, которую с утра не заметила."
-    "As soon as I'm about to turn off the lights and get undressed, I notice the note that I didn't in the morning."
+    "As soon as I'm about to turn off the lights and get undressed, I notice the note that I initially didn't in the morning."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:776
 translate english ts_good_ending_blya_3661fa41:
 
     # "При более детальном обзоре я понимаю, что записка эта написана... моим почерком."
-    "After a more detailed look I realize that this note is written with... my handwriting."
+    "After a more detailed look I realize that this note is written in... my handwriting."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:777
 translate english ts_good_ending_blya_cbf7ce82:
@@ -1582,7 +1582,7 @@ translate english ts_good_ending_blya_47cefd8f:
 translate english ts_good_ending_blya_4e34f245:
 
     # "Сегодня был такой замечательный день. А дальше будет только лучше..."
-    "Today was such a great day. And later will only be better..."
+    "Today was such a great day. And tomorrow will only be better..."
 
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_good.rpy:818
 translate english ts_good_ending_blya_e319ceed:

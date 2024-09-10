@@ -16,18 +16,31 @@ label ts_scenario_12:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "Порочный круг"
+    if _preferences.language == "english":
+        $ save_name = "More of the same"
+    else:
+        $ save_name = "Порочный круг"
+
 
     scene black
 
     play sound chp
-    $ Chapter("АКТ ТРЕТИЙ")
-    $ Chapter("АКТ ТРЕТИЙ")
-    $ Chapter("Глава третья")
-    $ Chapter("Глава третья")
-    $ Chapter("Порочный круг")
-    stop sound fadeout 7
-    $ Chapter("Порочный круг")
+    if _preferences.language == "english":
+        $ Chapter("ACT THREE")
+        $ Chapter("ACT THREE")
+        $ Chapter("chapter three")
+        $ Chapter("chapter three")
+        $ Chapter("More of the same")
+        stop sound fadeout 7
+        $ Chapter("More of the same")
+    else:
+        $ Chapter("АКТ ТРЕТИЙ")
+        $ Chapter("АКТ ТРЕТИЙ")
+        $ Chapter("Глава третья")
+        $ Chapter("Глава третья")
+        $ Chapter("Порочный круг")
+        stop sound fadeout 7
+        $ Chapter("Порочный круг")
 
     pause 2
 
@@ -36,7 +49,10 @@ label ts_scenario_12:
     $ persistent.uncolorize = "full"
 
     play sound nfy
-    $ renpy.notify("Цикл третий")
+    if _preferences.language == "english":
+        $ renpy.notify("Third cycle")
+    else:
+        $ renpy.notify("Цикл третий")
 
     s "{size=-6}..ика!{/size}"
     s "{size=-4}Моника!{/size}"
@@ -145,7 +161,10 @@ label ts_scenario_12:
     stop sound fadeout 1
 
     play sound nfy
-    $ renpy.notify("Цикл третий")
+    if _preferences.language == "english":
+        $ renpy.notify("Third cycle")
+    else:
+        $ renpy.notify("Цикл третий")
 
 
     show layer screens at ts_showscreens
@@ -765,7 +784,10 @@ label ts_scenario_12:
     show layer screens at ts_showscreens
 
     play sound nfy
-    $ renpy.notify("Цикл третий")
+    if _preferences.language == "english":
+        $ renpy.notify("Third cycle")
+    else:
+        $ renpy.notify("Цикл третий")
 
     m "Итак, ребята! Все закончили со стихотворениями?"
     show yuri 1j at t31
@@ -961,12 +983,21 @@ label ts_scenario_12:
     show layer screens at ts_showscreens
     
     play sound nfy
-    $ renpy.notify("Цикл пятый")
+    if _preferences.language == "english":
+        $ renpy.notify("Fifth cycle")
+    else:
+        $ renpy.notify("Цикл пятый")
 
-    $ misc_name = "Администратор"
+    if _preferences.language == "english":
+        $ misc_name = "Receptionist"
+    else:
+        $ misc_name = "Администратор"
     show harumi 2ch at f11
     misc "Добрый день, девушка. Добро пожаловать в нашу гостиницу. Меня зовут Сайка."
-    $ misc_name = "Сайка"
+    if _preferences.language == "english":
+        $ misc_name = "Saika"
+    else:
+        $ misc_name = "Сайка"
     misc 1cp "А я вас что-то раньше здесь не видела..."
     show harumi 1cl at t11
     m "Да, я... впервые в этом городе, так, проездом на недельку..."
@@ -1047,7 +1078,10 @@ label ts_scenario_12:
     show layer screens at ts_showscreens
 
     play sound nfy
-    $ renpy.notify("Цикл десятый")
+    if _preferences.language == "english":
+        $ renpy.notify("Tenth cycle")
+    else:
+        $ renpy.notify("Цикл десятый")
 
     "С каждым новым циклом я стала чувствовать себя всё вольготнее."
     "Последние пару циклов я иногда приходила в школу голышом. Благо хоть в эти дни было солнечно и в целом достаточно тепло, чтобы я просто не замёрзла."
@@ -1066,7 +1100,10 @@ label ts_scenario_12:
 
     show layer screens at ts_showscreens
 
-    $ misc_name = "Раддан"
+    if _preferences.language == "english":
+        $ misc_name = "Raddan"
+    else:
+        $ misc_name = "Раддан"
     show daisuke 1ba at t44
     "Ага. Вот он. Сидит и кофе пьёт. Думает, какая же у него отличная работа."
     "Я без стука вламываюсь в дверь."
@@ -1129,7 +1166,10 @@ label ts_scenario_12:
     show layer screens at ts_showscreens
     
     play sound nfy
-    $ renpy.notify("Цикл пятнадцатый")    
+    if _preferences.language == "english":
+        $ renpy.notify("Fifteenth cycle")
+    else:
+        $ renpy.notify("Цикл пятнадцатый")    
 
     s "Очень здорово, Моника, мне очень понравилось!"
     show sayori 3q at t11
@@ -1206,7 +1246,10 @@ label ts_scenario_12:
     stop sound fadeout 1
     
     play sound nfy
-    $ renpy.notify("Цикл двадцать пятый")
+    if _preferences.language == "english":
+        $ renpy.notify("Twenty fifth cycle")
+    else:
+        $ renpy.notify("Цикл двадцать пятый")
 
     n "Ну так, средне. Могло быть и лучше."
     show natsuki 2y at t11
@@ -1255,7 +1298,10 @@ label ts_scenario_12:
     stop sound fadeout 1
     
     play sound nfy
-    $ renpy.notify("Цикл сороковой")
+    if _preferences.language == "english":
+        $ renpy.notify("Fortieth cycle")
+    else:
+        $ renpy.notify("Цикл сороковой")
 
     y "Ну, стихотворение хорошее, но у меня есть несколько советов."
     y 1k "Во-первых,{w=0.7}{nw}"
@@ -1312,7 +1358,10 @@ label ts_scenario_12:
     show layer screens at ts_showscreens
     
     play sound nfy
-    $ renpy.notify("Цикл сотый")
+    if _preferences.language == "english":
+        $ renpy.notify("One hundredth cycle")
+    else:
+        $ renpy.notify("Цикл сотый")
 
     "Очередная неделя, очередное тупое однообразное собрание клуба..."
     "В последние несколько циклов я вообще на эти собрания не ходила, вместо этого занимаясь более полезными делами."
@@ -1341,6 +1390,13 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
     pause 1
     show layer screens at ts_showscreens
+    
+    play sound nfy
+    if _preferences.language == "english":
+        $ renpy.notify("Excessive drinking is harmful to your health")
+    else:
+        $ renpy.notify("Чрезмерное употребление алкоголем вредно для вашего здоровья")
+    
     "Также я начала пить. Намного сильнее, чем оба родителя вместе взятые."
     "Каждый вечер я возвращаюсь из школы с новой бутылкой вина."
     "Иногда я пью с самого утра, и уже в школу прихожу вдрызг пьяной."
@@ -1349,14 +1405,20 @@ label ts_scenario_12:
     "Продолжалось это пару часов в день, а после этого я уже была полумёртвой. И так каждый день."
     
     play sound nfy
-    $ renpy.notify("Курение вредно и опасно для вашего здоровья")
+    if _preferences.language == "english":
+        $ renpy.notify("Smoking is also harmful and dangerous to your health")
+    else:
+        $ renpy.notify("Курение также вредно и опасно для вашего здоровья")
     
     "Я начала курить. Сначала это была пара сигареток в день, затем пачка, две, и по нарастающей."
     "Каждую новую неделю у меня была новая марка сигарет."
     "Поначалу я думала, что одного блока на неделю должно быть вполне достаточно, однако со временем я поняла, что даже целого блока на жалкие семь дней мне не хватает."
     
     play sound nfy
-    $ renpy.notify("Наркотики – это ещё более вредно и опасно для вашего здоровья. Даже не вздумайте курить и колоться")
+    if _preferences.language == "english":
+        $ renpy.notify("Drugs are even more harmful and dangerous to your health. Don't even think of smoking and shooting up stuff")
+    else:
+        $ renpy.notify("Наркотики – это ещё более вредно и опасно для вашего здоровья. Даже не вздумайте курить и колоться")
     
     "Вместе с этим я начала пробовать наркотики. Сначала лёгкая травка, а затем кокаин, героин, синтетика..."
     "К концу недели я уже скорее не молодая красивая девушка, а сорокалетняя баба с метровым целлюлитом."
@@ -1426,7 +1488,10 @@ label ts_scenario_12:
     stop sound fadeout 1
 
     play sound nfy
-    $ renpy.notify("Цикл сто пятидесятый")
+    if _preferences.language == "english":
+        $ renpy.notify("One hundred fiftieth cycle")
+    else:
+        $ renpy.notify("Цикл сто пятидесятый")
 
     show layer screens at ts_showscreens
     "А может... так?"
@@ -1466,7 +1531,10 @@ label ts_scenario_12:
     stop sound fadeout 1
 
     play sound nfy
-    $ renpy.notify("Цикл сто семьдесят шестой")
+    if _preferences.language == "english":
+        $ renpy.notify("One hundred seventy sixth cycle")
+    else:
+        $ renpy.notify("Цикл сто семьдесят шестой")
 
     show layer screens at ts_showscreens
     "Или... так?"
@@ -1482,7 +1550,10 @@ label ts_scenario_12:
     show layer screens at ts_showscreens
 
     play sound nfy
-    $ renpy.notify("Цикл двухсотый")
+    if _preferences.language == "english":
+        $ renpy.notify("Two hundredth cycle")
+    else:
+        $ renpy.notify("Цикл двухсотый")
 
     show monika 2p at f11
     with linearblur
@@ -1658,7 +1729,10 @@ label ts_scenario_12:
         _preferences.volumes['music'] = .45
 
     play sound nfy
-    $ renpy.notify("Цикл ???")
+    if _preferences.language == "english":
+        $ renpy.notify("??? cycle")
+    else:
+        $ renpy.notify("Цикл ???")
 
     $ renpy.block_rollback()
     $ persistent.uncolorize = "none"

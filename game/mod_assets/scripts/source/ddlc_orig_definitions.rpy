@@ -6,14 +6,24 @@
 # ORIGINAL DOKI
 
 image exception_bg = "#dadada"
+
+image fake_exception_eng = Text("An exception has occured.", size=40, style="_default")
+
 image fake_exception = Text("Произошла ошибка.", size=40, style="_default")
 image fake_exception2 = Text("File \"mod_assets/scripts/scenario/ts_scenario4.rpy\", line 1576\nSee traceback.txt for details.", size=20, style="_default")
 image white = "#ffffff"
 
+
+image fake_exception3_eng = Text("File \"mod_assets/scripts/scenario/ts_scenario11.rpy\", line 2224\nI thought I fixed everything... Try pressing action button...", size=20, style="_default")
+image fake_exception4_eng = Text("File \"mod_assets/source/audio/ost/ts_dtm.ogg\", time 0:44\nUgh, error again... What's the problem?", size=20, style="_default")
+image fake_exception5_eng = Text("File \"mod_assets/source/images/bg/ts_bedroom.webp\", file corrupted\nThis one crashed as well...", size=20, style="_default")
+image fake_exception6_eng = Text("File \"mod_assets/source/videosos/jm.webm\", VP8 crahsed\nIs it still not working?", size=20, style="_default")
+image fake_exception7_eng = Text("File \"game/truestory.rpa\", archive corrupted\nI'm completely powerless here.", size=20, style="_default")
+
 image fake_exception3 = Text("File \"mod_assets/scripts/scenario/ts_scenario11.rpy\", line 2224\nЯ же вроде всё починил... Попробуй нажать клавишу действия...", size=20, style="_default")
 image fake_exception4 = Text("File \"mod_assets/source/audio/ost/ts_dtm.ogg\", time 0:44\nСнова эррор... Да в чём проблема-то?", size=20, style="_default")
 image fake_exception5 = Text("File \"mod_assets/source/images/bg/ts_bedroom.webp\", file corrupted\nИ это тоже упало...", size=20, style="_default")
-image fake_exception6 = Text("File \"mod_assets/source/videosos/jm.webm\", VP8 crahsed\nОно всё ещё не работает?.", size=20, style="_default")
+image fake_exception6 = Text("File \"mod_assets/source/videosos/jm.webm\", VP8 crahsed\nОно всё ещё не работает?", size=20, style="_default")
 image fake_exception7 = Text("File \"game/truestory.rpa\", archive corrupted\nТут я бессилен, увы.", size=20, style="_default")
 
 image monika_scare = ts_cg + "monika/monika_scare.webp"

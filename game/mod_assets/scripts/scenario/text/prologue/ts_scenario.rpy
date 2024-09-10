@@ -17,7 +17,10 @@ label ts_scenario_0:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "Предыстория"
+    if _preferences.language == "english":
+        $ save_name = "In The Beginning"
+    else:
+        $ save_name = "Предыстория"
     window hide
     pause 1.1
     window hide
@@ -33,7 +36,10 @@ label ts_scenario_0:
     show dust3
     show dust4
     with ed_night_dis
-    $ Chapter("Предыстория")
+    if _preferences.language == "english":
+        $ Chapter("In The Beginning")
+    else:
+        $ Chapter("Предыстория")
     pause 0.5
     hide zatemnenie with dspr
 
@@ -536,58 +542,113 @@ label ts_scenario_0:
     scene black
     play music ts_new_zastavka_ost_suka fadein 2
     pause 1
-    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Я говорила – ты слушал.\nИ так было всегда.{/size}{/font}":
-        xalign 0.5 yalign 0.5
-        zoom 0.4 alpha 0
-        ease 1.5 zoom 1.0 alpha 1
+    if _preferences.language == "english":
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}I was talking – you were listening.\nIt has always been like that.{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 0.4 alpha 0
+            ease 1.5 zoom 1.0 alpha 1
+    else:
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Я говорила – ты слушал.\nИ так было всегда.{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 0.4 alpha 0
+            ease 1.5 zoom 1.0 alpha 1
     pause 3
-    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Я говорила – ты слушал.\nИ так было всегда.{/size}{/font}":
-        xalign 0.5 yalign 0.5
-        zoom 1.0 alpha 1
-        ease 1.5 zoom 0.4 alpha 0
+    if _preferences.language == "english":
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}I was talking – you were listening.\nIt has always been like that.{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 1.0 alpha 1
+            ease 1.5 zoom 0.4 alpha 0
+    else:
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Я говорила – ты слушал.\nИ так было всегда.{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 1.0 alpha 1
+            ease 1.5 zoom 0.4 alpha 0
     pause 3
-    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Правда, [user]?{/size}{/font}":
-        xalign 0.5 yalign 0.5
-        zoom 0.4 alpha 0
-        ease 1.5 zoom 1.0 alpha 1
+    if _preferences.language == "english":
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Ain't that right, [user]?{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 0.4 alpha 0
+            ease 1.5 zoom 1.0 alpha 1
+    else:
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Правда, [user]?{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 0.4 alpha 0
+            ease 1.5 zoom 1.0 alpha 1
     pause 3
-    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Правда, [user]?{/size}{/font}":
-        xalign 0.5 yalign 0.5
-        zoom 1.0 alpha 1
-        ease 1.5 zoom 0.4 alpha 0
+    if _preferences.language == "english":
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Ain't that right, [user]?{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 1.0 alpha 1
+            ease 1.5 zoom 0.4 alpha 0
+    else:
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Правда, [user]?{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 1.0 alpha 1
+            ease 1.5 zoom 0.4 alpha 0
     pause 3
-    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}В моменте я перестаю различать:\nгде сон, а где реальность.{/size}{/font}":
-        xalign 0.5 yalign 0.5
-        zoom 0.4 alpha 0
-        ease 1.5 zoom 1.0 alpha 1
+    if _preferences.language == "english":
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}I stopped differentiating\nthe dream and the reality.{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 0.4 alpha 0
+            ease 1.5 zoom 1.0 alpha 1
+    else:
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}В моменте я перестаю различать:\nгде сон, а где реальность.{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 0.4 alpha 0
+            ease 1.5 zoom 1.0 alpha 1
     pause 3
-    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}В моменте я перестаю различать:\nгде сон, а где реальность.{/size}{/font}":
-        xalign 0.5 yalign 0.5
-        zoom 1.0 alpha 1
-        ease 1.5 zoom 0.4 alpha 0
+    if _preferences.language == "english":
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}I stopped differentiating\nthe dream and the reality.{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 1.0 alpha 1
+            ease 1.5 zoom 0.4 alpha 0
+    else:
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}В моменте я перестаю различать:\nгде сон, а где реальность.{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 1.0 alpha 1
+            ease 1.5 zoom 0.4 alpha 0
     pause 3
-    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Просто...\nДослушай до конца...\nЭту историю...{/size}{/font}":
-        xalign 0.5 yalign 0.5
-        zoom 0.4 alpha 0
-        ease 1.5 zoom 1.0 alpha 1
+    if _preferences.language == "english":
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Just...\nListen to this story...\nUntil the very end...{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 0.4 alpha 0
+            ease 1.5 zoom 1.0 alpha 1
+    else:
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Просто...\nДослушай до конца...\nЭту историю...{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 0.4 alpha 0
+            ease 1.5 zoom 1.0 alpha 1
     pause 3
-    show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Просто...\nДослушай до конца...\nЭту историю...{/size}{/font}":
-        xalign 0.5 yalign 0.5
-        zoom 1.0 alpha 1
-        ease 1.5 zoom 0.4 alpha 0
+    if _preferences.language == "english":
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Just...\nListen to this story...\nUntil the very end...{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 1.0 alpha 1
+            ease 1.5 zoom 0.4 alpha 0
+    else:
+        show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Просто...\nДослушай до конца...\nЭту историю...{/size}{/font}":
+            xalign 0.5 yalign 0.5
+            zoom 1.0 alpha 1
+            ease 1.5 zoom 0.4 alpha 0
     pause 3
     scene ts_intro_move_1
     show zatemnenie
 
     with ed_night_dis
-    $ Chapter("TEAM АНАРХИСТЫ")
-    $ Chapter("ПРЕДСТАВЛЯЮТ")
+    if _preferences.language == "english":
+        $ Chapter("TEAM ANARCHISTS")
+        $ Chapter("PRESENTS")
+    else:
+        $ Chapter("TEAM АНАРХИСТЫ")
+        $ Chapter("ПРЕДСТАВЛЯЮТ")
     scene ts_intro_move_2
     show zatemnenie
 
     with ed_night_dis
-    $ Chapter("МОДИФИКАЦИЮ")
-    $ Chapter("ДЛЯ DDLC")
+    if _preferences.language == "english":
+        $ Chapter("A DDLC MOD")
+    else:
+        $ Chapter("МОДИФИКАЦИЮ")
+        $ Chapter("ДЛЯ DDLC")
     scene ts_intro_move_3
     show zatemnenie
 
@@ -597,7 +658,10 @@ label ts_scenario_0:
     show zatemnenie
 
     with ed_night_dis
-    $ Chapter("ПРИЯТНОГО ЧТЕНИЯ")
+    if _preferences.language == "english":
+        $ Chapter("ENJOY READING")
+    else:
+        $ Chapter("ПРИЯТНОГО ЧТЕНИЯ")
     stop music
     play sound br_glitch
     show ts_house as bg1 at Glitch(_fps=160, glitch_strength=1)

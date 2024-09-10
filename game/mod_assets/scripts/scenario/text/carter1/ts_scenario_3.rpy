@@ -18,17 +18,29 @@ label ts_scenario_3:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "Поиски. Нацуки"
+    if _preferences.language == "english":
+        $ save_name = "Searching. Natsuki"
+    else:
+        $ save_name = "Поиски. Нацуки"
 
     pause 2
     play sound chp1
-    $ Chapter("АКТ ПЕРВЫЙ")
-    $ Chapter("АКТ ПЕРВЫЙ")
-    $ Chapter("глава третья")
-    $ Chapter("глава третья")
-    $ Chapter("Поиски. Нацуки")
-    stop sound fadeout 7
-    $ Chapter("Поиски. Нацуки")
+    if _preferences.language == "english":
+        $ Chapter("ACT ONE")
+        $ Chapter("ACT ONE")
+        $ Chapter("chapter three")
+        $ Chapter("chapter three")
+        $ Chapter("Searching. Natsuki")
+        stop sound fadeout 7
+        $ Chapter("Searching. Natsuki")
+    else:
+        $ Chapter("АКТ ПЕРВЫЙ")
+        $ Chapter("АКТ ПЕРВЫЙ")
+        $ Chapter("глава третья")
+        $ Chapter("глава третья")
+        $ Chapter("Поиски. Нацуки")
+        stop sound fadeout 7
+        $ Chapter("Поиски. Нацуки")
 
     play music ts_gramatik fadein 2
 
@@ -152,7 +164,10 @@ label ts_scenario_3:
     nvlbazar "{font=[ts_nvl_font2]}Но так уж получилось, что знакомлю я вас с ним только сейчас."
     nvlbazar "{font=[ts_nvl_font2]}Дела..."
     nvlbazar "{font=[ts_nvl_font2]}Его зовут Ида Хирото, и он, как вы уже догадались, мой папа."
-    $ ts_ft_name = "Хирото"
+    if _preferences.language == "english":
+        $ ts_ft_name = "Hiroto"
+    else:
+        $ ts_ft_name = "Хирото"
     nvlbazar "{font=[ts_nvl_font2]}Вы меня, конечно, спросите:"
     nvlbazar "{font=[sc_font]}Но как? вы же совсем друг на друга не похожи!"
 
@@ -592,8 +607,12 @@ label ts_scenario_3:
     "Они обе засмеялись."
     "Хотя нет, не засмеялись. Заржали, как самые что ни на есть лошади."
 
-    $ pod1_name = "Лошадь"
-    $ pod2_name = "Кобыла"
+    if _preferences.language == "english":
+        $ pod1_name = "Horse"
+        $ pod2_name = "Mare"
+    else:
+        $ pod1_name = "Лошадь"
+        $ pod2_name = "Кобыла"
 
     play music ts_ylm
 
@@ -1217,7 +1236,10 @@ label ts_scenario_3:
     m "Так вот. Новый участник, зовут её Нацуки, и это означает, что нас наконец-то четверо."
     m "Что, в свою очередь, означает, что теперь мы официально зарегистрируем наш клуб."
 
-    $ m_name = "Все вместе"
+    if _preferences.language == "english":
+        $ m_name = "Everyone"
+    else:
+        $ m_name = "Все вместе"
 
     show yuri 3d at h31
     show natsuki 3z at h32
@@ -1225,7 +1247,10 @@ label ts_scenario_3:
 
     m "Ура-а-а!"
 
-    $ m_name = "Моника"
+    if _preferences.language == "english":
+        $ m_name = "Monika"
+    else:
+        $ m_name = "Моника"
 
     m "Администратор клубов приходит смотреть на новые клубы каждый понедельник, и, думаю, наличие четырёх человек в клубе ему будет достаточно."
     n 2l "Я по такому случаю даже кексиков перед выходными напеку!"

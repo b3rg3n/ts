@@ -17,18 +17,30 @@ label ts_scenario_1:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "Поиски. Сайори"
+    if _preferences.language == "english":    
+        $ save_name = "Searching. Sayori"
+    else:    
+        $ save_name = "Поиски. Сайори"
 
     scene black
     pause 2
     play sound chp1
-    $ Chapter("АКТ ПЕРВЫЙ")
-    $ Chapter("АКТ ПЕРВЫЙ")
-    $ Chapter("глава первая")
-    $ Chapter("глава первая")
-    $ Chapter("Поиски. Сайори")
-    stop sound fadeout 7
-    $ Chapter("Поиски. Сайори")
+    if _preferences.language == "english":
+        $ Chapter("ACT ONE")
+        $ Chapter("ACT ONE")
+        $ Chapter("chapter one")
+        $ Chapter("chapter one")
+        $ Chapter("Searching. Sayori")
+        stop sound fadeout 7
+        $ Chapter("Searching. Sayori")
+    else:    
+        $ Chapter("АКТ ПЕРВЫЙ")
+        $ Chapter("АКТ ПЕРВЫЙ")
+        $ Chapter("глава первая")
+        $ Chapter("глава первая")
+        $ Chapter("Поиски. Сайори")
+        stop sound fadeout 7
+        $ Chapter("Поиски. Сайори")
     play music ts_rem
     scene ts_club
     with ed_night_dis

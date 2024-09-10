@@ -18,16 +18,28 @@ label ts_scenario_5:
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
 
-    $ save_name = "С возвращением,\nМоника!"
+    if _preferences.language == "english":
+        $ save_name = "Welcome back,\nMonika!"
+    else:
+        $ save_name = "С возвращением,\nМоника!"
 
     play sound chp2
-    $ Chapter("АКТ ВТОРОЙ")
-    $ Chapter("АКТ ВТОРОЙ")
-    $ Chapter("Глава первая")
-    $ Chapter("Глава первая")
-    $ Chapter("С возвращением, Моника!")
-    stop sound fadeout 7
-    $ Chapter("С возвращением, Моника!")
+    if _preferences.language == "english":
+        $ Chapter("ACT TWO")
+        $ Chapter("ACT TWO")
+        $ Chapter("chapter one")
+        $ Chapter("chapter one")
+        $ Chapter("Welcome back, Monika!")
+        stop sound fadeout 7
+        $ Chapter("Welcome back, Monika!")
+    else:
+        $ Chapter("АКТ ВТОРОЙ")
+        $ Chapter("АКТ ВТОРОЙ")
+        $ Chapter("Глава первая")
+        $ Chapter("Глава первая")
+        $ Chapter("С возвращением, Моника!")
+        stop sound fadeout 7
+        $ Chapter("С возвращением, Моника!")
 
     scene black
     pause 1
@@ -940,7 +952,11 @@ label ts_scenario_5:
             cm "О, ты не волнуйся."
             cm "Хотя спрайт похожий, я не Моника, и даже не «подсознание» Моники."
 
-            $ cm_name = "Магнолия"
+            
+            if _preferences.language == "english":
+                $ cm_name = "Magnolia"
+            else:
+                $ cm_name = "Магнолия"
 
             show momika 4b at f11
             cm "Меня зовут Магнолия Карлсен. Можно просто Магнолия. Обращаюсь я к тебе, [user]."

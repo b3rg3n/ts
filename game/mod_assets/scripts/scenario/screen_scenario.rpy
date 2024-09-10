@@ -117,7 +117,7 @@ screen pizda_text10:
 
 screen pizda_text11:
     if _preferences.language == "english":
-        text "{size=+15}{font=[adv_font]}So she went to the extremes by injuring her with her knife to death. Obviosly, no one saved her.{/font}{/size}" yalign 0.5 xalign 0.5
+        text "{size=+15}{font=[adv_font]}So she went to the extremes by stabbing herself to death. Obviosly, no one saved her.{/font}{/size}" yalign 0.5 xalign 0.5
     else:
         text "{size=+15}{font=[adv_font]}И она пошла на крайние меры путём нанесения себе смертельных ножевых ранений. Спасти её, соответственно, не удалось.{/font}{/size}" yalign 0.5 xalign 0.5
 

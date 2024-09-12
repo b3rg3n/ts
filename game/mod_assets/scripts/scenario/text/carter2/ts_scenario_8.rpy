@@ -748,7 +748,10 @@ label ts_scenario_8:
 
     play sound pageflip
 
-    show screen poem(poem_m3)
+    if _preferences.language == "english":
+        show screen poem(poem_m3_eng)
+    else:
+        show screen poem(poem_m3)
 
     pause
 
@@ -931,7 +934,10 @@ label poemresponses2suka:
 
             play sound pageflip
 
-            show screen poem(poem_s2)
+            if _preferences.language == "english":
+                show screen poem(poem_s2_eng)
+            else:
+                show screen poem(poem_s2)
 
             pause
 
@@ -1227,7 +1233,10 @@ label poemresponses2suka:
 
             play sound pageflip
 
-            show screen poem(poem_n2)
+            if _preferences.language == "english":
+                show screen poem(poem_n2_eng)
+            else:
+                show screen poem(poem_n2)
 
             pause
 
@@ -1403,7 +1412,10 @@ label poemresponses2suka:
 
             play sound pageflip
 
-            show screen poem(poem_y3b)
+            if _preferences.language == "english":
+                show screen poem(poem_y3b_eng)
+            else:
+                show screen poem(poem_y3b)
 
             pause
 
@@ -1621,7 +1633,10 @@ label ts_carter8_posle_poems_suka:
 
     play sound pageflip
 
-    show screen poem(poem_m2)
+    if _preferences.language == "english":
+        show screen poem(poem_m2_eng)
+    else:
+        show screen poem(poem_m2)
 
     pause
 
@@ -1676,7 +1691,11 @@ label ts_carter8_posle_poems_suka:
 
     play sound pageflip
 
-    show screen poem(poem_su)
+    if _preferences.language == "english":
+        show screen poem(poem_su_eng)
+    else:
+        show screen poem(poem_su)
+
 
     pause
 
@@ -1723,7 +1742,10 @@ label ts_carter8_posle_poems_suka:
 
     play sound pageflip
 
-    show screen poem(poem_y2)
+    if _preferences.language == "english":
+        show screen poem(poem_y2_eng)
+    else:
+        show screen poem(poem_y2)
 
     pause
 
@@ -1769,8 +1791,11 @@ label ts_carter8_posle_poems_suka:
 
     play sound pageflip
 
-    show screen poem(poem_n2)
-
+    if _preferences.language == "english":
+        show screen poem(poem_n2_eng)
+    else:
+        show screen poem(poem_n2)
+        
     pause
 
     play sound pageflip

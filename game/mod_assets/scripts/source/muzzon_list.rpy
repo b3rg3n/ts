@@ -757,6 +757,26 @@ init python:
         art=ts_mr + "truth.webp"
     )
 
+    music_room.add(
+        name=_("Better Memories"),
+        artist="Money Flip",
+        path=ts_muzzon + "menu_ost/ts_bm.ogg",
+        art=ts_mr + "bmm.webp"
+    )
+
+    music_room.add(
+        name=_("Ethereal"),
+        artist="Money Flip",
+        path=ts_muzzon + "menu_ost/ts_mf_e.ogg",
+        art=ts_mr + "eth.webp"
+    )
+
+    music_room.add(
+        name=_("Tears In Rain"),
+        artist="Money Flip",
+        path=ts_muzzon + "menu_ost/ts_tir.ogg",
+        art=ts_mr + "tir.webp"
+    )
 init:
 ###СПИСОК
     $ music_list_ts = {}
@@ -768,6 +788,9 @@ init:
     $ music_list_ts["Marco Beltrami - Wales"] = ts_muzzon + "menu_ost/ts_finalded.ogg"
     $ music_list_ts["Akira Yamaoka - Not Tomorrow"] = ts_muzzon + "menu_ost/good_menu_ost.ogg"
     $ music_list_ts["Mikko Tarmia - Theme for Overt"] = ts_muzzon + "menu_ost/pered_bad_menu_ost.ogg"
+    $ music_list_ts["Money Flip - Better Memories"] = ts_muzzon + "menu_ost/ts_bm.ogg"
+    $ music_list_ts["Money Flip - Ethereal"] = ts_muzzon + "menu_ost/ts_mf_e.ogg"
+    $ music_list_ts["Money Flip - Tears In Rain"] = ts_muzzon + "menu_ost/ts_tir.ogg"
 ###ИЗ ЗАСТАВОК
     $ music_list_ts["Kenton Gilchrist - Gritty down tempo rock"] = ts_muzzon + "menu_ost/zastavka/ts_mosh.ogg"
     $ music_list_ts["Moe Era OST - Final Scene Soft"] = ts_muzzon + "menu_ost/zastavka/ts_soft.ogg"

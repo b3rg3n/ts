@@ -48,7 +48,7 @@ label main_menu:
             show ts_rain
             show zatemnenie_light
         elif True: #ДЕНЬ
-            play music bad_menu_ost fadein 5
+            play music ts_mf_e fadein 5
             scene black
             show ts_menu_move_anim_three
             show zatemnenie_light
@@ -63,14 +63,14 @@ label main_menu:
             show dust4
             show zatemnenie_light
         elif True: #ДЕНЬ
-            play music ts_finalded fadein 5
+            play music ts_tir fadein 5
             scene ts_menu_art_carter2_night
             show ts_rain
             show zatemnenie_light
 
     else: #МЕНЮШКА КАРТЕРА 1
         if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
-            play music ts_pd fadein 5
+            play music ts_bm fadein 5
             scene ts_menu_vid_night
             show zatemnenie_light
         elif True: #ДЕНЬ

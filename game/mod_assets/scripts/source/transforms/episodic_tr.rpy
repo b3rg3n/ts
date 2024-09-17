@@ -4,6 +4,14 @@
 
 init:
 
+    transform ts_bad_end_padenie_anim_blya1:
+        align(0.15, 0.5) zoom 2.0
+        ease 6 align (0.5, 0.5) zoom 1.0
+
+    transform ts_bad_end_padenie_anim_blya:
+        align(0.15, 0.1) zoom 2.0
+        ease 6 align (0.15, 0.5) zoom 2.0
+
     transform ts_verevka_vzyal:
         align (0.5, 0.5) zoom 1.0
         ease 1 align (0.5, 0.3) zoom 3.0

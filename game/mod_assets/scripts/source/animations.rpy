@@ -867,6 +867,35 @@ init:
             pause 4
             'ts_blinking'
 
+    image ts_bad_end_moni_dead_anim_sooqa:
+        contains:
+            ts_cg + "ts_mon_padenie_dead.webp"
+        contains:
+            parallel:
+                choice:
+                    ts_anim + "mb/aw_o_1.webp"
+                choice:
+                    ts_anim + "mb/aw_o_2.webp"
+                choice:
+                    ts_anim + "mb/aw_o_3.webp"
+                choice:
+                    ts_anim + "mb/aw_o_4.webp"
+            xanchor 0.5 yanchor 0.5 xpos 0.5 ypos 0.5
+            parallel:
+                parallel:
+                    choice:
+                        xzoom 1.0
+                    choice:
+                        xzoom -1.0
+                parallel:
+                    choice:
+                        yzoom 1.0
+                    choice:
+                        yzoom -1.0
+            alpha 0.5
+            pause 0.02
+            repeat
+
 ###АНИМАЦИЯ КОШМАРА МОНИКИ В КОНЦЕ 4 ГЛАВЫ 1 АКТА НАХ
     image vse_pizda_monike:
         ts_cg + "brg_kolhoz_blya/s1.png" with poplil_pacan1
@@ -938,9 +967,6 @@ init:
                 linear 15.0 xalign 1.0 yalign 0.4
             ts_images + "intro/menu/monikill1.webp"
             zoom 1.0 xalign 1.0 yalign 0.4 alpha 0.0
-
-            
-
             repeat
         contains:
             parallel:

@@ -41,6 +41,22 @@ init:
 
     image ts_knife_suicide = ts_anim + "ts_knife_suicide.webp"
 
+    image ts_mon_padenie_fon = ts_cg + "ts_mon_padenie_fon.webp"
+    image ts_mon_padenie_full = ts_cg + "ts_mon_padenie_full.webp"
+    image ts_mon_padenie_maloletka_static = ts_cg + "ts_mon_padenie_maloletka.webp"
+    image ts_wind_wnim = ts_cg + "ts_wind_anim.webp"
+    image ts_mon_padenie_dead = ts_cg + "ts_mon_padenie_dead.webp"
+
+    image ts_mon_padenie_maloletka:
+        default subpixel True 
+        parallel:
+            Null(1280.0, 720.0)
+            ts_cg + "ts_mon_padenie_maloletka.webp"
+        parallel:
+            ypos 0.6 rotate 0
+            linear 3.0 ypos 1.05 rotate -6
+            linear 3.0 ypos 1.5 rotate 6
+
     image yurec_pizdec1 = ts_cg + "yurec_pizdec1.webp"
     image yurec_pizdec2 = ts_cg + "yurec_pizdec2.webp"
     image yurec_pizdec3 = ts_cg + "yurec_pizdec3.webp"

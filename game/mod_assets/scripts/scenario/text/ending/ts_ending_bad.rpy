@@ -526,24 +526,93 @@ label ts_bad_ending_blya:
     pause 0.5
     stop sound2
     scene black
-#прихуярь тот же эффект, который ты на сцене с пьянкой делал
-#ну и тут будет цгшка. Моника падает с высоты с максимально расслабленным и похустическим выражением лица, с полуоткрытыми глазами, как будто она под травой
-#Волосы ебать естественно развеваются по ветру (ну доп эффекты ты ещё прихуяришь)
-#возможны даже мешки под глазами от того, что она по сути два дня без устали рыдает
+    pause 0.15
+
+    play sound ts_introshoot
+    scene ts_sky_fon
+    show ts_wind_wnim at ts_running_fast
+    show layer master at ts_padenie_s_krishi_suka
+    pause 2.5
+    stop sound
+
+    scene ts_mon_padenie_fon
+    show ts_mon_padenie_maloletka
+    show layer master at ts_bad_end_padenie_anim_blya
+    pause 6
+    scene ts_mon_padenie_fon:
+        blur 0
+        ease 1.5 blur 5.5
+        ease 1.5 blur 3
+        ease 1.5 blur 7.5
+        ease 1.5 blur 3
+        ease 1.5 blur 5.5
+        ease 1.5 blur 3
+        repeat
+    show ts_mon_padenie_maloletka_static:
+        xalign 0.5
+        yalign 0.5
+        zoom 1.0
+        parallel:
+            linear 1.0 zoom 1.03
+        parallel:
+            ease 1.0 xalign 0.475
+            ease 1.0 xalign 0.525
+            repeat
+        parallel:
+            ease 1.5 rotate 1.15 zoom 1.035
+            ease 1.5 rotate -1.3 zoom 1.025
+            repeat
+    show layer master at ts_bad_end_padenie_anim_blya1
+    pause 2
     show layer screens at ts_showscreens
     "Секунды, что я лечу вниз, кажутся часами. Но мне уже всё равно."
     "Литературный клуб снова соберётся вместе. Мы с папой тоже будем вместе..."
     "Да и с мамой мы рано или поздно встретимся..."
-#ОПЯТЬ КРОВЬ КИШКИ МЯСО ГОЛЫЕ БАБЫ СИСЬКИ И ВСЁ ОСТАЛЬНОЕ
-#НУ И ВТОРАЯ ЦГШКА, КАК МОНИКА ЛЕЖИТ В ЛУЖЕ КРОВИ С ПЕРЕЁБАННЫМ ВООБЩЕ БЛЯТЬ ВСЕМ, УЖЕ БЛЯ И ГЛАЗА ЗАТУХАЮТ, НО ОНА БЛЯ ВСЁ РАВНО ЛЕЖИТ ДОВОЛЬНАЯ, НУ КАК ЮРИ В ПЕРВОЙ ЦГШКЕ ВЫХОДНЫХ
+    window hide
+    scene ts_sky_fon
+    show ts_wind_wnim at ts_running_fast
+    show layer master at ts_padenie_s_krishi_suka
+    pause 3.5
+    stop music
+    scene black
+    play sound sfx_body_bump
+    show ts_altbloodanim
+    pause 2.0
+
+    scene ts_bad_end_moni_dead_anim_sooqa:
+        align(0.05, 0.8) zoom 3.0
+        ease 15 align(0.75, 0.8) zoom 3.0
+        ease 5 align(0.5, 0.5) zoom 1.0
+    with Fade(1.5, 2, 1.2)
+
+    show layer screens at ts_showscreens
+
     "Ведь реальность – это просто ещё один слой."
-    "Даром что я в новом слое не возвышаюсь над всем, а падаю. Прямо в бездну." #О, О, О, ЭТО ШТО, СЕМЬ ДЭ ЭЛ РЭФЭРЫНС??7? НУ ТИП ПОНЕЛ ДА, КОНЦИВКА НАЗЫВАЕТСЯ "В БЕЗДНУ", ПОСЛЕДНИЕ СЛОВА – ЭТО "ПРЯМО В БЕЗДНУ", НУ И ТАЙТЛ ТРЕК – ЭТО INTO THE ABYSS ("В БЕЗДНУ")
-    brg "Так как цгшек ещё нэмае, оставлю пока так, похуй."
-    brg "Будут цг – будет ебейшая режиссура в стиле интерстеллара, нах."
-    brg "Ну а пока – тестим бэд титры, ёпта."
+    "Даром что я в новом слое не возвышаюсь над всем, а падаю. Прямо в бездну."
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
+
+    scene black
+    with Fade(1.5, 2, 1.2)
+
+    pause 1
+
+    play sound psy_fast_3
+    scene ts_mon_padenie_dead
+    pause 0.05
+    scene ts_mon_padenie_full
+    pause 0.05
+    scene ts_mon_padenie_dead
+    pause 0.05
+    scene ts_mon_padenie_full
+    pause 0.05
+    scene ts_mon_padenie_dead
+    pause 0.05
+    scene ts_mon_padenie_full
+    pause 0.05
+    stop sound
+    scene black
 
     show layer screens
     window hide

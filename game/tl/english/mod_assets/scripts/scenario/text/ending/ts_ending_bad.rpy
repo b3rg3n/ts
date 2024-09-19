@@ -1242,24 +1242,6 @@ translate english ts_bad_ending_blya_f1fb633b:
     # "Даром что я в новом слое не возвышаюсь над всем, а падаю. Прямо в бездну."
     ""
 
-# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:519
-translate english ts_bad_ending_blya_26c0ce30:
-
-    # brg "Так как цгшек ещё нэмае, оставлю пока так, похуй."
-    brg ""
-
-# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:520
-translate english ts_bad_ending_blya_e9b8844e:
-
-    # brg "Будут цг – будет ебейшая режиссура в стиле интерстеллара, нах."
-    brg ""
-
-# game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:521
-translate english ts_bad_ending_blya_35f783f0:
-
-    # brg "Ну а пока – тестим бэд титры, ёпта."
-    brg ""
-
 # game/mod_assets/scripts/scenario/text/ending/ts_ending_bad.rpy:524
 translate english ts_bad_ending_blya_c414ec17_13:
 

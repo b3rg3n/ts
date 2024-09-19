@@ -430,3 +430,19 @@ translate english strings:
     old "Without You"
     new "Without You"
 
+# TODO: Translation updated at 2024-09-19 13:38
+
+translate english strings:
+
+    # game/mod_assets/scripts/source/muzzon_list.rpy:760
+    old "Better Memories"
+    new "Better Memories"
+
+    # game/mod_assets/scripts/source/muzzon_list.rpy:767
+    old "Ethereal"
+    new "Ethereal"
+
+    # game/mod_assets/scripts/source/muzzon_list.rpy:774
+    old "Tears In Rain"
+    new "Tears In Rain"
+

@@ -5,6 +5,15 @@ label testing_label_blya:
         ts_rpc_development()
 
     scene black
+    window hide
+    pause 1
+    $ Chapter("True Story")
+    $ Chapter("True Story")
+
+    $ Chapter("Be available on october")
+    $ Chapter("Be available on october")
+
+    pause 1.0
 
     show layer screens at ts_showscreens
 

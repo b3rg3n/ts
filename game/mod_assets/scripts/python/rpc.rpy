@@ -22,7 +22,10 @@ init python:
     def ts_rpc_splash():
         if persistent.rpc_mode:
             try:
-                rpc.update(state="В игре",details="Просмотр заставки",large_image="logogovna",start=time.time())
+                if _preferences.language == "english":
+                    rpc.update(state="В игре",details="Просмотр заставки",large_image="logogovna",start=time.time())
+                else:
+                    rpc.update(state="В игре",details="Просмотр заставки",large_image="logogovna",start=time.time())
             except AssertionError:
                 pass
         else:

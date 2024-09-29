@@ -883,12 +883,13 @@ label ts_scenario_12:
 
     $ persistent.ingame_pizda = False
 
-    if renpy.android:
-        scene ts_club_rain_vedro
-        show ts_rain
-    else:
-        scene ts_club_rain_shader
-    show ts_club_rain_ovr
+    #if renpy.android:
+    #    scene ts_club_rain_vedro
+    #    show ts_rain
+    #else:
+    #    scene ts_club_rain_shader
+    #show ts_club_rain_ovr
+    scene ts_club
     show sayori 2k at i32
     show natsuki 1z at i33
 

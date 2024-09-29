@@ -767,7 +767,7 @@ label ts_scenario_12:
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    $ persistent.sprite_time = "cloudly"
+    #$ persistent.sprite_time = "cloudly"
     play ambience rain_int fadein 3
     play sound chasiki fadein 1
     if renpy.android:

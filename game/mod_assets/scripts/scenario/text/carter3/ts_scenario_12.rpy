@@ -768,14 +768,15 @@ label ts_scenario_12:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     #$ persistent.sprite_time = "cloudly"
-    play ambience rain_int fadein 3
-    play sound chasiki fadein 1
-    if renpy.android:
-        scene ts_club_rain_vedro
-        show ts_rain
-    else:
-        scene ts_club_rain_shader
-    show ts_club_rain_ovr
+    #play ambience rain_int fadein 3
+    #play sound chasiki fadein 1
+    #if renpy.android:
+    #    scene ts_club_rain_vedro
+    #    show ts_rain
+    #else:
+    #    scene ts_club_rain_shader
+    #show ts_club_rain_ovr
+    scene ts_club
     show yuri 1g at t31
     show sayori 2y at t32
     show natsuki 1t at t33

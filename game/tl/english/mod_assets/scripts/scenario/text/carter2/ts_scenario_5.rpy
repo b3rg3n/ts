@@ -2756,7 +2756,7 @@ translate english ts_scenario_5_ce5228c5:
 translate english ts_scenario_5_4bfe2a40:
 
     # "Может, это всё последствия того самого похмелья?"
-    "Maybe these are all consequences of {b}that{b/} hangover?"
+    "Maybe these are all consequences of {b}that{/b} hangover?"
 
 # game/mod_assets/scripts/scenario/text/carter2/ts_scenario_5.rpy:1500
 translate english ts_scenario_5_f801cee7:

@@ -592,7 +592,7 @@ translate english ts_scenario_9_2ad68cba:
 translate english ts_scenario_9_450c9f39:
 
     # "Нет, это всё неправильно... Я просто {i}слишком{/i} перепила..."
-    "No, it's all wrong... I just got {I}too{/i} drunk.."
+    "No, it's all wrong... I just got {i}too{/i} drunk.."
 
 # game/mod_assets/scripts/scenario/text/carter3/ts_scenario_9.rpy:423
 translate english ts_scenario_9_505d6155:

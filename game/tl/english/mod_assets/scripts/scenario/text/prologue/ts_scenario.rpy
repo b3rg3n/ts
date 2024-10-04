@@ -210,7 +210,7 @@ translate english ts_scenario_0_76b2fe88_2:
 translate english ts_scenario_0_915c2535:
 
     # nvlbazar "{font=[prologue_font]}Мы постоянно ходили друг к другу в гости, где постоянно играли друг с другом."
-    nvlbazar "{font=[prologue_font]}We constantly visited each other where we constantly played each other."
+    nvlbazar "{font=[prologue_font]}We constantly visited each other where we constantly played with each other."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:159
 translate english ts_scenario_0_642cd9b5:
@@ -224,7 +224,7 @@ translate english ts_scenario_0_aed7af66:
     # nvl clear
     # nvlbazar "{font=[prologue_font]}У неё была ещё старшая сестра, однако сестра эта была от другого брака, да и была она намного старше нас с Мирой."
     nvl clear
-    nvlbazar "{font=[prologue_font]}Mira also had an older sister, but she was born in a different marriage and was much older than us."
+    nvlbazar "{font=[prologue_font]}Mira also had an older sister, but she was born in a different marriage and is much older than us."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:164
 translate english ts_scenario_0_59b634b1:
@@ -496,7 +496,7 @@ translate english ts_scenario_0_7e4c33de:
 translate english ts_scenario_0_6cc46a96:
 
     # nvlbazar "{font=[prologue_font]}Мысли о том, что у меня ничего не получится."
-    nvlbazar "{font=[prologue_font]}Thoughts about that I won't succeed in anything."
+    nvlbazar "{font=[prologue_font]}Thoughts about that I won't achieve anything."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:257
 translate english ts_scenario_0_6c0ea620:
@@ -664,7 +664,7 @@ translate english ts_scenario_0_4e7b5962:
 translate english ts_scenario_0_5c642d7d:
 
     # nvlbazar "{font=[prologue_font]}Так что, даже несмотря на то, что читали они мне их нечасто, я уже чуть ли не наизусть знала, кто и что конкретно мне будет говорить."
-    nvlbazar "{font=[prologue_font]}So I, despite the fact that it actually is a rare occurrence, knew who says what exactly by heart already."
+    nvlbazar "{font=[prologue_font]}So I, despite the fact that it actually is a rare occurrence, knew exactly who says what by heart already."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:313
 translate english ts_scenario_0_d30f613b:
@@ -678,13 +678,13 @@ translate english ts_scenario_0_262d07ab:
     # nvl clear
     # nvlbazar "{font=[prologue_font]}Где-то класса с седьмого меня таскали по всяким разным клубам, потому что учителя думали, что такая хорошая и прилежная девочка обязательно станет отличным дополнением к клубу."
     nvl clear
-    nvlbazar "{font=[prologue_font]}Ever since 7th grade or so I was dragged to all kinds of clubs because teachers thought that such a good and diligent student will obviously be a perfect addition for the club."
+    nvlbazar "{font=[prologue_font]}Ever since 7th grade or so I was dragged to all kinds of clubs because teachers thought that such a good and diligent girl will obviously be a perfect addition for the club."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:320
 translate english ts_scenario_0_938ae41a:
 
     # nvlbazar "{font=[prologue_font]}На первых порах, когда я ещё была недостаточно взрослой и самостоятельной, я просто покорно слушалась."
-    nvlbazar "{font=[prologue_font]}At first, when I wasn't old and self-reliant yet, just obeyed."
+    nvlbazar "{font=[prologue_font]}At first, when I wasn't old and self-reliant yet, I just obeyed."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:321
 translate english ts_scenario_0_741973ab:
@@ -732,13 +732,13 @@ translate english ts_scenario_0_3dcb192c:
 translate english ts_scenario_0_37453593:
 
     # nvlbazar "{font=[prologue_font]}Однако я всё равно довольно успешно справлялась. Я даже была вице-президентом клуба."
-    nvlbazar "{font=[prologue_font]}I still was rather successful. I even was Club's Vice-President"
+    nvlbazar "{font=[prologue_font]}I still was rather successful. I even was Club's Vice-President."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:343
 translate english ts_scenario_0_0237c5ae:
 
     # nvlbazar "{font=[prologue_font]}Но мне это просто очень быстро наскучило, поэтому к концу года я вышла из клуба с твёрдым желанием найти себе клуб получше."
-    nvlbazar "{font=[prologue_font]}But it all quickly bored me, so at the end of the year I quit the club with a strong desire to find a better one."
+    nvlbazar "{font=[prologue_font]}But it all quickly bored me, so by the end of the year I quit the club with a strong desire to find a better one."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:346
 translate english ts_scenario_0_e1a00ff4_7:
@@ -768,7 +768,7 @@ translate english ts_scenario_0_7f698b26:
 translate english ts_scenario_0_113fa29a:
 
     # nvlbazar "{font=[prologue_font]}Да, школьное пианино было далеко не первого качества, и играть я, по сути, не умела..."
-    nvlbazar "{font=[prologue_font]}Yes, school piano was definitely far from first class, and I basically couldn't play piano..."
+    nvlbazar "{font=[prologue_font]}Yes, school piano was definitely far from first class, and I basically couldn't play it at all..."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:365
 translate english ts_scenario_0_e1a00ff4_8:
@@ -908,7 +908,7 @@ translate english ts_scenario_0_283d3933:
 translate english ts_scenario_0_02eaadec:
 
     # nvlbazar "{font=[prologue_font]}А я как раз неплохо играла в волейбол, поэтому и вызвалась добровольцем."
-    nvlbazar "{font=[prologue_font]}Coincidentally, I, uh, dabbled volleyball, so I volunteered."
+    nvlbazar "{font=[prologue_font]}Coincidentally, I dabbled in volleyball, so I volunteered."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:431
 translate english ts_scenario_0_aee7fd73:
@@ -934,7 +934,7 @@ translate english ts_scenario_0_1a7e623a:
 translate english ts_scenario_0_572c1064:
 
     # nvlbazar "{font=[prologue_font]}Опять же, звёзд с неба я не хватала, я так ни разу ничего и не выиграла, но это был весёлый и интересный опыт."
-    nvlbazar "{font=[prologue_font]}Again, I didn't reach for the stars, and I never won anything, but it was still a fun and interesting experience"
+    nvlbazar "{font=[prologue_font]}Again, I didn't reach for the stars, and I never won anything, but it was still a fun and interesting experience."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:438
 translate english ts_scenario_0_6606f2b0:
@@ -1106,7 +1106,7 @@ translate english ts_scenario_0_b7384295:
 translate english ts_scenario_0_aca63bab:
 
     # nvlbazar "{font=[prologue_font]}Учитывая мою общую эрудицию, начитанность, и вышеупомянутый статус гордости школы, я быстро поднялась до главенствующих позиций, вплоть до президента клуба."
-    nvlbazar "{font=[prologue_font]}Considering my overall erudition and aforementioned school pride status, I quickly rose to the head positions, up to Club President."
+    nvlbazar "{font=[prologue_font]}Considering my overall erudition and aforementioned school pride status, I quickly rose to the head positions, up to the Club President."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:493
 translate english ts_scenario_0_054c1960:
@@ -1162,7 +1162,7 @@ translate english ts_scenario_0_76b2fe88_17:
 translate english ts_scenario_0_23622506:
 
     # nvlbazar "{font=[prologue_font]}Пришло время выпускного класса. И я, побывав уже во многих клубах, примерно понимаю, что я хочу и чего я не хочу видеть в своём клубе."
-    nvlbazar "{font=[prologue_font]}It's finally time for grade year. Having attended so many clubs, I more or less understand what I want and don't want to see in my club."
+    nvlbazar "{font=[prologue_font]}It's finally time for final year. Having attended so many clubs, I more or less understand what I want and don't want to see in my club."
 
 # game/mod_assets/scripts/scenario/text/prologue/ts_scenario.rpy:520
 translate english ts_scenario_0_722b311e:

@@ -22,7 +22,7 @@ translate english ts_scenario_3_d745834c:
 translate english ts_scenario_3_0fb90a78:
 
     # "Но в пятницу меня напугала совсем не её немногословность."
-    "But it wasn't her terse words that scared me this Friday."
+    "But it wasn't her terse words that scared me last Friday."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:54
 translate english ts_scenario_3_1dbafa23:
@@ -40,7 +40,7 @@ translate english ts_scenario_3_56830014:
 translate english ts_scenario_3_6a2b3be8:
 
     # "Юри тогда сказала, что это потому что она чувствует себя ничтожеством и внутренний голос твердил ей перейти от слов к делу."
-    "Yuri then said that it was because she felt insignificant, and an inner voice told her to move from words to deeds."
+    "Yuri then said that it was because she felt inferior, and an inner voice told her to move from words to deeds."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:69
 translate english ts_scenario_3_03720338:
@@ -124,7 +124,7 @@ translate english ts_scenario_3_c414ec17_1:
 translate english ts_scenario_3_ee96f943:
 
     # m "М-м-м..."
-    m "M-m-m-m..."
+    m "Mmm..."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_3.rpy:122
 translate english ts_scenario_3_455ba172:

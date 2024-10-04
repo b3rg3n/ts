@@ -635,7 +635,7 @@ label ts_scenario_0:
 
     with ed_night_dis
     if _preferences.language == "english":
-        $ Chapter("TEAM ANARCHISTS")
+        $ Chapter("TEAM ANARCHY")
         $ Chapter("PRESENTS")
     else:
         $ Chapter("TEAM АНАРХИСТЫ")

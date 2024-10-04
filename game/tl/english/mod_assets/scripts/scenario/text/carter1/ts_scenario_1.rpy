@@ -82,7 +82,7 @@ translate english ts_scenario_1_d348c44f:
 translate english ts_scenario_1_b06fd1dd:
 
     # "А сегодня я уже в выпускном классе, тщетно пытаюсь найти хоть кого-то в качестве члена Литературного клуба."
-    "And today I'm arleady in graduating class, vainly trying to recruit at least someone as a Literature Club member."
+    "And today I'm arleady in my final year, vainly trying to recruit at least someone as a Literature Club member."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:70
 translate english ts_scenario_1_b436c339:
@@ -208,13 +208,13 @@ translate english ts_scenario_1_0fcc93ee:
 translate english ts_scenario_1_f7e052ae:
 
     # "Я и так, блять, знаю, что время идёт, не надо мне лишний раз об этом напоминать."
-    "I already fucking know that time goes on, I don't need to remind me about this every fucking time."
+    "I already fucking know that time goes on, no need to remind me about this every fucking time."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:122
 translate english ts_scenario_1_639e54c3:
 
     # "Я и так знаю, что время идёт, не надо мне лишний раз об этом напоминать."
-    "I already know that time goes on, I don't need to remind me about this every time."
+    "I already know that time goes on, no need to remind me about this every time."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:123
 translate english ts_scenario_1_46d4bbfa:
@@ -244,7 +244,7 @@ translate english ts_scenario_1_2fe0384a:
 translate english ts_scenario_1_2a4f5341:
 
     # "«Литература – это же так весело и интересно! Можно вместе читать книги, можно писать стихи, можно...»"
-    "'Literature is so fun and exciting! We can read books together, we can writing poems, we can...'"
+    "'Literature is so fun and exciting! We can read books together, we can write poems, we can...'"
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:134
 translate english ts_scenario_1_c414ec17_5:
@@ -268,7 +268,7 @@ translate english ts_scenario_1_c414ec17_6:
 translate english ts_scenario_1_23aecfb4:
 
     # "Настал очередной день моей шизофрении, которую я называю Литературным клубом."
-    "Here comes another day of my schizophrenia that I call Literature Club."
+    "Here comes another day of my schizophrenia that I call the Literature Club."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:150
 translate english ts_scenario_1_c8604932:
@@ -310,7 +310,7 @@ translate english ts_scenario_1_a9db4853:
 translate english ts_scenario_1_8eb09a3e:
 
     # m "А!.. Э-э-э... Да..."
-    m "Ah!.. Uhhh... Yes..."
+    m "Ah..! Uhhh... Yes..."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:177
 translate english ts_scenario_1_362e972d:
@@ -322,7 +322,7 @@ translate english ts_scenario_1_362e972d:
 translate english ts_scenario_1_b4756cd5:
 
     # s "Я тут увидела листовку с приглашением всех желающих в Литературный клуб."
-    s "I saw a Literature Club invitation flyer."
+    s "I saw the Literature Club invitation flyer."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:185
 translate english ts_scenario_1_0236c75f:
@@ -466,7 +466,7 @@ translate english ts_scenario_1_5497e795:
 translate english ts_scenario_1_6557b587:
 
     # m "Ну-у-у... Листовки расклеивала... просила лично присоединиться к клубу... и всё такое..."
-    m "Well... I put up leaflets... asked personally for joinng the club... all that stuff..."
+    m "Well... I put up leaflets... asked to join the club in person... all that stuff..."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:261
 translate english ts_scenario_1_2b0eebe9:
@@ -526,7 +526,7 @@ translate english ts_scenario_1_241c342d:
 translate english ts_scenario_1_30c47508:
 
     # "Хотя, скажу честно – я не знаю, как это отличается от тех же листовок."
-    "Although, I'll be honest - I don't know what the difference between this and leaflets."
+    "Although, I'll be honest - I don't know what's the difference between this and leaflets."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:286
 translate english ts_scenario_1_a111376b:
@@ -748,7 +748,7 @@ translate english ts_scenario_1_92bd3fe9:
 translate english ts_scenario_1_4c5ab8d1:
 
     # "Но если я уже почти всю жизнь так живу, и научилась справляться, то насчёт Сайори я не знаю."
-    "But if I lived like this almost my whole life and learned to resist, then I can't say the same about Sayori."
+    "But if I lived like this almost my whole life and learned to resist, I can't say the same about Sayori."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:418
 translate english ts_scenario_1_867f77cf:
@@ -766,7 +766,7 @@ translate english ts_scenario_1_318721bd:
 translate english ts_scenario_1_2b29b8f1:
 
     # "Я не большой знаток психических заболеваний, но, судя по всему, у неё маниакально-депрессивное расстройство."
-    "I'm not much of an expert on mental illness, but apparently she has manic-depressive disorder."
+    "I'm not much of an expert on mental illnesses, but apparently she has manic-depressive disorder."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:422
 translate english ts_scenario_1_0ef7ce75:
@@ -808,7 +808,7 @@ translate english ts_scenario_1_83940f3d:
 translate english ts_scenario_1_0dd01a14:
 
     # m "Что-то не так? Только не ври мне, что всё нормально, потому что я же явно вижу, что что-то не так!"
-    m "Something wrong? And don't tell me that nothing's wrong because I clearly see otherwise!"
+    m "Is something wrong? And don't tell me that nothing's wrong because I clearly see otherwise!"
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:437
 translate english ts_scenario_1_a523db38:
@@ -826,7 +826,7 @@ translate english ts_scenario_1_12823b88:
 translate english ts_scenario_1_eb0d434d:
 
     # s "Да."
-    s "Yes"
+    s "Yes."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:447
 translate english ts_scenario_1_b1081033:
@@ -1000,7 +1000,7 @@ translate english ts_scenario_1_191f8331:
 translate english ts_scenario_1_e5aa3771:
 
     # s "{size=-6}Что тебе непонятно в словосочетании «серые тучки»?{/size}"
-        s "{size=-6}What do you not understand about word 'rainclouds'?{/size}"
+    s "{size=-6}What do you not understand about word 'rainclouds'?{/size}"
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:525
 translate english ts_scenario_1_18b3ba8c:
@@ -1042,7 +1042,7 @@ translate english ts_scenario_1_720b3dbe:
 translate english ts_scenario_1_2e5cf0e6:
 
     # s "Если можно просто умереть."
-    s "If I can just die."
+    s "When I can just die."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:544
 translate english ts_scenario_1_f1c2b61b:
@@ -1054,7 +1054,7 @@ translate english ts_scenario_1_f1c2b61b:
 translate english ts_scenario_1_33c4fa45:
 
     # s "А затем я подумала, что раз уж я такая бесполезная, и если мне в любом случае будет плохо, то нужно, чтобы хотя бы другим было хорошо."
-    s "And then I thought that since I am so useless, and if I feel bad in any case, then I need others to feel good at least."
+    s "And then I thought that since I am so useless, and since I feel bad in any case, then I need others to feel good at least."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:552
 translate english ts_scenario_1_a6f4a47e:
@@ -1102,7 +1102,7 @@ translate english ts_scenario_1_c414ec17_13:
 translate english ts_scenario_1_9d062cd3:
 
     # m "Я изначально хотела, чтобы Литературный клуб был местом, где не будет слова «неправильно»."
-    m "I initially wanted the Literature Club to be a place in which there won't be a word 'incorrect'."
+    m "I initially wanted the Literature Club to be a place in which there wouldn't be a word 'incorrect'."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:598
 translate english ts_scenario_1_3bf0958e:
@@ -1174,7 +1174,7 @@ translate english ts_scenario_1_fa18151b:
 translate english ts_scenario_1_0a3887a8:
 
     # "И хотя в целом я с этим согласна, но приписывать себе лишние психические заболевания, которых может и не быть – это как минимум некрасиво."
-    "And although generally I agree with this, attributing etra mental illnesses to oneself that may not exist is, at the very least, amiss."
+    "And although generally I agree with this, attributing extra mental illnesses to oneself that may not exist is, at the very least, amiss."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:616
 translate english ts_scenario_1_ee583145:
@@ -1282,7 +1282,7 @@ translate english ts_scenario_1_677efd19:
 translate english ts_scenario_1_973489c4:
 
     # "Хотя, после сегодняшнего, я уже не знаю, насколько эта улыбка, да и сама она в целом, искренняя..."
-    "Although, after today, I no longer know how sincere this smile is, and she in general is sincere..."
+    "Although, after today, I no longer know how sincere this smile, and she herself in general, is..."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:676
 translate english ts_scenario_1_db1a91d4:
@@ -1444,7 +1444,7 @@ translate english ts_scenario_1_543c0647:
 translate english ts_scenario_1_7704c676:
 
     # extend " Нашла!.." with vpunch
-    extend " Found!.." with vpunch
+    extend " Found..!" with vpunch
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:743
 translate english ts_scenario_1_81aa72bb:
@@ -1456,7 +1456,7 @@ translate english ts_scenario_1_81aa72bb:
 translate english ts_scenario_1_5a8d497d:
 
     # m "Ну, во-первых, здравствуй, Сайори..."
-    m "Well, first of all, hi Sayori..."
+    m "Well, first of all, hello, Sayori..."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:752
 translate english ts_scenario_1_cfd02ee4:
@@ -1474,7 +1474,7 @@ translate english ts_scenario_1_bb48f20d:
 translate english ts_scenario_1_a13cb45b:
 
     # s "Что?.."
-    s "What?.."
+    s "What..?"
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:764
 translate english ts_scenario_1_751ee339:
@@ -1768,7 +1768,7 @@ translate english ts_scenario_1_fd078504:
 translate english ts_scenario_1_891f5357:
 
     # m "Ты же знаешь..."
-    m "You know that..."
+    m "You know that I'm..."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:928
 translate english ts_scenario_1_807e8895:
@@ -1834,13 +1834,13 @@ translate english ts_scenario_1_c3b643c9:
 translate english ts_scenario_1_1c8f1e5e:
 
     # "В отместку на это на первое апреля этого года мои родители сообщили мне, что в семье ожидается пополнение."
-    "In retaliation for this, on this year's April Fools my parents informed me that there would be an addition to our family."
+    "In retaliation for this, on this year's April Fools my parents informed me that there would be an {i}addition{/i} to our family."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:946
 translate english ts_scenario_1_6f10bdea:
 
     # "Я уже ждала, как где-то в декабре-январе мне придётся ухаживать за младшим братиком или сестричкой, пока родители будут в очередной командировке..."
-    "I was already expecting that somewhere in December-January I would have to take care of my younger brother or sister while my parents were on their next business trip..."
+    "I was already expecting that sometime in December-January I would have to take care of my younger brother or sister while my parents are on their business trip once again..."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:947
 translate english ts_scenario_1_13979787:
@@ -1882,7 +1882,7 @@ translate english ts_scenario_1_4d11128a:
 translate english ts_scenario_1_9c665f47:
 
     # ts_ft "Мама сегодня снова уехала в командировку, вернётся не раньше твоего фестиваля."
-    ts_ft "Mom went on a business trip again today, and will return not earlier your festival."
+    ts_ft "Mom went on a business trip again today, and will return not earlier than your festival."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:964
 translate english ts_scenario_1_8592c600:
@@ -1894,7 +1894,7 @@ translate english ts_scenario_1_8592c600:
 translate english ts_scenario_1_1338cc4c:
 
     # "Как вдруг папа говорит."
-    "Suddenly dad speaks."
+    "As suddenly dad speaks."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:969
 translate english ts_scenario_1_685d217d:
@@ -2086,13 +2086,13 @@ translate english ts_scenario_1_3d54051a:
 translate english ts_scenario_1_a035f3ea:
 
     # "И он даже хорошо старался."
-    "And he even tried well."
+    "And he even tried his best."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1042
 translate english ts_scenario_1_681184c5:
 
     # "Для мужчины, который попросту не до конца знает обо {b}всех{/b} тонкостях, он был довольно хорош."
-    "For a man who simply doesn't fully know {b}all{/b} the intricacies, he was pretty good."
+    "For a man who simply doesn't fully know about {b}all{/b} the intricacies, he was pretty good."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1043
 translate english ts_scenario_1_f163eda6:
@@ -2134,7 +2134,7 @@ translate english ts_scenario_1_4602f51d:
 translate english ts_scenario_1_e797d1ef:
 
     # "Как-то раз, классе в девятом, я довольно сильно сломала ногу."
-    "One day, in ninth grade or, I broke my leg quite badly."
+    "One day, in ninth grade or so, I broke my leg quite badly."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1054
 translate english ts_scenario_1_1e0fc9c1:
@@ -2314,7 +2314,7 @@ translate english ts_scenario_1_45c6a162:
 translate english ts_scenario_1_99290ef8:
 
     # "Я уже давно не брала никакую книжку в руки, но раз я президент {i}Литературного{/i} клуба, то совершенно логично, что я буду читать {i}литературу{/i}."
-    "I haven’t picked up a book for a long time, but since I’m the president of the {i}Literature{/i} Club, it’s completely logical that I’ll read {i}literature{/i}."
+    "I haven’t picked up a book for a long time, but since I’m the president of the {i}Literature{/i} Club, it’s only logical that I’ll read {i}literature{/i}."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_1.rpy:1114
 translate english ts_scenario_1_84191696:

@@ -313,7 +313,7 @@ screen chp_text_20:
 
 screen chp_text_21:
     if _preferences.language == "english":
-        text "{size=+15}{font=[ts_nvl_font2]}Looking back...\nMaybe I did\nhave to think for a bit...\nNot at that moment though.{/font}{/size}" yalign 0.5 xalign 0.5
+        text "{size=+15}{font=[ts_nvl_font2]}Looking back...\nMaybe I did have to think for a bit...\nNot at that moment though.{/font}{/size}" yalign 0.5 xalign 0.5
     else:
         text "{size=+15}{font=[ts_nvl_font2]}Оглядываясь назад...\nНаверное, подумать\nвсё-таки стоило...\nНо не в тот момент.{/font}{/size}" yalign 0.5 xalign 0.5
 
@@ -325,7 +325,7 @@ screen chp_text_22:
 
 screen chp_text_23:
     if _preferences.language == "english":
-        text "{size=+15}{font=[ts_nvl_font2]}But where there's a high point, there has to be a low one as well...{/font}{/size}" yalign 0.5 xalign 0.5
+        text "{size=+15}{font=[ts_nvl_font2]}But where there's a high point,\nthere has to be a low one as well...{/font}{/size}" yalign 0.5 xalign 0.5
     else:
         text "{size=+15}{font=[ts_nvl_font2]}Но там, где есть белая полоса, обязательно будет и чёрная...{/font}{/size}" yalign 0.5 xalign 0.5
 
@@ -343,7 +343,7 @@ screen chp_text_25:
 
 screen chp_text_26:
     if _preferences.language == "english":
-        text "{size=+15}{font=[ts_nvl_font2]}Even though, as it turned out, that sincerity\nwas not so sincere...{/font}{/size}" yalign 0.5 xalign 0.5
+        text "{size=+15}{font=[ts_nvl_font2]}Even though, as it turned out,\nthat sincerity was not so sincere...{/font}{/size}" yalign 0.5 xalign 0.5
     else:
         text "{size=+15}{font=[ts_nvl_font2]}Пусть, как оказалось, эта искренность\nне была столь уж и искренней...{/font}{/size}" yalign 0.5 xalign 0.5
 

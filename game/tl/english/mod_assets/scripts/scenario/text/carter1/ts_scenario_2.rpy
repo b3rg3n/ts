@@ -262,7 +262,7 @@ translate english ts_scenario_2_28e209d9:
 translate english ts_scenario_2_6afc84e9:
 
     # "«Иначе как же тебя в университет возьмут, если ты такая несамостоятельная?»"
-    "'Otherwise, how will they accept you into university if you're so dependent on others?'"
+    "'Otherwise, how will they accept you into university if you're so dependant on others?'"
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:148
 translate english ts_scenario_2_46327d5a:
@@ -310,7 +310,7 @@ translate english ts_scenario_2_673ba08e:
 translate english ts_scenario_2_e8d5d4bd:
 
     # "Я не говорю папе то, что сказала мне Сайори."
-    "I'm not telling father what Sayori told me."
+    "I'm not telling dad what Sayori told me."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:169
 translate english ts_scenario_2_379d06ee:
@@ -430,7 +430,7 @@ translate english ts_scenario_2_22cbe60b:
 translate english ts_scenario_2_4ba21aba:
 
     # "И вот эта парочка тянется настолько ме-е-едленно, что проще убиться, чем дотянуть до конца урока."
-    "And these classes drag for so-o-o long it's easier to kill myself rather than make it until the end."
+    "And these classes drag for soooooo long it's easier to kill myself rather than make it until the end."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:243
 translate english ts_scenario_2_3b056f77:
@@ -496,7 +496,7 @@ translate english ts_scenario_2_1d44694c:
 translate english ts_scenario_2_7cae1465:
 
     # extend " Юри!.."
-    extend " Yuri!.."
+    extend " Yuri..!"
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:286
 translate english ts_scenario_2_8ede1db3:
@@ -862,7 +862,7 @@ translate english ts_scenario_2_531fc1d5:
 translate english ts_scenario_2_a867711c:
 
     # "Но я рада, что она всё-таки это сделала. Как минимум, из-за того, что теперь у нас будет ещё один участник."
-    "But I'm glad she did it in the end. At least because now we'll have another member."
+    "But I'm glad she did it in the end. At least because now we'd have another member."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:474
 translate english ts_scenario_2_98065a26:
@@ -1126,7 +1126,7 @@ translate english ts_scenario_2_a70b51b6:
 translate english ts_scenario_2_300ff3f8:
 
     # y 2k "С-сейчас я перечитываю «Маленького Принца» за авторством..."
-    y 2k "N-now I'm rereading 'The Little Prince' which was written by..."
+    y 2k "N-now I'm rereading 'Le Petit Prince' which was written by..."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:566
 translate english ts_scenario_2_c624f321:
@@ -1234,7 +1234,7 @@ translate english ts_scenario_2_19ba135a:
 translate english ts_scenario_2_6672e79e:
 
     # "За всё время, что Юри пробыла в клубе, не по теме книг она сказала всего несколько предложений."
-    "In all the time Yuri was at the Club, she said only a few sentences about topics aside from books."
+    "In all the time Yuri was at the club, she said only a few sentences about topics aside from books."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:629
 translate english ts_scenario_2_1ea2411c:
@@ -1252,7 +1252,7 @@ translate english ts_scenario_2_f8881074:
 translate english ts_scenario_2_ab6ca220:
 
     # "Но как только дело доходит до реальных взаимоотношений с реальными людьми, она теряется, заикается, и единственное, чего ей хочется – это быть не здесь."
-    "But as soon as it comes to real relationships with real people, she gets lost, stutters, and the only thing she wants to do is not be here."
+    "But as soon as it comes to real relationships with real people, she gets lost, stutters, and the only thing she wants to do is to be not here."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:634
 translate english ts_scenario_2_c414ec17_18:
@@ -1306,7 +1306,7 @@ translate english ts_scenario_2_ef7521f4:
 translate english ts_scenario_2_6a701504:
 
     # s "Ура-а-а!"
-    s "Hooray!"
+    s "Yay!"
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:666
 translate english ts_scenario_2_7e0d3f3e:
@@ -1444,7 +1444,7 @@ translate english ts_scenario_2_a20cefa7_3:
 translate english ts_scenario_2_1208f859:
 
     # "Оказалось, что может."
-    "Turned out they very much could."
+    "Turned out a lot of bad things could."
 
 # game/mod_assets/scripts/scenario/text/carter1/ts_scenario_2.rpy:726
 translate english ts_scenario_2_c414ec17_21:

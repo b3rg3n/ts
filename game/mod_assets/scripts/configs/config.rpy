@@ -7,7 +7,7 @@ python early:
 
 define config.developer = True # РЕЖИМ РАЗРАБОТЧИКА БЕЗ СДК
 define config.version = "1.1"
-define ts_version = "04.10.2024"
+define ts_version = "10.10.2024"
 
 define config.default_textshader = "zoom"
 

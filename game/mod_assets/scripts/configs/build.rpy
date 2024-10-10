@@ -15,7 +15,6 @@ init python:
     build.classify('**.7z', None)
     build.classify('game/mod_assets/scripts/.vscode/**', None)
     build.classify('game/cache/**', None)
-    build.classify('game/tl/**', None)
     build.classify('game/renpy-ActionEditor3-master/**', None)
 
     build.archive("ts_engine", "all")

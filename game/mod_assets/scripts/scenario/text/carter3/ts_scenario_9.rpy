@@ -1,6 +1,6 @@
 label ts_scenario_9:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter9()
@@ -32,7 +32,7 @@ label ts_scenario_9:
             show screen dialog("truestory.exe\n\nIf you suffer from epilepsy, it is highly recommended to turn off the mod right now.", ok_action=Return())
         else:
             show screen dialog("truestory.exe\n\nЕсли вы страдаете от эпилепсии, настоятельно рекомендуется завершить прохождение мода.", ok_action=Return())
-    $ renpy.block_rollback()
+    $ TS.b()
     pause
     hide screen dialog
     play sound winerrorsound
@@ -50,7 +50,7 @@ label ts_scenario_9:
     pause
     hide screen dialog
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     play sound chp
     if _preferences.language == "english":
@@ -119,7 +119,7 @@ label ts_scenario_9:
 
     $ gtextsuka = glitchtext(35)
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     play sound slender
     $ persistent.ingame_pizda = True
@@ -139,7 +139,7 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    show layer screens
+    $ TS.s()
 
     python:
         _preferences.volumes['music'] = .65
@@ -149,7 +149,7 @@ label ts_scenario_9:
     show sayori 2pc at f11
     s "Говорю же, сегодня{w=0.4}{nw}"
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     python:
         _preferences.volumes['music'] = .0
@@ -172,7 +172,7 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    show layer screens
+    $ TS.s()
 
     python:
         _preferences.volumes['music'] = .65
@@ -203,7 +203,7 @@ label ts_scenario_9:
 
     play sound2 ts_glitch_music9
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.ingame_pizda = True
     play sound crack
@@ -212,14 +212,14 @@ label ts_scenario_9:
         align(0.15, 0.35)
     show ts_sayori_zalagala_blyadina at t32
     show ts_natsuki_zalagala_blyadina at t33
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
 
     $ gtextsuka = glitchtext(8)
     $ gtextsuka1 = glitchtext(15)
     y "Я сказала [gtextsuka] сидеть на [gtextsuka1]!"
     y "[gtextsuka] доведёт тебя до [gtextsuka1]."
 
-    show layer screens
+    $ TS.s()
 
     stop sound2
     python:
@@ -253,7 +253,7 @@ label ts_scenario_9:
     "В попытке хоть как-то отвлечься и завязать непринуждённую беседу, я снова начинаю с той же фразы."
     m "О, а я этот район знаю! Это же{w=1.5}{nw}"
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     python:
         _preferences.volumes['sfx'] = 1.0
@@ -279,7 +279,7 @@ label ts_scenario_9:
 
     stop sound2
 
-    show layer screens
+    $ TS.s()
 
     $ persistent.ingame_pizda = False
 
@@ -383,7 +383,7 @@ label ts_scenario_9:
     with wipeleft_scene
     $ TS.s(ts_showscreens)
     "Я поднимаюсь наверх."
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "ПАПА!"
     "Второй этаж у нас относительно маленький, да и стены достаточно тонкие, поэтому, если папа в одной из комнат, то он обязательно должен был меня услышать."
     "Однако ответа я так и не дождалась."
@@ -412,7 +412,7 @@ label ts_scenario_9:
 
     $ gtextsuka = glitchtext(15)
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     play sound slender
     $ persistent.ingame_pizda = True
@@ -432,7 +432,7 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    show layer screens
+    $ TS.s()
 
     python:
         _preferences.volumes['music'] = .65
@@ -454,8 +454,8 @@ label ts_scenario_9:
     show hiroto 1j at t11
     $ TS.p(2)
 
-    show layer master at heartbeat
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.m(heartbeat)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     show hiroto 2k at t11
     m "{b}{font=[shl_font]}ПАПА, ПОЧЕМУ ВСЕ ВЕДУТ СЕБЯ ТАК, КАК БУДТО ПРОШЛОЙ НЕДЕЛИ НИКОГДА НЕ СУЩЕСТВОВАЛО?{/font}{/b}"
@@ -482,7 +482,7 @@ label ts_scenario_9:
 
     $ gtextsuka = glitchtext(35)
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     play sound slender
     $ persistent.ingame_pizda = True
@@ -502,7 +502,7 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    show layer screens
+    $ TS.s()
 
     python:
         _preferences.volumes['music'] = .65
@@ -545,8 +545,8 @@ label ts_scenario_9:
     $ persistent.ingame_pizda = True
 
     if not renpy.android:
-        show layer master at AnimatedAberate(25.0)
-    show layer screens at ts_shake2(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+        $ TS.m(AnimatedAberate(25.0))
+    $ TS.s(ts_shake2(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     show monika 2bi at f11
     with memglitchstr
@@ -563,8 +563,8 @@ label ts_scenario_9:
     $ persistent.ingame_pizda = False
 
     if not renpy.android:
-        show layer master at StillAberate(25.0)
-        show layer screens at StillAberate(25.0)
+        $ TS.m(StillAberate(25.0))
+        $ TS.s(StillAberate(25.0))
 
     python:
         currentpos = get_pos()
@@ -583,33 +583,33 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    show layer master
-    show layer screens
+    $ TS.m()
+    $ TS.s()
 
     stop music
     "Кажется, меня сейчас стошнит..."
 
     window hide
     play sound2 ts_running
-    show layer master at ts_bg_into1
+    $ TS.m(ts_bg_into1)
     $ TS.p(0.3)
     play sound door_break
     $ TS.p(0.2)
     scene ts_bathroom
-    show layer master at ts_bg_exodus1
+    $ TS.m(ts_bg_exodus1)
     $ TS.p(0.5)
     stop sound2 fadeout 1
-    show layer master at ts_blevota_anim
+    $ TS.m(ts_blevota_anim)
     $ TS.p(1)
 
     if _preferences.language == "english":
         $ m_name = "Monika"
     else:
         $ m_name = "Моника"
-    show layer screens at hpunch
+    $ TS.s(hpunch)
     play sound3 ts_blevanula
     $ TS.p(6)
-    show layer master at ts_blevota_exit_anim
+    $ TS.m(ts_blevota_exit_anim)
     "Что это вообще такое было?"
     play music ts_icra fadein 1
     show monika 2bg at f11
@@ -618,7 +618,7 @@ label ts_scenario_9:
     em "Полегчало?"
     show monika 2bf at t11
     m "Ты..."
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "ЭТО ВСЁ ТЫ ВИНОВАТА!"
     show monika 1bp at f11
     em "А почему ты считаешь, что если случается что-то плохое, то это сразу обязательно я?"
@@ -750,5 +750,5 @@ label ts_scenario_9:
     " {w=1.0}{nw}"
     scene black with ed_night_dis
     $ TS.p(1)
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
     jump ts_scenario_10

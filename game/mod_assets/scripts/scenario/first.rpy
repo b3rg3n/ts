@@ -1,7 +1,7 @@
 # ТУТ ПРОИСХОДИТ СТАРТ ИГРЫ БЛЯ
 label start:
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     python: #ГОПАЕМ ВРЕМЯ ИЗ СИСТЕМЫ
         from time import localtime, strftime
@@ -80,7 +80,7 @@ label ts_intro_settings2:
     brg "Тебя устраивает такой размер шрифта?{w} Или же..."
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
     show screen ts_font_changer
     $ TS.np()
 
@@ -93,7 +93,7 @@ label ts_intro_settings3:
     $ TS.s(ts_showscreens)
     menu:
         "Поменяем":
-            show layer screens at ts_null_transform
+            $ TS.s(ts_null_transform)
             show screen ts_font_changer
             $ TS.np()
         "Оставь этот":
@@ -101,7 +101,7 @@ label ts_intro_settings3:
             brg "Хорошо."
             $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
-            show layer screens at ts_null_transform
+            $ TS.s(ts_null_transform)
             jump ts_intro_settings4
 
 label ts_intro_settings4:

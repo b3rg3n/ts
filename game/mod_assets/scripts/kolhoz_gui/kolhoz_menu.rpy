@@ -28,7 +28,7 @@ label main_menu:
         play music good_menu_ost fadein 5
         scene ts_menu_move_anim_good_end at ts_ustal_suka
         show zatemnenie_light
-        show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+        $ TS.m(VHS())
 
     elif persistent.peredgoodendmenu == True: #МЕНЮШКА ПЕРЕД ГУД КОНЦОВКОЙ(ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
         play music ts_gramatik fadein 5

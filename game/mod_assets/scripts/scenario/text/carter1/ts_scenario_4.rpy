@@ -1,6 +1,6 @@
 label ts_scenario_4:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter4()
@@ -47,7 +47,7 @@ label ts_scenario_4:
 
     scene ts_bedroom
     show unblink
-    show layer master at ts_vstavai_shashlik
+    $ TS.m(ts_vstavai_shashlik)
     $ TS.p(3)
     play sound svet_on
     $ TS.p(1.5)
@@ -119,7 +119,7 @@ label ts_scenario_4:
     scene ts_bathroom
     with wipeleft_scene
 
-    show layer master at ts_clean_eblet
+    $ TS.m(ts_clean_eblet)
     $ TS.p(2)
     play sound open_water_sink
     $ TS.p(0.5)
@@ -275,7 +275,7 @@ label ts_scenario_4:
 
 
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     menu:
         "Выйти прямо сейчас":
@@ -296,7 +296,7 @@ label ts_scenario_4:
         " {w=1.0}{nw}"
 
 
-        show layer screens at ts_null_transform
+        $ TS.s(ts_null_transform)
 
         menu:
             "Посмотреть телевизор":
@@ -319,7 +319,7 @@ label ts_scenario_4:
 
                 "Мне... не сказать, чтобы сильно повезло, но и не сказать, чтобы сильно {i}не{/i} повезло."
 
-                show layer master at ts_prosmotr_teleka
+                $ TS.m(ts_prosmotr_teleka)
 
                 "Мультиков, которые я обожала в детстве, в пятницу не показывали, но зато показывали фильм «Ирония судьбы». И, знаете, мне понравилось."
 
@@ -382,7 +382,7 @@ label ts_scenario_4:
                 $ TS.s(ts_showscreens)
 
                 "Тарелка с рисовой кашей так и осталась нетронутой."
-                show layer master at ts_havchik_gotovka
+                $ TS.m(ts_havchik_gotovka)
                 if unluck3 == True:
                     "Несмотря на недавний позор с картошкой, я всё равно решаюсь что-нибудь приготовить."
                     "Что-нибудь попроще, повкуснее, и при этом не особо затратное по времени."
@@ -431,7 +431,7 @@ label ts_scenario_4:
         "..."
         play music ts_ap fadein 0.7
 
-        show layer screens at vpunch
+        $ TS.s(vpunch)
 
         m "ТВОЮ МАТЬ! Я ЖЕ В ШКОЛУ ОПАЗДЫВАЮ!"
         m "Или, скорее, уже конкретно опоздала..."
@@ -695,7 +695,7 @@ label ts_scenario_4:
 
         "Меня разбудил голос учителя. Видимо, всё-таки решил спросить у меня."
 
-        show layer screens at vpunch
+        $ TS.s(vpunch)
 
         m "А?! Что?.."
         teacher "Я спрашиваю, какой будет объём у этого тетраэдра?"
@@ -1073,7 +1073,7 @@ label ts_scenario_4:
     with flash
 
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     y "Мне хочется разорвать твою плоть и заползти внутрь тебя."
     "...у Юри были такие же глаза, как и в моём кошмаре?"
@@ -1181,7 +1181,7 @@ label ts_scenario_4:
     else:
         $ m_name = "Все вместе"
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "За литературу!"
 
@@ -1249,7 +1249,7 @@ label ts_scenario_4:
     show yuri 1i at t31
     show sayori 2l at t32
     show natsuki 1i at t33
-    show layer master at blur_drunk_blya_lowest
+    $ TS.m(blur_drunk_blya_lowest)
     with wipeleft_scene
 
     $ TS.s(ts_showscreens)
@@ -1333,7 +1333,7 @@ label ts_scenario_4:
     else:
         $ m_name = "Все вместе"
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "За новое!"
 
@@ -1357,7 +1357,7 @@ label ts_scenario_4:
     show yuri 2y6 at t31
     show sayori 1k at t32
     show natsuki 1u at t33
-    show layer master at blur_drunk_blya_low
+    $ TS.m(blur_drunk_blya_low)
     with wipeleft_scene
 
     $ TS.s(ts_showscreens)
@@ -1403,7 +1403,7 @@ label ts_scenario_4:
     play music ts_heather
 
     scene ts_club
-    show layer master at blur_drunk_blya_low
+    $ TS.m(blur_drunk_blya_low)
 
     show yuri 1r at t31
 
@@ -1426,7 +1426,7 @@ label ts_scenario_4:
     show yuri 1v at t31
     show sayori 1k at t32
     show natsuki 1u at t33
-    show layer master at blur_drunk_blya
+    $ TS.m(blur_drunk_blya)
     with wipeleft_scene
 
     $ TS.s(ts_showscreens)
@@ -1478,7 +1478,7 @@ label ts_scenario_4:
 
     scene ts_club
     show unblink
-    show layer master at blur_drunk_blya
+    $ TS.m(blur_drunk_blya)
 
     $ TS.s(ts_showscreens)
 
@@ -1488,7 +1488,7 @@ label ts_scenario_4:
     "Я имею в виду, через... это, как же оно называется... похмелье, да..."
     "Или это ещё не похмелье, и худшее только впереди?.."
     scene ts_club at ts_alkonersha
-    show layer master at blur_drunk_blya
+    $ TS.m(blur_drunk_blya)
     "Я пытаюсь встать, но, естественно, у меня не получается."
 
     show yuri 1t at t31
@@ -1510,7 +1510,7 @@ label ts_scenario_4:
 
     window hide
     scene ts_club at ts_alkonersha
-    show layer master at blur_drunk_blya
+    $ TS.m(blur_drunk_blya)
     $ TS.p(0.8)
     stop music
     play sound sfx_body_bump
@@ -1651,7 +1651,7 @@ label ts_scenario_4:
     scene ts_club
     #show noise zorder 6:
     #    alpha 0.25
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     show natsuki ghost1 at t11
     with flash
     #show n_rects_ghost1 zorder 4
@@ -1686,7 +1686,7 @@ label ts_scenario_4:
     scene ts_club
     #show noise zorder 6:
     #    alpha 0.25
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     show yuri 3y3 at i11
     with flash
     $ TS.p(1)
@@ -1763,7 +1763,7 @@ label ts_scenario_4:
     with ed_night_dis
 
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.sprite_time = "night"
 
@@ -1887,6 +1887,6 @@ label ts_scenario_4:
     $ TS.p(4)
 
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     jump ts_scenario_5

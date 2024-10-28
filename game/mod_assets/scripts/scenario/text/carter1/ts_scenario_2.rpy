@@ -1,6 +1,6 @@
 label ts_scenario_2:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter2()
@@ -92,7 +92,7 @@ label ts_scenario_2:
 
     scene ts_bedroom
     show unblink
-    show layer master at ts_vstavai_shashlik
+    $ TS.m(ts_vstavai_shashlik)
     $ TS.p(3)
     play sound svet_on
     $ TS.p(1.5)
@@ -109,7 +109,7 @@ label ts_scenario_2:
     scene ts_bathroom
     with wipeleft_scene
 
-    show layer master at ts_clean_eblet
+    $ TS.m(ts_clean_eblet)
     $ TS.p(2)
     play sound open_water_sink
     $ TS.p(0.5)
@@ -270,7 +270,7 @@ label ts_scenario_2:
     " {w=1.0}{nw}"
 
     play sound door_open
-    show layer master at ts_club_vhod
+    $ TS.m(ts_club_vhod)
     $ TS.p(1.2)
     scene ts_club at ts_bg_exodus
     $ TS.p(0.5)
@@ -285,14 +285,14 @@ label ts_scenario_2:
 
     "И как будто специально, как только я об этом подумала, Сайори буквально вваливается в кабинет Литературного клуба."
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     s "Моника!"
     
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     extend " Моника!"
     
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     extend " Юри!.."
 
     "Она меня буквально ошарашила."
@@ -322,7 +322,7 @@ label ts_scenario_2:
     s "Она сказала, что никогда о таком даже и не слышала..."
 
     show sayori 1m at f11
-    show layer master at heartbeat
+    $ TS.m(heartbeat)
 
     m "Да они что, издеваются?!"
     m "Я почти два месяца изо всех сил добивалась того, чтобы в этом клубе было больше народу, а они, видите ли, и знать не знают о таком клубе?!"
@@ -448,7 +448,7 @@ label ts_scenario_2:
 
     "Робко спросила Юри."
     "То, что я слышала из запыханных рассказов Сайори, я теперь увидела воочию."
-    show layer master at ts_osmotr_tipa_levocentr
+    $ TS.m(ts_osmotr_tipa_levocentr)
     "Девушка. Ростом чуть выше меня. С волосами цвета лаванды примерно до пояса и такого же цвета глазами."
     "И, э-э-э... с «формами» пообъёмнее, чем мои."
     "Нет, конечно, мои «формы» тоже не из самых маленьких, но..."
@@ -702,7 +702,7 @@ label ts_scenario_2:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer master at ts_club_leave_anim
+    $ TS.m(ts_club_leave_anim)
     $ TS.p(1)
     play sound door_break
     scene ts_corridor at ts_razebal
@@ -716,7 +716,7 @@ label ts_scenario_2:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     menu:
         "Посмотреть в других классах":
@@ -782,7 +782,7 @@ label ts_scenario_2:
 
     $ TS.s(ts_showscreens)
 
-    show layer master at ts_osmotr_loki_epta_sralnik
+    $ TS.m(ts_osmotr_loki_epta_sralnik)
 
     "Как только я вхожу в уборную, я замечаю, что нахожусь здесь не одна."
 
@@ -812,7 +812,7 @@ label ts_scenario_2:
     "Ответа нет."
     "Я решаю позвать погромче:"
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "ЕСТЬ КТО-НИБУДЬ?"
 
@@ -876,14 +876,14 @@ label ts_scenario_2:
     "Я попыталась допрыгнуть раз двадцать, не меньше, но всё без толку."
     "Хорошо хоть туфли без каблуков надела! Иначе вся эта затея стала бы не только сложнее, но ещё я бы просто напугала Юри."
     "И когда уже хотела сдаться, я пересилила себя и попыталась запрыгнуть один последний раз."
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "Ну же!"
     
     "Наконец-то я ухватилась за верхние края кабинки и подсмотрела за Юри."
 
     "Но лучше бы я не подсматривала и оставалась в неведении..."
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     show yuri 9z at t11
     
@@ -1240,6 +1240,6 @@ label ts_scenario_2:
     stop music fadeout 7
     scene black with ed_night_dis
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     jump ts_scenario_3

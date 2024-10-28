@@ -18,7 +18,7 @@ init -1600 python:
     config.keymap = dict(
         
         rollback = [ 'K_PAGEUP', 'mousedown_4', 'joy_rollback' ],
-        screenshot = [ 's', 'ы' ],
+        screenshot = [ ],#'s', 'ы'
         toggle_fullscreen = [ 'f', 'alt_K_RETURN', 'alt_K_KP_ENTER', 'K_F11' ],
         toggle_music = [ 'm' ],
         game_menu = [ 'K_ESCAPE', 'mouseup_3', 'joy_menu' ],

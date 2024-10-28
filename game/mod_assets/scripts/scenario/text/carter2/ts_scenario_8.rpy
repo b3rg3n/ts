@@ -1,6 +1,6 @@
 label ts_scenario_8:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter8()
@@ -47,7 +47,7 @@ label ts_scenario_8:
 
     scene ts_bedroom
     show unblink
-    show layer master at ts_vstavai_shashlik
+    $ TS.m(ts_vstavai_shashlik)
     $ TS.p(3)
     play sound svet_on
     $ TS.p(1.5)
@@ -71,7 +71,7 @@ label ts_scenario_8:
         em "Вот так-то гораздо лучше!"
     else:
         show monika 3pl at f11
-        show layer screens at vpunch
+        $ TS.s(vpunch)
         em "Нет, нельзя! Вставай давай!"
         show monika 1pj at t11
         m "Да встаю я уже, встаю..."
@@ -88,7 +88,7 @@ label ts_scenario_8:
     with wipeleft_scene
 
 
-    show layer master at ts_clean_eblet
+    $ TS.m(ts_clean_eblet)
     $ TS.p(2)
     play sound open_water_sink
     $ TS.p(0.5)
@@ -134,7 +134,7 @@ label ts_scenario_8:
             _preferences.volumes['sfx'] = 1.0
         play sound lite_scrimak
         show hiroto 1h at ln11
-        show layer screens at vpunch
+        $ TS.s(vpunch)
         ts_ft "Кого нет, Моника?"
         show hiroto 1j at t11
         "Упс..."
@@ -468,7 +468,7 @@ label ts_scenario_8:
     "Кажется, на качестве самой еды такие перестановки также отразились. Я такого вкусного тортика не ела никогда в жизни, даже на свой собственный день рождения."
     if not unluck6:
         em "Я тебе уже говорила, что ещё несколько приёмов пищи сладкого, и твоя толстая задница больше в дверной проём вмещаться не будет?"
-        show layer screens at vpunch
+        $ TS.s(vpunch)
         "«Отстань уже, а?»"
         "«Тортик-то небольшой. Я же не весь торт за один заход съем, а только маленький кусочек. Это ничего не изменит.»"
         em "Ну-ну... Только потом не жалуйся мне, что твои жировые складки будут больше, чем весят некоторые первоклашки."
@@ -684,7 +684,7 @@ label ts_scenario_8:
     "Юри от волнения даже закрыла глаза и тяжело задышала."
     m "Юри, да не тушуйся ты так, нам всем будет немного неловко перед выступлением!"
     show yuri 3n at hf31
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     y "!!!"
     show yuri 3n at t31
     m "Я и-имела в виду, что мы все будем в примерно равных условиях."
@@ -736,7 +736,7 @@ label ts_scenario_8:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer master at ts_blur_ahuenno
+    $ TS.m(ts_blur_ahuenno)
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -761,7 +761,7 @@ label ts_scenario_8:
     hide screen poem
     hide poem_dismiss
 
-    show layer master
+    $ TS.m()
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -804,7 +804,7 @@ label poemresponses2suka:
 
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     if ts_carter8_poem_sayori and ts_carter8_poem_natsuki and ts_carter8_poem_yuri:
         jump ts_carter8_posle_poems_suka
@@ -922,7 +922,7 @@ label poemresponses2suka:
             $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
-            show layer master at ts_blur_ahuenno
+            $ TS.m(ts_blur_ahuenno)
             with dissolve
 
             $ TS.s(ts_showscreens)
@@ -947,7 +947,7 @@ label poemresponses2suka:
             hide screen poem
             hide poem_dismiss
 
-            show layer master
+            $ TS.m()
             with dissolve
 
             $ TS.s(ts_showscreens)
@@ -1221,7 +1221,7 @@ label poemresponses2suka:
             $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
-            show layer master at ts_blur_ahuenno
+            $ TS.m(ts_blur_ahuenno)
             with dissolve
 
             $ TS.s(ts_showscreens)
@@ -1246,7 +1246,7 @@ label poemresponses2suka:
             hide screen poem
             hide poem_dismiss
 
-            show layer master
+            $ TS.m()
             with dissolve
 
             $ TS.s(ts_showscreens)
@@ -1273,7 +1273,7 @@ label poemresponses2suka:
             show natsuki 1l at f11
             n "Ну вот и поговорили тогда."
             show natsuki 1j at t11
-            show layer screens at vpunch
+            $ TS.s(vpunch)
             em "Эй, это моя реплика!\n\n{b}Аки:{/b} Эй, это моя реплика!{fast}"
             "«А ты не забыла, что ты – это часть меня, поэтому любая твоя реплика становится моей?»"
             em "..."
@@ -1400,7 +1400,7 @@ label poemresponses2suka:
             $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
-            show layer master at ts_blur_ahuenno
+            $ TS.m(ts_blur_ahuenno)
             with dissolve
 
             $ TS.s(ts_showscreens)
@@ -1425,7 +1425,7 @@ label poemresponses2suka:
             hide screen poem
             hide poem_dismiss
 
-            show layer master
+            $ TS.m()
             with dissolve
 
             $ TS.s(ts_showscreens)
@@ -1575,7 +1575,7 @@ label ts_carter8_posle_poems_suka:
         _preferences.volumes['sfx'] = 1.0
         _preferences.volumes['music'] = 0.0
     play sound ts_flashback
-    show layer master at ts_blur_ahuenno1
+    $ TS.m(ts_blur_ahuenno1)
     with dissolve2
     $ TS.s(ts_showscreens)
     "«Аки, можно мне немного помощи?»"
@@ -1595,7 +1595,7 @@ label ts_carter8_posle_poems_suka:
     show yuri 1e at i31
     show sayori 2o at i32
     show natsuki 1a at i33
-    show layer master
+    $ TS.m()
     with flash
     $ TS.s(ts_showscreens)
 
@@ -1621,7 +1621,7 @@ label ts_carter8_posle_poems_suka:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer master at ts_blur_ahuenno
+    $ TS.m(ts_blur_ahuenno)
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1646,7 +1646,7 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    show layer master
+    $ TS.m()
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1679,7 +1679,7 @@ label ts_carter8_posle_poems_suka:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer master at ts_blur_ahuenno
+    $ TS.m(ts_blur_ahuenno)
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1705,7 +1705,7 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    show layer master
+    $ TS.m()
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1730,7 +1730,7 @@ label ts_carter8_posle_poems_suka:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer master at ts_blur_ahuenno
+    $ TS.m(ts_blur_ahuenno)
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1755,7 +1755,7 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    show layer master
+    $ TS.m()
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1779,7 +1779,7 @@ label ts_carter8_posle_poems_suka:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer master at ts_blur_ahuenno
+    $ TS.m(ts_blur_ahuenno)
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1804,7 +1804,7 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    show layer master
+    $ TS.m()
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1812,7 +1812,7 @@ label ts_carter8_posle_poems_suka:
     stop music fadeout 5
 
     show natsuki 2y at f33
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     n "Легко и просто!"
     show yuri 2c at t31
     show sayori 3r at t32
@@ -1850,7 +1850,7 @@ label ts_carter8_posle_poems_suka:
     "Юри и Сайори согласно кивнули. Нацуки же озлобилась."
     play music ts_tom
     show natsuki 1e at f33
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     n "Минуточку! Подожди-ка подожди, Моника. То есть, ты всем задания раздала, а сама будешь прохлаждаться все выходные или что?"
     show natsuki 1g at t33
     "Э-э-э..."
@@ -1922,7 +1922,7 @@ label ts_carter8_posle_poems_suka:
     show yuri 2d at h31
     show sayori 3s at h32
     show natsuki 2z at h33
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "Ура!"
     show yuri 2c at t31
     show sayori 3s at t32
@@ -1940,7 +1940,7 @@ label ts_carter8_posle_poems_suka:
     show yuri 2d at h31
     show sayori 3s at h32
     show natsuki 2z at h33
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "До скорого, Моника!"
     if _preferences.language == "english":
         $ m_name = "Monika"
@@ -2016,7 +2016,7 @@ label ts_carter8_posle_poems_suka:
 
     play sound2 ts_woda_beg
 
-    show layer master at ts_running_fast
+    $ TS.m(ts_running_fast)
 
     $ TS.p(4)
     stop sound2 fadeout 1
@@ -2025,7 +2025,7 @@ label ts_carter8_posle_poems_suka:
     scene ts_nebo_fon_bgshka_suka
     show ts_house_rain_ovr
     show ts_rain
-    show layer master at ts_ustal_suka
+    $ TS.m(ts_ustal_suka)
     with wipeleft_scene
 
     $ TS.s(ts_showscreens)
@@ -2135,7 +2135,7 @@ label ts_carter8_posle_poems_suka:
     "Я подхожу к кастрюле и накладываю себе столько риса, сколько я могу себе позволить."
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
-    show layer master at ts_blur_ahuenno1
+    $ TS.m(ts_blur_ahuenno1)
     with dissolve2
     $ TS.s(ts_showscreens_nvl)
     play music ts_rem fadein 2
@@ -2152,7 +2152,7 @@ label ts_carter8_posle_poems_suka:
     nvlbazar "{font=[prologue_font]}Хорошее время было, беззаботное. До всех этих клубов, стресса и всего сопутствующего."
     $ TS.s(ts_hidescreens_nvl)
     nvlbazar " {w=1.0}{nw}"
-    show layer master
+    $ TS.m()
     with dissolve2
     stop music fadeout 2
     $ TS.s(ts_showscreens)
@@ -2244,8 +2244,8 @@ label ts_carter8_posle_poems_suka:
     show monika 2bm at t11
     m "Я повторяю свой вопрос: что ты вообще имеешь в виду?"
     if not renpy.android:
-        show layer master at Static(0.1)
-        show layer screens at Static(0.1)
+        $ TS.m(Static(0.1))
+        $ TS.s(Static(0.1))
     show monika 2bi at f11
     em "Я, видимо, переоценила твои умственные способности."
     em 4bi "Ты спишь. Всё происходящее за эту неделю – это всё не было реальностью. Это было лишь твоё воображение."
@@ -2253,22 +2253,22 @@ label ts_carter8_posle_poems_suka:
     if act2_chess:
         em "Включая партию в шахматы с папой."
     if not renpy.android:
-        show layer master at Static(0.3)
-        show layer screens at Static(0.3)
+        $ TS.m(Static(0.3))
+        $ TS.s(Static(0.3))
     em "Написание своего первого стиха спустя несколько лет застоя, чтение манги с Нацуки, обмен стихами, подготовка к фестивалю..."
     em "Всё происходящее за эту неделю с того момента, как ты проснулась в субботу с дикого похмелья, и вплоть до того, как ты уснёшь сегодня..."
     if not renpy.android:
-        show layer master at Static(0.5)
-        show layer screens at Static(0.5)
+        $ TS.m(Static(0.5))
+        $ TS.s(Static(0.5))
     em "Было просто сном. Больной фантазией одной девочки, которой захотелось друзей и уважения."
     em 3bd "Поэтому-то ты разговариваешь с моей {i}телесной формой{/i} только эту неделю. Потому что всё остальное время ты просто отмахивалась от меня, как от назойливых мух."
     if not renpy.android:
-        show layer master at Static(0.7)
-        show layer screens at Static(0.7)
+        $ TS.m(Static(0.7))
+        $ TS.s(Static(0.7))
     em 4bi "Потому что я ненастоящая. Просто плод твоего воображения."
     hide monika
-    show layer master
-    show layer screens
+    $ TS.m()
+    $ TS.s()
     play music ts_roae fadein 2
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
@@ -2307,7 +2307,7 @@ label ts_carter8_posle_poems_suka:
     em "Ты же помнишь, как я в субботу что-то говорила про циклы?"
     m "Помню, ясно и отчётливо. Так что ты всё-таки под этим имела в виду?"
     em "Ну, в общем... ты и сама завтра увидишь."
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "ЧТО Я ДОЛЖНА УВИДЕТЬ?"
     em "Всё."
     em "А сейчас – спокойной ночи, правда."
@@ -2323,6 +2323,6 @@ label ts_carter8_posle_poems_suka:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     scene black with ed_night_dis
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
     $ TS.p(2)
     jump ts_scenario_9

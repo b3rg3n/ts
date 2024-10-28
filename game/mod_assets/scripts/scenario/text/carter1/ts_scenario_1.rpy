@@ -1,6 +1,6 @@
 label ts_scenario_1:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter1()
@@ -112,7 +112,7 @@ label ts_scenario_1:
     show natsuki 1 at ln33:
         alpha 0.5
 
-    show layer master at ts_ebalo_k_osmotru
+    $ TS.m(ts_ebalo_k_osmotru)
     $ TS.s(ts_showscreens)
 
     "Я общаюсь с ними, делюсь с ними сокровенным, задаю домашние задания на следующие встречи клуба..."
@@ -168,7 +168,7 @@ label ts_scenario_1:
 
     window hide
     play sound stuk
-    show layer master at ts_osmotr_tipa_sleva
+    $ TS.m(ts_osmotr_tipa_sleva)
     $ TS.p(1.5)
     play sound door_open
 
@@ -184,7 +184,7 @@ label ts_scenario_1:
 
     show sayori 2s at h11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     s "О, отлично! Я как раз по адресу!"
 
@@ -208,7 +208,7 @@ label ts_scenario_1:
     
     show sayori 2x at h11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     s "Взаимно!"
 
@@ -219,7 +219,7 @@ label ts_scenario_1:
 
     show sayori 2h at d11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     s "Почему это зря?"
     
@@ -234,7 +234,7 @@ label ts_scenario_1:
 
     show sayori 4h at h11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     s "Но это же глупо! Не поверю, что в этой школе нет ни одного человека, которого бы не интересовала литература!"
 
@@ -249,7 +249,7 @@ label ts_scenario_1:
 
     show sayori 4x at h11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     s "Спасибо!"
 
@@ -306,7 +306,7 @@ label ts_scenario_1:
 
     show sayori 1r at f11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     s "Но всё равно мы здорово поработали!"
 
@@ -373,7 +373,7 @@ label ts_scenario_1:
 
     s "Чёрт, я надеялась, что за готовку будешь отвечать как раз ты."
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     "Её что, не кормят?"
 
@@ -428,7 +428,7 @@ label ts_scenario_1:
     "Подавленной стала выглядеть как я, так и Сайори."
     "Но если я уже почти всю жизнь так живу, и научилась справляться, то насчёт Сайори я не знаю."
     "Первые несколько дней она была неестественно счастливой и активной, но сегодня..."
-    show layer master at ts_osmotr_tipa_center
+    $ TS.m(ts_osmotr_tipa_center)
     "Сегодня она выглядит так, как будто ей сказали, что она завтра умрёт, и ничего с этим поделать нельзя."
     "Я не большой знаток психических заболеваний, но, судя по всему, у неё маниакально-депрессивное расстройство."
     m "Сайори?.."
@@ -438,7 +438,7 @@ label ts_scenario_1:
 
     stop music fadeout 5
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "Сайори!"
     s "Да?"
@@ -458,7 +458,7 @@ label ts_scenario_1:
 
     "Не удовлетворившись такой расплывчатой формулировкой, я решила повторить вопрос, но настойчивее."
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "Сайори. Посмотри на меня."
 
@@ -498,7 +498,7 @@ label ts_scenario_1:
     m "ГОСПОДИ, САЙОРИ!"
     "Я выбегаю вслед за ней."
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "Сайори!"
 
@@ -550,7 +550,7 @@ label ts_scenario_1:
     show ts_corridor at ts_fon_blur_postepenno
     show sayori 1w at s11
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     s "Если можно просто умереть."
     s "Раз уж я такая бесполезная."
@@ -580,7 +580,7 @@ label ts_scenario_1:
     show sayori 3p at h11
     with flash
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "Ну уж нет!"
 
@@ -632,7 +632,7 @@ label ts_scenario_1:
     
     m "Но я чувствую, что литература – это моё призвание. А если ты зашла в эту дверь и до сих пор от меня не сбежала – то это и твоё призвание тоже."
 
-    show layer master at ts_obnimashki_center_finalle
+    $ TS.m(ts_obnimashki_center_finalle)
 
     "Я обнимаю Сайори."
 
@@ -662,7 +662,7 @@ label ts_scenario_1:
     hide blink
     show sayori 1zc at t11
     show unblink
-    show layer master at ts_obnimashki_center_finalle1
+    $ TS.m(ts_obnimashki_center_finalle1)
 
     $ TS.s(ts_showscreens)
 
@@ -670,7 +670,7 @@ label ts_scenario_1:
 
     show sayori 1j at h11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     s "Да! Мы обязательно разовьём этот клуб и покажем всему миру, чего мы стоим!"
 
@@ -795,7 +795,7 @@ label ts_scenario_1:
 
     show sayori 5 at s11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     extend " Не знаю..."
 
@@ -820,7 +820,7 @@ label ts_scenario_1:
 
     "Сайори хмуро смотрит на меня."
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     "Да она сама виновата!"
     "Хотя, если так подумать, то она делает для клуба хотя бы что-то, а не просто сидит на пятой точке ровно, как я."
@@ -856,11 +856,10 @@ label ts_scenario_1:
 
     play sound pageflip
     scene ts_street_late
-    #show lepestki_autumn
     show ts_yel_part
     with wipeleft_scene
 
-    show layer master at ts_osmotr_loki_epta
+    $ TS.m(ts_osmotr_loki_epta)
     $ TS.s(ts_showscreens)
 
     "Ненавижу ходить в школу в октябре. А ноябрь-декабрь – это и вовсе пиши пропало."
@@ -933,7 +932,7 @@ label ts_scenario_1:
     
     show hiroto 2e at f11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "Папа!.."
     m "Ты же знаешь..."
@@ -1032,7 +1031,7 @@ label ts_scenario_1:
     
     show hiroto 2j at h11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "Папа!.."
 
@@ -1211,7 +1210,7 @@ label ts_scenario_1:
     scene ts_darkbed
     with wipeleft_scene
 
-    show layer master at ts_padenie_na_bed
+    $ TS.m(ts_padenie_na_bed)
     $ TS.p(1)
     play sound ts_bed_squeak
 

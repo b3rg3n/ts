@@ -1,6 +1,6 @@
 label ts_scenario_3:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter3()
@@ -50,7 +50,7 @@ label ts_scenario_3:
 
     scene ts_bedroom
     show unblink
-    show layer master at ts_vstavai_shashlik
+    $ TS.m(ts_vstavai_shashlik)
     $ TS.p(3)
     play sound svet_on
     $ TS.p(1.5)
@@ -71,10 +71,10 @@ label ts_scenario_3:
     show yuri 9p at t11
     show zatemnenie_light
     show overlay aw_memory_back_1
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with flash
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "Меня напугала её мания навредить себе."
     "Юри тогда сказала, что это потому что она чувствует себя ничтожеством и внутренний голос твердил ей перейти от слов к делу."
@@ -101,7 +101,7 @@ label ts_scenario_3:
     scene ts_bathroom
     with wipeleft_scene
 
-    show layer master at ts_clean_eblet
+    $ TS.m(ts_clean_eblet)
     $ TS.p(2)
     play sound open_water_sink
     $ TS.p(0.5)
@@ -143,18 +143,7 @@ label ts_scenario_3:
     " {w=1.0}{nw}"
 
     show hiroto 1a at f11
-    #show vignette zorder 10:
-    #    alpha 0.75
-    #    parallel:
-    #        0.36
-    #        alpha 0.75
-    #        repeat
-    #    parallel:
-    #        0.49
-    #        alpha 0.7
-    #        repeat
-    #show layer master at heartbeat
-    show layer master at ts_osmotr_tipa_center
+    $ TS.m(ts_osmotr_tipa_center)
 
     nvl clear
 
@@ -179,7 +168,7 @@ label ts_scenario_3:
     hide hiroto
     show minami 1a at t21
     show monika 1a at t22
-    show layer master at ts_osmotr_tipa_levocentr
+    $ TS.m(ts_osmotr_tipa_levocentr)
     nvlbazar "{font=[ts_nvl_font2]}Так вот, я как две капли воды похожа на свою маму."
     nvlbazar "{font=[ts_nvl_font2]}Не зря же существует... не знаю, поверье, поговорка, присказка..."
     nvlbazar "{font=[ts_nvl_font2]}В общем, «если хочешь посмотреть на девушку лет эдак через двадцать, посмотри сначала на её маму»."
@@ -278,10 +267,10 @@ label ts_scenario_3:
     with flash
 
     play music audio.t10y
-    show layer master at heartbeat
+    $ TS.m(heartbeat)
     play ambience audio.hb
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "Передо мной стоит Юри. Но это... совсем не та Юри, которую я знаю!"
     "Это не похоже ни на одну из уже трёх личностей, это... было совсем другое."
@@ -352,7 +341,7 @@ label ts_scenario_3:
     show y_kill
     with dissolve_cg
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "Дальше, что бы я ни ответила, Юри убивает себя ножом. Дважды в живот, и ещё один раз – в грудь."
 
@@ -361,7 +350,7 @@ label ts_scenario_3:
     $ TS.p(0.2)
     scene ts_darkbed
     show overlay aw_memory_back_1
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with vpunch
     $ TS.p(1)
 
@@ -430,7 +419,7 @@ label ts_scenario_3:
     "Часы показывают 8:10."
     "С учётом того, что мне до школы идти от силы минут десять-пятнадцать, даже неспешным шагом..."
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     "«Вот же папа!..»"
     "«Разыграл меня, как маленькую девочку...»"
@@ -518,7 +507,7 @@ label ts_scenario_3:
     show elena a at t33
     with linearblur
 
-    show layer master at ts_ebalo_k_osmotru
+    $ TS.m(ts_ebalo_k_osmotru)
 
     "Передо мной стоят три девушки. По всей видимости, подружки."
     "Но что-то здесь не так... Совсем не так."
@@ -541,11 +530,11 @@ label ts_scenario_3:
     show natsuki 1e at t32
     show elena j2 at t33
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     n "Ну а я буду читать мангу всегда! Это моё хобби!"
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     n 2h "Ты же не будешь осуждать меня за моё хобби?"
 
@@ -556,7 +545,7 @@ label ts_scenario_3:
     pod1 1w "Просто..."
     pod1 "Тебе не кажется, что это как-то... по-детски?"
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     n 4e "Нет, не кажется! Манга – это такая же литература, как и обычная художественная!"
 
@@ -588,7 +577,7 @@ label ts_scenario_3:
 
     n 2w "А {i}я{/i} говорю {i}вам{/i}, что манга – это литература, и только попробуйте убедить меня в обратном!"
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     n "Но скажу сразу – у вас не получится!"
 
@@ -630,9 +619,9 @@ label ts_scenario_3:
     show himari 1y at t21
     show elena b2 at t22
 
-    #show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    #$ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "КУДА.{w=0.44} ОНА.{w=0.44} ПОБЕЖАЛА?"
     
@@ -729,7 +718,7 @@ label ts_scenario_3:
     show natsuki 1s at t11
 
     "Кажется, её подруги упоминали, что она постоянно доказывает, что манга – это литература?"
-    show layer master at ts_osmotr_tipa_center
+    $ TS.m(ts_osmotr_tipa_center)
     "Да она сама как будто со страниц манги сошла!"
     "Нет, я, конечно, ни одну мангу за всю жизнь так и не прочла, но мне кажется, что примерно так персонажи в манге и выглядят."
 
@@ -788,9 +777,9 @@ label ts_scenario_3:
     "Фух."
 
     show overlay aw_memory_back_1 with dspr
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
 
-    #show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    #$ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "И куда только пропала вся моя уверенность и весь мой пафос?"
     "Куда делось «я хочу, чтобы в моём клубе не было слова 'неправильно'»?"
@@ -964,7 +953,7 @@ label ts_scenario_3:
     " {w=1.0}{nw}"
 
     play sound door_open
-    show layer master at ts_club_vhod
+    $ TS.m(ts_club_vhod)
     $ TS.p(1.2)
     scene ts_club at ts_bg_exodus
     $ TS.p(0.5)
@@ -983,10 +972,10 @@ label ts_scenario_3:
     show yuri 9p at t11
     show zatemnenie_light
     show overlay aw_memory_back_1
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with flash
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "Меня напугала её мания навредить себе."
     "Юри тогда сказала, что это потому что она чувствует себя ничтожеством, и внутренний голос твердил ей перейти от слов к делу."
@@ -1034,7 +1023,7 @@ label ts_scenario_3:
 
     if unluck2 == True:
 
-        #show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+        #$ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     
         $ TS.s(ts_showscreens)
 
@@ -1486,12 +1475,7 @@ label ts_scenario_3:
     window hide
     scene ts_club
     show overlay aw_memory_back_1
-    #show layer master at heartbeat
     with flash
-
-
-    #show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
-
 
     show zatemnenie with dspr
 
@@ -1718,7 +1702,7 @@ label ts_scenario_3:
     scene ts_club
     show natsuki 12f at t11
     show overlay aw_memory_back_1
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with flash
 
     $ TS.s(ts_showscreens)
@@ -1807,7 +1791,7 @@ label ts_scenario_3:
     $ TS.s(ts_showscreens)
 
     "Отбросив от себя все негативные мысли, я думаю о том, что папа хотел бы на ужин, но и чтобы я тоже покушала."
-    show layer master at ts_havchik_search
+    $ TS.m(ts_havchik_search)
     "Та-а-ак, посмотрим..."
 
     play music audio.t4
@@ -1816,7 +1800,7 @@ label ts_scenario_3:
     "Рис мы только недавно ели, яичницу папа ел на завтрак, бакалея просто не подходит в качестве полноценного ужина."
     "Так что... на ужин у нас картошка."
     "Правда, есть один нюанс, что её нужно почистить, но на один раз на два человека чистить нужно не особо много."
-    show layer master at ts_havchik_search_end
+    $ TS.m(ts_havchik_search_end)
 
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
@@ -1835,7 +1819,7 @@ label ts_scenario_3:
 
 
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     menu:
         "Пожарить":
@@ -1854,7 +1838,7 @@ label ts_scenario_3:
         "..."
         "А хотя нет... не начинаю..."
 
-        show layer screens at vpunch
+        $ TS.s(vpunch)
 
         if persistent.cens_mode == True:
             m "ДА ГДЕ ЖЕ ЭТА БЛЯДСКАЯ СКОВОРОДКА?"
@@ -1889,7 +1873,7 @@ label ts_scenario_3:
         "Потратив добрые десять минут на поиски этой сковородки, я в итоге её нашла."
         "Жарка и то займёт меньше, чем поиски."
         "Вот теперь я точно начинаю готовить кушанье."
-        show layer master at ts_havchik_gotovka
+        $ TS.m(ts_havchik_gotovka)
         play ambience zharim_sashlik fadein 2
         "Я старательно размешиваю импровизированный ужин, а затем сажусь немного отдохнуть."
 
@@ -1922,7 +1906,7 @@ label ts_scenario_3:
 
         "Пахнет чем-то... горелым..."
 
-        show layer screens at vpunch
+        $ TS.s(vpunch)
 
         m "ЧЁРТ, КАРТОШКА!"
 
@@ -1933,7 +1917,7 @@ label ts_scenario_3:
         scene ts_kitchen
         with wipeleft_scene
 
-        show layer master at ts_havchik_gotovka
+        $ TS.m(ts_havchik_gotovka)
 
         $ TS.s(ts_showscreens)
 
@@ -1964,7 +1948,7 @@ label ts_scenario_3:
 
         stop music fadeout 7
 
-        show layer master at ts_havchik_gotovka_end
+        $ TS.m(ts_havchik_gotovka_end)
 
         "Так или иначе, от ужина ничего не осталось."
         "Разочарованно вздохнув, я просто стала дожидаться папу, чтобы что-то приготовил уже он."
@@ -1980,7 +1964,7 @@ label ts_scenario_3:
         $ TS.p(2)
 
     else:
-        show layer master at ts_havchik_gotovka
+        $ TS.m(ts_havchik_gotovka)
         "Я решаю сварить картошку. Это хоть и чуть дольше, но зато более безопасно."
         play ambience water_pizdec_kakaya_goryachaya fadein 2
         "Разрезав эти жалкие шесть картофелин на кубики, чтобы они быстрее сварились, я начинаю куховарить."
@@ -2007,7 +1991,7 @@ label ts_scenario_3:
 
         "Прошло уже... достаточно много времени."
 
-        show layer screens at vpunch
+        $ TS.s(vpunch)
 
         m "ЧЁРТ, КАРТОШКА!"
 
@@ -2020,7 +2004,7 @@ label ts_scenario_3:
 
         play ambience water_pizdec_kakaya_goryachaya fadein 2
 
-        show layer master at ts_havchik_gotovka
+        $ TS.m(ts_havchik_gotovka)
 
         $ TS.s(ts_showscreens)
 
@@ -2071,7 +2055,7 @@ label ts_scenario_3:
     scene ts_darkbed
     show unblink
 
-    show layer master at ts_vstavai_shashlik1
+    $ TS.m(ts_vstavai_shashlik1)
     $ TS.p(3)
 
     $ TS.s(ts_showscreens)
@@ -2260,7 +2244,7 @@ label ts_scenario_3:
     show hiroto at cright with move
     hide hiroto
 
-    show layer master at ts_havchik_gotovka
+    $ TS.m(ts_havchik_gotovka)
 
     "Кофе на ночь он принципиально не пьёт. Хотя с сердцем у него особых проблем нет."
     "Если они вообще есть..."
@@ -2269,7 +2253,7 @@ label ts_scenario_3:
     "Ну, а я от кофе не откажусь. Всё равно уже режим угробила. Как говорится, помирать, так с музыкой."
     "Я заливаю воды побольше и ставлю чайник кипятиться."
 
-    show layer master at ts_havchik_gotovka_end
+    $ TS.m(ts_havchik_gotovka_end)
 
     stop music fadeout 5
 
@@ -2437,7 +2421,7 @@ label ts_scenario_3:
     scene ts_club
     show natsuki 2k at t11
     show overlay aw_memory_back_1
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with flash
 
     $ TS.s(ts_showscreens)
@@ -2487,7 +2471,7 @@ label ts_scenario_3:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer master at ts_obnimashki_center_finalle
+    $ TS.m(ts_obnimashki_center_finalle)
     $ TS.p(1)
     show blink
 
@@ -2501,7 +2485,7 @@ label ts_scenario_3:
     show hiroto 1f at t11
     hide blink
     show unblink
-    show layer master at ts_obnimashki_center_finalle1
+    $ TS.m(ts_obnimashki_center_finalle1)
 
     $ TS.s(ts_showscreens)
 
@@ -2538,7 +2522,7 @@ label ts_scenario_3:
 
     play music ts_rem
 
-    show layer master at ts_padenie_na_bed
+    $ TS.m(ts_padenie_na_bed)
     $ TS.p(1)
     play sound ts_bed_squeak
 

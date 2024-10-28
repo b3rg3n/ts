@@ -164,7 +164,7 @@ label good_credits_ts_label:
 
     $ TS.p(1)
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     return
 
@@ -347,7 +347,7 @@ label bad_credits_ts_label:
 
     $ TS.p(1)
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     return
 

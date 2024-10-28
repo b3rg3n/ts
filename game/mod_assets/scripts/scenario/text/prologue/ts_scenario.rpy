@@ -1,6 +1,6 @@
 label ts_scenario_0:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter0()
@@ -114,14 +114,14 @@ label ts_scenario_0:
 
     show hiroto 1a at t11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "Конечно!"
     ts_ft 1b "Тогда попрощайся с этой школой."
     ts_ft "С завтрашнего дня у тебя будет новая жизнь в {i}новой{/i} школе."
 
     show hiroto 1a at t11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "До свидания, школа!"
 
     $ TS.s(ts_hidescreens)

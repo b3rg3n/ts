@@ -1,6 +1,6 @@
 label ts_scenario_12:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter11()
@@ -70,7 +70,7 @@ label ts_scenario_12:
     em "В той самой, в которой ты её и повесила, кстати."
     "«Да не я её повесила... она... сама как-то...»"
     em "Сама связала петлю, сама откинула стул, и сама себя повесила?"
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     em "Хватит сказки рассказывать!"
     em "И вообще, не забывай, по какому поводу ты в начале каждого цикла просыпаешься в спальне у Сайори, а не у себя."
     "Ах да, точно..."
@@ -92,10 +92,10 @@ label ts_scenario_12:
     extend 2px " Хочешь, я с тобой пройдусь? "
     if not renpy.android:
         window hide
-        show layer master at ts_trns_dream
+        $ TS.m(ts_trns_dream)
         play sound ts_glitch5
         $ TS.p(1)
-        show layer master
+        $ TS.m()
         stop sound
         $ TS.s(ts_showscreens_fast)
     extend "Мне всё равно в магазин также надо, как раз по пути!"
@@ -852,7 +852,7 @@ label ts_scenario_12:
 
     play sound2 ts_smeh_pizdec
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     play sound ts_glitch_music14
     scene ts_club:
@@ -879,7 +879,7 @@ label ts_scenario_12:
     stop sound2
     stop sound
 
-    show layer screens
+    $ TS.s()
 
     $ persistent.ingame_pizda = False
 
@@ -1113,7 +1113,7 @@ label ts_scenario_12:
     play sound door_break
     scene ts_office
     show daisuke 1ba at t11
-    show layer master at ts_razebal
+    $ TS.m(ts_razebal)
     "На лице директора ни один мускул не дрогнул."
     "Ни из-за того, что это как минимум неприлично и чересчур фамильярно так расхаживать, ни из-за того, что перед ним так-то красивая молодая девушка стоит."
     show daisuke 1bb at f11
@@ -1127,8 +1127,8 @@ label ts_scenario_12:
     "Спустя где-то минуту я наконец говорю максимально томным голосом."
 
     $ persistent.ingame_pizda = True
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
-    show layer master at ts_shluha_melkaya
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
+    $ TS.m(ts_shluha_melkaya)
     show ts_psihuet3 zorder 3:
         alpha 0.5
 
@@ -1146,8 +1146,8 @@ label ts_scenario_12:
     stop music
     $ persistent.ingame_pizda = False
     hide ts_psihuet3
-    show layer screens
-    show layer master
+    $ TS.s()
+    $ TS.m()
     show daisuke 2bf at f11
     misc "Мисс Ида, вы мешаете мне работать."
     show daisuke 2bh at t11
@@ -1218,16 +1218,16 @@ label ts_scenario_12:
     play music ts_inferno
     stop ambience
     play sound aw_axe_hit
-    show layer master at ts_glazkam_pizda_anim
+    $ TS.m(ts_glazkam_pizda_anim)
     show sayori glazkam_pizda at h11
     $ TS.p(1)
     play sound aw_axe_hit_1
-    show layer master at ts_glazkam_pizda_anim
+    $ TS.m(ts_glazkam_pizda_anim)
     show sayori glazkam_pizda1 at h11
     $ TS.p(0.3)
     play sound2 sfx_body_bump
     show sayori glazkam_pizda1 at ts_punch()
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     "Резким движением я протыкаю Сайори один глаз. Ещё спустя момент Сайори лишилась и второго раза."
     hide sayori
     "Она даже закричать не успела."
@@ -1317,18 +1317,18 @@ label ts_scenario_12:
     show yuri 2y2 at h11
     "Ну посмотрим, как долго ты протянешь с отрезанными конечностями..."
     window hide
-    show layer master at ts_knife_pizda_anim
+    $ TS.m(ts_knife_pizda_anim)
     play sound aw_knife_slash_2
     show yuri 2y2 at ts_punch()
     show ts_bloodanim zorder 3
     play sound3 scream_normal
     play sound2 sfx_body_bump
     $ TS.p(1)
-    show layer master at ts_knife_pizda_anim
+    $ TS.m(ts_knife_pizda_anim)
     play sound aw_knife_slash_2
     show ts_altbloodanim zorder 3
     $ TS.p(1)
-    show layer master at ts_knife_pizda_anim
+    $ TS.m(ts_knife_pizda_anim)
     play sound aw_knife_slash_2
     show sayori 4z at t31
     show natsuki scream at f33
@@ -1338,21 +1338,21 @@ label ts_scenario_12:
     play sound fb
     scene yrec_sdoh_nahui with flash
 
-    show layer master at ts_knife_pizda_anim
+    $ TS.m(ts_knife_pizda_anim)
     play sound aw_knife_slash_2
 
     show ts_bloodanim zorder 3
     play sound2 sfx_body_bump
     $ TS.p(1)
-    show layer master at ts_knife_pizda_anim
+    $ TS.m(ts_knife_pizda_anim)
     play sound aw_axe_hit
     show ts_altbloodanim zorder 3
     $ TS.p(1)
-    show layer master at ts_knife_pizda_anim
+    $ TS.m(ts_knife_pizda_anim)
     play sound aw_axe_hit_1
     $ TS.p(1)
     stop music
-    $ renpy.block_rollback()
+    $ TS.b()
     play sound ts_glitch4
     scene ts_club
     with memglitchbolee
@@ -1461,7 +1461,7 @@ label ts_scenario_12:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer master at ts_verevka_vzyal
+    $ TS.m(ts_verevka_vzyal)
     $ TS.p(2)
 
     $ TS.s(ts_showscreens)
@@ -1478,7 +1478,7 @@ label ts_scenario_12:
     play sound bodyfall_final
     play sound_loop ts_udushie
     scene ts_mon_povesilas
-    show layer master at ts_trans_povesilas_mon_maloletka_konchennaya
+    $ TS.m(ts_trans_povesilas_mon_maloletka_konchennaya)
     "Возможно... так... проснусь..."
     stop sound_loop
     $ TS.s(ts_hidescreens)
@@ -1617,7 +1617,7 @@ label ts_scenario_12:
 
     play sound2 ts_smeh_pizdec
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     play music ts_glitch_music13
     scene ts_closet_glitches_balya:
@@ -1722,7 +1722,7 @@ label ts_scenario_12:
     stop sound2
     stop music
 
-    show layer screens
+    $ TS.s()
 
     $ persistent.ingame_pizda = False
 
@@ -1736,7 +1736,7 @@ label ts_scenario_12:
     else:
         $ renpy.notify("Цикл ???")
 
-    $ renpy.block_rollback()
+    $ TS.b()
     $ persistent.uncolorize = "none"
     window hide
     play sound fb
@@ -1853,7 +1853,7 @@ label ts_scenario_12:
     python:
         _preferences.volumes['sfx'] = 1.0
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     show black zorder 5 at ts_black_glitch
     k "Проснись, Моника... Меня уже не вернуть, но хотя бы ты поживи ещё."
     show blackout_exh zorder 5
@@ -1863,14 +1863,14 @@ label ts_scenario_12:
     show m_rectstatic zorder 5
     k "{cps=2}ПРОСНИСЬ!{/cps}" with vpunch
     window hide
-    show layer master at ts_padenie_ebalon_vniz_suka
+    $ TS.m(ts_padenie_ebalon_vniz_suka)
     $ TS.p(1)
     play sound sfx_body_bump
     scene black
     $ persistent.ingame_pizda = False
-    show layer screens
+    $ TS.s()
     $ TS.p(2)
-    $ renpy.block_rollback()
+    $ TS.b()
     if unluck_ball >= 5:
         jump ts_bad_ending_blya
     elif unluck_ball < 5:

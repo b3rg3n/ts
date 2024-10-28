@@ -30,14 +30,14 @@ transform bits16: # ИЗ НАЗВАНИЯ ПОНЯТНО
 transform bits8: # ИЗ НАЗВАНИЯ ПОНЯТНО
     shader "MakeVisualNovels.16colors"
    
-transform VHS(a, b, c, d): # ИЗ НАЗВАНИЯ ПОНЯТНО
+transform VHS(): # ИЗ НАЗВАНИЯ ПОНЯТНО
     shader "MakeVisualNovels.VHS"
     #Color applies a shift in color.
     #Remember R G B A.  Values are expressed between 0.0 and 1.0
     #See the bottom  of this document for a cheat sheet.
     #Use White vec4(1.0, 1.0, 1.0, 1.0) to disable this effect.
     #Pure black turns the entire image black.
-    u_color (a, b, c, d)
+    u_color (0.83, 0.83, 0.77, 1.0)
 
 transform WhiteNoise: # ЕБЕЙШИЙ БЕЛЫЙ ШУМ
     shader "MakeVisualNovels.Static"

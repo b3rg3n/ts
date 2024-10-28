@@ -1,6 +1,6 @@
 label ts_scenario_11:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter10()
@@ -27,7 +27,7 @@ label ts_scenario_11:
 
     scene ts_bedroom
     show unblink
-    show layer master at ts_vstavai_shashlik
+    $ TS.m(ts_vstavai_shashlik)
     $ TS.p(3)
     play sound svet_on
     $ TS.p(1.5)
@@ -65,7 +65,7 @@ label ts_scenario_11:
     scene ts_bathroom
     with wipeleft_scene
 
-    show layer master at ts_clean_eblet
+    $ TS.m(ts_clean_eblet)
     $ TS.p(2)
     play sound open_water_sink
     $ TS.p(0.5)
@@ -111,12 +111,12 @@ label ts_scenario_11:
     "Оглядываясь по сторонам, я вижу, что папа уже тут как тут."
     $ gtextsuka = glitchtext(18)
     $ persistent.ingame_pizda = True
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     show ts_hiroto_psyhodelic_pizdoc_eye at ln11
     ts_ft "Привет, [gtextsuka][gtextsuka]{w=0.7}{nw}"
     hide ts_hiroto_psyhodelic_pizdoc_eye
     $ persistent.ingame_pizda = False
-    show layer screens
+    $ TS.s()
     show hiroto 1b at f11
     ts_ft "Доброе утро, Моника!{fast}"
     show hiroto 1a at t11
@@ -129,7 +129,7 @@ label ts_scenario_11:
     show hiroto 1t at f11
     ts_ft "А ты макароны варить-то хоть умеешь?"
     show hiroto 1s at t11
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "Да! И причём получше многих."
     show hiroto 1g at f11
     ts_ft "Ладно, ладно, не злись так, я же просто пошутил."
@@ -168,13 +168,13 @@ label ts_scenario_11:
     m "{size=+6}Пап, ты с чем бутерброды будешь?{/size}"
 
     $ persistent.ingame_pizda = True
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     scene ts_kitchen_glitch_pizdets
     ts_ft "{size=+6}Мне без разницы, главное, чтобы там были твои GLAZA.{/size}"
     m "{size=+6}Что, прости?{/size}"
     scene ts_kitchen
-    show layer screens
+    $ TS.s()
     $ persistent.ingame_pizda = False
     ts_ft "{size=+6}Я говорю, да как обычно, с колбаской и сыром.{/size}"
     m "{size=+6}Хорошо.{/size}"
@@ -260,13 +260,13 @@ label ts_scenario_11:
     "...Нет, по утрам никаких политических передач не показывают, поэтому логичным объяснением будет лишь то, что он не дождался завтрака и уснул..."
 
     $ persistent.ingame_pizda = True
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
 
     show ts_hiroto_zalagal at f11
     ts_ft "[gtextsuka][gtextsuka][gtextsuka][gtextsuka]{w=0.2}{nw}"
     hide ts_hiroto_zalagal
-    show layer screens
+    $ TS.s()
     $ persistent.ingame_pizda = False
     show hiroto 1b at f11
     ts_ft "{size=+4}Иду-иду!{/size}{fast}"
@@ -283,7 +283,7 @@ label ts_scenario_11:
     show hiroto 1a at t11
     "Я точно так же банально отвечаю..."
     play music ts_podmetro
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     "Как тут я вспоминаю, что написать стих-то я и забыла!"
     "Я резко ахаю и тут же замолкаю."
     show hiroto 1h at t11
@@ -359,7 +359,7 @@ label ts_scenario_11:
     ts_ft "Не секрет, да. Ещё {w=0.01}{nw}"
     $ gtextsuka = glitchtext(44)
     $ persistent.ingame_pizda = True
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     window hide
     python:
         _preferences.volumes['music'] = 0.0
@@ -379,7 +379,7 @@ label ts_scenario_11:
     python:
         _preferences.volumes['music'] = .45
         _preferences.volumes['sfx'] = .65
-    show layer screens
+    $ TS.s()
     $ persistent.ingame_pizda = False
     scene ts_kitchen
     show hiroto 1s at i11
@@ -400,12 +400,12 @@ label ts_scenario_11:
         _preferences.volumes['music'] = 0.0
         _preferences.volumes['sfx'] = 1.0
     play sound ts_smeh_pizdec
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     show ts_hiroto_zalagal at i11
     ts_ft "Я хочу четвертовать тебя, распотрошить тебя, выколоть тебе глаза и съесть твои конечности{w=0.5}{nw}"
-    show layer master
+    $ TS.m()
     stop sound
-    show layer screens
+    $ TS.s()
     $ persistent.ingame_pizda = False
     hide ts_hiroto_zalagal
     python:
@@ -684,9 +684,9 @@ label ts_scenario_11:
     "От того, что я написала «какофония бессмысленного шума» большими буквами, ничего не поменялось."
     "Ну да и ладно. Как говорится, что написано пером, не вырубишь и топором."
     "Только вот вместо пера у меня долбаная{w=0.44}"
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     extend " засыхающая{w=0.44}"
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     extend " ручка{w=0.44}."
     "Если я допишу этот стих до конца, это уже будет чудом."
     $ TS.s(ts_hidescreens)
@@ -862,7 +862,7 @@ label ts_scenario_11:
     
     "Ладно, что там дальше?"
     em "А дальше всё, я и так тебе уже помогла, дальше сама..."
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     "«ЧТО?»"
     "Однако Аки меня абсолютно не слышит. Или, по крайней мере, притворяется, что не слышит..."
     "Ну и ладно, ну и пусть! Ну и пожалуйста, ну и не нужно!"
@@ -1125,7 +1125,7 @@ label ts_scenario_11:
     show monika 3b at f11
     em "Ну, если я, как ты говоришь, «бешу тебя», то{w=0.8}{nw}"
     play sound door_snesli_nahui
-    show layer master at ts_razebal
+    $ TS.m(ts_razebal)
     show monika 3t at h11
     $ TS.p(0.3)
     $ TS.s(ts_showscreens_fast)
@@ -1166,7 +1166,7 @@ label ts_scenario_11:
     $ persistent.ingame_pizda = False
     "Я больше боюсь того, чтобы чернила на моей ручке не отсохли окончательно, чем {i}вот этого{/i}."
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.ingame_pizda = True
     python:
@@ -1204,7 +1204,7 @@ label ts_scenario_11:
 
     scene ts_club
 
-    show layer screens
+    $ TS.s()
 
     $ persistent.ingame_pizda = False
     python:
@@ -1334,7 +1334,7 @@ label poemresponsesuka_loop:
             s 2x "Ну что, готова показать стихотворение?"
             show sayori 2a at t11
             if poemsread > 0:
-                show layer master at ts_blur_transform_suka(0, 2, 9)
+                $ TS.m(ts_blur_transform_suka(0, 2, 9))
                 "Хотя это предложение кажется совершенно обыденным и безобидным, я чувствую, как она, да и остальные тоже, просто надо мной насмехаются."
                 "Ну, то есть... Это же я ко всем подхожу первая с этим вопросом, как будто мне больше всех надо."
                 "Хотя... мне ведь на самом деле больше всех надо... От успеха этой авантюры так-то будущее клуба зависит!"
@@ -1342,9 +1342,9 @@ label poemresponsesuka_loop:
                 em "Цикл заканчивается в пятницу, за три дня до фестиваля. А затем мы откатываемся обратно на субботу прошлой недели."
             else:
                 $ TS.p(4)
-                show layer master at ts_blur_transform_suka(0, 2, 9)
+                $ TS.m(ts_blur_transform_suka(0, 2, 9))
                 play sound wakeup
-            show layer master
+            $ TS.m()
             play sound ssikanul
             show sayori 3j at f11
             s "Моника, ты вообще меня слышишь?!"
@@ -1361,7 +1361,7 @@ label poemresponsesuka_loop:
             show sayori 2b at t11
             m "Д-да, конечно, только сразу предупрежу, что{w=0.5}{nw}"
             show sayori 3j at f11
-            show layer screens at vpunch
+            $ TS.s(vpunch)
             $ persistent.ingame_pizda = False
             s "Дай-ка сюда."
             $ TS.s(ts_hidescreens)
@@ -1380,7 +1380,7 @@ label poemresponsesuka_loop:
 
             show ts_sayori_zalagala_chereshnya:
                 align(0.5, 0.05)
-            show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+            $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
 
             s "Так я же его помню."
@@ -1394,7 +1394,7 @@ label poemresponsesuka_loop:
             stop music
 
             scene ts_club
-            show layer screens
+            $ TS.s()
             $ persistent.ingame_pizda = False
 
             show sayori 4r at f11
@@ -1548,14 +1548,14 @@ label poemresponsesuka_loop:
             "Юри пренебрежительно бросает стих обратно на парту и продолжает."
 
             $ persistent.ingame_pizda = True
-            show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+            $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
 
             play music ts_glitch_music11 fadein 2
             show yuri 3r at f21
             show ts_psihuet1 zorder 3:
                 alpha 0.5
-            show layer master at heartbeat2(1)
+            $ TS.m(heartbeat2(1))
             y "Что слышала, швабра мелкая!" with vpunch
             y 2k "Для особо глухих повторяю ещё раз: твой стих – это примитивная херня."
             y 2y4 "Была бы моя воля, я бы скормила этот стих собакам, и их отходы всё равно бы представляли бóльшую ценность, чем это убожество."
@@ -1572,7 +1572,7 @@ label poemresponsesuka_loop:
             n "Сама-то не лучше, написала абсолютно бессвязный высокопарный бред и выдала это за стихотворение!"
             hide ts_psihuet1
             show ts_psihuet2 zorder 3
-            show layer master at heartbeat2(2)
+            $ TS.m(heartbeat2(2))
             n 1e "Юри, скажи честно, сколько новых шрамов на тебе появилось, пока ты писала эту хрень?"
             show yuri 2y6 at f21
             show natsuki 2f at t22
@@ -1611,21 +1611,21 @@ label poemresponsesuka_loop:
                 scene black
                 show y_glitch_head:
                     align(0.5, 0.5)
-                show layer master at ts_walking
+                $ TS.m(ts_walking)
                 y "Сколько копеек в месяц тебе даёт папа?"
-                show layer master at ts_walking1
+                $ TS.m(ts_walking1)
                 y "Сколько раз в неделю он тебя кормит?"
-                show layer master at ts_walking2
+                $ TS.m(ts_walking2)
                 y "Когда он в последний раз тебя вообще кормил?"
-                show layer master at ts_walking3
+                $ TS.m(ts_walking3)
                 y "Или ты, как обычно, пойдёшь клянчить мелочь или собирать монетки под торговыми автоматами в школе?"
-                show layer master at ts_walking4
+                $ TS.m(ts_walking4)
                 "Юри рыскает по карманам и находит несколько монеток."
-                show layer master at ts_walking5
+                $ TS.m(ts_walking5)
                 y "Вот. На воду без газа должно хватить."
-                show layer master at ts_walking6
+                $ TS.m(ts_walking6)
                 y "Сколько, кстати, синяков под твоим телом, которые мы не должны видеть?"
-                show layer master at ts_walking7
+                $ TS.m(ts_walking7)
                 y "С десяток? Или больше?"
                 stop music fadeout 2
                 scene ts_club
@@ -1642,8 +1642,8 @@ label poemresponsesuka_loop:
                 jump poemend_abrupt
             elif poemsread == 3:
                 $ persistent.ingame_pizda = False
-                show layer screens
-                show layer master
+                $ TS.s()
+                $ TS.m()
                 stop music
                 stop sound
                 scene ts_club
@@ -1761,11 +1761,11 @@ label poemresponsesuka_loop:
             em "Или у тебя, как и всегда, память золотой рыбки, и ты уже забыла то, о чём думала, буквально три секунды назад?"
             play music ts_glitch_music12 fadein 6
             scene ts_club_glitch_pizdets with Dissolve(6)
-            show layer master at heartbeat2(1)
+            $ TS.m(heartbeat2(1))
 
 
             $ persistent.ingame_pizda = True
-            show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+            $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
             show natsuki ghost1 at f11
             n "Это что-то новенькое..."
@@ -1773,8 +1773,8 @@ label poemresponsesuka_loop:
             m "В с-смысле? О ч-чём ты говоришь?"
             $ persistent.ingame_pizda = False
             stop music
-            show layer screens
-            show layer master
+            $ TS.s()
+            $ TS.m()
             scene ts_club
             show natsuki 1k at f11
             n "Ну, ты же на прошлое собрание очень похожий стих писала, тоже про какой-то шум, какофонию и прочее подобное."
@@ -1871,7 +1871,7 @@ label poemresponsesuka_loop:
             show natsuki 1za at t11
             m "Да, конечно..."
             show natsuki 1s at t11
-            show layer master at ts_razebal
+            $ TS.m(ts_razebal)
             play sound ts_bumaga_sound
             $ TS.p(0.8)
             show natsuki 1s at cright with move
@@ -1926,9 +1926,9 @@ label poemresponsesuka_loop:
             show ts_glaza_yrec
             with Dissolve(6)
 
-            show layer master at heartbeat2(1)
+            $ TS.m(heartbeat2(1))
             $ persistent.ingame_pizda = True
-            show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+            $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
             y "Хм..."
             y "Я уже видела... нечто очень похожее..."
@@ -1940,8 +1940,8 @@ label poemresponsesuka_loop:
 
             $ persistent.ingame_pizda = False
 
-            show layer master
-            show layer screens
+            $ TS.m()
+            $ TS.s()
 
             stop music
             scene ts_club
@@ -2084,7 +2084,7 @@ label poemresponsesuka_loop:
             
 label poemend_abrupt:
     $ persistent.ingame_pizda = False
-    show layer screens
+    $ TS.s()
     $ unluck7 = True
     $ unluck_ball += 1
     show yuri 2y6 at t11
@@ -2147,7 +2147,7 @@ label poemend_abrupt:
     play sound2 ts_othodos_ot_bega fadein 1
     play sound pageflip
     scene ts_bedroom
-    show layer master at ts_ustal_suka
+    $ TS.m(ts_ustal_suka)
     with wipeleft_scene_fast
 
     $ TS.s(ts_showscreens)
@@ -2156,7 +2156,7 @@ label poemend_abrupt:
     "Я бегу так быстро, как только могу, только чтобы Аки побыстрее заткнулась."
     "Через пять минут я уже прибежала домой."
     stop sound2 fadeout 1
-    show layer master
+    $ TS.m()
     scene ts_bedroom
     show monika 2i at f11
     em "Ты действительно думаешь, что если ты прибежишь домой, то скроешься от меня?"
@@ -2166,7 +2166,7 @@ label poemend_abrupt:
     em 5c "{cps=*0.8}{b}БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ БЕЗДАРНОСТЬ{/b}{/cps}{nw}"
 
     $ persistent.ingame_pizda = True
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     stop sound_loop
 
@@ -2290,11 +2290,11 @@ label poemend_abrupt:
     "Однако я выговорилась, а это всё, что важно."
     "Я победно перечитываю стихотворение."
     scene black
-    show layer master
-    show layer screens
+    $ TS.m()
+    $ TS.s()
     window hide
     $ persistent.ingame_pizda = False
-    $ renpy.block_rollback()
+    $ TS.b()
     python:
         currentpos = get_pos()
         startpos = currentpos - 0.2
@@ -2308,8 +2308,8 @@ label poemend_abrupt:
             xpos 0.1 ypos 0.05
         show fake_exception3_eng zorder 2:
             xpos 0.1 ypos 0.15
-        show layer master at heartbeat2(1)
-        $ renpy.block_rollback()
+        $ TS.m(heartbeat2(1))
+        $ TS.b()
         pause
         hide fake_exception3_eng
     else:
@@ -2317,8 +2317,8 @@ label poemend_abrupt:
             xpos 0.1 ypos 0.05
         show fake_exception3 zorder 2:
             xpos 0.1 ypos 0.15
-        show layer master at heartbeat2(1)
-        $ renpy.block_rollback()
+        $ TS.m(heartbeat2(1))
+        $ TS.b()
         pause
         hide fake_exception3
 
@@ -2326,45 +2326,45 @@ label poemend_abrupt:
     if _preferences.language == "english":
         show fake_exception4_eng zorder 2:
             xpos 0.1 ypos 0.15
-        show layer master at heartbeat2(2)
-        $ renpy.block_rollback()
+        $ TS.m(heartbeat2(2))
+        $ TS.b()
         pause
         hide fake_exception4_eng
     else:
         show fake_exception4 zorder 2:
             xpos 0.1 ypos 0.15
-        show layer master at heartbeat2(2)
-        $ renpy.block_rollback()
+        $ TS.m(heartbeat2(2))
+        $ TS.b()
         pause
         hide fake_exception4
     scene ts_club_glitch_pizdets
     if _preferences.language == "english":
         show fake_exception5_eng zorder 2:
             xpos 0.1 ypos 0.15
-        show layer master at heartbeat2(3)
-        $ renpy.block_rollback()
+        $ TS.m(heartbeat2(3))
+        $ TS.b()
         pause
         hide fake_exception5_eng
     else:    
         show fake_exception5 zorder 2:
             xpos 0.1 ypos 0.15
-        show layer master at heartbeat2(3)
-        $ renpy.block_rollback()
+        $ TS.m(heartbeat2(3))
+        $ TS.b()
         pause
         hide fake_exception5
     scene ts_kitchen_glitch_pizdets
     if _preferences.language == "english":
         show fake_exception6_eng zorder 2:
             xpos 0.1 ypos 0.15
-        show layer master at heartbeat2(4)
-        $ renpy.block_rollback()
+        $ TS.m(heartbeat2(4))
+        $ TS.b()
         pause
         hide fake_exception6_eng
     else:
         show fake_exception6 zorder 2:
             xpos 0.1 ypos 0.15
-        show layer master at heartbeat2(4)
-        $ renpy.block_rollback()
+        $ TS.m(heartbeat2(4))
+        $ TS.b()
         pause
         hide fake_exception6
     scene black
@@ -2372,15 +2372,15 @@ label poemend_abrupt:
     if _preferences.language == "english":
         show fake_exception7_eng zorder 2:
             xpos 0.1 ypos 0.15
-        show layer master at heartbeat2(5)
+        $ TS.m(heartbeat2(5))
     else:
         show fake_exception7 zorder 2:
             xpos 0.1 ypos 0.15
-        show layer master at heartbeat2(5)
-    $ renpy.block_rollback()
+        $ TS.m(heartbeat2(5))
+    $ TS.b()
     pause
     stop music
-    show layer master
+    $ TS.m()
     play sound winerrorsound
 
     if renpy.android:
@@ -2395,7 +2395,7 @@ label poemend_abrupt:
             show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
 
 
-    $ renpy.block_rollback()
+    $ TS.b()
     pause
     hide screen dialog
     play sound winerrorsound
@@ -2409,10 +2409,10 @@ label poemend_abrupt:
             show screen dialog("truestory.exe\n\nReboot the game?", ok_action=Return())
         else:
             show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
-    $ renpy.block_rollback()
+    $ TS.b()
     pause
     hide screen dialog
-    $ renpy.block_rollback()
+    $ TS.b()
     scene black
     $ TS.p(0.5)
 
@@ -2605,11 +2605,11 @@ label poemend_normal:
     "Я победно перечитываю стихотворение."
 
     scene black
-    show layer master
-    show layer screens
+    $ TS.m()
+    $ TS.s()
     window hide
     $ persistent.ingame_pizda = False
-    $ renpy.block_rollback()
+    $ TS.b()
     python:
         currentpos = get_pos()
         startpos = currentpos - 0.2
@@ -2622,7 +2622,7 @@ label poemend_normal:
         xpos 0.1 ypos 0.05
     show fake_exception3 zorder 2:
         xpos 0.1 ypos 0.15
-    $ renpy.block_rollback()
+    $ TS.b()
     pause
     hide fake_exception3
 
@@ -2630,7 +2630,7 @@ label poemend_normal:
     show fake_exception6 zorder 2:
         xpos 0.1 ypos 0.15
 
-    $ renpy.block_rollback()
+    $ TS.b()
     pause
     hide fake_exception6
     scene black
@@ -2638,10 +2638,10 @@ label poemend_normal:
     show fake_exception7 zorder 2:
         xpos 0.1 ypos 0.15
 
-    $ renpy.block_rollback()
+    $ TS.b()
     pause
     stop music
-    show layer master
+    $ TS.m()
     play sound winerrorsound
     if renpy.android:
         if _preferences.language == "english":
@@ -2654,7 +2654,7 @@ label poemend_normal:
         else:
             show screen dialog("truestory.exe\n\nВ файлах скрипта обнаружена критическая ошибка. Необходимо перезапустить игру. Остановимся на ещё работающем скрипте.", ok_action=Return())
 
-    $ renpy.block_rollback()
+    $ TS.b()
     pause
     hide screen dialog
     play sound winerrorsound
@@ -2668,10 +2668,10 @@ label poemend_normal:
             show screen dialog("truestory.exe\n\nReboot the game?", ok_action=Return())
         else:
             show screen dialog("truestory.exe\n\nПерезапускаем?", ok_action=Return())
-    $ renpy.block_rollback()
+    $ TS.b()
     pause
     hide screen dialog
-    $ renpy.block_rollback()
+    $ TS.b()
     scene black
     $ TS.p(0.5)
 

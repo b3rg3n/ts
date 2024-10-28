@@ -1,6 +1,6 @@
 label ts_scenario_10:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter10()
@@ -48,7 +48,7 @@ label ts_scenario_10:
 
     scene ts_bedroom
     show unblink
-    show layer master at ts_vstavai_shashlik
+    $ TS.m(ts_vstavai_shashlik)
     $ TS.p(3)
     play sound svet_on
     $ TS.p(1.5)
@@ -71,7 +71,7 @@ label ts_scenario_10:
     with wipeleft_scene
 
 
-    show layer master at ts_clean_eblet
+    $ TS.m(ts_clean_eblet)
     $ TS.p(2)
     play sound open_water_sink
     $ TS.p(0.5)
@@ -152,7 +152,7 @@ label ts_scenario_10:
     show hiroto 1y at f11
 
     ts_ft "А, да это так, пустяки.{w=0.05}{nw}"
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.ingame_pizda = True
     python:
@@ -170,7 +170,7 @@ label ts_scenario_10:
     #show hiroto 1s at t11
     m "Ч-что, п-прости?"
 
-    show layer screens
+    $ TS.s()
 
     $ persistent.ingame_pizda = False
     stop sound
@@ -187,7 +187,7 @@ label ts_scenario_10:
     show hiroto 2y at f11
     ts_ft "Ну-у-у, {w=0.05}{nw}"
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.ingame_pizda = True
     python:
@@ -204,7 +204,7 @@ label ts_scenario_10:
     extend "убивать всех своих подруг и на тебя не похоже, но ты же это сделала. Чем я хуже?"
     #show hiroto 1r at t11
     m "Ч-ч-что?"
-    show layer screens
+    $ TS.s()
 
     $ persistent.ingame_pizda = False
     stop sound
@@ -231,7 +231,7 @@ label ts_scenario_10:
     $ persistent.ingame_pizda = False
     ts_ft "О, гречка – это замечательно."
     stop music
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.ingame_pizda = True
     python:
@@ -257,7 +257,7 @@ label ts_scenario_10:
 
     ts_ft "К гарниру в виде гречки хорошо бы подошли твои фаршированные глазные яблоки."
     ts_ft "Можно ещё твои запечёные уши, но это так, для следующего раза."
-    show layer screens
+    $ TS.s()
 
     $ persistent.ingame_pizda = False
     stop sound
@@ -396,7 +396,7 @@ label ts_scenario_10:
     m "Тык."
 
     show natsuki scream at hf11
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     $ persistent.ingame_pizda = False
     play sound stol_udar
     n "{font=[pizdec_font]}А-А-А-А-А-А-А-А-А!{/font}"
@@ -414,7 +414,7 @@ label ts_scenario_10:
 
     play sound2 ts_smeh_pizdec
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     play sound ts_glitch_music8
     scene ts_closet_glitches_balya:
@@ -441,7 +441,7 @@ label ts_scenario_10:
     stop sound2
     stop sound
 
-    show layer screens
+    $ TS.s()
 
     $ persistent.ingame_pizda = False
 
@@ -594,7 +594,7 @@ label ts_scenario_10:
 
     play sound2 ts_smeh_pizdec
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ gtextsuka = glitchtext(24)
     n "[gtextsuka]{w=0.33}{nw}"
@@ -612,7 +612,7 @@ label ts_scenario_10:
     $ persistent.ingame_pizda = False
     stop sound
     stop sound2
-    show layer screens
+    $ TS.s()
 
     python:
         _preferences.volumes['sfx'] = .65
@@ -756,13 +756,13 @@ label ts_scenario_10:
     show sayori 2x at f32
     s 2x "Привет, [gtextsuka]! Привет, [gtextsuka1]!"
     play sound psy_fast_1
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     s "[gtextsuka2]"
     show yuri 1b at f31
     show sayori 1a at t32
     $ gtextsuka = glitchtext(5)
     play sound psy_fast_3
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     $ persistent.ingame_pizda = False
     y "Всем [gtextsuka]."
@@ -805,7 +805,7 @@ label ts_scenario_10:
         ease 0.5 align(0.9, 0.5)
         repeat
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     n "{font=[pizdec_font]}Что, даже не {fast}расчлените Монику и не принесёте её обрубки в жертву богам?{/font}"
 
@@ -813,7 +813,7 @@ label ts_scenario_10:
     stop sound2
     $ persistent.ingame_pizda = False
 
-    show layer screens
+    $ TS.s()
     python:
         _preferences.volumes['sfx'] = .65
         _preferences.volumes['music'] = .45
@@ -838,9 +838,9 @@ label ts_scenario_10:
     $ persistent.ingame_pizda = True
     scene ts_sayori_bedroom
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
 
     show s_kill_bg_zoom zorder 1
     show s_kill_bg2_zoom zorder 1
@@ -856,7 +856,7 @@ label ts_scenario_10:
 
     extend "то, что она хотела нас всех убить самыми изощрёнными способами и даже не раскаяться в содеянном, {w=0.01}{nw}"
     extend "а тут ещё ты накручиваешь её."
-    show layer screens
+    $ TS.s()
     $ persistent.ingame_pizda = False
 
     scene ts_club
@@ -881,7 +881,7 @@ label ts_scenario_10:
     $ TS.s(ts_hidescreens_fast)
     " {w=0.1}{nw}"
     play sound fb
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     show natsuki 1za at t11
     with flash
     $ TS.p(2)
@@ -933,8 +933,8 @@ label ts_scenario_10:
     hide dust3
     hide dust4
     if not renpy.android:
-        show layer master at StillAberate(25.0)
-        show layer screens at StillAberate(25.0)
+        $ TS.m(StillAberate(25.0))
+        $ TS.s(StillAberate(25.0))
 
     python:
         currentpos = get_pos()
@@ -954,8 +954,8 @@ label ts_scenario_10:
     show dust2
     show dust3
     show dust4
-    show layer master
-    show layer screens
+    $ TS.m()
+    $ TS.s()
     with memglitch
     stop sound
     play music ts_s_stuff fadein 2
@@ -992,16 +992,16 @@ label ts_scenario_10:
     em "Проще. Видимо, всё-таки не слышала..."
     m "Поэтому, вот вам и новая активность: напишите стих, чтобы к следующему собранию мы все смогли обсудить его друг с другом."
     if not renpy.android:
-        show layer master at StillAberate(25.0)
-        show layer screens at StillAberate(25.0)
+        $ TS.m(StillAberate(25.0))
+        $ TS.s(StillAberate(25.0))
     $ glitchhuetenblya = glitchtext(24)
     python:
         _preferences.volumes['music'] = 0.0
     m "[glitchhuetenblya]{nw}"
     python:
         _preferences.volumes['music'] = .45
-    show layer master
-    show layer screens
+    $ TS.m()
+    $ TS.s()
     show yuri 4c at s31
     show sayori 1e at s32
     show natsuki 1u at s33
@@ -1175,7 +1175,7 @@ label ts_scenario_10:
 
     play sound2 ts_glitch_music4
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.ingame_pizda = True
     play sound crack
@@ -1192,7 +1192,7 @@ label ts_scenario_10:
     stop sound
     stop sound2
 
-    show layer screens
+    $ TS.s()
 
     $ persistent.ingame_pizda = False
 
@@ -1393,12 +1393,12 @@ label ts_scenario_10:
     show m_rectstatic zorder 5
     show hiroto 1b zorder 6 at Glitch(_fps=1000.)
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ gtextsuka = glitchtext(80)
     ts_ft "Здáрова [gtextsuka]. Как житие молодое{w=1.5}{nw}"
 
-    show layer screens
+    $ TS.s()
 
     stop sound_loop
     $ persistent.ingame_pizda = False
@@ -1468,13 +1468,13 @@ label ts_scenario_10:
     show anim_exhausted zorder 5
     show m_rectstatic zorder 5
     show hiroto 1b zorder 6 at Glitch(_fps=1000.)
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     extend "жареные Ģ̵͉͎͎̙̟͎̟̭͍͐̏̒́L̴̛̛̪̳̠͔͑̊͐̾̀͑̕͝Ḁ̵̧̞̲̳̖͎͓̳̣̩̓̽͌̒̔͋̄͊́͑̕̚͝ͅZ̶̡̢̧̢̪̥̦̣̲̠̳͎͖͍̪̖͚̚À̸̛̛̪̪̝͕̞̮̭̒͌͆͊̈̍̀͂̀̈͘̕͝ всех твоих новых подруг?"
 
     show hiroto 1e zorder 6 at Glitch(_fps=1000.)
     m "Ч-что?"
-    show layer screens
+    $ TS.s()
     scene ts_living_room_night
     stop sound
     $ persistent.ingame_pizda = False
@@ -1517,7 +1517,7 @@ label ts_scenario_10:
     show anim_exhausted zorder 5
     show m_rectstatic zorder 5
     show hiroto 1a zorder 6 at Glitch(_fps=1000.)
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     ts_ft "Я надеюсь, ты умрёшь в страшных муках."
     ts_ft "Никто даже не заплачет на твоих похоронах."
@@ -1529,7 +1529,7 @@ label ts_scenario_10:
     python:
         _preferences.volumes['sfx'] = .65
         _preferences.volumes['music'] = .45
-    show layer screens
+    $ TS.s()
 
     scene ts_kitchen
     show hiroto 1a at i11
@@ -1752,7 +1752,7 @@ label ts_scenario_10:
     show hiroto 2p at t33
     play sound ssikanul
     play sound2 psy_fast_1
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     ts_mt "Моника!"
     show minami 2bs at t31
     show hiroto 2p at t33
@@ -1853,5 +1853,5 @@ label ts_scenario_10:
     "Спустя пару секунд, как я закрыла глаза, я уже провалилась в сон."
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
     jump ts_scenario_11

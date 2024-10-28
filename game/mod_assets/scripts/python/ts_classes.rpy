@@ -14,3 +14,6 @@ init -15 python in TS:
     
     def pn():
         renpy.pause(hard=True)
+
+    def b():
+        renpy.block_rollback()

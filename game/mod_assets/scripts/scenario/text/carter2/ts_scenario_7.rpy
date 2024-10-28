@@ -1,6 +1,6 @@
 label ts_scenario_7:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter7()
@@ -59,7 +59,7 @@ label ts_scenario_7:
     play sound fb
     scene ts_gost_sunset
     show hiroto 1a at i31
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with flash
 
     $ TS.s(ts_showscreens)
@@ -86,7 +86,7 @@ label ts_scenario_7:
     " {w=1.0}{nw}"
 
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     menu:
         "Лечь спать дальше":
@@ -129,7 +129,7 @@ label ts_scenario_7:
             play sound ssikanul
             play music ts_dtbd
 
-            show layer screens at vpunch
+            $ TS.s(vpunch)
             "ТВОЮ ЖЕ МАТЬ!"
 
             show hiroto 1v at f11
@@ -166,7 +166,7 @@ label ts_scenario_7:
             with wipeleft_scene
 
 
-            show layer master at ts_clean_eblet
+            $ TS.m(ts_clean_eblet)
             $ TS.p(2)
             play sound open_water_sink
             $ TS.p(0.5)
@@ -272,7 +272,7 @@ label ts_scenario_7:
 
             "Вдали уже виднеется школа. На часах тем временем 8:27."
 
-            show layer screens at vpunch
+            $ TS.s(vpunch)
             "Ну же!"
             "Но моё уставшее тело всё-таки пересиливает мой голос разума."
             "К тому же, пока я бежала до школы, я ещё и невероятно вспотела."
@@ -398,10 +398,10 @@ label ts_scenario_7:
             $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
-            show layer master at ts_svinka_kupaetsya
+            $ TS.m(ts_svinka_kupaetsya)
             $ TS.p(2)
 
-            show layer master at ts_svinka_kupaetsya_kran_open
+            $ TS.m(ts_svinka_kupaetsya_kran_open)
 
             play sound open_water_sink
             $ TS.p(1.3)
@@ -413,7 +413,7 @@ label ts_scenario_7:
             $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
-            show layer master at ts_svinka_kupaetsya_cumback
+            $ TS.m(ts_svinka_kupaetsya_cumback)
             $ TS.p(2)
 
             $ TS.s(ts_showscreens)
@@ -426,7 +426,7 @@ label ts_scenario_7:
                 "Повезло, повезло. Папу я так и не разбудила."
             "А ведь спальня родителей прямо по соседству с ванной..."
             "...не спрашивайте о причудах моего дома. Какой есть."
-            show layer master at ts_svinka_kupaetsya
+            $ TS.m(ts_svinka_kupaetsya)
             "Как только я пробую воду в ванной руками, я тут же отшатываюсь."
             m "Какая же ты горячая!"
             "Я и так купаюсь в воде, которую родители называют кипятком."
@@ -437,7 +437,7 @@ label ts_scenario_7:
             " {w=1.0}{nw}"
 
             stop ambience
-            show layer master at ts_svinka_kupaetsya_kran_open
+            $ TS.m(ts_svinka_kupaetsya_kran_open)
             play sound close_water_sink
             $ TS.p(1)
 
@@ -449,11 +449,11 @@ label ts_scenario_7:
             "Да, в ногах слегка покалывает от ещё горячей воды, но это быстро пройдёт."
             "Я сажусь."
             play sound woda
-            show layer master at ts_svinka_kupaetsya_uapala_v_vannuyu_sooqa
+            $ TS.m(ts_svinka_kupaetsya_uapala_v_vannuyu_sooqa)
             play ambience amb_bathroom fadein 4
             "Хм. Пока я садилась, даже... и не горячо уже было?"
             play music ts_est
-            show layer master at ts_svinka_kupaetsya_cumback2
+            $ TS.m(ts_svinka_kupaetsya_cumback2)
             show monika 2bk at t11
             em "А через пятнадцать минут ты уже вылезешь с мыслями, что вода уже холодная."
             em "Интересно, как твои родители держат такую расточительную бездарность, которая набирает полную ванную, чтобы через пятнадцать минут уже вылезти?"
@@ -470,7 +470,7 @@ label ts_scenario_7:
             em "А, знаешь, неважно уже. Я сказала «его»? Я имела в виду, «своего». Для своего же удобства. Я просто боюсь простудиться и заболеть."
             show monika 2bm at t11
 
-            show layer screens at vpunch
+            $ TS.s(vpunch)
 
             m "Простудиться? Заболеть? Здесь вода под пятьдесят градусов!"
             show monika 3bd at f11
@@ -534,7 +534,7 @@ label ts_scenario_7:
             "Вчера я не успела придумать, что же мне приготовить на завтрак. Но зато сегодня у меня есть всё время во вселенной!"
             "Да, сегодня, по идее, готовит папа. Но я посчитаю это как компенсацию за то, что я ничего не приготовила на завтрак в субботу."
             play music ts_dof
-            show layer master at ts_havchik_gotovka
+            $ TS.m(ts_havchik_gotovka)
             "Та-а-ак, посмотрим..."
             "Может, макароны? Но с чем?.."
             em "Можно и просто макароны сахаром засыпать, как раз будет приемлемый завтрак и для папы, и для беспомощной бездарности вроде тебя."
@@ -598,20 +598,20 @@ label ts_scenario_7:
             $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
-            show layer master at ts_kuh_kran_open
+            $ TS.m(ts_kuh_kran_open)
             $ TS.p(2)
 
-            show layer master at ts_kuh_kran_open1
+            $ TS.m(ts_kuh_kran_open1)
             play sound open_water_sink
             $ TS.p(1.3)
-            show layer master at ts_kuh_kran_open1
+            $ TS.m(ts_kuh_kran_open1)
             play sound close_water_sink
             $ TS.p(1)
 
-            show layer master at ts_kuh_kran_open2
+            $ TS.m(ts_kuh_kran_open2)
             $ TS.p(2)
 
-            show layer master at ts_havchik_gotovka
+            $ TS.m(ts_havchik_gotovka)
             $ TS.p(1)
 
             $ TS.s(ts_showscreens)
@@ -1167,7 +1167,7 @@ label ts_scenario_7:
 
     stop music
     play sound door_break
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     "Пока Аки капала мне на мозги, я и не заметила, как в комнату вошла Сайори."
     "Точнее, не вошла. Вломилась."
     show sayori 4m at ln21
@@ -1223,7 +1223,7 @@ label ts_scenario_7:
     python:
         _preferences.volumes['voice'] = 1.0
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "{b}{size=+20}ТАК, ПО ОДНОМУ!!!{/b}{/size}"
     show sayori 4n at t21
     show monika 4c at t22
@@ -1344,12 +1344,12 @@ label ts_scenario_7:
     show natsuki 1u at t33
     play music audio.t10
     s "Что-что... Отказался он."
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     s 5c "Он наотрез отказался вступать к нам."
     s 5d "Не помогло и то, что мы все милые девочки. Не помогли даже обещания кексиков, которыми славится Нацуки."
     show sayori 5d at t32
     show natsuki 2p at f33
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     n "Э-эй! Я на внеочередную готовку не подписывалась!"
     show sayori 5a at f32
     show natsuki 2p at t33
@@ -1369,13 +1369,13 @@ label ts_scenario_7:
     s 5d "Одним словом, злюка."
     show sayori 5d at t32
     "Ну и ну..."
-    show layer master at ts_fon_blur_postepenno
+    $ TS.m(ts_fon_blur_postepenno)
     play music ts_ylm
     "А я ещё считала его нормальным парнем. А оно вот как оказывается..."
     "Впрочем, нам же будет только лучше без этого неудачника!"
     "Наверняка он вместо нас, милых девочек, вступит в какой-нибудь Анимешный клуб, в котором одни только прыщавые и очкастые парни..."
     "Или он вообще не вступит ни в какой клуб и просто будет затворником до конца своих дней..."
-    show layer master
+    $ TS.m()
     show yuri 3w at t31
     show sayori 2k at t32
     show natsuki 2s at t33
@@ -1390,7 +1390,7 @@ label ts_scenario_7:
     show yuri 3n at h31
     show sayori 2m at h32
     show natsuki 2zb at h33
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "{size=+10}ИТАК, РЕБЯТА!{/size}"
     "Вот так-то лучше."
     "Правда, девочки выглядят испуганно из-за того, что я так внезапно наорала..."
@@ -1443,7 +1443,7 @@ label ts_scenario_7:
     jump cartersevenpoemsblya
 
 label cartersevenpoemsblya:
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     if ts_s_carterseven_readpoem and ts_y_carterseven_readpoem and ts_n_carterseven_readpoem:
         jump ts_carterseven_poem_finally
@@ -2057,7 +2057,7 @@ label ts_carterseven_poem_finally:
         $ m_name = "Everyone"
     else:
         $ m_name = "Все вместе"
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "Да!"
     show yuri 2c at t31
     show sayori 3q at t32
@@ -2086,7 +2086,7 @@ label ts_carterseven_poem_finally:
         $ m_name = "Everyone"
     else:
         $ m_name = "Все вместе"
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "!!!"
     if _preferences.language == "english":
         $ m_name = "Monika"
@@ -2150,7 +2150,7 @@ label ts_carterseven_poem_finally:
         $ m_name = "Everyone"
     else:
         $ m_name = "Все вместе"
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "До завтра, Моника!"
     if _preferences.language == "english":
         $ m_name = "Monika"
@@ -2215,7 +2215,7 @@ label ts_carterseven_poem_finally:
     python:
         _preferences.volumes['voice'] = .3
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     if persistent.cens_mode == True:
         m "ДА ИДИ ТЫ НАХУЙ УЖЕ!"
     else:
@@ -2497,6 +2497,6 @@ label ts_carterseven_poem_finally:
 
     scene black
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     jump ts_scenario_8

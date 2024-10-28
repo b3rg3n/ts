@@ -1,8 +1,8 @@
 label ts_scenario_6:
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter6()
@@ -49,7 +49,7 @@ label ts_scenario_6:
 
     scene ts_bedroom
     show unblink
-    show layer master at ts_vstavai_shashlik
+    $ TS.m(ts_vstavai_shashlik)
     $ TS.p(3)
     play sound svet_on
     $ TS.p(1.5)
@@ -78,7 +78,7 @@ label ts_scenario_6:
     scene ts_bathroom
     with wipeleft_scene
 
-    show layer master at ts_clean_eblet
+    $ TS.m(ts_clean_eblet)
     $ TS.p(2)
     play sound open_water_sink
     $ TS.p(0.5)
@@ -263,7 +263,7 @@ label ts_scenario_6:
     show hiroto 1a at s11
 
     show overlay aw_memory_back_1
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with dissolve2
 
     $ TS.s(ts_showscreens)
@@ -288,7 +288,7 @@ label ts_scenario_6:
     show hiroto 1a at i11
     with vpunch
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     ts_ft 2q "..ика!"
 
     show hiroto 1p at t11
@@ -349,7 +349,7 @@ label ts_scenario_6:
 
     show hiroto 1o at t11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     ts_ft "Прошу прощения?!"
 
     show hiroto 1p at t11
@@ -357,7 +357,7 @@ label ts_scenario_6:
     m "Извини, пап... я не тебе..."
     em "Видишь? Я же говорила, говорила!"
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     em "Ты не только бездарная, но ещё и неуравновешенная!"
 
     show hiroto 1q at t11
@@ -429,7 +429,7 @@ label ts_scenario_6:
     m "Ну и что это было?"
     em "Что именно было?"
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "Да весь твой утренний перформанс! Из-за тебя я опозорилась перед папой!"
     em 1i "Ну-у-у..."
@@ -437,7 +437,7 @@ label ts_scenario_6:
 
     show monika 2j at s11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "Ты реально не понимаешь?!"
     em 2r "Да всё я понимаю..."
@@ -502,7 +502,7 @@ label ts_scenario_6:
 
     "Наконец-то школа... Наконец-то куча людей... И мне не придётся иметь дело с... этой..."
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     em "У меня, вообще-то, имя есть!"
     "«Что, правда? И как же тебя зовут?»"
     em "Просто зови меня Аки. Не сильно сложнее, чем «эта», всего три буквы, два слога, и даже отдалённо похоже на твоё же имя."
@@ -522,7 +522,7 @@ label ts_scenario_6:
     m "Простите..."
     teacher "Ладно, на первый раз прощаю."
     m "{size=-10}Спасибо...{/size}"
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     "Да что же это такое?! Из-за этой... 'этой'... у меня одни проблемы!"
     em "Я тебе ещё раз говорю, просто зови меня Аки."
     "«Ладно, {i}Аки{/i}. Теперь довольна?!»"
@@ -570,14 +570,14 @@ label ts_scenario_6:
 
     show natsuki 1k at rn11
     play sound ssikanul
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     n "Заткнись? Ты это кому?"
 
     show natsuki 1za at f11
 
     m "!.."
     extend " Никому..."
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     em "Прогресс налицо! К вечеру ты перед всеми своими {i}друзьяшками{/i} опозоришься!"
     "Она сказала «друзьяшками» каким-то чрезмерно язвительным и насмешливым тоном."
     "Но я не придала этому какого-то особого значения."
@@ -751,10 +751,10 @@ label ts_scenario_6:
 
     "Нет, это потому, что её имя чаще всего встречалось за всё то время, что мы читали."
     m "Э-э-э... Да! Она вся такая неловкая, неуклюжая и всё такое..."
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     em "Прямо как ты сейчас."
     em "Как же ты классику в детстве читала, если у тебя из головы всё выветривается пять минут спустя?"
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     stop music fadeout 3
     "«Просто заткнись.»"
     n 2l "Именно! А ещё...{w=1}{nw}"
@@ -815,14 +815,14 @@ label ts_scenario_6:
 
     show overlay aw_memory_back_1
     show zatemnenie_light
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with dspr
 
 
     $ TS.s(ts_showscreens)
 
     "Хотя внутри меня всё ещё гложет чувство вины."
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     em "А я бы в отместку накрутила её шею, градусов так на двести..."
     "«Фе, какая мерзость!»"
     em "Ой, да как будто ты через пару циклов будешь лучше."
@@ -873,7 +873,7 @@ label ts_scenario_6:
     y 1h "Нет, ничего..."
     m "Так вот..."
     m "Недавно у меня появилось вдохновение, и я написала небольшой стих..."
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     em "Спустя... сколько там лет ты не писала вообще ничего?"
 
     show yuri 2e at t31
@@ -951,7 +951,7 @@ label ts_scenario_6:
 
     show overlay aw_memory_back_1
     show zatemnenie_light
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with dspr
 
 
@@ -1062,7 +1062,7 @@ label ts_scenario_6:
     show m_rectstatic zorder 0
     with flash
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "Я же, в свою очередь..."
     "Не получается у меня ничего!"
@@ -1186,7 +1186,7 @@ label ts_scenario_6:
     else:
         $ m_name = "Все вместе"
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "Пока, Моника!"
 
     if _preferences.language == "english":
@@ -1320,7 +1320,7 @@ label ts_scenario_6:
 
     show monika 2a at t11
 
-    show layer screens at hpunch
+    $ TS.s(hpunch)
     m "Господи, да когда же это всё закончится..."
 
     show monika 2i at f11
@@ -1339,7 +1339,7 @@ label ts_scenario_6:
         show monika 2i at f11
 
         em "Ну, кто знает..."
-        show layer screens at hpunch
+        $ TS.s(hpunch)
         em "Может, ты вообще в коме находишься, а ущипнуть себя – это своего рода проверка на то, спишь ты или нет."
 
         show monika 2h at t11
@@ -1361,7 +1361,7 @@ label ts_scenario_6:
         m "Ну, людям свойственно меняться..."
 
         show monika 2k at f11
-        show layer screens at hpunch
+        $ TS.s(hpunch)
         em "Даже таким бездарностям, как ты?"
 
         show monika 2j at t11
@@ -1553,7 +1553,7 @@ label ts_scenario_6:
 
     m "А почему мы должны были не справиться? Это же мой клуб, в конце концов."
     em "Я бы поспорила на тему...{nw}"
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     "«Заткнись и не перебивай.»"
 
     show hiroto 1g at f11
@@ -1578,7 +1578,7 @@ label ts_scenario_6:
 
     show zatemnenie_light
     show overlay aw_memory_back_1
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with dissolve2
 
     $ TS.s(ts_showscreens)
@@ -1846,6 +1846,6 @@ label ts_scenario_6:
 
     scene black
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     jump ts_scenario_7

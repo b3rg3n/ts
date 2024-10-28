@@ -1,6 +1,6 @@
 label ts_scenario_5:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter5()
@@ -57,7 +57,7 @@ label ts_scenario_5:
     scene ts_sayori_bedroom
     show sayori 4pi at t11
     if not renpy.android:
-        show layer master at AnimatedAberate(20.0)
+        $ TS.m(AnimatedAberate(20.0))
     with flash
 
     $ TS.s(ts_showscreens)
@@ -76,7 +76,7 @@ label ts_scenario_5:
 
     $ TS.p(0.5)
 
-    show layer master
+    $ TS.m()
 
     $ TS.s(ts_showscreens)
 
@@ -92,7 +92,7 @@ label ts_scenario_5:
 
     play music audio.m1
     window hide
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     play sound fb
     show s_kill_bg_zoom zorder 1
     show s_kill_bg2_zoom zorder 1
@@ -108,7 +108,7 @@ label ts_scenario_5:
     with flash
 
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     "Та же Сайори..."
     "В той же пижаме..."
@@ -158,7 +158,7 @@ label ts_scenario_5:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     show sayori 2pk at s11
 
@@ -184,7 +184,7 @@ label ts_scenario_5:
     show sayori 2pm at h11
 
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     m "{font=[pizdec_font]}{size=+20}КАК ТЫ ПОВЕСИЛАСЬ В ТОЙ ЖЕ ПИЖАМЕ, ЧТО НА ТЕБЕ НАДЕТА СЕЙЧАС!{/size}"
 
@@ -208,7 +208,7 @@ label ts_scenario_5:
 
     "Теперь начинает плакать и Сайори."
 
-    show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
+    $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     window hide
     show zatemnenie
@@ -327,7 +327,7 @@ label ts_scenario_5:
     show natsuki 1n at t33:
         blur 10
     show overlay aw_memory_back_1
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with flash
 
     $ TS.s(ts_showscreens)
@@ -423,7 +423,7 @@ label ts_scenario_5:
     play sound fb
     scene ts_residential
     show overlay aw_memory_back_1
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with flash
 
 
@@ -562,7 +562,7 @@ label ts_scenario_5:
     show monika 1a at thide
     hide monika
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "ЧТО ИМЕННО Я ДОЛЖНА ПОНЯТЬ?"
 
@@ -646,7 +646,7 @@ label ts_scenario_5:
 
 
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     menu:
         "Сказать правду":
@@ -832,7 +832,7 @@ label ts_scenario_5:
 
 
 
-    show layer screens at ts_null_transform
+    $ TS.s(ts_null_transform)
 
     menu:
         "Играть в шахматы":
@@ -938,7 +938,7 @@ label ts_scenario_5:
             $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
-            show layer screens at ts_null_transform
+            $ TS.s(ts_null_transform)
 
 
             menu:
@@ -967,7 +967,7 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
 
-            show layer screens at ts_null_transform
+            $ TS.s(ts_null_transform)
 
             menu:
                 "Да":
@@ -994,7 +994,7 @@ label ts_scenario_5:
                     " {w=1.0}{nw}"
 
 
-                    show layer screens at ts_null_transform
+                    $ TS.s(ts_null_transform)
 
                     menu:
                         "Да":
@@ -1511,7 +1511,7 @@ label ts_scenario_5:
     show monika 2bn at ln11
 
 
-    show layer screens at hpunch
+    $ TS.s(hpunch)
 
     em "И не говори... Я сама хоть и не пила вчера, но чувствую себя немногим лучше..."
 
@@ -1654,7 +1654,7 @@ label ts_scenario_5:
 
     show monika 2bj at h11
 
-    show layer screens at vpunch
+    $ TS.s(vpunch)
 
     m "Знаешь, что!.."
 

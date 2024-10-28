@@ -1,6 +1,6 @@
 label ts_good_ending_blya:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter13()
@@ -249,7 +249,7 @@ label ts_good_ending_blya:
     show yuri 2r at t31
     show sayori 3i at t32
     show natsuki 1h at f33
-    show layer master at ts_razebal
+    $ TS.m(ts_razebal)
     $ TS.s(ts_showscreens_fast)
     n "Явилась не запылилась!"
     show yuri 2r at t31
@@ -355,7 +355,7 @@ label ts_good_ending_blya:
     show yuri 3n at h31
     show sayori 3m at h32
     show natsuki 2p at h33
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     "Как тут в дверь резко постучали. От такого дёрнулись все, даже я."
     if _preferences.language == "english":
         $ misc_name = "Student"
@@ -430,13 +430,13 @@ label ts_good_ending_blya:
     show yuri 2s at t42
     show sayori 3d at t43
     show natsuki 2a at t44
-    show layer master at ts_obnimashki_good_finalle
+    $ TS.m(ts_obnimashki_good_finalle)
     "Я снова обнимаю его."
     show hiroto 1g at f41
     show yuri 2s at t42
     show sayori 3d at t43
     show natsuki 2a at t44
-    show layer master at ts_obnimashki_good_finalle1
+    $ TS.m(ts_obnimashki_good_finalle1)
     ts_ft "Еле вас нашёл... Если бы не крики одного ученика, то я бы в принципе не смог вас найти..."
     show hiroto 1f at t41
     show yuri 2zi at f42
@@ -861,7 +861,7 @@ label ts_good_ending_blya:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer screens
+    $ TS.s()
     window hide
 
     jump good_credits_ts_label

@@ -1,6 +1,6 @@
 label ts_bad_ending_blya:
 
-    $ renpy.block_rollback()
+    $ TS.b()
 
     python: # ОБНОВЛЯЕМ RPC
         ts_rpc_carter12()
@@ -49,7 +49,7 @@ label ts_bad_ending_blya:
     scene ts_emergency_room
     show ts_emergency_room_anim
     show ts_prosnulas_ot_ahuya
-    show layer master at blur_drunk_blya_low
+    $ TS.m(blur_drunk_blya_low)
     with Dissolve(4)
     $ TS.s(ts_showscreens)
     "..."
@@ -58,7 +58,7 @@ label ts_bad_ending_blya:
     "Это... н-не комната Сайори..."
     "Судя по мониторам, я в какой-то больнице."
     "Тело ослаблено и всё обмякло."
-    show layer master at ts_alkonersha
+    $ TS.m(ts_alkonersha)
     "Я рефлекторно пытаюсь встать, но, к моему удивлению, у меня не получается."
     "На шум прибежало несколько людей в разного цвета халатах. Я так понимаю, это медсёстры и санитары."
     if _preferences.language == "english":
@@ -79,7 +79,7 @@ label ts_bad_ending_blya:
     hide ts_emergency_room_anim
     show ts_emergency_room_anim4
     play sound_loop kardio_fastest
-    show layer screens at vpunch
+    $ TS.s(vpunch)
     m "Четыре {b}ГОДА?{/b}"
     "А как же папа? Мама? Все мои друзья?.."
     hide ts_emergency_room_anim4
@@ -377,7 +377,7 @@ label ts_bad_ending_blya:
     misc "Помимо этого, у мисс Аме была клиническая депрессия, о которой мы..."
 
     play sound fb
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     show s_kill_bg_zoom_cb zorder 1
     show s_kill_bg2_zoom_cb zorder 1
     show s_kill_zoom_cb zorder 3
@@ -395,7 +395,7 @@ label ts_bad_ending_blya:
     $ TS.s(ts_hidescreens_fast)
     " {w=0.1}{nw}"
     scene ts_yrec_trup_end
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with ts_paint
     $ TS.s(ts_showscreens_fast)
     misc "Что касается мисс Касанэ, то она не выдержала смертей, по сути, двух из трёх людей, которых она считала друзьями."
@@ -403,7 +403,7 @@ label ts_bad_ending_blya:
     $ TS.s(ts_hidescreens_fast)
     " {w=0.1}{nw}"
     scene ts_nat_trup_end
-    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
+    $ TS.m(VHS())
     with ts_paint
     $ TS.s(ts_showscreens_fast)
     misc "Что же до мисс Яторо..."
@@ -518,7 +518,7 @@ label ts_bad_ending_blya:
     em "Нет, стой, подожди!{w=0.5}{nw}"
     window hide
     play music ts_hftc3
-    show layer master at ts_roof_beg
+    $ TS.m(ts_roof_beg)
     play sound ts_running
     $ TS.p(2.5)
     stop sound
@@ -531,13 +531,13 @@ label ts_bad_ending_blya:
     play sound ts_introshoot
     scene ts_sky_fon
     show ts_wind_wnim at ts_running_fast
-    show layer master at ts_padenie_s_krishi_suka
+    $ TS.m(ts_padenie_s_krishi_suka)
     $ TS.p(2.5)
     stop sound
 
     scene ts_mon_padenie_fon
     show ts_mon_padenie_maloletka
-    show layer master at ts_bad_end_padenie_anim_blya
+    $ TS.m(ts_bad_end_padenie_anim_blya)
     $ TS.p(6)
     scene ts_mon_padenie_fon:
         blur 0
@@ -562,7 +562,7 @@ label ts_bad_ending_blya:
             ease 1.5 rotate 1.15 zoom 1.035
             ease 1.5 rotate -1.3 zoom 1.025
             repeat
-    show layer master at ts_bad_end_padenie_anim_blya1
+    $ TS.m(ts_bad_end_padenie_anim_blya1)
     $ TS.p(2)
     $ TS.s(ts_showscreens)
     "Секунды, что я лечу вниз, кажутся часами. Но мне уже всё равно."
@@ -571,7 +571,7 @@ label ts_bad_ending_blya:
     window hide
     scene ts_sky_fon
     show ts_wind_wnim at ts_running_fast
-    show layer master at ts_padenie_s_krishi_suka
+    $ TS.m(ts_padenie_s_krishi_suka)
     $ TS.p(3.5)
     stop music
     scene black
@@ -614,7 +614,7 @@ label ts_bad_ending_blya:
     stop sound
     scene black
 
-    show layer screens
+    $ TS.s()
     window hide
 
     jump bad_credits_ts_label

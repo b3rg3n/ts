@@ -22,12 +22,12 @@ label ts_scenario_0:
     else:
         $ save_name = "Предыстория"
     window hide
-    pause 1.1
+    $ TS.p(1.1)
     window hide
     stop music fadeout 4
     scene black
     with ed_night_dis
-    pause 1
+    $ TS.p(1)
     play music ts_emmk fadein 4
     scene ts_house
     show zatemnenie
@@ -40,7 +40,7 @@ label ts_scenario_0:
         $ Chapter("In The Beginning")
     else:
         $ Chapter("Предыстория")
-    pause 0.5
+    $ TS.p(0.5)
     hide zatemnenie with dspr
 
     show layer screens at ts_showscreens_nvl
@@ -128,7 +128,7 @@ label ts_scenario_0:
     " {w=1.0}{nw}"
 
     show hiroto 1a at ron11
-    pause 0.3
+    $ TS.p(0.3)
     hide hiroto with dissolve
 
     show layer screens at ts_showscreens_nvl
@@ -279,7 +279,7 @@ label ts_scenario_0:
     nvlbazar " {w=1.0}{nw}"
     nvl clear
     show kaori at ron11
-    pause 0.3
+    $ TS.p(0.3)
     hide kaori with dissolve
     show layer screens at ts_showscreens_nvl
 
@@ -537,11 +537,11 @@ label ts_scenario_0:
     stop music
     play sound br_glitch
     show ts_club2re as bg1 at Glitch(_fps=160, glitch_strength=1)
-    $ renpy.pause(1.1, hard=True)
+    $ TS.p(1.1)
     stop sound
     scene black
     play music ts_new_zastavka_ost_suka fadein 2
-    pause 1
+    $ TS.p(1)
     if _preferences.language == "english":
         show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}I was talking – you were listening.\nIt has always been like that.{/size}{/font}":
             xalign 0.5 yalign 0.5
@@ -552,7 +552,7 @@ label ts_scenario_0:
             xalign 0.5 yalign 0.5
             zoom 0.4 alpha 0
             ease 1.5 zoom 1.0 alpha 1
-    pause 3
+    $ TS.p(3)
     if _preferences.language == "english":
         show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}I was talking – you were listening.\nIt has always been like that.{/size}{/font}":
             xalign 0.5 yalign 0.5
@@ -563,7 +563,7 @@ label ts_scenario_0:
             xalign 0.5 yalign 0.5
             zoom 1.0 alpha 1
             ease 1.5 zoom 0.4 alpha 0
-    pause 3
+    $ TS.p(3)
     if _preferences.language == "english":
         show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Ain't that right, [user]?{/size}{/font}":
             xalign 0.5 yalign 0.5
@@ -574,7 +574,7 @@ label ts_scenario_0:
             xalign 0.5 yalign 0.5
             zoom 0.4 alpha 0
             ease 1.5 zoom 1.0 alpha 1
-    pause 3
+    $ TS.p(3)
     if _preferences.language == "english":
         show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Ain't that right, [user]?{/size}{/font}":
             xalign 0.5 yalign 0.5
@@ -585,7 +585,7 @@ label ts_scenario_0:
             xalign 0.5 yalign 0.5
             zoom 1.0 alpha 1
             ease 1.5 zoom 0.4 alpha 0
-    pause 3
+    $ TS.p(3)
     if _preferences.language == "english":
         show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}I stopped differentiating\nthe dream and the reality.{/size}{/font}":
             xalign 0.5 yalign 0.5
@@ -596,7 +596,7 @@ label ts_scenario_0:
             xalign 0.5 yalign 0.5
             zoom 0.4 alpha 0
             ease 1.5 zoom 1.0 alpha 1
-    pause 3
+    $ TS.p(3)
     if _preferences.language == "english":
         show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}I stopped differentiating\nthe dream and the reality.{/size}{/font}":
             xalign 0.5 yalign 0.5
@@ -607,7 +607,7 @@ label ts_scenario_0:
             xalign 0.5 yalign 0.5
             zoom 1.0 alpha 1
             ease 1.5 zoom 0.4 alpha 0
-    pause 3
+    $ TS.p(3)
     if _preferences.language == "english":
         show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Just...\nListen to this story...\nUntil the very end...{/size}{/font}":
             xalign 0.5 yalign 0.5
@@ -618,7 +618,7 @@ label ts_scenario_0:
             xalign 0.5 yalign 0.5
             zoom 0.4 alpha 0
             ease 1.5 zoom 1.0 alpha 1
-    pause 3
+    $ TS.p(3)
     if _preferences.language == "english":
         show text "{font=mod_assets/source/fonts/Surfbars.otf}{size=50}Just...\nListen to this story...\nUntil the very end...{/size}{/font}":
             xalign 0.5 yalign 0.5
@@ -629,7 +629,7 @@ label ts_scenario_0:
             xalign 0.5 yalign 0.5
             zoom 1.0 alpha 1
             ease 1.5 zoom 0.4 alpha 0
-    pause 3
+    $ TS.p(3)
     scene ts_intro_move_1
     show zatemnenie
 
@@ -665,7 +665,7 @@ label ts_scenario_0:
     stop music
     play sound br_glitch
     show ts_house as bg1 at Glitch(_fps=160, glitch_strength=1)
-    $ renpy.pause(1.1, hard=True)
+    $ TS.p(1.1)
     stop sound
 
 

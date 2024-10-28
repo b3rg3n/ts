@@ -42,7 +42,7 @@ label ts_scenario_5:
         $ Chapter("С возвращением, Моника!")
 
     scene black
-    pause 1
+    $ TS.p(1)
 
     show layer screens at ts_showscreens
 
@@ -69,12 +69,12 @@ label ts_scenario_5:
 
     show ts_blinking
 
-    pause 0.7
+    $ TS.p(0.7)
 
     hide ts_blinking
     show ts_blinking
 
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer master
 
@@ -102,7 +102,7 @@ label ts_scenario_5:
         truecenter
         alpha 0.5
         zoom 2.0 xalign 0.5 yalign 0.05
-        pause 0.5
+        TS.p(0.5)
         dizzy(1, 1.0)
     show overlay aw_memory_back_1 zorder 4
     with flash
@@ -130,9 +130,9 @@ label ts_scenario_5:
     s 2ph "Что такое?"
 
     show sayori 2pe at h11
-    pause 0.4
+    $ TS.p(0.4)
     show sayori 3pf at h11
-    pause 0.4
+    $ TS.p(0.4)
     show sayori 4pz at h11
 
     m "{font=[pizdec_font]}{size=+20}{b}А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А{/b}{/size}{nw}"
@@ -197,11 +197,11 @@ label ts_scenario_5:
 
     window hide
     show sayori 2pz at h11
-    pause 0.25
+    $ TS.p(0.25)
     show sayori 2pf at h11
-    pause 0.25
+    $ TS.p(0.25)
     show sayori 2pu at h11
-    pause 0.25
+    $ TS.p(0.25)
     show sayori 2pw at h11
 
     show layer screens at ts_showscreens
@@ -652,7 +652,7 @@ label ts_scenario_5:
         "Сказать правду":
 
             stop music fadeout 2
-            pause 2
+            $ TS.p(2)
             show layer screens at ts_showscreens
             play music audio.t9
             m "Это... не совсем чаепитие было..."
@@ -744,7 +744,7 @@ label ts_scenario_5:
     pause
     show layer screens at ts_hidescreens
     show screen chp_5_text1
-    pause 1
+    $ TS.p(1)
     hide screen chp_5_text1
 
     hide zatemnenie with dspr
@@ -1018,7 +1018,7 @@ label ts_scenario_5:
             with flash
 
             show chess1 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
 
             show layer screens at ts_showscreens
             "Я начинаю игру ходом пешки."
@@ -1027,11 +1027,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess1 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess1 with dissolve
 
             show chess2 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             if chess_tutor == True:
@@ -1041,7 +1041,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
                 show layer screens at ts_showscreens
             "Папа ухмыляется и отвечает тем же ходом пешки, правда, только на одну клетку."
@@ -1049,11 +1049,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess2 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess2 with dissolve
 
             show chess3 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
             "В детстве я сразу выпускала ферзя, прямо как папа."
             "Но с течением лет, начитавшись всяких шахматных книжек и посмотрев несколько видеоуроков по шахматам, я знаю, что, вместо того, чтобы пораньше выпускать ферзя, лучше поставить вторую пешку в центр."
@@ -1062,11 +1062,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess3 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess3 with dissolve
 
             show chess4 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             show hiroto 1s at f41
@@ -1076,11 +1076,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess4 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess4 with dissolve
 
             show chess5 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             if chess_tutor == True:
@@ -1091,7 +1091,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
                 show layer screens at ts_showscreens
             ts_ft 2z1 "Ну что, сдаёшься?"
@@ -1103,11 +1103,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess5 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess5 with dissolve
 
             show chess6 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             "Однако шахматы – это пошаговая игра, здесь нет такого, чтобы сделать два хода одним цветом подряд."
@@ -1118,11 +1118,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess6 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess6 with dissolve
 
             show chess7 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             "У меня козыри в рукаве закончились, поэтому я возвращаюсь к изначальному плану развития и просто вывожу коня."
@@ -1131,11 +1131,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess7 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess7 with dissolve
 
             show chess8 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             if chess_tutor == True:
@@ -1149,7 +1149,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
                 show layer screens at ts_showscreens
             show hiroto 1a at t41
@@ -1159,11 +1159,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess8 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess8 with dissolve
 
             show chess9 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             if chess_tutor == True:
@@ -1183,7 +1183,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
                 show layer screens at ts_showscreens
             "Я продолжаю выстраивать своё развитие, и играю ещё одним конём."
@@ -1192,11 +1192,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess9 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess9 with dissolve
 
             show chess10 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             "Папа же начинает атаковать исподтишка, и выводит пешку на одну клетку, чтобы я её побила."
@@ -1205,11 +1205,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess10 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess10 with dissolve
 
             show chess11 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             if chess_tutor == True:
@@ -1220,7 +1220,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
                 show layer screens at ts_showscreens
             "Однако я не ведусь на этот дешёвый фокус и вместо этого вывожу слона, объявляя шах."
@@ -1229,11 +1229,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess11 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess11 with dissolve
 
             show chess12 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             if chess_tutor == True:
@@ -1248,7 +1248,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
                 show layer screens at ts_showscreens
             show hiroto 1s at f41
@@ -1258,11 +1258,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess12 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess12 with dissolve
 
             show chess13 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             ts_ft 1t "Что, победить хочешь?"
@@ -1277,7 +1277,7 @@ label ts_scenario_5:
             with wipeleft_scene
 
             show chess14 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             "Так продолжалось уже некоторое время."
@@ -1311,7 +1311,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
                 show layer screens at ts_showscreens
             "Сейчас ходит папа, но я уже заранее думаю, как же я ему отвечу."
@@ -1320,11 +1320,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess14 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess14 with dissolve
 
             show chess15 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
 
             if chess_tutor == True:
                 show layer screens at ts_showscreens
@@ -1333,7 +1333,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
             play sound2 pageflip
             scene ts_kitchen
@@ -1341,7 +1341,7 @@ label ts_scenario_5:
             with wipeleft_scene
 
             show chess16 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             m "Что, уже не настолько уверен в себе?"
@@ -1356,7 +1356,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
                 show layer screens at ts_showscreens
             ts_ft 2y "Да ты погоди, ещё не вечер же..."
@@ -1370,7 +1370,7 @@ label ts_scenario_5:
             with wipeleft_scene
 
             show chess17 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             ts_ft 1z1 "Что, уже не настолько уверена в себе?"
@@ -1384,11 +1384,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess17 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess17 with dissolve
 
             show chess18 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             if chess_tutor == True:
@@ -1402,7 +1402,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
                 show layer screens at ts_showscreens
             "Папа, недолго думая, провёл слона, делая вилку на моего короля и мою ладью."
@@ -1412,11 +1412,11 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess18 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess18 with dissolve
 
             show chess19 at ts_chess_move_up
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             if chess_tutor == True:
@@ -1429,7 +1429,7 @@ label ts_scenario_5:
                 show layer screens at ts_hidescreens
                 " {w=1.0}{nw}"
                 show momika at ron44
-                pause 0.5
+                $ TS.p(0.5)
                 hide momika with dissolve
                 show layer screens at ts_showscreens
             "После этого хода я сразу сдаюсь."
@@ -1438,7 +1438,7 @@ label ts_scenario_5:
             " {w=1.0}{nw}"
 
             show chess19 at ts_chess_move_down
-            pause 0.5
+            $ TS.p(0.5)
             hide chess19 with dissolve
 
             show hiroto 1r at t11
@@ -1595,7 +1595,7 @@ label ts_scenario_5:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    pause 2.5
+    $ TS.p(2.5)
 
     show layer screens at ts_showscreens
 
@@ -1625,7 +1625,7 @@ label ts_scenario_5:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
     hide poem_dismiss
 

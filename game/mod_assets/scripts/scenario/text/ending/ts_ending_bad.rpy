@@ -24,7 +24,7 @@ label ts_bad_ending_blya:
 
     scene black
 
-    pause 2
+    $ TS.p(2)
 
     play sound chp3
     if _preferences.language == "english":
@@ -40,7 +40,7 @@ label ts_bad_ending_blya:
         stop sound fadeout 7
         $ Chapter("В бездну")
 
-    pause 2
+    $ TS.p(2)
 
     $ persistent.uncolorize = "none"
 
@@ -122,14 +122,14 @@ label ts_bad_ending_blya:
     " {w=1.0}{nw}"
     stop music fadeout 4
 
-    pause 4
+    $ TS.p(4)
     show layer screens at ts_showscreens_fast
     "Аки?"
     stop sound_loop fadeout 2
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     scene black with ts_paint
-    pause 1
+    $ TS.p(1)
     scene ts_hospital_room
     show dust1
     show dust2
@@ -152,7 +152,7 @@ label ts_bad_ending_blya:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     scene black with ts_paint
-    pause 1
+    $ TS.p(1)
     scene ts_hospital_corridor
     show dust1
     show dust2
@@ -195,7 +195,7 @@ label ts_bad_ending_blya:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     scene black with ts_paint
-    pause 1
+    $ TS.p(1)
     scene ts_house
     show dust1
     show dust2
@@ -231,7 +231,7 @@ label ts_bad_ending_blya:
     scene ts_kitchen_night
     with pushleft
 
-    pause 0.5
+    $ TS.p(0.5)
 
     play sound svet_on
 
@@ -266,7 +266,7 @@ label ts_bad_ending_blya:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -284,7 +284,7 @@ label ts_bad_ending_blya:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     scene black with ts_paint
-    pause 1
+    $ TS.p(1)
     scene ts_school_gate_day
     show dust1
     show dust2
@@ -324,12 +324,12 @@ label ts_bad_ending_blya:
     " {w=1.0}{nw}"
 
     scene black with ts_paint
-    pause 1
+    $ TS.p(1)
 
 
     show ts_cor_split_animated
     show ts_of_split_animated
-    pause 0.99
+    $ TS.p(0.99)
 
     show layer screens at ts_showscreens
     play sound stuk
@@ -386,7 +386,7 @@ label ts_bad_ending_blya:
         truecenter
         alpha 0.5
         zoom 2.0 xalign 0.5 yalign 0.05
-        pause 0.5
+        TS.p(0.5)
         dizzy(1, 1.0)
     with flash
     show layer screens at ts_showscreens_fast
@@ -423,7 +423,7 @@ label ts_bad_ending_blya:
     "Я тем временем просто продолжаю рыдать."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 5
+    $ TS.p(5)
     show layer screens at ts_showscreens
     "Лишь спустя пятнадцать минут я хоть как-то успокаиваюсь и говорю хотя бы членораздельно."
     m "Ладно... спасибо вам большое, господин Раддан... Теперь-то я точно знаю..."
@@ -498,7 +498,7 @@ label ts_bad_ending_blya:
     "Я снова начинаю плакать."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 5.5
+    $ TS.p(5.5)
     show layer screens at ts_showscreens
     "Закончив рыдать как маленькая девочка, я решительно встаю."
     "И направляюсь... к краю крыши."
@@ -520,25 +520,25 @@ label ts_bad_ending_blya:
     play music ts_hftc3
     show layer master at ts_roof_beg
     play sound ts_running
-    pause 2.5
+    $ TS.p(2.5)
     stop sound
     play sound2 ts_zabor_crash
-    pause 0.5
+    $ TS.p(0.5)
     stop sound2
     scene black
-    pause 0.15
+    $ TS.p(0.15)
 
     play sound ts_introshoot
     scene ts_sky_fon
     show ts_wind_wnim at ts_running_fast
     show layer master at ts_padenie_s_krishi_suka
-    pause 2.5
+    $ TS.p(2.5)
     stop sound
 
     scene ts_mon_padenie_fon
     show ts_mon_padenie_maloletka
     show layer master at ts_bad_end_padenie_anim_blya
-    pause 6
+    $ TS.p(6)
     scene ts_mon_padenie_fon:
         blur 0
         ease 1.5 blur 5.5
@@ -563,7 +563,7 @@ label ts_bad_ending_blya:
             ease 1.5 rotate -1.3 zoom 1.025
             repeat
     show layer master at ts_bad_end_padenie_anim_blya1
-    pause 2
+    $ TS.p(2)
     show layer screens at ts_showscreens
     "Секунды, что я лечу вниз, кажутся часами. Но мне уже всё равно."
     "Литературный клуб снова соберётся вместе. Мы с папой тоже будем вместе..."
@@ -572,12 +572,12 @@ label ts_bad_ending_blya:
     scene ts_sky_fon
     show ts_wind_wnim at ts_running_fast
     show layer master at ts_padenie_s_krishi_suka
-    pause 3.5
+    $ TS.p(3.5)
     stop music
     scene black
     play sound sfx_body_bump
     show ts_altbloodanim
-    pause 2.0
+    $ TS.p(2)
 
     scene ts_bad_end_moni_dead_anim_sooqa:
         align(0.05, 0.8) zoom 3.0
@@ -596,21 +596,21 @@ label ts_bad_ending_blya:
     scene black
     with Fade(1.5, 2, 1.2)
 
-    pause 1
+    $ TS.p(1)
 
     play sound psy_fast_3
     scene ts_mon_padenie_dead
-    pause 0.05
+    $ TS.p(0.05)
     scene ts_mon_padenie_full
-    pause 0.05
+    $ TS.p(0.05)
     scene ts_mon_padenie_dead
-    pause 0.05
+    $ TS.p(0.05)
     scene ts_mon_padenie_full
-    pause 0.05
+    $ TS.p(0.05)
     scene ts_mon_padenie_dead
-    pause 0.05
+    $ TS.p(0.05)
     scene ts_mon_padenie_full
-    pause 0.05
+    $ TS.p(0.05)
     stop sound
     scene black
 

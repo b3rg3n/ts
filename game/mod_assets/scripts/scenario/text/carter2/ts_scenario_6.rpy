@@ -45,14 +45,14 @@ label ts_scenario_6:
 
     play sound ts_alarm fadein 2
 
-    pause 2
+    $ TS.p(2)
 
     scene ts_bedroom
     show unblink
     show layer master at ts_vstavai_shashlik
-    pause 3
+    $ TS.p(3)
     play sound svet_on
-    pause 1.5
+    $ TS.p(1.5)
 
     show layer screens at ts_showscreens
 
@@ -79,17 +79,17 @@ label ts_scenario_6:
     with wipeleft_scene
 
     show layer master at ts_clean_eblet
-    pause 2
+    $ TS.p(2)
     play sound open_water_sink
-    pause 0.5
+    $ TS.p(0.5)
     stop sound
     play sound_loop water_sink_stream
-    pause 1
+    $ TS.p(1)
     play sound water_splash
-    pause 1.6
+    $ TS.p(1.6)
     stop sound_loop
     play sound close_water_sink
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -282,7 +282,7 @@ label ts_scenario_6:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     play sound wakeup
-    pause 1.3
+    $ TS.p(1.3)
 
     scene ts_kitchen 
     show hiroto 1a at i11
@@ -764,9 +764,9 @@ label ts_scenario_6:
 
 
     play sound stuk
-    pause 3
+    $ TS.p(3)
     play sound door_open
-    pause 1
+    $ TS.p(1)
     play music audio.t5_all fadein 3
     show yuri 1a at ln31
     show sayori 1a at ln32
@@ -917,7 +917,7 @@ label ts_scenario_6:
     show sayori 2k at Glitch(_fps=1000., glitch_strength=.3)
     show natsuki 1n at Glitch(_fps=1000., glitch_strength=.3, color_range1="#0a00", color_range2="0f0")
 
-    $ renpy.pause(1.1, hard=True)
+    $ TS.p(1.1)
     stop sound
 
     play music audio.t9
@@ -1018,30 +1018,30 @@ label ts_scenario_6:
     with pushright
 
     show yuri 1g at ln11
-    pause 0.75
+    $ TS.p(0.75)
 
-    pause 0.5
+    $ TS.p(0.5)
 
     show yuri 1g at ron11
-    pause 0.75
+    $ TS.p(0.75)
     hide yuri
 
     show sayori 2o at ln11
-    pause 0.75
+    $ TS.p(0.75)
 
-    pause 0.5
+    $ TS.p(0.5)
 
     show sayori 2o at ron11
-    pause 0.75
+    $ TS.p(0.75)
     hide sayori
 
     show natsuki 1s at ln11
-    pause 0.75
+    $ TS.p(0.75)
 
-    pause 0.5
+    $ TS.p(0.5)
 
     show natsuki 1s at ron11
-    pause 0.75
+    $ TS.p(0.75)
     hide natsuki
 
     show layer screens at ts_showscreens
@@ -1115,7 +1115,7 @@ label ts_scenario_6:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
     hide poem_dismiss
 
@@ -1205,7 +1205,7 @@ label ts_scenario_6:
     show sayori 4s at lon32
     show natsuki 1y at lon33
 
-    pause 0.5
+    $ TS.p(0.5)
 
     hide yuri
     hide sayori
@@ -1237,7 +1237,7 @@ label ts_scenario_6:
     " {w=1.0}{nw}"
 
     play sound door_open
-    pause 1
+    $ TS.p(1)
     play sound2 pageflip
     scene ts_light_off_corridor
     with wipeleft_scene
@@ -1635,7 +1635,7 @@ label ts_scenario_6:
 
     play sound mobila_gudok
 
-    pause 8
+    $ TS.p(8)
 
 
     show layer screens at ts_showscreens
@@ -1650,14 +1650,14 @@ label ts_scenario_6:
 
     scene black with ed_night_dis_faster
 
-    pause 1
+    $ TS.p(1)
 
     play music ts_wod fadein 3
 
     show ts_gost_split_animated
     show ts_hotel_split_animated
 
-    pause 0.99
+    $ TS.p(0.99)
 
     show minami 1bd at rn33
     show hiroto 1a at ln31

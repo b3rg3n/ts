@@ -23,7 +23,7 @@ label ts_scenario_2:
     else:
         $ save_name = "Поиски. Юри"
 
-    pause 2
+    $ TS.p(2)
     play sound chp1
     if _preferences.language == "english":
         $ Chapter("ACT ONE")
@@ -88,14 +88,14 @@ label ts_scenario_2:
 
     play sound ts_alarm fadein 2
 
-    pause 2
+    $ TS.p(2)
 
     scene ts_bedroom
     show unblink
     show layer master at ts_vstavai_shashlik
-    pause 3
+    $ TS.p(3)
     play sound svet_on
-    pause 1.5
+    $ TS.p(1.5)
 
     show layer screens at ts_showscreens
 
@@ -110,17 +110,17 @@ label ts_scenario_2:
     with wipeleft_scene
 
     show layer master at ts_clean_eblet
-    pause 2
+    $ TS.p(2)
     play sound open_water_sink
-    pause 0.5
+    $ TS.p(0.5)
     stop sound
     play sound_loop water_sink_stream
-    pause 1
+    $ TS.p(1)
     play sound water_splash
-    pause 1.6
+    $ TS.p(1.6)
     stop sound_loop
     play sound close_water_sink
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -271,9 +271,9 @@ label ts_scenario_2:
 
     play sound door_open
     show layer master at ts_club_vhod
-    pause 1.2
+    $ TS.p(1.2)
     scene ts_club at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -329,7 +329,7 @@ label ts_scenario_2:
 
     scene ts_club
     show sayori 1m at i11
-    pause 0.1
+    $ TS.p(0.1)
     show sayori 1u at t11
 
     m "..."
@@ -347,7 +347,7 @@ label ts_scenario_2:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_23
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_23
 
     hide zatemnenie with dspr
@@ -363,25 +363,25 @@ label ts_scenario_2:
     " {w=1.0}{nw}"
 
     show sayori 1u zorder 2 at f11
-    pause 0.3
+    $ TS.p(0.3)
     show sayori 1 zorder 2 at t11
-    pause 0.3
+    $ TS.p(0.3)
     show sayori 2c zorder 2 at s11
-    pause 0.3
+    $ TS.p(0.3)
     show sayori 3m zorder 2 at t11
-    pause 0.3
+    $ TS.p(0.3)
     show sayori 3n zorder 2 at f11
-    pause 0.3
+    $ TS.p(0.3)
     show sayori 1o zorder 2 at t11
-    pause 0.3
+    $ TS.p(0.3)
     show sayori 2l zorder 2 at s11
-    pause 0.3
+    $ TS.p(0.3)
     show sayori 3e zorder 2 at t11
-    pause 0.3
+    $ TS.p(0.3)
     show sayori 5a zorder 2 at f11
-    pause 0.3
+    $ TS.p(0.3)
     show sayori 5b zorder 2 at t11
-    pause 0.3
+    $ TS.p(0.3)
 
     show sayori 4p at h11
 
@@ -473,7 +473,7 @@ label ts_scenario_2:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_26
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_26
 
     hide zatemnenie with dspr
@@ -598,7 +598,7 @@ label ts_scenario_2:
     pause
     show layer screens at ts_hidescreens
     show screen scenario_2_double_text_suka
-    pause 1
+    $ TS.p(1)
     hide screen scenario_2_double_text_suka
 
     hide zatemnenie with dspr
@@ -703,7 +703,7 @@ label ts_scenario_2:
     " {w=1.0}{nw}"
 
     show layer master at ts_club_leave_anim
-    pause 1
+    $ TS.p(1)
     play sound door_break
     scene ts_corridor at ts_razebal
 
@@ -855,7 +855,7 @@ label ts_scenario_2:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    pause 2
+    $ TS.p(2)
 
     show layer screens at ts_showscreens
 
@@ -867,7 +867,7 @@ label ts_scenario_2:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    pause 2
+    $ TS.p(2)
 
     show layer screens at ts_showscreens
 
@@ -984,7 +984,7 @@ label ts_scenario_2:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    pause 2
+    $ TS.p(2)
 
     show layer screens at ts_showscreens
 
@@ -1025,7 +1025,7 @@ label ts_scenario_2:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_11
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_11
 
     hide zatemnenie with dspr
@@ -1060,7 +1060,7 @@ label ts_scenario_2:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_12
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_12
 
 
@@ -1070,7 +1070,7 @@ label ts_scenario_2:
     pause
     show layer screens at ts_hidescreens
     show screen scenario_2_onest_text_suka1
-    pause 1
+    $ TS.p(1)
     hide screen scenario_2_onest_text_suka1
 
     hide zatemnenie with dspr
@@ -1139,9 +1139,9 @@ label ts_scenario_2:
     play sound door_break
     window hide
     scene ts_corridor at ts_razebal
-    pause 0.3
+    $ TS.p(0.3)
     scene ts_corridor at ts_beg
-    pause 2
+    $ TS.p(2)
 
     show layer screens at ts_showscreens
 
@@ -1150,7 +1150,7 @@ label ts_scenario_2:
     scene ts_corridor:
         align (0.5, 0.5) zoom 1
         ease 0.6 align (0.3, 0.4) zoom 2.0
-    pause 0.6
+    $ TS.p(0.6)
 
     play sound door_break
     stop music

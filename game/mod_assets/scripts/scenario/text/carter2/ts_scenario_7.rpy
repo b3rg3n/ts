@@ -43,7 +43,7 @@ label ts_scenario_7:
     play music audio.t6s fadein 4
     scene ts_darkbed
     with ed_night_dis
-    pause 1
+    $ TS.p(1)
 
     show layer screens at ts_showscreens
 
@@ -102,7 +102,7 @@ label ts_scenario_7:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
             show blink
-            pause 2
+            $ TS.p(2)
 
             scene ts_bedroom
             show unblink
@@ -167,17 +167,17 @@ label ts_scenario_7:
 
 
             show layer master at ts_clean_eblet
-            pause 2
+            $ TS.p(2)
             play sound open_water_sink
-            pause 0.5
+            $ TS.p(0.5)
             stop sound
             play sound_loop water_sink_stream
-            pause 1
+            $ TS.p(1)
             play sound water_splash
-            pause 1.6
+            $ TS.p(1.6)
             stop sound_loop
             play sound close_water_sink
-            pause 0.5
+            $ TS.p(0.5)
 
             show layer screens at ts_showscreens
 
@@ -235,7 +235,7 @@ label ts_scenario_7:
 
             scene ts_house at ts_running_fast
 
-            pause 2
+            $ TS.p(2)
             stop sound2 fadeout 1
             play sound pageflip
             play sound3 ts_othodos_ot_bega fadein 2
@@ -399,12 +399,12 @@ label ts_scenario_7:
             " {w=1.0}{nw}"
 
             show layer master at ts_svinka_kupaetsya
-            pause 2
+            $ TS.p(2)
 
             show layer master at ts_svinka_kupaetsya_kran_open
 
             play sound open_water_sink
-            pause 1.3
+            $ TS.p(1.3)
             stop sound
             play ambience water_sink_stream
             show layer screens at ts_showscreens
@@ -414,7 +414,7 @@ label ts_scenario_7:
             " {w=1.0}{nw}"
 
             show layer master at ts_svinka_kupaetsya_cumback
-            pause 2
+            $ TS.p(2)
 
             show layer screens at ts_showscreens
 
@@ -439,7 +439,7 @@ label ts_scenario_7:
             stop ambience
             show layer master at ts_svinka_kupaetsya_kran_open
             play sound close_water_sink
-            pause 1
+            $ TS.p(1)
 
             show layer screens at ts_showscreens
 
@@ -567,12 +567,12 @@ label ts_scenario_7:
             " {w=1.0}{nw}"
 
             show blink
-            pause 2
+            $ TS.p(2)
 
             play sound ts_alarm
             scene ts_living_room_late
             show unblink
-            pause 1.5
+            $ TS.p(1.5)
 
             show layer screens at ts_showscreens
 
@@ -599,20 +599,20 @@ label ts_scenario_7:
             " {w=1.0}{nw}"
 
             show layer master at ts_kuh_kran_open
-            pause 2
+            $ TS.p(2)
 
             show layer master at ts_kuh_kran_open1
             play sound open_water_sink
-            pause 1.3
+            $ TS.p(1.3)
             show layer master at ts_kuh_kran_open1
             play sound close_water_sink
-            pause 1
+            $ TS.p(1)
 
             show layer master at ts_kuh_kran_open2
-            pause 2
+            $ TS.p(2)
 
             show layer master at ts_havchik_gotovka
-            pause 1
+            $ TS.p(1)
 
             show layer screens at ts_showscreens
 
@@ -833,31 +833,31 @@ label ts_scenario_7:
             scene ts_school_courtyard_day
             with wipeleft_scene
 
-            pause 1.5
+            $ TS.p(1.5)
 
             play sound pageflip
             scene ts_l5
             with wipeleft_scene
 
-            pause 1.5
+            $ TS.p(1.5)
 
             play sound pageflip
             scene ts_stairs
             with wipeleft_scene
 
-            pause 1.5
+            $ TS.p(1.5)
 
             play sound pageflip
             scene ts_corridor
             with wipeleft_scene
 
-            pause 1.5
+            $ TS.p(1.5)
 
             play sound pageflip
             scene ts_stairsre
             with wipeleft_scene
 
-            pause 1.5
+            $ TS.p(1.5)
 
             play sound pageflip
             scene ts_corridorrev
@@ -874,10 +874,10 @@ label ts_scenario_7:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
             show blink
-            pause 2
+            $ TS.p(2)
             hide blink
             show unblink
-            pause 1
+            $ TS.p(1)
             show layer screens at ts_showscreens
 
             "Наконец, ученики мало-помалу начинают подтягиваться."
@@ -953,10 +953,10 @@ label ts_scenario_7:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     show blink
-    pause 2
+    $ TS.p(2)
     hide blink
     show unblink
-    pause 1
+    $ TS.p(1)
 
     show layer screens at ts_showscreens
     play music ts_sm
@@ -1049,10 +1049,10 @@ label ts_scenario_7:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     show blink
-    pause 2
+    $ TS.p(2)
     scene ts_class
     show unblink
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
     "Школьный день подошёл к концу."
     "Остальные уроки прошли как-то монотонно."
@@ -1068,7 +1068,7 @@ label ts_scenario_7:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     play sound door_open
-    pause 1
+    $ TS.p(1)
 
     play sound2 pageflip
     scene ts_club
@@ -1515,7 +1515,7 @@ label cartersevenpoemsblya:
             s "О-о-о..."
             show sayori 2n at t11
             "Да, гораздо опрятнее помятого и возможно порванного листика, на котором писала стих она."
-            pause 4
+            $ TS.p(4)
             m "Ну-у-у... И как тебе?"
             show sayori 3l at f11
             s "Знаешь, я не совсем из тех придирчивых критиков, которые разбирают стих буквально по буквам."
@@ -1570,7 +1570,7 @@ label cartersevenpoemsblya:
 
             play sound pageflip
             show layer screens at ts_hidescreens
-            pause 1.0
+            $ TS.p(1)
             hide screen poem
             hide poem_dismiss
 
@@ -1698,21 +1698,21 @@ label cartersevenpoemsblya:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
             show natsuki 1y at t11
-            pause 0.4
+            $ TS.p(0.4)
             show natsuki 2w at t11
-            pause 0.4
+            $ TS.p(0.4)
             show natsuki 1x at t11
-            pause 0.4
+            $ TS.p(0.4)
             show natsuki 1zc at t11
-            pause 0.4
+            $ TS.p(0.4)
             show natsuki 12c at t11
-            pause 0.4
+            $ TS.p(0.4)
             show natsuki 1u at t11
-            pause 0.4
+            $ TS.p(0.4)
             show natsuki 2t at f11
             show layer screens at ts_showscreens
             n "Л-ладно... П-прежде в-всего..."
-            pause 1.5
+            $ TS.p(1.5)
             n 1q "М-мне... даже и п-придраться не к чему..."
             n 2m "Моника, сколько лет ты уже пишешь стихи?"
             show natsuki 2n at t11
@@ -1763,7 +1763,7 @@ label cartersevenpoemsblya:
 
             play sound pageflip
             show layer screens at ts_hidescreens
-            pause 1.0
+            $ TS.p(1)
             hide screen poem
             hide poem_dismiss
 
@@ -1912,7 +1912,7 @@ label cartersevenpoemsblya:
             m "Юри, ну конечно, в этом же и смысл!"
             show yuri 1q at f11
             y "Н-ну хорошо..."
-            pause 4
+            $ TS.p(4)
             show yuri 2t at f11
             y "М-Моника..."
             y 2v "В-видно, твоё стихотворение – уже далеко не первое..."
@@ -1981,7 +1981,7 @@ label cartersevenpoemsblya:
 
             play sound pageflip
             show layer screens at ts_hidescreens
-            pause 1.0
+            $ TS.p(1)
             hide screen poem
             hide poem_dismiss
 
@@ -2161,10 +2161,10 @@ label ts_carterseven_poem_finally:
     play sound door_open
     show yuri at cleft with move
     hide yuri
-    pause 0.6
+    $ TS.p(0.6)
     show sayori at cleft with move
     hide sayori
-    pause 0.6
+    $ TS.p(0.6)
     show natsuki at cleft with move
     hide natsuki
     show layer screens at ts_showscreens
@@ -2287,7 +2287,7 @@ label ts_carterseven_poem_finally:
     scene ts_vhod_nolight
     with wipeleft_scene
 
-    pause 0.5
+    $ TS.p(0.5)
 
     play sound svet_on
 
@@ -2476,7 +2476,7 @@ label ts_carterseven_poem_finally:
 
     show monika at aki_uhod
 
-    pause 1
+    $ TS.p(1)
 
     play sound svet_on
     scene ts_darkbed
@@ -2493,7 +2493,7 @@ label ts_carterseven_poem_finally:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    pause 1
+    $ TS.p(1)
 
     scene black
 

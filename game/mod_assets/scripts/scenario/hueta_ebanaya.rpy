@@ -132,7 +132,7 @@ label ts_start:
         return
     else:
         scene black with dissolve2
-        pause 2
+        $ TS.p(2)
         jump ts_scenario_0
 
 screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
@@ -223,37 +223,37 @@ screen scenario_start_change_chapter: # ВЫБОР ГЛАВЫ НАХ
 
 label ts_chapter_prologue_changes:
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
     jump ts_scenario_0
 
 label ts_chapter_good_end_changes:
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
     jump ts_good_ending_blya
 
 label ts_chapter_bad_end_changes:
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
     jump ts_bad_ending_blya
 
 label ts_chapter_one_changes:
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
     jump ts_scenario_1
 
 label ts_chapter_two_changes:
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
     jump ts_scenario_2
 
 label ts_chapter_three_changes: # ВЫБОРЫ ПЕРЕД ТРЕТЬЕЙ ГЛАВОЙ
     show screen scenario_start_change_chapter_one
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one with dissolve2
-    pause 2
+    $ TS.p(2)
 
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
 
     play sound fb
     scene ts_corridor
@@ -271,23 +271,23 @@ label ts_chapter_three_changes: # ВЫБОРЫ ПЕРЕД ТРЕТЬЕЙ ГЛА�
     play sound fb
     scene black
     with flash
-    pause 2
+    $ TS.p(2)
     
     show screen scenario_start_change_chapter_one1
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one1 with dissolve2
-    pause 2
+    $ TS.p(2)
 
     jump ts_scenario_3
 
 label ts_chapter_four_changes: # ВЫБОРЫ ПЕРЕД ЧЕТВЁРТОЙ ГЛАВОЙ
     show screen scenario_start_change_chapter_one
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one with dissolve2
-    pause 2
+    $ TS.p(2)
 
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
 
     play sound fb
     scene ts_corridor
@@ -329,23 +329,23 @@ label ts_chapter_four_changes: # ВЫБОРЫ ПЕРЕД ЧЕТВЁРТОЙ ГЛ
     play sound fb
     scene black
     with flash
-    pause 2
+    $ TS.p(2)
     
     show screen scenario_start_change_chapter_one1
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one1 with dissolve2
-    pause 2
+    $ TS.p(2)
 
     jump ts_scenario_4
 
 label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
     show screen scenario_start_change_chapter_one
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one with dissolve2
-    pause 2
+    $ TS.p(2)
 
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
 
     play sound fb
     scene ts_corridor
@@ -406,24 +406,24 @@ label ts_chapter_five_changes: # ВЫБОРЫ ПЕРЕД ПЯТОЙ ГЛАВОЙ
     play sound fb
     scene black
     with flash
-    pause 2
+    $ TS.p(2)
 
     show screen scenario_start_change_chapter_one1
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one1 with dissolve2
-    pause 2
+    $ TS.p(2)
 
     jump ts_scenario_5
 
 
 label ts_chapter_six_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВОЙ
     show screen scenario_start_change_chapter_one
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one with dissolve2
-    pause 2
+    $ TS.p(2)
 
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
 
     play sound fb
     scene ts_corridor
@@ -516,23 +516,23 @@ label ts_chapter_six_changes: # ВЫБОРЫ ПЕРЕД ШЕСТОЙ ГЛАВО�
     play sound fb
     scene black
     with flash
-    pause 2
+    $ TS.p(2)
 
     show screen scenario_start_change_chapter_one1
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one1 with dissolve2
-    pause 2
+    $ TS.p(2)
 
     jump ts_scenario_6
 
 label ts_chapter_seven_changes: # ВЫБОРЫ ПЕРЕД СЕДЬМОЙ ГЛАВОЙ
     show screen scenario_start_change_chapter_one
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one with dissolve2
-    pause 2
+    $ TS.p(2)
 
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
 
     play sound fb
     scene ts_corridor
@@ -625,23 +625,23 @@ label ts_chapter_seven_changes: # ВЫБОРЫ ПЕРЕД СЕДЬМОЙ ГЛА�
     play sound fb
     scene black
     with flash
-    pause 2
+    $ TS.p(2)
 
     show screen scenario_start_change_chapter_one1
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one1 with dissolve2
-    pause 2
+    $ TS.p(2)
 
     jump ts_scenario_7
 
 label ts_chapter_eight_changes: # ВЫБОРЫ ПЕРЕД ВОСЬМОЙ ГЛАВОЙ
     show screen scenario_start_change_chapter_one
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one with dissolve2
-    pause 2
+    $ TS.p(2)
 
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
 
     play sound fb
     scene ts_corridor
@@ -745,23 +745,23 @@ label ts_chapter_eight_changes: # ВЫБОРЫ ПЕРЕД ВОСЬМОЙ ГЛА�
     play sound fb
     scene black
     with flash
-    pause 2
+    $ TS.p(2)
 
     show screen scenario_start_change_chapter_one1
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one1 with dissolve2
-    pause 2
+    $ TS.p(2)
 
     jump ts_scenario_8
 
 label ts_chapter_nine_changes:
     show screen scenario_start_change_chapter_one
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one with dissolve2
-    pause 2
+    $ TS.p(2)
 
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
 
     play sound fb
     scene ts_corridor
@@ -865,23 +865,23 @@ label ts_chapter_nine_changes:
     play sound fb
     scene black
     with flash
-    pause 2
+    $ TS.p(2)
 
     show screen scenario_start_change_chapter_one1
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one1 with dissolve2
-    pause 2
+    $ TS.p(2)
 
     jump ts_scenario_9
 
 label ts_chapter_ten_changes:
     show screen scenario_start_change_chapter_one
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one with dissolve2
-    pause 2
+    $ TS.p(2)
 
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
 
     play sound fb
     scene ts_corridor
@@ -985,30 +985,30 @@ label ts_chapter_ten_changes:
     play sound fb
     scene black
     with flash
-    pause 2
+    $ TS.p(2)
 
     menu:
         "Первая часть":
             show screen scenario_start_change_chapter_one1
-            pause 1
+            $ TS.p(1)
             hide screen scenario_start_change_chapter_one1 with dissolve2
-            pause 2
+            $ TS.p(2)
             jump ts_scenario_10
         "Вторая часть":
             show screen scenario_start_change_chapter_one1
-            pause 1
+            $ TS.p(1)
             hide screen scenario_start_change_chapter_one1 with dissolve2
-            pause 2
+            $ TS.p(2)
             jump ts_scenario_11
 
 label ts_chapter_12_changes:
     show screen scenario_start_change_chapter_one
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one with dissolve2
-    pause 2
+    $ TS.p(2)
 
     scene black with dissolve2
-    pause 2
+    $ TS.p(2)
 
     play sound fb
     scene ts_corridor
@@ -1112,12 +1112,12 @@ label ts_chapter_12_changes:
     play sound fb
     scene black
     with flash
-    pause 2
+    $ TS.p(2)
 
     show screen scenario_start_change_chapter_one1
-    pause 1
+    $ TS.p(1)
     hide screen scenario_start_change_chapter_one1 with dissolve2
-    pause 2
+    $ TS.p(2)
     jump ts_scenario_12
 
 

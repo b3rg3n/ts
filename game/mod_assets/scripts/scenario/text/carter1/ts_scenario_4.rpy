@@ -43,14 +43,14 @@ label ts_scenario_4:
 
     play sound ts_alarm fadein 2
 
-    pause 2
+    $ TS.p(2)
 
     scene ts_bedroom
     show unblink
     show layer master at ts_vstavai_shashlik
-    pause 3
+    $ TS.p(3)
     play sound svet_on
-    pause 1.5
+    $ TS.p(1.5)
 
     show layer screens at ts_showscreens
 
@@ -103,7 +103,7 @@ label ts_scenario_4:
     pause
     show layer screens at ts_hidescreens
     show screen scenario_4_onest_text_suka
-    pause 1
+    $ TS.p(1)
     hide screen scenario_4_onest_text_suka
 
     hide zatemnenie with dspr
@@ -120,17 +120,17 @@ label ts_scenario_4:
     with wipeleft_scene
 
     show layer master at ts_clean_eblet
-    pause 2
+    $ TS.p(2)
     play sound open_water_sink
-    pause 0.5
+    $ TS.p(0.5)
     stop sound
     play sound_loop water_sink_stream
-    pause 1
+    $ TS.p(1)
     play sound water_splash
-    pause 1.6
+    $ TS.p(1.6)
     stop sound_loop
     play sound close_water_sink
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -686,7 +686,7 @@ label ts_scenario_4:
         show layer screens at ts_hidescreens
         " {w=1.0}{nw}"
         show blink
-        pause 3
+        $ TS.p(3)
         hide blink
         play music ts_gp
         show unblink
@@ -988,7 +988,7 @@ label ts_scenario_4:
     pause
     show layer screens at ts_hidescreens
     show screen alko_text1
-    pause 1
+    $ TS.p(1)
     hide screen alko_text1
 
     show layer screens at ts_showscreens
@@ -997,7 +997,7 @@ label ts_scenario_4:
     pause
     show layer screens at ts_hidescreens
     show screen alko_text2
-    pause 1
+    $ TS.p(1)
     hide screen alko_text2
 
     show layer screens at ts_showscreens
@@ -1006,7 +1006,7 @@ label ts_scenario_4:
     pause
     show layer screens at ts_hidescreens
     show screen alko_text3
-    pause 1
+    $ TS.p(1)
     hide screen alko_text3
 
     show layer screens at ts_showscreens
@@ -1015,7 +1015,7 @@ label ts_scenario_4:
     pause
     show layer screens at ts_hidescreens
     show screen alko_text4
-    pause 1
+    $ TS.p(1)
     hide screen alko_text4
     hide zatemnenie with dspr
 
@@ -1277,7 +1277,7 @@ label ts_scenario_4:
     pause
     show layer screens at ts_hidescreens
     show screen alko_text5
-    pause 1
+    $ TS.p(1)
     hide screen alko_text5
 
     show layer screens at ts_showscreens
@@ -1286,7 +1286,7 @@ label ts_scenario_4:
     pause
     show layer screens at ts_hidescreens
     show screen alko_text6
-    pause 1
+    $ TS.p(1)
     hide screen alko_text6
 
     hide zatemnenie with dspr
@@ -1397,7 +1397,7 @@ label ts_scenario_4:
     stop music
     play sound br_glitch
     show ts_club_blur as bg1 at Glitch(_fps=160, glitch_strength=1)
-    $ renpy.pause(0.4, hard=True)
+    $ TS.p(0.4)
     stop sound
 
     play music ts_heather
@@ -1466,7 +1466,7 @@ label ts_scenario_4:
 
     play music audio.t10y
 
-    pause 2
+    $ TS.p(2)
 
     show layer screens at ts_showscreens
 
@@ -1511,12 +1511,12 @@ label ts_scenario_4:
     window hide
     scene ts_club at ts_alkonersha
     show layer master at blur_drunk_blya
-    pause 0.8
+    $ TS.p(0.8)
     stop music
     play sound sfx_body_bump
     scene black with vpunch
 
-    pause 2
+    $ TS.p(2)
 
 
     show layer screens at ts_showscreens
@@ -1525,7 +1525,7 @@ label ts_scenario_4:
     pause
     show layer screens at ts_hidescreens
     show screen pizda_text1
-    pause 1
+    $ TS.p(1)
     hide screen pizda_text1
 
     show layer screens at ts_showscreens
@@ -1534,7 +1534,7 @@ label ts_scenario_4:
     pause
     show layer screens at ts_hidescreens
     show screen pizda_text2
-    pause 1
+    $ TS.p(1)
     hide screen pizda_text2
 
     show layer screens at ts_showscreens
@@ -1545,7 +1545,7 @@ label ts_scenario_4:
         pause
         show layer screens at ts_hidescreens
         show screen pizda_text3
-        pause 1
+        $ TS.p(1)
         hide screen pizda_text3
 
         show layer screens at ts_showscreens
@@ -1554,13 +1554,13 @@ label ts_scenario_4:
         pause
         show layer screens at ts_hidescreens
         show screen pizda_text4
-        pause 1
+        $ TS.p(1)
         hide screen pizda_text4
 
         show layer screens at ts_showscreens
 
     show screen pizda_text41
-    pause 0.5
+    $ TS.p(0.5)
     hide screen pizda_text41
 
 #САЙОРИ ЕБЁТ МОЗГИ
@@ -1570,14 +1570,14 @@ label ts_scenario_4:
     show s_kill2
     show s_kill_bg as s_kill_bg at s_kill_bg_start
     show s_kill as s_kill at s_kill_start
-    pause 3.75
+    $ TS.p(3.75)
     show s_kill_bg2 as s_kill_bg
     show s_kill2 as s_kill
-    pause 0.01
+    $ TS.p(0.01)
 
     play sound s_kill_glitch1
     show s_kill_bg2 as bg1 at Glitch(_fps=160, glitch_strength=1)
-    $ renpy.pause(0.25, hard=True)
+    $ TS.p(0.25)
     stop sound
 
     hide s_kill_bg
@@ -1590,30 +1590,30 @@ label ts_scenario_4:
         truecenter
         alpha 0.5
         zoom 2.0 xalign 0.5 yalign 0.05
-        pause 0.5
+        TS.p(0.5)
         dizzy(1, 1.0)
-    pause 2.0
+    $ TS.p(2)
     show noise zorder 3:
         alpha 0.0
         linear 3.0 alpha 0.25
     show vignette zorder 3:
         alpha 0.0
         linear 3.0 alpha 0.75
-    pause 1.5
+    $ TS.p(1.5)
     show anarchy_glitch_logo zorder 2 at ts_coridor_glitch
-    pause 1.5
+    $ TS.p(1.5)
 
     play sound s_kill_glitch1
     show anarchy_glitch_logo as bg1 at Glitch(_fps=160, glitch_strength=1) zorder 2
-    $ renpy.pause(0.25, hard=True)
+    $ TS.p(0.25)
     stop sound
     hide anarchy_glitch_logo
 
-    pause 4.0
+    $ TS.p(4)
 
     play sound s_kill_glitch1
     show anarchy_glitch_logo as bg1 at Glitch(_fps=160, glitch_strength=1) zorder 2
-    $ renpy.pause(0.25, hard=True)
+    $ TS.p(0.25)
     stop sound
     hide anarchy_glitch_logo
 
@@ -1622,7 +1622,7 @@ label ts_scenario_4:
     show splash_glitch_m zorder 2
     show splash_glitch_n zorder 2
     show splash_glitch_y zorder 2
-    pause 0.75
+    $ TS.p(0.75)
     hide white
     hide splash_glitch2
     hide splash_glitch_m
@@ -1637,13 +1637,13 @@ label ts_scenario_4:
             xpos 0.1 ypos 0.05
     show fake_exception2 zorder 2:
         xpos 0.1 ypos 0.15
-    pause 6.0
+    $ TS.p(6)
 
     stop music fadeout 4
     play sound coldazvuk
-    pause 4.3
+    $ TS.p(4)
     scene black
-    pause 2
+    $ TS.p(2)
 
 #НАЦУКИ ЕБЁТ МОЗГИ
 
@@ -1659,26 +1659,26 @@ label ts_scenario_4:
     #show n_rects_ghost3 zorder 4
     #show natsuki ghost1 at t11
     #show natsuki_ghost_blood zorder 3
-    pause 3
+    $ TS.p(3)
     hide n_rects_ghost3
-    pause 1
+    $ TS.p(1)
     play sound crack
     show natsuki ghost3
     show n_rects_ghost4 onlayer front zorder 4
     show n_rects_ghost5 onlayer front zorder 4
-    pause 0.5
+    $ TS.p(0.5)
     hide natsuki
     play sound run
     show natsuki ghost4 onlayer front at i11
-    pause 0.15
+    $ TS.p(0.15)
     play sound coldazvuk1
-    pause 0.10
+    $ TS.p(0.1)
     window hide(None)
     hide natsuki onlayer front
     hide n_rects_ghost4 onlayer front
     hide n_rects_ghost5 onlayer front
     scene black
-    pause 3
+    $ TS.p(3)
 
 #ЮРЕЦ ЕБЁТ МОЗГИ
 
@@ -1689,37 +1689,37 @@ label ts_scenario_4:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     show yuri 3y3 at i11
     with flash
-    pause 1
+    $ TS.p(1)
     play sound yurikill
-    pause 1.43
+    $ TS.p(1.43)
     show yuri stab_1
-    pause 0.75
+    $ TS.p(0.75)
     show yuri stab_2
     show blood:
         pos (610,485)
-    pause 1.25
+    $ TS.p(1.25)
     show yuri stab_3
-    pause 0.75
+    $ TS.p(0.75)
     show yuri stab_2
     show blood:
         pos (610,485)
     show yuri stab_4 with ImageDissolve("mod_assets/source/images/spr/yuri/stab/4_wipe.webp", 0.25)
-    pause 1.25
+    $ TS.p(1.25)
     show yuri stab_5
-    pause 0.70
+    $ TS.p(0.7)
     show yuri stab_6:
         2.55
         easeout_cubic 0.5 yoffset 300
     show blood as blood2:
         pos (635,335)
-    pause 2.55
+    $ TS.p(2.55)
     hide blood
     hide blood2
-    pause 0.25
+    $ TS.p(0.25)
     play sound fall
-    pause 0.25
+    $ TS.p(0.25)
     scene black
-    pause 2.0
+    $ TS.p(2)
 
 #МОНИКА ЕБЁТ МОЗГИ
     window hide
@@ -1733,11 +1733,11 @@ label ts_scenario_4:
         linear 0.15 alpha 1.0 pos (-0.8, -0.4) zoom 2.60
         0.30
         linear 0.10 alpha 0 pos (0.0, 0.0) zoom 1.0
-    pause 1.75
+    $ TS.p(1.75)
     hide monika_scare
     hide noise
     scene black
-    pause 2
+    $ TS.p(2)
 
     play music ts_hl2
     scene vse_pizda_monike:
@@ -1881,10 +1881,10 @@ label ts_scenario_4:
     window hide
     show monika at thide
     hide monika
-    pause 1
+    $ TS.p(1)
     stop music fadeout 4
     scene black with dissolve4
-    pause 4
+    $ TS.p(4)
 
 
     show layer screens at ts_null_transform

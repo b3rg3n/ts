@@ -23,7 +23,7 @@ label ts_scenario_3:
     else:
         $ save_name = "Поиски. Нацуки"
 
-    pause 2
+    $ TS.p(2)
     play sound chp1
     if _preferences.language == "english":
         $ Chapter("ACT ONE")
@@ -46,14 +46,14 @@ label ts_scenario_3:
 
     play sound ts_alarm fadein 2
 
-    pause 2
+    $ TS.p(2)
 
     scene ts_bedroom
     show unblink
     show layer master at ts_vstavai_shashlik
-    pause 3
+    $ TS.p(3)
     play sound svet_on
-    pause 1.5
+    $ TS.p(1.5)
 
     show layer screens at ts_showscreens
 
@@ -102,17 +102,17 @@ label ts_scenario_3:
     with wipeleft_scene
 
     show layer master at ts_clean_eblet
-    pause 2
+    $ TS.p(2)
     play sound open_water_sink
-    pause 0.5
+    $ TS.p(0.5)
     stop sound
     play sound_loop water_sink_stream
-    pause 1
+    $ TS.p(1)
     play sound water_splash
-    pause 1.6
+    $ TS.p(1.6)
     stop sound_loop
     play sound close_water_sink
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -254,7 +254,7 @@ label ts_scenario_3:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_13
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_13
 
     hide zatemnenie with dspr
@@ -318,35 +318,35 @@ label ts_scenario_3:
 
 
     play sound yurikill
-    pause 1.43
+    $ TS.p(1.43)
     show yuri stab_1
-    pause 0.75
+    $ TS.p(0.75)
     show yuri stab_2
     show blood:
         pos (610,485)
-    pause 1.25
+    $ TS.p(1.25)
     show yuri stab_3
-    pause 0.75
+    $ TS.p(0.75)
     show yuri stab_2
     show blood:
         pos (610,485)
     show yuri stab_4 with ImageDissolve("mod_assets/source/images/spr/yuri/stab/4_wipe.webp", 0.25)
-    pause 1.25
+    $ TS.p(1.25)
     show yuri stab_5
-    pause 0.70
+    $ TS.p(0.7)
     show yuri stab_6:
         2.55
         easeout_cubic 0.5 yoffset 300
     show blood as blood2:
         pos (635,335)
-    pause 2.55
+    $ TS.p(2.55)
     hide blood
     hide blood2
-    pause 0.25
+    $ TS.p(0.25)
     play sound fall
-    pause 0.25
+    $ TS.p(0.25)
     scene black
-    pause 2.0
+    $ TS.p(2)
 
     scene black
     show y_kill
@@ -358,12 +358,12 @@ label ts_scenario_3:
 
     window hide
     play sound ssikanul
-    pause 0.2
+    $ TS.p(0.2)
     scene ts_darkbed
     show overlay aw_memory_back_1
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with vpunch
-    pause 1
+    $ TS.p(1)
 
     show layer screens at ts_showscreens
 
@@ -831,7 +831,7 @@ label ts_scenario_3:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_14
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_14
 
     hide zatemnenie with dspr
@@ -965,9 +965,9 @@ label ts_scenario_3:
 
     play sound door_open
     show layer master at ts_club_vhod
-    pause 1.2
+    $ TS.p(1.2)
     scene ts_club at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
 
     play music ts_mdl
 
@@ -1011,12 +1011,12 @@ label ts_scenario_3:
     window hide
     play sound door_break
     scene ts_corridor at ts_razebal
-    pause 0.3
+    $ TS.p(0.3)
     scene ts_corridor at ts_beg
-    pause 1
+    $ TS.p(1)
     play sound door_break
     scene ts_school_bathroom at ts_razebal
-    pause 0.3
+    $ TS.p(0.3)
 
     "С каждым днём знать о всех бедах девочек становится всё труднее."
     "Лишь проверив каждую кабинку, мне стало хоть немного, но легче..."
@@ -1180,7 +1180,7 @@ label ts_scenario_3:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_16
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_16
 
     hide zatemnenie with dspr
@@ -1375,7 +1375,7 @@ label ts_scenario_3:
 
     play sound wakeup
     stop music
-    pause 1.5
+    $ TS.p(1.5)
     scene ts_club
     show sayori 2q at t33
     with vpunch
@@ -1500,25 +1500,25 @@ label ts_scenario_3:
     show screen chp_text_1
     pause
     show layer screens at ts_hidescreens
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_1
     show layer screens at ts_showscreens
     show screen chp_text_2
     pause
     show layer screens at ts_hidescreens
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_2
     show layer screens at ts_showscreens
     show screen chp_text_3
     pause
     show layer screens at ts_hidescreens
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_3
     show layer screens at ts_showscreens
     show screen chp_text_4
     pause
     show layer screens at ts_hidescreens
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_4
 
     hide zatemnenie with dspr
@@ -1544,7 +1544,7 @@ label ts_scenario_3:
     show screen chp_text_5
     pause
     show layer screens at ts_hidescreens
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_5
     hide zatemnenie with dspr
 
@@ -1569,7 +1569,7 @@ label ts_scenario_3:
     show screen chp_text_5
     pause
     show layer screens at ts_hidescreens
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_5
     hide zatemnenie with dspr
 
@@ -1594,7 +1594,7 @@ label ts_scenario_3:
     show screen chp_text_5
     pause
     show layer screens at ts_hidescreens
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_5
     hide zatemnenie with dspr
 
@@ -1606,7 +1606,7 @@ label ts_scenario_3:
         show screen chp_text_6
         pause
         show layer screens at ts_hidescreens
-        pause 1
+        $ TS.p(1)
         hide screen chp_text_6
         hide zatemnenie with dspr
     else:
@@ -1615,7 +1615,7 @@ label ts_scenario_3:
         show screen chp_text_7
         pause
         show layer screens at ts_hidescreens
-        pause 1
+        $ TS.p(1)
         hide screen chp_text_7
         hide zatemnenie with dspr
 
@@ -1742,7 +1742,7 @@ label ts_scenario_3:
     pause
     show layer screens at ts_hidescreens
     show screen scenario_3_onest_text_suka
-    pause 1
+    $ TS.p(1)
     hide screen scenario_3_onest_text_suka
 
     hide zatemnenie with dspr
@@ -1766,7 +1766,7 @@ label ts_scenario_3:
     scene ts_vhod_nolight
     with pushleft
 
-    pause 0.5
+    $ TS.p(0.5)
 
     play sound svet_on
 
@@ -1799,7 +1799,7 @@ label ts_scenario_3:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_18
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_18
 
     hide zatemnenie with dspr
@@ -1955,7 +1955,7 @@ label ts_scenario_3:
                 pause
                 show layer screens at ts_hidescreens
                 show screen chp_text_19
-                pause 1
+                $ TS.p(1)
                 hide screen chp_text_19
 
                 hide zatemnenie with dspr
@@ -1977,7 +1977,7 @@ label ts_scenario_3:
         show layer screens at ts_hidescreens
         " {w=1.0}{nw}"
 
-        pause 2
+        $ TS.p(2)
 
     else:
         show layer master at ts_havchik_gotovka
@@ -2066,13 +2066,13 @@ label ts_scenario_3:
     scene black
     with wipeleft_scene
 
-    pause 1
+    $ TS.p(1)
 
     scene ts_darkbed
     show unblink
 
     show layer master at ts_vstavai_shashlik1
-    pause 3
+    $ TS.p(3)
 
     show layer screens at ts_showscreens
 
@@ -2488,7 +2488,7 @@ label ts_scenario_3:
     " {w=1.0}{nw}"
 
     show layer master at ts_obnimashki_center_finalle
-    pause 1
+    $ TS.p(1)
     show blink
 
     show layer screens at ts_showscreens
@@ -2539,7 +2539,7 @@ label ts_scenario_3:
     play music ts_rem
 
     show layer master at ts_padenie_na_bed
-    pause 1
+    $ TS.p(1)
     play sound ts_bed_squeak
 
     show layer screens at ts_showscreens
@@ -2564,9 +2564,9 @@ label ts_scenario_3:
     stop music
     play sound br_glitch
     show ts_darkbed as bg1 at Glitch(_fps=160, glitch_strength=1)
-    $ renpy.pause(1.1, hard=True)
+    $ TS.p(1.1)
     stop sound
     scene black
-    pause 3
+    $ TS.p(3)
 
     jump ts_scenario_4

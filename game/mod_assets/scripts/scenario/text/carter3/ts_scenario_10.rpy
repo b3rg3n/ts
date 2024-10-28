@@ -44,14 +44,14 @@ label ts_scenario_10:
     play music ts_pb_sn fadein 2
     play sound ts_alarm fadein 2
 
-    pause 2
+    $ TS.p(2)
 
     scene ts_bedroom
     show unblink
     show layer master at ts_vstavai_shashlik
-    pause 3
+    $ TS.p(3)
     play sound svet_on
-    pause 1.5
+    $ TS.p(1.5)
 
     show layer screens at ts_showscreens
 
@@ -72,17 +72,17 @@ label ts_scenario_10:
 
 
     show layer master at ts_clean_eblet
-    pause 2
+    $ TS.p(2)
     play sound open_water_sink
-    pause 0.5
+    $ TS.p(0.5)
     stop sound
     play sound_loop water_sink_stream
-    pause 1
+    $ TS.p(1)
     play sound water_splash
-    pause 1.6
+    $ TS.p(1.6)
     stop sound_loop
     play sound close_water_sink
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -333,7 +333,7 @@ label ts_scenario_10:
     show monika 2f at t11
     play sound mon_ahh
     with vpunch
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
     m "Видишь? Ты до сих пор здесь, а папа и все мои друзья до сих пор безумны и кровожадны. Значит, не сплю!"
     show monika 1p at f11
@@ -348,7 +348,7 @@ label ts_scenario_10:
     play sound ts_glitch6
     scene black with memglitchstr
     stop sound
-    pause 1
+    $ TS.p(1)
     play sound ts_glitch2
     scene ts_class with memglitchstr
     stop music fadeout 2
@@ -402,7 +402,7 @@ label ts_scenario_10:
     n "{font=[pizdec_font]}А-А-А-А-А-А-А-А-А!{/font}"
     show layer screens at ts_hidescreens_fast
     " {w=0.1}{nw}"
-    pause 1.3
+    $ TS.p(1.3)
     show layer screens at ts_showscreens_fast
     n 1l "А, вот и ты, {w=0.05}{nw}"
 
@@ -629,7 +629,7 @@ label ts_scenario_10:
     with memglitch
     stop sound
 
-    pause 1.5
+    $ TS.p(1.5)
     show layer screens at ts_showscreens_fast
     m "Ч-что?"
     play sound psy_fast_1
@@ -703,13 +703,13 @@ label ts_scenario_10:
     window hide
     play sound stuk
     with vpunch
-    pause 2
+    $ TS.p(2)
     play sound door_open
-    pause 1
+    $ TS.p(1)
     show yuri 1a at ln31
     show sayori 1a at ln32
     show natsuki 1a at t33
-    pause 1.5
+    $ TS.p(1.5)
     hide yuri
     hide sayori
     hide natsuki
@@ -727,7 +727,7 @@ label ts_scenario_10:
         align (0.5, 0.15)
     show ts_maloletka_pozvonok_sloman_nahui at right
 
-    pause 2
+    $ TS.p(2)
 
     stop sound
 
@@ -850,7 +850,7 @@ label ts_scenario_10:
         truecenter
         alpha 0.5
         zoom 2.0 xalign 0.5 yalign 0.05
-        pause 0.5
+        TS.p(0.5)
         dizzy(1, 1.0)
     show overlay aw_memory_back_1 zorder 4
 
@@ -884,7 +884,7 @@ label ts_scenario_10:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     show natsuki 1za at t11
     with flash
-    pause 2
+    $ TS.p(2)
     show natsuki 2zb at t11
     show layer screens at ts_showscreens_fast
     if persistent.cens_mode == True:
@@ -893,22 +893,22 @@ label ts_scenario_10:
         m "Иди сюда, мелкая."
     show layer screens at ts_hidescreens_fast
     " {w=0.1}{nw}"
-    pause 1.3
+    $ TS.p(1.3)
     show natsuki screamnohead at h11
     show natscreamhead at h111
-    pause 1
+    $ TS.p(1)
     show natscreamhead at t111
     play sound2 scream_normal
     play sound bones_breaking
-    pause 1#3
+    $ TS.p(1)#3
     stop sound2 fadeout 1
     #hide natscreamhead
     #hide natsuki screamnohead
     show natscreamhead at ts_punch1()
     show natsuki screamnohead at ts_punch()
-    pause 0.2
+    $ TS.p(0.2)
     play sound sfx_body_bump
-    pause 1
+    $ TS.p(1)
 
     play sound fb
     scene ts_club
@@ -1063,30 +1063,30 @@ label ts_scenario_10:
     show dust4
     with linearblurbolee
     show yuri 1g at ln11
-    pause 0.75
+    $ TS.p(0.75)
 
-    pause 0.5
+    $ TS.p(0.5)
 
     show yuri 1g at ron11
-    pause 0.75
+    $ TS.p(0.75)
     hide yuri
 
     show sayori 2o at ln11
-    pause 0.75
+    $ TS.p(0.75)
 
-    pause 0.5
+    $ TS.p(0.5)
 
     show sayori 2o at ron11
-    pause 0.75
+    $ TS.p(0.75)
     hide sayori
 
     show natsuki 1s at ln11
-    pause 0.75
+    $ TS.p(0.75)
 
-    pause 0.5
+    $ TS.p(0.5)
 
     show natsuki 1s at ron11
-    pause 0.75
+    $ TS.p(0.75)
     hide natsuki
     scene ts_notebook with linearblurbolee
     show layer screens at ts_showscreens
@@ -1135,7 +1135,7 @@ label ts_scenario_10:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
     hide poem_dismiss
 
@@ -1218,10 +1218,10 @@ label ts_scenario_10:
     " {w=1.0}{nw}"
     play sound door_open
     show yuri 3d at lon31
-    pause 1
+    $ TS.p(1)
     hide yuri
     show sayori 4s at lon32
-    pause 1
+    $ TS.p(1)
     hide sayori
     show layer screens at ts_showscreens_fast
     if _preferences.language == "english":
@@ -1233,7 +1233,7 @@ label ts_scenario_10:
     " {w=0.1}{nw}"
     play sound door_open
     show natsuki 1y at lon33
-    pause 1
+    $ TS.p(1)
     hide natsuki
     show layer screens at ts_showscreens
     "Однако Нацуки уже испарилась в мгновение ока."
@@ -1245,7 +1245,7 @@ label ts_scenario_10:
         _preferences.volumes['sfx'] = 1.0
     play sound scream_pereponkam_pizda
     show monika g1 at t1111
-    pause 1.25
+    $ TS.p(1.25)
     stop sound
     scene ts_club
     python:
@@ -1282,19 +1282,19 @@ label ts_scenario_10:
     scene ts_corridor
     with wipeleft_scene
 
-    pause 2
+    $ TS.p(2)
 
     play sound pageflip
     scene ts_l5
     with wipeleft_scene
 
-    pause 2
+    $ TS.p(2)
 
     play sound pageflip
     scene ts_school_gate_evening
     with wipeleft_scene
 
-    pause 2
+    $ TS.p(2)
 
     play sound pageflip
     scene ts_street_late
@@ -1362,13 +1362,13 @@ label ts_scenario_10:
     scene ts_vhod_nolight
     with wipeleft_scene_long
 
-    pause 2
+    $ TS.p(2)
 
     play sound svet_on
     scene ts_vhod_night
     with flash
 
-    pause 2
+    $ TS.p(2)
 
     play sound pageflip
     scene ts_living_room_night
@@ -1596,7 +1596,7 @@ label ts_scenario_10:
     stop music fadeout 3
     show layer screens at ts_hidescreens_fast
     " {w=0.1}{nw}"
-    pause 3
+    $ TS.p(3)
     show layer screens at ts_showscreens_fast
     "Да не может этого быть..."
     "Я до этого момента особо телефоном не пользовалась, поэтому и не замечала..."
@@ -1618,20 +1618,20 @@ label ts_scenario_10:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     play sound mobila_gudok
-    pause 3
+    $ TS.p(3)
     play sound psy_fast_1
     scene black with memglitch
     stop sound
-    pause 1
+    $ TS.p(1)
 
     show ts_host_split_animated
     show ts_kuh_split_animated
 
-    pause 0.99
+    $ TS.p(0.99)
 
     show minami 1bzf at ln31
     show hiroto 1b1 at rn33
-    pause 1
+    $ TS.p(1)
     show n_cg1b1337
     $ gtextsuka1 = glitchtext(24)
     $ ts_mt_name = "[gtextsuka]"
@@ -1662,9 +1662,9 @@ label ts_scenario_10:
     " {w=0.1}{nw}"
 
     show minami 1bze at i31
-    pause 0.44
+    $ TS.p(0.44)
     show minami 1ba at i31
-    pause 0.5  
+    $ TS.p(0.5)  
     show minami 1bq at t31
     show hiroto 1a at t33
 
@@ -1691,7 +1691,7 @@ label ts_scenario_10:
     show layer screens at ts_hidescreens_fast
     " {w=0.1}{nw}"
     show minami 1bze at t31
-    pause 0.44
+    $ TS.p(0.44)
     show minami 1ba at t31
     show layer screens at ts_showscreens_fast
     "Я не хочу уже даже и слышать про этот фестиваль, потому что, кажется, что он уже никогда не наступит."

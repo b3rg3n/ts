@@ -23,14 +23,14 @@ label ts_scenario_11:
 
     play sound ts_alarm fadein 2
 
-    pause 2
+    $ TS.p(2)
 
     scene ts_bedroom
     show unblink
     show layer master at ts_vstavai_shashlik
-    pause 3
+    $ TS.p(3)
     play sound svet_on
-    pause 1.5
+    $ TS.p(1.5)
 
     show layer screens at ts_showscreens
 
@@ -66,17 +66,17 @@ label ts_scenario_11:
     with wipeleft_scene
 
     show layer master at ts_clean_eblet
-    pause 2
+    $ TS.p(2)
     play sound open_water_sink
-    pause 0.5
+    $ TS.p(0.5)
     stop sound
     play sound_loop water_sink_stream
-    pause 1
+    $ TS.p(1)
     play sound water_splash
-    pause 1.6
+    $ TS.p(1.6)
     stop sound_loop
     play sound close_water_sink
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -339,7 +339,7 @@ label ts_scenario_11:
         renpy.sound.play(track, loop=True)
 
     show monika g2 at i11
-    pause 1
+    $ TS.p(1)
     stop sound
     python:
         _preferences.volumes['music'] = .45
@@ -431,7 +431,7 @@ label ts_scenario_11:
     with wipeleft_scene
 
 
-    pause 2
+    $ TS.p(2)
 
     play sound pageflip
     scene ts_street
@@ -474,7 +474,7 @@ label ts_scenario_11:
     show monika g1loop at i11
     extend "лучшее стихотворение на свете!{nw}"
     window hide
-    pause 1.5
+    $ TS.p(1.5)
     stop sound
     show monika 4a at t11
     show layer screens at ts_showscreens_fast
@@ -488,9 +488,9 @@ label ts_scenario_11:
     hide monika
     with linearblur
     scene ts_street at ts_bg_into
-    pause 0.5
+    $ TS.p(0.5)
     scene ts_school_gate_day at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -538,9 +538,9 @@ label ts_scenario_11:
     hide monika
     with linearblur
     scene ts_corridor at ts_bg_into
-    pause 0.5
+    $ TS.p(0.5)
     scene ts_notebook at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -566,7 +566,7 @@ label ts_scenario_11:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -602,7 +602,7 @@ label ts_scenario_11:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -637,7 +637,7 @@ label ts_scenario_11:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -670,7 +670,7 @@ label ts_scenario_11:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -691,7 +691,7 @@ label ts_scenario_11:
     "Если я допишу этот стих до конца, это уже будет чудом."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 2
+    $ TS.p(2)
     show layer screens at ts_showscreens
     "Ладно, кажется, я отвлеклась."
     "Кажется, Юри на {i}прошлой неделе{/i} что-то говорила о том, как я пытаюсь перекричать шум?"
@@ -719,7 +719,7 @@ label ts_scenario_11:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -758,7 +758,7 @@ label ts_scenario_11:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -775,9 +775,9 @@ label ts_scenario_11:
     " {w=1.0}{nw}"
 
     scene ts_notebook at ts_bg_into
-    pause 0.5
+    $ TS.p(0.5)
     scene ts_corridor at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -795,11 +795,11 @@ label ts_scenario_11:
     scene ts_corridor:
         align (0.5, 0.5) zoom 1
         ease 1.2 align (0.3, 0.4) zoom 1.5
-    pause 0.7
+    $ TS.p(0.7)
     play sound door_open
-    pause 0.5
+    $ TS.p(0.5)
     scene ts_class at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
     show layer screens at ts_showscreens
 
     teacher "Доброе утро, класс."
@@ -810,9 +810,9 @@ label ts_scenario_11:
     " {w=1.0}{nw}"
 
     scene ts_class at ts_bg_into
-    pause 0.5
+    $ TS.p(0.5)
     scene ts_notebook_glitch at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
     "Однако за то время, пока я делала вид, что являюсь обычным учеником, я напрочь забыла остаток стихотворения."
@@ -851,7 +851,7 @@ label ts_scenario_11:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -893,7 +893,7 @@ label ts_scenario_11:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -924,7 +924,7 @@ label ts_scenario_11:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -963,7 +963,7 @@ label ts_scenario_11:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 
@@ -977,9 +977,9 @@ label ts_scenario_11:
     " {w=1.0}{nw}"
 
     scene ts_notebook_glitch at ts_bg_into
-    pause 0.5
+    $ TS.p(0.5)
     scene ts_class at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
     "Ещё примерно половина букв из моего предыдущего порыва вдохновения отсохли."
@@ -990,7 +990,7 @@ label ts_scenario_11:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     show blink
-    pause 2
+    $ TS.p(2)
     hide blink
     show unblink
     show layer screens at ts_showscreens
@@ -1034,7 +1034,7 @@ label ts_scenario_11:
     nvlbazar " {w=1.0}{nw}"
     nvl clear
     show blink
-    pause 1
+    $ TS.p(1)
     play ambience clock_stena fadein 1
     scene ts_class
     show unblink
@@ -1050,7 +1050,7 @@ label ts_scenario_11:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     scene ts_club_medlenno_glutch
-    pause 6
+    $ TS.p(0.6)
     scene black with dissolve2
     play sound fb
     scene ts_club
@@ -1127,7 +1127,7 @@ label ts_scenario_11:
     play sound door_snesli_nahui
     show layer master at ts_razebal
     show monika 3t at h11
-    pause 0.3
+    $ TS.p(0.3)
     show layer screens at ts_showscreens_fast
     "Договорить Аки не успела, потому что в комнату вошли... нет, ввалились Сайори и Нацуки."
     "Причём ввалились они настолько громко, что даже Аки испугалась, а я так тем более."
@@ -1341,7 +1341,7 @@ label poemresponsesuka_loop:
                 em "А зависит ли? Ты же уже вроде и сама поняла, что до фестиваля в этом сне ты не доживёшь. И во всех остальных тоже."
                 em "Цикл заканчивается в пятницу, за три дня до фестиваля. А затем мы откатываемся обратно на субботу прошлой недели."
             else:
-                pause 4
+                $ TS.p(4)
                 show layer master at ts_blur_transform_suka(0, 2, 9)
                 play sound wakeup
             show layer master
@@ -1368,7 +1368,7 @@ label poemresponsesuka_loop:
             " {w=1.0}{nw}"
             show sayori 3b at f11
             stop music fadeout 5
-            pause 5
+            $ TS.p(0.5)
             play music ts_gone fadein 5
             $ persistent.ingame_pizda = True
 
@@ -1402,7 +1402,7 @@ label poemresponsesuka_loop:
             show sayori 4r at t11
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
-            pause 0.4
+            $ TS.p(0.4)
             play music ts_first_day_of_sun fadein 2
             show layer screens at ts_showscreens_fast
             show sayori 2o at t11
@@ -1443,7 +1443,7 @@ label poemresponsesuka_loop:
 
             play sound pageflip
             show layer screens at ts_hidescreens
-            pause 1.0
+            $ TS.p(1)
             hide screen poem
 
             scene ts_club
@@ -1480,7 +1480,7 @@ label poemresponsesuka_loop:
             s "{size=-6}А ещё... мне в этом стихе очень близка его главная героиня. Как будто она – это и есть я...{/size}"
             show sayori 2t at t11
             m "Я знаю, Сайори..."
-            pause 0.6
+            $ TS.p(0.6)
             show sayori 2f at t11
             "После этих слов Сайори как-то отстраняется от меня."
             show sayori 2h at f11
@@ -1501,7 +1501,7 @@ label poemresponsesuka_loop:
             show sayori 2zc at f11
             s "Да ладно, сама не котёнок беспомощный. Я справлюсь. Как-нибудь."
             show sayori 2d at t11
-            pause 0.7
+            $ TS.p(0.7)
             show sayori 2i at t11
             "Я бы хотела ещё что-то возразить, но спорить с таким взглядом Сайори я всё же не решилась."
             show sayori 2i at cright with move
@@ -1602,7 +1602,7 @@ label poemresponsesuka_loop:
                 show sayori 4w at t31
                 show yuri 2y3 at t32
                 show natsuki 2o at t33
-                pause 0.5
+                $ TS.p(0.5)
                 show sayori at lhide
                 hide sayori
                 show yuri 2y4 at t21
@@ -1631,11 +1631,11 @@ label poemresponsesuka_loop:
                 scene ts_club
                 show yuri 2y4 at t21
                 show natsuki 12b at h22
-                pause 0.8
+                $ TS.p(0.8)
                 show natsuki 12d at h22
-                pause 0.8
+                $ TS.p(0.8)
                 show natsuki 12f at h22
-                pause 1
+                $ TS.p(1)
                 show natsuki at lhide
                 play sound door_break
                 hide natsuki
@@ -1823,7 +1823,7 @@ label poemresponsesuka_loop:
 
             play sound pageflip
             show layer screens at ts_hidescreens
-            pause 1.0
+            $ TS.p(1)
             hide screen poem
 
             scene ts_club
@@ -1873,7 +1873,7 @@ label poemresponsesuka_loop:
             show natsuki 1s at t11
             show layer master at ts_razebal
             play sound ts_bumaga_sound
-            pause 0.8
+            $ TS.p(0.8)
             show natsuki 1s at cright with move
             hide natsuki
             "В мгновение ока Нацуки забирает у меня тетрадь со стихом и тут же испаряется."
@@ -1998,7 +1998,7 @@ label poemresponsesuka_loop:
 
             play sound pageflip
             show layer screens at ts_hidescreens
-            pause 1.0
+            $ TS.p(1)
             hide screen poem
 
             scene ts_club
@@ -2024,19 +2024,19 @@ label poemresponsesuka_loop:
             show yuri 3p at t11
             m "А кто главная героиня этого стихотворения?"
             show yuri 3p at t11
-            pause 0.5
+            $ TS.p(0.5)
             show yuri 2n at t11
-            pause 0.5
+            $ TS.p(0.5)
             show yuri 2o at t11
-            pause 1
+            $ TS.p(1)
             show yuri 2q at f11
             y "Н-ну ты же и сама видела, это к-королева на г-глубине дна морского..."
             show yuri 2n at t11
             m "Ладно, сформулирую вопрос иначе: кто олицетворяет собой эту королеву на морской глубине?"
             show yuri 2n at t11
-            pause 0.5
+            $ TS.p(0.5)
             show yuri 2o at t11
-            pause 1
+            $ TS.p(1)
             show yuri 1o at f11
             y "{size=-10}Я олицетворяю...{/size}"
             y 4b "Просто... я вся такая незаметная, тихая, что некоторые одноклассники говорят, что пока все сидят на уроке, Юри сидит на дне морском..."
@@ -2116,10 +2116,10 @@ label poemend_abrupt:
 
     play sound door_break
     scene ts_corridor at ts_razebal
-    pause 0.35
+    $ TS.p(0.35)
     play sound2 ts_running
     scene ts_corridor at ts_running_fast
-    pause 0.5
+    $ TS.p(0.5)
     play sound pageflip
     scene ts_l5 at ts_running_fast
     with wipeleft_scene_fast
@@ -2141,7 +2141,7 @@ label poemend_abrupt:
     stop sound2
     play sound door_break
     scene ts_vhod_night at ts_razebal
-    pause 0.4
+    $ TS.p(0.4)
 
 
     play sound2 ts_othodos_ot_bega fadein 1
@@ -2414,18 +2414,18 @@ label poemend_abrupt:
     hide screen dialog
     $ renpy.block_rollback()
     scene black
-    pause 0.5
+    $ TS.p(0.5)
 
     if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
         play sound br_glitch
         show ts_menu_move_anim as bg1 at Glitch(_fps=160, glitch_strength=1)
-        pause 0.6
+        $ TS.p(0.6)
         stop sound
         hide ts_menu_move_anim as bg1 at Glitch(_fps=160, glitch_strength=1)
     elif True: #ДЕНЬ
         play sound br_glitch
         show ts_menu_move_anim_three as bg1 at Glitch(_fps=160, glitch_strength=1)
-        pause 0.6
+        $ TS.p(0.6)
         stop sound
         hide ts_menu_move_anim_three as bg1 at Glitch(_fps=160, glitch_strength=1)
 
@@ -2549,9 +2549,9 @@ label poemend_normal:
     hide monika
     with linearblur
     scene ts_bedroom at ts_bg_into
-    pause 0.5
+    $ TS.p(0.5)
     scene ts_notebook at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -2673,18 +2673,18 @@ label poemend_normal:
     hide screen dialog
     $ renpy.block_rollback()
     scene black
-    pause 0.5
+    $ TS.p(0.5)
 
     if hour in [20,21,22,23,24,0,1,2,3,4,5,6]: #НОЧЬ
         play sound br_glitch
         show ts_menu_move_anim as bg1 at Glitch(_fps=160, glitch_strength=1)
-        pause 0.6
+        $ TS.p(0.6)
         stop sound
         hide ts_menu_move_anim as bg1 at Glitch(_fps=160, glitch_strength=1)
     elif True: #ДЕНЬ
         play sound br_glitch
         show ts_menu_move_anim_three as bg1 at Glitch(_fps=160, glitch_strength=1)
-        pause 0.6
+        $ TS.p(0.6)
         stop sound
         hide ts_menu_move_anim_three as bg1 at Glitch(_fps=160, glitch_strength=1)
 

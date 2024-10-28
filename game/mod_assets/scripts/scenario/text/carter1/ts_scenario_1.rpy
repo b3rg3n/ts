@@ -23,7 +23,7 @@ label ts_scenario_1:
         $ save_name = "Поиски. Сайори"
 
     scene black
-    pause 2
+    $ TS.p(2)
     play sound chp1
     if _preferences.language == "english":
         $ Chapter("ACT ONE")
@@ -144,7 +144,7 @@ label ts_scenario_1:
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Наверное, зря я ушла из Дискуссионного клуба..."
@@ -169,7 +169,7 @@ label ts_scenario_1:
     window hide
     play sound stuk
     show layer master at ts_osmotr_tipa_sleva
-    pause 1.5
+    $ TS.p(1.5)
     play sound door_open
 
     show sayori 3b zorder 2 at ln11
@@ -388,7 +388,7 @@ label ts_scenario_1:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_20
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_20
 
     hide zatemnenie with dspr
@@ -597,7 +597,7 @@ label ts_scenario_1:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_21
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_21
 
     hide zatemnenie with dspr
@@ -656,7 +656,7 @@ label ts_scenario_1:
     pause
     show layer screens at ts_hidescreens
     show screen chp_text_22
-    pause 1
+    $ TS.p(1)
     hide screen chp_text_22
 
     hide blink
@@ -1212,7 +1212,7 @@ label ts_scenario_1:
     with wipeleft_scene
 
     show layer master at ts_padenie_na_bed
-    pause 1
+    $ TS.p(1)
     play sound ts_bed_squeak
 
     show layer screens at ts_showscreens
@@ -1227,7 +1227,7 @@ label ts_scenario_1:
     stop music
     play sound br_glitch
     show ts_bedroom as bg1 at Glitch(_fps=160, glitch_strength=1)
-    $ renpy.pause(0.4, hard=True)
+    $ TS.p(0.4)
     stop sound
     scene black
 

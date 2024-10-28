@@ -42,7 +42,7 @@ label ts_scenario_12:
         stop sound fadeout 7
         $ Chapter("Порочный круг")
 
-    pause 2
+    $ TS.p(2)
 
     show layer screens at ts_showscreens
 
@@ -94,7 +94,7 @@ label ts_scenario_12:
         window hide
         show layer master at ts_trns_dream
         play sound ts_glitch5
-        pause 1
+        $ TS.p(1)
         show layer master
         stop sound
         show layer screens at ts_showscreens_fast
@@ -137,7 +137,7 @@ label ts_scenario_12:
     "Однако зайти внутрь я так и не решаюсь, и вместо этого просто решаю стоять снаружи."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 5
+    $ TS.p(5)
     show layer screens at ts_showscreens
     "Прошло пять минут."
     show monika 2i at f11
@@ -352,18 +352,18 @@ label ts_scenario_12:
         show momika at thide
         hide momika
     show monika 2bo at t41
-    pause 0.4
+    $ TS.p(0.4)
     show monika 2bh at t41
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     show atc3_chess1 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess1 with dissolve
 
     show atc3_chess2 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Первый ход у Аки точно такой же, как и у папы. Но я-то знаю, что собирается она играть совсем иначе, чем просто выпускать ферзя как можно раньше."
@@ -373,11 +373,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess2 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess2 with dissolve
 
     show atc3_chess3 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Аки без раздумий тоже ходит второй центральной пешкой."
@@ -386,11 +386,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess3 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess3 with dissolve
 
     show atc3_chess4 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Старая добрая «Французская защита». Конечно, всю теорию я не помню, но первые пару ходов я знаю, как дважды два."
@@ -399,22 +399,22 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess4 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess4 with dissolve
 
     show atc3_chess5 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
     "Аки бьёт пешку в ответ."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     show atc3_chess5 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess5 with dissolve
 
     show atc3_chess6 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
     show monika 2bd at f41
     em "Слушай, а мы стих писать на этот раз будем?"
@@ -432,11 +432,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess6 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess6 with dissolve
 
     show atc3_chess7 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
     "Аки безэмоционально выводит того же коня."
 
@@ -444,11 +444,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess7 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess7 with dissolve
 
     show atc3_chess8 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Так, дальше... Дальше, наверное, выводить слона и делать рокировку..."
@@ -457,11 +457,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess8 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess8 with dissolve
 
     show atc3_chess9 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     if chess_tutor == True:
@@ -495,11 +495,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess9 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess9 with dissolve
 
     show atc3_chess10 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Так... Что я там говорила? Рокировку буду делать?"
@@ -510,11 +510,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess10 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess10 with dissolve
 
     show atc3_chess11 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Аки выводит вперёд ещё одну фигуру. На этот раз слона."
@@ -523,11 +523,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess11 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess11 with dissolve
 
     show atc3_chess12 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Новых ходов на развитие без риска я сделать больше не смогу."
@@ -538,11 +538,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess12 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess12 with dissolve
 
     show atc3_chess13 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Аки без лишних размышлений отвечает мне такой же рокировкой."
@@ -550,11 +550,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess13 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess13 with dissolve
 
     show atc3_chess14 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
     if chess_tutor == True:
         show momika 2b at t44
@@ -580,7 +580,7 @@ label ts_scenario_12:
     with ts_paint
 
     show atc3_chess15 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     show monika 2bo at t41
@@ -588,18 +588,18 @@ label ts_scenario_12:
     "Прошло ещё несколько ходов."
     "У нас с Аки произошёл первый размен фигурами: Аки отдала своего слона за моего коня, в связи с чем открывается окно возможностей для атаки на беззащитную пешку."
     show monika 2bq at t41
-    pause 0.8
+    $ TS.p(0.8)
     show monika 2bh at t41
 
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     show atc3_chess15 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess15 with dissolve
 
     show atc3_chess16 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Аки как ни в чём ни бывало развивает ферзя."
@@ -611,17 +611,17 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess16 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess16 with dissolve
 
     show atc3_chess17 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     show monika 3bs at t41
-    pause 0.8
+    $ TS.p(0.8)
     show monika 1bz at t41
-    pause 0.4
+    $ TS.p(0.4)
     show monika 1bf at t41
     "Аки, осознав, что она зевнула пешку, от безысходности бьёт моего коня своим."
 
@@ -629,11 +629,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess17 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess17 with dissolve
 
     show atc3_chess18 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Я со злой, но безобидной ухмылкой тут же бью коня своим слоном."
@@ -642,11 +642,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess18 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess18 with dissolve
 
     show atc3_chess19 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     show monika 2bp at f41
@@ -667,7 +667,7 @@ label ts_scenario_12:
     with ts_pixel
 
     show atc3_chess23 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     show monika 1bz at t41
@@ -683,26 +683,26 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess23 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess23 with dissolve
 
     show atc3_chess24 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     show monika 1bz at t41
-    pause 0.5
+    $ TS.p(0.5)
     show monika 1bo at t41
     "Аки же тем временем от безысходности просто двигает очередную пешку на одну клетку."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
     show atc3_chess24 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess24 with dissolve
 
     show atc3_chess25 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
     "А затем я ставлю ладью на вторую горизонталь, чтобы на следующем ходу обе ладьи были на одной вертикали."
 
@@ -710,11 +710,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess25 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess25 with dissolve
 
     show atc3_chess26 at ts_chess_move_up
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Однако вместо того, чтобы играть дальше, Аки просто..."
@@ -723,18 +723,18 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show atc3_chess26 at ts_chess_move_down
-    pause 0.5
+    $ TS.p(0.5)
     hide atc3_chess26 with dissolve
 
     show layer screens at ts_showscreens
 
     stop music fadeout 3
     show monika 1bz at t41
-    pause 0.5
+    $ TS.p(0.5)
     show monika 1bv at t41
-    pause 0.5
+    $ TS.p(0.5)
     show monika 2bzc at t41
-    pause 0.3
+    $ TS.p(0.3)
     "...начинает плакать?"
     show monika 2bzb at f41
     em "Всё, ладно, я сдаюсь. Довольна?"
@@ -755,9 +755,9 @@ label ts_scenario_12:
     m "А вот и меняет! Ты же сама полчаса назад говорила, что не уверена, умеешь ли ты играть в принципе."
     m "А для первой игры в шахматы ты сыграла очень даже неплохо."
     show monika 2bw at t41
-    pause 2
+    $ TS.p(2)
     show monika 1bo at t41
-    pause 1.5
+    $ TS.p(1.5)
     "Аки мешкается, стоит ли мне грубить и дальше, или же просто принять это и жить дальше."
     show monika 2bp at f41
     em "Ладно, наверное, ты тоже иногда бываешь права..."
@@ -895,35 +895,35 @@ label ts_scenario_12:
 
     show yuri 3y3 at i31
     with flash
-    pause 1
+    $ TS.p(1)
     play sound yurikill
-    pause 1.43
+    $ TS.p(1.43)
     show yuri stab_1
-    pause 0.75
+    $ TS.p(0.75)
     show yuri stab_2
     show blood:
         pos (210,485)
-    pause 1.25
+    $ TS.p(1.25)
     show yuri stab_3
-    pause 0.75
+    $ TS.p(0.75)
     show yuri stab_2
     show blood:
         pos (210,485)
     show yuri stab_4 with ImageDissolve("mod_assets/source/images/spr/yuri/stab/4_wipe.webp", 0.25)
-    pause 1.25
+    $ TS.p(1.25)
     show yuri stab_5
-    pause 0.70
+    $ TS.p(0.7)
     show yuri stab_6:
         2.55
         easeout_cubic 0.5 yoffset 300
     show blood as blood2:
         pos (235,335)
-    pause 2.55
+    $ TS.p(2.55)
     hide blood
     hide blood2
-    pause 0.25
+    $ TS.p(0.25)
     play sound fall
-    pause 0.25
+    $ TS.p(0.25)
     python:
         _preferences.volumes['sfx'] = .65
         _preferences.volumes['music'] = .45
@@ -934,11 +934,11 @@ label ts_scenario_12:
     show natsuki 1zb at f33
     n "Кажется, меня..."
     show natsuki 1zb at h33
-    pause 0.7
+    $ TS.p(0.7)
     show natsuki 1zb at h33
-    pause 1
+    $ TS.p(1)
     show natsuki vomit at h33
-    pause 1.5
+    $ TS.p(1.5)
     play sound sfx_body_bump
     show yuri stab_6 at ts_punch2()
     show natsuki at lhide
@@ -1039,7 +1039,7 @@ label ts_scenario_12:
     "Впрочем, что-то мне подсказывает, что на словах про богатых родителей эта меркантильная мымра готова была бы лично прислуживать мне всю неделю, только чтобы ей чаевых побольше дали."
     show harumi 2ch at f11
     misc "Да-да, конечно, всё ради наших любимых клиентов."
-    pause 3
+    $ TS.p(3)
     misc 2ce "Всё, готово. Ваш номер 444."
     misc 2ch "Хотите, чтобы я помогла вам донести вещи?"
     show harumi 2cj at t11
@@ -1094,11 +1094,11 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     scene black with ts_paint
-    pause 1
+    $ TS.p(1)
 
     show ts_cor_split_animated
     show ts_of_split_animated
-    pause 0.99
+    $ TS.p(0.99)
 
     show layer screens at ts_showscreens
 
@@ -1190,7 +1190,7 @@ label ts_scenario_12:
     show yuri 3y7 at t21
     show natsuki 2o at t22
     with pushleft
-    pause 2.5
+    $ TS.p(2.5)
     show layer screens at ts_showscreens
     "Отлично. Они в очередной раз горячо спорят о том, какой стиль литературы лучше."
     "Никто и не заметит, если через пару минут этих стилей литературы станет... на один меньше."
@@ -1203,7 +1203,7 @@ label ts_scenario_12:
     stop music fadeout 3
     "Я возвращаюсь к Сайори со злобной ухмылкой на лице."
     show sayori 2n at t11
-    pause 1.23
+    $ TS.p(1.23)
     show layer screens at ts_showscreens_fast
     show sayori 3l at f11
     s "М-Моника, а ты ч-чего так ухмыляешься?.."
@@ -1212,19 +1212,19 @@ label ts_scenario_12:
     m "И поскольку именно ты мой вице-президент, пожалуй, начну с тебя."
 
     show sayori 3k at t11
-    pause 0.6
+    $ TS.p(0.6)
     show sayori 4z at h11
-    pause 0.15
+    $ TS.p(0.15)
     play music ts_inferno
     stop ambience
     play sound aw_axe_hit
     show layer master at ts_glazkam_pizda_anim
     show sayori glazkam_pizda at h11
-    pause 1
+    $ TS.p(1)
     play sound aw_axe_hit_1
     show layer master at ts_glazkam_pizda_anim
     show sayori glazkam_pizda1 at h11
-    pause 0.3
+    $ TS.p(0.3)
     play sound2 sfx_body_bump
     show sayori glazkam_pizda1 at ts_punch()
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
@@ -1272,21 +1272,21 @@ label ts_scenario_12:
         m "Иди сюда, сучара."
     else:
         m "Иди сюда, мелкая."
-    pause 1.3
+    $ TS.p(1.3)
     show natsuki scream at h11
     show natsuki screamnohead at h11
     show natscreamhead at h111
-    pause 1
+    $ TS.p(1)
     show natscreamhead at t111
     play sound2 scream_normal
     play sound bones_breaking
-    pause 1
+    $ TS.p(1)
     stop sound2 fadeout 1
     show natscreamhead at ts_punch1()
     show natsuki screamnohead at ts_punch()
-    pause 0.2
+    $ TS.p(0.2)
     play sound sfx_body_bump
-    pause 1
+    $ TS.p(1)
     show sayori 4z at h21
     show yuri 3y2 at h22
     m "А вы что смотрите? Собрание окончено! И все собрания до конца недели отменяются!"
@@ -1323,11 +1323,11 @@ label ts_scenario_12:
     show ts_bloodanim zorder 3
     play sound3 scream_normal
     play sound2 sfx_body_bump
-    pause 1
+    $ TS.p(1)
     show layer master at ts_knife_pizda_anim
     play sound aw_knife_slash_2
     show ts_altbloodanim zorder 3
-    pause 1
+    $ TS.p(1)
     show layer master at ts_knife_pizda_anim
     play sound aw_knife_slash_2
     show sayori 4z at t31
@@ -1343,14 +1343,14 @@ label ts_scenario_12:
 
     show ts_bloodanim zorder 3
     play sound2 sfx_body_bump
-    pause 1
+    $ TS.p(1)
     show layer master at ts_knife_pizda_anim
     play sound aw_axe_hit
     show ts_altbloodanim zorder 3
-    pause 1
+    $ TS.p(1)
     show layer master at ts_knife_pizda_anim
     play sound aw_axe_hit_1
-    pause 1
+    $ TS.p(1)
     stop music
     $ renpy.block_rollback()
     play sound ts_glitch4
@@ -1390,7 +1390,7 @@ label ts_scenario_12:
     "Мой Литературный клуб стал посольством Холокоста."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
     
     play sound nfy
@@ -1426,7 +1426,7 @@ label ts_scenario_12:
     "К концу недели я уже скорее не молодая красивая девушка, а сорокалетняя баба с метровым целлюлитом."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
     "Но кажется, что эти циклы будто насмехаются надо мной."
     "Каждый раз, когда я придумываю новый изощрённый способ убийства Юри, Сайори или Нацуки..."
@@ -1436,12 +1436,12 @@ label ts_scenario_12:
     "Я так больше не могу!"
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 2
+    $ TS.p(2)
     show layer screens at ts_showscreens
     "Хотя постойте..."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
     "Вместо того, чтобы убивать девочек и продолжать мучения, которые растягиваются на целую неделю..."
     "Можно же сразу начать с себя, и тогда мучения резко закончатся."
@@ -1462,7 +1462,7 @@ label ts_scenario_12:
     " {w=1.0}{nw}"
 
     show layer master at ts_verevka_vzyal
-    pause 2
+    $ TS.p(2)
 
     show layer screens at ts_showscreens
 
@@ -1503,30 +1503,30 @@ label ts_scenario_12:
     show ts_knife_suicide at ts_hidescreens_fast
 
     play sound aw_knife_slash_2
-    pause 0.25
+    $ TS.p(0.25)
     show ts_knife_suicide at ts_showscreens_fast
     show ts_bloodanim
-    pause 0.25
+    $ TS.p(0.25)
     show ts_knife_suicide at ts_hidescreens_fast
     play sound aw_knife_slash_1
-    pause 0.25
+    $ TS.p(0.25)
     show ts_knife_suicide at ts_showscreens_fast
     show ts_altbloodanim
-    pause 0.25
+    $ TS.p(0.25)
     show ts_knife_suicide at ts_hidescreens_fast
     play sound aw_knife_slash_2
-    pause 0.25
+    $ TS.p(0.25)
     show ts_knife_suicide at ts_showscreens_fast
-    pause 0.25
+    $ TS.p(0.25)
     show ts_knife_suicide at ts_hidescreens_fast
     play sound aw_knife_slash_2
-    pause 0.25
+    $ TS.p(0.25)
     show ts_knife_suicide at ts_showscreens_fast
-    pause 0.25
+    $ TS.p(0.25)
     play sound fb
     scene ts_menu_move_anim_bad_end
     with flash
-    pause 2
+    $ TS.p(2)
     play sound chasiki fadein 1
     scene black
     with ts_lap
@@ -1543,11 +1543,11 @@ label ts_scenario_12:
     window hide
     play sound ts_introshoot
     scene ts_sky_fon at ts_padenie_s_krishi_suka
-    pause 4
+    $ TS.p(4)
     stop music
     scene black
     play sound sfx_body_bump
-    pause 1
+    $ TS.p(1)
 
     show layer screens at ts_showscreens
 
@@ -1864,12 +1864,12 @@ label ts_scenario_12:
     k "{cps=2}ПРОСНИСЬ!{/cps}" with vpunch
     window hide
     show layer master at ts_padenie_ebalon_vniz_suka
-    pause 1
+    $ TS.p(1)
     play sound sfx_body_bump
     scene black
     $ persistent.ingame_pizda = False
     show layer screens
-    pause 2
+    $ TS.p(2)
     $ renpy.block_rollback()
     if unluck_ball >= 5:
         jump ts_bad_ending_blya

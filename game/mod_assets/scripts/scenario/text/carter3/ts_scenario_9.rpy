@@ -70,7 +70,7 @@ label ts_scenario_9:
         stop sound fadeout 7
         $ Chapter("С возвращением... Снова?")
 
-    pause 2
+    $ TS.p(2)
 
     show layer screens at ts_showscreens
 
@@ -328,7 +328,7 @@ label ts_scenario_9:
 
     scene ts_city_day at ts_running_fast
 
-    pause 2
+    $ TS.p(2)
     stop sound2 fadeout 1
     play sound pageflip
     play sound3 ts_othodos_ot_bega fadein 2
@@ -349,13 +349,13 @@ label ts_scenario_9:
     scene ts_house
     with wipeleft_scene
 
-    pause 1
+    $ TS.p(1)
 
     play sound pageflip
     scene ts_entrance_day
     with wipeleft_scene
 
-    pause 1
+    $ TS.p(1)
 
     play sound pageflip
     scene ts_kitchen
@@ -452,7 +452,7 @@ label ts_scenario_9:
     ts_ft "Моника, с тобой всё хорошо?"
     ts_ft 1y "Если что, то я ругать тебя не буду, просто будь осторожнее в следую{w=0.3}{nw}"
     show hiroto 1j at t11
-    pause 2
+    $ TS.p(2)
 
     show layer master at heartbeat
     show layer screens at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake)
@@ -579,7 +579,7 @@ label ts_scenario_9:
     em 3bd "[gtextsuka]{nw}"
     em 1bi "[gtextsuka]{nw}"
     hide monika
-    pause 5
+    $ TS.p(5)
 
     $ persistent.ingame_pizda = False
 
@@ -592,15 +592,15 @@ label ts_scenario_9:
     window hide
     play sound2 ts_running
     show layer master at ts_bg_into1
-    pause 0.3
+    $ TS.p(0.3)
     play sound door_break
-    pause 0.2
+    $ TS.p(0.2)
     scene ts_bathroom
     show layer master at ts_bg_exodus1
-    pause 0.5
+    $ TS.p(0.5)
     stop sound2 fadeout 1
     show layer master at ts_blevota_anim
-    pause 1
+    $ TS.p(1)
 
     if _preferences.language == "english":
         $ m_name = "Monika"
@@ -608,7 +608,7 @@ label ts_scenario_9:
         $ m_name = "Моника"
     show layer screens at hpunch
     play sound3 ts_blevanula
-    pause 6
+    $ TS.p(6)
     show layer master at ts_blevota_exit_anim
     "Что это вообще такое было?"
     play music ts_icra fadein 1
@@ -683,9 +683,9 @@ label ts_scenario_9:
     " {w=1.0}{nw}"
 
     scene ts_bedroom at ts_bg_into
-    pause 0.5
+    $ TS.p(0.5)
     scene ts_notebook at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -716,7 +716,7 @@ label ts_scenario_9:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
     hide poem_dismiss
 
@@ -749,6 +749,6 @@ label ts_scenario_9:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     scene black with ed_night_dis
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_null_transform
     jump ts_scenario_10

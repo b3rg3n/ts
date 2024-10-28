@@ -43,14 +43,14 @@ label ts_scenario_8:
 
     play sound ts_alarm fadein 2
 
-    pause 2
+    $ TS.p(2)
 
     scene ts_bedroom
     show unblink
     show layer master at ts_vstavai_shashlik
-    pause 3
+    $ TS.p(3)
     play sound svet_on
-    pause 1.5
+    $ TS.p(1.5)
 
     show layer screens at ts_showscreens
 
@@ -89,17 +89,17 @@ label ts_scenario_8:
 
 
     show layer master at ts_clean_eblet
-    pause 2
+    $ TS.p(2)
     play sound open_water_sink
-    pause 0.5
+    $ TS.p(0.5)
     stop sound
     play sound_loop water_sink_stream
-    pause 1
+    $ TS.p(1)
     play sound water_splash
-    pause 1.6
+    $ TS.p(1.6)
     stop sound_loop
     play sound close_water_sink
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -340,9 +340,9 @@ label ts_scenario_8:
 
     scene ts_street at ts_bg_into
     show ts_green_part
-    pause 0.5
+    $ TS.p(0.5)
     scene ts_school_gate_day at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
 
     show layer screens at ts_showscreens
 
@@ -399,9 +399,9 @@ label ts_scenario_8:
     scene ts_corridor:
         align (0.5, 0.5) zoom 1
         ease 1.2 align (0.3, 0.4) zoom 1.5
-    pause 1.2
+    $ TS.p(1.2)
     scene ts_class at ts_bg_exodus
-    pause 0.5
+    $ TS.p(0.5)
     show layer screens at ts_showscreens
 
     "Впереди ещё целых два урока алгебры..."
@@ -416,12 +416,12 @@ label ts_scenario_8:
     " {w=1.0}{nw}"
 
     show blink
-    pause 2
+    $ TS.p(2)
 
     $ persistent.uncolorize = "lite"
     hide blink
     show unblink
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "После алгебры понемногу начинают сгущаться тучи."
@@ -454,14 +454,14 @@ label ts_scenario_8:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    pause 2
+    $ TS.p(2)
 
     show layer screens at ts_showscreens
     "Закупив всё, что мне было нужно, я подхожу к одному из свободных столиков. Наконец-то можно спокойно поесть..."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    pause 1.5
+    $ TS.p(1.5)
 
     show layer screens at ts_showscreens
     "М-м-м..."
@@ -487,7 +487,7 @@ label ts_scenario_8:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
 
-    pause 3
+    $ TS.p(3)
 
     show layer screens at ts_showscreens
     ts_unk "Привет, я подсяду?"
@@ -599,10 +599,10 @@ label ts_scenario_8:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     show blink
-    pause 2
+    $ TS.p(2)
     play ambience rain_int fadein 2
     play music ts_raindrops fadein 2
-    pause 1
+    $ TS.p(1)
     if renpy.android:
         scene ts_class_rain_vedro
         show ts_rain
@@ -610,7 +610,7 @@ label ts_scenario_8:
         scene ts_class_rain_shader
     show ts_class_rain_ovr
     show unblink
-    pause 1
+    $ TS.p(1)
     show layer screens at ts_showscreens
 
     "Школьный день постепенно подходит к своему логическому завершению."
@@ -632,7 +632,7 @@ label ts_scenario_8:
     " {w=1.0}{nw}"
 
     show blink
-    pause 1.5
+    $ TS.p(1.5)
 
     if renpy.android:
         scene ts_corridor_rain_vedro
@@ -642,10 +642,10 @@ label ts_scenario_8:
     show ts_corridor_rain_ovr
     show unblink
 
-    pause 2
+    $ TS.p(2)
 
     show blink
-    pause 1.5
+    $ TS.p(1.5)
 
     if renpy.android:
         scene ts_club_rain_vedro
@@ -757,7 +757,7 @@ label ts_scenario_8:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
     hide poem_dismiss
 
@@ -779,7 +779,7 @@ label ts_scenario_8:
     " {w=1.0}{nw}"
 
     show blink
-    pause 1.5
+    $ TS.p(1.5)
 
     if renpy.android:
         scene ts_club_rain_vedro
@@ -840,7 +840,7 @@ label poemresponses2suka:
             stop music fadeout 2
 
             show blink
-            pause 1.5
+            $ TS.p(1.5)
 
             if renpy.android:
                 scene ts_club_rain_vedro
@@ -900,11 +900,11 @@ label poemresponses2suka:
             m "Далековато, да..."
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
-            pause 2
+            $ TS.p(2)
             show sayori 4n at t11
-            pause 0.5
+            $ TS.p(0.5)
             show sayori 3o at t11
-            pause 0.5
+            $ TS.p(0.5)
             show sayori 4n at f11
             show layer screens at ts_showscreens
             s "Ой, я же тебе стих не показала!"
@@ -943,7 +943,7 @@ label poemresponses2suka:
 
             play sound pageflip
             show layer screens at ts_hidescreens
-            pause 1.0
+            $ TS.p(1)
             hide screen poem
             hide poem_dismiss
 
@@ -987,7 +987,7 @@ label poemresponses2suka:
             s "Хорошо!"
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
-            pause 3
+            $ TS.p(3)
             show layer screens at ts_showscreens
             "Это занимает некоторое время."
             show sayori 2a at t11
@@ -996,7 +996,7 @@ label poemresponses2suka:
             show sayori 2i at t11
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
-            pause 4
+            $ TS.p(4)
             show layer screens at ts_showscreens
             show sayori 3l at f11
             s "Да, не ожидала я от тебя такого, Моника..."
@@ -1025,9 +1025,9 @@ label poemresponses2suka:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
             show sayori 3d at t11
-            pause 0.88
+            $ TS.p(0.88)
             show sayori 3t at t11
-            pause 0.88
+            $ TS.p(0.88)
             show sayori 3zd at f11
             show layer screens at ts_showscreens
             s "С-спасибо, Моника."
@@ -1080,7 +1080,7 @@ label poemresponses2suka:
             stop music fadeout 2
 
             show blink
-            pause 1.5
+            $ TS.p(1.5)
 
             if renpy.android:
                 scene ts_club_rain_vedro
@@ -1174,11 +1174,11 @@ label poemresponses2suka:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
 
-            pause 3
+            $ TS.p(3)
 
             show natsuki 1za at t11
 
-            pause 3
+            $ TS.p(3)
 
             show layer screens at ts_showscreens
 
@@ -1242,7 +1242,7 @@ label poemresponses2suka:
 
             play sound pageflip
             show layer screens at ts_hidescreens
-            pause 1.0
+            $ TS.p(1)
             hide screen poem
             hide poem_dismiss
 
@@ -1313,7 +1313,7 @@ label poemresponses2suka:
             stop music fadeout 2
 
             show blink
-            pause 1.5
+            $ TS.p(1.5)
 
             if renpy.android:
                 scene ts_club_rain_vedro
@@ -1370,11 +1370,11 @@ label poemresponses2suka:
             show layer screens at ts_hidescreens
             " {w=1.0}{nw}"
 
-            pause 3
+            $ TS.p(3)
 
             show yuri 1f at f11
 
-            pause 3
+            $ TS.p(3)
 
             show layer screens at ts_showscreens
 
@@ -1421,7 +1421,7 @@ label poemresponses2suka:
 
             play sound pageflip
             show layer screens at ts_hidescreens
-            pause 1.0
+            $ TS.p(1)
             hide screen poem
             hide poem_dismiss
 
@@ -1483,7 +1483,7 @@ label poemresponses2suka:
 
 label ts_carter8_posle_poems_suka:
     show blink
-    pause 1.5
+    $ TS.p(1.5)
     if renpy.android:
         scene ts_club_rain1_vedro
         show ts_rain
@@ -1553,11 +1553,11 @@ label ts_carter8_posle_poems_suka:
     show yuri 1l at f51
     show sayori 2o at t32
     show natsuki 1za at t33
-    pause 0.25
+    $ TS.p(0.25)
     show yuri 1l at f43
-    pause 0.25
+    $ TS.p(0.25)
     show yuri 1l at f21
-    pause 0.25
+    $ TS.p(0.25)
     show yuri 3r at f31
     show layer screens at ts_showscreens
     y "Я {b}обожаю{/b} атмосферные мероприятия!"
@@ -1642,7 +1642,7 @@ label ts_carter8_posle_poems_suka:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
     hide poem_dismiss
 
@@ -1660,7 +1660,7 @@ label ts_carter8_posle_poems_suka:
     s "Я следующая! Я возьму, э-э-э..."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 2
+    $ TS.p(2)
     show layer screens at ts_showscreens
     s 3p "Блин! Всего четыре стихотворения, а уже так сложно выбрать!"
     show sayori 3p at t32
@@ -1670,7 +1670,7 @@ label ts_carter8_posle_poems_suka:
     s 2ze "..."
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
-    pause 1.5
+    $ TS.p(1.5)
     show layer screens at ts_showscreens
     show sayori 3j at f32
     s "Ладно! Тоже возьму стихотворение, которое я написала на собрание в среду."
@@ -1701,7 +1701,7 @@ label ts_carter8_posle_poems_suka:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
     hide poem_dismiss
 
@@ -1751,7 +1751,7 @@ label ts_carter8_posle_poems_suka:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
     hide poem_dismiss
 
@@ -1800,7 +1800,7 @@ label ts_carter8_posle_poems_suka:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
     hide poem_dismiss
 
@@ -1825,7 +1825,7 @@ label ts_carter8_posle_poems_suka:
     " {w=1.0}{nw}"
 
     show blink
-    pause 1.5
+    $ TS.p(1.5)
 
     if renpy.android:
         scene ts_club_rain1_vedro
@@ -1897,7 +1897,7 @@ label ts_carter8_posle_poems_suka:
     show layer screens at ts_hidescreens
     " {w=1.0}{nw}"
     show blink
-    pause 1.5
+    $ TS.p(1.5)
     if renpy.android:
         scene ts_club_rain1_vedro
         show ts_rain
@@ -1952,10 +1952,10 @@ label ts_carter8_posle_poems_suka:
     play sound door_open
     show yuri at cleft with move
     hide yuri
-    pause 0.5
+    $ TS.p(0.5)
     show natsuki at cright with move
     hide natsuki
-    pause 0.5
+    $ TS.p(0.5)
     show sayori at cleft with move
     hide sayori
     show layer screens at ts_showscreens
@@ -1974,7 +1974,7 @@ label ts_carter8_posle_poems_suka:
 
     stop ambience fadeout 2
 
-    pause 1
+    $ TS.p(1)
 
     play sound pageflip
     scene ts_l5
@@ -1987,7 +1987,7 @@ label ts_carter8_posle_poems_suka:
     show ts_rain
     with wipeleft_scene
 
-    pause 2
+    $ TS.p(2)
 
     play sound pageflip
     scene ts_nebo_fon_bgshka_suka
@@ -2018,7 +2018,7 @@ label ts_carter8_posle_poems_suka:
 
     show layer master at ts_running_fast
 
-    pause 4
+    $ TS.p(4)
     stop sound2 fadeout 1
     play sound pageflip
     play sound3 ts_othodos_ot_bega fadein 2
@@ -2050,13 +2050,13 @@ label ts_carter8_posle_poems_suka:
     scene ts_vhod_nolight
     with wipeleft_scene
 
-    pause 1
+    $ TS.p(1)
 
     play sound svet_on
     scene ts_vhod_night
     with flash
 
-    pause 1
+    $ TS.p(1)
 
     play sound pageflip
     scene ts_kitchen
@@ -2191,7 +2191,7 @@ label ts_carter8_posle_poems_suka:
     " {w=1.0}{nw}"
 
     show blink
-    pause 1.5
+    $ TS.p(1.5)
 
     if renpy.android:
         scene ts_living_room_rain_vedro
@@ -2223,7 +2223,7 @@ label ts_carter8_posle_poems_suka:
     " {w=1.0}{nw}"
 
     show blink
-    pause 1.5
+    $ TS.p(1.5)
 
     scene ts_bedroom
     show unblink
@@ -2274,7 +2274,7 @@ label ts_carter8_posle_poems_suka:
     " {w=1.0}{nw}"
 
     show blink
-    pause 1.5
+    $ TS.p(1.5)
 
     if renpy.android:
         scene ts_residential_rain_vedro
@@ -2324,5 +2324,5 @@ label ts_carter8_posle_poems_suka:
     " {w=1.0}{nw}"
     scene black with ed_night_dis
     show layer screens at ts_null_transform
-    pause 2
+    $ TS.p(2)
     jump ts_scenario_9

@@ -23,7 +23,7 @@ label ts_good_ending_blya:
 
     scene black
 
-    pause 2
+    $ TS.p(2)
 
     play sound chp3
     if _preferences.language == "english":
@@ -39,7 +39,7 @@ label ts_good_ending_blya:
         stop sound fadeout 7
         $ Chapter("Всего лишь сон...")
 
-    pause 2
+    $ TS.p(2)
 
     $ persistent.uncolorize = "none"
 
@@ -63,11 +63,11 @@ label ts_good_ending_blya:
     " {w=1.0}{nw}"
 
     scene black with ts_paint
-    pause 1
+    $ TS.p(1)
 
     show ts_bed_split_animated
     show ts_club_split_animated
-    pause 0.99
+    $ TS.p(0.99)
 
     show layer screens at ts_showscreens
 
@@ -228,7 +228,7 @@ label ts_good_ending_blya:
 
     scene ts_school_gate_day at ts_running_fast
 
-    pause 2
+    $ TS.p(2)
     stop sound2 fadeout 1
     play sound pageflip
     play sound3 ts_othodos_ot_bega fadein 2
@@ -644,7 +644,7 @@ label ts_good_ending_blya:
     " {w=1.0}{nw}"
 
     scene black with ts_paint
-    pause 1
+    $ TS.p(1)
     scene ts_kitchen with ts_paint
 
     show layer screens at ts_showscreens
@@ -701,7 +701,7 @@ label ts_good_ending_blya:
     show hiroto 2f at t42
     show layer screens at ts_hidescreens_fast
     " {w=0.1}{nw}"
-    pause 0.08
+    $ TS.p(0.88)
     show layer screens at ts_showscreens_fast
     show minami 2bj at t21
     show hiroto 2f at t22
@@ -729,7 +729,7 @@ label ts_good_ending_blya:
     " {w=1.0}{nw}"
 
     scene black with ts_paint
-    pause 1
+    $ TS.p(1)
     scene ts_kitchen with ts_paint
 
     show layer screens at ts_showscreens
@@ -834,7 +834,7 @@ label ts_good_ending_blya:
 
     play sound pageflip
     show layer screens at ts_hidescreens
-    pause 1.0
+    $ TS.p(1)
     hide screen poem
 
 

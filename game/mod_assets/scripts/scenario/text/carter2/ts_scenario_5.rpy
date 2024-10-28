@@ -44,7 +44,7 @@ label ts_scenario_5:
     scene black
     $ TS.p(1)
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     s "{size=-6}..ика!{/size}"
     s "{size=-4}Моника!{/size}"
@@ -60,11 +60,11 @@ label ts_scenario_5:
         show layer master at AnimatedAberate(20.0)
     with flash
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Передо мной предстала Сайори в пижаме..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     show ts_blinking
@@ -78,7 +78,7 @@ label ts_scenario_5:
 
     show layer master
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Я протираю глаза и промаргиваюсь, чтобы чётче рассмотреть."
 
@@ -86,7 +86,7 @@ label ts_scenario_5:
     show sayori 4pi at i11
     with dspr
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Всё та же Сайори. Во всё той же пижаме. Во всё той же комнате..."
 
@@ -155,7 +155,7 @@ label ts_scenario_5:
     m "{font=[pizdec_font]}{size=+20}{b}САЙОРИ, ПРОСТИ МЕНЯ, ПОЖАЛУЙСТА!{/b}{/size}"
     s 2pl "В чём мне тебя прощать? Ты же мой друг..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     show layer screens at ts_null_transform
@@ -163,7 +163,7 @@ label ts_scenario_5:
     show sayori 2pk at s11
 
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Вдоволь нарыдавшись и накричавшись, я наконец-то говорю более-менее нормально."
 
@@ -192,7 +192,7 @@ label ts_scenario_5:
 
     s "{b}ЧТО?{/b}"
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     window hide
@@ -204,7 +204,7 @@ label ts_scenario_5:
     $ TS.p(0.25)
     show sayori 2pw at h11
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Теперь начинает плакать и Сайори."
 
@@ -235,7 +235,7 @@ label ts_scenario_5:
 
     stop music fadeout 4
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Но голос молчал."
 
@@ -295,7 +295,7 @@ label ts_scenario_5:
     show sayori 1pd at t11
     with flash
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     m "С-Сайори..."
 
@@ -330,7 +330,7 @@ label ts_scenario_5:
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with flash
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     y "Я сказала сидеть на месте!"
     y "Сайори доведёт тебя до дома."
@@ -340,7 +340,7 @@ label ts_scenario_5:
     show sayori 2pf at i11
     with flash
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     s 2ph "Поэтому я просто уложила тебя спать, и ты так проспала до утра."
     s 2pl "Правда, ты кричала во сне, и довольно часто... Но, кажется, теперь я понимаю, из-за чего..."
@@ -380,7 +380,7 @@ label ts_scenario_5:
     m "А разве я просто не могу отвернуться и закрыть глаза?"
     s 2pl "Ну-у-у, или так, да... Как я только сама об этом не подумала?"
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -388,7 +388,7 @@ label ts_scenario_5:
     show sayori 1ba at i11
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Спустя пару минут Сайори, уже полностью переодетая, весело говорит."
 
@@ -408,7 +408,7 @@ label ts_scenario_5:
 
     "Мы быстро и тихо выходим из дома."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -417,7 +417,7 @@ label ts_scenario_5:
 
     play music ts_dist
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     m "Ой, а я этот район знаю! Это же..."
 
     play sound fb
@@ -464,7 +464,7 @@ label ts_scenario_5:
 
     m "Пойдёт."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -472,7 +472,7 @@ label ts_scenario_5:
     show sayori 1bf at i11
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Всю дорогу до магазина мы шли молча."
     "Мне разговаривать не хотелось, потому что до сих пор было стыдно за вчерашнее."
@@ -493,7 +493,7 @@ label ts_scenario_5:
 
     "После этих слов Сайори отправилась в магазин, а я пошла дальше до дома."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -503,7 +503,7 @@ label ts_scenario_5:
 
     play music ts_mdl
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Весь оставшийся путь я думала и пыталась вспомнить произошедшее."
 
@@ -538,7 +538,7 @@ label ts_scenario_5:
 
     m "Как скажешь..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -547,7 +547,7 @@ label ts_scenario_5:
     show monika 1a at i11
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     m "Кстати, э-э-э..."
     em 4b "Просто называй меня Моника. Ну или если официально, то [em_name]."
@@ -568,7 +568,7 @@ label ts_scenario_5:
 
     "Но моё «подсознание» испарилось так же резко, как и появилось."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
 
@@ -576,7 +576,7 @@ label ts_scenario_5:
     scene ts_house
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Впрочем, как раз вовремя."
     "Пока я {i}разговаривала{/i} с ней, я и сама не заметила, как дошла до дома."
@@ -586,7 +586,7 @@ label ts_scenario_5:
 
     "Я медленно открываю входную дверь..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -597,7 +597,7 @@ label ts_scenario_5:
     scene ts_kitchen
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     m "Пап, я дома!"
 
@@ -641,7 +641,7 @@ label ts_scenario_5:
     "Я могу сразу сказать ему всю правду, а могу поиграть в его игру."
     "Не знаю, что из этого будет больнее, но... будь что будет."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
 
@@ -653,7 +653,7 @@ label ts_scenario_5:
 
             stop music fadeout 2
             $ TS.p(2)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
             play music audio.t9
             m "Это... не совсем чаепитие было..."
             show hiroto 1j at t11
@@ -688,7 +688,7 @@ label ts_scenario_5:
             $ unluck5 = True
             $ unluck_ball += 1
 
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
             "Я решаю соврать. Как будто в первый раз."
             show hiroto 1e at t11
             m "Чаепитие?.. Да вроде как обычно..."
@@ -732,24 +732,24 @@ label ts_scenario_5:
 
     stop music fadeout 4
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
 
     show zatemnenie with dspr
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show screen chp_5_text1
     pause
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     show screen chp_5_text1
     $ TS.p(1)
     hide screen chp_5_text1
 
     hide zatemnenie with dspr
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show hiroto 1b at f11
 
@@ -757,14 +757,14 @@ label ts_scenario_5:
 
     "Мы оба с этого просто посмеялись."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
     scene ts_kitchen
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     play music ts_mdl
 
@@ -794,12 +794,12 @@ label ts_scenario_5:
     "Ну и ну..."
     "Я в машинах вообще ничего не смыслю, даже не знаю, какая у нас коробка передач стоит... Но раз папа сказал, что всё так просто, то, наверное, так всё и было."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     nvl clear
 
-    show layer screens at ts_showscreens_nvl
+    $ TS.s(ts_showscreens_nvl)
 
     nvlbazar "{font=[ts_nvl_font2]}Водить я, соответственно, тоже не умею от слова совсем."
     nvlbazar "{font=[ts_nvl_font2]}Нет, конечно, папа давал мне порулить пару раз в детстве, когда я ещё совсем маленькой была..."
@@ -812,12 +812,12 @@ label ts_scenario_5:
     nvlbazar "{font=[ts_nvl_font2]}Но просто... как только я сажусь в машину, я паникую и совершенно не знаю, что мне делать."
     nvlbazar "{font=[ts_nvl_font2]}Поэтому я и наотрез отказываюсь водить и даже учиться водить. Пусть другие этому учатся. Не я."
 
-    show layer screens at ts_hidescreens_nvl
+    $ TS.s(ts_hidescreens_nvl)
     nvlbazar " {w=1.0}{nw}"
 
     nvl clear
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     ts_ft 1c "Ладно... Так, это, ты к себе пойдёшь, или?.."
 
@@ -827,7 +827,7 @@ label ts_scenario_5:
     "С одной стороны, голова всё ещё немного кружится, а в своей постели спать всё равно на порядок удобнее, чем на полу."
     "С другой стороны... Что-то мы в шахматы с папой давненько не играли..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
 
@@ -838,7 +838,7 @@ label ts_scenario_5:
         "Играть в шахматы":
             $ act2_chess = True
 
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             m "Или... Пап, давай в шахматы сыграем?"
             ts_ft 2h "В шахматы?.."
@@ -857,14 +857,14 @@ label ts_scenario_5:
 
             m "А-э-э-э... Сейчас..."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             play sound2 pageflip
             scene ts_living_room
             with wipeleft_scene
 
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             "В шахматы мы действительно уже очень давно не играли. В последний раз мы играли, когда мне было лет... тринадцать, кажется? Или четырнадцать? В любом случае, очень давно."
             "Я даже не помню, где вообще лежит доска!"
@@ -876,7 +876,7 @@ label ts_scenario_5:
             "А то, знаете, вот вроде лежит себе вещь, никого не трогает, а как только она тебе понадобится, так её и нет."
             "Пару минут спустя я с доской в руках иду обратно к папе."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             play sound2 pageflip
@@ -886,7 +886,7 @@ label ts_scenario_5:
 
             play music ts_sgtbc
 
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             ts_ft "Нашла?"
 
@@ -930,12 +930,12 @@ label ts_scenario_5:
             show momika 1n at i11
             with flash
 
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             cm "Кхе-кхе..."
             cm "В общем..."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show layer screens at ts_null_transform
@@ -946,7 +946,7 @@ label ts_scenario_5:
                     pass
 
 
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             show momika 3l at f11
             cm "О, ты не волнуйся."
@@ -963,7 +963,7 @@ label ts_scenario_5:
             show momika 2d at f11
             cm "Скажи мне... Ты умеешь играть в шахматы?"
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
 
@@ -971,13 +971,13 @@ label ts_scenario_5:
 
             menu:
                 "Да":
-                    show layer screens at ts_showscreens
+                    $ TS.s(ts_showscreens)
                     show momika 3b at f11
                     cm "Вот и здорово!"
                     show momika 2r at f11
                     cm "Мне же меньше работы..."
                 "Нет":
-                    show layer screens at ts_showscreens
+                    $ TS.s(ts_showscreens)
                     show momika 1n at f11
                     cm "Ну... не беда..."
                     show momika 4k at f11
@@ -990,7 +990,7 @@ label ts_scenario_5:
                     show momika 1d at f11
                     cm "Итак, я повторяю свой вопрос: ты хочешь обучиться игре в шахматы?"
                     show momika 1c at t11
-                    show layer screens at ts_hidescreens
+                    $ TS.s(ts_hidescreens)
                     " {w=1.0}{nw}"
 
 
@@ -998,14 +998,14 @@ label ts_scenario_5:
 
                     menu:
                         "Да":
-                            show layer screens at ts_showscreens
+                            $ TS.s(ts_showscreens)
                             $ chess_tutor = True
                             show momika 4k at f11
                             cm "Тогда отлично!"
                             show momika 2b at f11
                             cm 2b "В процессе игры я буду объяснять, как ходят фигуры, и заодно объясню самые базовые принципы игры."
                         "Нет":
-                            show layer screens at ts_showscreens
+                            $ TS.s(ts_showscreens)
                             show momika 1p at t11
                             cm "Ну, как знаешь... "
                             show momika 1r at s11
@@ -1020,10 +1020,10 @@ label ts_scenario_5:
             show chess1 at ts_chess_move_up
             $ TS.p(1)
 
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
             "Я начинаю игру ходом пешки."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess1 at ts_chess_move_down
@@ -1032,20 +1032,20 @@ label ts_scenario_5:
 
             show chess2 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             if chess_tutor == True:
                 show momika 2b at rn44
                 cm "Пешки ходят только вперёд и только на одну клетку."
                 cm "Однако первым ходом она может пойти и на две. Но учти, если первым ходом ты сдвинул пешку на одну клетку, это право всё равно теряется."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
                 hide momika with dissolve
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
             "Папа ухмыляется и отвечает тем же ходом пешки, правда, только на одну клетку."
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess2 at ts_chess_move_down
@@ -1054,11 +1054,11 @@ label ts_scenario_5:
 
             show chess3 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
             "В детстве я сразу выпускала ферзя, прямо как папа."
             "Но с течением лет, начитавшись всяких шахматных книжек и посмотрев несколько видеоуроков по шахматам, я знаю, что, вместо того, чтобы пораньше выпускать ферзя, лучше поставить вторую пешку в центр."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess3 at ts_chess_move_down
@@ -1067,12 +1067,12 @@ label ts_scenario_5:
 
             show chess4 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             show hiroto 1s at f41
             "Папа же, по всей видимости, до сих пор не знает этого простого правила, поэтому тут же выпускает ферзя, как он сам говорит, «на прогулку»."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess4 at ts_chess_move_down
@@ -1081,25 +1081,25 @@ label ts_scenario_5:
 
             show chess5 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             if chess_tutor == True:
                 show momika 2b at rn44
                 cm "Ферзь – это очень сильная фигура. Она может ходить и по горизонтали, и по вертикали, и по диагонали."
                 show momika 3i at t44
                 cm "Однако ферзя нужно сильно оберегать, потому что он только один. И выводить его рано лучше не стоит. По крайней мере, пока не развились кони и слоны."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
                 hide momika with dissolve
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
             ts_ft 2z1 "Ну что, сдаёшься?"
             show hiroto 2r at t41
             m "Ха! И не мечтай!"
             "После этого я уверенно задвигаю пешку ещё на одну клетку, попутно атакуя ферзя."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess5 at ts_chess_move_down
@@ -1108,13 +1108,13 @@ label ts_scenario_5:
 
             show chess6 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             "Однако шахматы – это пошаговая игра, здесь нет такого, чтобы сделать два хода одним цветом подряд."
             show hiroto 1s at s41
             "Поэтому он с лёгкостью отводит ферзя в безопасность."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess6 at ts_chess_move_down
@@ -1123,11 +1123,11 @@ label ts_scenario_5:
 
             show chess7 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             "У меня козыри в рукаве закончились, поэтому я возвращаюсь к изначальному плану развития и просто вывожу коня."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess7 at ts_chess_move_down
@@ -1136,7 +1136,7 @@ label ts_scenario_5:
 
             show chess8 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             if chess_tutor == True:
                 show momika 4b at rn44
@@ -1146,16 +1146,16 @@ label ts_scenario_5:
                 cm "А ходит он так, что, по сути, это напоминает букву Г: две клетки в одном из любых четырёх направлений по прямой, а затем ещё одна клетка в направлении, перпендикулярном изначальному."
                 show momika 2k at t44
                 cm "Например, на этом ходу Моника походила конём с клетки g1 на клетку f3: по сути, она сходила на две клетки по вертикали g, перепрыгивая пешку, а затем допрыгнула на соседнюю вертикаль f."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
                 hide momika with dissolve
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
             show hiroto 1a at t41
             "У папы, по всей видимости, козыри тоже закончились (если они у него вообще есть), поэтому он просто выдвинул слона на одну клетку."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess8 at ts_chess_move_down
@@ -1164,7 +1164,7 @@ label ts_scenario_5:
 
             show chess9 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             if chess_tutor == True:
                 show momika 2b at rn44
@@ -1180,15 +1180,15 @@ label ts_scenario_5:
                 show momika 3l at t44
                 cm "Впрочем, играть со слонами или с конями – это сугубо дело вкуса каждого. Иной раз какой-то мастер может легко победить среднего игрока."
                 cm "Даже несмотря на то, что у мастера два коня, а у среднего игрока – два слона, и номинально у среднячка фигуры лучше, чем у мастера."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
                 hide momika with dissolve
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
             "Я продолжаю выстраивать своё развитие, и играю ещё одним конём."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess9 at ts_chess_move_down
@@ -1197,11 +1197,11 @@ label ts_scenario_5:
 
             show chess10 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             "Папа же начинает атаковать исподтишка, и выводит пешку на одну клетку, чтобы я её побила."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess10 at ts_chess_move_down
@@ -1210,22 +1210,22 @@ label ts_scenario_5:
 
             show chess11 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             if chess_tutor == True:
                 show momika 2b at rn44
                 cm "Шахматы – это не шашки. Бить фигуры здесь вовсе необязательно, если видишь ход получше."
                 show momika 4b at t44
                 cm "Иногда пешки могут держать в напряжении друг друга даже не один десяток ходов."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
                 hide momika with dissolve
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
             "Однако я не ведусь на этот дешёвый фокус и вместо этого вывожу слона, объявляя шах."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess11 at ts_chess_move_down
@@ -1234,7 +1234,7 @@ label ts_scenario_5:
 
             show chess12 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             if chess_tutor == True:
                 show momika 2b at rn44
@@ -1245,16 +1245,16 @@ label ts_scenario_5:
                 show momika 2i at t44
                 cm "Но учти, что шах в большинстве случаев никоим образом не приближает тебя к победе. Раздражают ли постоянные шахи? Да. Приближают ли они тебя к мату? Нет."
                 cm "Поэтому, делать шах можно, только если он безопасен для всех твоих фигур, и при шахе ты не подставляешь ни одну из них. В противном случае шах давать всё же не стоит."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
                 hide momika with dissolve
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
             show hiroto 1s at f41
             "Папа просто спокойно подводит пешку, тем самым атакуя моего слона."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess12 at ts_chess_move_down
@@ -1263,12 +1263,12 @@ label ts_scenario_5:
 
             show chess13 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             ts_ft 1t "Что, победить хочешь?"
             extend 1z1 " Ну, в другой раз."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             play sound2 pageflip
@@ -1278,7 +1278,7 @@ label ts_scenario_5:
 
             show chess14 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             "Так продолжалось уже некоторое время."
             "Поскольку мы играем просто забавы ради, шахматного таймера у нас тоже нет."
@@ -1308,15 +1308,15 @@ label ts_scenario_5:
                 cm "Людям же такие рассчёты недостижимы, поэтому они просто тренируют эти самые эндшпильные позиции."
                 show momika 2d at t44
                 cm "Однако не все игры заканчиваются в эндшпиле. Многие игры заканчиваются где-то на двадцатом ходу или даже раньше, в самый разгар миттельшпиля."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
                 hide momika with dissolve
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
             "Сейчас ходит папа, но я уже заранее думаю, как же я ему отвечу."
             "Папа, недолго думая, просто съедает моего коня в ответ."
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess14 at ts_chess_move_down
@@ -1327,10 +1327,10 @@ label ts_scenario_5:
             $ TS.p(1)
 
             if chess_tutor == True:
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
                 show momika 2b at rn44
                 cm "Хотя ходят пешки по прямой, бьют они фигуры соперника на одну клетку по диагонали."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
@@ -1342,7 +1342,7 @@ label ts_scenario_5:
 
             show chess16 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             m "Что, уже не настолько уверен в себе?"
             "У меня две лишние пешки, да ещё и одна из моих пешек в шаге от того, чтобы стать вторым ферзём!"
@@ -1353,15 +1353,15 @@ label ts_scenario_5:
                 cm "Многие игроки зачастую выбирают ферзя, потому что это самая сильная фигура, и с двумя ферзями проигрыш почти что невозможен."
                 show momika 2d at t44
                 cm "Однако, есть большое количество этюдов и задачек, которые как раз построены на том, чтобы превратить пешку в фигуру более низкого достоинства. Например, в ладью, коня или даже слона."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
                 hide momika with dissolve
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
             ts_ft 2y "Да ты погоди, ещё не вечер же..."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             play sound2 pageflip
@@ -1371,7 +1371,7 @@ label ts_scenario_5:
 
             show chess17 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             ts_ft 1z1 "Что, уже не настолько уверена в себе?"
             show hiroto 1r at f41
@@ -1380,7 +1380,7 @@ label ts_scenario_5:
             "Папа же, напротив, собрался, не зевнул вообще ничего, да и в целом позиция, как мне кажется, теперь глубоко в его пользу..."
             "Я в отчаянии пытаюсь съесть хоть одну пешку."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess17 at ts_chess_move_down
@@ -1389,7 +1389,7 @@ label ts_scenario_5:
 
             show chess18 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             if chess_tutor == True:
                 show momika 2b at rn44
@@ -1399,16 +1399,16 @@ label ts_scenario_5:
                 cm "Если, конечно, у них на пути не стоят другие фигуры..."
                 show momika 4d at t44
                 cm "Ладьи невероятно полезны в эндшпилях, однако, доживают они до него не всегда, а когда на доске ещё много фигур, они ещё и очень неповоротливы."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
                 hide momika with dissolve
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
             "Папа, недолго думая, провёл слона, делая вилку на моего короля и мою ладью."
             stop music fadeout 3
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess18 at ts_chess_move_down
@@ -1417,7 +1417,7 @@ label ts_scenario_5:
 
             show chess19 at ts_chess_move_up
             $ TS.p(1)
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             if chess_tutor == True:
                 show momika 2b at rn44
@@ -1426,15 +1426,15 @@ label ts_scenario_5:
                 cm "Лучше всего в вилках показывают себя кони. Это, кстати, возвращаясь к моему монологу об условной игре между мастером с двумя конями и среднячком с двумя слонами."
                 show momika 2b at t44
                 cm "Но все фигуры могут сделать вилку! Даже пешка и даже король – то, что они ходят только на одну клетку, не означает, что вилку этими фигурами сделать нельзя."
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
                 show momika at ron44
                 $ TS.p(0.5)
                 hide momika with dissolve
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
             "После этого хода я сразу сдаюсь."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             show chess19 at ts_chess_move_down
@@ -1443,17 +1443,17 @@ label ts_scenario_5:
 
             show hiroto 1r at t11
 
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             m "Всё, сдаюсь. Доволен?"
             "Я говорю это слегка дерзким, но в целом весёлым тоном, чтобы он не думал, что я это серьёзно."
 
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
 
             play music ts_afterword
 
-            show layer screens at ts_showscreens_nvl
+            $ TS.s(ts_showscreens_nvl)
 
             nvl clear
             nvlbazar "{font=[ts_nvl_font2]}В конце концов, это же всего лишь игра."
@@ -1463,12 +1463,12 @@ label ts_scenario_5:
             nvlbazar "{font=[ts_nvl_font2]}И как бы ты ни старалась, победить соперника никак не получается."
             nvlbazar "{font=[ts_nvl_font2]}Поэтому нужно лишь с достоинством принять поражение, принять это, и жить дальше."
 
-            show layer screens at ts_hidescreens_nvl
+            $ TS.s(ts_hidescreens_nvl)
             nvlbazar " {w=1.0}{nw}"
 
             nvl clear
 
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
 
             ts_ft 1z1 "Да. Доволен."
             ts_ft 1c "Ты к себе пойдёшь?"
@@ -1491,17 +1491,17 @@ label ts_scenario_5:
         "Сразу пойти к себе":
             stop music fadeout 3
             hide zatemnenie with dspr
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
             m "Что-то мне нездоровится, пап. Пойду всё-таки к себе."
             ts_ft 1h "Как знаешь..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     play sound2 pageflip
     scene ts_bedroom
     with wipeleft_scene
     play music ts_dreams
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Как же я устала..."
     "Вроде и середина дня, я должна быть в самом разгаре бодрствования..."
@@ -1528,14 +1528,14 @@ label ts_scenario_5:
     m "..."
     m "Ну, с другой стороны, хоть с умным человеком поговорю..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     play sound2 pageflip
     scene ts_bedroom
     show monika 2bb at i11
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     em "Зна-а-ачит... Что делать собираешься?"
 
@@ -1580,7 +1580,7 @@ label ts_scenario_5:
     "Правда, все мои стихотворения были на английском, но ничего же не мешает попробовать переступить через себя и написать на родном?"
     "Даже если я этого уже давно не делала..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     show monika at cright with move
@@ -1588,26 +1588,26 @@ label ts_scenario_5:
 
     scene ts_notebook with pushleft
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Та-а-ак... Ну, приступим..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     $ TS.p(2.5)
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Спустя где-то минут десять кропотливой работы я сотворила следующее:"
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene ts_notebook with dissolve:
         blur 9.0
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     if not persistent.first_poem:
         $ persistent.first_poem = True
@@ -1624,7 +1624,7 @@ label ts_scenario_5:
     pause
 
     play sound pageflip
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     $ TS.p(1)
     hide screen poem
     hide poem_dismiss
@@ -1633,7 +1633,7 @@ label ts_scenario_5:
 
     show monika 2bn at rn11
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     em "Ого, ты написала целый стих про меня..."
     em "Спасибо, конечно, я очень тронута, но... не стоило..."
@@ -1704,13 +1704,13 @@ label ts_scenario_5:
 
     m "Да-да..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     show monika at cright with move
     hide monika
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "С этими словами я готовлюсь ко сну."
     "Действительно, сон на своей кровати куда лучше сна на полу."
@@ -1725,7 +1725,7 @@ label ts_scenario_5:
     "«Хотя, может, родители снимут мне квартиру на время обучения...»"
     "Додумать мысль о спальном месте я не успела. Я провалилась в сон."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene black

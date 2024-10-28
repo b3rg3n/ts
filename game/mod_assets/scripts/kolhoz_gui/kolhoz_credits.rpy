@@ -65,7 +65,7 @@ label good_credits_ts_label:
     show zatemnenie_light
     with ed_night_dis_faster
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show ts_credits_bergen_1 at ts_show_credits_videosos
     
@@ -74,7 +74,7 @@ label good_credits_ts_label:
 
     $ TS.p(5)
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
 
     show ts_credits_bergen_1 at ts_hide_credits_videosos
 
@@ -90,7 +90,7 @@ label good_credits_ts_label:
     hide screen ts_good_credits_scr_1
     hide screen ts_good_credits_scr_11
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show ts_credits_mad_1 at ts_show_credits_videosos
     
@@ -99,7 +99,7 @@ label good_credits_ts_label:
 
     $ TS.p(5)
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
 
     show ts_credits_mad_1 at ts_hide_credits_videosos
     
@@ -115,7 +115,7 @@ label good_credits_ts_label:
     hide screen ts_good_credits_scr_2
     hide screen ts_good_credits_scr_22
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show ts_credits_fedya_1 at ts_show_credits_videosos_fedya
     show ts_credits_cg_1 at ts_show_credits_videosos_cg
@@ -125,7 +125,7 @@ label good_credits_ts_label:
 
     $ TS.p(5)
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
 
     show ts_credits_fedya_1 at ts_hide_credits_videosos_fedya
     show ts_credits_cg_1 at ts_hide_credits_videosos_cg
@@ -215,7 +215,7 @@ label bad_credits_ts_label:
     show zatemnenie
     with ed_night_dis_faster
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show bergencheek_pizdos:
         xpos 0.2 ypos 0.2 alpha 0.0 subpixel True
@@ -226,7 +226,7 @@ label bad_credits_ts_label:
 
     $ TS.p(5)
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
 
     show bergencheek_pizdos:
         xpos 0.2 ypos 0.4 alpha 1.0 subpixel True
@@ -245,7 +245,7 @@ label bad_credits_ts_label:
     hide screen ts_good_credits_scr_1
     hide screen ts_good_credits_scr_11
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show vladick_pizdos:
         xpos 0.2 ypos 0.2 alpha 0.0 subpixel True
@@ -256,7 +256,7 @@ label bad_credits_ts_label:
 
     $ TS.p(5)
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
 
     show vladick_pizdos:
         xpos 0.2 ypos 0.4 alpha 1.0 subpixel True
@@ -275,7 +275,7 @@ label bad_credits_ts_label:
     hide screen ts_good_credits_scr_2
     hide screen ts_good_credits_scr_22
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show fedya_pizdos:
         xpos 0.125 ypos 0.01 alpha 0.0 subpixel True
@@ -289,7 +289,7 @@ label bad_credits_ts_label:
 
     $ TS.p(5)
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
 
     show fedya_pizdos:
         xpos 0.125 ypos 0.2 alpha 1.0 subpixel True

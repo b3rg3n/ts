@@ -52,7 +52,7 @@ label ts_scenario_4:
     play sound svet_on
     $ TS.p(1.5)
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Наступила пятница."
 
@@ -67,10 +67,10 @@ label ts_scenario_4:
     "У нас же даже никаких заготовок нет! Ни стихов, ни дополнительных развлечений, ничего!"
     "Наш клуб – это скорее четыре подружки, у которых из общего только литература."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "А вместо того, чтобы готовить к этому чёртовому фестивалю хоть что-то, мы сидим, прохлаждаемся, кушаем кексики и пьём чаёк!"
     "В понедельник Нацуки пообещала, что к пятнице она принесёт кексы, а Юри сказала, что принесёт чайный сервиз."
@@ -91,28 +91,28 @@ label ts_scenario_4:
     "Не говоря уже о том, что я делала непосредственные президентские дела вроде продвижения клуба и всякой рекламы."
     "Так почему я не делаю ничего из этого {i}сейчас{/i}, особенно когда я сама же говорила, что литература – это моё призвание?"
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
 
     show zatemnenie with dspr
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show screen scenario_4_onest_text_suka
     pause
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     show screen scenario_4_onest_text_suka
     $ TS.p(1)
     hide screen scenario_4_onest_text_suka
 
     hide zatemnenie with dspr
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Отгоняя прочь все негативные мысли, я наконец-то встаю с кровати и начинаю свою утреннюю рутину."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -132,7 +132,7 @@ label ts_scenario_4:
     play sound close_water_sink
     $ TS.p(0.5)
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Холодная вода помогает мне не только взбодриться и освежиться, но и окончательно прогнать от себя все дурные мысли."
     "Хотя, это не значит, что холодная вода от этого станет менее холодной."
@@ -144,7 +144,7 @@ label ts_scenario_4:
 
     "Наспех умывшись и почистив зубы, я спускаюсь."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play music audio.t2
@@ -153,7 +153,7 @@ label ts_scenario_4:
     show hiroto 1a at t11
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     ts_ft 2b "Доброе утро, дорогая!"
 
@@ -204,14 +204,14 @@ label ts_scenario_4:
 
     "Папа усмехается. Я тоже улыбаюсь через силу."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
     scene ts_kitchen
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Пока мы завтракаем (а если точнее, то он завтракает, а я пытаюсь перебиться одними хлопьями), папа спрашивает."
 
@@ -270,7 +270,7 @@ label ts_scenario_4:
     "А у меня есть ещё минимум минут двадцать до выхода."
     "Хм-м-м..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
 
@@ -286,13 +286,13 @@ label ts_scenario_4:
 
 
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     if unluck4 == True:
         "Впрочем, а куда спешить? У меня ещё есть куча времени."
         "Можно немного посмотреть телевизор, можно немного почитать, можно даже приготовить то, что не приготовил папа."
 
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         " {w=1.0}{nw}"
 
 
@@ -303,19 +303,19 @@ label ts_scenario_4:
 
                 $ unluck4_telek = True
 
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
 
                 "Я решаю немного посмотреть телевизор."
                 "Время, когда по утрам крутили хорошие мультики, я уже давно переросла, но всегда можно ненадолго окунуться в детство, правда же?"
 
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
 
                 play sound pageflip
                 scene ts_living_room_telek_sudba_day
                 with wipeleft_scene
 
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
 
                 "Мне... не сказать, чтобы сильно повезло, но и не сказать, чтобы сильно {i}не{/i} повезло."
 
@@ -323,7 +323,7 @@ label ts_scenario_4:
 
                 "Мультиков, которые я обожала в детстве, в пятницу не показывали, но зато показывали фильм «Ирония судьбы». И, знаете, мне понравилось."
 
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
 
                 play sound pageflip
@@ -332,7 +332,7 @@ label ts_scenario_4:
 
                 stop music fadeout 3
 
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
 
                 "Фильм был настолько интересным, что я даже потеряла счёт времени."
 
@@ -342,26 +342,26 @@ label ts_scenario_4:
 
                 $ unluck4_reading = True
 
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
 
                 "Я решаю немного почитать."
                 "С того момента, как я прочла последнюю книгу, прошло уже довольно много времени, но всегда можно ненадолго окунуться в беззаботное детство, правда же?"
 
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
 
                 play sound pageflip
                 scene ts_bedroom
                 with wipeleft_scene
 
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
 
                 "Я решаю выбрать что-то поинтереснее, но не прямо чтобы особо, чтобы я не проглотила всю книгу за один заход."
                 "У меня в спальне есть довольно много произведений из классической литературы, но ещё есть несколько книг в жанре фэнтези."
                 "Обожаю фэнтези..."
                 "По крайней мере, обожала раньше."
 
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
 
                 play sound pageflip
@@ -370,7 +370,7 @@ label ts_scenario_4:
 
                 stop music fadeout 3
 
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
 
                 "Книга оказалась даже интереснее, чем я изначально предполагала."
                 "Когда я прочла уже почти сто страниц, я наконец-то решаю посмотреть на время."
@@ -379,7 +379,7 @@ label ts_scenario_4:
 
                 $ unluck4_cooking = True
 
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
 
                 "Тарелка с рисовой кашей так и осталась нетронутой."
                 show layer master at ts_havchik_gotovka
@@ -394,14 +394,14 @@ label ts_scenario_4:
                 "Гречка для этого вполне подойдёт."
                 "Я только недавно говорила о том, что могу приготовить гречку с сахаром – и вот, пожалуйста."
 
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
 
                 play sound2 pageflip
                 scene ts_kitchen
                 with wipeleft_scene
 
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
 
                 "После того, как гречка сварилась, я высыпаю всё на тарелку, добавляю масла, немного сахара, и наконец пробую её."
 
@@ -414,7 +414,7 @@ label ts_scenario_4:
                 "Кто знает, когда папа в следующий раз приготовит мне гречку."
                 "Если он вообще её будет готовить..."
 
-                show layer screens at ts_hidescreens
+                $ TS.s(ts_hidescreens)
                 " {w=1.0}{nw}"
 
                 play sound2 pageflip
@@ -423,7 +423,7 @@ label ts_scenario_4:
 
                 stop music fadeout 3
 
-                show layer screens at ts_showscreens
+                $ TS.s(ts_showscreens)
 
                 "На пищу богов нельзя отвлекаться."
                 "Только после того, как я поела, я всё же решаю посмотреть на время."
@@ -472,7 +472,7 @@ label ts_scenario_4:
         "Поэтому я просто собираюсь, закрываю дверь и тоже выхожу из дома."
         "Оделась я заранее, поэтому у меня ещё есть куча свободного времени."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -486,13 +486,13 @@ label ts_scenario_4:
 
     play music ts_tg
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     if unluck4 == True:
         "Хотя... А куда спешить? В школу я всё равно уже безбожно опоздала, хуже уже не будет."
         "Поэтому, как только я вышла из дома, до школы я начала идти как можно медленнее и неторопливее."
 
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         " {w=1.0}{nw}"
 
         play sound2 pageflip
@@ -511,7 +511,7 @@ label ts_scenario_4:
         scene ts_corridor
         with wipeleft_scene
 
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
 
         "Как я и предполагала, примерно в это время заканчивается второй урок."
         "Поскольку школа у нас специализированная, особенная, то и уроки у нас идут не по сорок пять минут, как обычно, а всего сорок."
@@ -519,14 +519,14 @@ label ts_scenario_4:
         "Поэтому я пришла в школу и встала перед классом всего за несколько минут до конца второго урока."
         "И было бы ничего, если бы дальше у нас не было три урока геометрии. У того же учителя. В том же кабинете."
 
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         " {w=1.0}{nw}"
 
         play sound2 pageflip
         scene ts_corridor
         with wipeleft_scene
 
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
 
         "На перемене многие у меня спрашивали, почему я не была на первых двух уроках."
         "Я же всем максимально холодно отвечала, что с утра неважно себя чувствовала, но к третьему уроку набралась сил и пошла в школу."
@@ -550,14 +550,14 @@ label ts_scenario_4:
         "Главное, что после этого «объяснения» люди от меня отставали."
         "Или, вернее сказать, «оправдания»..."
 
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         " {w=1.0}{nw}"
 
         play sound2 pageflip
         scene ts_class
         with wipeleft_scene
 
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
 
         "Когда начался третий урок, учитель заметил меня и вопросительно-обвинительно на меня посмотрел."
 
@@ -578,7 +578,7 @@ label ts_scenario_4:
         m "Следующего раза не будет, я вам обещаю."
         teacher "Ладно уж, садитесь..."
 
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         " {w=1.0}{nw}"
 
         play sound2 pageflip
@@ -587,7 +587,7 @@ label ts_scenario_4:
 
         play music ts_mdl
 
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
 
         "Остальная часть уроков прошла нормально."
         "Хоть и следующие три урока были геометрией, а ещё два – физикой, с ними я в гораздо более тёплых отношениях, чем с той же биологией."
@@ -614,7 +614,7 @@ label ts_scenario_4:
     else:
         "Поэтому в школу я шла максимально неторопливо. Всё равно до уроков ещё долго, а дорога до школы много времени не занимает."
 
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         " {w=1.0}{nw}"
 
         play sound2 pageflip
@@ -633,7 +633,7 @@ label ts_scenario_4:
         scene ts_corridor
         with wipeleft_scene
 
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
 
         "Но всё равно я пришла минут за двадцать до начала уроков."
         "Перед уроками многие у меня спрашивали, а чего это так рано."
@@ -644,28 +644,28 @@ label ts_scenario_4:
         "Это будет просто некрасиво по отношению к папе..."
         "Да и к тому же, нечего выносить сор из избы."
 
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         " {w=1.0}{nw}"
 
         play sound2 pageflip
         scene ts_class
         with wipeleft_scene
 
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
 
         "Первые два урока были алгеброй. Сегодня мы только начали проходить интегралы."
         "Честно? Никогда особо не понимала интегралы, но со школьной программой я точно справляюсь."
         "Даже если программа в этой школе как раз специализируется на точных науках."
         "И если на алгебре я даже по теме интегралов была местной звездой, то дальше..."
 
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         " {w=1.0}{nw}"
 
         play sound2 pageflip
         scene ts_class
         with wipeleft_scene
 
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
 
         "Дальше у нас была геометрия. Три урока подряд. В том же кабинете. У того же учителя."
         "И если с алгеброй я была в очень хороших отношениях, то с геометрией дела обстояли..."
@@ -683,14 +683,14 @@ label ts_scenario_4:
         "Видимо, ранняя прогулка до школы всё же дала о себе знать. Поэтому я незаметно для себя проваливаюсь в сон..."
 
         stop music fadeout 3
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         " {w=1.0}{nw}"
         show blink
         $ TS.p(3)
         hide blink
         play music ts_gp
         show unblink
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
         teacher "...исс Ида!"
 
         "Меня разбудил голос учителя. Видимо, всё-таки решил спросить у меня."
@@ -720,7 +720,7 @@ label ts_scenario_4:
         "И-и-и... я снова перестаю слушать. Но на этот раз я буду умнее, и не буду засыпать прямо на его уроке."
         "К счастью, больше учитель у меня больше ничего не спрашивал."
 
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         " {w=1.0}{nw}"
 
         play sound2 pageflip
@@ -729,7 +729,7 @@ label ts_scenario_4:
 
         play music ts_mdl
 
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
 
         "Остальная часть уроков прошла нормально."
         "После марафона по геометрии у нас ещё были два урока по физике."
@@ -748,7 +748,7 @@ label ts_scenario_4:
         "А вот если бы я приготовила себе что-нибудь сама..."
         "Ну да и пусть. Я не особо голодна, а на собрании клуба будут кексы..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -761,7 +761,7 @@ label ts_scenario_4:
 
     play music audio.t3
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Я как обычно пришла первой."
     "Поскольку сегодня пятница, и ни у кого из нас нет поздних уроков, мы коллективно решили, что по пятницам мы будем проводить собрание раньше на полчаса."
@@ -776,14 +776,14 @@ label ts_scenario_4:
     if unluck4_reading == True:
         "И что, что утром после такого же чтения я опоздала в школу? Было же весело! И интересно даже!"
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
     scene ts_club
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Прошло уже двадцать минут, а никто так и не появился."
     "Я уже начинаю переживать."
@@ -978,42 +978,42 @@ label ts_scenario_4:
 
     "..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show screen alko_text1
     pause
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     show screen alko_text1
     $ TS.p(1)
     hide screen alko_text1
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show screen alko_text2
     pause
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     show screen alko_text2
     $ TS.p(1)
     hide screen alko_text2
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show screen alko_text3
     pause
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     show screen alko_text3
     $ TS.p(1)
     hide screen alko_text3
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show screen alko_text4
     pause
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     show screen alko_text4
     $ TS.p(1)
     hide screen alko_text4
@@ -1023,7 +1023,7 @@ label ts_scenario_4:
     show sayori 1e at s32
     show natsuki 1n at s33
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Все мы удручённо смотрим друг на друга. Юри же неестественно дружелюбно улыбается во весь рот."
     y 2f "Ну а что такого? Я уже совершеннолетняя, и могу свободно покупать алкоголь."
@@ -1087,11 +1087,11 @@ label ts_scenario_4:
     with flash
 
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Н-нет, наверное, всё-таки показалось..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -1101,7 +1101,7 @@ label ts_scenario_4:
     show natsuki 2z at t33
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Мы все наливаем по половинке чашки из сервиза Юри."
     "Поскольку это наш первый опыт с алкоголем (кроме разве что Юри, хотя не уверена), мы изначально решили попробовать по чуть-чуть."
@@ -1192,7 +1192,7 @@ label ts_scenario_4:
 
     "Все делают по глотку..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -1204,7 +1204,7 @@ label ts_scenario_4:
 
     play music ts_heather
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "...а затем все, кроме Юри, плюются от непривычно крепкого вкуса."
     "Я же говорила, что Юри уже не первый раз пьёт спиртное."
@@ -1241,7 +1241,7 @@ label ts_scenario_4:
     m "Ладно, пусть либо допьёт, либо скажет, что вино и ей не понравилось, и наливай следующую."
     y 1q "Л-ладно..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -1252,7 +1252,7 @@ label ts_scenario_4:
     show layer master at blur_drunk_blya_lowest
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Как и ожидалось, Сайори тоже сделала пару глотков и сказала, что пить больше не будет."
     "Поэтому остались только мы с Юри."
@@ -1265,33 +1265,33 @@ label ts_scenario_4:
     "Юри налила мне и ей ещё по половине чашки. На мои протесты по поводу того, что мы уже взрослые, Юри парировала, что первый опыт с алкоголем зачастую не самый приятный."
     "Особенно когда наступает похмелье."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
 
     show zatemnenie with dspr
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show screen alko_text5
     pause
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     show screen alko_text5
     $ TS.p(1)
     hide screen alko_text5
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show screen alko_text6
     pause
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     show screen alko_text6
     $ TS.p(1)
     hide screen alko_text6
 
     hide zatemnenie with dspr
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Я наигранно разочарованно вздохнула и согласилась."
 
@@ -1349,7 +1349,7 @@ label ts_scenario_4:
     "Не сказала бы, что вторая чашка была мягче и привычнее..."
     "По крайней мере, вино уже кажется не настолько горьким и крепким."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 pageflip
@@ -1360,7 +1360,7 @@ label ts_scenario_4:
     show layer master at blur_drunk_blya_low
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     y "Осторожнее..."
     s "Да, а то до конца вечера не дотянешь..."
@@ -1418,7 +1418,7 @@ label ts_scenario_4:
     "Третий тост не объявил никто. Сайори и Нацуки с самого начала перестали пить, а у нас с Юри уже были тосты."
     "Поэтому пьём мы молча."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -1429,7 +1429,7 @@ label ts_scenario_4:
     show layer master at blur_drunk_blya
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Третья чашка пошла уже не так легко, как первые две."
     "Это уже пресловутое похмелье или ещё нет?"
@@ -1459,7 +1459,7 @@ label ts_scenario_4:
     s "Да..."
     m "Хршо..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     show blink
@@ -1468,19 +1468,19 @@ label ts_scenario_4:
 
     $ TS.p(2)
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Я закрываю глаза."
     "Я слышу, как девочки ещё что-то щебечут, но сейчас это совершенно не важно."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene ts_club
     show unblink
     show layer master at blur_drunk_blya
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Я даже и не заметила, как задремала."
     "Прошло примерно полчаса. Совсем потеряла счёт времени."
@@ -1519,45 +1519,45 @@ label ts_scenario_4:
     $ TS.p(2)
 
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show screen pizda_text1
     pause
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     show screen pizda_text1
     $ TS.p(1)
     hide screen pizda_text1
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show screen pizda_text2
     pause
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     show screen pizda_text2
     $ TS.p(1)
     hide screen pizda_text2
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     
     if unluck_ball >= 3:
 
         show screen pizda_text3
         pause
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         show screen pizda_text3
         $ TS.p(1)
         hide screen pizda_text3
 
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
 
         show screen pizda_text4
         pause
-        show layer screens at ts_hidescreens
+        $ TS.s(ts_hidescreens)
         show screen pizda_text4
         $ TS.p(1)
         hide screen pizda_text4
 
-        show layer screens at ts_showscreens
+        $ TS.s(ts_showscreens)
 
     show screen pizda_text41
     $ TS.p(0.5)

@@ -46,7 +46,7 @@ label ts_good_ending_blya:
     play ambience vibration_rintone fadein 5
     scene ts_bedroom
     with Dissolve(4)
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     $ persistent.sprite_time = "day"
     "На этот раз я просыпаюсь... не в спальне Сайори, а у себя."
@@ -59,7 +59,7 @@ label ts_good_ending_blya:
     play sound ts_pda
     "Я отвечаю на звонок."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene black with ts_paint
@@ -69,7 +69,7 @@ label ts_good_ending_blya:
     show ts_club_split_animated
     $ TS.p(0.99)
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     show sayori 3i at ln41
     show monika 1pn at f44
@@ -102,30 +102,30 @@ label ts_good_ending_blya:
     show sayori 2y at t41
     show monika 3pb at f44
     m "Ну и отлично. Всё, давай, до встречи."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene ts_bedroom with ts_paint
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     play music okevrmon
     "Значит, полчаса до фестиваля..."
     "А как же тогда они всю неделю без меня были?.."
     "Хотя, знаете, это значения не имеет."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_bathroom
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Быстрыми темпами я умываюсь и чищу зубы."
     "Я так сильно жду этого фестиваля, который, казалось, не наступит уже никогда, что я даже не обращаю внимания на ледяную воду и не менее ледяной привкус зубной пасты."
     "Наскоро умывшись, я спускаюсь на кухню."
     "Это было уже так давно, что уже и не помню, кто там сегодня готовит. Кажется, папа?"
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -133,7 +133,7 @@ label ts_good_ending_blya:
     show hiroto 1a at t11
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "И да, действительно, когда я спускаюсь, меня уже встречает приятный запах гречки, яичницы с беконом и хлопьев."
     show hiroto 1b at f11
@@ -167,7 +167,7 @@ label ts_good_ending_blya:
     "Я быстро уплетаю гречку, даже особо не жуя, такими же быстрыми темпами ем хлопья, а затем залпом выпиваю кофе."
     "На весь завтрак у меня уходит не больше пяти минут."
     "Даже на разговоры времени нет, фестиваль важнее. Особенно столь многострадальный..."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -175,7 +175,7 @@ label ts_good_ending_blya:
     show hiroto 1f at t11
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "Переодевшись, я говорю папе:"
     m "Ладно, пап, до скорого, а то девочки уже, наверное, меня все заждались..."
     show hiroto 1g at f11
@@ -187,7 +187,7 @@ label ts_good_ending_blya:
     ts_ft "И я тебя люблю, солнце."
 
     play music ts_fresh_air fadein 3
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -198,7 +198,7 @@ label ts_good_ending_blya:
     scene ts_street
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "Мне до сих пор не верится, что это всё на самом деле происходит..."
     "Все девочки в клубе, папа тоже придёт в школу, фестиваль уже начнётся через считанные минуты!.."
     "...правда, есть один человек, по которому я скучаю."
@@ -211,17 +211,17 @@ label ts_good_ending_blya:
 
     play ambience vibration_rintone fadein 3
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene ts_school_gate_day
     with ts_paint
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Опять Сайори..."
     "Я перехожу на бег, при этом не снимая трубку."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound2 ts_running
@@ -235,7 +235,7 @@ label ts_good_ending_blya:
     scene ts_corridor at ts_ustal_suka
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Спустя где-то секунд сорок я уже у двери клуба."
     "Хорошо, что я в своё время занималась хоть каким-то спортом! Бег хотя бы на такие короткие дистанции не оставил после себя никаких неизгладимых последствий..."
@@ -250,7 +250,7 @@ label ts_good_ending_blya:
     show sayori 3i at t32
     show natsuki 1h at f33
     show layer master at ts_razebal
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     n "Явилась не запылилась!"
     show yuri 2r at t31
     show sayori 4j at f32
@@ -334,7 +334,7 @@ label ts_good_ending_blya:
     "Со всеми этими циклами и повторениями я уже и забыла, какие стихи каждая из них написала..."
     "Главное, хотя бы свой собственный не забыть..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -344,7 +344,7 @@ label ts_good_ending_blya:
     show natsuki 2u at t33
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "С момента начала фестиваля прошло по меньшей мере пятнадцать минут."
     "Девочки в который раз перечитывали свои стихи, и с каждым разом надежда на то, что их услышит хоть кто-нибудь, становилась всё менее и менее яркой."
@@ -385,7 +385,7 @@ label ts_good_ending_blya:
 
     play music audio.t8 fadein 3
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -395,7 +395,7 @@ label ts_good_ending_blya:
     show natsuki 2t at t33
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Как и ожидалось, несколько учеников просто взяли кекс и ушли искать другие клубы, но большинство всё же остались здесь."
     show yuri 1j at t31
@@ -487,7 +487,7 @@ label ts_good_ending_blya:
     "К чёрту уже этот фестиваль – поскорее бы уже с мамой увидеться..."
     play music audio.t8 fadein 2
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -497,7 +497,7 @@ label ts_good_ending_blya:
     show natsuki 2z at t33
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
 
     "Ну, могло быть и хуже; но могло быть и лучше."
@@ -553,7 +553,7 @@ label ts_good_ending_blya:
         $ m_name = "Девчата"
     m "Да, Моника..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -563,7 +563,7 @@ label ts_good_ending_blya:
     show natsuki 2t at t33
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     play music ts_afterword fadein 2
 
@@ -590,7 +590,7 @@ label ts_good_ending_blya:
     show sayori 3a at t32
     show natsuki 2j at t33
     m "До завтра, девочки."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     play sound door_open
     show yuri 2a at cright with move
@@ -599,7 +599,7 @@ label ts_good_ending_blya:
     hide sayori
     show natsuki 2j at cright with move
     hide natsuki
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "Все уходят."
     "Ну, наверное, пойду и я..."
     play sound stuk
@@ -612,10 +612,10 @@ label ts_good_ending_blya:
     show minami 2j at t11
     m "Мама!"
     show minami 1k at f11
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     scene ts_mon_maman_3 with ts_paint
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     play music ts_never fadein 2
     m "Мамочка, я так по тебе скучала!"
     scene ts_mon_maman_2
@@ -640,14 +640,14 @@ label ts_good_ending_blya:
     scene ts_mon_maman_3
     m "Пойдём, мне ещё столько всего рассказать тебе надо!.."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene black with ts_paint
     $ TS.p(1)
     scene ts_kitchen with ts_paint
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     play music ts_anxiety fadein 2
     show minami 2ba at t11
@@ -676,7 +676,7 @@ label ts_good_ending_blya:
     show minami 3bk at t11
     "Мы обе над этим посмеялись."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -684,7 +684,7 @@ label ts_good_ending_blya:
     show minami 1ba at t11
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     play sound door_open
 
     "Время идёт, а мы всё так же весело и непринуждённо разговариваем, как тут на кухню входит и папа."
@@ -699,10 +699,10 @@ label ts_good_ending_blya:
     ts_ft "Привет, дорогая."
     show minami 2bj at t21
     show hiroto 2f at t42
-    show layer screens at ts_hidescreens_fast
+    $ TS.s(ts_hidescreens_fast)
     " {w=0.1}{nw}"
     $ TS.p(0.88)
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     show minami 2bj at t21
     show hiroto 2f at t22
     m "Привет, пап."
@@ -725,14 +725,14 @@ label ts_good_ending_blya:
     ts_mt "Ой!"
     show minami 2bt at f44
     ts_mt "Н-не переживайте, сейчас что-нибудь на скорую руку приготовлю!"
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene black with ts_paint
     $ TS.p(1)
     scene ts_kitchen with ts_paint
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     play music ts_train_station fadein 2
     show minami 2bm at t21
@@ -775,14 +775,14 @@ label ts_good_ending_blya:
     else:
         $ m_name = "Моника"
     "После этих слов мама пошла к себе в спальню, оставляя нас с папой наедине."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_kitchen
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "Остаток вечера мы проводим молча. Все слишком истощены, особенно я."
     "Доев картошку, я как бы невзначай говорю папе, что я тоже устала, и что я тоже пойду отдыхать."
     show hiroto 1g at f11
@@ -796,14 +796,14 @@ label ts_good_ending_blya:
     show hiroto at lhide
     hide hiroto
     "А затем каждый отправился по своим делам: папа – смотреть телевизор, а я – отдыхать."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_bedroom
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     play music ts_afterlife fadein 1
     "Эх, какой всё-таки хороший день!"
     "Фестиваль состоялся, все девочки живы-здоровы, мама приехала... не день, а сплошное счастье."
@@ -814,14 +814,14 @@ label ts_good_ending_blya:
     "Что-то я не помню того, как я эту записку писала..."
     "Заинтересованная, я начинаю её читать."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene ts_bedroom:
         blur 9.0
     with dissolve
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     play sound pageflip
 
@@ -833,7 +833,7 @@ label ts_good_ending_blya:
     pause
 
     play sound pageflip
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     $ TS.p(1)
     hide screen poem
 
@@ -841,7 +841,7 @@ label ts_good_ending_blya:
     scene ts_bedroom
     with dissolve
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Ах ты... козявка..."
     "Это что, она всё подстраивала?"
@@ -858,7 +858,7 @@ label ts_good_ending_blya:
     "А кошмарный сон – это ведь всего лишь сон..."
     "Так ведь?"
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     show layer screens

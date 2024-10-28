@@ -76,9 +76,9 @@ label ts_intro_settings1:
 label ts_intro_settings2:
     hide screen ts_widget_changer with dspr
     $ TS.p(1)
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     brg "Тебя устраивает такой размер шрифта?{w} Или же..."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     show layer screens at ts_null_transform
     show screen ts_font_changer
@@ -86,20 +86,20 @@ label ts_intro_settings2:
 
 label ts_intro_settings3:
     hide screen ts_font_changer with dspr
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     brg "А теперь?{w} Или ещё разок поменяем?"
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     menu:
         "Поменяем":
             show layer screens at ts_null_transform
             show screen ts_font_changer
             $ TS.np()
         "Оставь этот":
-            show layer screens at ts_showscreens
+            $ TS.s(ts_showscreens)
             brg "Хорошо."
-            show layer screens at ts_hidescreens
+            $ TS.s(ts_hidescreens)
             " {w=1.0}{nw}"
             show layer screens at ts_null_transform
             jump ts_intro_settings4

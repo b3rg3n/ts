@@ -51,7 +51,7 @@ label ts_bad_ending_blya:
     show ts_prosnulas_ot_ahuya
     show layer master at blur_drunk_blya_low
     with Dissolve(4)
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "..."
     "Я жадно глотаю воздух."
     "Ч-ч-что это? Г-г-где я вообще?"
@@ -118,15 +118,15 @@ label ts_bad_ending_blya:
     "И как только он ушёл, я вспомнила о том, что этот гад так и не рассказал мне, что произошло со всеми моими родными и близкими!"
     "Хотя, может, он и сам не знает..."
     "Аки, а ты как?.."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     stop music fadeout 4
 
     $ TS.p(4)
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     "Аки?"
     stop sound_loop fadeout 2
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     scene black with ts_paint
     $ TS.p(1)
@@ -137,7 +137,7 @@ label ts_bad_ending_blya:
     show dust4
     with ts_paint
     play music ts_ita fadein 2
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "Я уже две недели в палате отделения нейрохирургии."
     "Соседи по палате, конечно, замечательные, но к им всем хотя бы иногда приходят родные и близкие."
     "Ко мне же за все эти две недели не пришёл вообще никто..."
@@ -149,7 +149,7 @@ label ts_bad_ending_blya:
     "Я сразу же настроилась на худшее, что они либо обо мне просто забыли, либо они все умерли."
     "Естественно, об этом я тоже спрашивала у доктора, но тот лишь отмахнулся, сказав: «Это уже ваши личные дела, я в них не лезу»."
     "И каждый раз, когда приходил кто-то из родных или близких одного из моих соседей по палате, я лишь зарывалась лицом в подушку и тихо скулила..."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     scene black with ts_paint
     $ TS.p(1)
@@ -159,7 +159,7 @@ label ts_bad_ending_blya:
     show dust3
     show dust4
     with ts_paint
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "Спустя месяц я стала достаточно самостоятельной, чтобы наконец-то выписаться из этого ада."
     "Как странно, я только выбралась из одной «Недели Сурка», чтобы попасть в ещё один."
     "Может, это просто ещё один слой сна? Если я убью себя в этом слое, проснусь ли я в реальности? Или я проснусь в ещё одном слое более высокого уровня?"
@@ -169,14 +169,14 @@ label ts_bad_ending_blya:
     "И по иронии судьбы, это единственный человек, которого я считала настоящим, даже несмотря на то, что это просто моё подсознание."
     "Собрав все эпикризы, я направляюсь обратно в приёмное отделение."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_waiting_room
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     m "Девушка, здравствуйте..."
     misc "Добрый день, Моника. На выписку?"
@@ -192,7 +192,7 @@ label ts_bad_ending_blya:
     misc "Всего доброго!"
     "Да пошла ты..."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     scene black with ts_paint
     $ TS.p(1)
@@ -202,7 +202,7 @@ label ts_bad_ending_blya:
     show dust3
     show dust4
     with ts_paint
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     play music ts_aiv fadein 1
 
@@ -211,14 +211,14 @@ label ts_bad_ending_blya:
     "Но это {b}мой{/b} дом."
     "Я нерешительно открываю дверь."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
     scene ts_entrance_day
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     m "Мама? Папа?"
     m "Ау-у-у-у, вы дома?"
@@ -238,7 +238,7 @@ label ts_bad_ending_blya:
     scene ts_kitchen
     with flash
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Я включаю свет и странно оглядываюсь."
     "Какой сегодня вообще день? Какой сейчас вообще {b}год{/b}?"
@@ -246,14 +246,14 @@ label ts_bad_ending_blya:
     "Даже как-то странно, что я не заметила её, как только включила свет."
     "Она висела прямо на холодильнике под магнитиком, который мама привезла из одной из командировок. Сама записка, как ни странно, тоже от мамы. По крайней мере, я узнаю её почерк."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene ts_kitchen:
         blur 9.0
     with dissolve
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     play sound pageflip
 
@@ -265,7 +265,7 @@ label ts_bad_ending_blya:
     pause
 
     play sound pageflip
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     $ TS.p(1)
     hide screen poem
 
@@ -273,7 +273,7 @@ label ts_bad_ending_blya:
     scene ts_kitchen
     with dissolve
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     
     "С каждым новым предложением я всё больше начинаю слезиться."
     "Папа... Папочка мой дорогой..."
@@ -281,7 +281,7 @@ label ts_bad_ending_blya:
     "Если бы не это чёртово вино Юри и моё неугомонное желание выпить побольше спиртного, этого бы никогда и не произошло..."
     "А мама... Надеюсь, ей там будет лучше... куда бы она там ни отправилась..."
     "Остаток дня я провожу со слезами на глазах, на щеках, по всей кухне. Я продолжаю рыдать, пока наконец не засыпаю."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     scene black with ts_paint
     $ TS.p(1)
@@ -291,13 +291,13 @@ label ts_bad_ending_blya:
     show dust3
     show dust4
     with ts_paint
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "И зачем я вообще пришла в школу?"
     "...ах да, я же технически так её и не закончила."
     "Надеюсь, за четыре года все учителя ещё не забыли, что была вообще такая Ида Моника, местная звезда школы, которая клубы меняла как перчатки..."
     "Вздохнув, я направляюсь внутрь."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play sound pageflip
@@ -312,7 +312,7 @@ label ts_bad_ending_blya:
     scene ts_corridor
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Хотя многие учителя за это время и поменялись, директор Раддан остался."
     "Спрошу у него за девочек из клуба, и, если это вообще возможно, слёзно попрошусь доучиться жалкие полгода."
@@ -320,7 +320,7 @@ label ts_bad_ending_blya:
 
     stop music fadeout 5
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene black with ts_paint
@@ -331,7 +331,7 @@ label ts_bad_ending_blya:
     show ts_of_split_animated
     $ TS.p(0.99)
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     play sound stuk
     show daisuke 1ba at t44
     m "Извините... можно?"
@@ -389,23 +389,23 @@ label ts_bad_ending_blya:
         TS.p(0.5)
         dizzy(1, 1.0)
     with flash
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     misc "Узнали слишком поздно..."
     misc "Вечером того же дня, сразу после фестиваля, её нашли повешенной у себя же дома. Мы ничего не смогли сделать..."
-    show layer screens at ts_hidescreens_fast
+    $ TS.s(ts_hidescreens_fast)
     " {w=0.1}{nw}"
     scene ts_yrec_trup_end
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with ts_paint
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     misc "Что касается мисс Касанэ, то она не выдержала смертей, по сути, двух из трёх людей, которых она считала друзьями."
     misc "И через две недели её нашли в кабинете уже бывшего клуба со вспоротым животом."
-    show layer screens at ts_hidescreens_fast
+    $ TS.s(ts_hidescreens_fast)
     " {w=0.1}{nw}"
     scene ts_nat_trup_end
     show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     with ts_paint
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     misc "Что же до мисс Яторо..."
     misc "Помимо того, что она потеряла всех своих друзей за буквально несколько недель, над ней, как оказалось, издевались её друзья и даже её собственный отец..."
     m "И ей настолько надоело то, что её никто не воспринимает всерьёз, что однажды она подумала: «А зачем это всё нужно?», и свернула себе шею. Тоже насмерть."
@@ -414,17 +414,17 @@ label ts_bad_ending_blya:
     scene ts_office
     show daisuke 2bh at t11
     with flash
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     "После этой фразы я падаю навзрыд."
     "Все мои друзья, все мои близкие... Все, кем я когда-либо дорожила, либо мертвы, либо находятся на другом конце земного шара." #плоскоземельщики сосать
     show daisuke 2bf at f11
     misc "Я сожалею о вашей утрате... Но это жизнь, все рано или поздно умирают..."
     show daisuke 2bh at t11
     "Я тем временем просто продолжаю рыдать."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     $ TS.p(5)
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "Лишь спустя пятнадцать минут я хоть как-то успокаиваюсь и говорю хотя бы членораздельно."
     m "Ладно... спасибо вам большое, господин Раддан... Теперь-то я точно знаю..."
     show daisuke 2bf at f11
@@ -445,7 +445,7 @@ label ts_bad_ending_blya:
     misc "Д-до свидания..."
     show daisuke 1bh at t11
     "Надеюсь, крыша не заперта..."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     play music ts_hftc2 fadein 2
@@ -453,7 +453,7 @@ label ts_bad_ending_blya:
     scene ts_roof
     with wipeleft_scene
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Какая же я неудачница..."
     "Из-за одной моей авантюры... Из-за одной моей оплошности..."
@@ -464,27 +464,27 @@ label ts_bad_ending_blya:
     show sayori 1a at t51:
         alpha 0.4
     with linearblur
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     "Сайори..."
     show yuri 1a at t52:
         alpha 0.4
     with linearblur
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     "Юри..."
     show natsuki 1a at t53:
         alpha 0.4
     with linearblur
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     "Нацуки..."
     show hiroto 1a at t54:
         alpha 0.4
     with linearblur
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     "Папа..."
     show minami 1a at t55:
         alpha 0.4
     with linearblur
-    show layer screens at ts_showscreens_fast
+    $ TS.s(ts_showscreens_fast)
     "Даже мама..."
     hide sayori
     hide yuri
@@ -492,14 +492,14 @@ label ts_bad_ending_blya:
     hide hiroto
     hide minami
     with linearblur
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "Никого из них больше нет..."
     "А всё это... из-за меня..."
     "Я снова начинаю плакать."
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
     $ TS.p(5.5)
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "Закончив рыдать как маленькая девочка, я решительно встаю."
     "И направляюсь... к краю крыши."
     "Ух, высоко-то как!"
@@ -564,7 +564,7 @@ label ts_bad_ending_blya:
             repeat
     show layer master at ts_bad_end_padenie_anim_blya1
     $ TS.p(2)
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
     "Секунды, что я лечу вниз, кажутся часами. Но мне уже всё равно."
     "Литературный клуб снова соберётся вместе. Мы с папой тоже будем вместе..."
     "Да и с мамой мы рано или поздно встретимся..."
@@ -585,12 +585,12 @@ label ts_bad_ending_blya:
         ease 5 align(0.5, 0.5) zoom 1.0
     with Fade(1.5, 2, 1.2)
 
-    show layer screens at ts_showscreens
+    $ TS.s(ts_showscreens)
 
     "Ведь реальность – это просто ещё один слой."
     "Даром что я в новом слое не возвышаюсь над всем, а падаю. Прямо в бездну."
 
-    show layer screens at ts_hidescreens
+    $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
     scene black

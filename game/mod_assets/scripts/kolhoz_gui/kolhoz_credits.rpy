@@ -37,7 +37,7 @@ label good_credits_ts_label:
     scene black with ed_night_dis
 
     play music ts_good_credits fadein 0.5
-    pause 0.5#2
+    $ TS.p(0.5)
 
     $ Chapter("True Story", time=3.25)
     $ Chapter("True Story", time=3.25)
@@ -72,7 +72,7 @@ label good_credits_ts_label:
     show screen ts_good_credits_scr_1
     show screen ts_good_credits_scr_11
 
-    pause 5
+    $ TS.p(5)
 
     show layer screens at ts_hidescreens
 
@@ -81,7 +81,7 @@ label good_credits_ts_label:
     show screen ts_good_credits_scr_1
     show screen ts_good_credits_scr_11
 
-    pause 1.0
+    $ TS.p(1)
 
     scene ts_intro_move_2
     show zatemnenie_light
@@ -97,7 +97,7 @@ label good_credits_ts_label:
     show screen ts_good_credits_scr_2
     show screen ts_good_credits_scr_22
 
-    pause 5
+    $ TS.p(5)
 
     show layer screens at ts_hidescreens
 
@@ -106,7 +106,7 @@ label good_credits_ts_label:
     show screen ts_good_credits_scr_2
     show screen ts_good_credits_scr_22
 
-    pause 1.0
+    $ TS.p(1)
 
     scene ts_intro_move_3
     show zatemnenie_light
@@ -123,7 +123,7 @@ label good_credits_ts_label:
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
 
-    pause 5
+    $ TS.p(5)
 
     show layer screens at ts_hidescreens
 
@@ -133,14 +133,14 @@ label good_credits_ts_label:
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
 
-    pause 1.0
+    $ TS.p(1)
 
     scene ts_sakura
     show zatemnenie_light
     show lepestki_krutyatsa
     with ed_night_dis
 
-    pause 1.3
+    $ TS.p(1.3)
 
     if _preferences.language == "english":
         show credits ts_credits_eng:
@@ -153,7 +153,7 @@ label good_credits_ts_label:
             ypos 1.05
             linear 100.0 ypos -6.28
 
-    $ renpy.pause (75, hard=True)
+    $ TS.p(75)
 
     stop music fadeout 3
 
@@ -162,7 +162,7 @@ label good_credits_ts_label:
 
     scene black with dissolve2
 
-    pause 1
+    $ TS.p(1)
 
     show layer screens at ts_null_transform
 
@@ -224,7 +224,7 @@ label bad_credits_ts_label:
     show screen ts_good_credits_scr_1
     show screen ts_good_credits_scr_11
 
-    pause 5
+    $ TS.p(5)
 
     show layer screens at ts_hidescreens
 
@@ -235,7 +235,7 @@ label bad_credits_ts_label:
     show screen ts_good_credits_scr_1
     show screen ts_good_credits_scr_11
 
-    pause 1.0
+    $ TS.p(1.0)
 
     scene ts_club_glitch_pizdets at ts_coridor_glitch
     show m_rectstatic zorder 0
@@ -254,7 +254,7 @@ label bad_credits_ts_label:
     show screen ts_good_credits_scr_2
     show screen ts_good_credits_scr_22
 
-    pause 5
+    $ TS.p(5)
 
     show layer screens at ts_hidescreens
 
@@ -265,7 +265,7 @@ label bad_credits_ts_label:
     show screen ts_good_credits_scr_2
     show screen ts_good_credits_scr_22
 
-    pause 1.0
+    $ TS.p(1)
 
     scene ts_kitchen_glitch_pizdets at ts_coridor_glitch
     show m_rectstatic zorder 0
@@ -287,7 +287,7 @@ label bad_credits_ts_label:
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
 
-    pause 5
+    $ TS.p(5)
 
     show layer screens at ts_hidescreens
 
@@ -301,7 +301,7 @@ label bad_credits_ts_label:
     show screen ts_good_credits_scr_3
     show screen ts_good_credits_scr_33
 
-    pause 1.0
+    $ TS.p(1)
 
     scene vse_pizda_monike:
         anchor (0.5, 0.5)
@@ -336,7 +336,7 @@ label bad_credits_ts_label:
             ypos 1.05
             linear 100.0 ypos -6.28
 
-    $ renpy.pause (75, hard=True)
+    $ TS.p(75)
 
     stop music fadeout 3
 
@@ -345,7 +345,7 @@ label bad_credits_ts_label:
 
     scene black with dissolve2
 
-    pause 1
+    $ TS.p(1)
 
     show layer screens at ts_null_transform
 

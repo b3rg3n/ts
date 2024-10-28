@@ -1,5 +1,7 @@
 label ts_scenario_6:
 
+    show layer screens at ts_null_transform
+
     $ renpy.block_rollback()
 
     python: # ОБНОВЛЯЕМ RPC

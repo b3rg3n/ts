@@ -87,7 +87,7 @@ label glitch_main_menu_ending:
     $ persistent.badendmenuskipglitch = True
     play sound br_glitch
     show ts_menu_move_anim_bad_end as bg1 at Glitch(_fps=160, glitch_strength=1)
-    pause 0.6
+    $ TS.p(0.6)
     stop sound
     hide ts_menu_move_anim_bad_end as bg1 at Glitch(_fps=160, glitch_strength=1)
     call screen main_menu #ВЫЗЫВАЕМ МЕНЮ
@@ -143,15 +143,15 @@ label splashscreen:
         scene black
         show ts_anarchy
         with Dissolve(2)
-        pause 0.5
+        $ TS.p(0.5)
         hide ts_anarchy
         play sound slender1
         show anarchy_glitch_logo
-        pause 0.8
+        $ TS.p(0.8)
         stop sound
         hide anarchy_glitch_logo
         show ts_anarchy
-        pause 0.5
+        $ TS.p(0.5)
         scene black
         with Dissolve(2)
         return
@@ -168,37 +168,37 @@ label splashscreen:
         scene black
         show ts_anarchy
         with Dissolve(2)
-        pause 0.5
+        $ TS.p(0.5)
         hide ts_anarchy
         play sound slender1
         show anarchy_glitch_logo
-        pause 0.8
+        $ TS.p(0.8)
         stop sound
         hide anarchy_glitch_logo
         show ts_anarchy
-        pause 0.5
+        $ TS.p(0.5)
         scene black
         with Dissolve(2)
         jump spashcreen1
 
 label spashcreen1:
-    $ renpy.pause(1, hard=True)
+    $ TS.p(1)
     play music ts_mosh fadein 2
-    $ renpy.pause(1.5, hard=True)
+    $ TS.p(1.5)
     scene ts_menu_vid_sunset
     show zatemnenie
     with dissolve4
-    $ renpy.pause(1, hard=True)
+    $ TS.p(1)
     show screen bergenchik_intro_ebat0
-    $ renpy.pause(2, hard=True)
+    $ TS.p(2)
     show screen bergenchik_intro_ebat1
-    $ renpy.pause(2, hard=True)
+    $ TS.p(2)
     show screen bergenchik_intro_ebat2
-    $ renpy.pause(2, hard=True)
+    $ TS.p(2)
     show screen bergenchik_intro_ebat3
-    $ renpy.pause(2, hard=True)
+    $ TS.p(2)
     show screen bergenchik_intro_ebat4
-    $ renpy.pause(2, hard=True)
+    $ TS.p(2)
     call screen skitsoglasenblya
     return
 
@@ -209,12 +209,12 @@ label splashscreen2:
     hide screen bergenchik_intro_ebat1
     hide screen bergenchik_intro_ebat0
     show screen bergenchik_intro_ebat5
-    $ renpy.pause(4, hard=True)
+    $ TS.p(4)
     stop music fadeout 6
     hide screen bergenchik_intro_ebat5
     scene black
     with dissolve4
-    $ renpy.pause(1, hard=True)
+    $ TS.p(1)
     $ persistent.skip_splash = True
     return
 

@@ -1,9 +1,7 @@
 label ts_scenario_12:
 
     $ TS.b()
-
-    python: # ОБНОВЛЯЕМ RPC
-        ts_rpc_carter11()
+    $ ts_rpc_carter11()
 
     $ persistent.rpclabel = "11"
     $ persistent.sprite_time = "day"

@@ -2,8 +2,7 @@ label ts_scenario_7:
 
     $ TS.b()
 
-    python: # ОБНОВЛЯЕМ RPC
-        ts_rpc_carter7()
+    $ ts_rpc_carter7()
 
     $ persistent.rpclabel = "7"
     $ persistent.uncolorize = "none"

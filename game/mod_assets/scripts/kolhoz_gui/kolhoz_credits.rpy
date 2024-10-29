@@ -21,8 +21,7 @@ init:
 
 label good_credits_ts_label:
 
-    python: # ОБНОВЛЯЕМ RPC
-        ts_rpc_credits()
+    $ ts_rpc_credits()
 
     $ persistent.rpclabel = "999"
 
@@ -171,8 +170,7 @@ label good_credits_ts_label:
 
 label bad_credits_ts_label:
 
-    python: # ОБНОВЛЯЕМ RPC
-        ts_rpc_credits()
+    $ ts_rpc_credits()
 
     $ persistent.rpclabel = "999"
 

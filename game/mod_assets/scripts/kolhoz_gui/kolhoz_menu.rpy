@@ -5,8 +5,7 @@
 
 label main_menu:
 
-    python: # ОБНОВЛЯЕМ RPC
-        ts_rpc_main_menu()
+    $ ts_rpc_main_menu()
 
     stop sound fadeout 3
     stop music fadeout 3
@@ -220,47 +219,33 @@ label splashscreen2:
 
 label after_load: # ВОСКРЕШЕНИЕ RPC ПРИ ЗАГРУЗКЕ
     if persistent.rpclabel == "0":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter0()
+        $ ts_rpc_carter0()
     elif persistent.rpclabel == "1":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter1()
+        $ ts_rpc_carter1()
     elif persistent.rpclabel == "2":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter2()
+        $ ts_rpc_carter2()
     elif persistent.rpclabel == "3":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter3()
+        $ ts_rpc_carter3()
     elif persistent.rpclabel == "4":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter4()
+        $ ts_rpc_carter4()
     elif persistent.rpclabel == "5":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter5()
+        $ ts_rpc_carter5()
     elif persistent.rpclabel == "6":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter6()
+        $ ts_rpc_carter6()
     elif persistent.rpclabel == "7":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter7()
+        $ ts_rpc_carter7()
     elif persistent.rpclabel == "8":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter8()
+        $ ts_rpc_carter8()
     elif persistent.rpclabel == "9":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter9()
+        $ ts_rpc_carter9()
     elif persistent.rpclabel == "10":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter10()
+        $ ts_rpc_carter10()
     elif persistent.rpclabel == "11":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter11()
+        $ ts_rpc_carter11()
     elif persistent.rpclabel == "12":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_carter12()
+        $ ts_rpc_carter12()
     elif persistent.rpclabel == "999":
-            python: # ОБНОВЛЯЕМ RPC
-                ts_rpc_credits()
+        $ ts_rpc_credits()
 
 
 screen skitsoglasenblya:

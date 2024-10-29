@@ -2,8 +2,7 @@ label ts_good_ending_blya:
 
     $ TS.b()
 
-    python: # ОБНОВЛЯЕМ RPC
-        ts_rpc_carter13()
+    $ ts_rpc_carter13()
 
     $ persistent.rpclabel = "13"
 

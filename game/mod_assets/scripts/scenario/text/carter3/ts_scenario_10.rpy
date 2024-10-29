@@ -2,8 +2,7 @@ label ts_scenario_10:
 
     $ TS.b()
 
-    python: # ОБНОВЛЯЕМ RPC
-        ts_rpc_carter10()
+    $ ts_rpc_carter10()
 
     $ persistent.rpclabel = "10"
 

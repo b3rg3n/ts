@@ -16,6 +16,7 @@ label ts_scenario_0:
     $ persistent.goodendmenu = False
     $ persistent.peredbadendmenu = False
     $ persistent.peredgoodendmenu = False
+    $ persistent.ingame_pizda = False
 
     if _preferences.language == "english":
         $ save_name = "In The Beginning"

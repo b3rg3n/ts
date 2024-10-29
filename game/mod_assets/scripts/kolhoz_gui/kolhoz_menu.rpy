@@ -136,9 +136,9 @@ label splashscreen:
             
             persistent.set_volumes = True
             
-            _preferences.volumes['music'] = .45
-            _preferences.volumes['sfx'] = 1.0
-            _preferences.volumes['voice'] = .65
+            ts_mm(.45)
+            ts_ss(1.0)
+            ts_aa(.65)
     if persistent.skip_splash is True:
         scene black
         show ts_anarchy

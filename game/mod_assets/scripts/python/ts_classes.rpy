@@ -17,3 +17,16 @@ init -15 python in TS:
 
     def b():
         renpy.block_rollback()
+
+init python:
+    def ts_ss(vol):
+        _preferences.volumes['sfx'] = vol
+    
+    def ts_mm(vol):
+        _preferences.volumes['music'] = vol
+    
+    def ts_aa(vol):
+        _preferences.volumes['voice'] = vol
+    
+    def ts_hlclear():
+        _history_list = []

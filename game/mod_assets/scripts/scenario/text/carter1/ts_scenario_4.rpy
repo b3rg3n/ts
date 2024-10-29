@@ -1560,7 +1560,7 @@ label ts_scenario_4:
         $ TS.s(ts_showscreens)
 
     show screen pizda_text41
-    $ TS.p(0.5)
+    pause 0.5
     hide screen pizda_text41
 
 #САЙОРИ ЕБЁТ МОЗГИ
@@ -1570,14 +1570,14 @@ label ts_scenario_4:
     show s_kill2
     show s_kill_bg as s_kill_bg at s_kill_bg_start
     show s_kill as s_kill at s_kill_start
-    $ TS.p(3.75)
+    pause 3.75
     show s_kill_bg2 as s_kill_bg
     show s_kill2 as s_kill
-    $ TS.p(0.01)
+    pause 0.01
 
     play sound s_kill_glitch1
     show s_kill_bg2 as bg1 at Glitch(_fps=160, glitch_strength=1)
-    $ TS.p(0.25)
+    pause 0.25
     stop sound
 
     hide s_kill_bg
@@ -1590,30 +1590,30 @@ label ts_scenario_4:
         truecenter
         alpha 0.5
         zoom 2.0 xalign 0.5 yalign 0.05
-        TS.p(0.5)
+        pause 0.5
         dizzy(1, 1.0)
-    $ TS.p(2)
+    pause 2
     show noise zorder 3:
         alpha 0.0
         linear 3.0 alpha 0.25
     show vignette zorder 3:
         alpha 0.0
         linear 3.0 alpha 0.75
-    $ TS.p(1.5)
+    pause 1.5
     show anarchy_glitch_logo zorder 2 at ts_coridor_glitch
-    $ TS.p(1.5)
+    pause 1.5
 
     play sound s_kill_glitch1
     show anarchy_glitch_logo as bg1 at Glitch(_fps=160, glitch_strength=1) zorder 2
-    $ TS.p(0.25)
+    pause 0.25
     stop sound
     hide anarchy_glitch_logo
 
-    $ TS.p(4)
+    pause 4
 
     play sound s_kill_glitch1
     show anarchy_glitch_logo as bg1 at Glitch(_fps=160, glitch_strength=1) zorder 2
-    $ TS.p(0.25)
+    pause 0.25
     stop sound
     hide anarchy_glitch_logo
 
@@ -1622,7 +1622,7 @@ label ts_scenario_4:
     show splash_glitch_m zorder 2
     show splash_glitch_n zorder 2
     show splash_glitch_y zorder 2
-    $ TS.p(0.75)
+    pause 0.75
     hide white
     hide splash_glitch2
     hide splash_glitch_m
@@ -1637,13 +1637,13 @@ label ts_scenario_4:
             xpos 0.1 ypos 0.05
     show fake_exception2 zorder 2:
         xpos 0.1 ypos 0.15
-    $ TS.p(6)
+    pause 6
 
     stop music fadeout 4
     play sound coldazvuk
-    $ TS.p(4)
+    pause 4
     scene black
-    $ TS.p(2)
+    pause 2
 
 #НАЦУКИ ЕБЁТ МОЗГИ
 

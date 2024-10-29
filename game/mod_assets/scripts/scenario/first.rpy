@@ -66,12 +66,12 @@ label start:
         $ TS.p(3)
         hide screen ts_start_shit_blya with dspr
         show screen ts_cens_changer
-        $ TS.np()
+        $ renpy.pause(hard=True)
 
 label ts_intro_settings1:
     hide screen ts_cens_changer with dspr
     show screen ts_widget_changer
-    $ TS.np()
+    $ renpy.pause(hard=True)
 
 label ts_intro_settings2:
     hide screen ts_widget_changer with dspr
@@ -82,7 +82,7 @@ label ts_intro_settings2:
     " {w=1.0}{nw}"
     $ TS.s(ts_null_transform)
     show screen ts_font_changer
-    $ TS.np()
+    $ renpy.pause(hard=True)
 
 label ts_intro_settings3:
     hide screen ts_font_changer with dspr
@@ -95,7 +95,7 @@ label ts_intro_settings3:
         "Поменяем":
             $ TS.s(ts_null_transform)
             show screen ts_font_changer
-            $ TS.np()
+            $ renpy.pause(hard=True)
         "Оставь этот":
             $ TS.s(ts_showscreens)
             brg "Хорошо."
@@ -106,7 +106,7 @@ label ts_intro_settings3:
 
 label ts_intro_settings4:
     show screen ts_control_help_suka
-    $ TS.np()
+    $ renpy.pause(hard=True)
     hide screen ts_control_help_suka with dspr
     $ TS.p(1)
     show screen ts_set_end_shit_blya

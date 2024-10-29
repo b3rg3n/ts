@@ -326,9 +326,9 @@ label ts_scenario_11:
     show hiroto 1a at t11
     "Позавтракав, я машинально перевожу взгляд на часы..."
     window hide
-    python:
-        _preferences.volumes['music'] = 0.0
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
+
     scene ts_kitchen_glitch_pizdets
 
     python:
@@ -341,9 +341,8 @@ label ts_scenario_11:
     show monika g2 at i11
     $ TS.p(1)
     stop sound
-    python:
-        _preferences.volumes['music'] = .45
-        _preferences.volumes['sfx'] = .65
+    $ ts_mm(.45)
+    $ ts_ss(.65)
     scene ts_kitchen
     show hiroto 1a at t11
     "...Ах да. Время здесь теперь течёт своим чередом, оно мне неподвластно."
@@ -361,9 +360,8 @@ label ts_scenario_11:
     $ persistent.ingame_pizda = True
     $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     window hide
-    python:
-        _preferences.volumes['music'] = 0.0
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
     scene ts_kitchen_glitch_pizdets
 
     python:
@@ -376,9 +374,8 @@ label ts_scenario_11:
     show monika g1loop at i11
     ts_ft "[gtextsuka][gtextsuka]"
     stop sound
-    python:
-        _preferences.volumes['music'] = .45
-        _preferences.volumes['sfx'] = .65
+    $ ts_mm(.45)
+    $ ts_ss(.65)
     $ TS.s(ts_null_transform)
     $ persistent.ingame_pizda = False
     scene ts_kitchen
@@ -396,9 +393,8 @@ label ts_scenario_11:
     m "Всё, пока, пап, люблю тебя!"
     hide hiroto
     $ persistent.ingame_pizda = True
-    python:
-        _preferences.volumes['music'] = 0.0
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
     play sound ts_smeh_pizdec
     $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     show ts_hiroto_zalagal at i11
@@ -408,10 +404,9 @@ label ts_scenario_11:
     $ TS.s(ts_null_transform)
     $ persistent.ingame_pizda = False
     hide ts_hiroto_zalagal
-    python:
-        _preferences.volumes['music'] = .45
-        _preferences.volumes['sfx'] = .65
-        _history_list = []
+    $ ts_mm(.45)
+    $ ts_ss(.65)
+    $ ts_hlclear()
     show hiroto 2g at f11
     ts_ft "И я тебя люблю."
     show hiroto 1f at t11
@@ -1169,9 +1164,8 @@ label ts_scenario_11:
     $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.ingame_pizda = True
-    python:
-        _preferences.volumes['music'] = 0.0
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
     play sound_loop ts_glitch_music12
     play sound2 ts_smeh_pizdec
 
@@ -1207,9 +1201,8 @@ label ts_scenario_11:
     $ TS.s(ts_null_transform)
 
     $ persistent.ingame_pizda = False
-    python:
-        _preferences.volumes['music'] = .45
-        _preferences.volumes['sfx'] = .65
+    $ ts_mm(.45)
+    $ ts_ss(.65)
 
     show yuri 1j at f31
     show sayori 2a at t32
@@ -2106,9 +2099,8 @@ label poemend_abrupt:
     em "Эгоистичная. Двуличная. Мразь."
     "Не желая больше терпеть упрёков Аки, я просто ухожу домой в слезах."
     em "От меня всё равно не скроешься!"
-    python:
-        _preferences.volumes['music'] = 1.0
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_mm(1.0)
+    $ ts_ss(1.0)
     play sound_loop ts_bzdr_distortion
 
     $ TS.s(ts_hidescreens)

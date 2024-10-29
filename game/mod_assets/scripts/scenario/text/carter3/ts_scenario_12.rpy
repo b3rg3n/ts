@@ -256,8 +256,7 @@ label ts_scenario_12:
     with memglitch
     stop sound
     if chess_tutor == True:
-        python:
-            _preferences.volumes['music'] = 0.0
+        $ ts_mm(0.0)
         play sound psy_fast_3
         scene black with memglitchbolee
         stop sound
@@ -325,8 +324,7 @@ label ts_scenario_12:
         scene ts_bedroom
         with memglitchbolee
         stop sound
-        python:
-            _preferences.volumes['music'] = .65
+        $ ts_mm(.65)
 
     show monika 2bh at t41
     "Шоу начинается..."
@@ -846,9 +844,8 @@ label ts_scenario_12:
 
     $ persistent.ingame_pizda = True
 
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = .0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
 
     play sound2 ts_smeh_pizdec
 
@@ -924,9 +921,8 @@ label ts_scenario_12:
     $ TS.p(0.25)
     play sound fall
     $ TS.p(0.25)
-    python:
-        _preferences.volumes['sfx'] = .65
-        _preferences.volumes['music'] = .45
+    $ ts_mm(.45)
+    $ ts_ss(.65)
     show sayori 4p at h32
     show natsuki scream at h33
     $ TS.s(ts_showscreens_fast)
@@ -1612,8 +1608,7 @@ label ts_scenario_12:
     m "П-подожди! А к-как же{w=1}{nw}"
     $ persistent.ingame_pizda = True
 
-    python:
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_ss(1.0)
 
     play sound2 ts_smeh_pizdec
 
@@ -1726,9 +1721,8 @@ label ts_scenario_12:
 
     $ persistent.ingame_pizda = False
 
-    python:
-        _preferences.volumes['sfx'] = .65
-        _preferences.volumes['music'] = .45
+    $ ts_mm(.45)
+    $ ts_ss(.65)
 
     play sound nfy
     if _preferences.language == "english":
@@ -1850,8 +1844,7 @@ label ts_scenario_12:
     show ts_glaza_k with Dissolve(4)
     $ persistent.ingame_pizda = True
 
-    python:
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_ss(1.0)
 
     $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     show black zorder 5 at ts_black_glitch

@@ -155,9 +155,10 @@ label ts_scenario_10:
     $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.ingame_pizda = True
-    python:
-        _preferences.volumes['music'] = 0.0
-        _preferences.volumes['sfx'] = 1.0
+
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
+
     play sound ts_glitch_music1
     play sound2 ts_smeh_pizdec
     scene ts_kitchen_psyhodelic_pizdec_glitch
@@ -176,9 +177,8 @@ label ts_scenario_10:
     stop sound
     stop sound2
     scene ts_kitchen
-    python:
-        _preferences.volumes['music'] = .45
-        _preferences.volumes['sfx'] = .65
+    $ ts_mm(.45)
+    $ ts_ss(.65)
     show hiroto 1t at f11
     ts_ft "Говорю, просто долго встать не мог."
     show hiroto 1s at t11
@@ -190,9 +190,8 @@ label ts_scenario_10:
     $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.ingame_pizda = True
-    python:
-        _preferences.volumes['music'] = 0.0
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
     play sound ts_glitch_music5
     play sound2 ts_smeh_pizdec
     scene ts_kitchen_psyhodelic_pizdec_glitch
@@ -210,9 +209,8 @@ label ts_scenario_10:
     stop sound
     stop sound2
     scene ts_kitchen
-    python:
-        _preferences.volumes['music'] = .45
-        _preferences.volumes['sfx'] = .65
+    $ ts_mm(.45)
+    $ ts_ss(.65)
     show hiroto 1b at f11
     ts_ft "Я говорю, ладно уж, с одного раза хуже не сделается."
     show hiroto 1a at t11
@@ -234,9 +232,8 @@ label ts_scenario_10:
     $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
     $ persistent.ingame_pizda = True
-    python:
-        _preferences.volumes['music'] = 0.0
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
     play sound ts_glitch_music2
     play sound2 ts_smeh_pizdec
     scene ts_kitchen_psyhodelic_pizdec_glitch
@@ -263,10 +260,10 @@ label ts_scenario_10:
     stop sound
     stop sound2
     scene ts_kitchen
-    python:
-        _preferences.volumes['music'] = .45
-        _preferences.volumes['sfx'] = .65
-    
+
+    $ ts_mm(.45)
+    $ ts_ss(.65)
+
     play music ts_heaven fadein 1
     show hiroto 1b1 at t11
     "Видя моё крайне перепуганное лицо, папа и сам заволновался."
@@ -408,9 +405,8 @@ label ts_scenario_10:
 
     $ persistent.ingame_pizda = True
 
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = .0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
 
     play sound2 ts_smeh_pizdec
 
@@ -447,9 +443,8 @@ label ts_scenario_10:
 
     scene ts_closet
 
-    python:
-        _preferences.volumes['sfx'] = .65
-        _preferences.volumes['music'] = .45
+    $ ts_mm(.45)
+    $ ts_ss(.65)
 
     show natsuki 1j at t11
     play music ts_sh_true fadein 2
@@ -588,9 +583,8 @@ label ts_scenario_10:
 
     $ persistent.ingame_pizda = True
 
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = .0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
 
     play sound2 ts_smeh_pizdec
 
@@ -614,9 +608,8 @@ label ts_scenario_10:
     stop sound2
     $ TS.s(ts_null_transform)
 
-    python:
-        _preferences.volumes['sfx'] = .65
-        _preferences.volumes['music'] = .45
+    $ ts_mm(.45)
+    $ ts_ss(.65)
 
     play sound psy_fast_3
     scene n_cg1_bg
@@ -714,9 +707,8 @@ label ts_scenario_10:
     hide sayori
     hide natsuki
 
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = .0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
 
     scene ts_club_glitch_pizdets
 
@@ -731,9 +723,8 @@ label ts_scenario_10:
 
     stop sound
 
-    python:
-        _preferences.volumes['sfx'] = .65
-        _preferences.volumes['music'] = .45
+    $ ts_mm(.45)
+    $ ts_ss(.65)
 
     scene ts_club
     show dust1
@@ -773,9 +764,8 @@ label ts_scenario_10:
 
     $ persistent.ingame_pizda = True
 
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = .0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
 
     scene ts_club_glitch_pizdets:
         align(0.5, 0.5) zoom 1.0
@@ -814,9 +804,9 @@ label ts_scenario_10:
     $ persistent.ingame_pizda = False
 
     $ TS.s(ts_null_transform)
-    python:
-        _preferences.volumes['sfx'] = .65
-        _preferences.volumes['music'] = .45
+
+    $ ts_mm(.45)
+    $ ts_ss(.65)
 
     scene ts_club
     show dust1
@@ -850,7 +840,7 @@ label ts_scenario_10:
         truecenter
         alpha 0.5
         zoom 2.0 xalign 0.5 yalign 0.05
-        TS.p(0.5)
+        pause 0.5
         dizzy(1, 1.0)
     show overlay aw_memory_back_1 zorder 4
 
@@ -995,11 +985,9 @@ label ts_scenario_10:
         $ TS.m(StillAberate(25.0))
         $ TS.s(StillAberate(25.0))
     $ glitchhuetenblya = glitchtext(24)
-    python:
-        _preferences.volumes['music'] = 0.0
+    $ ts_mm(0.0)
     m "[glitchhuetenblya]{nw}"
-    python:
-        _preferences.volumes['music'] = .45
+    $ ts_mm(.45)
     $ TS.m(ts_null_transform)
     $ TS.s(ts_null_transform)
     show yuri 4c at s31
@@ -1169,9 +1157,8 @@ label ts_scenario_10:
     $ persistent.ingame_pizda = False
     m "До завтра, девочки!"
 
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = .0
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
 
     play sound2 ts_glitch_music4
 
@@ -1203,9 +1190,8 @@ label ts_scenario_10:
     show natsuki 1y at h33
     with memglitchbolee
     stop sound
-    python:
-        _preferences.volumes['sfx'] = .65
-        _preferences.volumes['music'] = .45
+    $ ts_mm(.45)
+    $ ts_ss(.65)
     if _preferences.language == "english":
         $ m_name = "Everyone"
     else:
@@ -1241,15 +1227,13 @@ label ts_scenario_10:
     "Наверное, это потому, что она единственная из всех троих, чей корень зла – это не она сама."
     window hide
     scene ts_club_glitch_pizdets
-    python:
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_ss(1.0)
     play sound scream_pereponkam_pizda
     show monika g1 at t1111
     $ TS.p(1.25)
     stop sound
     scene ts_club
-    python:
-        _preferences.volumes['sfx'] = .65
+    $ ts_ss(.65)
     show monika 2k at f11
     $ TS.s(ts_showscreens_fast)
     em "Да как будто ты сама мисс Перфекционизм, и у тебя никаких таких проблем не существует!"
@@ -1384,8 +1368,7 @@ label ts_scenario_10:
 
     play sound_loop ts_glitch_music6
     $ persistent.ingame_pizda = True
-    python:
-        _preferences.volumes['sfx'] = 1.0
+    $ ts_ss(1.0)
     show ts_living_room_night zorder 4 at ts_coridor_glitch
     show black zorder 5 at ts_black_glitch
     show blackout_exh zorder 5
@@ -1403,9 +1386,8 @@ label ts_scenario_10:
     stop sound_loop
     $ persistent.ingame_pizda = False
     scene ts_living_room_night
-    python:
-        _preferences.volumes['sfx'] = 0.65
-        _history_list = []
+    $ ts_ss(.65)
+    $ ts_hlclear()
 
     play music ts_top_sound_blya fadein 2
     show hiroto 1b at f11
@@ -1458,9 +1440,9 @@ label ts_scenario_10:
     extend 1b "Моника, ты будешь {w=0.01}{nw}"
     play sound ts_glitch_music7
     $ persistent.ingame_pizda = True
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = 0.0
+
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
 
     show ts_living_room_night zorder 4 at ts_coridor_glitch
     show black zorder 5 at ts_black_glitch
@@ -1478,9 +1460,9 @@ label ts_scenario_10:
     scene ts_living_room_night
     stop sound
     $ persistent.ingame_pizda = False
-    python:
-        _preferences.volumes['sfx'] = 0.65
-        _preferences.volumes['music'] = 0.45
+
+    $ ts_mm(.45)
+    $ ts_ss(.65)
 
     show hiroto 1b at f11
     stop music fadeout 5
@@ -1507,9 +1489,9 @@ label ts_scenario_10:
 
     play sound ts_glitch_music11
     $ persistent.ingame_pizda = True
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = 0.0
+
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
 
     show ts_kitchen zorder 4 at ts_coridor_glitch
     show black zorder 5 at ts_black_glitch
@@ -1526,9 +1508,8 @@ label ts_scenario_10:
     stop sound
 
     $ persistent.ingame_pizda = False
-    python:
-        _preferences.volumes['sfx'] = .65
-        _preferences.volumes['music'] = .45
+    $ ts_mm(.45)
+    $ ts_ss(.65)
     $ TS.s(ts_null_transform)
 
     scene ts_kitchen
@@ -1717,8 +1698,8 @@ label ts_scenario_10:
     window hide
     play sound nfy
     show zatemnenie
-    python:
-        _preferences.volumes['music'] = 0.0
+
+    $ ts_mm(0.0)
 
     $ TS.s(ts_showscreens)
     show screen c10_text_blya
@@ -1746,8 +1727,9 @@ label ts_scenario_10:
     hide monika
     "«Что?!»"
     hide zatemnenie with linearblur
-    python:
-        _preferences.volumes['music'] = .46
+
+    $ ts_mm(.46)
+
     show minami 3bs at f31
     show hiroto 2p at t33
     play sound ssikanul
@@ -1775,9 +1757,10 @@ label ts_scenario_10:
     show minami 2bm at t31
     $ persistent.ingame_pizda = False
     m "Хорошо, мам. Спокойной ночи."
-    python:
-        _preferences.volumes['music'] = 0.0
-        _preferences.volumes['sfx'] = 1.0
+
+    $ ts_mm(0.0)
+    $ ts_ss(1.0)
+
     $ persistent.ingame_pizda = True
     play sound scream_pereponkam_pizda
     show n_cg1b1337
@@ -1786,10 +1769,11 @@ label ts_scenario_10:
     stop sound
     $ persistent.ingame_pizda = False
     hide n_cg1b1337
-    python:
-        _preferences.volumes['music'] = .45
-        _preferences.volumes['sfx'] = .65
-        _history_list = []
+
+
+    $ ts_mm(.45)
+    $ ts_ss(.65)
+    $ ts_hlclear()
 
     show minami 3bk at f31
     ts_mt "Спокойной ночи, солнышко. Люблю тебя.{fast}"

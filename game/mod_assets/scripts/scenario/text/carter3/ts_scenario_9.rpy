@@ -114,8 +114,7 @@ label ts_scenario_9:
     $ persistent.ingame_pizda = False
     s 2px "Забыла уже? Сегодня{w=0.4}{nw}"
 
-    python:
-        _preferences.volumes['music'] = .0
+    $ ts_mm(0.0)
 
     $ gtextsuka = glitchtext(35)
 
@@ -141,8 +140,7 @@ label ts_scenario_9:
 
     $ TS.s(ts_null_transform)
 
-    python:
-        _preferences.volumes['music'] = .65
+    $ ts_mm(.65)
 
     show sayori 2pa at t11
     m "Ч-ч-что?"
@@ -151,8 +149,7 @@ label ts_scenario_9:
 
     $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
-    python:
-        _preferences.volumes['music'] = .0
+    $ ts_mm(0.0)
 
     play sound slender
     $ persistent.ingame_pizda = True
@@ -174,8 +171,7 @@ label ts_scenario_9:
 
     $ TS.s(ts_null_transform)
 
-    python:
-        _preferences.volumes['music'] = .65
+    $ ts_mm(.65)
 
     show sayori 2pa at t11
     m "Н-не понимаю..."
@@ -196,10 +192,9 @@ label ts_scenario_9:
     show sayori 4pj at f11
     $ persistent.ingame_pizda = False
     s "Что ты всё глупые вопросы задаёшь? Вино мы пили вчера, после чего мы тебя полумёртвую домой тащили!"
-#
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = .0
+
+    $ ts_ss(1.0)
+    $ ts_mm(.65)
 
     play sound2 ts_glitch_music9
 
@@ -222,8 +217,8 @@ label ts_scenario_9:
     $ TS.s(ts_null_transform)
 
     stop sound2
-    python:
-        _preferences.volumes['music'] = .65
+
+    $ ts_mm(.65)
 
     $ persistent.ingame_pizda = False
     scene ts_sayori_bedroom
@@ -255,9 +250,8 @@ label ts_scenario_9:
 
     $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
 
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = .0
+    $ ts_ss(1.0)
+    $ ts_mm(.65)
 
     play sound crack
     play sound2 pizdec_sound
@@ -283,8 +277,7 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    python:
-        _preferences.volumes['music'] = .65
+    $ ts_mm(.65)
 
     scene ts_residential
     show sayori 2bc at f11
@@ -407,8 +400,7 @@ label ts_scenario_9:
     m "Папа! Почему все ведут себя...{w=0.44}{nw}"
     "Однако прежде чем я успеваю рассказать хоть что-либо, он просто весело сказал."
 
-    python:
-        _preferences.volumes['music'] = .0
+    $ ts_mm(0.0)
 
     $ gtextsuka = glitchtext(15)
 
@@ -434,8 +426,7 @@ label ts_scenario_9:
 
     $ TS.s(ts_null_transform)
 
-    python:
-        _preferences.volumes['music'] = .65
+    $ ts_mm(.65)
 
     show hiroto 1a at t11
     ts_ft "Ну привет, гулёна!"
@@ -477,8 +468,7 @@ label ts_scenario_9:
     show hiroto 1z at f11
     ts_ft "Ну хорошо, хорошо. Сегодня{w=0.1}{nw}"
 
-    python:
-        _preferences.volumes['music'] = .0
+    $ ts_mm(0.0)
 
     $ gtextsuka = glitchtext(35)
 
@@ -504,8 +494,7 @@ label ts_scenario_9:
 
     $ TS.s(ts_null_transform)
 
-    python:
-        _preferences.volumes['music'] = .65
+    $ ts_mm(.65)
 
     scene ts_kitchen
     show hiroto 1s at t11

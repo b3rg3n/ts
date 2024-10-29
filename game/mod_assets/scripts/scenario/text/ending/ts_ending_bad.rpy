@@ -386,7 +386,7 @@ label ts_bad_ending_blya:
         truecenter
         alpha 0.5
         zoom 2.0 xalign 0.5 yalign 0.05
-        TS.p(0.5)
+        pause 0.5
         dizzy(1, 1.0)
     with flash
     $ TS.s(ts_showscreens_fast)

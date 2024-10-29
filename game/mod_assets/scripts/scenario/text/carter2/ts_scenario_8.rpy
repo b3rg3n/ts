@@ -130,8 +130,7 @@ label ts_scenario_8:
     if unluck_ball >= 4:
         show monika 2bh at aki_uhod
         stop music
-        python:
-            _preferences.volumes['sfx'] = 1.0
+        $ ts_ss(1.0)
         play sound lite_scrimak
         show hiroto 1h at ln11
         $ TS.s(vpunch)
@@ -1571,9 +1570,8 @@ label ts_carter8_posle_poems_suka:
     m "Теперь ты, Сайори. Ты у нас будешь... э-э-э..."
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
-    python:
-        _preferences.volumes['sfx'] = 1.0
-        _preferences.volumes['music'] = 0.0
+    $ ts_ss(1.0)
+    $ ts_mm(0.0)
     play sound ts_flashback
     $ TS.m(ts_blur_ahuenno1)
     with dissolve2
@@ -1589,8 +1587,7 @@ label ts_carter8_posle_poems_suka:
     "«А что, это хорошая идея...»"
     em "Конечно, это хорошая идея. Любая идея будет лучше твоей, мисс «девочки, я слишком бестолочь, чтобы сделать что-то стоящее, поэтому придумайте задание вместо меня»."
     "«Х-х-х...»"
-    python:
-        _preferences.volumes['music'] = .45
+    $ ts_mm(.45)
     play sound fb
     show yuri 1e at i31
     show sayori 2o at i32

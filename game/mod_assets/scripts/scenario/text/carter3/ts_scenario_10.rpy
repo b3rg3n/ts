@@ -170,7 +170,7 @@ label ts_scenario_10:
     #show hiroto 1s at t11
     m "Ч-что, п-прости?"
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     $ persistent.ingame_pizda = False
     stop sound
@@ -204,7 +204,7 @@ label ts_scenario_10:
     extend "убивать всех своих подруг и на тебя не похоже, но ты же это сделала. Чем я хуже?"
     #show hiroto 1r at t11
     m "Ч-ч-что?"
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     $ persistent.ingame_pizda = False
     stop sound
@@ -257,7 +257,7 @@ label ts_scenario_10:
 
     ts_ft "К гарниру в виде гречки хорошо бы подошли твои фаршированные глазные яблоки."
     ts_ft "Можно ещё твои запечёные уши, но это так, для следующего раза."
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     $ persistent.ingame_pizda = False
     stop sound
@@ -441,7 +441,7 @@ label ts_scenario_10:
     stop sound2
     stop sound
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     $ persistent.ingame_pizda = False
 
@@ -612,7 +612,7 @@ label ts_scenario_10:
     $ persistent.ingame_pizda = False
     stop sound
     stop sound2
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     python:
         _preferences.volumes['sfx'] = .65
@@ -813,7 +813,7 @@ label ts_scenario_10:
     stop sound2
     $ persistent.ingame_pizda = False
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     python:
         _preferences.volumes['sfx'] = .65
         _preferences.volumes['music'] = .45
@@ -856,7 +856,7 @@ label ts_scenario_10:
 
     extend "то, что она хотела нас всех убить самыми изощрёнными способами и даже не раскаяться в содеянном, {w=0.01}{nw}"
     extend "а тут ещё ты накручиваешь её."
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     $ persistent.ingame_pizda = False
 
     scene ts_club
@@ -954,8 +954,8 @@ label ts_scenario_10:
     show dust2
     show dust3
     show dust4
-    $ TS.m()
-    $ TS.s()
+    $ TS.m(ts_null_transform)
+    $ TS.s(ts_null_transform)
     with memglitch
     stop sound
     play music ts_s_stuff fadein 2
@@ -1000,8 +1000,8 @@ label ts_scenario_10:
     m "[glitchhuetenblya]{nw}"
     python:
         _preferences.volumes['music'] = .45
-    $ TS.m()
-    $ TS.s()
+    $ TS.m(ts_null_transform)
+    $ TS.s(ts_null_transform)
     show yuri 4c at s31
     show sayori 1e at s32
     show natsuki 1u at s33
@@ -1192,7 +1192,7 @@ label ts_scenario_10:
     stop sound
     stop sound2
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     $ persistent.ingame_pizda = False
 
@@ -1398,7 +1398,7 @@ label ts_scenario_10:
     $ gtextsuka = glitchtext(80)
     ts_ft "Здáрова [gtextsuka]. Как житие молодое{w=1.5}{nw}"
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     stop sound_loop
     $ persistent.ingame_pizda = False
@@ -1474,7 +1474,7 @@ label ts_scenario_10:
 
     show hiroto 1e zorder 6 at Glitch(_fps=1000.)
     m "Ч-что?"
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     scene ts_living_room_night
     stop sound
     $ persistent.ingame_pizda = False
@@ -1529,7 +1529,7 @@ label ts_scenario_10:
     python:
         _preferences.volumes['sfx'] = .65
         _preferences.volumes['music'] = .45
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     scene ts_kitchen
     show hiroto 1a at i11

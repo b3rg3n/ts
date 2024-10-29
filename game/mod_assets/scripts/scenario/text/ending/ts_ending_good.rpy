@@ -861,7 +861,7 @@ label ts_good_ending_blya:
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     window hide
 
     jump good_credits_ts_label

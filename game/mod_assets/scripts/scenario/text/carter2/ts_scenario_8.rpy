@@ -761,7 +761,7 @@ label ts_scenario_8:
     hide screen poem
     hide poem_dismiss
 
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -947,7 +947,7 @@ label poemresponses2suka:
             hide screen poem
             hide poem_dismiss
 
-            $ TS.m()
+            $ TS.m(ts_null_transform)
             with dissolve
 
             $ TS.s(ts_showscreens)
@@ -1246,7 +1246,7 @@ label poemresponses2suka:
             hide screen poem
             hide poem_dismiss
 
-            $ TS.m()
+            $ TS.m(ts_null_transform)
             with dissolve
 
             $ TS.s(ts_showscreens)
@@ -1425,7 +1425,7 @@ label poemresponses2suka:
             hide screen poem
             hide poem_dismiss
 
-            $ TS.m()
+            $ TS.m(ts_null_transform)
             with dissolve
 
             $ TS.s(ts_showscreens)
@@ -1595,7 +1595,7 @@ label ts_carter8_posle_poems_suka:
     show yuri 1e at i31
     show sayori 2o at i32
     show natsuki 1a at i33
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     with flash
     $ TS.s(ts_showscreens)
 
@@ -1646,7 +1646,7 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1705,7 +1705,7 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1755,7 +1755,7 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -1804,7 +1804,7 @@ label ts_carter8_posle_poems_suka:
     hide screen poem
     hide poem_dismiss
 
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     with dissolve
 
     $ TS.s(ts_showscreens)
@@ -2152,7 +2152,7 @@ label ts_carter8_posle_poems_suka:
     nvlbazar "{font=[prologue_font]}Хорошее время было, беззаботное. До всех этих клубов, стресса и всего сопутствующего."
     $ TS.s(ts_hidescreens_nvl)
     nvlbazar " {w=1.0}{nw}"
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     with dissolve2
     stop music fadeout 2
     $ TS.s(ts_showscreens)
@@ -2267,8 +2267,8 @@ label ts_carter8_posle_poems_suka:
         $ TS.s(Static(0.7))
     em 4bi "Потому что я ненастоящая. Просто плод твоего воображения."
     hide monika
-    $ TS.m()
-    $ TS.s()
+    $ TS.m(ts_null_transform)
+    $ TS.s(ts_null_transform)
     play music ts_roae fadein 2
     $ TS.s(ts_hidescreens)
     " {w=1.0}{nw}"

@@ -76,7 +76,7 @@ label ts_scenario_5:
 
     $ TS.p(0.5)
 
-    $ TS.m()
+    $ TS.m(ts_null_transform)
 
     $ TS.s(ts_showscreens)
 

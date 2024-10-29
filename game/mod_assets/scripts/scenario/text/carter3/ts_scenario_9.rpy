@@ -139,7 +139,7 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     python:
         _preferences.volumes['music'] = .65
@@ -172,7 +172,7 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     python:
         _preferences.volumes['music'] = .65
@@ -219,7 +219,7 @@ label ts_scenario_9:
     y "Я сказала [gtextsuka] сидеть на [gtextsuka1]!"
     y "[gtextsuka] доведёт тебя до [gtextsuka1]."
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     stop sound2
     python:
@@ -279,7 +279,7 @@ label ts_scenario_9:
 
     stop sound2
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     $ persistent.ingame_pizda = False
 
@@ -432,7 +432,7 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     python:
         _preferences.volumes['music'] = .65
@@ -502,7 +502,7 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     python:
         _preferences.volumes['music'] = .65
@@ -583,8 +583,8 @@ label ts_scenario_9:
 
     $ persistent.ingame_pizda = False
 
-    $ TS.m()
-    $ TS.s()
+    $ TS.m(ts_null_transform)
+    $ TS.s(ts_null_transform)
 
     stop music
     "Кажется, меня сейчас стошнит..."

@@ -116,7 +116,7 @@ label ts_scenario_11:
     ts_ft "Привет, [gtextsuka][gtextsuka]{w=0.7}{nw}"
     hide ts_hiroto_psyhodelic_pizdoc_eye
     $ persistent.ingame_pizda = False
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     show hiroto 1b at f11
     ts_ft "Доброе утро, Моника!{fast}"
     show hiroto 1a at t11
@@ -174,7 +174,7 @@ label ts_scenario_11:
     ts_ft "{size=+6}Мне без разницы, главное, чтобы там были твои GLAZA.{/size}"
     m "{size=+6}Что, прости?{/size}"
     scene ts_kitchen
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     $ persistent.ingame_pizda = False
     ts_ft "{size=+6}Я говорю, да как обычно, с колбаской и сыром.{/size}"
     m "{size=+6}Хорошо.{/size}"
@@ -266,7 +266,7 @@ label ts_scenario_11:
     show ts_hiroto_zalagal at f11
     ts_ft "[gtextsuka][gtextsuka][gtextsuka][gtextsuka]{w=0.2}{nw}"
     hide ts_hiroto_zalagal
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     $ persistent.ingame_pizda = False
     show hiroto 1b at f11
     ts_ft "{size=+4}Иду-иду!{/size}{fast}"
@@ -379,7 +379,7 @@ label ts_scenario_11:
     python:
         _preferences.volumes['music'] = .45
         _preferences.volumes['sfx'] = .65
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     $ persistent.ingame_pizda = False
     scene ts_kitchen
     show hiroto 1s at i11
@@ -403,9 +403,9 @@ label ts_scenario_11:
     $ TS.s(ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.5,0.0), ts_super_shake))
     show ts_hiroto_zalagal at i11
     ts_ft "Я хочу четвертовать тебя, распотрошить тебя, выколоть тебе глаза и съесть твои конечности{w=0.5}{nw}"
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     stop sound
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     $ persistent.ingame_pizda = False
     hide ts_hiroto_zalagal
     python:
@@ -1204,7 +1204,7 @@ label ts_scenario_11:
 
     scene ts_club
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     $ persistent.ingame_pizda = False
     python:
@@ -1344,7 +1344,7 @@ label poemresponsesuka_loop:
                 $ TS.p(4)
                 $ TS.m(ts_blur_transform_suka(0, 2, 9))
                 play sound wakeup
-            $ TS.m()
+            $ TS.m(ts_null_transform)
             play sound ssikanul
             show sayori 3j at f11
             s "Моника, ты вообще меня слышишь?!"
@@ -1394,7 +1394,7 @@ label poemresponsesuka_loop:
             stop music
 
             scene ts_club
-            $ TS.s()
+            $ TS.s(ts_null_transform)
             $ persistent.ingame_pizda = False
 
             show sayori 4r at f11
@@ -1642,8 +1642,8 @@ label poemresponsesuka_loop:
                 jump poemend_abrupt
             elif poemsread == 3:
                 $ persistent.ingame_pizda = False
-                $ TS.s()
-                $ TS.m()
+                $ TS.s(ts_null_transform)
+                $ TS.m(ts_null_transform)
                 stop music
                 stop sound
                 scene ts_club
@@ -1773,8 +1773,8 @@ label poemresponsesuka_loop:
             m "В с-смысле? О ч-чём ты говоришь?"
             $ persistent.ingame_pizda = False
             stop music
-            $ TS.s()
-            $ TS.m()
+            $ TS.s(ts_null_transform)
+            $ TS.m(ts_null_transform)
             scene ts_club
             show natsuki 1k at f11
             n "Ну, ты же на прошлое собрание очень похожий стих писала, тоже про какой-то шум, какофонию и прочее подобное."
@@ -1940,8 +1940,8 @@ label poemresponsesuka_loop:
 
             $ persistent.ingame_pizda = False
 
-            $ TS.m()
-            $ TS.s()
+            $ TS.m(ts_null_transform)
+            $ TS.s(ts_null_transform)
 
             stop music
             scene ts_club
@@ -2084,7 +2084,7 @@ label poemresponsesuka_loop:
             
 label poemend_abrupt:
     $ persistent.ingame_pizda = False
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     $ unluck7 = True
     $ unluck_ball += 1
     show yuri 2y6 at t11
@@ -2156,7 +2156,7 @@ label poemend_abrupt:
     "Я бегу так быстро, как только могу, только чтобы Аки побыстрее заткнулась."
     "Через пять минут я уже прибежала домой."
     stop sound2 fadeout 1
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     scene ts_bedroom
     show monika 2i at f11
     em "Ты действительно думаешь, что если ты прибежишь домой, то скроешься от меня?"
@@ -2290,8 +2290,8 @@ label poemend_abrupt:
     "Однако я выговорилась, а это всё, что важно."
     "Я победно перечитываю стихотворение."
     scene black
-    $ TS.m()
-    $ TS.s()
+    $ TS.m(ts_null_transform)
+    $ TS.s(ts_null_transform)
     window hide
     $ persistent.ingame_pizda = False
     $ TS.b()
@@ -2380,7 +2380,7 @@ label poemend_abrupt:
     $ TS.b()
     pause
     stop music
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     play sound winerrorsound
 
     if renpy.android:
@@ -2605,8 +2605,8 @@ label poemend_normal:
     "Я победно перечитываю стихотворение."
 
     scene black
-    $ TS.m()
-    $ TS.s()
+    $ TS.m(ts_null_transform)
+    $ TS.s(ts_null_transform)
     window hide
     $ persistent.ingame_pizda = False
     $ TS.b()
@@ -2641,7 +2641,7 @@ label poemend_normal:
     $ TS.b()
     pause
     stop music
-    $ TS.m()
+    $ TS.m(ts_null_transform)
     play sound winerrorsound
     if renpy.android:
         if _preferences.language == "english":

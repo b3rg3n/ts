@@ -614,7 +614,7 @@ label ts_bad_ending_blya:
     stop sound
     scene black
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     window hide
 
     jump bad_credits_ts_label

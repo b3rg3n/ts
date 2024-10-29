@@ -95,7 +95,7 @@ label ts_scenario_12:
         $ TS.m(ts_trns_dream)
         play sound ts_glitch5
         $ TS.p(1)
-        $ TS.m()
+        $ TS.m(ts_null_transform)
         stop sound
         $ TS.s(ts_showscreens_fast)
     extend "Мне всё равно в магазин также надо, как раз по пути!"
@@ -879,7 +879,7 @@ label ts_scenario_12:
     stop sound2
     stop sound
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     $ persistent.ingame_pizda = False
 
@@ -1146,8 +1146,8 @@ label ts_scenario_12:
     stop music
     $ persistent.ingame_pizda = False
     hide ts_psihuet3
-    $ TS.s()
-    $ TS.m()
+    $ TS.s(ts_null_transform)
+    $ TS.m(ts_null_transform)
     show daisuke 2bf at f11
     misc "Мисс Ида, вы мешаете мне работать."
     show daisuke 2bh at t11
@@ -1722,7 +1722,7 @@ label ts_scenario_12:
     stop sound2
     stop music
 
-    $ TS.s()
+    $ TS.s(ts_null_transform)
 
     $ persistent.ingame_pizda = False
 
@@ -1868,7 +1868,7 @@ label ts_scenario_12:
     play sound sfx_body_bump
     scene black
     $ persistent.ingame_pizda = False
-    $ TS.s()
+    $ TS.s(ts_null_transform)
     $ TS.p(2)
     $ TS.b()
     if unluck_ball >= 5:

@@ -31,7 +31,7 @@ init python:
     "ts_sayori_house", "ts_sky_fon", "ts_hotel_rec", "ts_office",
     "ts_roof", "ts_kitchen_night", "ts_waiting_room",
     "ts_hospital_corridor", "ts_hospital_room", "ts_emergency_room",
-    "ts_darkbed", "ts_entrance_day", "ts_entrance_night", "ts_entrance_nolight", "ts_gost",
+    "ts_darkbed", "ts_entrance_day", "ts_gost",
     "ts_gost_night", "ts_gost_sunset", "ts_house", "ts_house_monika_evening",
     "ts_kitchen", "ts_l5", "ts_l5old", "ts_light_off_corridor",
     "ts_living_room_late", "ts_living_room_night",

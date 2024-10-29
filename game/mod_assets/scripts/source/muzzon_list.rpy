@@ -424,12 +424,6 @@ init python:
         art=ts_mr + "hueta.webp"
     )
 
-    music_room.add(
-        name=_("Final Scene Soft"),
-        artist="Moe Era OST",
-        path=ts_muzzon + "menu_ost/zastavka/ts_soft.ogg",
-        art=ts_mr + "hueta.webp"
-    )
 
     music_room.add(
         name=_("Outofit"),
@@ -449,21 +443,21 @@ init python:
     music_room.add(
         name=_("Anxiety"),
         artist="Andreas Rönnberg",
-        path=ts_muzzon + "menu_ost/zastavka/ts_anxiety.ogg",
+        path=ts_muzzon + "ts_anxiety.ogg",
         art=ts_mr + "cof.webp"
     )
 
     music_room.add(
         name=_("Train Station"),
         artist="Andreas Rönnberg",
-        path=ts_muzzon + "menu_ost/zastavka/ts_train_station.ogg",
+        path=ts_muzzon + "ts_train_station.ogg",
         art=ts_mr + "cof.webp"
     )
 
     music_room.add(
         name=_("Never"),
         artist="Andreas Rönnberg",
-        path=ts_muzzon + "menu_ost/zastavka/ts_never.ogg",
+        path=ts_muzzon + "ts_never.ogg",
         art=ts_mr + "cof.webp"
     )
 
@@ -542,13 +536,6 @@ init python:
         name=_("It Always Happens No Matter What"),
         artist="Yabai The Maid",
         path=ts_muzzon + "menu_ost/zastavka/ts_new_zastavka_ost_suka.ogg",
-        art=ts_mr + "ytm.webp"
-    )
-
-    music_room.add(
-        name=_("Clockwork Doll"),
-        artist="Yabai The Maid",
-        path=ts_muzzon + "ts_ytm_cd.ogg",
         art=ts_mr + "ytm.webp"
     )
 
@@ -729,13 +716,6 @@ init python:
     )
 
     music_room.add(
-        name=_("Epilogue Theme"),
-        artist="Crysis 3 OST",
-        path=ts_muzzon + "ts_crysis_epilogue.ogg",
-        art=ts_mr + "crysis.webp"
-    )
-
-    music_room.add(
         name=_("He Films The Clouds Pt. 2"),
         artist="Maybeshewill",
         path=ts_muzzon + "ts_hftc.ogg",
@@ -793,7 +773,6 @@ init:
     $ music_list_ts["Money Flip - Tears In Rain"] = ts_muzzon + "menu_ost/ts_tir.ogg"
 ###ИЗ ЗАСТАВОК
     $ music_list_ts["Kenton Gilchrist - Gritty down tempo rock"] = ts_muzzon + "menu_ost/zastavka/ts_mosh.ogg"
-    $ music_list_ts["Moe Era OST - Final Scene Soft"] = ts_muzzon + "menu_ost/zastavka/ts_soft.ogg"
     $ music_list_ts["wnuk2380 - Outofit"] = ts_muzzon + "menu_ost/zastavka/ts_wnuk.ogg"
     $ music_list_ts["Mudasheep - One Way or Another"] = ts_muzzon + "menu_ost/zastavka/ts_bad_credits1.ogg"
     $ music_list_ts["Black Lakes - Spit on Paradise!"] = ts_muzzon + "menu_ost/zastavka/ts_bad_credits.ogg"
@@ -877,7 +856,6 @@ init:
     $ music_list_ts["Placebo - Song to say goodbye (instrumental)"] = ts_muzzon + "ts_pb_stsg.ogg"
     $ music_list_ts["Andreas Rönnberg - Heaven"] = ts_muzzon + "ts_heaven.ogg"
     $ music_list_ts["Arseny St - Solution"] = ts_muzzon + "ts_solution.ogg"
-    $ music_list_ts["Yabai The Maid - Clockwork Doll"] = ts_muzzon + "ts_ytm_cd.ogg"
     $ music_list_ts["Akira Yamaoka - True"] = ts_muzzon + "ts_sh_true.ogg"
     $ music_list_ts["Awolnation - Holy Roller (Instrumental)"] = ts_muzzon + "ts_holly_roller.ogg"
     $ music_list_ts["Keiko Matsui - Bridge over stars"] = ts_muzzon + "ts_s_stuff.ogg"
@@ -897,7 +875,6 @@ init:
     $ music_list_ts["Mos Elian - Gone"] = ts_muzzon + "ts_gone.ogg"
     $ music_list_ts["Yakui The Maid - Calamity"] = ts_muzzon + "ts_ytm_c.ogg"
     $ music_list_ts["Crysis 3 OST - Beta Menu Theme"] = ts_muzzon + "ts_crysis_beta.ogg"
-    $ music_list_ts["Crysis 3 OST - Epilogue Theme"] = ts_muzzon + "ts_crysis_epilogue.ogg"
     $ music_list_ts["God Is An Astronaut - All Is Violent, All Is Bright"] = ts_muzzon + "ts_aiv.ogg"
     $ music_list_ts["Maybeshewill - He Films The Clouds Pt. 2"] = ts_muzzon + "ts_hftc.ogg"
     $ music_list_ts["Maybeshewill - He Films The Clouds Pt. 2 "] = ts_muzzon + "ts_hftc1.ogg"

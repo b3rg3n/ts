@@ -389,7 +389,7 @@ init -501 screen game_menu_selector:
             activate_sound button_error
             hover_sound button_menu
 
-        text translation_new["ts_menu_set19"] + "{font=[cit_font]} {image=gametime}{/font}" style "ebanko_ingame" size 35 text_align 0.5 yalign 0.95 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.95,0.0), ts_super_shake)
+        text translation_new["ts_menu_set19"] + "{font=[cit_font]} {image=gametime} | {image=mytime}{/font}" style "ebanko_ingame" size 35 text_align 0.5 yalign 0.95 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.95,0.0), ts_super_shake)
 
         if not track_checker_blya == "empty":
             text "{font=[cit_font]}{size=+25}[track_checker_blya]{/font}" xalign 0.5 yalign 0.05 at ts_shake(ts_bg_zoom_e(1.0, 1.0, 0.0, 0.5, 0.5, 0.5, 0.5), ts_xypos(0.5,0.1,0.0), ts_super_shake)
@@ -420,7 +420,7 @@ init -501 screen game_menu_selector:
             activate_sound start_sound_suka
             hover_sound button_menu
 
-        text translation_new["ts_menu_set18"] + "{font=[cit_font]} {image=gametime}{/font}" style "ebanko_ingame" size 35 text_align 0.5 yalign 0.95 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
+        text translation_new["ts_menu_set18"] + "{font=[cit_font]} {image=gametime} | {image=mytime}{/font}" style "ebanko_ingame" size 35 text_align 0.5 yalign 0.95 xalign 0.5 color "#FFFFFF" antialias True kerning 2 at ts_preferences_anim
 
         if not track_checker_blya == "empty":
             text "{font=[cit_font]}{size=+25}[track_checker_blya]{/font}" xalign 0.5 yalign 0.05 at ts_preferences_anim

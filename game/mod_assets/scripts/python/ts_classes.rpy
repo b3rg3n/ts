@@ -30,3 +30,4 @@ init python:
     
     def ts_hlclear():
         _history_list = []
+    

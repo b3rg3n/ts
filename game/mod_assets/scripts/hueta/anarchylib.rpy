@@ -76,6 +76,10 @@ init -1199 python:
         img = Text("{size=35}{font=[cit_font]}%0*d:%0*d:%0*d{/font}{/size}" % (2, hours, 2, minutes, 2, seconds))
         return img, .1
 
+    def show_mytime(st, at):
+        img = Text("{size=35}{font=[cit_font]}[datetime.datetime.now()]{/font}{/size}")
+        return img, .1
+
 init python:
 # РЕГЕСТРИРУЕМ ДОП КАНАЛЫ
 # ЛИШНИМ НЕ БУДЕТ
@@ -133,6 +137,7 @@ init:
         $ user = os.environ.get('username') # ДЕДОВСКИЙ МЕТОД ГОПА ЮЗЕРА НА ВИНДЕ
 
     image gametime = DynamicDisplayable(show_gametime) # ВЫВОД ЗАТРАЧЕННОГО ВРЕМЕНИ - ЮЗАТЬ ТАК = [gametime]
+    image mytime = DynamicDisplayable(show_mytime) # ВЫВОД РЕАЛЬНОГО ВРЕМЕНИ - ЮЗАТЬ ТАК = [mytime]
 
 ###ТРАНЗИТЫ (ИЗ НАЗВАНИЙ ПОНЯТНО, ЧТО ЭТО ЗА ТРАНЗИТЫ БЛЯ)
     define flash = Fade(.25, 0, .75, color="#fff")

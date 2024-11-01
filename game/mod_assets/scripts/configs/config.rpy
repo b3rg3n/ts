@@ -5,7 +5,7 @@
 python early:
     config.allow_duplicate_labels = True
 
-define config.developer = False # РЕЖИМ РАЗРАБОТЧИКА БЕЗ СДК
+define config.developer = True # РЕЖИМ РАЗРАБОТЧИКА БЕЗ СДК
 define config.version = "1.2"
 define ts_version = "30.10.2024"
 

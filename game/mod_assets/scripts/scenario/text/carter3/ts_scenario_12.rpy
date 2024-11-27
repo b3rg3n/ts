@@ -1517,7 +1517,10 @@ label ts_scenario_12:
     show ts_knife_suicide at ts_showscreens_fast
     $ TS.p(0.25)
     play sound fb
-    scene ts_menu_move_anim_bad_end
+    if _preferences.language == "english":
+        scene black
+    else:
+        scene ts_menu_move_anim_bad_end
     with flash
     $ TS.p(2)
     play sound chasiki fadein 1

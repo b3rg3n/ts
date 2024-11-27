@@ -266,7 +266,7 @@ init -1003 python:
         "ts_muzzon_info1" : "Enable Track Widget?\nThe music playing at the moment will be shown\nin quick menu that's called by swiping upwards.\nCan be changed at any point in the game.",
         "ts_muzzon_info2" : "Enable Track Widget?\nThe music playing at the moment will be shown\nin quick menu that's called by pressing RMB.\nCan be changed at any point in the game.",
         "ts_crd_scr1" : "Coding, SFX, interface, visuals, mobile porting, testing.",
-        "ts_crd_scr2" : "Press to open VK page.",
+        "ts_crd_scr2" : "Press to open Reddit page.",
         "ts_crd_scr3" : "Writing, editing, translating to English.",
         "ts_crd_scr4" : "Here you can call for support",
         "ts_crd_scr5" : "and see our other mods/translations.",

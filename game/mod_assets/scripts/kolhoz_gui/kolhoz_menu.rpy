@@ -20,7 +20,13 @@ label main_menu:
     if persistent.badendmenu == True: #МЕНЮШКА ПОСЛЕ БЕД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
         play music ts_killyourself fadein 5
         scene black
-        show ts_menu_move_anim_bad_end
+        if _preferences.language == "english":
+            scene ts_bad_end_moni_dead_anim_sooqa:
+                align(0.05, 0.8) zoom 3.0
+                ease 15 align(0.75, 0.8) zoom 3.0
+                ease 5 align(0.5, 0.5) zoom 1.0
+        else:
+            show ts_menu_move_anim_bad_end
         show zatemnenie_light
 
     elif persistent.goodendmenu == True: #МЕНЮШКА ПОСЛЕ ГУД КОНЦОВКИ (ОДИНАКОВАЯ ДНЁМ И НОЧЬЮ)
@@ -74,7 +80,14 @@ label main_menu:
             show zatemnenie_light
         elif True: #ДЕНЬ
             play music ts_pd fadein 5
-            scene ts_menu_vid
+            if _preferences.language == "english": 
+                scene ts_pianoend
+                show dust1
+                show dust2
+                show dust3
+                show dust4
+            else:
+                scene ts_menu_vid
             show zatemnenie_light
 
     with Fade(1.5, 1, 2)
@@ -184,7 +197,11 @@ label spashcreen1:
     $ TS.p(1)
     play music ts_mosh fadein 2
     $ TS.p(1.5)
-    scene ts_menu_vid_sunset
+    if _preferences.language == "english":
+        scene ts_street_late
+        show ts_yel_part
+    else:
+        scene ts_menu_vid_sunset
     show zatemnenie
     with dissolve4
     $ TS.p(1)

@@ -6,8 +6,8 @@ python early:
     config.allow_duplicate_labels = True
 
 define config.developer = True # РЕЖИМ РАЗРАБОТЧИКА БЕЗ СДК
-define config.version = "1.2"
-define ts_version = "30.10.2024"
+define config.version = "1.3"
+define ts_version = "27.11.2024"
 
 define config.default_textshader = "zoom"
 
